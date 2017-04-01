@@ -1,0 +1,3196 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[    121517,       2974]*)
+(*NotebookOutlinePosition[    122245,       2999]*)
+(*  CellTagsIndexPosition[    122201,       2995]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    \( (*\ 
+      Op\[EAcute]rateurs\ "\<\[EAcute]nergie\>"\ et\ "\<quantit\[EAcute] de \
+mouvement\>"\  : \ 
+          En\&^\  = \ \[ImaginaryI]\ \[HBar] \[PartialD]\_t\ \[Placeholder], \
+\(\(\ \)\(px\)\(\ \)\)\&^ = \ \(-\[ImaginaryI]\)\ \[HBar] \[PartialD]\_x\ \
+\[Placeholder], \(\(\ \)\(py\)\)\&^\  = \ \(-\[ImaginaryI]\)\ \[HBar] \
+\[PartialD]\_y\ \[Placeholder], \ 
+      pz\&^ = \ \(-\ \[ImaginaryI]\)\ \[HBar] \[PartialD]\_z\ \[Placeholder]\ \
+*) \)], "Input"],
+
+Cell[BoxData[
+    \(En = \((D[\[ImaginaryI]\ \[HBar]\ #, t] &)\); 
+    px = \((D[\(-\[ImaginaryI]\)\ \[HBar]\ #, x] &)\); 
+    py = \((D[\(-\[ImaginaryI]\)\ \[HBar]\ #, y] &)\); 
+    pz = \((D[\(-\[ImaginaryI]\)\ \[HBar]\ #, z] &)\);\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      x\&^\ et\ px\&^\ ne\ commutent\ \(\(pas\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(x\ px[f[x]] - px[x\ f[x]]\)], "Input"],
+
+Cell[BoxData[
+    \(\[ImaginaryI]\ \[HBar]\ f[x]\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ Op\[EAcute]rateurs\ "\<moment angulaire\>"\  : \ Lx\&^\  = \ 
+        y\ pz\  - \ z\ py, \ etc ... \ *) \)], "Input"],
+
+Cell[BoxData[
+    \(\(Lx = \((\((D[\(-\[ImaginaryI]\)\ \[HBar]\ y\ \ #, 
+                  z])\) - \ \((D[\(-\[ImaginaryI]\)\ \[HBar]\ z\ \ #, 
+                  y])\))\) &;\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(Ly = \((\((D[\(-\[ImaginaryI]\)\ \[HBar]\ z\ \ #, 
+                  x])\) - \ \((D[\(-\[ImaginaryI]\)\ \[HBar]\ x\ \ #, 
+                  z])\))\) &;\)\)], "Input"],
+
+Cell[BoxData[
+    \(\(Lz = \((\((D[\(-\[ImaginaryI]\)\ \[HBar]\ x\ \ #, 
+                  y])\) - \ \((D[\(-\[ImaginaryI]\)\ \[HBar]\ y\ \ #, 
+                  x])\))\) &;\)\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ Lx\&^\ et\ Lz\&^, \ \ etc\  ... , \ 
+      ne\ commutent\ \(pas\  : \ 
+            Lx\ Lz\  - \ 
+              Lz\ Lx\)\  = \ \[ImaginaryI]\ \[HBar]\ Lz\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      Lx[Ly[f[x, y, z]]] - 
+        Ly[Lx[f[x, y, z]]] - \ \[ImaginaryI]\ \[HBar]\ \ Lz[
+            f[x, y, z]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ Par\ contre\ Lsq\  = \ 
+        Lx\^2\  + \ Ly\^2\  + \ 
+          Lz\^2\ commute\ avec\ chacune\ des\ composantes\ de\ \(\(L\)\(\ \
+\)\(:\)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    \(\(Lsq = \((Lx[\ Lx[#]] + Ly[\ Ly[#]] + Lz[\ Lz[#]])\) &;\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[Lsq[Lx[f[x, y, z]]] - Lx[Lsq[f[x, y, z]]]]\)], "Input"],
+
+Cell[BoxData[
+    \(0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ Particule\ massive\ de\ spin\ 1/2\  : \ 
+        l' \[EAcute]lectron*) \)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"\[Alpha]x4", "=", 
+        RowBox[{"(", GridBox[{
+              {"0", "1", "0", "0"},
+              {"1", "0", "0", "0"},
+              {"0", "0", "0", \(-1\)},
+              {"0", "0", \(-1\), "0"}
+              }], ")"}]}], ";", 
+      RowBox[{"\[Alpha]y4", "=", 
+        RowBox[{"(", GridBox[{
+              {"0", \(-\[ImaginaryI]\), "0", "0"},
+              {"\[ImaginaryI]", "0", "0", "0"},
+              {"0", "0", "0", "\[ImaginaryI]"},
+              {"0", "0", \(-\[ImaginaryI]\), "0"}
+              }], ")"}]}], ";", 
+      RowBox[{"\[Alpha]z4", "=", 
+        RowBox[{"(", GridBox[{
+              {"1", "0", "0", "0"},
+              {"0", \(-1\), "0", "0"},
+              {"0", "0", \(-1\), "0"},
+              {"0", "0", "0", "1"}
+              }], ")"}]}], ";", 
+      RowBox[{"\[Beta]4", "=", 
+        RowBox[{"(", GridBox[{
+              {"0", "0", \(-1\), "0"},
+              {"0", "0", "0", \(-1\)},
+              {\(-1\), "0", "0", "0"},
+              {"0", \(-1\), "0", "0"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \( (*\ L' 
+        hamiltonien\ valable\ pour\ l' \[EAcute]lectron\ et\ applicable\ \
+\[AGrave]\ une\ fonction\ d' 
+        onde\ \[AGrave]\ 4\ \(\(composantes\)\(\ \)\(:\)\)*) \)], "Input"],
+
+Cell[BoxData[
+    \(\(Hamiltonian4 = \((\(-\[ImaginaryI]\)\ \[HBar]\ \ c \((\[Alpha]x4 . \ 
+                      D[\ #, x] + \[Alpha]y4 . D[\ #, y] + \[Alpha]z4\  . 
+                      D[\ #, z])\) + 
+              m\ c\^2\ \[Beta]4 . \ #)\) &;\)\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ La\ fonction\ d' 
+        onde\ \[AGrave]\ 4\ \(composantes\  : \ \[CapitalPsi]electron\)\ *) \
+\)], "Input"],
+
+Cell[BoxData[
+    \(\[CapitalPsi]electron[x_, y_, z_, 
+        t_] := {\[CapitalPsi]1[x, y, z, t], \[CapitalPsi]2[x, y, z, 
+          t], \[CapitalPsi]3[x, y, z, t], \[CapitalPsi]4[x, y, z, 
+          t]}\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      Les\ op\[EAcute]rateurs\ de\ spin\ dans\ la\ repr\[EAcute]sentation\ \(\
+\(chirale\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"sx4", "=", 
+        RowBox[{\(\[HBar]\/2\), 
+          RowBox[{"(", GridBox[{
+                {"0", "1", "0", "0"},
+                {"1", "0", "0", "0"},
+                {"0", "0", "0", "1"},
+                {"0", "0", "1", "0"}
+                }], ")"}]}]}], ";", 
+      RowBox[{"sy4", "=", 
+        RowBox[{\(\[HBar]\/2\), 
+          RowBox[{"(", GridBox[{
+                {"0", \(-\[ImaginaryI]\), "0", "0"},
+                {"\[ImaginaryI]", "0", "0", "0"},
+                {"0", "0", "0", \(-\[ImaginaryI]\)},
+                {"0", "0", "\[ImaginaryI]", "0"}
+                }], ")"}]}]}], ";", 
+      RowBox[{"sz4", "=", 
+        RowBox[{\(\[HBar]\/2\), 
+          RowBox[{"(", GridBox[{
+                {"1", "0", "0", "0"},
+                {"0", \(-1\), "0", "0"},
+                {"0", "0", "1", "0"},
+                {"0", "0", "0", \(-1\)}
+                }], ")"}]}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      Leurs\ relations\ de\ non\ \(\(commutation\)\(\ \)\(:\)\)\ *) \)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sx4 . sy4 - sy4 . sx4 - \[ImaginaryI]\ \[HBar]\ sz4\)], "Input"],
+
+Cell[BoxData[
+    \({{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ L' 
+        hamiltonien\ ne\ commute\ pas\ avec\ \(\(Lz\)\(\ \)\(:\)\)\ *) \)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      Hamiltonian4[Lz[\[CapitalPsi]electron[x, y, z, t]]] - 
+        Lz[Hamiltonian4[\[CapitalPsi]electron[x, y, z, t]]]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(-c\), " ", \(\[HBar]\^2\), " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{
+                SuperscriptBox["\[CapitalPsi]2", 
+                  TagBox[\((0, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+              RowBox[{"\[ImaginaryI]", " ", 
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]2", 
+                    TagBox[\((1, 0, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}]}], 
+            ")"}]}], ",", 
+        RowBox[{\(-c\), " ", \(\[HBar]\^2\), " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{
+                SuperscriptBox["\[CapitalPsi]1", 
+                  TagBox[\((0, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-", 
+              RowBox[{"\[ImaginaryI]", " ", 
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]1", 
+                    TagBox[\((1, 0, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}]}], 
+            ")"}]}], ",", 
+        RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{
+                SuperscriptBox["\[CapitalPsi]4", 
+                  TagBox[\((0, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+              RowBox[{"\[ImaginaryI]", " ", 
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]4", 
+                    TagBox[\((1, 0, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}]}], 
+            ")"}]}], ",", 
+        RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{
+                SuperscriptBox["\[CapitalPsi]3", 
+                  TagBox[\((0, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-", 
+              RowBox[{"\[ImaginaryI]", " ", 
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]3", 
+                    TagBox[\((1, 0, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}]}], 
+            ")"}]}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ Il\ suffit\ d' ajouter\ l' 
+        op\[EAcute]rateur\ de\ spin\ selon\ z\ pour\ que\ le\ moment\ total\ \
+se\ \(\(conserve\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    \(\(Spin4z = \((sz4 . #)\) &;\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      Hamiltonian4[
+          Lz[\[CapitalPsi]electron[x, y, z, t]] + 
+            Spin4z[\[CapitalPsi]electron[x, y, z, t]]] - 
+        Lz[Hamiltonian4[\[CapitalPsi]electron[x, y, z, t]]] - 
+        Spin4z[Hamiltonian4[\[CapitalPsi]electron[x, y, z, t]]]]\)], "Input"],
+
+Cell[BoxData[
+    \({0, 0, 0, 0}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ L' \[EAcute]quation\ de\ \(\(Dirac\)\(\ \)\(:\)\)*) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\((En[\[CapitalPsi]electron[x, y, z, t]] - 
+            Hamiltonian4[\[CapitalPsi]electron[x, y, z, t]] // 
+          MatrixForm)\) \[Equal] 0\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      InterpretationBox[
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]3[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]1", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((0, 0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "-", 
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]2", 
+                              TagBox[\((0, 1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]2", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]4[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]2", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{"-", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]2", 
+                              TagBox[\((0, 0, 1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "+", 
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]1", 
+                              TagBox[\((0, 1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]1[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]3", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{"-", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]3", 
+                              TagBox[\((0, 0, 1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "+", 
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]4", 
+                              TagBox[\((0, 1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "-", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]2[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]4", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((0, 0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "-", 
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]3", 
+                              TagBox[\((0, 1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "-", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]3", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}]}
+              }], "\[NoBreak]", ")"}],
+        MatrixForm[ {
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]3[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]1][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Derivative[ 0, 0, 1, 0][ \[CapitalPsi]1][ x, y, z, t], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]2][ x, y, z, t]], 
+                Derivative[ 1, 0, 0, 0][ \[CapitalPsi]2][ x, y, z, t]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]4[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]2][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ -1, 
+                  Derivative[ 0, 0, 1, 0][ \[CapitalPsi]2][ x, y, z, t]], 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]1][ x, y, z, t]], 
+                Derivative[ 1, 0, 0, 0][ \[CapitalPsi]1][ x, y, z, t]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]1[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]3][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ -1, 
+                  Derivative[ 0, 0, 1, 0][ \[CapitalPsi]3][ x, y, z, t]], 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]4][ x, y, z, t]], 
+                Times[ -1, 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]4][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]2[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]4][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Derivative[ 0, 0, 1, 0][ \[CapitalPsi]4][ x, y, z, t], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]3][ x, y, z, t]], 
+                Times[ -1, 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]3][ 
+                  x, y, z, t]]]]]}]], "\[Equal]", "0"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ 
+      Ses\ solutions\ doivent\ ob\[EAcute]ir\ \[AGrave]\ l' \[EAcute]quation\ \
+de\ Klein - 
+        Gordon\ [\((\[CapitalDelta]\  - \ \(1\/c\^2\) \[PartialD]\_t\%2)\) \
+\[Placeholder]\  = \ \(\(m\^2\ c\^2\)\/\[HBar]\^2\) \[Placeholder]]; \ 
+      elles\ le\ font\ \(\(automatiquement\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      En[En[\[CapitalPsi]electron[x, y, z, t]]] - 
+          Hamiltonian4[
+            Hamiltonian4[\[CapitalPsi]electron[x, y, z, t]]] \[Equal] 
+        0]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"{", 
+        RowBox[{
+          RowBox[{\(\(-c\^4\)\ m\^2\ \[CapitalPsi]1[x, y, z, t]\), "+", 
+            RowBox[{\(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{"-", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]1", 
+                        TagBox[\((0, 0, 0, 2)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((0, 0, 2, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((0, 2, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((2, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}], ")"}]}]}], ",", 
+          RowBox[{\(\(-c\^4\)\ m\^2\ \[CapitalPsi]2[x, y, z, t]\), "+", 
+            RowBox[{\(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{"-", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]2", 
+                        TagBox[\((0, 0, 0, 2)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]2", 
+                            TagBox[\((0, 0, 2, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]2", 
+                            TagBox[\((0, 2, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]2", 
+                            TagBox[\((2, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}], ")"}]}]}], ",", 
+          RowBox[{\(\(-c\^4\)\ m\^2\ \[CapitalPsi]3[x, y, z, t]\), "+", 
+            RowBox[{\(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{"-", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]3", 
+                        TagBox[\((0, 0, 0, 2)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]3", 
+                            TagBox[\((0, 0, 2, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]3", 
+                            TagBox[\((0, 2, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]3", 
+                            TagBox[\((2, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}], ")"}]}]}], ",", 
+          RowBox[{\(\(-c\^4\)\ m\^2\ \[CapitalPsi]4[x, y, z, t]\), "+", 
+            RowBox[{\(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{"-", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]4", 
+                        TagBox[\((0, 0, 0, 2)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((0, 0, 2, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((0, 2, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "+", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((2, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}], ")"}]}]}]}], "}"}], "\[Equal]", 
+      "0"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\(\[IndentingNewLine]\)\)\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ Particule\ massive\ de\ spin\ 1\ *) \)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"\[Alpha]x6", "=", 
+        RowBox[{\(1\/\@2\), 
+          RowBox[{"(", GridBox[{
+                {"0", "1", "0", "0", "0", "0"},
+                {"1", "0", "1", "0", "0", "0"},
+                {"0", "1", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", \(-1\), "0"},
+                {"0", "0", "0", \(-1\), "0", \(-1\)},
+                {"0", "0", "0", "0", \(-1\), "0"}
+                }], ")"}]}]}], ";", 
+      RowBox[{"\[Alpha]y6", "=", 
+        RowBox[{\(1\/\@2\), 
+          RowBox[{"(", GridBox[{
+                {"0", \(-\[ImaginaryI]\), "0", "0", "0", "0"},
+                {"\[ImaginaryI]", "0", \(-\[ImaginaryI]\), "0", "0", "0"},
+                {"0", "\[ImaginaryI]", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "\[ImaginaryI]", "0"},
+                {"0", "0", "0", \(-\[ImaginaryI]\), "0", "\[ImaginaryI]"},
+                {"0", "0", "0", "0", \(-\[ImaginaryI]\), "0"}
+                }], ")"}]}]}], ";", 
+      RowBox[{"\[Alpha]z6", "=", 
+        RowBox[{"(", GridBox[{
+              {"1", "0", "0", "0", "0", "0"},
+              {"0", "0", "0", "0", "0", "0"},
+              {"0", "0", \(-1\), "0", "0", "0"},
+              {"0", "0", "0", \(-1\), "0", "0"},
+              {"0", "0", "0", "0", "0", "0"},
+              {"0", "0", "0", "0", "0", "1"}
+              }], ")"}]}], ";", 
+      RowBox[{"\[Beta]6", "=", 
+        RowBox[{"(", GridBox[{
+              {"0", "0", "0", \(-1\), "0", "0"},
+              {"0", "0", "0", "0", \(-1\), "0"},
+              {"0", "0", "0", "0", "0", \(-1\)},
+              {\(-1\), "0", "0", "0", "0", "0"},
+              {"0", \(-1\), "0", "0", "0", "0"},
+              {"0", "0", \(-1\), "0", "0", "0"}
+              }], ")"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \( (*\ \(L' hamiltonien\ est\ applicable\ \[AGrave]\ une\ fonction\ d' 
+          onde\ \[AGrave]\ 6\ composantes\ \((repr\[EAcute]sentation\ \
+chirale)\)\)\(\ \)\(:\)*) \)], "Input"],
+
+Cell[BoxData[
+    \(\(Hamiltonian6 = \((\(-\[ImaginaryI]\)\ \[HBar]\ \ c \((\[Alpha]x6 . \ 
+                      D[\ #, x] + \[Alpha]y6 . D[\ #, y] + \[Alpha]z6\  . 
+                      D[\ #, z])\) + 
+              m\ c\^2\ \[Beta]6 . \ #)\) &;\)\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ La\ fonction\ d' 
+        onde\ \[AGrave]\ 6\ \(composantes\  : \ \[CapitalPsi]spin1\)\ *) \)], \
+"Input"],
+
+Cell[BoxData[
+    \(\[CapitalPsi]spin1[x_, y_, z_, 
+        t_] := {\[CapitalPsi]1[x, y, z, t], \[CapitalPsi]2[x, y, z, 
+          t], \[CapitalPsi]3[x, y, z, t], \[CapitalPsi]4[x, y, z, 
+          t], \[CapitalPsi]5[x, y, z], \[CapitalPsi]6[x, y, z]}\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      Les\ op\[EAcute]rateurs\ de\ spin\ dans\ la\ repr\[EAcute]sentation\ \(\
+\(chirale\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"sx6", "=", 
+        RowBox[{\(\[HBar]\/\@2\), 
+          RowBox[{"(", GridBox[{
+                {"0", "1", "0", "0", "0", "0"},
+                {"1", "0", "1", "0", "0", "0"},
+                {"0", "1", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "1", "0"},
+                {"0", "0", "0", "1", "0", "1"},
+                {"0", "0", "0", "0", "1", "0"}
+                }], ")"}]}]}], ";", 
+      RowBox[{"sy6", "=", 
+        RowBox[{\(\[HBar]\/\@2\), 
+          RowBox[{"(", GridBox[{
+                {"0", \(-\[ImaginaryI]\), "0", "0", "0", "0"},
+                {"\[ImaginaryI]", "0", \(-\[ImaginaryI]\), "0", "0", "0"},
+                {"0", "\[ImaginaryI]", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", \(-\[ImaginaryI]\), "0"},
+                {"0", "0", "0", "\[ImaginaryI]", "0", \(-\[ImaginaryI]\)},
+                {"0", "0", "0", "0", "\[ImaginaryI]", "0"}
+                }], ")"}]}]}], ";", 
+      RowBox[{"sz6", "=", 
+        RowBox[{"\[HBar]", 
+          RowBox[{"(", GridBox[{
+                {"1", "0", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "0", "0"},
+                {"0", "0", \(-1\), "0", "0", "0"},
+                {"0", "0", "0", "1", "0", "0"},
+                {"0", "0", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "0", \(-1\)}
+                }], ")"}]}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      Leurs\ relations\ de\ non\ \(\(commutation\)\(\ \)\(:\)\)\ *) \)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sx6 . sy6 - sy6 . sx6 - \[ImaginaryI]\ \[HBar]\ sz6\)], "Input"],
+
+Cell[BoxData[
+    \({{0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 
+        0, 0, 0}, {0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0}}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ L' 
+        hamiltonien\ ne\ commute\ pas\ avec\ \(\(Lz\)\(\ \)\(:\)\)\ *) \)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      Hamiltonian6[Lz[\[CapitalPsi]spin1[x, y, z, t]]] - 
+        Lz[Hamiltonian6[\[CapitalPsi]spin1[x, y, z, t]]]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{"-", 
+          FractionBox[
+            RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]2", 
+                      TagBox[\((0, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]2", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}]}], ")"}]}], \(\@2\)]}], ",", 
+        RowBox[{"-", 
+          FractionBox[
+            RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]1", 
+                      TagBox[\((0, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]3", 
+                      TagBox[\((0, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "-", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "-", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]3", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}], ")"}]}], \(\@2\)]}], ",", 
+        RowBox[{"-", 
+          FractionBox[
+            RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]2", 
+                      TagBox[\((0, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "-", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]2", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}]}], ")"}]}], \(\@2\)]}], ",", 
+        FractionBox[
+          RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]5", 
+                    TagBox[\((0, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z\), "]"}], "+", 
+                RowBox[{"\[ImaginaryI]", " ", 
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]5", 
+                      TagBox[\((1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z\), "]"}]}]}], 
+              ")"}]}], \(\@2\)], ",", 
+        FractionBox[
+          RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]6", 
+                    TagBox[\((0, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z\), "]"}], "+", 
+                RowBox[{"\[ImaginaryI]", " ", 
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]6", 
+                      TagBox[\((1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z\), "]"}]}], 
+                "+", 
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]4", 
+                    TagBox[\((0, 1, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-",
+                 
+                RowBox[{"\[ImaginaryI]", " ", 
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]4", 
+                      TagBox[\((1, 0, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), 
+                    "]"}]}]}], ")"}]}], \(\@2\)], ",", 
+        FractionBox[
+          RowBox[{"c", " ", \(\[HBar]\^2\), " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{
+                  SuperscriptBox["\[CapitalPsi]5", 
+                    TagBox[\((0, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z\), "]"}], "-", 
+                RowBox[{"\[ImaginaryI]", " ", 
+                  RowBox[{
+                    SuperscriptBox["\[CapitalPsi]5", 
+                      TagBox[\((1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z\), "]"}]}]}], 
+              ")"}]}], \(\@2\)]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ Il\ suffit\ d' ajouter\ l' 
+        op\[EAcute]rateur\ de\ spin\ selon\ z\ pour\ que\ le\ moment\ total\ \
+se\ \(\(conserve\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    \(\(Spin6z = \((sz6 . #)\) &;\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[
+      Hamiltonian6[
+          Lz[\[CapitalPsi]spin1[x, y, z, t]] + 
+            Spin6z[\[CapitalPsi]spin1[x, y, z, t]]] - 
+        Lz[Hamiltonian6[\[CapitalPsi]spin1[x, y, z, t]]] - 
+        Spin6z[Hamiltonian6[\[CapitalPsi]spin1[x, y, z, t]]]]\)], "Input"],
+
+Cell[BoxData[
+    \({0, 0, 0, 0, 0, 0}\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ \(L' \[EAcute]quation\ de\ Dirac\ pour\ le\ spin\ 1\)\(\ \)\(:\)*) \
+\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\((En[\[CapitalPsi]spin1[x, y, z, t]] - 
+            Hamiltonian6[\[CapitalPsi]spin1[x, y, z, t]] // 
+          MatrixForm)\) \[Equal] 0\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      InterpretationBox[
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]4[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]1", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((0, 0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "-", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]2", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]2", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]5[x, y, z]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]2", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]1", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]3", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]1", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]3", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]6[x, y, z]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]3", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{"-", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]3", 
+                              TagBox[\((0, 0, 1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "+", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]2", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]2", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]1[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]4", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]5", 
+                                TagBox[\((0, 1, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z\), 
+                              "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]5", 
+                              TagBox[\((1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z\), 
+                            "]"}], \(\@2\)], "-", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((0, 0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]2[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]6", 
+                                TagBox[\((0, 1, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z\), 
+                              "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]6", 
+                              TagBox[\((1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z\), 
+                            "]"}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]4", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]4", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{\(c\^2\ m\ \[CapitalPsi]3[x, y, z, t]\), "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]6", 
+                            TagBox[\((0, 0, 1)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z\), "]"}],
+                         "-", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]5", 
+                                TagBox[\((0, 1, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z\), 
+                              "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]5", 
+                              TagBox[\((1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]}
+              }], "\[NoBreak]", ")"}],
+        MatrixForm[ {
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]4[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]1][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Derivative[ 0, 0, 1, 0][ \[CapitalPsi]1][ x, y, z, t], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]2][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]2][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]5[ x, y, z]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]2][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]1][ x, y, z, t]], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]3][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]1][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]3][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]6[ x, y, z]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]3][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ -1, 
+                  Derivative[ 0, 0, 1, 0][ \[CapitalPsi]3][ x, y, z, t]], 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]2][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]2][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]1[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]4][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0][ \[CapitalPsi]5][ x, y, z]], 
+                Times[ -1, 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0][ \[CapitalPsi]5][ x, y, z]], 
+                Times[ -1, 
+                  Derivative[ 0, 0, 1, 0][ \[CapitalPsi]4][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]2[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0][ \[CapitalPsi]6][ x, y, z]], 
+                Times[ -1, 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0][ \[CapitalPsi]6][ x, y, z]], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]4][ x, y, z, t]], 
+                Times[ -1, 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]4][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Power[ c, 2], m, 
+              \[CapitalPsi]3[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Derivative[ 0, 0, 1][ \[CapitalPsi]6][ x, y, z], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0][ \[CapitalPsi]5][ x, y, z]], 
+                Times[ -1, 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0][ \[CapitalPsi]5][ x, y, z]]]]]}]], 
+      "\[Equal]", "0"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ 
+      Cette\ \[EAcute]quation\ est\ insuffisante\ \[AGrave]\ garantir\ l' 
+          ob\[EAcute]issance\ \[AGrave]\ Klein - \(Gordon\  : \ 
+          il\ faut\ des\ conditions\ suppl\[EAcute]mentaires\)\ *) \)], \
+"Input"],
+
+Cell[BoxData[
+    \( (*\ Elles\ ne\ sont\ simples\ que\ dans\ le\ cas\ d' 
+        une\ masse\ nulle\ \((photon)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    \( (*\ Cas\ du\ \(photon\  : \ m\) \[Rule] 0\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(\((En[\[CapitalPsi]spin1[x, y, z, t]] - 
+              Hamiltonian6[\[CapitalPsi]spin1[x, y, z, t]] /. m \[Rule] 0 // 
+          MatrixForm)\) \[Equal] 0\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      InterpretationBox[
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+              {
+                RowBox[{
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]1", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]1", 
+                            TagBox[\((0, 0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], "-", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]2", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]2", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]2", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]1", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]3", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]1", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]3", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]3", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        RowBox[{"-", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]3", 
+                              TagBox[\((0, 0, 1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], "+", 
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]2", 
+                                TagBox[\((0, 1, 0, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z, t\),
+                               "]"}]}], \(\@2\)], "+", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]2", 
+                              TagBox[\((1, 0, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}], \(\@2\)]}], ")"}]}]}]},
+              {
+                RowBox[{
+                  RowBox[{"\[ImaginaryI]", " ", "\[HBar]", " ", 
+                    RowBox[{
+                      SuperscriptBox["\[CapitalPsi]4", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                    RowBox[{"(", 
+                      RowBox[{
+                        FractionBox[
+                          RowBox[{"\[ImaginaryI]", " ", 
+                            RowBox[{
+                              SuperscriptBox["\[CapitalPsi]5", 
+                                TagBox[\((0, 1, 0)\),
+                                  Derivative],
+                                MultilineFunction->None], "[", \(x, y, z\), 
+                              "]"}]}], \(\@2\)], "-", 
+                        FractionBox[
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]5", 
+                              TagBox[\((1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z\), 
+                            "]"}], \(\@2\)], "-", 
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((0, 0, 1, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}]}], ")"}]}]}]},
+              {
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      FractionBox[
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]6", 
+                              TagBox[\((0, 1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z\), 
+                            "]"}]}], \(\@2\)], "-", 
+                      FractionBox[
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]6", 
+                            TagBox[\((1, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z\), 
+                          "]"}], \(\@2\)], "-", 
+                      FractionBox[
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]4", 
+                              TagBox[\((0, 1, 0, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z, t\), 
+                            "]"}]}], \(\@2\)], "-", 
+                      FractionBox[
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]4", 
+                            TagBox[\((1, 0, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z, t\), 
+                          "]"}], \(\@2\)]}], ")"}]}]},
+              {
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", "\[HBar]", " ", 
+                  RowBox[{"(", 
+                    RowBox[{
+                      RowBox[{
+                        SuperscriptBox["\[CapitalPsi]6", 
+                          TagBox[\((0, 0, 1)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(x, y, z\), "]"}], 
+                      "-", 
+                      FractionBox[
+                        RowBox[{"\[ImaginaryI]", " ", 
+                          RowBox[{
+                            SuperscriptBox["\[CapitalPsi]5", 
+                              TagBox[\((0, 1, 0)\),
+                                Derivative],
+                              MultilineFunction->None], "[", \(x, y, z\), 
+                            "]"}]}], \(\@2\)], "-", 
+                      FractionBox[
+                        RowBox[{
+                          SuperscriptBox["\[CapitalPsi]5", 
+                            TagBox[\((1, 0, 0)\),
+                              Derivative],
+                            MultilineFunction->None], "[", \(x, y, z\), 
+                          "]"}], \(\@2\)]}], ")"}]}]}
+              }], "\[NoBreak]", ")"}],
+        MatrixForm[ {
+          Plus[ 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]1][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Derivative[ 0, 0, 1, 0][ \[CapitalPsi]1][ x, y, z, t], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]2][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]2][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]2][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]1][ x, y, z, t]], 
+                Times[ 
+                  Complex[ 0, -1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]3][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]1][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]3][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]3][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ -1, 
+                  Derivative[ 0, 0, 1, 0][ \[CapitalPsi]3][ x, y, z, t]], 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0, 0][ \[CapitalPsi]2][ x, y, z, t]], 
+                Times[ 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0, 0][ \[CapitalPsi]2][ x, y, z, t]]]]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, 1], \[HBar], 
+              Derivative[ 0, 0, 0, 1][ \[CapitalPsi]4][ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], c, \[HBar], 
+              Plus[ 
+                Times[ 
+                  Complex[ 0, 1], 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 0, 1, 0][ \[CapitalPsi]5][ x, y, z]], 
+                Times[ -1, 
+                  Power[ 2, 
+                    Rational[ -1, 2]], 
+                  Derivative[ 1, 0, 0][ \[CapitalPsi]5][ x, y, z]], 
+                Times[ -1, 
+                  Derivative[ 0, 0, 1, 0][ \[CapitalPsi]4][ x, y, z, t]]]]], 
+          Times[ 
+            Complex[ 0, 1], c, \[HBar], 
+            Plus[ 
+              Times[ 
+                Complex[ 0, 1], 
+                Power[ 2, 
+                  Rational[ -1, 2]], 
+                Derivative[ 0, 1, 0][ \[CapitalPsi]6][ x, y, z]], 
+              Times[ -1, 
+                Power[ 2, 
+                  Rational[ -1, 2]], 
+                Derivative[ 1, 0, 0][ \[CapitalPsi]6][ x, y, z]], 
+              Times[ 
+                Complex[ 0, -1], 
+                Power[ 2, 
+                  Rational[ -1, 2]], 
+                Derivative[ 0, 1, 0, 0][ \[CapitalPsi]4][ x, y, z, t]], 
+              Times[ -1, 
+                Power[ 2, 
+                  Rational[ -1, 2]], 
+                Derivative[ 1, 0, 0, 0][ \[CapitalPsi]4][ x, y, z, t]]]], 
+          Times[ 
+            Complex[ 0, 1], c, \[HBar], 
+            Plus[ 
+              Derivative[ 0, 0, 1][ \[CapitalPsi]6][ x, y, z], 
+              Times[ 
+                Complex[ 0, -1], 
+                Power[ 2, 
+                  Rational[ -1, 2]], 
+                Derivative[ 0, 1, 0][ \[CapitalPsi]5][ x, y, z]], 
+              Times[ -1, 
+                Power[ 2, 
+                  Rational[ -1, 2]], 
+                Derivative[ 1, 0, 0][ \[CapitalPsi]5][ x, y, z]]]]}]], 
+      "\[Equal]", "0"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ Ces\ \[EAcute]quations\ sont\ \[EAcute]quivalentes\ aux\ lois\ d' 
+        Amp\[EGrave]re\ et\ de\ Faraday; \ 
+      pour\ le\ voir\ le\ mieux\ est\ de\ changer\ de\ repr\[EAcute]sentation\
+\ *) \)], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      On\ d\[EAcute]finit\ la\ matrice\ de\ transformation\ suivante\ et\ son\
+\ \(\(inverse\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\[IndentingNewLine]", 
+      RowBox[{
+        RowBox[{"T", "=", 
+          RowBox[{"(", GridBox[{
+                {\(-\(1\/\@2\)\), "0", \(1\/\@2\), "0", "0", "0"},
+                {\(-\(\[ImaginaryI]\/\@2\)\), 
+                  "0", \(-\(\[ImaginaryI]\/\@2\)\), "0", "0", "0"},
+                {"0", "1", "0", "0", "0", "0"},
+                {"0", "0", "0", \(-\(1\/\@2\)\), "0", \(1\/\@2\)},
+                {"0", "0", "0", \(-\(\[ImaginaryI]\/\@2\)\), 
+                  "0", \(-\(\[ImaginaryI]\/\@2\)\)},
+                {"0", "0", "0", "0", "1", "0"}
+                }], ")"}]}], ";", 
+        RowBox[{"Tinv", "=", 
+          RowBox[{"(", GridBox[{
+                {\(-\(1\/\@2\)\), \(\[ImaginaryI]\/\@2\), "0", "0", "0", 
+                  "0"},
+                {"0", "0", "1", "0", "0", "0"},
+                {\(1\/\@2\), \(\[ImaginaryI]\/\@2\), "0", "0", "0", "0"},
+                {"0", "0", "0", \(-\(1\/\@2\)\), \(\[ImaginaryI]\/\@2\), 
+                  "0"},
+                {"0", "0", "0", "0", "0", "1"},
+                {"0", "0", "0", \(1\/\@2\), \(\[ImaginaryI]\/\@2\), "0"}
+                }], ")"}]}], ";"}]}]], "Input"],
+
+Cell[BoxData[
+    \( (*\ 
+      Dans\ cette\ repr\[EAcute]sentation\ les\ matrices\ de\ spin\ \
+rev\[EHat]tent\ la\ \(\(forme\)\(\ \)\(:\)\)\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \({T . sx6 . Tinv // MatrixForm, T . sy6 . Tinv // MatrixForm, 
+      T . sz6 . Tinv // MatrixForm}\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        TagBox[
+          RowBox[{"(", "\[NoBreak]", GridBox[{
+                {"0", "0", "0", "0", "0", "0"},
+                {"0", "0", \(\(-\[ImaginaryI]\)\ \[HBar]\), "0", "0", "0"},
+                {"0", \(\[ImaginaryI]\ \[HBar]\), "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "0", \(\(-\[ImaginaryI]\)\ \[HBar]\)},
+                {"0", "0", "0", "0", \(\[ImaginaryI]\ \[HBar]\), "0"}
+                }], "\[NoBreak]", ")"}],
+          Function[ BoxForm`e$, 
+            MatrixForm[ BoxForm`e$]]], ",", 
+        TagBox[
+          RowBox[{"(", "\[NoBreak]", GridBox[{
+                {"0", "0", \(\[ImaginaryI]\ \[HBar]\), "0", "0", "0"},
+                {"0", "0", "0", "0", "0", "0"},
+                {\(\(-\[ImaginaryI]\)\ \[HBar]\), "0", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "0", \(\[ImaginaryI]\ \[HBar]\)},
+                {"0", "0", "0", "0", "0", "0"},
+                {"0", "0", "0", \(\(-\[ImaginaryI]\)\ \[HBar]\), "0", "0"}
+                }], "\[NoBreak]", ")"}],
+          Function[ BoxForm`e$, 
+            MatrixForm[ BoxForm`e$]]], ",", 
+        TagBox[
+          RowBox[{"(", "\[NoBreak]", GridBox[{
+                {"0", \(\(-\[ImaginaryI]\)\ \[HBar]\), "0", "0", "0", "0"},
+                {\(\[ImaginaryI]\ \[HBar]\), "0", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", "0", "0"},
+                {"0", "0", "0", "0", \(\(-\[ImaginaryI]\)\ \[HBar]\), "0"},
+                {"0", "0", "0", \(\[ImaginaryI]\ \[HBar]\), "0", "0"},
+                {"0", "0", "0", "0", "0", "0"}
+                }], "\[NoBreak]", ")"}],
+          Function[ BoxForm`e$, 
+            MatrixForm[ BoxForm`e$]]]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*Relation\ entre\ la\ fonction\ d' 
+        onde\ du\ photon\ et\ les\ champs\ \[EAcute]lectromagn\[EAcute]tiques\
+\ classiques*) \)], "Input"],
+
+Cell[BoxData[
+    \(\[CapitalPsi]trans[x_, y_, z_, t_] := 
+      Tinv . {Ex[x, y, z, t] + \[ImaginaryI]\ c\ Bx[x, y, z, t], 
+          Ey[x, y, z, t] + \[ImaginaryI]\ c\ By[x, y, z, t], 
+          Ez[x, y, z, t] + \[ImaginaryI]\ c\ Bz[x, y, z, t], 
+          Ex[x, y, z, t] - \[ImaginaryI]\ c\ Bx[x, y, z, t], 
+          Ey[x, y, z, t] - \[ImaginaryI]\ c\ By[x, y, z, t], 
+          Ez[x, y, z, t] - \[ImaginaryI]\ c\ Bz[x, y, z, t]}\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[\[CapitalPsi]trans[x, y, z, t]] // MatrixForm\)], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"(", "\[NoBreak]", GridBox[{
+            {\(\(\(-\[ImaginaryI]\)\ c\ Bx[x, y, z, t] - c\ By[x, y, z, t] - 
+                    Ex[x, y, z, t] + \[ImaginaryI]\ Ey[x, y, z, t]\)\/\@2\)},
+            {\(\[ImaginaryI]\ c\ Bz[x, y, z, t] + Ez[x, y, z, t]\)},
+            {\(\(\[ImaginaryI]\ c\ Bx[x, y, z, t] - c\ By[x, y, z, t] + 
+                    Ex[x, y, z, t] + \[ImaginaryI]\ Ey[x, y, z, t]\)\/\@2\)},
+            {\(\(\[ImaginaryI]\ c\ Bx[x, y, z, t] + c\ By[x, y, z, t] - 
+                    Ex[x, y, z, t] + \[ImaginaryI]\ Ey[x, y, z, t]\)\/\@2\)},
+            {\(\(-\[ImaginaryI]\)\ c\ Bz[x, y, z, t] + Ez[x, y, z, t]\)},
+            {\(\(\(-\[ImaginaryI]\)\ c\ Bx[x, y, z, t] + c\ By[x, y, z, t] + 
+                    Ex[x, y, z, t] + \[ImaginaryI]\ Ey[x, y, z, t]\)\/\@2\)}
+            }], "\[NoBreak]", ")"}],
+      MatrixForm[ {
+        Times[ 
+          Power[ 2, 
+            Rational[ -1, 2]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, -1], c, 
+              Bx[ x, y, z, t]], 
+            Times[ -1, c, 
+              By[ x, y, z, t]], 
+            Times[ -1, 
+              Ex[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], 
+              Ey[ x, y, z, t]]]], 
+        Plus[ 
+          Times[ 
+            Complex[ 0, 1], c, 
+            Bz[ x, y, z, t]], 
+          Ez[ x, y, z, t]], 
+        Times[ 
+          Power[ 2, 
+            Rational[ -1, 2]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, 1], c, 
+              Bx[ x, y, z, t]], 
+            Times[ -1, c, 
+              By[ x, y, z, t]], 
+            Ex[ x, y, z, t], 
+            Times[ 
+              Complex[ 0, 1], 
+              Ey[ x, y, z, t]]]], 
+        Times[ 
+          Power[ 2, 
+            Rational[ -1, 2]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, 1], c, 
+              Bx[ x, y, z, t]], 
+            Times[ c, 
+              By[ x, y, z, t]], 
+            Times[ -1, 
+              Ex[ x, y, z, t]], 
+            Times[ 
+              Complex[ 0, 1], 
+              Ey[ x, y, z, t]]]], 
+        Plus[ 
+          Times[ 
+            Complex[ 0, -1], c, 
+            Bz[ x, y, z, t]], 
+          Ez[ x, y, z, t]], 
+        Times[ 
+          Power[ 2, 
+            Rational[ -1, 2]], 
+          Plus[ 
+            Times[ 
+              Complex[ 0, -1], c, 
+              Bx[ x, y, z, t]], 
+            Times[ c, 
+              By[ x, y, z, t]], 
+            Ex[ x, y, z, t], 
+            Times[ 
+              Complex[ 0, 1], 
+              Ey[ x, y, z, t]]]]}]]], "Output",
+  FontSize->18]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sol = 
+      Simplify[En[\[CapitalPsi]trans[x, y, z, t]] - 
+            Hamiltonian6[\[CapitalPsi]trans[x, y, z, t]] /. 
+          m \[Rule] 0]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(1\/\@2\), 
+          RowBox[{"(", 
+            RowBox[{"\[HBar]", " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{
+                    SuperscriptBox["Ey", 
+                      TagBox[\((0, 0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ey", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}]}], ")"}]}], ")"}]}], ",", 
+        RowBox[{"\[HBar]", " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{\(-c\), " ", 
+                RowBox[{
+                  SuperscriptBox["Bz", 
+                    TagBox[\((0, 0, 0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              "+", 
+              RowBox[{"\[ImaginaryI]", " ", 
+                RowBox[{
+                  SuperscriptBox["Ez", 
+                    TagBox[\((0, 0, 0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              "+", 
+              RowBox[{"c", " ", 
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                      RowBox[{
+                        SuperscriptBox["Bx", 
+                          TagBox[\((0, 1, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(x, y, z, t\), 
+                        "]"}]}], "+", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                    "-", 
+                    RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                      RowBox[{
+                        SuperscriptBox["By", 
+                          TagBox[\((1, 0, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(x, y, z, t\), 
+                        "]"}]}], "-", 
+                    RowBox[{
+                      SuperscriptBox["Ey", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], ")"}]}]}], ")"}]}], ",", 
+        RowBox[{\(1\/\@2\), 
+          RowBox[{"(", 
+            RowBox[{"\[HBar]", " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{\(-c\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{
+                    SuperscriptBox["Ey", 
+                      TagBox[\((0, 0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ey", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}]}], ")"}]}], ")"}]}], ",", 
+        RowBox[{\(1\/\@2\), 
+          RowBox[{"(", 
+            RowBox[{"\[HBar]", " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{\(-c\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{
+                    SuperscriptBox["Ey", 
+                      TagBox[\((0, 0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ey", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}]}], ")"}]}], ")"}]}], ",", 
+        RowBox[{"\[HBar]", " ", 
+          RowBox[{"(", 
+            RowBox[{
+              RowBox[{"c", " ", 
+                RowBox[{
+                  SuperscriptBox["Bz", 
+                    TagBox[\((0, 0, 0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              "+", 
+              RowBox[{"\[ImaginaryI]", " ", 
+                RowBox[{
+                  SuperscriptBox["Ez", 
+                    TagBox[\((0, 0, 0, 1)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              "+", 
+              RowBox[{"c", " ", 
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                      RowBox[{
+                        SuperscriptBox["Bx", 
+                          TagBox[\((0, 1, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(x, y, z, t\), 
+                        "]"}]}], "-", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                    "-", 
+                    RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                      RowBox[{
+                        SuperscriptBox["By", 
+                          TagBox[\((1, 0, 0, 0)\),
+                            Derivative],
+                          MultilineFunction->None], "[", \(x, y, z, t\), 
+                        "]"}]}], "+", 
+                    RowBox[{
+                      SuperscriptBox["Ey", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], ")"}]}]}], ")"}]}], ",", 
+        RowBox[{\(1\/\@2\), 
+          RowBox[{"(", 
+            RowBox[{"\[HBar]", " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 0, 1)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{
+                    SuperscriptBox["Ey", 
+                      TagBox[\((0, 0, 0, 1)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ex", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ey", 
+                        TagBox[\((0, 0, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", \(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{"c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((0, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{\(c\^2\), " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Ez", 
+                        TagBox[\((1, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}]}], ")"}]}], ")"}]}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ Ces\ \[EAcute]quatipons\ condensent\ les\ lois\ d' 
+        Amp\[EGrave]re\ et\ de\ \(Faraday\  : \ 
+          calculer\ sol2\ et\ sol5\ puis\ sol1 + \(-sol3\)\ et\ so4 + \(-sol6\
+\)\)\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sol[\([2]\)]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"\[HBar]", " ", 
+      RowBox[{"(", 
+        RowBox[{
+          RowBox[{\(-c\), " ", 
+            RowBox[{
+              SuperscriptBox["Bz", 
+                TagBox[\((0, 0, 0, 1)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+          RowBox[{"\[ImaginaryI]", " ", 
+            RowBox[{
+              SuperscriptBox["Ez", 
+                TagBox[\((0, 0, 0, 1)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+          RowBox[{"c", " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["Bx", 
+                      TagBox[\((0, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "+", 
+                RowBox[{
+                  SuperscriptBox["Ex", 
+                    TagBox[\((0, 1, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-",
+                 
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["By", 
+                      TagBox[\((1, 0, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "-", 
+                RowBox[{
+                  SuperscriptBox["Ey", 
+                    TagBox[\((1, 0, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              ")"}]}]}], ")"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[sol[\([1]\)] - sol[\([3]\)]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\@2\), " ", "\[HBar]", " ", 
+      RowBox[{"(", 
+        RowBox[{
+          RowBox[{"c", " ", 
+            RowBox[{
+              SuperscriptBox["Bx", 
+                TagBox[\((0, 0, 0, 1)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-", 
+          RowBox[{"\[ImaginaryI]", " ", 
+            RowBox[{
+              SuperscriptBox["Ex", 
+                TagBox[\((0, 0, 0, 1)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+          RowBox[{"c", " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{\(-\[ImaginaryI]\), " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["By", 
+                      TagBox[\((0, 0, 1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "-", 
+                RowBox[{
+                  SuperscriptBox["Ey", 
+                    TagBox[\((0, 0, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+",
+                 
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["Bz", 
+                      TagBox[\((0, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "+", 
+                RowBox[{
+                  SuperscriptBox["Ez", 
+                    TagBox[\((0, 1, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              ")"}]}]}], ")"}]}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(\(sul = 
+        Simplify[\((En[En[\[CapitalPsi]trans[x, y, z, t]]] - 
+                Hamiltonian6[Hamiltonian6[\[CapitalPsi]trans[x, y, z, t]]] /. 
+              m \[Rule] 0)\)];\)\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sul[\([2]\)]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\[HBar]\^2\), " ", 
+      RowBox[{"(", 
+        RowBox[{
+          RowBox[{\(-\[ImaginaryI]\), " ", "c", " ", 
+            RowBox[{
+              SuperscriptBox["Bz", 
+                TagBox[\((0, 0, 0, 2)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-", 
+          RowBox[{
+            SuperscriptBox["Ez", 
+              TagBox[\((0, 0, 0, 2)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+          RowBox[{\(c\^2\), " ", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{\(-\[ImaginaryI]\), " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["By", 
+                      TagBox[\((0, 1, 1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "-", 
+                RowBox[{
+                  SuperscriptBox["Ey", 
+                    TagBox[\((0, 1, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+",
+                 
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["Bz", 
+                      TagBox[\((0, 2, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "+", 
+                RowBox[{
+                  SuperscriptBox["Ez", 
+                    TagBox[\((0, 2, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-",
+                 
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["Bx", 
+                      TagBox[\((1, 0, 1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "-", 
+                RowBox[{
+                  SuperscriptBox["Ex", 
+                    TagBox[\((1, 0, 1, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+",
+                 
+                RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                  RowBox[{
+                    SuperscriptBox["Bz", 
+                      TagBox[\((2, 0, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                "+", 
+                RowBox[{
+                  SuperscriptBox["Ez", 
+                    TagBox[\((2, 0, 0, 0)\),
+                      Derivative],
+                    MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+              ")"}]}]}], ")"}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[sul[\([1]\)] - sul[\([3]\)]]/\((\@2\ \[HBar]\^2)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+        RowBox[{
+          SuperscriptBox["Bx", 
+            TagBox[\((0, 0, 0, 2)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+      RowBox[{
+        SuperscriptBox["Ex", 
+          TagBox[\((0, 0, 0, 2)\),
+            Derivative],
+          MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+      RowBox[{\(c\^2\), " ", 
+        RowBox[{"(", 
+          RowBox[{
+            RowBox[{\(-\[ImaginaryI]\), " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["Bx", 
+                  TagBox[\((0, 0, 2, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{
+              SuperscriptBox["Ex", 
+                TagBox[\((0, 0, 2, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-", 
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["Bx", 
+                  TagBox[\((0, 2, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{
+              SuperscriptBox["Ex", 
+                TagBox[\((0, 2, 0, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["Bz", 
+                  TagBox[\((1, 0, 1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{
+              SuperscriptBox["Ez", 
+                TagBox[\((1, 0, 1, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["By", 
+                  TagBox[\((1, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{
+              SuperscriptBox["Ey", 
+                TagBox[\((1, 1, 0, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+          ")"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[sul[\([1]\)] + sul[\([3]\)]]/\((\@2\ \[HBar]\^2)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{"c", " ", 
+        RowBox[{
+          SuperscriptBox["By", 
+            TagBox[\((0, 0, 0, 2)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-", 
+      RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{
+          SuperscriptBox["Ey", 
+            TagBox[\((0, 0, 0, 2)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+      RowBox[{\(c\^2\), " ", 
+        RowBox[{"(", 
+          RowBox[{
+            RowBox[{\(-c\), " ", 
+              RowBox[{
+                SuperscriptBox["By", 
+                  TagBox[\((0, 0, 2, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{"\[ImaginaryI]", " ", 
+              RowBox[{
+                SuperscriptBox["Ey", 
+                  TagBox[\((0, 0, 2, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{"c", " ", 
+              RowBox[{
+                SuperscriptBox["Bz", 
+                  TagBox[\((0, 1, 1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{"\[ImaginaryI]", " ", 
+              RowBox[{
+                SuperscriptBox["Ez", 
+                  TagBox[\((0, 1, 1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{"c", " ", 
+              RowBox[{
+                SuperscriptBox["Bx", 
+                  TagBox[\((1, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{"\[ImaginaryI]", " ", 
+              RowBox[{
+                SuperscriptBox["Ex", 
+                  TagBox[\((1, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{"c", " ", 
+              RowBox[{
+                SuperscriptBox["By", 
+                  TagBox[\((2, 0, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{"\[ImaginaryI]", " ", 
+              RowBox[{
+                SuperscriptBox["Ey", 
+                  TagBox[\((2, 0, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}]}], 
+          ")"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[sul[\([4]\)] - sul[\([6]\)]]/\((\@2\ \[HBar]\^2)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{\(-\[ImaginaryI]\), " ", "c", " ", 
+        RowBox[{
+          SuperscriptBox["Bx", 
+            TagBox[\((0, 0, 0, 2)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+      RowBox[{
+        SuperscriptBox["Ex", 
+          TagBox[\((0, 0, 0, 2)\),
+            Derivative],
+          MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+      RowBox[{\(c\^2\), " ", 
+        RowBox[{"(", 
+          RowBox[{
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["Bx", 
+                  TagBox[\((0, 0, 2, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{
+              SuperscriptBox["Ex", 
+                TagBox[\((0, 0, 2, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "+", 
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["Bx", 
+                  TagBox[\((0, 2, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-",
+             
+            RowBox[{
+              SuperscriptBox["Ex", 
+                TagBox[\((0, 2, 0, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-", 
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["Bz", 
+                  TagBox[\((1, 0, 1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{
+              SuperscriptBox["Ez", 
+                TagBox[\((1, 0, 1, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}], "-", 
+            RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+              RowBox[{
+                SuperscriptBox["By", 
+                  TagBox[\((1, 1, 0, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{
+              SuperscriptBox["Ey", 
+                TagBox[\((1, 1, 0, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+          ")"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[sul[\([4]\)] + sul[\([6]\)]]/\((\@2\ \[HBar]\^2)\)\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{
+      RowBox[{\(-c\), " ", 
+        RowBox[{
+          SuperscriptBox["By", 
+            TagBox[\((0, 0, 0, 2)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "-", 
+      RowBox[{"\[ImaginaryI]", " ", 
+        RowBox[{
+          SuperscriptBox["Ey", 
+            TagBox[\((0, 0, 0, 2)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+", 
+      RowBox[{\(c\^2\), " ", 
+        RowBox[{"(", 
+          RowBox[{
+            RowBox[{"c", " ", 
+              RowBox[{
+                SuperscriptBox["By", 
+                  TagBox[\((0, 0, 2, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], "+",
+             
+            RowBox[{"\[ImaginaryI]", " ", 
+              RowBox[{"(", 
+                RowBox[{
+                  RowBox[{
+                    SuperscriptBox["Ey", 
+                      TagBox[\((0, 0, 2, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Bz", 
+                        TagBox[\((0, 1, 1, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{
+                    SuperscriptBox["Ez", 
+                      TagBox[\((0, 1, 1, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "+", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["Bx", 
+                        TagBox[\((1, 1, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "-", 
+                  RowBox[{
+                    SuperscriptBox["Ex", 
+                      TagBox[\((1, 1, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}], 
+                  "-", 
+                  RowBox[{"\[ImaginaryI]", " ", "c", " ", 
+                    RowBox[{
+                      SuperscriptBox["By", 
+                        TagBox[\((2, 0, 0, 0)\),
+                          Derivative],
+                        MultilineFunction->None], "[", \(x, y, z, t\), 
+                      "]"}]}], "+", 
+                  RowBox[{
+                    SuperscriptBox["Ey", 
+                      TagBox[\((2, 0, 0, 0)\),
+                        Derivative],
+                      MultilineFunction->None], "[", \(x, y, z, t\), "]"}]}], 
+                ")"}]}]}], ")"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*\ 
+      se\ r\[EAcute]duisent\ \[AGrave]\ l' \[EAcute]quation\ des\ ondes\ avec\
+\ les\ lois\ de\ gauss*) \)], "Input"],
+
+Cell[BoxData[
+    \(\[IndentingNewLine]\)], "Input"],
+
+Cell[BoxData[
+    \( (*Inexistence\ de\ solutions\ de\ spin\ 0\ dans\ le\ cas\ de\ masse\ \
+nulle*) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Simplify[\((En[
+              Exp[\(-\(\(\[ImaginaryI]\ en\ t\)\/\[HBar]\)\)] 
+                Exp[\(\[ImaginaryI]\ p\ z\)\/\[HBar]]\ \ Tinv . \
+{\[Lambda]\_1, \[Lambda]\_2, \[Lambda]\_3, \[Lambda]\_4, \[Lambda]\_5, \
+\[Lambda]\_6}] - 
+            Hamiltonian6[
+              Exp[\(-\(\(\[ImaginaryI]\ en\ t\)\/\[HBar]\)\)] 
+                Exp[\(\[ImaginaryI]\ p\ z\)\/\[HBar]]\ \ Tinv . \
+{\[Lambda]\_1, \[Lambda]\_2, \[Lambda]\_3, \[Lambda]\_4, \[Lambda]\_5, \
+\[Lambda]\_6}])\)/\((Exp[\(-\(\(\[ImaginaryI]\ en\ t\)\/\[HBar]\)\)] 
+            Exp[\(\[ImaginaryI]\ p\ z\)\/\[HBar]])\)]\)], "Input"],
+
+Cell[BoxData[
+    \({\(\((\(-en\) + c\ p)\)\ \[Lambda]\_1 + \[ImaginaryI]\ \((\((en - c\ p)\
+\)\ \[Lambda]\_2 + c\^2\ m\ \((\[ImaginaryI]\ \[Lambda]\_4 + \[Lambda]\_5)\))\
+\)\)\/\@2, 
+      en\ \[Lambda]\_3 + 
+        c\^2\ m\ \[Lambda]\_6, \(\((en + c\ p)\)\ \[Lambda]\_1 + \
+\[ImaginaryI]\ \((\((en + c\ p)\)\ \[Lambda]\_2 + c\^2\ m\ \
+\((\(-\[ImaginaryI]\)\ \[Lambda]\_4 + \[Lambda]\_5)\))\)\)\/\@2, \(\(-c\^2\)\ \
+m\ \[Lambda]\_1 + \[ImaginaryI]\ \((c\^2\ m\ \[Lambda]\_2 + \((en + c\ p)\)\ \
+\((\[ImaginaryI]\ \[Lambda]\_4 + \[Lambda]\_5)\))\)\)\/\@2, 
+      c\^2\ m\ \[Lambda]\_3 + 
+        en\ \[Lambda]\_6, \(c\^2\ m\ \[Lambda]\_1 + \[ImaginaryI]\ c\^2\ m\ \
+\[Lambda]\_2 + \((en - c\ p)\)\ \((\[Lambda]\_4 + \[ImaginaryI]\ \
+\[Lambda]\_5)\)\)\/\@2}\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Reduce[\(({\(\((\(-en\) + c\ p)\)\ \[Lambda]\_1 + \[ImaginaryI]\ \
+\((\((en - c\ p)\)\ \[Lambda]\_2 + c\^2\ m\ \((\[ImaginaryI]\ \[Lambda]\_4 + \
+\[Lambda]\_5)\))\)\)\/\@2, 
+              en\ \[Lambda]\_3 + 
+                c\^2\ m\ \[Lambda]\_6, \(\((en + c\ p)\)\ \[Lambda]\_1 + \
+\[ImaginaryI]\ \((\((en + c\ p)\)\ \[Lambda]\_2 + c\^2\ m\ \
+\((\(-\[ImaginaryI]\)\ \[Lambda]\_4 + \[Lambda]\_5)\))\)\)\/\@2, \(\(-c\^2\)\ \
+m\ \[Lambda]\_1 + \[ImaginaryI]\ \((c\^2\ m\ \[Lambda]\_2 + \((en + c\ p)\)\ \
+\((\[ImaginaryI]\ \[Lambda]\_4 + \[Lambda]\_5)\))\)\)\/\@2, 
+              c\^2\ m\ \[Lambda]\_3 + 
+                en\ \[Lambda]\_6, \(c\^2\ m\ \[Lambda]\_1 + \[ImaginaryI]\ \
+c\^2\ m\ \[Lambda]\_2 + \((en - c\ p)\)\ \((\[Lambda]\_4 + \[ImaginaryI]\ \
+\[Lambda]\_5)\)\)\/\@2} /. m \[Rule] 0)\) \[Equal] 
+        0, {\[Lambda]\_1, \[Lambda]\_2, \[Lambda]\_3, \[Lambda]\_4, \[Lambda]\
+\_5, \[Lambda]\_6}]\)], "Input"],
+
+Cell[BoxData[
+    \(p \[Equal] 0 && en \[Equal] 0 || 
+      en \[Equal] 0 && p \[NotEqual] 0 && c \[Equal] 0 || 
+      p \[Equal] 0 && 
+        en \[Equal] 
+          0 && \[Lambda]\_2 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_1 && \
+\[Lambda]\_5 \[Equal] \[ImaginaryI]\ \[Lambda]\_4 || 
+      p \[Equal] 0 && 
+        en \[Equal] 
+          0 && \[Lambda]\_2 \[Equal] \[ImaginaryI]\ \[Lambda]\_1 && \[Lambda]\
+\_5 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_4 || 
+      p \[Equal] 0 && 
+        en \[Equal] 0 && \[Lambda]\_3 \[Equal] 0 && \[Lambda]\_6 \[Equal] 0 || 
+      en \[Equal] 0 && \[Lambda]\_1 \[Equal] 0 && \[Lambda]\_2 \[Equal] 
+          0 && \[Lambda]\_4 \[Equal] 0 && \[Lambda]\_5 \[Equal] 0 || 
+      en \[Equal] 0 && p \[NotEqual] 0 && 
+        c \[Equal] 
+          0 && \[Lambda]\_2 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_1 && \
+\[Lambda]\_5 \[Equal] \[ImaginaryI]\ \[Lambda]\_4 || 
+      en \[Equal] 0 && p \[NotEqual] 0 && 
+        c \[Equal] 
+          0 && \[Lambda]\_2 \[Equal] \[ImaginaryI]\ \[Lambda]\_1 && \[Lambda]\
+\_5 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_4 || 
+      en \[Equal] 0 && p \[NotEqual] 0 && 
+        c \[Equal] 0 && \[Lambda]\_3 \[Equal] 0 && \[Lambda]\_6 \[Equal] 0 || 
+      p \[Equal] 0 && 
+        en \[Equal] 
+          0 && \[Lambda]\_2 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_1 && \
+\[Lambda]\_3 \[Equal] 
+          0 && \[Lambda]\_5 \[Equal] \[ImaginaryI]\ \[Lambda]\_4 && \[Lambda]\
+\_6 \[Equal] 0 || 
+      p \[Equal] 0 && 
+        en \[Equal] 
+          0 && \[Lambda]\_2 \[Equal] \[ImaginaryI]\ \[Lambda]\_1 && \[Lambda]\
+\_3 \[Equal] 
+          0 && \[Lambda]\_5 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_4 && \
+\[Lambda]\_6 \[Equal] 0 || \[Lambda]\_1 \[Equal] 0 && \[Lambda]\_2 \[Equal] 
+          0 && \[Lambda]\_3 \[Equal] 0 && \[Lambda]\_4 \[Equal] 
+          0 && \[Lambda]\_5 \[Equal] 0 && \[Lambda]\_6 \[Equal] 0 || 
+      p \[NotEqual] 0 && 
+        c \[Equal] \(-\(en\/p\)\) && \[Lambda]\_2 \[Equal] \(-\[ImaginaryI]\)\
+\ \[Lambda]\_1 && \[Lambda]\_3 \[Equal] 
+          0 && \[Lambda]\_5 \[Equal] \[ImaginaryI]\ \[Lambda]\_4 && \[Lambda]\
+\_6 \[Equal] 0 || 
+      p \[NotEqual] 0 && 
+        c \[Equal] 
+          en\/p && \[Lambda]\_2 \[Equal] \[ImaginaryI]\ \[Lambda]\_1 && \
+\[Lambda]\_3 \[Equal] 
+          0 && \[Lambda]\_5 \[Equal] \(-\[ImaginaryI]\)\ \[Lambda]\_4 && \
+\[Lambda]\_6 \[Equal] 0\)], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \( (*On\ trouve\ que\ l' \[EAcute]nergie\ du\ photon\ est\ li\[EAcute]\ \
+\[AGrave]\ sa\ quantit\[EAcute]\ de\ mouvement\ et\ que\ les\ coefficients\ 3\
+\ et\ 6\ sont\ nuls*) \)], "Input"],
+
+Cell[BoxData[
+    \( (*Dans\ la\ repr\[EAcute]sentation\ elm\ on\ voit\ que\ le\ spin\ zero\
+\ correspond\ pr\[EAcute]cis\[EAcute]ment\ aux\ composantes\ 3\ et\ 6*) \)], \
+"Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Eigensystem[{{0, \(-\[ImaginaryI]\)\ \[HBar], 0, 0, 0, 
+          0}, {\[ImaginaryI]\ \[HBar], 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 
+          0}, {0, 0, 0, 0, \(-\[ImaginaryI]\)\ \[HBar], 0}, {0, 0, 
+          0, \[ImaginaryI]\ \[HBar], 0, 0}, {0, 0, 0, 0, 0, 0}}]\)], "Input"],
+
+Cell[BoxData[
+    \({{0, 
+        0, \(-\[HBar]\), \(-\[HBar]\), \[HBar], \[HBar]}, {{0, 0, 0, 0, 0, 
+          1}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, \[ImaginaryI], 1, 
+          0}, {\[ImaginaryI], 1, 0, 0, 0, 0}, {0, 0, 0, \(-\[ImaginaryI]\), 
+          1, 0}, {\(-\[ImaginaryI]\), 1, 0, 0, 0, 0}}}\)], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 941}},
+WindowSize->{1110, 740},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+ShowCellLabel->False
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 482, 9, 30, "Input"],
+Cell[2239, 62, 246, 4, 30, "Input"],
+Cell[2488, 68, 104, 2, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[2617, 74, 58, 1, 30, "Input"],
+Cell[2678, 77, 62, 1, 29, "Output"]
+}, Open  ]],
+Cell[2755, 81, 142, 2, 30, "Input"],
+Cell[2900, 85, 188, 3, 30, "Input"],
+Cell[3091, 90, 188, 3, 30, "Input"],
+Cell[3282, 95, 188, 3, 30, "Input"],
+Cell[3473, 100, 195, 4, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[3693, 108, 156, 4, 30, "Input"],
+Cell[3852, 114, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[3902, 118, 185, 4, 30, "Input"],
+Cell[4090, 124, 91, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[4206, 129, 84, 1, 30, "Input"],
+Cell[4293, 132, 35, 1, 29, "Output"]
+}, Open  ]],
+Cell[4343, 136, 52, 1, 50, "Input"],
+Cell[4398, 139, 109, 2, 30, "Input"],
+Cell[4510, 143, 1077, 29, 77, "Input"],
+Cell[5590, 174, 208, 4, 30, "Input"],
+Cell[5801, 180, 263, 4, 31, "Input"],
+Cell[6067, 186, 134, 3, 30, "Input"],
+Cell[6204, 191, 217, 4, 30, "Input"],
+Cell[6424, 197, 147, 3, 30, "Input"],
+Cell[6574, 202, 940, 25, 77, "Input"],
+Cell[7517, 229, 109, 3, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[7651, 236, 84, 1, 30, "Input"],
+Cell[7738, 239, 90, 1, 29, "Output"]
+}, Open  ]],
+Cell[7843, 243, 115, 3, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[7983, 250, 164, 3, 30, "Input"],
+Cell[8150, 255, 2578, 62, 48, "Output"]
+}, Open  ]],
+Cell[10743, 320, 181, 3, 30, "Input"],
+Cell[10927, 325, 62, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[11014, 330, 299, 6, 50, "Input"],
+Cell[11316, 338, 46, 1, 29, "Output"]
+}, Open  ]],
+Cell[11377, 342, 90, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[11492, 347, 175, 3, 30, "Input"],
+Cell[11670, 352, 9129, 196, 85, "Output"]
+}, Open  ]],
+Cell[20814, 551, 343, 6, 37, "Input"],
+
+Cell[CellGroupData[{
+Cell[21182, 561, 199, 5, 30, "Input"],
+Cell[21384, 568, 6203, 132, 86, "Output"]
+}, Open  ]],
+Cell[27602, 703, 83, 1, 70, "Input"],
+Cell[27688, 706, 74, 1, 30, "Input"],
+Cell[27765, 709, 1765, 39, 111, "Input"],
+Cell[29533, 750, 201, 3, 30, "Input"],
+Cell[29737, 755, 263, 4, 31, "Input"],
+Cell[30003, 761, 131, 3, 30, "Input"],
+Cell[30137, 766, 264, 4, 30, "Input"],
+Cell[30404, 772, 147, 3, 30, "Input"],
+Cell[30554, 777, 1401, 31, 111, "Input"],
+Cell[31958, 810, 52, 1, 50, "Input"],
+Cell[32013, 813, 109, 3, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[32147, 820, 84, 1, 30, "Input"],
+Cell[32234, 823, 163, 2, 29, "Output"]
+}, Open  ]],
+Cell[32412, 828, 115, 3, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[32552, 835, 158, 3, 30, "Input"],
+Cell[32713, 840, 5642, 131, 178, "Output"]
+}, Open  ]],
+Cell[38370, 974, 181, 3, 30, "Input"],
+Cell[38554, 979, 62, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[38641, 984, 287, 6, 50, "Input"],
+Cell[38931, 992, 52, 1, 29, "Output"]
+}, Open  ]],
+Cell[38998, 996, 107, 2, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[39130, 1002, 169, 3, 30, "Input"],
+Cell[39302, 1007, 15607, 341, 255, "Output"]
+}, Open  ]],
+Cell[54924, 1351, 248, 5, 30, "Input"],
+Cell[55175, 1358, 132, 2, 30, "Input"],
+Cell[55310, 1362, 80, 1, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[55415, 1367, 186, 3, 30, "Input"],
+Cell[55604, 1372, 14489, 319, 255, "Output"]
+}, Open  ]],
+Cell[70108, 1694, 233, 4, 30, "Input"],
+Cell[70344, 1700, 151, 3, 30, "Input"],
+Cell[70498, 1705, 1168, 24, 188, "Input"],
+Cell[71669, 1731, 158, 3, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[71852, 1738, 130, 2, 30, "Input"],
+Cell[71985, 1742, 1773, 35, 105, "Output"]
+}, Open  ]],
+Cell[73773, 1780, 165, 3, 30, "Input"],
+Cell[73941, 1785, 446, 7, 70, "Input"],
+
+Cell[CellGroupData[{
+Cell[74412, 1796, 87, 1, 30, "Input"],
+Cell[74502, 1799, 2616, 79, 201, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[77155, 1883, 176, 4, 30, "Input"],
+Cell[77334, 1889, 19757, 446, 379, "Output"]
+}, Open  ]],
+Cell[97106, 2338, 227, 4, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[97358, 2346, 45, 1, 30, "Input"],
+Cell[97406, 2349, 1775, 44, 29, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[99218, 2398, 70, 1, 30, "Input"],
+Cell[99291, 2401, 1789, 44, 49, "Output"]
+}, Open  ]],
+Cell[101095, 2448, 215, 4, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[101335, 2456, 45, 1, 30, "Input"],
+Cell[101383, 2459, 2863, 69, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[104283, 2533, 92, 1, 35, "Input"],
+Cell[104378, 2536, 2490, 64, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[106905, 2605, 92, 1, 35, "Input"],
+Cell[107000, 2608, 2688, 72, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[109725, 2685, 92, 1, 35, "Input"],
+Cell[109820, 2688, 2490, 64, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[112347, 2757, 92, 1, 35, "Input"],
+Cell[112442, 2760, 2923, 71, 67, "Output"]
+}, Open  ]],
+Cell[115380, 2834, 143, 3, 30, "Input"],
+Cell[115526, 2839, 52, 1, 50, "Input"],
+Cell[115581, 2842, 113, 2, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[115719, 2848, 620, 11, 79, "Input"],
+Cell[116342, 2861, 771, 13, 92, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[117150, 2879, 939, 15, 146, "Input"],
+Cell[118092, 2896, 2374, 49, 119, "Output"]
+}, Open  ]],
+Cell[120481, 2948, 206, 3, 30, "Input"],
+Cell[120690, 2953, 180, 3, 30, "Input"],
+
+Cell[CellGroupData[{
+Cell[120895, 2960, 293, 4, 30, "Input"],
+Cell[121191, 2966, 310, 5, 29, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

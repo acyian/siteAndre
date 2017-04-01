@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/CompressionMTS.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ Simple binary Turing machines, their numbering, behaviour and output.
+</p>
+
+
+
+<p class="Subtitle">
+ <span style='font-family: Arial;'>1. </span><span style='font-family: Arial;background-color: #FFE6CC;'>Wolfram&rsquo;s numbering scheme</span><span style='font-family: Arial;'> of Turing machines with s states and k characters, half infinite tape and no explicit halting state.</span>
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Number </span><span style='font-family: Arial;font-weight: bold;'>of Turing machines with s states and k characters (binary machines are enligthed)</span><span style='font-weight: bold;'> :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_1.gif" alt="CompressionMTS_1.gif" width="1363" height="16" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span>s&rarr;2</span></td>
+  <td style='text-align: center;'><span>s&rarr;3</span></td>
+  <td style='text-align: center;'><span>s&rarr;4</span></td>
+  <td style='text-align: center;'><span>s&rarr;5</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;2</span></td>
+  <td style='text-align: center;'><span>4096</span></td>
+  <td style='text-align: center;'><span>2985984</span></td>
+  <td style='text-align: center;'><span>4294967296</span></td>
+  <td style='text-align: center;'><span>10240000000000</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;3</span></td>
+  <td style='text-align: center;'><span>2985984</span></td>
+  <td style='text-align: center;'><span>198359290368</span></td>
+  <td style='text-align: center;'><span>36520347436056576</span></td>
+  <td style='text-align: center;'><span>14348907000000000000000</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;4</span></td>
+  <td style='text-align: center;'><span>4294967296</span></td>
+  <td style='text-align: center;'><span>36520347436056576</span></td>
+  <td style='text-align: center;'><span>1208925819614629174706176</span></td>
+  <td style='text-align: center;'><span>109951162777600000000000000000000</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;5</span></td>
+  <td style='text-align: center;'><span>10240000000000</span></td>
+  <td style='text-align: center;'><span>14348907000000000000000</span></td>
+  <td style='text-align: center;'><span>109951162777600000000000000000000</span></td>
+  <td style='text-align: center;'><span>2980232238769531250000000000000000000000000</span></td>
+ </tr>
+</table>
+
+<p class="Subsubtitle">
+ Instructions table of a machine whose rule number is given (instructions refers to Wolfram&rsquo;s original mode but shiftedinstructions should have been more judicious) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_2.gif" alt="CompressionMTS_2.gif" width="1318" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_3.gif" alt="CompressionMTS_3.gif" width="1367" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_4.gif" alt="CompressionMTS_4.gif" width="176" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_5.gif" alt="CompressionMTS_5.gif" width="779" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_6.gif" alt="CompressionMTS_6.gif" width="225" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_7.gif" alt="CompressionMTS_7.gif" width="747" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Rule number of a machine whose instructions table is given :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_8.gif" alt="CompressionMTS_8.gif" width="854" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_9.gif" alt="CompressionMTS_9.gif" width="1649" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_10.gif" alt="CompressionMTS_10.gif" width="60" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Clearly TMNumber annihilates instructions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_11.gif" alt="CompressionMTS_11.gif" width="328" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_12.gif" alt="CompressionMTS_12.gif" width="60" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>The s&times;k triplets, (s,k,d), associated to a given rule, in Wolfram&rsquo;s canonical order (s =1, 2, ...; k=0, 1, ...; d=-1,+1) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_13.gif" alt="CompressionMTS_13.gif" width="493" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_14.gif" alt="CompressionMTS_14.gif" width="180" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_15.gif" alt="CompressionMTS_15.gif" width="907" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>The same triplets in shifted mode (s =0, 1, ...; k=0, 1, ...; d=0,1) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_16.gif" alt="CompressionMTS_16.gif" width="845" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_17.gif" alt="CompressionMTS_17.gif" width="229" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_18.gif" alt="CompressionMTS_18.gif" width="819" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Recovering the machine rule number from the shifted triplets :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_19.gif" alt="CompressionMTS_19.gif" width="852" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_20.gif" alt="CompressionMTS_20.gif" width="1072" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_21.gif" alt="CompressionMTS_21.gif" width="60" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_22.gif" alt="CompressionMTS_22.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Analysis of the 4096 2-states binary machines.
+</p>
+
+
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Activation of preliminary instructions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_23.gif" alt="CompressionMTS_23.gif" width="467" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_24.gif" alt="CompressionMTS_24.gif" width="765" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_25.gif" alt="CompressionMTS_25.gif" width="876" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_26.gif" alt="CompressionMTS_26.gif" width="936" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_27.gif" alt="CompressionMTS_27.gif" width="992" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_28.gif" alt="CompressionMTS_28.gif" width="356" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_29.gif" alt="CompressionMTS_29.gif" width="1112" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_30.gif" alt="CompressionMTS_30.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Search for the first time a new sequence is printed :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_31.gif" alt="CompressionMTS_31.gif" width="1621" height="337" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_32.gif" alt="CompressionMTS_32.gif" width="81" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_33.gif" alt="CompressionMTS_33.gif" width="42" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_34.gif" alt="CompressionMTS_34.gif" width="539" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_35.gif" alt="CompressionMTS_35.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_36.gif" alt="CompressionMTS_36.gif" width="323" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_37.gif" alt="CompressionMTS_37.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_38.gif" alt="CompressionMTS_38.gif" width="183" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_39.gif" alt="CompressionMTS_39.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Summary when s=2 (Symmetric sequences have been set as equals) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_40.gif" alt="CompressionMTS_40.gif" width="1457" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_41.gif" alt="CompressionMTS_41.gif" width="432" height="194" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_42.gif" alt="CompressionMTS_42.gif" width="100" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_43.gif" alt="CompressionMTS_43.gif" width="1809" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_44.gif" alt="Graphics:{2, 2, 299}" width="213" height="432" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_45.gif" alt="CompressionMTS_45.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_46.gif" alt="CompressionMTS_46.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Analysis of the 2985984 3-states binary machines.
+</p>
+
+
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Activation of preliminary instructions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_47.gif" alt="CompressionMTS_47.gif" width="467" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_48.gif" alt="CompressionMTS_48.gif" width="765" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_49.gif" alt="CompressionMTS_49.gif" width="876" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_50.gif" alt="CompressionMTS_50.gif" width="936" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_51.gif" alt="CompressionMTS_51.gif" width="992" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_52.gif" alt="CompressionMTS_52.gif" width="356" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_53.gif" alt="CompressionMTS_53.gif" width="1112" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_54.gif" alt="CompressionMTS_54.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Search for new sequences :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_55.gif" alt="CompressionMTS_55.gif" width="1807" height="817" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_56.gif" alt="CompressionMTS_56.gif" width="102" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_57.gif" alt="CompressionMTS_57.gif" width="42" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_58.gif" alt="CompressionMTS_58.gif" width="1532" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_59.gif" alt="CompressionMTS_59.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_60.gif" alt="CompressionMTS_60.gif" width="1376" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_61.gif" alt="CompressionMTS_61.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_62.gif" alt="CompressionMTS_62.gif" width="973" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_63.gif" alt="CompressionMTS_63.gif" width="1457" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_64.gif" alt="CompressionMTS_64.gif" width="522" height="834" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_65.gif" alt="CompressionMTS_65.gif" width="100" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_66.gif" alt="CompressionMTS_66.gif" width="1809" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_67.gif" alt="Graphics:{3, 2, 1377015}" width="118" height="432" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_68.gif" alt="CompressionMTS_68.gif" width="12" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Analysis of the 4294967296 4-states binary machines (Incomplete).
+</p>
+
+
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Activation of preliminary instructions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_69.gif" alt="CompressionMTS_69.gif" width="467" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_70.gif" alt="CompressionMTS_70.gif" width="765" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_71.gif" alt="CompressionMTS_71.gif" width="876" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_72.gif" alt="CompressionMTS_72.gif" width="943" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_73.gif" alt="CompressionMTS_73.gif" width="999" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_74.gif" alt="CompressionMTS_74.gif" width="356" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_75.gif" alt="CompressionMTS_75.gif" width="1112" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_76.gif" alt="CompressionMTS_76.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-weight: bold;'>Search for new sequences :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_77.gif" alt="CompressionMTS_77.gif" width="1883" height="1137" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_78.gif" alt="CompressionMTS_78.gif" width="97" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_79.gif" alt="CompressionMTS_79.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_80.gif" alt="CompressionMTS_80.gif" width="1663" height="149" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_81.gif" alt="CompressionMTS_81.gif" width="42" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_82.gif" alt="CompressionMTS_82.gif" width="1671" height="282" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_83.gif" alt="CompressionMTS_83.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_84.gif" alt="CompressionMTS_84.gif" width="1458" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_85.gif" alt="CompressionMTS_85.gif" width="1547" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_86.gif" alt="CompressionMTS_86.gif" width="722" height="3074" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_87.gif" alt="CompressionMTS_87.gif" width="100" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_88.gif" alt="CompressionMTS_88.gif" width="1407" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_89.gif" alt="CompressionMTS_89.gif" width="148" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_90.gif" alt="Graphics:{4, 2, 105548927}" width="287" height="1674" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ 
+</p>
+
+
+
+<p class="Subtitle">
+ <span style='font-family: Arial;'>2. </span><span style='font-family: Arial;background-color: #FFE6CC;'>Modified numbering scheme</span><span style='font-family: Arial;'> of Turing machines with s states and k characters, half infinite tape and no explicit halting state.</span>
+</p>
+
+
+
+<p class="Subsubtitle">
+ Once s and k are known, their exist 2s k distinct triplets (numbered from 0 to 2s k - 1)&nbsp;&nbsp;:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_91.gif" alt="CompressionMTS_91.gif" width="349" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_92.gif" alt="CompressionMTS_92.gif" width="289" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_93.gif" alt="CompressionMTS_93.gif" width="14" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_94.gif" alt="CompressionMTS_94.gif" width="757" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_95.gif" alt="CompressionMTS_95.gif" width="616" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_96.gif" alt="CompressionMTS_96.gif" width="53" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_97.gif" alt="CompressionMTS_97.gif" width="616" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_98.gif" alt="CompressionMTS_98.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_99.gif" alt="CompressionMTS_99.gif" width="411" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_100.gif" alt="CompressionMTS_100.gif" width="411" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_101.gif" alt="CompressionMTS_101.gif" width="807" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_102.gif" alt="CompressionMTS_102.gif" width="970" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_103.gif" alt="CompressionMTS_103.gif" width="724" height="42" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_104.gif" alt="CompressionMTS_104.gif" width="165" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_105.gif" alt="CompressionMTS_105.gif" width="57" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_106.gif" alt="CompressionMTS_106.gif" width="1506" height="49" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_107.gif" alt="CompressionMTS_107.gif" width="205" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_108.gif" alt="CompressionMTS_108.gif" width="747" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_109.gif" alt="CompressionMTS_109.gif" width="1611" height="49" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_110.gif" alt="CompressionMTS_110.gif" width="240" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_111.gif" alt="CompressionMTS_111.gif" width="795" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_112.gif" alt="CompressionMTS_112.gif" width="467" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_113.gif" alt="CompressionMTS_113.gif" width="765" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_114.gif" alt="CompressionMTS_114.gif" width="876" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_115.gif" alt="CompressionMTS_115.gif" width="943" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_116.gif" alt="CompressionMTS_116.gif" width="999" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_117.gif" alt="CompressionMTS_117.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Running a particular machine (new numbering !) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_118.gif" alt="CompressionMTS_118.gif" width="1809" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_119.gif" alt="Graphics:{4, 2, 1483700}" width="116" height="432" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_120.gif" alt="CompressionMTS_120.gif" width="1809" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_121.gif" alt="Graphics:{4, 2, 51088454}" width="222" height="831" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_122.gif" alt="CompressionMTS_122.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ Even on a multi core PC <span style='font-style: italic;'>Mathematica</span> is unable to run 4294967296 machines in a reasonable time (a few days are needed).&nbsp;&nbsp;A C++ program is much more rapid and GPU programming helps a lot : a few minutes suffice !
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span class="TitleInline">Treatment of the sequences output by 4-states binary TM (Parallelized in C++ : MT4_cuda.exe -&gt; MT4.txt).</span>
+</p>
+
+
+
+<p class="Subtitle">
+ Reading the output file in <span style='font-style: italic;'>Mathematica </span>({Machine number, number of steps, printed sequence}) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_123.gif" alt="CompressionMTS_123.gif" width="1449" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_124.gif" alt="CompressionMTS_124.gif" width="35" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_125.gif" alt="CompressionMTS_125.gif" width="1809" height="947" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Busiest beaver :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_126.gif" alt="CompressionMTS_126.gif" width="147" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_127.gif" alt="CompressionMTS_127.gif" width="21" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_128.gif" alt="CompressionMTS_128.gif" width="197" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_129.gif" alt="CompressionMTS_129.gif" width="402" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Most productive beaver :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_130.gif" alt="CompressionMTS_130.gif" width="203" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_131.gif" alt="CompressionMTS_131.gif" width="14" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_132.gif" alt="CompressionMTS_132.gif" width="246" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_133.gif" alt="CompressionMTS_133.gif" width="945" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ {Machine number, logical depth, printed sequence} :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_134.gif" alt="CompressionMTS_134.gif" width="312" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_135.gif" alt="CompressionMTS_135.gif" width="1802" height="947" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Symmetrization and reordering of the results (sequence, reversed sequence, conjugate sequence and reversed conjugate sequence) :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_136.gif" alt="CompressionMTS_136.gif" width="356" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_137.gif" alt="CompressionMTS_137.gif" width="1145" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_138.gif" alt="CompressionMTS_138.gif" width="1802" height="1840" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_139.gif" alt="CompressionMTS_139.gif" width="585" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_140.gif" alt="CompressionMTS_140.gif" width="1805" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_141.gif" alt="CompressionMTS_141.gif" width="784" height="9527" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/CompressionMTS_142.gif" alt="CompressionMTS_142.gif" width="426" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/CompressionMTS_143.gif" alt="CompressionMTS_143.gif" width="1043" height="15" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/walsh.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ Walsh functions and lossy compression.
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Walsh functions are best introduced via Hadamard matrices.</span>
+</p>
+
+
+
+<p class="Subtitle">
+ Hadamard matrices :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_1.gif" alt="walsh_1.gif" width="132" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_2.gif" alt="walsh_2.gif" width="479" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_3.gif" alt="walsh_3.gif" width="386" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/walsh_4.gif" alt="walsh_4.gif" width="85" height="28" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/walsh_5.gif" alt="walsh_5.gif" width="131" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/walsh_6.gif" alt="walsh_6.gif" width="223" height="117" style="vertical-align:middle" />
+</p>
+
+<p class="Print">
+ <img src="HTMLFiles/walsh_7.gif" alt="walsh_7.gif" width="407" height="237" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Walsh-1D functions :
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Walsh functions are given by the rows (equivalently the columns) of the Hadamard matrices.</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_8.gif" alt="walsh_8.gif" width="189" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Two examples : s = 3 (8 functions) and s = 4 (16 functions) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_9.gif" alt="walsh_9.gif" width="761" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_10.gif" alt="walsh_10.gif" width="604" height="183" style="vertical-align:middle;" usemap="#map_10" />
+<map name="map_10">
+<area shape="rect" coords="584,175,599,137" title="-1" nohref  />
+<area shape="rect" coords="570,138,585,99" title="1" nohref  />
+<area shape="rect" coords="555,138,571,99" title="1" nohref  />
+<area shape="rect" coords="541,175,556,137" title="-1" nohref  />
+<area shape="rect" coords="527,138,542,99" title="1" nohref  />
+<area shape="rect" coords="513,175,528,137" title="-1" nohref  />
+<area shape="rect" coords="498,175,514,137" title="-1" nohref  />
+<area shape="rect" coords="484,138,499,99" title="1" nohref  />
+<area shape="rect" coords="430,138,446,99" title="1" nohref  />
+<area shape="rect" coords="416,138,431,99" title="1" nohref  />
+<area shape="rect" coords="402,175,417,137" title="-1" nohref  />
+<area shape="rect" coords="387,175,403,137" title="-1" nohref  />
+<area shape="rect" coords="373,175,388,137" title="-1" nohref  />
+<area shape="rect" coords="359,175,374,137" title="-1" nohref  />
+<area shape="rect" coords="345,138,360,99" title="1" nohref  />
+<area shape="rect" coords="330,138,346,99" title="1" nohref  />
+<area shape="rect" coords="277,138,292,99" title="1" nohref  />
+<area shape="rect" coords="262,175,278,137" title="-1" nohref  />
+<area shape="rect" coords="248,138,263,99" title="1" nohref  />
+<area shape="rect" coords="234,175,249,137" title="-1" nohref  />
+<area shape="rect" coords="220,175,235,137" title="-1" nohref  />
+<area shape="rect" coords="205,138,221,99" title="1" nohref  />
+<area shape="rect" coords="191,175,206,137" title="-1" nohref  />
+<area shape="rect" coords="177,138,192,99" title="1" nohref  />
+<area shape="rect" coords="123,175,138,137" title="-1" nohref  />
+<area shape="rect" coords="109,175,124,137" title="-1" nohref  />
+<area shape="rect" coords="95,175,110,137" title="-1" nohref  />
+<area shape="rect" coords="80,175,96,137" title="-1" nohref  />
+<area shape="rect" coords="66,138,81,99" title="1" nohref  />
+<area shape="rect" coords="52,138,67,99" title="1" nohref  />
+<area shape="rect" coords="38,138,53,99" title="1" nohref  />
+<area shape="rect" coords="23,138,39,99" title="1" nohref  />
+<area shape="rect" coords="584,44,599,5" title="1" nohref  />
+<area shape="rect" coords="570,81,585,43" title="-1" nohref  />
+<area shape="rect" coords="555,81,571,43" title="-1" nohref  />
+<area shape="rect" coords="541,44,556,5" title="1" nohref  />
+<area shape="rect" coords="527,44,542,5" title="1" nohref  />
+<area shape="rect" coords="513,81,528,43" title="-1" nohref  />
+<area shape="rect" coords="498,81,514,43" title="-1" nohref  />
+<area shape="rect" coords="484,44,499,5" title="1" nohref  />
+<area shape="rect" coords="430,81,446,43" title="-1" nohref  />
+<area shape="rect" coords="416,81,431,43" title="-1" nohref  />
+<area shape="rect" coords="402,44,417,5" title="1" nohref  />
+<area shape="rect" coords="387,44,403,5" title="1" nohref  />
+<area shape="rect" coords="373,81,388,43" title="-1" nohref  />
+<area shape="rect" coords="359,81,374,43" title="-1" nohref  />
+<area shape="rect" coords="345,44,360,5" title="1" nohref  />
+<area shape="rect" coords="330,44,346,5" title="1" nohref  />
+<area shape="rect" coords="277,81,292,43" title="-1" nohref  />
+<area shape="rect" coords="262,44,278,5" title="1" nohref  />
+<area shape="rect" coords="248,81,263,43" title="-1" nohref  />
+<area shape="rect" coords="234,44,249,5" title="1" nohref  />
+<area shape="rect" coords="220,81,235,43" title="-1" nohref  />
+<area shape="rect" coords="205,44,221,5" title="1" nohref  />
+<area shape="rect" coords="191,81,206,43" title="-1" nohref  />
+<area shape="rect" coords="177,44,192,5" title="1" nohref  />
+<area shape="rect" coords="123,44,138,5" title="1" nohref  />
+<area shape="rect" coords="109,44,124,5" title="1" nohref  />
+<area shape="rect" coords="95,44,110,5" title="1" nohref  />
+<area shape="rect" coords="80,44,96,5" title="1" nohref  />
+<area shape="rect" coords="66,44,81,5" title="1" nohref  />
+<area shape="rect" coords="52,44,67,5" title="1" nohref  />
+<area shape="rect" coords="38,44,53,5" title="1" nohref  />
+<area shape="rect" coords="23,44,39,5" title="1" nohref  />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_11.gif" alt="walsh_11.gif" width="768" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_12.gif" alt="walsh_12.gif" width="590" height="365" style="vertical-align:middle;" usemap="#map_12" />
+<map name="map_12">
+<area shape="rect" coords="578,321,586,284" title="1" nohref  />
+<area shape="rect" coords="571,357,579,320" title="-1" nohref  />
+<area shape="rect" coords="564,357,572,320" title="-1" nohref  />
+<area shape="rect" coords="557,321,565,284" title="1" nohref  />
+<area shape="rect" coords="550,357,558,320" title="-1" nohref  />
+<area shape="rect" coords="543,321,551,284" title="1" nohref  />
+<area shape="rect" coords="536,321,544,284" title="1" nohref  />
+<area shape="rect" coords="529,357,537,320" title="-1" nohref  />
+<area shape="rect" coords="522,357,530,320" title="-1" nohref  />
+<area shape="rect" coords="515,321,523,284" title="1" nohref  />
+<area shape="rect" coords="508,321,516,284" title="1" nohref  />
+<area shape="rect" coords="501,357,509,320" title="-1" nohref  />
+<area shape="rect" coords="494,321,502,284" title="1" nohref  />
+<area shape="rect" coords="487,357,495,320" title="-1" nohref  />
+<area shape="rect" coords="480,357,488,320" title="-1" nohref  />
+<area shape="rect" coords="473,321,481,284" title="1" nohref  />
+<area shape="rect" coords="428,357,436,320" title="-1" nohref  />
+<area shape="rect" coords="421,357,429,320" title="-1" nohref  />
+<area shape="rect" coords="414,321,422,284" title="1" nohref  />
+<area shape="rect" coords="407,321,415,284" title="1" nohref  />
+<area shape="rect" coords="400,321,408,284" title="1" nohref  />
+<area shape="rect" coords="393,321,401,284" title="1" nohref  />
+<area shape="rect" coords="386,357,394,320" title="-1" nohref  />
+<area shape="rect" coords="379,357,387,320" title="-1" nohref  />
+<area shape="rect" coords="372,321,380,284" title="1" nohref  />
+<area shape="rect" coords="365,321,373,284" title="1" nohref  />
+<area shape="rect" coords="358,357,366,320" title="-1" nohref  />
+<area shape="rect" coords="351,357,359,320" title="-1" nohref  />
+<area shape="rect" coords="344,357,352,320" title="-1" nohref  />
+<area shape="rect" coords="337,357,345,320" title="-1" nohref  />
+<area shape="rect" coords="330,321,338,284" title="1" nohref  />
+<area shape="rect" coords="323,321,331,284" title="1" nohref  />
+<area shape="rect" coords="278,357,286,320" title="-1" nohref  />
+<area shape="rect" coords="271,321,279,284" title="1" nohref  />
+<area shape="rect" coords="264,357,272,320" title="-1" nohref  />
+<area shape="rect" coords="257,321,265,284" title="1" nohref  />
+<area shape="rect" coords="250,321,258,284" title="1" nohref  />
+<area shape="rect" coords="243,357,251,320" title="-1" nohref  />
+<area shape="rect" coords="236,321,244,284" title="1" nohref  />
+<area shape="rect" coords="229,357,237,320" title="-1" nohref  />
+<area shape="rect" coords="222,321,230,284" title="1" nohref  />
+<area shape="rect" coords="215,357,223,320" title="-1" nohref  />
+<area shape="rect" coords="208,321,216,284" title="1" nohref  />
+<area shape="rect" coords="201,357,209,320" title="-1" nohref  />
+<area shape="rect" coords="194,357,202,320" title="-1" nohref  />
+<area shape="rect" coords="187,321,195,284" title="1" nohref  />
+<area shape="rect" coords="180,357,188,320" title="-1" nohref  />
+<area shape="rect" coords="173,321,181,284" title="1" nohref  />
+<area shape="rect" coords="128,321,136,284" title="1" nohref  />
+<area shape="rect" coords="121,321,129,284" title="1" nohref  />
+<area shape="rect" coords="114,321,122,284" title="1" nohref  />
+<area shape="rect" coords="107,321,115,284" title="1" nohref  />
+<area shape="rect" coords="100,357,108,320" title="-1" nohref  />
+<area shape="rect" coords="93,357,101,320" title="-1" nohref  />
+<area shape="rect" coords="86,357,94,320" title="-1" nohref  />
+<area shape="rect" coords="79,357,87,320" title="-1" nohref  />
+<area shape="rect" coords="72,357,80,320" title="-1" nohref  />
+<area shape="rect" coords="65,357,73,320" title="-1" nohref  />
+<area shape="rect" coords="58,357,66,320" title="-1" nohref  />
+<area shape="rect" coords="51,357,59,320" title="-1" nohref  />
+<area shape="rect" coords="44,321,52,284" title="1" nohref  />
+<area shape="rect" coords="37,321,45,284" title="1" nohref  />
+<area shape="rect" coords="30,321,38,284" title="1" nohref  />
+<area shape="rect" coords="23,321,31,284" title="1" nohref  />
+<area shape="rect" coords="578,264,586,227" title="-1" nohref  />
+<area shape="rect" coords="571,228,579,192" title="1" nohref  />
+<area shape="rect" coords="564,228,572,192" title="1" nohref  />
+<area shape="rect" coords="557,264,565,227" title="-1" nohref  />
+<area shape="rect" coords="550,264,558,227" title="-1" nohref  />
+<area shape="rect" coords="543,228,551,192" title="1" nohref  />
+<area shape="rect" coords="536,228,544,192" title="1" nohref  />
+<area shape="rect" coords="529,264,537,227" title="-1" nohref  />
+<area shape="rect" coords="522,228,530,192" title="1" nohref  />
+<area shape="rect" coords="515,264,523,227" title="-1" nohref  />
+<area shape="rect" coords="508,264,516,227" title="-1" nohref  />
+<area shape="rect" coords="501,228,509,192" title="1" nohref  />
+<area shape="rect" coords="494,228,502,192" title="1" nohref  />
+<area shape="rect" coords="487,264,495,227" title="-1" nohref  />
+<area shape="rect" coords="480,264,488,227" title="-1" nohref  />
+<area shape="rect" coords="473,228,481,192" title="1" nohref  />
+<area shape="rect" coords="428,228,436,192" title="1" nohref  />
+<area shape="rect" coords="421,228,429,192" title="1" nohref  />
+<area shape="rect" coords="414,264,422,227" title="-1" nohref  />
+<area shape="rect" coords="407,264,415,227" title="-1" nohref  />
+<area shape="rect" coords="400,228,408,192" title="1" nohref  />
+<area shape="rect" coords="393,228,401,192" title="1" nohref  />
+<area shape="rect" coords="386,264,394,227" title="-1" nohref  />
+<area shape="rect" coords="379,264,387,227" title="-1" nohref  />
+<area shape="rect" coords="372,264,380,227" title="-1" nohref  />
+<area shape="rect" coords="365,264,373,227" title="-1" nohref  />
+<area shape="rect" coords="358,228,366,192" title="1" nohref  />
+<area shape="rect" coords="351,228,359,192" title="1" nohref  />
+<area shape="rect" coords="344,264,352,227" title="-1" nohref  />
+<area shape="rect" coords="337,264,345,227" title="-1" nohref  />
+<area shape="rect" coords="330,228,338,192" title="1" nohref  />
+<area shape="rect" coords="323,228,331,192" title="1" nohref  />
+<area shape="rect" coords="278,228,286,192" title="1" nohref  />
+<area shape="rect" coords="271,264,279,227" title="-1" nohref  />
+<area shape="rect" coords="264,228,272,192" title="1" nohref  />
+<area shape="rect" coords="257,264,265,227" title="-1" nohref  />
+<area shape="rect" coords="250,228,258,192" title="1" nohref  />
+<area shape="rect" coords="243,264,251,227" title="-1" nohref  />
+<area shape="rect" coords="236,228,244,192" title="1" nohref  />
+<area shape="rect" coords="229,264,237,227" title="-1" nohref  />
+<area shape="rect" coords="222,264,230,227" title="-1" nohref  />
+<area shape="rect" coords="215,228,223,192" title="1" nohref  />
+<area shape="rect" coords="208,264,216,227" title="-1" nohref  />
+<area shape="rect" coords="201,228,209,192" title="1" nohref  />
+<area shape="rect" coords="194,264,202,227" title="-1" nohref  />
+<area shape="rect" coords="187,228,195,192" title="1" nohref  />
+<area shape="rect" coords="180,264,188,227" title="-1" nohref  />
+<area shape="rect" coords="173,228,181,192" title="1" nohref  />
+<area shape="rect" coords="128,264,136,227" title="-1" nohref  />
+<area shape="rect" coords="121,264,129,227" title="-1" nohref  />
+<area shape="rect" coords="114,264,122,227" title="-1" nohref  />
+<area shape="rect" coords="107,264,115,227" title="-1" nohref  />
+<area shape="rect" coords="100,264,108,227" title="-1" nohref  />
+<area shape="rect" coords="93,264,101,227" title="-1" nohref  />
+<area shape="rect" coords="86,264,94,227" title="-1" nohref  />
+<area shape="rect" coords="79,264,87,227" title="-1" nohref  />
+<area shape="rect" coords="72,228,80,192" title="1" nohref  />
+<area shape="rect" coords="65,228,73,192" title="1" nohref  />
+<area shape="rect" coords="58,228,66,192" title="1" nohref  />
+<area shape="rect" coords="51,228,59,192" title="1" nohref  />
+<area shape="rect" coords="44,228,52,192" title="1" nohref  />
+<area shape="rect" coords="37,228,45,192" title="1" nohref  />
+<area shape="rect" coords="30,228,38,192" title="1" nohref  />
+<area shape="rect" coords="23,228,31,192" title="1" nohref  />
+<area shape="rect" coords="578,171,586,135" title="-1" nohref  />
+<area shape="rect" coords="571,136,579,99" title="1" nohref  />
+<area shape="rect" coords="564,136,572,99" title="1" nohref  />
+<area shape="rect" coords="557,171,565,135" title="-1" nohref  />
+<area shape="rect" coords="550,136,558,99" title="1" nohref  />
+<area shape="rect" coords="543,171,551,135" title="-1" nohref  />
+<area shape="rect" coords="536,171,544,135" title="-1" nohref  />
+<area shape="rect" coords="529,136,537,99" title="1" nohref  />
+<area shape="rect" coords="522,171,530,135" title="-1" nohref  />
+<area shape="rect" coords="515,136,523,99" title="1" nohref  />
+<area shape="rect" coords="508,136,516,99" title="1" nohref  />
+<area shape="rect" coords="501,171,509,135" title="-1" nohref  />
+<area shape="rect" coords="494,136,502,99" title="1" nohref  />
+<area shape="rect" coords="487,171,495,135" title="-1" nohref  />
+<area shape="rect" coords="480,171,488,135" title="-1" nohref  />
+<area shape="rect" coords="473,136,481,99" title="1" nohref  />
+<area shape="rect" coords="428,136,436,99" title="1" nohref  />
+<area shape="rect" coords="421,136,429,99" title="1" nohref  />
+<area shape="rect" coords="414,171,422,135" title="-1" nohref  />
+<area shape="rect" coords="407,171,415,135" title="-1" nohref  />
+<area shape="rect" coords="400,171,408,135" title="-1" nohref  />
+<area shape="rect" coords="393,171,401,135" title="-1" nohref  />
+<area shape="rect" coords="386,136,394,99" title="1" nohref  />
+<area shape="rect" coords="379,136,387,99" title="1" nohref  />
+<area shape="rect" coords="372,136,380,99" title="1" nohref  />
+<area shape="rect" coords="365,136,373,99" title="1" nohref  />
+<area shape="rect" coords="358,171,366,135" title="-1" nohref  />
+<area shape="rect" coords="351,171,359,135" title="-1" nohref  />
+<area shape="rect" coords="344,171,352,135" title="-1" nohref  />
+<area shape="rect" coords="337,171,345,135" title="-1" nohref  />
+<area shape="rect" coords="330,136,338,99" title="1" nohref  />
+<area shape="rect" coords="323,136,331,99" title="1" nohref  />
+<area shape="rect" coords="278,136,286,99" title="1" nohref  />
+<area shape="rect" coords="271,171,279,135" title="-1" nohref  />
+<area shape="rect" coords="264,136,272,99" title="1" nohref  />
+<area shape="rect" coords="257,171,265,135" title="-1" nohref  />
+<area shape="rect" coords="250,171,258,135" title="-1" nohref  />
+<area shape="rect" coords="243,136,251,99" title="1" nohref  />
+<area shape="rect" coords="236,171,244,135" title="-1" nohref  />
+<area shape="rect" coords="229,136,237,99" title="1" nohref  />
+<area shape="rect" coords="222,136,230,99" title="1" nohref  />
+<area shape="rect" coords="215,171,223,135" title="-1" nohref  />
+<area shape="rect" coords="208,136,216,99" title="1" nohref  />
+<area shape="rect" coords="201,171,209,135" title="-1" nohref  />
+<area shape="rect" coords="194,171,202,135" title="-1" nohref  />
+<area shape="rect" coords="187,136,195,99" title="1" nohref  />
+<area shape="rect" coords="180,171,188,135" title="-1" nohref  />
+<area shape="rect" coords="173,136,181,99" title="1" nohref  />
+<area shape="rect" coords="128,171,136,135" title="-1" nohref  />
+<area shape="rect" coords="121,171,129,135" title="-1" nohref  />
+<area shape="rect" coords="114,171,122,135" title="-1" nohref  />
+<area shape="rect" coords="107,171,115,135" title="-1" nohref  />
+<area shape="rect" coords="100,136,108,99" title="1" nohref  />
+<area shape="rect" coords="93,136,101,99" title="1" nohref  />
+<area shape="rect" coords="86,136,94,99" title="1" nohref  />
+<area shape="rect" coords="79,136,87,99" title="1" nohref  />
+<area shape="rect" coords="72,171,80,135" title="-1" nohref  />
+<area shape="rect" coords="65,171,73,135" title="-1" nohref  />
+<area shape="rect" coords="58,171,66,135" title="-1" nohref  />
+<area shape="rect" coords="51,171,59,135" title="-1" nohref  />
+<area shape="rect" coords="44,136,52,99" title="1" nohref  />
+<area shape="rect" coords="37,136,45,99" title="1" nohref  />
+<area shape="rect" coords="30,136,38,99" title="1" nohref  />
+<area shape="rect" coords="23,136,31,99" title="1" nohref  />
+<area shape="rect" coords="578,43,586,6" title="1" nohref  />
+<area shape="rect" coords="571,79,579,42" title="-1" nohref  />
+<area shape="rect" coords="564,79,572,42" title="-1" nohref  />
+<area shape="rect" coords="557,43,565,6" title="1" nohref  />
+<area shape="rect" coords="550,43,558,6" title="1" nohref  />
+<area shape="rect" coords="543,79,551,42" title="-1" nohref  />
+<area shape="rect" coords="536,79,544,42" title="-1" nohref  />
+<area shape="rect" coords="529,43,537,6" title="1" nohref  />
+<area shape="rect" coords="522,43,530,6" title="1" nohref  />
+<area shape="rect" coords="515,79,523,42" title="-1" nohref  />
+<area shape="rect" coords="508,79,516,42" title="-1" nohref  />
+<area shape="rect" coords="501,43,509,6" title="1" nohref  />
+<area shape="rect" coords="494,43,502,6" title="1" nohref  />
+<area shape="rect" coords="487,79,495,42" title="-1" nohref  />
+<area shape="rect" coords="480,79,488,42" title="-1" nohref  />
+<area shape="rect" coords="473,43,481,6" title="1" nohref  />
+<area shape="rect" coords="428,79,436,42" title="-1" nohref  />
+<area shape="rect" coords="421,79,429,42" title="-1" nohref  />
+<area shape="rect" coords="414,43,422,6" title="1" nohref  />
+<area shape="rect" coords="407,43,415,6" title="1" nohref  />
+<area shape="rect" coords="400,79,408,42" title="-1" nohref  />
+<area shape="rect" coords="393,79,401,42" title="-1" nohref  />
+<area shape="rect" coords="386,43,394,6" title="1" nohref  />
+<area shape="rect" coords="379,43,387,6" title="1" nohref  />
+<area shape="rect" coords="372,79,380,42" title="-1" nohref  />
+<area shape="rect" coords="365,79,373,42" title="-1" nohref  />
+<area shape="rect" coords="358,43,366,6" title="1" nohref  />
+<area shape="rect" coords="351,43,359,6" title="1" nohref  />
+<area shape="rect" coords="344,79,352,42" title="-1" nohref  />
+<area shape="rect" coords="337,79,345,42" title="-1" nohref  />
+<area shape="rect" coords="330,43,338,6" title="1" nohref  />
+<area shape="rect" coords="323,43,331,6" title="1" nohref  />
+<area shape="rect" coords="278,79,286,42" title="-1" nohref  />
+<area shape="rect" coords="271,43,279,6" title="1" nohref  />
+<area shape="rect" coords="264,79,272,42" title="-1" nohref  />
+<area shape="rect" coords="257,43,265,6" title="1" nohref  />
+<area shape="rect" coords="250,79,258,42" title="-1" nohref  />
+<area shape="rect" coords="243,43,251,6" title="1" nohref  />
+<area shape="rect" coords="236,79,244,42" title="-1" nohref  />
+<area shape="rect" coords="229,43,237,6" title="1" nohref  />
+<area shape="rect" coords="222,79,230,42" title="-1" nohref  />
+<area shape="rect" coords="215,43,223,6" title="1" nohref  />
+<area shape="rect" coords="208,79,216,42" title="-1" nohref  />
+<area shape="rect" coords="201,43,209,6" title="1" nohref  />
+<area shape="rect" coords="194,79,202,42" title="-1" nohref  />
+<area shape="rect" coords="187,43,195,6" title="1" nohref  />
+<area shape="rect" coords="180,79,188,42" title="-1" nohref  />
+<area shape="rect" coords="173,43,181,6" title="1" nohref  />
+<area shape="rect" coords="128,43,136,6" title="1" nohref  />
+<area shape="rect" coords="121,43,129,6" title="1" nohref  />
+<area shape="rect" coords="114,43,122,6" title="1" nohref  />
+<area shape="rect" coords="107,43,115,6" title="1" nohref  />
+<area shape="rect" coords="100,43,108,6" title="1" nohref  />
+<area shape="rect" coords="93,43,101,6" title="1" nohref  />
+<area shape="rect" coords="86,43,94,6" title="1" nohref  />
+<area shape="rect" coords="79,43,87,6" title="1" nohref  />
+<area shape="rect" coords="72,43,80,6" title="1" nohref  />
+<area shape="rect" coords="65,43,73,6" title="1" nohref  />
+<area shape="rect" coords="58,43,66,6" title="1" nohref  />
+<area shape="rect" coords="51,43,59,6" title="1" nohref  />
+<area shape="rect" coords="44,43,52,6" title="1" nohref  />
+<area shape="rect" coords="37,43,45,6" title="1" nohref  />
+<area shape="rect" coords="30,43,38,6" title="1" nohref  />
+<area shape="rect" coords="23,43,31,6" title="1" nohref  />
+</map>
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Walsh functions are orthonormed with respect to the following scalar product :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_13.gif" alt="walsh_13.gif" width="146" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_14.gif" alt="walsh_14.gif" width="522" height="18" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_15.gif" alt="walsh_15.gif" width="132" height="117" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>An arbitrary binary 1D-function (say {1,1,1,1,1,1,-1,-1} if s = 3)&nbsp;&nbsp;is expandable in the basis of 1D-Walsh functions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_16.gif" alt="walsh_16.gif" width="661" height="42" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_17.gif" alt="walsh_17.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Walsh-2D functions :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_18.gif" alt="walsh_18.gif" width="434" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_19.gif" alt="walsh_19.gif" width="687" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_20.gif" alt="walsh_20.gif" width="360" height="360" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>The following character, R, is pixellized in a 64x64 grid :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_21.gif" alt="walsh_21.gif" width="477" height="66" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_22.gif" alt="walsh_22.gif" width="144" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_23.gif" alt="walsh_23.gif" width="1236" height="957" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_24.gif" alt="walsh_24.gif" width="102" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_25.gif" alt="walsh_25.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_26.gif" alt="walsh_26.gif" width="334" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>The walsh coefficients for the letter R :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_27.gif" alt="walsh_27.gif" width="329" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_28.gif" alt="walsh_28.gif" width="1424" height="1745" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>The walsh coefficients for the letter R, sorted in decreasing order (absolute value) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_29.gif" alt="walsh_29.gif" width="530" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_30.gif" alt="walsh_30.gif" width="1457" height="1251" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>An arbitrary binary 2D-function (say Rpixels)&nbsp;&nbsp;is expandable without loss in the basis of 2D-Walsh functions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_31.gif" alt="walsh_31.gif" width="478" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_32.gif" alt="walsh_32.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_33.gif" alt="walsh_33.gif" width="39" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_34.gif" alt="walsh_34.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Light truncation :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_35.gif" alt="walsh_35.gif" width="729" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_36.gif" alt="walsh_36.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_37.gif" alt="walsh_37.gif" width="565" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_38.gif" alt="walsh_38.gif" width="21" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Light truncation with greylevels erased :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_39.gif" alt="walsh_39.gif" width="723" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_40.gif" alt="walsh_40.gif" width="686" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_41.gif" alt="walsh_41.gif" width="77" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_42.gif" alt="walsh_42.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Medium truncation :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_43.gif" alt="walsh_43.gif" width="736" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_44.gif" alt="walsh_44.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_45.gif" alt="walsh_45.gif" width="572" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_46.gif" alt="walsh_46.gif" width="14" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Medium truncation with greylevels erased :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_47.gif" alt="walsh_47.gif" width="737" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_48.gif" alt="walsh_48.gif" width="686" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_49.gif" alt="walsh_49.gif" width="77" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_50.gif" alt="walsh_50.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Strong truncation :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_51.gif" alt="walsh_51.gif" width="736" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_52.gif" alt="walsh_52.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_53.gif" alt="walsh_53.gif" width="572" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_54.gif" alt="walsh_54.gif" width="14" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Strong truncation with greylevels erased :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_55.gif" alt="walsh_55.gif" width="737" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_56.gif" alt="walsh_56.gif" width="686" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/walsh_57.gif" alt="walsh_57.gif" width="77" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/walsh_58.gif" alt="walsh_58.gif" width="64" height="64" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

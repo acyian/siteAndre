@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/zenil.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ Simple binary Turing machines, their numbering, behaviour and output.
+</p>
+
+
+
+<p class="Subtitle">
+ <span style='font-family: Arial;'>Wolfram&rsquo;s numbering scheme of Turing machines with s states and k characters and no explicit halting state.</span>
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-weight: bold;'>Number </span><span style='font-family: Arial;font-weight: bold;'>of Turing machines with s states and k characters (binary machines are enligthed)</span><span style='font-weight: bold;'> :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_1.gif" alt="zenil_1.gif" width="1363" height="16" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span></span></td>
+  <td style='text-align: center;'><span>s&rarr;2</span></td>
+  <td style='text-align: center;'><span>s&rarr;3</span></td>
+  <td style='text-align: center;'><span>s&rarr;4</span></td>
+  <td style='text-align: center;'><span>s&rarr;5</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;2</span></td>
+  <td style='text-align: center;'><span>4096</span></td>
+  <td style='text-align: center;'><span>2985984</span></td>
+  <td style='text-align: center;'><span>4294967296</span></td>
+  <td style='text-align: center;'><span>10240000000000</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;3</span></td>
+  <td style='text-align: center;'><span>2985984</span></td>
+  <td style='text-align: center;'><span>198359290368</span></td>
+  <td style='text-align: center;'><span>36520347436056576</span></td>
+  <td style='text-align: center;'><span>14348907000000000000000</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;4</span></td>
+  <td style='text-align: center;'><span>4294967296</span></td>
+  <td style='text-align: center;'><span>36520347436056576</span></td>
+  <td style='text-align: center;'><span>1208925819614629174706176</span></td>
+  <td style='text-align: center;'><span>109951162777600000000000000000000</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>k&rarr;5</span></td>
+  <td style='text-align: center;'><span>10240000000000</span></td>
+  <td style='text-align: center;'><span>14348907000000000000000</span></td>
+  <td style='text-align: center;'><span>109951162777600000000000000000000</span></td>
+  <td style='text-align: center;'><span>2980232238769531250000000000000000000000000</span></td>
+ </tr>
+</table>
+
+<p class="Subsubtitle">
+ Instructions table of a machine whose rule number is given :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_2.gif" alt="zenil_2.gif" width="1318" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_3.gif" alt="zenil_3.gif" width="208" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_4.gif" alt="zenil_4.gif" width="1579" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Rule number of a machine whose instructions table is given :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_5.gif" alt="zenil_5.gif" width="854" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_6.gif" alt="zenil_6.gif" width="1649" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_7.gif" alt="zenil_7.gif" width="60" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Clearly TMNumber annihilates instructions :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_8.gif" alt="zenil_8.gif" width="328" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_9.gif" alt="zenil_9.gif" width="60" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>The s&times;k triplets, (s,k,d), associated to a given rule, in Wolfram&rsquo;s canonical order (s =1, 2, ...;k=0, 1, ...; d=-1,+1) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_10.gif" alt="zenil_10.gif" width="493" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_11.gif" alt="zenil_11.gif" width="180" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_12.gif" alt="zenil_12.gif" width="907" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>The same triplets in shifted mode (s =0, 1, ...;k=0, 1, ...; d=0,1) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_13.gif" alt="zenil_13.gif" width="845" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_14.gif" alt="zenil_14.gif" width="229" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_15.gif" alt="zenil_15.gif" width="819" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Recovering the machine rule number from the shifted triplets :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_16.gif" alt="zenil_16.gif" width="852" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_17.gif" alt="zenil_17.gif" width="1072" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_18.gif" alt="zenil_18.gif" width="60" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_19.gif" alt="zenil_19.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example : running binary 2-state machine 2867 on an initially white tape :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_20.gif" alt="zenil_20.gif" width="1360" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_21.gif" alt="zenil_21.gif" width="42" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_22.gif" alt="zenil_22.gif" width="49" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_23.gif" alt="Graphics:{2, 2, 2867}" width="213" height="432" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Running on an initially black tape reverses the black and white cells if the rule number is suitably changed (permute successive odd and even triplets and flip the character bit in each triplet) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_24.gif" alt="zenil_24.gif" width="197" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_25.gif" alt="zenil_25.gif" width="275" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_26.gif" alt="zenil_26.gif" width="528" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_27.gif" alt="zenil_27.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_28.gif" alt="zenil_28.gif" width="528" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_29.gif" alt="zenil_29.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_30.gif" alt="zenil_30.gif" width="1358" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_31.gif" alt="zenil_31.gif" width="49" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[20]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_32.gif" alt="Graphics:{2, 2, 3532}" width="213" height="432" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_33.gif" alt="zenil_33.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Analysis of the 4096 2-states binary machines.
+</p>
+
+
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Some machines surely do not halt and may be discarded :</span>
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 1.&nbsp;&nbsp;</span><span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Machines</span><span style='font-family: Arial;font-weight: bold;'> that do not halt because the head moves repeatedly to the left&nbsp;&nbsp;(in shifted mode : (</span>&sigma;<span style='font-family: Arial;font-weight: bold;'>,0)-&gt;(</span>&sigma;<span style='font-family: Arial;font-weight: bold;'>&rsquo;,</span>&kappa;&rsquo;<span style='font-family: Arial;font-weight: bold;'>,0)):</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_34.gif" alt="zenil_34.gif" width="1566" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_35.gif" alt="zenil_35.gif" width="1568" height="472" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_36.gif" alt="zenil_36.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_37.gif" alt="zenil_37.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 2.&nbsp;&nbsp;&nbsp;</span><span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Machines</span><span style='font-family: Arial;font-weight: bold;'> that do not halt because the initial instruction is applied repeatedly (in shifted mode : (0,0)-&gt;( 0,</span>&kappa;<span style='font-family: Arial;font-weight: bold;'>,0)) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_38.gif" alt="zenil_38.gif" width="1566" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_39.gif" alt="zenil_39.gif" width="1693" height="453" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_40.gif" alt="zenil_40.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_41.gif" alt="zenil_41.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ Subsets 1 &amp; 2 are not disjoint&nbsp;&nbsp;:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_42.gif" alt="zenil_42.gif" width="214" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_43.gif" alt="zenil_43.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_44.gif" alt="zenil_44.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>One half (2048) of the machines halt in one step :</span>
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 3 : Machines that halt in one step outputing a single white cell.</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_45.gif" alt="zenil_45.gif" width="1566" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_46.gif" alt="zenil_46.gif" width="1575" height="472" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_47.gif" alt="zenil_47.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_48.gif" alt="zenil_48.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_49.gif" alt="zenil_49.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 4 : Machines that halt in one step outputing a single black cell.</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_50.gif" alt="zenil_50.gif" width="1566" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_51.gif" alt="zenil_51.gif" width="1635" height="472" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_52.gif" alt="zenil_52.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_53.gif" alt="zenil_53.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_54.gif" alt="zenil_54.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Machines belonging to the union of the previous subsets are rather trivial.&nbsp;&nbsp;The other machines belong to the &ldquo;reduced&rdquo; set :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_55.gif" alt="zenil_55.gif" width="610" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_56.gif" alt="zenil_56.gif" width="70" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_57.gif" alt="zenil_57.gif" width="1486" height="244" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_58.gif" alt="zenil_58.gif" width="126" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_59.gif" alt="zenil_59.gif" width="21" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Evolution of the 512 &ldquo;not so&rdquo; trivial machines on an initially white tape :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_60.gif" alt="zenil_60.gif" width="1442" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_61.gif" alt="zenil_61.gif" width="513" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_62.gif" alt="zenil_62.gif" width="962" height="4061" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;'>Observe that the busiest machines output 111 in 7 steps (Rule numbers, 423, 935, 1447, 1959, 2439, 2471, 2983, 3495, 3891, 4007) or 101 in 7 steps too (Rule number, 2867).</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_63.gif" alt="zenil_63.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Output inventory of the halting 2-states binary machines.
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;'>Mathematica</span> preliminaries :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_64.gif" alt="zenil_64.gif" width="467" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_65.gif" alt="zenil_65.gif" width="765" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_66.gif" alt="zenil_66.gif" width="876" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_67.gif" alt="zenil_67.gif" width="800" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_68.gif" alt="zenil_68.gif" width="856" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ One only runs the 512 machines from the reduced set and, after that, one reintroduces the discarded one-step halting machines :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_69.gif" alt="zenil_69.gif" width="1124" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_70.gif" alt="zenil_70.gif" width="88" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_71.gif" alt="zenil_71.gif" width="91" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_72.gif" alt="zenil_72.gif" width="580" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_73.gif" alt="zenil_73.gif" width="432" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_74.gif" alt="zenil_74.gif" width="750" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_75.gif" alt="zenil_75.gif" width="71" height="16" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0}</span></td>
+  <td style='text-align: center;'><span>1024</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1}</span></td>
+  <td style='text-align: center;'><span>1024</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0}</span></td>
+  <td style='text-align: center;'><span>106</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1}</span></td>
+  <td style='text-align: center;'><span>108</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1}</span></td>
+  <td style='text-align: center;'><span>42</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0}</span></td>
+  <td style='text-align: center;'><span>32</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1}</span></td>
+  <td style='text-align: center;'><span>10</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,1}</span></td>
+  <td style='text-align: center;'><span>1</span></td>
+ </tr>
+</table>
+
+<p class="Subsubtitle">
+ The output has been read from left to rigth but it may equally well be read from rigth to left :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_76.gif" alt="zenil_76.gif" width="503" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_77.gif" alt="zenil_77.gif" width="1497" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_78.gif" alt="zenil_78.gif" width="1217" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_79.gif" alt="zenil_79.gif" width="43" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_80.gif" alt="zenil_80.gif" width="750" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ The tape may equally well be initially completely black :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_81.gif" alt="zenil_81.gif" width="1141" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_82.gif" alt="zenil_82.gif" width="1497" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_83.gif" alt="zenil_83.gif" width="1405" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_84.gif" alt="zenil_84.gif" width="64" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_85.gif" alt="zenil_85.gif" width="971" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_86.gif" alt="zenil_86.gif" width="225" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_87.gif" alt="zenil_87.gif" width="28" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_88.gif" alt="zenil_88.gif" width="566" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_89.gif" alt="zenil_89.gif" width="1447" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_90.gif" alt="zenil_90.gif" width="1264" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_91.gif" alt="zenil_91.gif" width="537" height="163" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ From left to rigth : halting 2-states machines 1) on a white tape, output read from left to rigth&nbsp;&nbsp;2) on a white tape, output read in both directions&nbsp;&nbsp;3) and 4) on a white or black tape, output read in both directions (completely symmetrical under 0-1 and rigth-left inversions).
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_92.gif" alt="zenil_92.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Analysis of the 2985984 3-states binary machines.
+</p>
+
+
+
+<p class="Subtitle">
+ <span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Some machines surely do not halt and may be discarded :</span>
+</p>
+
+
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 1.&nbsp;&nbsp;</span><span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Machines</span><span style='font-family: Arial;font-weight: bold;'> that do not halt because the head moves repeatedly to the left&nbsp;&nbsp;(in shifted mode : (</span>&sigma;<span style='font-family: Arial;font-weight: bold;'>,0)-&gt;(</span>&sigma;<span style='font-family: Arial;font-weight: bold;'>&rsquo;,</span>&kappa;&rsquo;<span style='font-family: Arial;font-weight: bold;'>,0)):</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_93.gif" alt="zenil_93.gif" width="1449" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_94.gif" alt="zenil_94.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_95.gif" alt="zenil_95.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_96.gif" alt="zenil_96.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 2.&nbsp;&nbsp;&nbsp;</span><span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Machines</span><span style='font-family: Arial;font-weight: bold;'> that do not halt because the initial instruction is applied repeatedly (in shifted mode : (0,0)-&gt;( 0,</span>&kappa;<span style='font-family: Arial;font-weight: bold;'>,0)) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_97.gif" alt="zenil_97.gif" width="1456" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_98.gif" alt="zenil_98.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_99.gif" alt="zenil_99.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_100.gif" alt="zenil_100.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 3.&nbsp;&nbsp;&nbsp;</span><span class='SubsubtitleInline' style='font-family: Arial;font-weight: bold;'>Machines</span><span style='font-family: Arial;font-weight: bold;'> that do not halt because they execute repeatedly a specific pair of instructions (in shifted mode : (0,0)-&gt;( 1,</span>&kappa;<span style='font-family: Arial;font-weight: bold;'>,0) and&nbsp;&nbsp;(1,0)-&gt;( </span>&sigma;&rsquo;<span style='font-family: Arial;font-weight: bold;'>,</span>&kappa;&rsquo;<span style='font-family: Arial;font-weight: bold;'>,0) :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_101.gif" alt="zenil_101.gif" width="1474" height="117" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_102.gif" alt="zenil_102.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_103.gif" alt="zenil_103.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_104.gif" alt="zenil_104.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 4 : Machines that halt in one step outputing a single white cell.</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_105.gif" alt="zenil_105.gif" width="1456" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_106.gif" alt="zenil_106.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_107.gif" alt="zenil_107.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_108.gif" alt="zenil_108.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Example 5 : Machines that halt in one step outputing a single black cell.</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_109.gif" alt="zenil_109.gif" width="1456" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_110.gif" alt="zenil_110.gif" width="105" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_111.gif" alt="zenil_111.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_112.gif" alt="zenil_112.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>Machines belonging to the union of the previous subsets are rather trivial.&nbsp;&nbsp;The other machines belong to the &ldquo;reduced&rdquo; set :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_113.gif" alt="zenil_113.gif" width="695" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_114.gif" alt="zenil_114.gif" width="126" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_115.gif" alt="zenil_115.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ <span style='font-family: Arial;font-weight: bold;'>The busiest 3-states machines halt in 25 steps :</span>
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_116.gif" alt="zenil_116.gif" width="1144" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_117.gif" alt="zenil_117.gif" width="102" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_118.gif" alt="zenil_118.gif" width="21" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_119.gif" alt="zenil_119.gif" width="515" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_120.gif" alt="zenil_120.gif" width="77" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_121.gif" alt="zenil_121.gif" width="7" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_122.gif" alt="zenil_122.gif" width="1393" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_123.gif" alt="zenil_123.gif" width="434" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[118]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_124.gif" alt="zenil_124.gif" width="869" height="491" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ Two most productive machine are among the busiest.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_125.gif" alt="zenil_125.gif" width="4" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Subtitle">
+ Output inventory of the halting 3-states binary machines.
+</p>
+
+
+
+<p class="Subsubtitle">
+ One only runs the 580608 machines from the reduced set and, after that, one reintroduces the discarded one-step halting machines :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_126.gif" alt="zenil_126.gif" width="1143" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_127.gif" alt="zenil_127.gif" width="102" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_128.gif" alt="zenil_128.gif" width="98" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_129.gif" alt="zenil_129.gif" width="44" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_130.gif" alt="zenil_130.gif" width="464" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_131.gif" alt="zenil_131.gif" width="1697" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_132.gif" alt="zenil_132.gif" width="71" height="16" style="vertical-align:middle" />
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0}</span></td>
+  <td style='text-align: center;'><span>746496</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1}</span></td>
+  <td style='text-align: center;'><span>746496</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0}</span></td>
+  <td style='text-align: center;'><span>95624</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1}</span></td>
+  <td style='text-align: center;'><span>96132</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0,0}</span></td>
+  <td style='text-align: center;'><span>11170</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1}</span></td>
+  <td style='text-align: center;'><span>15574</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0,1}</span></td>
+  <td style='text-align: center;'><span>2824</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1}</span></td>
+  <td style='text-align: center;'><span>52192</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,0}</span></td>
+  <td style='text-align: center;'><span>2962</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1,1}</span></td>
+  <td style='text-align: center;'><span>1192</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,1}</span></td>
+  <td style='text-align: center;'><span>2304</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1,0}</span></td>
+  <td style='text-align: center;'><span>2188</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0}</span></td>
+  <td style='text-align: center;'><span>45384</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1,1}</span></td>
+  <td style='text-align: center;'><span>2142</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,0}</span></td>
+  <td style='text-align: center;'><span>1860</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1,1,1}</span></td>
+  <td style='text-align: center;'><span>40</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,1,0}</span></td>
+  <td style='text-align: center;'><span>70</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,0,0}</span></td>
+  <td style='text-align: center;'><span>36</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,0,1}</span></td>
+  <td style='text-align: center;'><span>90</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,0,0}</span></td>
+  <td style='text-align: center;'><span>72</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1,1,1}</span></td>
+  <td style='text-align: center;'><span>458</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0,0,1}</span></td>
+  <td style='text-align: center;'><span>74</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1,0}</span></td>
+  <td style='text-align: center;'><span>96</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,1,0,1}</span></td>
+  <td style='text-align: center;'><span>54</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0,0,0}</span></td>
+  <td style='text-align: center;'><span>28</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,1,1}</span></td>
+  <td style='text-align: center;'><span>24</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1,1,1,1}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1,0,1}</span></td>
+  <td style='text-align: center;'><span>18</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,0,1}</span></td>
+  <td style='text-align: center;'><span>14</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,1,1,0}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1,0,0}</span></td>
+  <td style='text-align: center;'><span>4</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,1,1,1,1}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,0,0,1}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,0,1,1}</span></td>
+  <td style='text-align: center;'><span>4</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,0,0,1}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,0,0,0}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{0,1,1,0}</span></td>
+  <td style='text-align: center;'><span>4</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,1,0,1,0,1}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: center;'><span>{1,0,0,1,1}</span></td>
+  <td style='text-align: center;'><span>2</span></td>
+ </tr>
+</table>
+
+<p class="Subsubtitle">
+ The output has been read from left to rigth but it may equally well be read from rigth to left :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_133.gif" alt="zenil_133.gif" width="503" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_134.gif" alt="zenil_134.gif" width="1489" height="130" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_135.gif" alt="zenil_135.gif" width="1217" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_136.gif" alt="zenil_136.gif" width="43" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_137.gif" alt="zenil_137.gif" width="1482" height="73" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ The tape may equally well be initially completely black :
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_138.gif" alt="zenil_138.gif" width="1141" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_139.gif" alt="zenil_139.gif" width="1518" height="149" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_140.gif" alt="zenil_140.gif" width="1405" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_141.gif" alt="zenil_141.gif" width="64" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_142.gif" alt="zenil_142.gif" width="1685" height="92" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_143.gif" alt="zenil_143.gif" width="225" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_144.gif" alt="zenil_144.gif" width="53" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_145.gif" alt="zenil_145.gif" width="566" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_146.gif" alt="zenil_146.gif" width="1501" height="168" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/zenil_147.gif" alt="zenil_147.gif" width="1264" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/zenil_148.gif" alt="zenil_148.gif" width="827" height="1009" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubtitle">
+ From left to rigth : halting 3-states machines 1) on a white tape, output read from left to rigth&nbsp;&nbsp;2) on a white tape, output read in both directions&nbsp;&nbsp;3) and 4) on a white or black tape, output read in both directions (completely symmetrical under 0-1 and rigth-left inversions).
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Présentation</title>
+<!-- InstanceEndEditable -->
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="site">
+
+
+
+
+777777777777788888888888888888888888
+
+
+  <div id="bandeau"></div>
+  <div id="menugauche">
+    <h1>Physique</h1>
+    <div class="menu"><img src="images/einstein3.jpg" /></div>
+    <div class="bouton"><a href="index.html">Accueil </a></div>
+    <div class="bouton"><a href="contenuphysique.html">Présentation </a></div>
+    <div class="bouton"><a href="Seminaires.html">Séminaires </a></div>
+    <div class="bouton"><a href="cours.html">Cours </a></div>
+    <div><span style="color:#FC0">Divers : </span></div>
+    <div class="bouton0"><a href="phys.html">Phys </a></div>
+    <div class="bouton0"><a href="math.html">Math </a></div>
+    <div class="bouton0"><a href="info.html">Info </a></div>
+    <div class="bouton"><a href="feynmania.html">Feynmania </a></div>
+    <div class="bouton"><a href="wolframania.html">Wolframania </a></div>
+    <div class="bouton"><a href="references.html">Références </a></div>
+    
+</div>
+  
+  
+  <div id="menudroite">
+    <h1>Musique</h1>
+    <div class="menu"><img src="images/beethoven100.jpg" /></div>
+    <div class="bouton"><a href="index.html">Accueil </a></div>
+    <div class="bouton"><a href="contenumusique.html">Présentation </a></div>
+    <div class="bouton"><a href="musique2001.html">Musique 2001 </a></div>
+    <div class="bouton"><a href="crossover.html">Crossover </a></div>
+    <div class="bouton"><a href="chroniques.html">Chroniques :</a></div>
+    <div class="bouton0"><a href="billetdhumeur.html">  Billets d'Humeur </a></div>
+    <div class="bouton0"></div>
+    <div class="bouton0"><a href="tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
+    <div class="bouton0"><a href="portraitscompositeurs.html">Portraits </a></div>
+    <div class="bouton0"><a href="grandscycles.html">Grands Cycles </a></div>
+    <div class="bouton0"><a href="tiresdeloubli.html">Tirés de l'oubli </a></div>
+    <div class="bouton0"></div>
+    <div class="bouton"><a href="quizz.html">Who's who </a></div>
+  </div>
+  
+  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
+  <h1>Présentation de la section Physique mathématique.</h1>
+  
+  <h2>Manifeste constructiviste. </h2>
+  
+  <p>Le constructivisme prend sa source en mathématiques dans le cadre d'un vaste débat, initialement largement philosophique, tournant autour des notions de continuité et d'infinitude. &nbsp; Cantor, Brouwer, Poincaré et Hilbert furent quelques protagonistes célèbres. &nbsp; Le débat a rebondi vers 1930 suite aux travaux de Gödel puis de Turing et l'avènement de l'informatique théorique a fait le reste : il n'est désormais plus possible d'ignorer les limites naturelles de la calculabilté. </p>
+  
+<p>La physique tarde à emboîter le pas.  &nbsp; Pourtant une théorie ambitionnant de décrire le Monde sensible doit permettre le calcul de toute grandeur représentative des systèmes étudiés au moyen d'un algorithme qui se termine.</p>
+<p>La Physique classique est analogique, basée sur le dogme du "Tout est continu" et le discret n'y est présent que par pur opportunisme calculatoire. &nbsp; Si la Physique était digitale, elle serait basée sur le principe du "Tout est discret" et le continu n'y serait présent que pour les mêmes raisons !</p>
+<p>La situation n'est pas fondamentalement différente en Physique quantique : elle était effectivement constructive à ses origines (Mécanique des Matrices de Heisenberg) et c'est par simple opportunisme calculatoire que la méthode de Schrödinger a fait fortune en réintroduisant le continu. &nbsp; Essayez de calculer le spectre de l'atome d'hydrogène dans la théorie d'Heisenberg : c'est possible, cela a été fait mais c'est un parcours du combattant. &nbsp; Pourtant, Feynman, dans ses célèbres "Lectures on Physics" considérait que la présentation de Schrödinger était dépassée et ne devrait plus être enseignée telle quelle. </p>
+<p>Si l'on adopte le point de vue constructiviste, la Physique théorique doit être digitale et c'est la Théorie de l'Information qui offre le cadre idéal pour son développement. &nbsp; Vous trouverez sur ce site quelques séminaires d'initiation aux méthodes constructives. </p>
+
+<div class="lignevide"></div>
+<h2>Séminaires relatifs à la théorie de l'information.</h2>
+<p>Ces Séminaires se répartissent comme suit (PDF disponibles) :</p>
+
+    <p>I. La Tétralogique : une présentation accessible, en un Prologue et Trois Parties, des Fondements comparés des Mathématiques Formalistes et Constructives, suivie d'un Essai de Dynamique Récursive.</p>
+    <p>II. Les Bases de la Théorie Classique de l'Information, aux sens de Kolmogorov puis de Shannon, suivies d'un Essai de Thermodynamique Buissonnière.</p>
+    <p>III. Les Bases de la Théorie Quantique de l'Information : Théorie et Applications.</p>
+    <div class="lignevide"></div>
+<h2>Introduction à la théorie analytique du chaos déterministe.</h2>
+
+
+<p>La théorie du chaos déterministe est un autre sujet à la mode. &nbsp; Son étude numérique a connu des développements considérables parfaitement relatés dans quelques ouvrages devenus des classiques du genre.&nbsp; Il serait parfaitement ridicule que nous cherchions à leur faire concurrence.</p>
+
+<p>Son étude analytique est, par contre, à la traîne.&nbsp; Depuis les premiers travaux de Tabor (et collaborateurs divers, Weiss, Goriely, etc), aucun progrès notable n'a été enregistré depuis 20 ans, à l'exception sans doute des travaux de l'école de Bountis.&nbsp; Le peu qui soit connu n'est même pas diffusé largement.&nbsp; C'est plutôt cette lacune que nous cherchons à combler modestement.</p>
+
+<p>Il est impossible de le faire sans insister sur certains aspects de la théorie des fonctions de variables complexes, largement sous traitées dans les cursus universitaires (je ne parle pas du calcul des résidus ou des transformations conformes mais plutôt des notions de singularités dans le plan complexe, de prolongements analytiques, de temps complexe, etc).</p>
+
+<p>Deux séminaires sont projetés et seul le premier est actuellement disponible, qui expose les pathologies des équations différentielles ordinaires :</p>
+
+ 
+<p>
+I. La machinerie analytique du chaos déterministe : Pathologies des équations différentielles ordinaires.&nbsp; (PDF disponible)</p>
+<p>
+II. La machinerie analytique du chaos déterministe : Le chaos, royaume des conditions nécessaires ou suffisantes.&nbsp; (Indisponible)</p>
+
+
+<p>En complément, un troisième séminaire est disponible qui traite du sujet scandaleusement négligé dans l'enseignement universitaire de la théorie de Sophus Lie.&nbsp;&nbsp; Seule la partie réservée aux équations différentielles ordinaires est écrite :</p>
+
+<p>III. Etude des symétries des équations différentielles ordinaires.&nbsp; (PDF disponible) 
+<div>(Complément : Notebook Mathematica)</div></p>
+
+<p>IV. Etude des symétries des équations aux différences finies (récurrences).&nbsp; (Indisponible) </p>
+
+<div class="lignevide"></div>
+<h2>Cours sur l'Accélération de la convergence numérique.</h2>
+<p>Ce cours, enseigné en son temps par l'auteur aux étudiants en sciences physiques de l'Université de Liège, est entièrement basé sur l'étude des équations aux différences finies (récurrences). &nbsp; A ce titre, il respecte évidemment le point de vue constructiviste, ce que ne fait pas la théorie des équations différentielles où les variables varient continûment.&nbsp; (PDF disponible)</p>
+
+<div class="lignevide"></div>
+<h2>Chroniques éparses.</h2>
+<p>Un ensemble de d'articles courts traitant de sujets épars, situés à l'intersection des mathématiques, de la physique et de l'informatique théorique.&nbsp; Des Notebook Mathematica sont éventuellement joints.</p>
+
+
+  <!-- InstanceEndEditable -->
+  <div id="bas"></div>
+ 
+  </div>
+
+</body>
+<!-- InstanceEnd --></html>

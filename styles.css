@@ -1,0 +1,241 @@
+#site {
+	background-color: #616161;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+}
+.grand {
+	font-size: xx-large;
+}
+
+#bas {
+	clear: both;
+	height: 68px;
+	width: 1000px;
+	background-repeat: no-repeat;
+
+
+
+
+	background-image: url(images/bandeau.jpg)
+.jpg)
+.jpg);
+	margin-top: 60px;
+}
+.orange {
+	color: #F60;
+}
+.bouton a  {
+	color: #FC0;
+	background-color: #616161;
+	text-decoration: none;
+	text-align: center;
+	margin: 5px;
+	display: block;
+}
+.marge {
+	clip: rect(auto,auto,auto,auto);
+	position: relative;
+	right: -100%;
+	top: -50px;
+}
+
+.bouton a:hover {
+	background-color: #616161;
+	text-decoration: none;
+	color: #000;
+}
+.bouton0 a:hover {
+	color: #000;
+}
+
+
+
+#corps {
+	background-color: #616161;
+	margin-right: 150px;
+	margin-left: 150px;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: justify;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+p {
+	text-indent: 30px;
+	font-size: 16px;
+}
+
+pp {
+	text-indent: 60px;
+	margin-left: 30px;
+}
+
+
+paragraphe{
+	text-indent: 30px;
+	display: block;
+}
+
+
+sousp {
+    display: list-item;
+    list-style: none;
+    text-indent: 30px;
+    margin-left: 30px;
+}
+
+
+
+
+body {
+	background-image: url(images/bANDEROUGEETGRISE.jpg);
+	background-repeat: repeat-x;
+	background-color: #AB1200;
+}
+#photomilieu {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#bandeau {
+	background-image: url(images/ProjetBandeauAndre3.jpg);
+	height: 120px;
+	width: 1000px;
+}
+#menugauche {
+	float: left;
+	width: 145px;
+	background-color: #616161;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+}
+#menudroite {
+	float: right;
+	width: 145px;
+	background-color: #616161;
+	text-align: center;
+	font-size: 18px;
+	margin-right: 0px;
+}
+h1 {
+	text-align: center;
+}
+#gauche {
+	margin: 10px;
+}
+#photogauche {
+	float: left;
+	padding: 5px;
+	text-align: center;
+	margin: 2px;
+}
+#equation {
+	display: inline;
+	float: right;
+	text-align: justify;
+}
+
+#site #corps #photogauchewc {
+	margin-top: 80px;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	margin-bottom: 40px;
+	margin-left: 5px;
+	padding: 4px;
+}
+#site #corps #photogauchewc .legendewc {
+	text-align: center;
+	padding-top: 15px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	padding-left: 4px;
+}
+#site #corps #photogauche1 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 23px;
+	margin-bottom: 10px;
+	margin-left: 23px;
+	text-align: center;
+	padding: 5px;
+}
+
+#site #corps #photogauche .legende {
+	text-align: center;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 5px;
+	margin: 10px;
+}
+#site #corps .lignevide {
+	height: 10px;
+}
+#site #corps .grandelignevide {
+	height: 100px;
+}
+
+.bouton2 a  {
+	color: #3CC;
+	text-decoration: none;
+}
+.bouton2 a:hover {
+	color: #000;
+}
+.bouton0 a  {
+	color: #3CC;
+	background-color: #616161;
+	text-align: center;
+	display: block;
+	margin-top: 5px;
+	text-decoration: none;
+}
+h2 {
+	text-align: center;
+}
+#site #corps #photocentre {
+	text-align: center;
+	margin: 20px;
+	padding: 5px;
+}
+#site #corps #photocentre .legende {
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+}
+.legende {
+	text-align: center;
+}
+#photodroite {
+	float: right;
+	padding: 5px;
+	text-align: center;
+	margin: 2px;
+}
+.vert {
+	color: #0C6;
+}
+#corps table tr td {
+	text-align: justify;
+
+}
+#corps h2 p i {
+	font-size: small;
+}
+
+ry{
+	display:none;
+}

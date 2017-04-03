@@ -1,0 +1,235 @@
+body{
+	margin: 0;
+	font-family: 'Oxygen', sans-serif;
+	letter-spacing: 0.05em;
+}
+
+#site{
+	width: 100%;
+}
+
+.menu{
+	display: table;
+    width: 15%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+
+.tablecell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.centered{
+	text-align: center;
+}
+
+.centered ul{
+	padding-left: 0px;
+}
+
+.centered ul li{
+	list-style: none;
+	padding-bottom: 20px;
+}   
+
+.centered ul li a{
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#navPhysique a, #navMusique a{
+	color: #ddd;
+	text-transform: uppercase;
+}
+
+#navPhysique a:hover, #navMusique a:hover,
+#navPhysique a:active, #navMusique a:active,
+#navPhysique a:focus, #navMusique a:focus{
+	color: #AB1200;
+}
+
+#sousNavPhysique li, #sousNavMusique li{
+	padding-bottom: 10px;
+}
+
+#sousNavPhysique a, #sousNavMusique a{
+	color: #666;
+	text-transform: initial;
+	font-size: 16px;
+}
+
+#sousNavPhysique a:hover, #sousNavMusique a:hover,
+#sousNavPhysique a:active, #sousNavMusique a:active,
+#sousNavPhysique a:focus, #sousNavMusique a:focus{
+	color: #830f01;
+}
+
+#menuGauche{
+    left: 0;
+    border-right: 4px solid #AB1200;
+}
+
+#menuGauche h1, #menuDroite h1{
+	margin-bottom: 60px;
+    color: #fff;
+    font-weight: initial;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+    background-image: url(images/borderTitleMenu.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+h1:first-letter{
+    color: #AB1200;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#menuDroite{
+    right: 0;
+    border-left: 4px solid #AB1200;
+}
+
+#corps{
+    width: 60%;
+    position: absolute;
+    left: calc((100% - 70%)/2);
+    padding: 4% 5%;
+    background-image: url('images/background/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#corps h2{
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-transform: uppercase;
+	padding-top: 45px;
+    background-image: url(images/borderTitleContenu.png);
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#corps h3{
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	color: #666;
+	margin-top: 5px;
+	padding-bottom: 45px;
+    background-image: url(images/borderTitleContenu.png);
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#corps h4{
+	text-align: center;
+    margin-bottom: 60px;
+}
+
+/*-------- Fil d'ariane -------*/
+.accessibility-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#filAriane{
+	text-align: center;
+}
+
+#filAriane ul{
+	padding-left: 0;
+}
+
+.breadcrumbItem {
+    display: inline;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.breadcrumbItem>a {
+    text-decoration: none;
+    color: #830f01;
+}
+
+.breadcrumbItem:not(:first-child)::before {
+    content: " ";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 1px solid transparent;
+    border-left-color: #AB1200;
+    border-width: 4px 0 4px 6px;
+    margin: 0 4px;
+}
+
+.breadcrumbItem:last-child::before {
+    content: " ";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 1px solid transparent;
+    border-left-color: #666;
+    border-width: 4px 0 4px 6px;
+}
+
+.breadcrumbItem>a:hover {
+    color: #AB1200;
+    text-decoration: underline;
+}
+
+#corps p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+}
+
+#corps p:first-letter{
+    float: left;
+    margin: 0 6px 0 40px;
+    font-size: 65px;
+    font-weight: lighter;
+    line-height: .8;
+    text-align: center;
+    color: #AB1200;
+}
+
+#corps div{
+	float: left;
+    margin-bottom: 20px;
+}
+
+#corps a{
+	color: #AB1200;
+}
+
+#corps a:hover{
+	text-decoration: none;
+}
+
+#corps img{
+	float: left;
+    margin-right: 30px;
+    margin-top: 20px;
+}

@@ -79,9 +79,7 @@ Ou comment résoudre un problème variationnel complexe avec de l'eau savonneuse
 <div class="bouton"><a href="#retour">Retour</a></div>
   <p></p>
  <h3><a name="chronique2" id="chronique2"></a>2) L'étonnante équation de Lee Rubel.</h3>
- <p>Il y a 30 ans déjà, Lee Rubel publia un résultat étonnant (Bull. Am. Math. Soc. 4, pp345-349 (1981)), présenté ci-dessous de façon informelle. Les détails analytiques sont reportés en <a
-href="annexes/rubel/rubelequation.html">annexe</a> (<a
-href="annexes/rubel/rubelequation.nb">Notebook Mathematica</a>).</p>
+ <p>Il y a 30 ans déjà, Lee Rubel publia un résultat étonnant (Bull. Am. Math. Soc. 4, pp345-349 (1981)), présenté ci-dessous de façon informelle. Les détails analytiques sont reportés en <a href="annexes/rubel/rubelequation.html">annexe</a> (<a href="annexes/rubel/rubelequation.nb">Notebook Mathematica</a>).</p>
  <p>Il est bien connu que toute équation différentielle définit une famille de fonctions. Ainsi l'équation linéaire (d'ordre 2 et de degré 1), y''(x) + y(x) = 0, définit la famille des fonctions trigonométriques de base, sinus et cosinus. Pour plus de commodité, on a donné un nom aux équations qui définissent des fonctions utiles aux physiciens (et aux autres !) mais qu'il soit bien clair que les autres équations ne sont pas moins valables pour autant du moment qu'elles ne sont pas sensibles aux conditions initiales. Rubel a trouvé une équation différentielle d'ordre 4 et de degré 7 qui possède une solution qui approxime, à moins de epsilon près (epsilon aussi petit que l'on veut),  n'importe quelle fonction infiniment continûment dérivable ! Certes cette équation n'est pas simple mais il n'empêche que le résultat est surprenant. L'équation s'écrit :</p>
  
  <div>12 y''<sup>7 </sup>- 29 y'<sup>2</sup>y''<sup>3</sup>y'''<sup>2 </sup>- 12 y'<sup>3</sup>y''y'''<sup>3</sup> + 24 y'<sup>2</sup>y''<sup>4</sup>y'''' + 6 y'<sup>3</sup>y''<sup>2</sup>y'''y'''' - 4 y'<sup>4</sup>y'''<sup>2</sup>y'''' + 3 y''''<sup>2</sup>y''y'<sup>4</sup>
@@ -126,9 +124,7 @@ href="annexes/rubel/rubelequation.nb">Notebook Mathematica</a>).</p>
   <p>Il existe plusieurs méthodes de résolution d'un tel graphe. La méthode matricielle repose sur les matrices de transition entre états internes, Q<sub>8x8</sub>=(p<sub>i,j</sub>), et vers les états de bord, S<sub>8x3</sub>=(p<sub>i,j</sub>) :</p>
   <div><img src="annexes/tireurs/transi.png" /></div>
   <div><img src="annexes/tireurs/transi1.png" /></div>
- <p> La ligne 1 du produit matriciel, (Id<sub>8x8</sub>-Q)<sup>-1</sup>.S, livre les probabilités, pa, pb et pc. Le détail des calculs figure en <a
-href="annexes/tireurs/tireurs.html">annexe</a> (<a
-href="annexes/tireurs/tireurs.nb">Notebook Mathematica</a>).</p>
+ <p> La ligne 1 du produit matriciel, (Id<sub>8x8</sub>-Q)<sup>-1</sup>.S, livre les probabilités, pa, pb et pc. Le détail des calculs figure en <a href="annexes/tireurs/tireurs.html">annexe</a> (<a href="annexes/tireurs/tireurs.nb">Notebook Mathematica</a>).</p>
  <div><img src="annexes/tireurs/probas.jpg" /></div>
  <p>On peut représenter les zones de l'espace 3D correspondant aux trois cas possibles : la figure de droite fixe la portion d'espace tétraédrique disponible, 0 < c < b < a, et la figure de gauche délimite les zones, 1, 2 et 3, dans l'ordre ascendant. On note que la zone 3 (la partie supérieure du tétraèdre) est loin d'être négligeable.</p>
  <div><img src="annexes/tireurs/tireurs3.jpg" /></div>
@@ -167,9 +163,7 @@ href="annexes/tireurs/tireurs.nb">Notebook Mathematica</a>).</p>
   
   <div> <img src="annexes/sundman/sundman9.png" /></div>
   
-  <p>La dernière transformation fait appel à la conservation de l'énergie, traduite en terme des variables X et T, soit : <i>2 X'<sup> 2</sup> - 1 = E X<sup>2</sup></i>). Le lecteur intéressé trouvera l'automatisation des calculs en <a
-href="annexes/sundman/sundman.html">annexe</a> (<a
-href="annexes/sundman/sundman.nb">Notebook Mathematica</a>).
+  <p>La dernière transformation fait appel à la conservation de l'énergie, traduite en terme des variables X et T, soit : <i>2 X'<sup> 2</sup> - 1 = E X<sup>2</sup></i>). Le lecteur intéressé trouvera l'automatisation des calculs en <a href="annexes/sundman/sundman.html">annexe</a> (<a href="annexes/sundman/sundman.nb">Notebook Mathematica</a>).
  On observe que le changement de variables a  pour effet d'autoriser le prolongement de la chute libre au-delà de la singularité naturelle que représente  la collision avec le centre assimilé à un réflecteur parfait. En terme des nouvelles variables et vu les conditions initiales retenues, le mouvement prolongé est celui d'un oscillateur harmonique, d'équation, <img src="annexes/sundman/sundman7.png" /> 
   . Il est alors possible de trouver la relation <img src="annexes/sundman/sundman12.png" /> qui relie le temps réel, t, au temps virtuel, T, compte tenu des correspondances initiales, <img src="annexes/sundman/sundman10.png" />.  Le lecteur motivé peut revenir aux coordonnées naturelles par le changement de variables inverse, (X,T)->(x,t), et retrouver la solution, t(x), calculée au début. Le graphe de la solution prolongée se présente comme suit :</p>
   
@@ -194,9 +188,7 @@ href="annexes/sundman/sundman.nb">Notebook Mathematica</a>).
  
   <p>Si on applique la transformation d'Arnold à l'ensemble non dénombrable des points occupant le carré primitif, il devrait être clair qu'aussi loin qu'on réitère l'opération, jamais tous ces points ne reviendront simultanément à leur emplacement initial. En effet, les points pour lesquels une périodicité, N, peut se produire ne constituent qu'un ensemble dénombrable, typiquement celui des solutions (x<sub>0</sub>, y<sub>0</sub>), du système,  
   <div><img src="annexes/retour/retour5.png" /></div> 
-  (On trouvera les détails en <a
-href="annexes/retour/arnoldpoincare.html">annexe</a> (<a
-href="annexes/retour/arnoldpoincare.nb">Notebook Mathematica</a>)).</p>
+  (On trouvera les détails en <a href="annexes/retour/arnoldpoincare.html">annexe</a> (<a href="annexes/retour/arnoldpoincare.nb">Notebook Mathematica</a>)).</p>
 
 
   <p>Autrement dit, jamais une image de résolution infinie ne réapparaîtra intacte.  Une image n'est jamais de résolution infinie et on peut se demander ce qu'il advient d'une image discrétisée selon une grille comptant cxc pixels.  Le nombre des cellules élémentaires étant fini (c<sup>2</sup>) dans  ce cas, le nombre total des images possibles est également fini quoique très grand (2<sup>cxc</sup>).  La réapparition de l'image initiale devient, à présent, une certitude programmée dans un temps  probablement très grand mais néanmoins fini.</p>

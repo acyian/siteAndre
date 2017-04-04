@@ -47,7 +47,7 @@ body{
 }
 
 #navPhysique a:hover, #navMusique a:hover,
-#navPhysique a:active, #navMusique a:active,
+#navPhysique a:active, #navMusique a:active, .actif,
 #navPhysique a:focus, #navMusique a:focus{
 	color: #AB1200;
 }
@@ -100,7 +100,7 @@ h1:first-letter{
     width: 60%;
     position: absolute;
     left: calc((100% - 70%)/2);
-    padding: 4% 5%;
+    padding: 4% 5% 0 5%;
     background-image: url('images/background/background.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -111,7 +111,7 @@ h1:first-letter{
     background-size: cover;
 }
 
-#corps h2{
+#contenuPrincipal h2{
 	text-align: center;
 	font-size: 32px;
 	font-weight: bold;
@@ -125,7 +125,7 @@ h1:first-letter{
     background-position: center top;
 }
 
-#corps h3{
+#contenuPrincipal h3{
 	text-align: center;
 	font-size: 24px;
 	font-style: italic;
@@ -138,9 +138,16 @@ h1:first-letter{
     background-position: center bottom;
 }
 
-#corps h4{
+#contenuPrincipal h4{
 	text-align: center;
     margin-bottom: 60px;
+}
+
+#contenuPrincipal h5 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 /*-------- Fil d'ariane -------*/
@@ -159,6 +166,12 @@ h1:first-letter{
 
 #filAriane ul{
 	padding-left: 0;
+	border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #f0f0f0;
+    width: 116%;
+    margin-left: -8%;
+    margin-bottom: 30px;
 }
 
 .breadcrumbItem {
@@ -200,15 +213,15 @@ h1:first-letter{
 
 #corps p{
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     color: #333;
 }
 
-#corps p:first-letter{
+#contenuPrincipal p:first-letter{
     float: left;
     margin: 0 6px 0 40px;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: lighter;
     line-height: .8;
     text-align: center;
@@ -233,3 +246,89 @@ h1:first-letter{
     margin-right: 30px;
     margin-top: 20px;
 }
+
+/*-------- FOOTER ---------*/
+#footer{
+	padding-left: 8%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #f0f0f0;
+    width: 108%;
+    margin-left: -8%;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+#footer h3 {
+    font-size: 28px;
+    margin-bottom: 0;
+    color: #000;
+    line-height: 38px;
+}
+
+#footer h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #666;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#ancreRetourHautPage{
+    position: absolute;
+    bottom: 290px;
+    right: 8%;
+    font-size: 12px;
+    display: inline-block;
+}
+
+#contact{
+/*	margin-right: 18.5%;*/
+	width: 455px;
+}
+
+#contact img{
+	margin-top: 38px;
+}
+
+#articlesRecents{
+	width: 226px;
+}
+
+#sitesDeReferences{
+	width: 182px;
+}
+
+#articlesRecents, #sitesDeReferences{
+/*	margin-right: 8%;*/
+}
+
+#articlesRecents h5, #sitesDeReferences h5{
+	margin-top: 38px;
+    font-size: 1em;
+}
+
+#articlesRecents ul, #sitesDeReferences ul{
+	line-height: 1.6em;
+}
+
+#copyRight{
+	text-align: center;
+    width: 92%;
+    padding-top: 10px;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 20px;
+    margin-bottom: 0px !important;
+}
+
+#copyRight p{
+	margin: 0 auto;
+	margin-bottom: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+
+

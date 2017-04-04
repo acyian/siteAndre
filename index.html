@@ -11,11 +11,12 @@
   <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
       $("#header").load("template/header.html"); 
-      $("#footer").load("template/footer.html"); 
+      $("#footer").load("template/footer.html", update_design); 
     });
   </script> 
 </head>

@@ -218,6 +218,14 @@ h1:first-letter{
     color: #333;
 }
 
+.listCorps{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    padding-left: 140px;
+}
+
 #contenuPrincipal p:first-letter{
     float: left;
     margin: 0 6px 0 40px;
@@ -226,6 +234,10 @@ h1:first-letter{
     line-height: .8;
     text-align: center;
     color: #AB1200;
+}
+
+#conteneurImages{
+	width: 100%;
 }
 
 #corps div{
@@ -239,6 +251,10 @@ h1:first-letter{
 
 #corps a:hover{
 	text-decoration: none;
+}
+
+#corps figcaption{
+	text-align: center;
 }
 
 #corps img{

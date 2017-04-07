@@ -21,7 +21,7 @@
   <div id="bandeau"></div>
   <div id="menugauche">
     <h1>Physique</h1>
-    <div class="menu"><img src="images/einstein3.jpg" /></div>
+    <div class="menu"><img src="images/einstein3.jpg" alt="" /></div>
     <div class="bouton"><a href="index.html">Accueil </a></div>
     <div class="bouton"><a href="contenuphysique.html">Présentation </a></div>
     <div class="bouton"><a href="Seminaires.html">Séminaires </a></div>
@@ -38,7 +38,7 @@
   
   <div id="menudroite">
     <h1>Musique</h1>
-    <div class="menu"><img src="images/beethoven100.jpg" /></div>
+    <div class="menu"><img src="images/beethoven100.jpg" alt="" /></div>
     <div class="bouton"><a href="index.html">Accueil </a></div>
     <div class="bouton"><a href="contenumusique.html">Présentation </a></div>
     <div class="bouton"><a href="musique2001.html">Musique 2001 </a></div>
@@ -69,16 +69,16 @@
 
 <p>L'apport informationnel d'une pesée dépend du nombre de boules que l'on dépose dans chaque plateau. Si on dépose x boules de chaque côté, les probabilités que le fléau penche à gauche, reste en équilibre ou penche à droite valent respectivement :</p>
 
- <div><img src="annexes/boules/boules1.jpg" /></div>
+ <div><img src="annexes/boules/boules1.jpg" alt="" /></div>
 
 <p>L'apport d'information se calcule sur base de la formule de Claude Shannon :</p>
 
- <div><img src="annexes/boules/boules2.jpg" /></div>
+ <div><img src="annexes/boules/boules2.jpg" alt="" /></div>
 
 <p>
 Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).</p>
 
-<div><img src="annexes/boules/boules3.jpg" /></div>
+<div><img src="annexes/boules/boules3.jpg" alt="" /></div>
 
 <p>Cette pesée favorable apporte lg3 = 1.585 bits par pesée indépendante.</p>
 <p> Vu que 3 x 1.585 = 4.75489 > 4.64386 (bits), rien ne semble s'opposer à ce qu'il existe une solution en k=3 pesées dans le cas N=12 (dont l'existence ne peut être établie qu'en la détaillant !).</p>
@@ -120,7 +120,7 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p>La méthode de Conway se généralise immédiatement à un nombre plus grand de pesées (et de boules !). La pesée la plus porteuse d'information place x = N/3 boules dans chaque plateau (à condition que N soit divisible par 3 !), amenant lg3 = 1.585 bits. On serait alors tenté de raisonner ainsi : k pesées indépendantes apportent  k lg3 (bits) et il faut combler lg(2N+1) bits d'information manquante d'où k pesées devraient venir à bout du problème à N=(3<sup>k</sup>-1)/2 boules. C'est un peu vite dit car ce N-là n'est pas multiple de 3 d'où l'information apportée par chaque mesure est inférieure au maximum escompté, 1.585 bits. En fait, (3<sup>k</sup>-2)/2 n'est pas davantage multiple de 3, par contre N = (3<sup>k</sup>-3)/2 l'est. C'est la solution optimale cherchée et la construction de Conway continue de s'appliquer.</p>
 
  
-<div><img src="annexes/boules/boules4.jpg" /></div>
+<div><img src="annexes/boules/boules4.jpg" alt="" /></div>
  
 <p>En résumé, k pesées résolvent le problème des (3<sup>k</sup>-3)/2 boules et inversement. En particulier, k (= 2,3,4,5, …) pesées suffisent tout juste pour régler le problème comportant 3, 12, 39, 120, …, boules. </p>
 
@@ -262,7 +262,7 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p><i>Le décodage.</i></p>
 <p>La tâche de Maurice est plus facile (C'est d'ailleurs pour cela que le magicien est l'homme !). Maurice reçoit un paquet de n = 5 cartes qui se présentent dans l'ordre (51 3 27 101 80). Il lui est facile de voir que cette permutation porte le numéro d'ordre, z = 49.  Cet entier, z, est presque le numéro, x, cherché : il faut encore passer les cartes en revue (dans l'ordre !) en ajoutant 1 à z tant qu'il reste dans la pile des nombres plus petits que z réactualisé. Le résultat final désigne le rang, x, de la carte mystère. On trouve successivement : z = 49, 50 (à cause de la présence de 3), 51 (à cause de la présence de 27) et finalement 52 (à cause de la présence de 51). La carte mystère porte le numéro 52.</p> 
 
-<div><img src="annexes/magie/magie2.jpg" /></div>
+<div><img src="annexes/magie/magie2.jpg" alt="" /></div>
 
 <p></p>
   
@@ -276,8 +276,8 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
  
  
  <p>1) Le cas particulier suivant, classique et inoffensif, considère la densité homogène sur l'intervalle fini, [1, N] : </p>
-<div><img src="annexes/entier/entier.jpg" /></div>
- <div><img src="annexes/entier/entier12.jpg" /></div>
+<div><img src="annexes/entier/entier.jpg" alt="" /></div>
+ <div><img src="annexes/entier/entier12.jpg" alt="" /></div>
  <div class="grandelignevide"></div> <div class="grandelignevide"></div>
  
  <p> L'information manquante vaut ℓg(N) bits (formule de Shannon), ce qui autorise à penser qu'une stratégie existe, pour B, lui permettant de deviner l'entier inconnu en Ceil[ℓg(N)] questions binaires. Cette stratégie porte le nom de dichotomie binaire; on la rappelle dans le cas, N=32=2<sup>5</sup>, où 5 questions  devraient suffire. A chaque étape, on réduit l'intervalle possible [a, b] de moitié, en posant la question, n > (a+b-1)/2 ? Voyons cela sur l'exemple, n = 25 :</p>
@@ -293,9 +293,9 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 
 
 <p>2) Le cas infini est nettement plus délicat. Commençons par remarquer qu'il n'est plus possible, dans ce cas, de considérer que tous les entiers sont équiprobables : la fonction de distribution, g(n), ne serait pas normalisable à l'unité. Une procédure effective permettant à A de sélectionner au hasard  un entier arbitrairement grand n'est envisageable que selon un hasard non uniforme qui pénalise les grands entiers. Plus formellement, la fonction de distribution doit être suffisamment décroissante, lorsque n s'éloigne à l'infini, afin de garantir la normalisation de g(n). Une décroissance selon la loi, g(n)=1/n, ne suffit pas car la série harmonique diverge, par contre, une décroissance selon la loi, g(n)=1/n<sup>2</sup>, convient certainement. Etudions ce cas :
-<div><img src="annexes/entier/entier1.jpg" /></div>
+<div><img src="annexes/entier/entier1.jpg" alt="" /></div>
 
-<div><img src="annexes/entier/entier10.jpg" /></div>
+<div><img src="annexes/entier/entier10.jpg" alt="" /></div>
 
 
 <div class="grandelignevide"></div>
@@ -306,23 +306,23 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 
 
 
-<div><img src="annexes/entier/entier2.jpg" /></div>
+<div><img src="annexes/entier/entier2.jpg" alt="" /></div>
 
 <p>Il ne faudrait pas en conclure que 3 questions binaires devraient suffire à B pour découvrir, à tous coups, l'entier inconnu, d'ailleurs cela n'aurait aucun sens : tous les entiers étant possibles sans restriction de taille, il ne faut pas espérer deviner tous les cas en un nombre fini de questions. Ce que la formule de Shannon laisse espérer, dans le cas infini, est différent, à savoir qu'il existe une stratégie qui, en moyenne, devine l'entier caché en approximativement 2.4 questions binaires. Autrement dit, il se fera certainement que 10 ou 20 questions s'avèrent nécessaires mais ces cas coûteux seront rares.  Cette stratégie optimale moyenne existe effectivement et elle est à nouveau basée sur la dichotomie équitable que voici dans le détail.</p>
 
 <p> Dans la série infinie suivante, la partition la plus équitable se note :</p>
-<div><img src="annexes/entier/entier3.jpg" /></div>
+<div><img src="annexes/entier/entier3.jpg" alt="" /></div>
 <p> d'où la 1<sup>ère</sup> question posée par B :</p>
 
 <p>- 1<sup>ère</sup> question : n>1 ? Une réponse négative ne laisse la place qu'à une seule valeur pour n, soit n=1. Dans ce cas favorable, une seule question a suffit.</p>
 
 <p>Si la réponse à la première question est positive, il convient de poursuivre en partitionnant équitablement  le reste de la série infinie. On trouve :</p>
-<div><img src="annexes/entier/entier4.jpg" /></div><p> d'où la 2<sup>ème</sup> question posée par B :</p>
+<div><img src="annexes/entier/entier4.jpg" alt="" /></div><p> d'où la 2<sup>ème</sup> question posée par B :</p>
 
 
   <p>- 2<sup>ème</sup> question : n>3 ?  Une réponse négative ne laisse la place qu'aux deux valeurs, n=2 et n=3, d'où une question supplémentaire suffit pour trancher. Au bilan, dans ce cas favorable, 3 questions ont suffit sinon il convient de poursuivre la recherche avec la partition suivante :</p>
   
- <div><img src="annexes/entier/entier5.jpg" /></div>
+ <div><img src="annexes/entier/entier5.jpg" alt="" /></div>
 
 <p>d'où la 3<sup>ème</sup> question posée par B :</p>
 
@@ -333,12 +333,12 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p>- k<sup>ème</sup> question : n>2<sup>k</sup>-1 ?  Une réponse négative ne laisse la place qu'à 2<sup>k-1</sup> valeurs pour n, allant de n=2<sup>k-1</sup> à n=2<sup>k</sup>-1, inclus, d'où k-1 questions supplémentaires suffisent pour trancher; au bilan, cela fait 2k-1 questions dans ce cas favorable.</p>
 
 <p><i>Note : cette affirmation repose sur la double inégalité remarquable, donnée sans démonstration :</i></p>
-<div><img src="annexes/entier/entier6.jpg" /></div>
+<div><img src="annexes/entier/entier6.jpg" alt="" /></div>
 
 
 <p>Au bilan, le nombre moyen de questions binaires que B doit poser se calcule comme suit :</p>
 
-<div><img src="annexes/entier/entier7.jpg" /></div>
+<div><img src="annexes/entier/entier7.jpg" alt="" /></div>
 <p>Il n'y a pas lieu de s'étonner que ce nombre soit légèrement supérieur à la valeur théorique de Shannon (2.36529) : les partitions opérées successivement  ne sont qu'approximativement égales et cela a un prix bien connu en théorie de l'information.</p> 
 
 
@@ -348,13 +348,13 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p>3) Posons à présent que A veuille compliquer la tâche de B au maximum : il y parvient en utilisant une distribution, g(n), dont la normalisation repose sur une série convergeant vers 1 le plus lentement possible. Il est remarquable qu'une telle distribution - dite universelle - existe, qui se situe  à la limite de la convergence et de la divergence. Elle est basée sur une suite de résultats analytiques concernant les séries infinies, que l'on rappelle :</p>
 
 <p>- Les séries infinies suivantes divergent toutes mais de plus en plus lentement :</p>
-<div><img src="annexes/entier/diverge.jpg" /></div>
+<div><img src="annexes/entier/diverge.jpg" alt="" /></div>
 
 <p>Par contre, les séries infinies suivantes convergent toutes mais de plus en plus lentement :</p>
-<div><img src="annexes/entier/converge.jpg" /></div>
+<div><img src="annexes/entier/converge.jpg" alt="" /></div>
 
 <p>- On en déduit que la série infinie suivante se situe à la frontière qui sépare la convergence de la divergence :</p>
-<div><img src="annexes/entier/frontiere.jpg" /></div>
+<div><img src="annexes/entier/frontiere.jpg" alt="" /></div>
 
 <p>Voyons le rapport que cette série entretient avec le tirage aléatoire d'un entier non borné. Commençons par noter que ce tirage ne peut reposer sur le principe naïf suivant : tout entier positif possédant une traduction binaire en termes de 0 et de 1, on lancerait une pièce de monnaie et la suite des tirages successifs pile (=1) ou face (=0) construirait (de droite à gauche) l'entier désiré. Cette procédure ne fonctionne pas pour la raison évidente qu'elle ne comporte aucune instruction d'arrêt : après avoir tiré, disons 10011, comment savoir s'il faut s'arrêter et accepter l'entier correspondant (19) ou continuer à lancer la pièce? Préfixer l'écriture binaire de 10011 par une étiquette binaire, 101, qui annoncerait sa longueur (5) ne convient pas davantage car rien dans la succession des chiffres tirés, 101 10011, ne distinguerait la fin de l'étiquette du début du nombre proprement dit. La solution à ce case-tête est l'étiquetage répétitif  : on préfixe bien la représentation binaire de n=10011 par une étiquette, 101, qui annonce sa longueur (5) puis on fait de même avec une deuxième étiquette, 11, qui annonce la longueur (3) de la première et ainsi de suite jusqu'à tomber sur une étiquette de longueur 2 (=10) ou 3 (=11), ce qui ne peut manquer de se produire. On termine la procédure en préfixant le tout par autant de 0 que le nombre total d'étiquettes consommées, ce qui donnerait dans notre exemple, 00 10 101 10011, où les espaces servent seulement à faciliter votre lecture. La méthode qui vient d'être exposée est presque optimale mais il est possible de faire les économies suivantes : on peut enlever le 1 initial de l'écriture binaire du nombre n et de toutes les étiquettes (sauf la dernière, pour des questions de décodabilité). C'est la conséquence naturelle du fait qu'un entier binaire positif commence toujours par un 1 non significatif. Au bilan, le code de l'entier n=19 se note 00 10 01 0011.  La procédure peut paraître coûteuse aux petites valeurs de n mais, asymptotiquement, on verra qu'il n'y a pas moyen de faire mieux. On trouvera, en <a href="annexes/entier/entier.html">annexe</a>, le détail des procédures décrites (<a href="annexes/entier/entier.nb">Notebook Mathematica</a>).</p>
 
@@ -375,14 +375,14 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p> ℓ(k) = {2,3,5,6,10,11,12,13,15,16,17,18,19,20,21,22,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,44,…}.</p>
 
 <p> La suite, S, possède trois propriétés remarquables et essentielles pour le but poursuivi :</p>
-<div><img src="annexes/entier/ldek.jpg" /></div>
+<div><img src="annexes/entier/ldek.jpg" alt="" /></div>
 <p>- Les longueurs de codes, ℓ(k), croissent asymptotiquement comme : ℓ(k) = k + ℓg(k) + ℓg(ℓg(k)) + ℓg(ℓg(ℓg(k))) + ... . C'est la conséquence naturelle du fait que chaque étiquette allonge le code de n d'une valeur égale au logarithme de l'étiquette précédente, la première étiquette l'allongeant du logarithme de n.</p>
 <p>- La suite S est préfixe, ce qui signifie qu'aucun code d'entier n'est préfixe d'un autre code. C'est cette propriété qui justifie l'arrêt des tirages aléatoires dès qu'un terme de la suite est rencontré; il ne servirait, en effet, à rien de poursuivre.</p>
 <p>- La suite S est complète, ce qui signifie que tout tirage aléatoire est assuré de se terminer sur un code faisant partie de la suite.</p>
 
 <p>On montre, en théorie de l'information qu'un code préfixe et complet satisfait l'égalité de Kraft :</p>
 
-<div><img src="annexes/entier/entier8.jpg" /></div>
+<div><img src="annexes/entier/entier8.jpg" alt="" /></div>
 
 <p>On peut vérifier directement ce résultat en regroupant astucieusement les termes de cette série, de n=2<sup>k</sup> à n=2<sup>2^k</sup>
 </sup>-1 : les probabilités cumulées valent exactement 2<sup>-k</sup>, livrant une progression géométrique de raison, 1/2, convergent vers 1.</p>
@@ -399,7 +399,7 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p>- k<sup>ème</sup> question : n>2^2^...<sub>k fois</sub>^2 - 1 ?  Une réponse négative "ne laisse la place qu'aux" valeurs de n, allant de n = 2^2^...<sub>(k-1) fois</sub>^2 à n = 2^2^...<sub>k fois</sub>^2-1, inclus, d'où de l'ordre de 2^2^...<sub>(k-1) fois</sub>^2 questions (!) suffisent pour trancher ce cas "favorable".</p>
 
 
-<div><img src="annexes/entier/entier11.jpg" /></div>
+<div><img src="annexes/entier/entier11.jpg" alt="" /></div>
 
 
 <p>Vu que 2<sup>-ℓ(code[n])</sup> vaut précisément la probabilité de tirer au sort le code de n, on voit que l'égalité de Kraft remplit la condition de normalisation pour la densité de probabilité, g(n)=2<sup>-ℓ(code[n])</sup>.</p>
@@ -418,15 +418,15 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
   
   <p>Il y a mille façons d'introduire les fonctions de Walsh mais l'approche récursive de Hadamard semble la plus simple.  On commence par définir la suite des matrices de Hadamard 2<sup>s</sup>x2<sup>s</sup>, pour s = 0, 1, 2, …, comme suit :</p>
 
-<div><img src="annexes/walsh/walsh1.jpg" /></div>
+<div><img src="annexes/walsh/walsh1.jpg" alt="" /></div>
  <p>Voici deux matrices de Hadamard, de tailles raisonnables (respectivement s=3 et s=4) :</p>
-<div><img src="annexes/walsh/walsh2.jpg" /></div>
+<div><img src="annexes/walsh/walsh2.jpg" alt="" /></div>
 
 <div class="grandelignevide"></div><div class="grandelignevide"></div>
 <p>Pour une valeur donnée de s, les fonctions de Walsh sont définies par les vecteurs lignes (ou colonnes car les matrices de Hadamard sont symétriques) de H<sub>s</sub>.  Voici les graphes de ces fonctions de Walsh dans les deux cas pris en exemple :</p>
-<div><img src="annexes/walsh/walsh3.jpg" /><div class="legende">Les 8 fonctions-1D de Walsh (s = 3)</div></div>
+<div><img src="annexes/walsh/walsh3.jpg" alt="" /><div class="legende">Les 8 fonctions-1D de Walsh (s = 3)</div></div>
 
-<div><img src="annexes/walsh/walsh4.jpg" /><div class="legende">Les 16 fonctions-1D de Walsh (s = 4)</div></div>
+<div><img src="annexes/walsh/walsh4.jpg" alt="" /><div class="legende">Les 16 fonctions-1D de Walsh (s = 4)</div></div>
 
 <p>La méthode de Hadamard énumère les 2<sup>s</sup> fonctions de Walsh, W<sub>s,i</sub> (i = 1, 2, ..., 2<sup>s</sup>), dans un ordre qui n'est pas nécessairement celui qui prévaut dans d'autres approches mais, au bilan, elles sont toutes bien présentes. Toutes sont orthogonales, au sens du produit scalaire habituel, et le carré de leur norme vaut 2<sup>s</sup>. Autrement dit, les fonctions, 2<sup>-s/2</sup>W<sub>s,i</sub> forment un ensemble orthogonormé qui est de plus complet : toute fonction, V, étagée sur l'ensemble {-1, +1}, par exemple la fonction {1,1,1,1,1,1,-1,-1} (s=3), est décomposable en termes de fonctions de Walsh, W<sub>3,i</sub>, et les coefficients du développement sont donnés par les produits scalaires, V.W<sub>3,i</sub>. Cela résulte de l'identité :</p>
 
@@ -440,14 +440,14 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 
 <p>La manière la plus commode de représenter les fonctions de Walsh à deux dimensions consiste à afficher l'image Noir & Blanc de leur trame. Par exemple, dans le cas, s = 3, les 2<sup>2s</sup> (= 64) fonctions, W<sub>s,i</sub>W<sub>s,j</sub>, présentent les trames suivantes :</p>
 
-<div><img src="annexes/walsh/walsh7.jpg" /><div class="legende">Les 64 fonctions-2D de Walsh (s = 3)</div></div>
+<div><img src="annexes/walsh/walsh7.jpg" alt="" /><div class="legende">Les 64 fonctions-2D de Walsh (s = 3)</div></div>
 
 <p>L'orthogonormalité peut être visualisée en superposant deux trames quelconques et en multipliant les valeurs pixélisées de mêmes positions (+1 si pixel blanc, -1 sinon) et en sommant sur les 64 pixels : on trouve systématiquement 0 si les trames sont distinctes et 2<sup>s</sup> (= 8) si elles sont identiques. Toute image binaire (Noire & Blanche) peut être décomposée en termes de ces fonctions de base.</p>
 
 <p>Les images binaires qui nous servent de modèles sont celles de caractères alphabétiques, pixélisées sur une trame 64x64 (s = 6), facilement obtenables sur n'importe quel PC en suivant le protocole suivant : démarrer/exécuter/eudcedit/Sélectionner le code/OK/Edition/Copier un caractère/copier coller le caractère choisi, R par exemple, dans n'importe quel programme de dessin (Paint, par exemple). Cela donne :</p>
 
 
-<div><img src="annexes/walsh/walsh5.jpg" /></div>
+<div><img src="annexes/walsh/walsh5.jpg" alt="" /></div>
 <p>Une représentation binaire de ce caractère qui convient pour un développement en fonctions de Walsh code les blancs par 1 et les noirs par -1. D'autres conventions sont envisageables mais celle-ci est adoptée par le logiciel Mathematica qui précise, en outre : 0 (ou tout réel inférieur) code un pixel blanc, 1 (ou tout réel supérieur) code un pixel noir et tout réel compris entre 0 et 1 code un niveau de gris.</p>
 
 <p>Le programme Mathematica, joint en en <a href="annexes/walsh/walsh.html">annexe</a> (<a href="annexes/walsh/walsh.nb">Notebook Mathematica</a>), décompose l'image du caractère, R, en fonctions de Walsh. En soi cette décomposition semble présenter peu d'intérêt. Toutefois un point retient l'attention : les ordres de grandeur des coefficients du développement décroissent rapidement.  Voici, pour fixer les idées, le début de la liste des valeurs absolues des coefficients de Walsh correspondant à l'image de la lettre R, rangés dans l'ordre des valeurs  décroissantes :</p>
@@ -461,16 +461,16 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p><i>Décomposition tronquée d'une image en fonctions de Walsh : compression avec perte.</i></p>
 
 <p>Sans troncature donc sans perte, l'image reconstituée est fidèle à l'original, pixélisé de façon binaire sur {-1, +1}.  Si on tronque le développement, des valeurs intermédiaires apparaissent que Mathematica restitue en niveaux de gris, polluant plus ou moins l'image compressée. Si on conserve les 872 (sur 4096) coefficients supérieurs à 20 (en valeur absolue), voici l'image qu'on reconstitue :</p>
-<div><img src="annexes/walsh/walsh8.jpg" /></div>
+<div><img src="annexes/walsh/walsh8.jpg" alt="" /></div>
 
 <p>Si on conserve les 98 (sur 4096) coefficients supérieurs à 100 (en valeur absolue), voici l'image qu'on reconstitue :</p>
-<div><img src="annexes/walsh/walsh9.jpg" /></div>
+<div><img src="annexes/walsh/walsh9.jpg" alt="" /></div>
 
 <p>Si on conserve les 27 (sur 4096) coefficients supérieurs à 200 (en valeur absolue), voici l'image  qu'on reconstitue :</p>
-<div><img src="annexes/walsh/walsh10.jpg" /></div>
+<div><img src="annexes/walsh/walsh10.jpg" alt="" /></div>
 
 <p>Si on supprime les niveaux de gris dans les images précédentes, on n'en garde qu'un squelette de moins en moins reconnaissable :</p>
-<div><img src="annexes/walsh/walsh11.jpg" /></div>
+<div><img src="annexes/walsh/walsh11.jpg" alt="" /></div>
 
 
 <p>En pratique, conserver 1/16 des coefficients les plus importants (soit 256 sur 4096) suffit largement à maintenir une image nettement reconnaissable. Le taux de compression de 94% est appréciable.</p>
@@ -505,7 +505,7 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 
 <p><i>Dans NKS, Wolfram fait état de MTU beaucoup plus simples  mais elles ne sont que &quot;faiblement&quot; universelles, nécessitant l'encodage des données initiales dans un environnement particulier (et compliqué) de la bande de lecture-écriture. En comparaison, la machine de Minsky encode le programme une bande vierge (remplie de 0).</i></p>
 
-<div><img src="annexes/minsky/minsky1.jpg" /></div>
+<div><img src="annexes/minsky/minsky1.jpg" alt="" /></div>
 
 <p>La MTU de Minsky possède 9 états et elle travaille sur un alphabet réduit à 4 caractères notés, {0, 1, 2, 3}.  Il est facile de dresser a priori l'inventaire complet des programmes susceptibles de l'alimenter : ce sont tout simplement les suites de n caractères puisés dans l'alphabet {0, 1, 2, 3}, soit dans l'ordre naturel des valeurs croissantes de n (= 1, 2, 3, ...) :</p>
 <p></p>
@@ -519,14 +519,14 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p>Cet inventaire est excessivement pléthorique car il ne respecte pas l'obligation d'être libre de tout préfixe (libre de tout suffixe serait plus adéquat ici vu que les programmes se lisent à l'envers) : cela signifie qu'il n'y a pas lieu de considérer un programme qui, lu de droite à gauche, commencerait comme un programme plus court dont l'arrêt est connu. Par exemple, si le programme {0, 2} s'arrête, il est inutile de considérer l'infinité des programmes qui se terminent par {0, 2}, tels {0, 0, 2} ou {3, 3, 0, 2} : les derniers caractères ne seront même pas lus. Ceci n'a rien de surprenant : dans le formalisme de Wolfram,  les programmes peuvent être aussi concis que possible et on n'a rien à faire d'un programme qui ajouterait les paroles de la Marseillaise à son corps utile. </p>
 <p></p>
 
-<div><img src="annexes/minsky/minsky4.jpg" /></div>
+<div><img src="annexes/minsky/minsky4.jpg" alt="" /></div>
 <p>Voici un programme naturellement (libre de tout) préfixe (on dit aussi auto-délimité) pour la machine de Minsky : il porte le numéro 250  (de droite à gauche, il se lit : {1, 1, 2, 2, ...}, peu importe ce que sont les trois points de suspension).  Il évolue exactement entre les lignes verte et rouge, ne franchissant cette dernière qu'au moment de l'arrêt,  après 11 pas, produisant la réponse 0, 0, 1, 1, lue indifféremment dans un sens ou dans l'autre. Cette ambiguïté  n'a en fait pas d'importance car la réponse affichée n'est que l'encodage (compliqué) de la véritable réponse pour laquelle la machine de Minsky est universelle au sens de Turing.  L'élucidation de cette subtilité  nécessiterait d'entrer dans le détail  du fonctionnement de la machine de Minsky, par contre, elle n'a pas d'incidence au niveau de l'arrêt.</p>
 <p></p>
 <p></p>
 <p></p>
 <p></p>
 
-<div><img src="annexes/minsky/minsky5.jpg" /></div>
+<div><img src="annexes/minsky/minsky5.jpg" alt="" /></div>
 <p>Le programme n° 120 ({0, 2, 0, 3}) n'est pas (libre de tout) préfixe : certes il s'arrête mais c'est la conséquence triviale de l'arrêt du programme {2, 0, 3}. Concrètement on observe que l'évolution  de la tête n'atteint jamais la ligne verte dans ce cas. On pourrait évidemment en dire autant de tous les programmes dont l'écriture se terminerait par les symboles 2, 0 et 3.</p>
 <p></p>
 <p></p>
@@ -537,7 +537,7 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p></p>
 
 
-<div><img src="annexes/minsky/minsky2.jpg" /></div>
+<div><img src="annexes/minsky/minsky2.jpg" alt="" /></div>
 <p>Le programme n° 313 ({3, 2, 1, 0})  s'arrête visiblement mais en empiétant sur la partie non encodée de la bande (la tête franchit la ligne verte).  Pour éviter toute ambiguïté due à des encodages différents de cette partie de la bande, le plus sûr est d'assimiler cet exemple à celui du programme {0, 3, 2, 1, 0}, portant le n° 569, quitte à considérer séparément les variantes possibles, {1, 3, 2, 1, 0}, {2, 3, 2, 1, 0} et {3, 3, 2, 1, 0}, qui pourraient parfaitement encoder des programmes qui ne  s'arrêtent pas.</p>
 <p></p>
 <p></p>
@@ -547,7 +547,7 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p></p>
 <p></p>
 
-<div><img src="annexes/minsky/minsky3.jpg" /></div>
+<div><img src="annexes/minsky/minsky3.jpg" alt="" /></div>
 <p>Le programme n° 186 ({1, 2, 1, 2}) ne s'arrête pas (dans un environnement rempli de 0 !). A ce stade, c'est l'intuition qui suggère qu'il ne s'arrête pas : si on souhaite une véritable démonstration, il faut adopter un système formel suffisamment puissant, par exemple l'arithmétique de Peano.  Dans cet exemple particulièrement simple, un raisonnement par récurrence livrerait la démonstration attendue mais d'autres cas pourraient s'avérer plus difficile.  </p>
 <p></p>
 <p></p>
@@ -557,17 +557,17 @@ Cette fonction est maximum lorsque x=N/3 (soit x=4 dans l'exemple de 12 boules).
 <p></p>
 <p>Le cas du programme n° 20835000109010000806 est déjà plus intrigant : s'arrête-t-il ou non , en tous cas il tourne toujours après 50 pas  ? En fait, on montre dans l'annexe qu'il s'arrête effectivement après 181 pas. Sera-ce toujours le cas ? Non, il est bien connu que le problème de l'arrêt d'une MTU  est génériquement indécidable : à côté des cas (= des programmes) pour lesquels l'arrêt est manifeste (on le constate de visu) et d'autres pour lesquels il est facile de démontrer sur la base des axiomes de l'arithmétique qu'elle ne s'arrêtera jamais, il en est une infinité d'autres pour lesquels la MTU calcule indéfiniment sans qu'on puisse prédire son évolution finale (arrêt ou non).  Les axiomes de l'arithmétique ne sont non plus d'aucun secours pour démontrer ou réfuter l'arrêt, c'est cette fois la conséquence du théorème d'incomplétude de Gödel.</p>
  
-  <div><img src="annexes/minsky/minsky10.jpg" /></div>
+  <div><img src="annexes/minsky/minsky10.jpg" alt="" /></div>
   <p></p>
   <p>Voici le détail de l'évolution des 4 programmes de longueur 1 et des 16 programmes de longueur 2, parmi lesquels il est facile d'identifier ceux qui sont préfixes : </p>
-   <div><img src="annexes/minsky/minsky8.jpg" /></div>
-    <div><img src="annexes/minsky/minsky7.jpg" /></div>
+   <div><img src="annexes/minsky/minsky8.jpg" alt="" /></div>
+    <div><img src="annexes/minsky/minsky7.jpg" alt="" /></div>
     
     <p></p>
     <p>On peut poursuivre la prospection, ce qui est fait en annexe, et  identifier l'ensemble des programmes préfixes.  La quête est assuré d'être interrompue par les premiers programmes indécidables mais le fait est qu'aucun candidat ne risque de se présenter aux faibles dimensions  (bien que les caractères soient trop petits pour être distingués, les niveaux de gris suffisent à identifier les programmes évoqués, sinon se reporter à l'annexe) :</p>
     <p></p>
     
-     <div><img src="annexes/minsky/minsky9.jpg" /></div>
+     <div><img src="annexes/minsky/minsky9.jpg" alt="" /></div>
   
   <p></p>
   

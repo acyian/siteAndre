@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'icons';
+	src: url("font/icons.eot");
+	src: 
+		url("font/icons.eot?#iefix") format('embedded-opentype'), 
+		url("font/icons.woff") format('woff'), 
+		url("font/icons.ttf") format('truetype'), 
+		url("font/icons.svg#icons") format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	margin: 0;
 	font-family: 'Oxygen', sans-serif;
@@ -15,6 +27,7 @@ body{
     position: fixed;
     top: 0;
     height: 100%;
+    z-index: 2;
 }
 
 .tablecell {
@@ -41,31 +54,87 @@ body{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+.listNumber {counter-reset: exemple;} /* on initialise et nomme un compteur */
+.listNumber li {
+	list-style-type: none;
+	counter-increment: exemple; /* on incrémente le compteur à chaque nouveau li */
+	margin-bottom: 10px;
+}
+.listNumber li:before {
+	content: counter(exemple); /* on affiche le compteur */
+    padding: 4px 15px;
+    margin-right: 12px;
+    vertical-align: top;
+    background: #ddd;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-weight: bold;
+    color: #666;		
+}
+
+blockquote{
+    background: #fff;
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 0 #ab1200;
+    margin-top: 25px;
+}
+
+blockquote p {
+	font-size: 16px !important;
+    color: #666 !important;
+    font-weight: 400;
+	font-style: italic;
+	position: relative;
+	margin: 0px;
+    padding: 0 15px;
+    border-right-width: 15px;
+}
+
+blockquote p:before{
+    content: '\201C';
+    font-family: serif;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    font-size: 80px;
+    top: -50px;
+    left: 0px;
+    color: #666;
+}
+
+#contenuPrincipal blockquote p:first-of-type:first-letter{
+    font-size: 30px;
+}
+
+
 #navPhysique a, #navMusique a{
 	color: #ddd;
 	text-transform: uppercase;
 }
 
 #navPhysique a:hover, #navMusique a:hover,
-#navPhysique a:active, #navMusique a:active, .actif,
+#navPhysique a:active, #navMusique a:active, .active,
 #navPhysique a:focus, #navMusique a:focus{
-	color: #AB1200;
+	color: #AB1200 !important;
+	font-weight: bold;
 }
 
 #sousNavPhysique li, #sousNavMusique li{
 	padding-bottom: 10px;
 }
 
+#sousNavPhysique a:hover, #sousNavMusique a:hover,
+#sousNavPhysique a:active, #sousNavMusique a:active,
+#sousNavPhysique a:focus, #sousNavMusique a:focus{
+	color: #830f01 !important;
+}
+
 #sousNavPhysique a, #sousNavMusique a{
 	color: #666;
 	text-transform: initial;
 	font-size: 16px;
-}
-
-#sousNavPhysique a:hover, #sousNavMusique a:hover,
-#sousNavPhysique a:active, #sousNavMusique a:active,
-#sousNavPhysique a:focus, #sousNavMusique a:focus{
-	color: #830f01;
 }
 
 #menuGauche{
@@ -139,6 +208,13 @@ h1:first-letter{
 }
 
 #contenuPrincipal h4{
+	font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contenuPrincipal #breadCrumb{
 	text-align: center;
     margin-bottom: 60px;
 }
@@ -218,6 +294,10 @@ h1:first-letter{
     color: #333;
 }
 
+#corps p:not(:first-of-type){
+    text-indent: 60px;
+}
+
 .listCorps{
     text-align: justify;
     font-size: 18px;
@@ -226,7 +306,7 @@ h1:first-letter{
     padding-left: 140px;
 }
 
-#contenuPrincipal p:first-letter{
+#contenuPrincipal p:first-of-type:first-letter{
     float: left;
     margin: 0 6px 0 40px;
     font-size: 60px;
@@ -236,17 +316,65 @@ h1:first-letter{
     color: #AB1200;
 }
 
-#conteneurImages{
-	width: 100%;
+.conteneurImages{
+	float: none !important;
+   /* display: inline-block;*/
+    margin-bottom: 0px !important;
+
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    word-spacing: -2em;
+}
+
+.conteneurImages div{
+/*text-align: center;*/
+	display: inline-block;
+    word-spacing: normal;
+    float: none !important;
+}
+
+
+.conteneurImages figure{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.conteneurImages img{
+    margin-left: 20px;
+    margin-right: 20px !important;
+    margin-bottom: 5px;
+}
+
+.conteneurImages #reneMagritte{
+	margin-top: 95px;
+}
+
+.conteneurImageSeule div{
+	margin-right: 30px;
+}
+
+.conteneurImageSeule figure{
+	margin: 0px;
+}
+
+.conteneurImageSeule figure img{
+	margin: 0px !important;
 }
 
 #corps div{
 	float: left;
-    margin-bottom: 20px;
+}
+
+#contenuPrincipal div{
+	margin-bottom: 20px;
+    text-align: center;
 }
 
 #corps a{
 	color: #AB1200;
+	outline: none;
+	cursor: pointer;
 }
 
 #corps a:hover{
@@ -255,12 +383,149 @@ h1:first-letter{
 
 #corps figcaption{
 	text-align: center;
+	font-size: 14px;
+}
+
+#corps figcaption:nth-of-type(1){
+	font-weight: bold;
+}
+
+#corps figcaption:nth-of-type(2){
+	color: #666;
 }
 
 #corps img{
 	float: left;
     margin-right: 30px;
     margin-top: 20px;
+}
+
+#containerImgSecondeEcoleVienne{
+	/*margin-left: -80px;*/
+}
+
+#navMenu {
+    position: fixed;
+    right: 15.5%;
+    top: 34%;
+ /*   margin-top: -46px;*/
+    z-index: 99999;
+    display: none;
+}
+
+#navMenu ul {
+    padding-left: 0;
+}
+
+#navMenu ul li {
+    list-style: none;
+    height: 15px;
+    padding: 2px 5px 2px;
+    width: 15px;
+}
+
+#navMenu .linavMenu {
+    background-position: 0 0;
+}
+
+#navMenu a {
+    background: url(images/ancre.png) no-repeat;
+    height: 15px;
+    width: 15px;
+    display: block;
+    position: relative;
+}
+
+#navMenu a:hover span{ 
+    width:auto; padding:5px 10px;overflow:visible; 
+}
+
+#navMenu .linavMenu:hover, #navMenu .linavMenu:focus, #navMenu .linavMenu:active, #navMenu .linavMenu.active {
+    background-position: 0 -19px;
+}
+
+#navMenu span {
+    width: 0;
+    top: -3px;
+    right: 15px;
+    padding: 5px 0 5px 10px;
+    position: absolute;
+    overflow: hidden;
+    color: #ab1200;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    line-height: 1em;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+    border-radius: 3px;
+}
+
+#sommaire{
+	margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#sommaireTitle{
+    float: none !important;
+    margin-bottom: 0px !important;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    word-spacing: -2em;
+}
+
+#sommaireTitle h6{
+	display: inline-block;
+    word-spacing: normal;
+    float: none !important;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+}
+
+#sommaireLink{
+    display: inline-block;
+    word-spacing: normal;
+    float: none !important;
+}
+
+#linksSummary{
+	display: none;
+	padding-left: 0px;
+    list-style: none;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding-top: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+table{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+	width: 100%;
+}
+
+td,th{
+    border: 1px solid #ddd;
+    width: 7.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+th{
+	font-weight: bold;
+}
+
+i{
+	font-size: 0.8em;
+    line-height: 1.2;
 }
 
 /*-------- FOOTER ---------*/
@@ -273,6 +538,8 @@ h1:first-letter{
     margin-left: -8%;
     margin-bottom: 0px;
     margin-top: 80px;
+    position: relative;
+    z-index: 1;
 }
 
 #footer h3 {
@@ -293,7 +560,7 @@ h1:first-letter{
 
 #ancreRetourHautPage{
     position: absolute;
-    bottom: 290px;
+    bottom: 325px;
     right: 8%;
     font-size: 12px;
     display: inline-block;
@@ -301,7 +568,7 @@ h1:first-letter{
 
 #contact{
 /*	margin-right: 18.5%;*/
-	width: 320px;
+	width: 322px;
 }
 
 #contact img{
@@ -343,6 +610,11 @@ h1:first-letter{
 	margin-bottom: 10px;
     display: inline-block;
     font-size: 12px;
+}
+
+
+@media only screen and (max-width: 1280px){
+	
 }
 
 

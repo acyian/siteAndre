@@ -1,7 +1,4 @@
-
-
-function update_design_footer()
-{
+function update_design_footer(){
     var widthContact = document.getElementById('contact').offsetWidth;
     var widthArticlesRecents = document.getElementById('articlesRecents').offsetWidth;
     var widthSitesDeReferences = document.getElementById('sitesDeReferences').offsetWidth;
@@ -20,8 +17,7 @@ function update_design_footer()
     document.getElementById("articlesRecents").style.marginRight = widthArticlesRecents + "px";    
 }
 
-function update_design()
-{
+function update_design(){
     update_design_footer();
 }
 

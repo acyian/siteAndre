@@ -10,11 +10,23 @@
   <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
-      $("#header").load("template/header.html"); 
-      $("#footer").load("template/footer.html"); 
+
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#contenumusique").addClass("active");
+          }
+        });
+      });
+
+      $("#footer").load("template/footer.html", update_design); 
     });
   </script> 
 </head>
@@ -34,28 +46,24 @@
         <h4 class="accessibility-hidden">Fil d'Ariane</h4>
         <nav id="filAriane">
           <ul>
-            <li class="breadcrumbItem breadcrumbItem--home ">
-              <a href="index.html" itemprop="url">
-                <span itemprop="title">Accueil</span>
-              </a>
-            </li>
             <li class="breadcrumbItem">
-              <a href="#" itemprop="url">
-                <span itemprop="title">Musique</span>
-              </a>
+                Musique
             </li>
             <li class="breadcrumbItem  breadcrumIitem--current">
               Présentation
             </li>
           </ul>
         </nav>
+        
+        <div>
+          <p>Sans renier le moins du monde la Sainte Trilogie, Bach - Beethoven - Mozart, prise dans l'ordre ou le désordre, et pour laquelle une documentation abondante existe, ce site veut avant tout se consacrer :</p>
+          <ul class="listCorps">
+            <li><strong>aux laissés pour compte de l'Histoire de la Musique</strong>. Ceux qui sont tombés dans l'oubli ou ceux que la critique a (in)volontairement assassinés et que l'on tarde à réhabiliter.</li>
+            <li><strong>aux compositeurs d'aujourd'hui qui luttent vaillamment contre l'image négative</strong> et toujours actuelle d'une musique contemporaine qui ne serait que cacophonie ou écorchure de tympans.</li>
+          </ul>
 
-        <p>Sans renier le moins du monde la Sainte Trilogie, Bach - Beethoven - Mozart, prise dans l'ordre ou le désordre, et pour laquelle une documentation abondante existe, ce site veut avant tout se consacrer :</p>
-        <ul class="listCorps">
-          <li><strong>aux laissés pour compte de l'Histoire de la Musique</strong>. Ceux qui sont tombés dans l'oubli ou ceux que la critique a (in)volontairement assassinés et que l'on tarde à réhabiliter.</li>
-          <li><strong>aux compositeurs d'aujourd'hui qui luttent vaillamment contre l'image négative</strong> et toujours actuelle d'une musique contemporaine qui ne serait que cacophonie ou écorchure de tympans.</li>
-        </ul>
-        <p>Vous trouverez sur ce site une <strong>documentation en progression constante</strong>, relative aux musiques peu jouées d'hier et d'aujourd'hui.  Vous trouverez aussi une introduction relative à l'état de la  <strong>musique contemporaine</strong> à la rubrique "Musique 2001". (PDF disponible)</p>
+          <p>Vous trouverez sur ce site une <strong>documentation en progression constante</strong>, relative aux musiques peu jouées d'hier et d'aujourd'hui.  Vous trouverez aussi une introduction relative à l'état de la  <strong>musique contemporaine</strong> à la rubrique "Musique 2001". (PDF disponible)</p>
+        </div>
       </div>
 
       <!-- Inclusion footer -->

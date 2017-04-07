@@ -11,11 +11,21 @@
   <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
-      $("#header").load("template/header.html"); 
-      $("#footer").load("template/footer.html"); 
+      $(function(){
+          $.ajax({
+             url: "template/header.html",
+             dataType: "html",
+             success: function(data) {
+               $("#header").html(data);
+               $("#crossover").addClass("active");
+            }
+          });
+      });
+      $("#footer").load("template/footer.html", update_design); 
     });
   </script> 
 </head>
@@ -34,7 +44,7 @@
         
         <h3>Coups de coeur</h3>
         
-        <h4 class="accessibility-hidden">Fil d'Ariane</h4>
+        <h4 id="breadCrumb" class="accessibility-hidden">Fil d'Ariane</h4>
         <nav id="filAriane">
           <ul>
             <li class="breadcrumbItem breadcrumbItem--home ">
@@ -58,22 +68,50 @@
         
 
         <div>
-          <img src="images/cross/pluhar.jpg" alt="portrait Christina Pluhar" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/pluhar.jpg" alt="Christina Pluhar" />
+                    <figcaption>Christina Pluhar</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Honneur à une dame dont j'aime le travail toujours bien fait : Christina Pluhar. Chacune de ses apparitions en concert avec son ensemble "Arpeggiata" est un événement que je vous recommande. La voici ici en compagnie du contre-ténor, Philippe Jaroussky, dans un "remake jazzy" décoiffant d'un air de Claudio Monteverdi (1567-1643), <a href="http://www.teatrodamore.com/">Ohimè ch'io cado</a>. La video originale que je vous propose (cliquez sur video) comprend deux morceaux, le deuxième qui nous intéresse particulièrement vu le thème évoqué commence après 4'32. Vous trouverez sur ce site un <a href="chroniques/arpeggiata.html">portrait</a> plus détaillé de cette grande artiste.</p>
         </div>
 
         <div>
-          <img src="images/cross/kremer.jpg" alt="portrait Gidon Kremer" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/kremer.jpg" alt="Gidon Kremer" />
+                    <figcaption>Gidon Kremer</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Autre interprète irremplaçable, le violoniste Gidon Kremer, abondamment cité sur ce site. Il se passionne à ses heures pour le tango classique tel que l'a immortalisé le compositeur argentin Astor Piazzola (1921-1992). Cela donne de grands moments d'émotion précisément lorsque les musiciens soignent le son comme c'est le cas dans cette interprétation de <a href="http://www.youtube.com/watch?v=Edv9TCctKzw&feature=related">Celos</a>. Du même Piazzola voici un morceau plus entraînant <a href="http://www.youtube.com/watch?v=_tMgVMxG95A">Libertango</a> et cette fois, c'est le violoncelliste Yo Yo Ma qui est à l'oeuvre.</p>
         </div>
 
         <div>
-          <img src="images/cross/mertens1.jpg" alt="portrait Wim Mertens" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/mertens1.jpg" alt="Wim Mertens" />
+                    <figcaption>Wim Mertens</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Wim Mertens (1953- ) est un musicien belge qui s'est très tôt intéressé au courant minimaliste américain auquel il a d'ailleurs consacré une thèse en musicologie. Pianiste, chanteur et compositeur, il a suivi le mouvement en l'accomodant à une sauce  qui a fait son succès auprès d'un public étrangement ciblé. J'ai, en effet, toujours été étonné que ce mélodiste d'une rare "efficacité" ne soit pas davantage connu y compris dans son propre pays. Le concert qu'il a donné à Anvers pour célébrer ses 25 ans de carrière fut un modèle du genre. Il faut reconnaître qu'accompagné par un petit ensemble instrumental et 6 voix féminines, il avait mis les petits plats dans les grands. Ce concert, disponible en <a href="http://www.jpc.de/jpcng/poprock/detail/-/art/Wim-Mertens-What-You-See-Is-What-You-Hear-Live-2005/hnum/8016353">DVD</a>, pourrait être votre prochain achat cadeau si l'extrait suivant <a href="http://www.youtube.com/watch?v=hlHHkMsd7fU&feature=related">We are the thieves</a> vous plaît.</p>
         </div>
 
         <div>
-          <img src="images/cross/maraire.jpg" alt="portrait Dumisani Maraire" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/maraire.jpg" alt="Dumisani Maraire" />
+                    <figcaption>Dumisani Maraire</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Dumisani Maraire (1943-1999) est un musicien zimbabwéen qui a fait irruption dans le circuit occidental par la grâce du concours de l'éclectique Quatuor Kronos dont nous aurons à reparler. <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Kronos-Quartet-Pieces-of-Africa/hnum/6158655">Pieces of Africa</a> est, dans certains milieux branchés, un CD culte qui en a surpris plus d'un bêtement convaincus qu'il n'était de musique savante qu'occidentale Les plages 1 et 12 qui ouvre et ferme ce CD sont remarquables par la qualité du métissage qu'elles offrent. <a href="http://www.youtube.com/watch?v=FAU2hGCkPW4">Mai Nozipo</a> et surtout Kutambarara 
           <sub><sub><sub> 
           <audio controls preload="none" style="height:16px; width:18%;">
@@ -85,32 +123,74 @@
         </div>
 
         <div>
-          <img src="images/cross/garbarek.jpg" alt="pochette CD Officium" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/garbarek.jpg" alt="pochette CD Officium" />
+                    <figcaption>Pochette CD Officium</figcaption>
+                </figure>
+            </div>
+          </div>
           <p><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hilliard-Ensemble-Jan-Garbarek-Officium/hnum/7162716">Officium</a> est un CD qui fit date dans l'histoire de l'enregistrement musical : le projet naquit d'une rencontre programmée par Manfred Eicher, directeur du label ECM bien connu des inités, entre l'ensemble vocal Hilliard, spécialisé dans l'interprétation des musiques médiévale et renaissante et le saxophoniste de jazz, Jan Garbarek.  L'alliage des sons et la spiritualité qui se dégage de cette collaboration est un modèle sans équivalent tant il est vrai que les mondes du classique et du jazz sont difficiles à concilier. <a href="http://www.youtube.com/watch?v=CGIITqUSUo4">Parce mihi Domine</a> de Christobal de Morales (1500-153) ouvre ce témoignage fascinant de spiritualité.</p>
         </div>
 
         <div>
-          <img src="images/cross/kronos.jpg" alt="Quatuor Kronos" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/kronos.jpg" alt="Quatuor Kronos" />
+                    <figcaption>Quatuor Kronos</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Nul ne peut ignorer l'activité que le Quatuor Kronos déploie depuis sa création, en 1973, au service de toutes les musiques nouvelles du monde (Plus de 600 créations à ce jour, avec hélas le déchet qu'on devine !) : des compositeurs confirmés, Terry Riley, Philip Glass, Alfred Schnittke, Kevin Volans, Osvaldo Golijov, ..., mais aussi tant de musiques écrites par des musiciens inconnus sous nos cieux. Si je devais retenir un CD au service des musiques du proche Orient, je recommanderais <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Kronos-Quartet-Floodplain/hnum/9187271">Floodplain</a>. Voici, en extrait, <a href="http://www.youtube.com/watch?v=3ht4Kw8mzoE&feature=related">Tashweesh</a>, une étape plaisante de ce voyage dépaysant.</p>
         </div>
           
         <div>
-          <img src="images/cross/glass200.jpg" alt="portrait Philip Glass" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/glass200.jpg" alt="Philip Glass" />
+                    <figcaption>Philip Glass</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Un portrait de <a href="chroniques/Glass.html">Philip Glass</a>, proposé par ailleurs sur ce site, fait état de l'intérêt du compositeur pour le mélange des sonorités exotiques.  Plusieurs collaborations sont nées avec des musiciens en provenance des horizons les plus divers. Ses deux meilleurs essais du genre sont Aguas da Amazonia et Orion.Du premier voici le superbe <a href="http://www.youtube.com/watch?v=VNScRm1n8js&feature=related">Japura River</a> interprété par l'ensemble Uakti et du second, qui fait appel à quelques musiciens  triés sur le volet (Mark Atkins, Ravi Shankar, Foday Musa Suso, Uakti, ...), voici <a href="http://www.youtube.com/watch?v=EPwPEpK1cK4&feature=related">Tzivaeri</a> chanté par Eleftheria Arvanitaki.</p>
         </div>
 
         <div>
-          <img src="images/cross/shankar.jpg" alt="portrait Ravi Shankar" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/shankar.jpg" alt="Ravi Shankar" />
+                    <figcaption>Ravi Shankar</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Ravi Shankar, né en Inde en 1920, est un compositeur pratiquant le sitar classique. La musique classique indienne se caractérise par le respect d'innombrables modes et échelles sonores codifiés sous le nom de ragas.  Le compositeur s'est cependant ouvert à la création occidentale, notamment en écrivant d'authentiques Concertos pour Sitar et Orchestre, le deuxième récemment dédié à sa fille Anoushka.  Il a également collaboré entre autres avec Yehudi Menuhin et Philip Glass. Un CD <a href="http://www.amazon.com/Passages-Ravi-Shankar-Phillip-Glass/dp/B0000000K4">"Passages"</a> est paru chez BMG qui n'a jamais quitté le box office et dont voici l'extrait intitulé <a href="http://www.youtube.com/watch?v=6WVAdT27MdE">Ragas in minor Scale</a>, précisément sur une musique de Glass.</p>
         </div>
 
         <div>
-          <img src="images/cross/saykopa.jpg" alt="portrait Fazil Say" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/saykopa.jpg" alt="Fazil Say" />
+                    <figcaption>Fazil Say</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Fazil Say est un pianiste turc d'envergure : ses concerts classiques ou savamment improvisés sont toujours extrêmement stimulants. Il a trouvé en la violoniste Patricia Kopatchinskaja la  complice idéale capable d'entrer, à égalité, dans son jeu souvent pertinemment déroutant (Ici dans une <a href="https://www.youtube.com/watch?v=NSiaHkSzBYQ">Sonate</a> écrite par Say). Lorsqu'il se lâche, Say jazzifie tout sur son passage, du <a href="https://www.youtube.com/watch?v=okl7_SDhVSU">Caprice n°1</a> de Paganini à la <a href="https://www.youtube.com/watch?v=0_Whp1kWZ8Y">Marche turque</a> de Mozart ou il revisite, à sa façon <a href="https://www.youtube.com/watch?v=NUSDpxZgy0I">Ah vous dirais-je Maman</a>.</p>
         </div>
 
         <div>
-          <img src="images/cross/sarband.jpg" alt="portrait Vladimir Ivanoff" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/sarband.jpg" alt="Vladimir Ivanoff" />
+                    <figcaption>Vladimir Ivanoff</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Fondé par Vladimir Ivanoff (2<sup>ème</sup> sur la photo),<a href="http://www.sarband.de/english_introduction.html"> Sarband</a> s'intéresse aux musiques anciennes des traditions non occidentales. Parmi les CD disponibles, j'ai sélectionné "Labyrinth" qui ressuscite, à sa manière, la tradition médiévale bulgare. Voici la dissonante superposition de "Shopska Pesen" (trad. bulgare) et de "Quis Dabit" (Manuscrit Las Huelgas)
           <sub><sub><sub> 
             <audio controls preload="none" style="height:16px; width:18%;">
@@ -130,36 +210,86 @@
         </div>
 
         <div>
-          <img src="images/cross/sting.jpg" alt="portrait Sting" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/sting.jpg" alt="Sting" />
+                    <figcaption>Sting</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Sting est un chanteur rock à la voix haut perchée qui fit des merveilles, en particulier dans le tube planétaire <a href="http://www.youtube.com/watch?v=Fq9FZ8e6d1Q">Russians</a> : une superbe longue mélodie suivie d'un refrain emprunté à la Romance de la suite <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Serge-Prokofieff-Leutnant-Kije-Suite-op-60/hnum/5859836">Lieutenant Kijé</a> de Prokofiev (attendez 90 secondes).  Il a édité récemment un album <a href="http://www.jpc.de/jpcng/classic/detail/-/art/John-Dowland-Songs-from-the-Labyrinth-Sting/hnum/6325199">Song of the Labyrinth</a>, consacré à des mélodies de l'époque élisabéthaine. Le voici dans <a href="http://www.youtube.com/watch?v=55jnH3rqcoU">Come Again</a>  de John Dowland (1563-1626).
         </div>
 
         <div>
-          <img src="images/cross/josavall.jpg" alt="portrait Jordi Savall" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/josavall.jpg" alt="Jordi Savall" />
+                    <figcaption>Jordi Savall</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Avec plus de 160 enregistrements originaux à son actif, en solo aux violes, en petites formations ou dirigeant des ensembles plus importants (Hesperion XXI, Capella Reial de Catalunya ou le Concert des Nations), Jordi Savall apparaît comme un découvreur infatigable de répertoires largement oubliés. Bien que spécialisé dans les musiques du bassin méditerranéen, retrouvez-le avec plaisir sacrifiant à la mode celtique, en compagnie d'Andrew Lawrence-King, harpe et psaltérion, dans un très bel <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jordi-Savall-The-Celtic-Viol/hnum/8167197">enregistrement</a> dont voici la première plage <a href="http://www.youtube.com/watch?v=wKw3xgxU5ik&feature=related">The musical Priest</a>.</p>
         </div>
 
         <div>
-          <img src="images/cross/jarrett.jpg" alt="portrait Keith Jarrett" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/jarrett.jpg" alt="Keith Jarrett" />
+                    <figcaption>Keith Jarrett</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Keith Jarrett est un des pianistes les plus attachants de notre temps.  Homme à tout faire, il joue de plusieurs instruments, il <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Keith-Jarrett-Elegy-f%FCr-Violine-Streicher/hnum/7020401">compose</a> et il improvise au piano. Son <a href="https://www.youtube.com/watch?v=T_IW1wLZhzE">Köln Concert</a> est entré dans la légende et comme tout miracle qui se respecte, il ne s'est plus reproduit malgré d'autres tentatives respectables (Vienne, Paris, <a href="http://www.youtube.com/watch?v=HPqK1JJOFxw">Tokyo</a>, Brême, ...). Jazzman mais éclectique, il pratique le répertoire classique où il introduit un swing discret qui fait des ravages comme dans cette superbe interprétation des <a href="http://www.youtube.com/watch?v=jpGh3G48WsM">24 Préludes & Fugues opus 87</a> de Schostakovitch : un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Dimitri-Schostakowitsch-Pr%E4ludien-Fugen-op-87-Nr-1-24/hnum/6404271">double CD</a> essentiel !</p>
         </div>
 
         <div>
-          <img src="images/cross/nyman.jpg" alt="portrait Michael Nyman" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/nyman.jpg" alt="Michael Nyman" />
+                    <figcaption>Michael Nyman</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Bien qu'ayant fait fortune dans le mélange des genres, Michael Nyman revendique d'être considéré comme un compositeur "sérieux", ce que bien des puristes mal intentionnés lui refusent. C'est pourtant un mélodiste autant qu'un rythmicien d'une rare efficacité Auteur de quantité de musiques de films à succès dont une impressionnante collaboration avec le cinéaste Peter Greeneway, il se produit également avec son ensemble instrumental, le Nyman Band. Son <a href="http://www.jpc.de/jpcng/poprock/detail/-/art/Michael-Nyman-Live/hnum/7182491">album</a> le plus réussi (live) commence par une adaptation libre de l'air <a href="https://www.youtube.com/watch?v=SxzxYoEU1EA">Madamina</a> extrait du Don Giovanni de Mozart. Son clou  est <a href="https://www.youtube.com/watch?v=xIde4FhxvEE">The Upside-Down Violin</a> où le Nyman Band est rejoint par l'orchestre Chekara de Tetouan dans une course de plus en plus folle.</p>
         </div>
 
         <div>
-          <img src="images/cross/swsingers.jpg" alt="portrait Ward Swingle" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/swsingers.jpg" alt="Ward Swingle" />
+                    <figcaption>Ward Swingle</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Fondé en 1962 par Ward Swingle le groupe des <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Swingle-Singers-Anthology/hnum/5909872">Swingle Singers</a> a fait plusieurs fois le tour du monde en proposant des adaptations vocales d'un haut niveau technique de tubes classiques allant de Bach à Tchaïkowsky. Le groupe existe toujours mais les interprètes ont changé comme le confirme la photo ci-contre. Ils ont progressivement élargi leur répertoire, aux airs des Beatles etc, pour satisfaire les attentes du public. D'aucuns regrettent les voix et le répertoire d'origine, en particulier les pages de Bach dont la partition est respectée sauf l'adjonction d'une discrète harmonisation jazzifiante. Voici la <a href="http://www.youtube.com/watch?v=RPBro9mzoVM&feature=related">2<sup>ème</sup> Fugue</a> du Clavier bien tempéré. </p>
         </div>
 
         <div>
-          <img src="images/cross/hesperion.jpg" alt="portrait Hesperion XXI" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/hesperion.jpg" alt="Hesperion XXI" />
+                    <figcaption>Hesperion XXI</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Hesperion XXI est la suite (chrono)logique d'Hesperion XX, fondé en 1974 par  Jordi Savall. Cet ensemble qui incarne le niveau d'excellence en matière de musique ancienne - essentiellement mais pas seulement - du bassin méditerranéen a enregistré un nombre incalculable d'albums tous aussi originaux et bienvenus les uns que les autres. A bien des égards, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Orient-Occident-1200-1700/hnum/1019663">Orient-Occident</a> devrait être le plus cher aux oreilles de ceux qui croient encore que le contact de mondes éloignés est source d'enrichissement. J'espère que l'écoute de <a href="http://www.youtube.com/watch?v=W6e9XzTz5CM">Laili Djan</a> vous convaincra de vous procurer l'album complet.</p>
         </div>
 
         <div>
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/muvrini.jpg" alt="I Muvrini" />
+                    <figcaption>I Muvrini</figcaption>
+                </figure>
+            </div>
+          </div>
           <img src="images/cross/muvrini.jpg" alt="portrait I Muvrini" />
           <p>I Muvrini est un ensemble corse qui pratique le chant traditionnel polyphonique typique de cettte région. A côté de bien des albums commerciaux - il faut bien vivre ! - il en est au moins un, <a href="http://www.jpc.de/jpcng/poprock/detail/-/art/I-Muvrini-Polyphonies/hnum/5493418">Polyphonies</a>, qui ose la différence, proposant quelques hymnes chrétiens connus des fidèles de l'office en latin et ressuscitant même - si l'on peut dire - l'Office des Morts. Ecoutez ce bouleversant Kyrie eleison 
           <sub><sub><sub> 
@@ -172,12 +302,26 @@
         </div>
 
         <div>
-          <img src="images/cross/maandmorricone.jpg" alt="portrait Yo Yo Ma" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/maandmorricone.jpg" alt="Yo Yo Ma" />
+                    <figcaption>Yo Yo Ma</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Yo Yo Ma est un violoncelliste classique ne craignant pas de jouer les Suites de Bach dans les endroits les plus inhabituels et s'ouvrant volontiers aux musiques alternatives. Il a, de fait, convié beaucoup d'artistes provenant des horizons les plus divers (jazz, musiques du monde) à se joindre à lui. Dans le domaine de la musique de film, il a collaboré avec John Williams et Ennio Morricone. Extrait de l'album <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Yo-Yo-Ma-plays-Ennio-Morricone/hnum/4193548">Yo Yo Ma plays Morricone</a> voici le <a href="http://www.youtube.com/watch?v=2jSotUeV0WI&feature=related">thème principal</a> du film The Mission, un film de Roland Joffé, Palme d'or à Cannes, en 1986.</p>
         </div>
 
         <div>
-          <img src="images/cross/elyma.jpg" alt="Elyma" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/elyma.jpg" alt="Elyma" />
+                    <figcaption>Elyma</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Fiesta-Criolla/hnum/4779959">CD</a> fort réjouissant témoigne rétrospectivement de l'apparition, en 1531, de la Vierge de Guadalupe à un Indien aztèque. La plupart des plages sont l'oeuvre d'un compositeur brésilien, Roque Jacinto de Chavarría (1688-1719). C'est l'ensemble genevois, Elyma, dirigé par son chef fondateur, Gabriel Garrido, qui vous fait revivre les festivités telles qu'elles pourraient encore se dérouler à La Plata (Sucre) en Bolivie. L'ensemble est coutumier de la fête comme en témoigne cette interprétation publique de <a href="http://www.youtube.com/watch?v=yI2upDFVdCc&feature=related">Cachua la Serranita</a>. Le CD se termine par une danse irrésistible "Lanchos para bailar" 
           <sub><sub><sub> 
             <audio controls preload="none" style="height:16px; width:18%;">
@@ -190,17 +334,38 @@
         </div>
 
         <div>
-          <img src="images/cross/caine.jpg" alt="portrait Uri Caine" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/caine.jpg" alt="Uri Caine" />
+                    <figcaption>Uri Caine</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Uri Caine est un pianiste et compositeur américain né en 1956. Bien qu'il pratique également les styles classique et jazz, il est surtout connu des amateurs de ce dernier genre. Son approche du répertoire classique (Bach, Mozart, Beethoven, Schumann, Wagner, Mahler, Verdi, ...) est volontairement iconoclaste : il excelle à re(dé)construire les musiques du passé, les soumettant aux contorsions d'une imagination sans borne. Dans ses meilleurs essais, ses talents d'arrangeur font des merveilles que seul les puristes coincés boudent. Cette courte notice n'évoquera qu'un <a href="http://www.jpc.de/jpcng/jazz/detail/-/art/Uri-Caine-geb-1956-Diabelli-Variations/hnum/6232966"> CD</a> en tous points remarquables où Caine revisite les Variations Diabelli de Beethoven en compagnie de l'excellent ensemble Concerto Köln. A l'évidence le personnage mérite qu'on se penche sur son "travail" d'artiste. Attention, ses autres <a href="http://www.jpc.de/jpcng/home/search?fastsearch=uri%20caine&rubric=jazz&pd_orderby=score">albums</a> sont nettement moins contrôlés, au sens classique du terme. </p>
         </div>
 
         <div>
-          <img src="images/cross/jenkins.jpg" alt="portrait Karl Jenkins" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/jenkins.jpg" alt="Karl Jenkins" />
+                    <figcaption>Karl Jenkins</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Karl Jenkins est un musicien gallois, né en 1944.  Il a passé ses jeunes années en compagnie du groupe rock "Soft Machines" avant de voler de ses propres ailes, remportant un succès planétaire avec la série "Adiemus". Un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Karl-Jenkins-Karl-Jenkins-The-Platinum-Collection/hnum/9697261">triple CD</a> illustre l'activité déployée par l'auteur pour transposer dans une forme classique mais populaire une recette qui a si bien marché : une Messe sur le thème de la chanson "L'Homme Armé" (CD1) et un Requiem (CD2), que vous pouvez comparer au modèle primitif (CD3). On n'arrête pas une équipe qui gagne (des sous) : un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Karl-Jenkins-Gloria/hnum/1838240">Gloria</a> puis un Stabat Mater ont suivi. Vous êtes assez grand pour juger la valeur d'une écriture assurément plaisante et commerciale.</p>
         </div>
         
         <div>
-          <img src="images/cross/katschernin.jpg" alt="portrait Elena Kats-Chernin" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/katschernin.jpg" alt="Elena Kats-Chernin" />
+                    <figcaption>Elena Kats-Chernin</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Née à Tashkent (Uzbekistan) en 1957, Elena Kats-Chernin a émigré en Australie en 1975, ne s'y installant définitivement qu'en 1994.  Entre-temps, elle a poursuivi ses études en Allemagne auprès de l'austère Helmut Lachenmann, un séjour qui ne la prédestinait pas vraiment au style léger qu'on lui connaît aujourd'hui. Elle a connu son premier succès international avec sa pièce intitulée "Clocks" dont voici un (hélas trop) court extrait 
             <sub><sub><sub> 
             <audio controls preload="none" style="height:16px; width:18%;">
@@ -218,7 +383,14 @@
         </div>
 
         <div>
-          <img src="images/cross/moondog1.jpg" alt="portrait Louis Hardin alias Moondog" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/moondog1.jpg" alt="Louis Hardin alias Moondog" />
+                    <figcaption>Louis Hardin alias Moondog</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>J'ai déjà présenté Louis Hardin, alias Moondog, dans une <a href="chroniques/minimalisme.html">chronique </a> consacrée aux origines du mouvement minimaliste américain.  Ce musicien complètement décalé s'était mis en tête de réconcilier les techniques anciennes du canon avec les musiques populaires ou inspirées d'un jazz volontairement mesuré.  Dans la série des "Logrundr", il rêvait de faire sonner l'orgue autrement, souvent staccato, en imitant le timbre de la flûte de Pan ou du saxophone.  Voici le Logrundr en ré, opus 76 n°21 
             <sub><sub><sub> 
               <audio controls preload="none" style="height:16px; width:18%;">
@@ -236,43 +408,99 @@
         </div>
 
         <div>
-          <img src="images/cross/barryguy.jpg" alt="portrait Barry Guy" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/barryguy.jpg" alt="Barry Guy" />
+                    <figcaption>Barry Guy</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Barry Guy, né en 1947, est un contrebassiste anglais qui a plus d'une corde à son instrument : jazzman évidemment, contrebasse oblige (il a fondé le London Jazz Composers Orchestra), il pratique également la musique classique, du baroque à nos jours.  Enfin , il improvise et compose dans véritablement tous les genres, c'est le moins qu'on puisse dire.  Comment imaginer que c'est le même homme qui écrit : le planant <a href="http://www.youtube.com/watch?v=h5yGfMuJG2Q">Odyssey</a>, l'expérimental <a href="http://www.youtube.com/watch?v=aK5BEQx7f8E&feature=related">Five Fizzles</a>, l'étonnant <a href="http://www.youtube.com/watch?v=1UVgO4hhSmw">Redshift</a>, pour deux violoncelles, et qui est capable d'animer "son" orchestre dans un <a href="http://www.youtube.com/watch?v=SH6wMgFeS6c">morceau</a> aussi parfaitement hideux ?  Un CD, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Barry-Guy-After-the-Rain/hnum/7511851">After the Rain</a>, enregistré par le City of London Sinfonia, dirigé par feu Richard Hickox, démontre l'incontestable talent de compositeur moderne de ce caméléon musical.  L'ensemble Hilliard avait déjà placé sa pièce intitulée "Un coup de dés" en tête de son double album, <a href="http://www.amazon.com/Hilliard-Songbook-New-Music-Voices/dp/B000024R1Q">A Hilliard Songbook</a>. </p>
         </div>
 
         <div>
-          <img src="images/cross/oniwitars.jpg" alt="portrait Ony Witars" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/oniwitars.jpg" alt="Ony Witars" />
+                    <figcaption>Ony Witars</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Ony Witars, le nom de ce groupe à géométrie variable ne vous dira probablement pas grand chose et pourtant il est très connu en Allemagne.  Il pratique le mélange des genres anciens et populaires de traditions occidentales et orientales.  Son <a href="http://www.oniwytars.de">site</a>, richement documenté, vous réserve quelques belles surprises auditives dont l'album intitulé, ORO, à l'interesection de la musique ottomane, de la world music et d'un jazz soft, le tout distillé avec une qualité de son digne de ce nom. </p>
         </div>
           
         <div>
-          <img src="images/cross/kingsingers.jpg" alt="portrait The King’s Singers" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/kingsingers.jpg" alt="The King’s Singers" />
+                    <figcaption>The King’s Singers</figcaption>
+                </figure>
+            </div>
+          </div>
           <p><a href="http://www.kingssingers.com/">The King’s Singers</a> est un groupe de six chanteurs dont les noms changent au fil du temps.  Les membres actuels - sur la photo (2009) -  n'ont plus rien à voir avec les fondateurs de 1968.  Ils font annuellement 120 concerts, partout dans le monde, alternant tous les genres : commandes à de "grands" compositeurs (Ligeti <a href="http://www.virginmega.fr/musique/album/ligeti-nonsense-madrigals-mysteries-of-the-macabre-aventures-etc-the-king-s-singers-108799402,page1.htm">Nonsense Madrigals</a>, Berio, Maxwell Davies, Penderecki, Tavener, ...) ou à de &quot;moins grands&quot; (L'album <a href="http://www.amazon.com/Street-Songs-Evelyn-Glennie/dp/B000007RSM">Street Songs</a>, à découvrir !), adaptations de tubes populaires (<a href="http://www.youtube.com/watch?v=ywkarAwB0W8&feature=related">Black Bird </a>des Beatles) ou classiques (<a href="http://www.youtube.com/watch?v=SrXJnMvg9uI&feature=related">Rossini</a>) ou encore collaborations avec des groupes instrumentaux issus de la world music (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Kings-Singers-Sarband-Sacred-Bridges/hnum/6269605">Sarband</a>) ou de la musique ancienne (<a href="http://www.youtube.com/watch?v=62xfkKkYsCw">Arpeggiata</a>). Ce groupe excelle dans la fantaisie (Ecoutez <a href="http://www.youtube.com/watch?v=JXhAz0DOpMU&feature=related">Masterpiece</a> !) mais aussi dans les madrigaux de la renaissance, auxquels il a d'ailleurs consacré une anthologie par pays (<a href="http://www.youtube.com/watch?v=M7W0G1c8fJ0&feature=related">Il est bel et bon</a>). Il est remarquable que le renouvellement fréquent des chanteurs n'ait jamais brisé la cohésion ni le niveau vocal de l'ensemble, toujours impeccables quel que soit le genre abordé. </p>
         </div>
           
         <div>
-          <img src="images/cross/gainsbourg.jpg" alt="portrait Serge Gainsbourg" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/gainsbourg.jpg" alt="Serge Gainsbourg" />
+                    <figcaption>Serge Gainsbourg</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Enfin une vignette qui ne m'a pas coûté trop d'efforts, sauf trouver une photo de Serge Gainsbourg (1928-1991), exempte de fumée de cigarette !  Gilles Bencimon a recensé les emprunts que l'auteur-compositeur a fait, à la musique classique, pour écrire quelques-uns de ses tubes : <a href="http://www.youtube.com/watch?v=bbUUwJxpW88&feature=related">Jane B</a> (Chopin, <a href="http://www.youtube.com/watch?v=g7DIxguQkhE">Prélude op 28-4</a>), <a href="https://www.youtube.com/watch?v=8BRM8vTqFdo">Babe alone in Babylone</a> (Brahms, <a href="http://www.youtube.com/watch?v=5-HcTI8zuBo">Symphonie n°3</a>), <a href="http://www.youtube.com/watch?v=NuZklVrHspM">Initials BB</a> (Dvorak, <a href="http://www.youtube.com/watch?v=UNR_AZL9XAw&feature=related">Symphonie n°9</a>), <a href="http://www.youtube.com/watch?v=Xxwpukrg3Jw">Ma lou Marilou</a> (Beethoven, <a href="http://www.youtube.com/watch?v=ZL_0uHI9Cio">Sonate n° 23</a>), <a href="http://www.dailymotion.com/video/x76uyl_lost-song_creation">Lost Song</a> (Grieg, <a href="https://www.youtube.com/watch?v=I2iOwhNrPwY">Peer Gynt</a>).  L'enquête complète est disponible à l'écoute sur le site de <a href="http://www.rfi.fr/contenu/20100204-1-gainsbourg-musique-classique">RFI</a> (Radio France Internationale).</p>
         </div>   
         
         <div>
-          <img src="images/cross/loussier.jpg" alt="portrait Jacques Loussier" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/loussier.jpg" alt="Jacques Loussier" />
+                    <figcaption>Jacques Loussier</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Il fallait s'y attendre, tôt ou tard le pianiste Jacques Loussier (1934- )  figurerait dans cet inventaire.  Elève d'Yves Nat, il s'est très tôt amusé à réinventer les oeuvres classiques qui se prêtaient au swing jazzy, Bach bien sûr (<a href="http://www.youtube.com/watch?v=SMmt2I4oGiU&feature=related">ici</a> dans le finale du Concerto Italien, pris à toute vitesse et bien vite largué) mais pas seulement.  A cet égard et afin de ne pas faire comme tout le monde, je recommande un <a href="http://www.jpc.de/jpcng/jazz/detail/-/art/Jacques-Loussier-Satie-Gymnopedies-Gnossiennes/hnum/8425065">CD</a> proposant ses adaptations d'oeuvres d'Eric Satie (Gymnopédies et Gnossiennes).  Minimalistes avant la lettre, ces oeuvres se prêtent à merveille à tous les déguisements.  Celui-ci est particulièrement réussi.</p>
         </div>
      
         <div>
-          <img src="images/cross/fagiolini.jpg" alt="portrait I Fagiolini" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/fagiolini.jpg" alt="I Fagiolini" />
+                    <figcaption>I Fagiolini</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Comme son nom ne l'indique pas, I Fagiolini est un groupe vocal britannique, fondé à l'Université d'Oxford en 1986. Rassurez-vous le contingent est régulièrement rajeuni et le niveau de qualité de l'ensemble demeure. Il excelle dans le répertoire des renaissances anglaise (<a href="http://www.youtube.com/watch?v=maGfTHKeYJY&feature=related">Tallis</a>) et italienne (<a href="http://www.youtube.com/watch?v=MnzjVIDWtyE&feature=related">Monteverdi</a>). Ambassadeurs du British Council, le groupe a voyagé à travers le monde trouvant des atomes crochus avec la SDASA Chorale de Soweto, en Afrique du Sud. Un album semi-improvisé, <a href="http://www.youtube.com/watch?v=QmTnKTl0eSM&feature=related">Simunye</a>, est paru chez Warner. Dans la même veine revoici le groupe à l'oeuvre dans une interprétation pleine de classe d'un <a href="http://www.youtube.com/watch?v=XN3XZbGkCm4&feature=related">chant zoulou</a>.</p>
         </div>
         
         <div>
-          <img src="images/cross/johansson.jpg" alt="portrait Jan Johansson" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/johansson.jpg" alt="Jan Johansson" />
+                    <figcaption>Jan Johansson</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>J'ai déjà évoqué le pianiste de jazz Jan Johansson (1931-1968) dans une chronique consacrée à la musique suédoise. Peu connu hors de la Scandinavie, il a produit plusieurs enregistrements dans les années 1960 où il revisite, en solo ou avec accompagnement, des mélodies populaires (<a href="https://www.youtube.com/watch?v=t2D5HlKLh34">Visa Från Utanmyra</a>, <a href="https://www.youtube.com/watch?v=y50mPBzFd6I">Gammal bröllopsmarsch</a>, <a href="https://www.youtube.com/watch?v=WGWpQVvjBrU">Polska efter Höök Olle</a>
           <a href="https://www.youtube.com/watch?v=O1p25BYFeC4">Klara stjärnor</a>, <a href="https://www.youtube.com/watch?v=40ZjjR-xJso">Bandura</a>, <a href="https://www.youtube.com/watch?v=nJICGZLYTZg">Kvällar i Moskvas förstäder</a>) en leur conférant une touche jazzy. Le voici récupérant le thème de <a href="https://www.youtube.com/watch?v=Hoi9Zzns738">la Folia</a>, un tube de la Renaissance. Il est mort prématurément dans un accident de voiture.</p>
         </div>
         
         <div>
-          <img src="images/cross/frederiksen.jpg" alt="portrait Joel Frederiksen" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/frederiksen.jpg" alt="Joel Frederiksen" />
+                    <figcaption>Joel Frederiksen</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Joel Frederiksen (1959- ) est un luthiste et chanteur dans le registre de la basse profonde. Il s'est fait connaître en collaborant à divers projets de musique ancienne en compagnie de collègues célèbres (Jordi Savall, Paul O’Dette, Stephen Stubbs, Paul van Nevel, ...). Bien qu'ayant suivi une carrière &quot;normale&quot;, il figure dans cette chronique au titre d'avoir fait paraître un CD, Requiem for a pink Moon, mêlant l'univers du madrigal élisabéthain à celui de l'artiste pop, Nicholas Rodney Drake (alias Nick Drake) (1948-1974), mort prématurément sur fond de dépression sévère. Célébré par ses fans bien après la mort de son auteur, l'album <a href="https://www.youtube.com/watch?v=3sQv04CFSdE">Pink Moon</a> révèle autant ses promesses compositionnelles que ses faiblesses interprétatives. L'adaptation de Frederiksen corrige magistralement ce déséquilibre, par exemple dans ces deux extraits significatifs, Pink Moon 
           <sub><sub><sub> 
             <audio controls preload="none" style="height:16px; width:18%;">
@@ -291,7 +519,14 @@
         </div>
       
         <div>
-          <img src="images/cross/pianoguys.jpg" alt="portrait Les Pianoguys" />
+          <div class="conteneurImageSeule">
+            <div>
+                <figure>
+                    <img src="images/cross/pianoguys.jpg" alt="Les Pianoguys" />
+                    <figcaption>Les Pianoguys</figcaption>
+                </figure>
+            </div>
+          </div>
           <p>Les Pianoguys sont une bande de 5 joyeux drilles musiciens, au départ un pianiste (Jon Schmidt) et un violoncelliste (Steven Sharp Nelson) qui ont décidé de mettre leur virtuosité au service d'un mélange des genres pour le moins osé. Tout n'est pas du meilleur goût dans ce  qu'ils entreprennent mais reconnaissons que lorsque la sauce prend, l'effet est réussi comme dans cette parodie <a href="http://thepianoguys.com/portfolio/i-want-you-bach/">I want you Bach</a>. Consultez leur <a href="http://thepianoguys.com/videos/">site</a> promotionnel et découvrez d'autres perles de belle et clinquante pacotille (<a href="http://thepianoguys.com/portfolio/live-at-red-butte-garden-beethovens-5-secrets/">Beethoven's 5 Secrets</a>, <a href="http://thepianoguys.com/portfolio/all-of-me-jon-schmidt/">All of Me</a>, <a href="http://thepianoguys.com/portfolio/one-direction-what-makes-you-beautiful/">What makes you beautiful</a>, <a href="http://thepianoguys.com/portfolio/berlin-stephen-sharp-nelson/">Berlin</a>) !</p>
         </div>
       </div>
@@ -302,8 +537,6 @@
       <div id="footer"></div>
 
     </div>
-
-
 
 </body>
 

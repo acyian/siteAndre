@@ -62,6 +62,13 @@
 			text-decoration: none;
 		}
 
+		select{
+			outline: none;
+			padding: 2px;
+		    font-size: 14px;
+		    color: #666;
+		}
+
 		figcaption{
 			text-align: center;
 			font-size: 14px;
@@ -212,12 +219,20 @@
 
 	/*======= LISTES (ul/ol) =======*/
 		/*Basique*/
-		.listCorps{
+		.miniListCorps{
 		    text-align: justify;
 		    font-size: 18px;
 		    line-height: 1.5;
 		    color: #333;
 		    padding-left: 140px;
+		}
+
+		.gdeListCorps{
+		    text-align: center;
+		    font-size: 18px;
+		    line-height: 1.5;
+		    color: #333;
+		    padding-left: 0px;
 		}
 
 		/*Avec Nombres*/
@@ -581,6 +596,16 @@
 			margin: 0px;
 		}
 
+
+	/*======= OPTIONS CHRONIQUES =======*/
+		.choixOptions{
+			display: inline-block;
+		}
+
+		#filtreOptions{
+			padding-left: 40px;
+    		padding-right: 40px;
+		}
 
 	/*======= WHO S WHO =======*/
 		.imgSansTextIllustre figure{

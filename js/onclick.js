@@ -16,6 +16,7 @@
 	});
 
 
+
 // =================== DESIGN NAV ANCRE =================
 	$('.linavMenu').click(function (){
 		change_design_ancre_auChangementAncre($(this));
@@ -181,33 +182,33 @@
 
 
 //================ APPARITION SOMMAIRE =================
-// $("#sommaireLink" ).click(function() {
-// 	$("#linksSummary" ).toggle( "slow" );
-// 	$("#sommaireLink").html("afficher");
+	// $("#sommaireLink" ).click(function() {
+	// 	$("#linksSummary" ).toggle( "slow" );
+	// 	$("#sommaireLink").html("afficher");
 
-	
-// });
+		
+	// });
 
-// if($("#linksSummary").css('display') == "none"){
-// 		$("#sommaireLink").html("afficher");
-// 	}
+	// if($("#linksSummary").css('display') == "none"){
+	// 		$("#sommaireLink").html("afficher");
+	// 	}
 
-// 	else{
-// 		$("#sommaireLink").html("masquer");
-// 	}
+	// 	else{
+	// 		$("#sommaireLink").html("masquer");
+	// 	}
 
 
-$("#sommaireLink").click (function() {
-	if($("#linksSummary").css('display') == "none"){
-		$("#linksSummary").css('display','block');
-		$("#sommaireLink").html("[ masquer ]");
-	}
+	$("#sommaireLink").click (function() {
+		if($("#linksSummary").css('display') == "none"){
+			$("#linksSummary").css('display','block');
+			$("#sommaireLink").html("[ masquer ]");
+		}
 
-    else{
-    	$("#linksSummary").css('display','none');
-    	$("#sommaireLink").html("[ afficher ]");
-    }
-});
+	    else{
+	    	$("#linksSummary").css('display','none');
+	    	$("#sommaireLink").html("[ afficher ]");
+	    }
+	});
 
 
 

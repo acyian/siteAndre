@@ -1,162 +1,114 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Billets d'humeur</title>
-<!-- InstanceEndEditable -->
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem">Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <div id="triOptions" class="choixOptions">
+                        <label for="sortByTri"><span>Trier de</span></label>
+                        <select id="sortByTri" rel="nofollow">
+                            <option value="">la + ancienne à la + récente</option>
+                            <option value="">la + récente à la + ancienne</option>  
+                        </select>
+                    </div>
+
+                    <div id="filtreOptions" class="choixOptions">
+                        <label for="sortByFiltre"><span>Filtrer par</span></label>
+                        <select id="sortByFiltre" rel="nofollow">
+                            <option value="tousThemes">tous les thèmes</option>
+                            <option value="billetsHumeurs">billets d'humeur</option>
+                            <option value="tourMonde">tour du monde</option>
+                            <option value="composContemporains">compositeurs contemporains</option>  
+                            <option value="composOublies">compositeurs oubliés</option>
+                            <option value="interpretesActuels">interprètes actuels</option>     
+                            <option value="genresMusicaux">genres musicaux</option>
+                            <option value="faitsDivers">faits divers</option>  
+                        </select>
+                    </div>
+                </div>            
+
+                <div>
+                    <ol id="listChroniques" class="gdeListCorps listNumber">
+                        <li class="THbilletHumeur"><a href="chroniques/anutali.html">Orchestre symphonique &amp; Cuisine 3 étoiles</a><small> (24/02/2008, rév. 03/07/2014)</small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/football.html">Football et Musique</a><small> (04/05/2008, rév. 07/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/mortier.html">Un belge à New York ?</a><small> (24/06/2008, rév. 10/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/valentin.html">Dites-le avec des notes</a><small> (14/02/2009, rév. 19/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/toux.html">Remède contre la toux</a><small> (04/04/2009, rév. 20/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/medici.html">Video Medici</a><small> (12/04/2009, rév. 20/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/hadopi.html">Hadopi</a><small> (14/05/2009, rév. 21/07/2014)</small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/elisabeth.html">Queen Elisabeth : Que sont-ils devenus ?</a><small> (24/05/2009, rév. 21/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/brillant.html">Brillant mais à quel prix ?</a><small> (11/08/2009, rév. 28/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/honoriscausa.html">Honoris Causa</a><small> (19/09/2009, rév. 28/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/naxos.html">Euterpe à Naxos</a><small> (02/02/2010, rév. 30/07/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/opl.html">Nouvelles de l'OPL</a><small> (07/04/2010, rév. 01/08/2014) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/creb.html">CREB, entre professionnalisme et consensualité</a><small> (08/06/2015) </small></li>
+                        <li class="THbilletHumeur"><a href="chroniques/violoncelle.html">Place au violoncelle !</a><small> (05/06/2016)</small></li>
+                    </ol>
+                </div>
+            </div>
 
 
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
 
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
 
-
-
-
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="index.html">Accueil </a></div>
-    <div class="bouton"><a href="contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="phys.html">Phys </a></div>
-    <div class="bouton0"><a href="math.html">Math </a></div>
-    <div class="bouton0"><a href="info.html">Info </a></div>
-    <div class="bouton"><a href="feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="references.html">Références </a></div>
+        </div>
     
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="index.html">Accueil </a></div>
-    <div class="bouton"><a href="contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-  <h1>Billets d'humeur.</h1>
-  
- 
+    
+    </div>
 
-<p><a href="chroniques/anutali.html">Orchestre symphonique & Cuisine 3 étoiles.</a> (24/02/2008, rév. 03/07/2014)</p>
-<p><a href="chroniques/femmesdenotes.html">Deux femmes de Notes : Louise Farrenc et Louise Bertin.</a> (09/03/2008, rév. 03/07/2014)  </p>
-<p><a href="chroniques/hauer.html">Refusez la copie, exigez l'original ! (Josef Matthias Hauer)</a> ( 09/03/2008, rév. 03/07/2014) </p>
-<p><a href="chroniques/caprice.html">Fais-moi un caprice.</a> (24/03/2008, rév. 03/07/2014) </p>
-<p><a href="chroniques/destincaprice.html">Le Destin d'un caprice.</a> (24/03/2008, rév. 03/07/2014)</p>
-<p><a href="chroniques/goldberg.html">Goldberg, Diabelli et les autres.</a> (17/04/2008, rév. 05/07/2014)</p>
-<p><a href="chroniques/clara.html">Le génie de Clara.</a> (20/04/2008, rév. 05/07/2014) </p>
-<p><a href="chroniques/football.html">Football et Musique.</a> (04/05/2008, rév. 07/07/2014) </p>
-<p><a href="chroniques/korngold.html">Un génie précoce nommé Wolfgang.</a> (17/05/2008, rév. 08/07/2014)</p>
-<p><a href="chroniques/chefs.html">Des chefs qui composent.</a> (05/06/2008, rév. 09/07/2014) </p>
-<p><a href="chroniques/mortier.html">Un belge à New York ?</a> (24/06/2008, rév. 10/07/2014) </p>
-<p><a href="chroniques/schmidt.html">Schmidt & Schmitt.</a> (22/08/2008, rév. 11/07/2014) </p>
-<p><a href="chroniques/winterreise.html">Itinéraires d'un voyage d'hiver.</a> (05/10/2008, rév. 15/07/2014) </p>
-<p><a href="chroniques/musicorrhee.html">Quelques exemples de musicorrhée au 20<sup>ème</sup> siècle.</a> (01/12/2008, rév. 16/07/2014)</p>
-<p><a href="chroniques/inmemoriam.html">In memoriam Richard Hickox & Vernon Handley.</a> (04/01/2009, rév. 18/07/2014) </p>
-<p><a href="chroniques/montgeroult.html">Hélène de Montgeroult (1764-1836).</a> (09/01/2009, rév. 18/07/2014)</p>
-<p><a href="chroniques/orchestrations.html">Quelques modèles d'orchestrations.</a> (06/02/2009, rév. 19/07/2014) </p>
-<p><a href="chroniques/valentin.html">Dites-le avec des notes.</a> (14/02/2009, rév. 19/07/2014) </p>
-<p><a href="chroniques/ries.html">L'empreinte d'un Maître.</a> (08/03/2009, rév. 20/07/2014) </p>
-<p><a href="chroniques/pdqbach.html">Un fils caché de Jean-Sébastien Bach ?</a> (01/04/2009, rév. 20/07/2014)</p>
-<p><a href="chroniques/toux.html">Remède contre la toux.</a> (04/04/2009, rév. 20/07/2014) </p>
-<p><a href="chroniques/medici.html">Video Medici.</a> (12/04/2009, rév. 20/07/2014) </p>
-<p><a href="chroniques/hadopi.html">Hadopi.</a> (14/05/2009, rév. 21/07/2014)</p>
-<p><a href="chroniques/elisabeth.html">Queen Elisabeth : Que sont-ils devenus ?</a> (24/05/2009, rév. 21/07/2014)</p>
-<p><a href="chroniques/brillant.html">Brillant mais à quel prix?</a> (11/08/2009, rév. 28/07/2014) </p>
-<p><a href="chroniques/pedigrees.html">Pedigrees.</a> (03/09/2009, rév. 28/07/2014) </p>
-<p><a href="chroniques/longevite.html">Longévité musicale.</a> (14/09/2009, rév. 28/07/2014) </p>
-<p><a href="chroniques/honoriscausa.html">Honoris Causa.</a> (19/09/2009, rév. 28/07/2014) </p>
-<p><a href="chroniques/minimalisme.html">Les pionniers du minimalisme aux USA.</a> (02/10/2009, rév. 28/07/2014)</p>
-<p><a href="chroniques/haydn.html">Hommage à papa Haydn.</a> (19/10/2009, rév. 28/07/2014)</p>
-<p><a href="chroniques/hoffmann.html">Un artiste total : Ernst Theodor Amadeus Hoffmann.</a> (20/11/2009, rév. 29/07/2014)</p>
-<p><a href="chroniques/greenberg.html">Prodige musical : Jay Greenberg.</a> (07/12/2009, rév. 29/07/2014)</p>
-<p><a href="chroniques/naxos.html">Euterpe à Naxos.</a> (02/02/2010, rév. 30/07/2014)</p>
-<p><a href="chroniques/opl.html">Nouvelles de l'OPL.</a> (07/04/2010, rév. 01/08/2014) </p>
-<p><a href="chroniques/arpeggiata.html">Arpeggiata.</a> (07/06/2010, rév. 01/08/2014) </p>
-<p><a href="chroniques/fauches.html">Jeunes et déjà fauchés.</a> (07/07/2010, rév. 03/08/2014) </p>
-<p><a href="chroniques/wagner.html">Wagner, côté jardin.</a> (15/08/2010, rév. 04/08/2014) </p>
-<p><a href="chroniques/pierne.html">Un musicien à redécouvrir : Gabriel Pierné.</a> (01/09/2010, rév. 04/08/2014) </p>
-<p><a href="chroniques/landowski.html">Etes-vous Boulez ou ... Landowski ?</a> (13/09/2010, rév. 04/08/2014) </p>
-<p><a href="chroniques/craft.html">Schönberg n'est pas mort !</a> (26/12/2010, rév. 05/08/2014) </p>
-<p><a href="chroniques/hamelin.html">Un pianiste indispensable : Marc-André Hamelin.</a> (10/01/2011, rév. 05/08/2014) </p>
-<p><a href="chroniques/famillebach.html">Airs de famille : les autres Bach.</a> (18/01/2011, rév. 05/08/2014) </p>
-<p><a href="chroniques/postmoderne.html">Ralph van Raat, un pianiste postmoderne.</a> (03/02/2011, rév. 05/08/2014) </p>
-<p><a href="chroniques/arthurs.html">Arthur Lourié et Arthur Berger.</a> (02/03/2011, rév. 06/08/2014) </p>
-<p><a href="chroniques/bonis.html">Mel, mélo, mélodies : Mélanie Bonis.</a> (15/03/2011, rév. 06/08/2014) </p>
-<p><a href="chroniques/lvbmeconnu.html">Beethoven, notes éparses.</a> (02/05/2011, rév. 07/08/2014)</p>
-<p><a href="chroniques/gretry.html">Un Liégeois à Paris : André-Ernest-Modeste Grétry.</a> (16/05/2011, rév. 08/08/2014)</p> 
-<p><a href="chroniques/ducros.html">Nouvelle  vague en musique française : Jérôme Ducros.</a> (22/06/2011, rév. 08/08/2014)</p>
-<p><a href="chroniques/weinberg.html">Le cas Mieczyslaw Weinberg.</a> (29/08/2011, rév. 08/08/2014) </p> 
-<p><a href="chroniques/clementi.html">Un chaînon manquant : Muzio Clementi.</a> (18/09/2011, rév. 11/08/2014) </p>
-<p><a href="chroniques/prixderome.html">Heurs et malheurs du Grand Prix de Rome de Musique.</a> (05/10/2011, rév. 11/08/2014) </p>
-<p><a href="chroniques/grawemeyer.html">Grawemeyer Award for Music Composition.</a> (29/11/2011, rév. 12/08/2014) </p>
-<p><a href="chroniques/chausson.html">Ernest Chausson sous le sapin.</a> (19/12/2011, rév. 12/08/2014) </p>
-<p><a href="chroniques/germains.html">Destins croisés : Hans Pfitzner & Franz Schreker.</a> (24/01/2012, rév. 12/08/2014) </p>
-<p><a href="chroniques/valen.html">Fartein Valen ou l'art du contrepoint dissonant.</a> (05/02/2012, rév. 13/08/2014) </p>
-<p><a href="chroniques/popov.html">Gavriil Popov, artiste du peuple ?</a> (27/02/2012, rév. 13/08/2014) </p>
-<p><a href="chroniques/khrennikov.html">Tikhon Khrennikov, le censeur encensé.</a> (14/03/2012, rév. 13/08/2014 </p>
-<p><a href="chroniques/einstein.html">Einstein on the Beach : le premier "audiopéra".</a> (26/03/2012, rév. 13/08/2014) </p>
-<p><a href="chroniques/hartmann.html">Le dédale de l'oeuvre de Karl Amadeus Hartmann.</a> (13/05/2012, rév. 14/08/2014) </p>
-<p><a href="chroniques/zimmermann.html">Bernd Aloïs Zimmermann n'a pas écrit que Die Soldaten.</a> (30/05/2012, rév. 14/08/2014) </p>
-<p><a href="chroniques/bandedesquatre.html">L'autre bande des Quatre.</a> (23/08/2012, rév. 14/08/2014) </p>
-<p><a href="chroniques/wittgenstein.html">Pour la main gauche.</a> (19/09/2012, rév. 15/08/2014) </p>
-<p><a href="chroniques/eastgermany.html">A l'Est rien de nouveau ?</a> (29/10/2012, rév. 15/08/2014) </p>
-<p><a href="chroniques/scelsi.html">L'univers sonore de Giacinto Scelsi (1905-1988).</a> (09/12/2012, rév. 15/08/2014)</p>
-<p><a href="chroniques/antheil.html">George Antheil, bad boy des années 20.</a> (17/02/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/dames20.html">Musique moderne au féminin.</a> (24/03/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/groupes.html">The American Five, de Charles Ives à Henry Cowell.</a> (05/05/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/strozzi.html">Trois musiciennes baroques : F. Caccini, B. Strozzi & E. Jacquet.</a> (30/05/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/koussevitzky.html">L'argent du thé russe : la Fondation Koussevitzky.</a> (21/06/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/garcia.html">La famille Garcia.</a> (07/08/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/krenek.html">Redécouvrons Ernst Krenek.</a> (30/08/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/louisferdinand.html">Louis Ferdinand, un prince musicien.</a> (26/12/2013, rév. 19/08/2014) </p>
-<p><a href="chroniques/gabriel.html">Gabriel, petit-fils de Serge.</a> (17/01/2014, rév. 19/08/2014) </p>
-<p><a href="chroniques/widor.html">L'autre visage de Charles-Marie Widor.</a> (07/02/2014, rév. 19/08/2014) </p>
-<p><a href="chroniques/proms.html">Sir Henry Wood & The Prom's Concerts.</a> (05/05/2014, rév. 20/08/2014) </p>
-<p><a href="chroniques/pianoameublement.html">Le piano d'ameublement, d'Erik Satie à John Cage.</a> (09/06/2014, rév. 20/08/2014) </p>
-<p><a href="chroniques/rameau.html">C'est Rameau qu'on assassine !</a> (29/09/2014) </p>
-<p><a href="chroniques/clavecin.html">L'école française de clavecin.</a> (11/12/2014) </p>
-<p><a href="chroniques/finzi.html">Un maître de l'élégie : Gérald Finzi.</a> (15/02/2015) </p>
-<p><a href="chroniques/alwyn.html">Two british outsiders : William Alwyn &amp; Malcolm Arnold.</a> (09/03/2015) </p>
-<p><a href="chroniques/terezin.html">Composer sous le 3<sup>ème</sup> Reich.</a> (07/05/2015) </p>
-<p><a href="chroniques/creb.html">CREB, entre professionnalisme et consensualité.</a> (08/06/2015) </p>
-<p><a href="chroniques/armida.html">Place aux jeunes : le Quatuor Armida.</a> (01/08/2015) </p>
-<p><a href="chroniques/boosey.html">L'édition musicale, de Petrucci à Boosey & Hawkes. </a> (01/11/2015)</p>
-<p><a href="chroniques/operacomique.html">Dans l'ombre de l'Opéra-Comique.</a> (27/12/2015)</p>
-<p><a href="chroniques/adaiewsky.html">Coup de coeur pour une musique d'Ella Adaïewsky.</a> (27/01/2016)</p>
-<p><a href="chroniques/boulez.html">Un hommage à Pierre Boulez.</a> (14/02/2016)</p>
-<p><a href="chroniques/poemeharmonique.html">Le Poème Harmonique.</a> (15/05/2016)</p>
-<p><a href="chroniques/violoncelle.html">Place au violoncelle !</a> (05/06/2016)</p>
-<p><a href="chroniques/pantheon.html">Le Panthéon des musiciens.</a> (02/10/2016)</p>
-<p><a href="chroniques/tchaikovsky.html">Un Tchaïkovsky peut en cacher d'autres.</a> (30/10/2016)</p>
-<p><a href="chroniques/complexite.html">Information, Complexité et Musique.</a> (06/02/2017)</p>
-<p><a href="chroniques/cinema.html">Le siècle des (frères) Lumière.</a> (18/03/2017)</p>
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-  </div>
+    <script src="js/chroniques.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+
+</html>

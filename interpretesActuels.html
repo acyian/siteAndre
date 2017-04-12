@@ -1,0 +1,93 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="language" content="fr" />
+  <title>Interprètes actuels</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#interpretesActuels").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Interprètes actuels</h2>
+                <h3>Impact conséquent d'interprètes de notre époque</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Interprètes actuels</li> <!-- a changer en fonction de la page -->
+                    </ul>
+                </nav>
+
+                <div>
+                    <div id="triOptions" class="choixOptions">
+                        <label for="sortByTri"><span>Trier de</span></label>
+                        <select id="sortByTri" rel="nofollow">
+                            <option value="">la + ancienne à la + récente</option>
+                            <option value="">la + récente à la + ancienne</option>  
+                        </select>
+                    </div>
+                </div>            
+
+                <div>
+                    <ol id="listChroniquesInterpretesActuels" class="gdeListCorps listNumber">
+                        <li class="THinterpretesActuels"><a href="chroniques/inmemoriam.html">In memoriam Richard Hickox &amp; Vernon Handley</a><small> (04/01/2009, rév. 18/07/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/arpeggiata.html">Arpeggiata</a><small> (07/06/2010, rév. 01/08/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/hamelin.html">Un pianiste indispensable : Marc-André Hamelin</a><small> (10/01/2011, rév. 05/08/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/postmoderne.html">Ralph van Raat, un pianiste postmoderne</a><small> (03/02/2011, rév. 05/08/2014) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/ducros.html">Nouvelle  vague en musique française : Jérôme Ducros</a><small> (22/06/2011, rév. 08/08/2014)</small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/armida.html">Place aux jeunes : le Quatuor Armida</a><small> (01/08/2015) </small></li>
+                        <li class="THinterpretesActuels"><a href="chroniques/poemeharmonique.html">Le Poème Harmonique</a><small> (15/05/2016)</small></li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+
+</body>
+
+</html>

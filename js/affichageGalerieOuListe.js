@@ -1,5 +1,5 @@
 //================ GESTION AFFICHAGE CHRONIQUES =================
-// ============== AFFICHAGE TOUR DU MONDE ==============
+// ============== AFFICHAGE TOUR DU MONDE ET COMPOSITEURS CONTEMPORAINS ==============
 // Ajoute class et remove class pour affichage en liste ou en galerie d'images
 function changeClassProduits(id){
     if (id == "iconeGalerie"){

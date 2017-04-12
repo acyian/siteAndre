@@ -25,7 +25,29 @@
 	  });
 	})
 
+	$( "#triOptions select" ).change(function() {
+	  $( "#triOptions select option:selected" ).each(function() {
+	     $('#listChroniquesCompoOublies').html($('#listChroniquesCompoOublies').find('li').get().reverse());
+	  });
+	})
 
+	$( "#triOptions select" ).change(function() {
+	  $( "#triOptions select option:selected" ).each(function() {
+	     $('#listChroniquesInterpretesActuels').html($('#listChroniquesInterpretesActuels').find('li').get().reverse());
+	  });
+	})
+
+	$( "#triOptions select" ).change(function() {
+	  $( "#triOptions select option:selected" ).each(function() {
+	     $('#listChroniquesGenresMusicaux').html($('#listChroniquesGenresMusicaux').find('li').get().reverse());
+	  });
+	})
+
+	$( "#triOptions select" ).change(function() {
+	  $( "#triOptions select option:selected" ).each(function() {
+	     $('#listChroniquesFaitsDivers').html($('#listChroniquesFaitsDivers').find('li').get().reverse());
+	  });
+	})
 
 // ============= FILTRE =============
 // RUBRIQUE CHRONIQUES

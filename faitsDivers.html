@@ -1,0 +1,126 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="language" content="fr" />
+  <title>Faits divers</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Le saviez-vous?</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Faits divers</li> <!-- a changer en fonction de la page -->
+                    </ul>
+                </nav>
+
+                <div>
+                    <div id="triOptions" class="choixOptions">
+                        <label for="sortByTri"><span>Trier de</span></label>
+                        <select id="sortByTri" rel="nofollow">
+                            <option value="">la + ancienne à la + récente</option>
+                            <option value="">la + récente à la + ancienne</option>  
+                        </select>
+                    </div>
+                </div>            
+
+                <div>
+                    <ol id="listChroniquesFaitsDivers" class="gdeListCorps listNumber">
+                        <li class="THfaitsDivers"><a href="chroniques/destincaprice.html">Le Destin d'un caprice</a><small> (24/03/2008, rév. 03/07/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/goldberg.html">Goldberg, Diabelli et les autres</a><small> (17/04/2008, rév. 05/07/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/chefs.html">Des chefs qui composent</a><small> (05/06/2008, rév. 09/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/winterreise.html">Itinéraires d'un voyage d'hiver</a><small> (05/10/2008, rév. 15/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/musicorrhee.html">Quelques exemples de musicorrhée au 20<sup>ème</sup> siècle</a><small> (01/12/2008, rév. 16/07/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/orchestrations.html">Quelques modèles d'orchestrations</a><small>  (06/02/2009, rév. 19/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/ries.html">L'empreinte d'un Maître</a><small> (08/03/2009, rév. 20/07/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/pdqbach.html">Un fils caché de Jean-Sébastien Bach ? </a><small> (01/04/2009, rév. 20/07/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/pedigrees.html">Pedigrees</a><small> (03/09/2009, rév. 28/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/longevite.html">Longévité musicale</a><small> (14/09/2009, rév. 28/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/minimalisme.html">Les pionniers du minimalisme aux USA</a><small> (02/10/2009, rév. 28/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/haydn.html">Hommage à papa Haydn</a><small> (19/10/2009, rév. 28/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/greenberg.html">Prodige musical : Jay Greenberg</a><small> (07/12/2009, rév. 29/07/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/fauches.html">Jeunes et déjà fauchés</a><small> (07/07/2010, rév. 03/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/wagner.html">Wagner, côté jardin</a><small> (15/08/2010, rév. 04/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/famillebach.html">Airs de famille : les autres Bach</a><small> (18/01/2011, rév. 05/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/lvbmeconnu.html">Beethoven, notes éparses</a><small> (02/05/2011, rév. 07/08/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/gretry.html">Un Liégeois à Paris : André-Ernest-Modeste Grétry</a><small> (16/05/2011, rév. 08/08/2014)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/prixderome.html">Heurs et malheurs du Grand Prix de Rome de Musique</a><small> (05/10/2011, rév. 11/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/grawemeyer.html">Grawemeyer Award for Music Composition</a><small> (29/11/2011, rév. 12/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/einstein.html">Einstein on the Beach : le premier "audiopéra"</a><small> (26/03/2012, rév. 13/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/bandedesquatre.html">L'autre bande des Quatre</a><small> (23/08/2012, rév. 14/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/wittgenstein.html">Pour la main gauche</a><small> (19/09/2012, rév. 15/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/eastgermany.html">A l'Est rien de nouveau ?</a><small> (29/10/2012, rév. 15/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/dames20.html">Musique moderne au féminin</a><small> (24/03/2013, rév. 18/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/groupes.html">The American Five, de Charles Ives à Henry Cowell</a><small> (05/05/2013, rév. 18/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/koussevitzky.html">L'argent du thé russe : la Fondation Koussevitzky</a><small> (21/06/2013, rév. 18/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/garcia.html">La famille Garcia</a><small> (07/08/2013, rév. 18/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/louisferdinand.html">Louis Ferdinand, un prince musicien</a><small> (26/12/2013, rév. 19/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/gabriel.html">Gabriel, petit-fils de Serge</a><small> (17/01/2014, rév. 19/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/proms.html">Sir Henry Wood &amp; The Prom's Concerts</a><small> (05/05/2014, rév. 20/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/pianoameublement.html">Le piano d'ameublement, d'Erik Satie à John Cage</a><small> (09/06/2014, rév. 20/08/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/rameau.html">C'est Rameau qu'on assassine !</a><small> (29/09/2014) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/terezin.html">Composer sous le 3<sup>ème</sup> Reich</a><small> (07/05/2015) </small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/boosey.html">L'édition musicale, de Petrucci à Boosey &amp; Hawkes. </a><small> (01/11/2015)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/operacomique.html">Dans l'ombre de l'Opéra-Comique</a><small> (27/12/2015)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/boulez.html">Un hommage à Pierre Boulez</a><small> (14/02/2016)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/pantheon.html">Le Panthéon des musiciens</a><small> (02/10/2016)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/complexite.html">Information, Complexité et Musique</a><small> (06/02/2017)</small></li>
+                        <li class="THfaitsDivers"><a href="chroniques/cinema.html">Le siècle des (frères) Lumière</a><small> (18/03/2017)</small></li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+
+</body>
+
+</html>

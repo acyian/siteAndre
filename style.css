@@ -53,20 +53,21 @@
 		}
 
 		a{
-			color: #AB1200;
+			color: #cd1600;
 			outline: none;
 			cursor: pointer;
+			text-decoration: none;
 		}
 
 		a:hover{
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 		select{
 			outline: none;
 			padding: 2px;
 		    font-size: 14px;
-		    color: #666;
+		    color: #8d8d8d;
 		}
 
 		figcaption{
@@ -79,7 +80,7 @@
 		}
 
 		figcaption:nth-of-type(2){
-			color: #666;
+			color: #8d8d8d;
 		}
 
 		img{
@@ -125,7 +126,7 @@
 		    height: 0;
 		    width: 0;
 		    border: 1px solid transparent;
-		    border-left-color: #AB1200;
+		    border-left-color: #cd1600;
 		    border-width: 4px 0 4px 6px;
 		    margin: 0 8px 0 4px;
 		}
@@ -136,17 +137,19 @@
 		    height: 0;
 		    width: 0;
 		    border: 1px solid transparent;
-		    border-left-color: #666;
+		    border-left-color: #8d8d8d;
 		    border-width: 4px 0 4px 6px;
+		}
+		.filAriane ul li span{
+		    color: #8d8d8d;
 		}
 
 		.filAriane ul li a {
 		    text-decoration: none;
-		    color: #830f01;
 		}
 
 		.filAriane ul li a:hover {
-		    color: #AB1200;
+		    color: #cd1600;
 		    text-decoration: underline;
 		}
 	
@@ -248,7 +251,7 @@
 		    -moz-border-radius: 60px;
 		    border-radius: 60px;
 		    font-weight: bold;
-		    color: #666;		
+		    color: #8d8d8d;		
 		}
 
 
@@ -258,13 +261,13 @@
 		    padding: 10px 30px;
 		    border: 1px solid #ddd;
 		    border-radius: 5px;
-		    box-shadow: inset 0 2px 0 #ab1200;
+		    box-shadow: inset 0 2px 0 #cd1600;
 		    margin-top: 25px;
 		}
 
 		blockquote p {
 			font-size: 16px;
-		    color: #666;
+		    color: #8d8d8d;
 		    font-weight: 400;
 			font-style: italic;
 			position: relative;
@@ -282,7 +285,7 @@
 		    font-size: 80px;
 		    top: -50px;
 		    left: 0px;
-		    color: #666;
+		    color: #8d8d8d;
 		}
 
 		blockquote p:first-of-type:first-letter{
@@ -318,7 +321,7 @@
 		}
 
 		h1:first-letter{
-		    color: #AB1200;
+		    color: #cd1600;
 		    font-size: 200%;
 		    font-weight: bold;
 		}
@@ -342,7 +345,7 @@
 			text-align: center;
 			font-size: 24px;
 			font-style: italic;
-			color: #666;
+			color: #8d8d8d;
 			margin-top: 5px;
 			padding-bottom: 45px;
 		    background-image: url(images/borderTitleContenu.png);
@@ -392,7 +395,7 @@
 		.menu{
 			display: table;
 		    width: 15%;
-		    background: #000;
+		    background: #27282a;
 		    position: fixed;
 		    top: 0;
 		    height: 100%;
@@ -406,10 +409,10 @@
 
 		#navPhysique a:hover, #navMusique a:hover,
 		#navPhysique a:active, #navMusique a:active, 
-		#navMusique .active,
+		#navPhysique .active, #navMusique .active,
 		#navPhysique a:focus, #navMusique a:focus{
-			color: #AB1200;
-			font-weight: bold;
+			color: #cd1600;
+			/*font-weight: bold;*/
 		}
 
 		/*Sous-Menus*/
@@ -419,12 +422,13 @@
 
 		#sousNavPhysique a:hover, #sousNavMusique a:hover,
 		#sousNavPhysique a:active, #sousNavMusique a:active,
+		#sousNavPhysique .active, #sousNavMusique .active,
 		#sousNavPhysique a:focus, #sousNavMusique a:focus{
-			color: #830f01;
+			color: #cd1600;
 		}
 
 		#sousNavPhysique a, #sousNavMusique a{
-			color: #666;
+			color: #8d8d8d;
 			text-transform: initial;
 			font-size: 16px;
 		}
@@ -457,14 +461,14 @@
 	/*======= MENU GAUCHE =======*/
 		#menuGauche{
 		    left: 0;
-		    border-right: 4px solid #AB1200;
+		    border-right: 4px solid #cd1600;
 		}
 
 
 	/*======= MENU DROITE =======*/
 		#menuDroite{
 		    right: 0;
-		    border-left: 4px solid #AB1200;
+		    border-left: 4px solid #cd1600;
 		}
 
 	
@@ -517,7 +521,7 @@
 		    padding: 5px 0 5px 10px;
 		    position: absolute;
 		    overflow: hidden;
-		    color: #ab1200;
+		    color: #cd1600;
 		    background-color: rgb(255, 255, 255);
 		    font-size: 14px;
 		    letter-spacing: 0.6px;
@@ -547,11 +551,11 @@
 		    margin: 0 6px 0 40px;
 		    font-size: 60px;
 		    font-weight: lighter;
-		    line-height: .8;
 		    text-align: center;
-		    color: #AB1200;
+		    color: #cd1600;
 		}
 	
+
 	
 	/*======= CONTENEUR PLUSIEURS IMAGES =======*/
 		#contenuPrincipal div.conteneurImages{
@@ -610,9 +614,132 @@
 			display: inline-block;
 		}
 
-		#filtreOptions{
+		#filtreOptions, #filtreOptionsOrdreAlpha, #affichageGalerieOuListe, #filtreOptionsOrdreAlphaNameAndFirstName{
 			padding-left: 40px;
 		}
+
+		#affichageGalerieOuListe figure{
+			display: inline-block;
+			margin: 0;
+			vertical-align: middle;
+		}
+
+		#affichageGalerieOuListe figure img{
+			margin-top: 0px;
+    		margin-right: 0px;
+		}
+
+		#listChroniquesTourMonde li img,
+		#listChroniquesComposContemporains li img{
+    		display: none;
+		}
+
+		#iconeGalerie img{
+			opacity: 0.6;
+		}
+
+		/*liste*/
+		#listChroniquesTourMonde.vueListe li,
+		#listChroniquesComposContemporains.vueListe li{
+			width: inherit;
+			margin-right: 0;
+			float: none;
+		}
+
+		#listChroniquesTourMonde.vueListe li:before,
+		#listChroniquesComposContemporains.vueListe li:before {
+		   	content: counter(exemple);
+		    padding: 4px 15px;
+		    margin-right: 12px;
+		    vertical-align: top;
+		    background: #ddd;
+		    -moz-border-radius: 60px;
+		    border-radius: 60px;
+		    font-weight: bold;
+		    color: #8d8d8d;
+		}
+
+		#listChroniquesTourMonde.vueListe li img,
+		#listChroniquesComposContemporains.vueListe li img{
+    		display: none;
+		}
+
+		#listChroniquesTourMonde.vueListe li small,
+		#listChroniquesComposContemporains.vueListe li small{
+			display: initial;
+		}
+
+		/*galerie image*/
+		#listChroniquesTourMonde.vueGalerie li{
+			width: 350px;
+			float: left;
+			margin-right: 45px;
+		}
+
+		#listChroniquesComposContemporains.vueGalerie li{
+			width: 150px;
+			float: left;
+			margin-right: 15px;
+		}
+
+		#listChroniquesTourMonde.vueGalerie li:nth-child(3n+3),
+		#listChroniquesComposContemporains.vueGalerie li:nth-child(7n+7) {  
+		  	margin-right: 0;
+		}
+
+		#listChroniquesTourMonde.vueGalerie li:before,
+		#listChroniquesComposContemporains.vueGalerie li:before{
+			content: none;
+		}
+
+		#listChroniquesTourMonde.vueGalerie li img{
+			width: 350px;
+    		height: 275px;
+    		display: block;
+    		-webkit-filter: grayscale(100%);
+    		filter: grayscale(100%);
+		}
+
+		#listChroniquesComposContemporains.vueGalerie li img{
+			width: 150px;
+    		height: 180px;
+    		display: block;
+    		margin-right: 0;
+    		-webkit-filter: grayscale(100%);
+    		filter: grayscale(100%);
+		}
+
+		#listChroniquesTourMonde.vueGalerie li img:hover,
+		#listChroniquesComposContemporains.vueGalerie li img:hover{
+    		-webkit-filter: grayscale(0%);
+    		filter: grayscale(0%);
+		}
+
+		#listChroniquesTourMonde.vueGalerie li a:hover img,
+		#listChroniquesComposContemporains.vueGalerie li a:hover img{
+    		-webkit-filter: grayscale(0%);
+    		filter: grayscale(0%);
+		}
+
+		#listChroniquesTourMonde.vueGalerie li small,
+		#listChroniquesComposContemporains.vueGalerie li small{
+			display: none;
+		}
+
+		/*compositeurs contemporains*/
+		#listChroniquesComposContemporains.vueGalerie li .nameCompoContemporain{
+			font-weight: bold;
+		    line-height: 0.9em;
+		    font-size: 0.7em;
+		    text-transform: uppercase;
+		    display: block;
+	    }
+
+	    #listChroniquesComposContemporains.vueGalerie li .firstNameCompoContemporain{
+	    	font-size: 0.7em;
+	    }
+
+
 
 	/*======= WHO S WHO =======*/
 		.imgSansTextIllustre figure{
@@ -665,7 +792,7 @@
 
 		#footer h4 {
 		    font-family: 'Josefin Sans', sans-serif;
-		    color: #666;
+		    color: #8d8d8d;
 		    font-size: 16px;
 		    font-weight: 100;
 		    margin-bottom: 0px;

@@ -1,103 +1,313 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Compositeurs</title>
-<!-- InstanceEndEditable -->
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Compositeurs</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
 
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
 
+        <div id="corps">
 
+            <div id="contenuPrincipal">
+                <h2>Compositeurs contemporains</h2>
+                <h3>Grands compositeurs qui ont marqué le monde de la musique classique</h3>
 
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Compositeurs contemporains</li>
+                    </ul>
+                </nav>
 
+                <div>
+                    <div id="triOptions" class="choixOptions">
+                        <label for="sortByTri"><span>Trier de</span></label>
+                        <select id="sortByTri" rel="nofollow">
+                            <option value="">la + ancienne à la + récente</option>
+                            <option value="">la + récente à la + ancienne</option>  
+                        </select>
+                    </div>
 
+                    <div id="filtreOptionsOrdreAlphaNameAndFirstName" class="choixOptions">
+                        <label for="sortByFiltreOrdreAlphaNameAndFirstName"><span>Filtrer par ordre alphabétique</span></label>
+                        <select id="sortByFiltreOrdreAlphaNameAndFirstName" rel="nofollow">
+                            <option value="defaut">défaut</option>
+                            <option value="noms">noms</option>
+                            <option value="prenoms">prénoms</option>
+                        </select>
+                    </div>
 
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="index.html">Accueil </a></div>
-    <div class="bouton"><a href="contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="phys.html">Phys </a></div>
-    <div class="bouton0"><a href="math.html">Math </a></div>
-    <div class="bouton0"><a href="info.html">Info </a></div>
-    <div class="bouton"><a href="feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="references.html">Références </a></div>
+                    <div id="affichageGalerieOuListe" class="choixOptions">
+                      <label><span>Afficher en</span></label>
+                        <figure>
+                          <a href="#" id="iconeGalerie" onclick="changeClassProduits(this.id); return false;">
+                            <img src="images/affichageEnGalerie.png" title="galerie d'image" alt="Galerie d'image">
+                          </a>
+                        </figure>
+                        <figure>
+                          <a href="#" id="iconeListe" onclick="changeClassProduits(this.id); return false;">
+                            <img src="images/affichageEnListe.png" title="Liste" alt="Liste">
+                          </a>
+                        </figure>
+                    </div>
+                </div>             
+
+                <div>
+                    <ol id="listChroniquesComposContemporains" class="gdeListCorps listNumber">
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/reich.html">
+                            <img src="images/reich/reich.jpg" alt="Steve Reich">
+                            <span class="firstNameCompoContemporain">Steve</span> <span class="nameCompoContemporain">Reich</span>
+                          </a>
+                          <small> (08/04/2008, rév. 04/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/Glass.html">
+                            <img src="images/Glass/Glass.jpg" alt="Philip Glass">
+                            <span class="firstNameCompoContemporain">Philip</span> <span class="nameCompoContemporain">Glass</span>
+                          </a>
+                          <small> (15/04/2008, rév. 05/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/part.html">
+                            <img src="images/part/part.jpg" alt="Arvö Pärt">
+                            <span class="firstNameCompoContemporain">Arvö</span> <span class="nameCompoContemporain">Pärt</span>
+                          </a>
+                          <small> (06/05/2008, rév. 08/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/schnittke.html">
+                            <img src="images/schnittke/schnittke.jpg" alt="Alfred Schnittke">
+                            <span class="firstNameCompoContemporain">Alfred</span> <span class="nameCompoContemporain">Schnittke</span>
+                            </a>
+                          <small> (28/05/2008, rév. 09/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/rautavaara.html">
+                            <img src="images/rautavaara/rautavaara.jpg" alt="Einojuhani Rautavaara">
+                            <span class="firstNameCompoContemporain">Einojuhani</span> <span class="nameCompoContemporain">Rautavaara</span>
+                          </a>
+                          <small> (17/06/2008, rév. 10/07/2014)</small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/adams.html">
+                            <img src="images/adams/adams.jpg" alt="John Adams">
+                            <span class="firstNameCompoContemporain">John</span> <span class="nameCompoContemporain">Adams</span>
+                            </a>
+                          <small> (11/08/2008, rév. 11/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/silvestrov.html">
+                            <img src="images/silvestrov/silvestrov4.jpg" alt="Valentin Silvestrov">
+                            <span class="firstNameCompoContemporain">Valentin</span> <span class="nameCompoContemporain">Silvestrov</span>
+                          </a>
+                          <small> (16/09/2008, rév. 13/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/tavener.html">
+                            <img src="images/tavener/tavener.jpg" alt="John Tavener">
+                            <span class="firstNameCompoContemporain">John</span> <span class="nameCompoContemporain">Tavener</span>
+                          </a>
+                          <small> (30/09/2008, rév. 13/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/rochberg.html">
+                            <img src="images/rochberg/rochberg4.jpg" alt="George Rochberg">
+                            <span class="firstNameCompoContemporain">George</span> <span class="nameCompoContemporain">Rochberg</span>
+                          </a>
+                          <small> (12/11/2008, rév. 16/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/tuur.html">
+                            <img src="images/tuur1.jpg" alt="Erkki Sven Tüür">
+                            <span class="firstNameCompoContemporain">Erkki</span> <span class="nameCompoContemporain">Sven Tüür</span>
+                          </a>
+                          <small> (22/12/2008, rév. 17/07/2014)</small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/macmillan.html">
+                            <img src="images/macmillan/macmillan2.jpg" alt="James MacMillan">
+                            <span class="firstNameCompoContemporain">James</span> <span class="nameCompoContemporain">MacMillan</span>
+                          </a>
+                          <small> (13/01/2009, rév. 18/07/2014)</small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/shchedrin.html">
+                            <img src="images/shchedrin/shchedrin1.jpg" alt="Rodion Shchedrin">
+                            <span class="firstNameCompoContemporain">Rodion</span> <span class="nameCompoContemporain">Shchedrin</span>
+                          </a>
+                          <small> (24/02/2009, rév. 19/07/2014)</small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/schat.html">
+                            <img src="images/schat/schat.jpg" alt="Peter Schat">
+                            <span class="firstNameCompoContemporain">Peter</span> <span class="nameCompoContemporain">Schat</span>
+                          </a>
+                          <small> (25/03/2009, rév. 20/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/penderecki.html">
+                            <img src="images/penderecki/penderecki1.jpg" alt="Krzysztof Penderecki">
+                            <span class="firstNameCompoContemporain">Krzysztof</span> <span class="nameCompoContemporain">Penderecki</span>
+                          </a>
+                          <small> (24/04/2009, rév. 20/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/ligeti.html">
+                            <img src="images/ligeti/ligeti1.jpg" alt="György Ligeti">
+                            <span class="firstNameCompoContemporain">György</span> <span class="nameCompoContemporain">Ligeti</span>
+                          </a>
+                          <small> (03/11/2009, rév. 29/07/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/rabinovitch.html">
+                            <img src="images/rabinovitch/rabinovitch.jpg" alt="Alexandre Rabinovitch">
+                            <span class="firstNameCompoContemporain">Alexandre</span> <span class="nameCompoContemporain">Rabinovitch</span>
+                          </a>
+                          <small> (01/10/2010, rév. 04/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/bryars.html">
+                            <img src="images/bryars/bryars.jpg" alt="Gavin Bryars">
+                            <span class="firstNameCompoContemporain">Gavin</span> <span class="nameCompoContemporain">Bryars</span>
+                          </a>
+                          <small> (06/11/2010, rév. 04/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/keuris.html">
+                            <img src="images/keuris/keuris1.jpg" alt="Tristan Keuris">
+                            <span class="firstNameCompoContemporain">Tristan</span> <span class="nameCompoContemporain">Keuris</span>
+                          </a>
+                          <small> (01/12/2010, rév. 04/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/greif.html">
+                            <img src="images/greif/greif.jpg" alt="Olivier Greif">
+                            <span class="firstNameCompoContemporain">Olivier</span> <span class="nameCompoContemporain">Greif</span>
+                          </a>
+                          <small> (10/12/2010, rév. 05/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/andriessen.html">
+                            <img src="images/andriessen/andriessen.jpg" alt="Louis Andriessen">
+                           <span class="firstNameCompoContemporain">Louis</span> <span class="nameCompoContemporain">Andriessen</span>
+                          </a>
+                            <small> (17/02/2011, rév. 06/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/norgard.html">
+                            <img src="images/norgard/norgard2.jpg" alt="Per Nørgård">
+                            <span class="firstNameCompoContemporain">Per</span> <span class="nameCompoContemporain">Nørgård</span>
+                          </a>
+                          <small> (09/01/2012, rév. 12/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/kagel.html">
+                            <img src="images/kagel/kagel.jpg" alt="Mauricio Kagel">
+                            <span class="firstNameCompoContemporain">Mauricio</span> <span class="nameCompoContemporain">Kagel</span>
+                          </a>
+                          <small> (25/04/2012, rév. 14/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/henze.html">
+                            <img src="images/henze/henze.jpg" alt="Hans Werner Henze">
+                            <span class="firstNameCompoContemporain">Hans Werner</span> <span class="nameCompoContemporain">Henze</span>
+                          </a>
+                          <small> (20/06/2012, rév. 14/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/verbey.html">
+                            <img src="images/verbey/verbey.jpg" alt="Theo Verbey">
+                            <span class="firstNameCompoContemporain">Theo</span> <span class="nameCompoContemporain">Verbey</span>
+                          </a>
+                          <small> (31/01/2013, rév. 18/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/martland.html">
+                            <img src="images/martland/martland.jpg" alt="Steve Martland">
+                            <span class="firstNameCompoContemporain">Steve</span> <span class="nameCompoContemporain">Martland</span>
+                          </a>
+                          <small> (03/03/2014, rév. 19/08/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/schafer.html">
+                            <img src="images/schafer/schafer.jpg" alt="Murray Schafer">
+                            <span class="firstNameCompoContemporain">Murray</span> <span class="nameCompoContemporain">Schafer</span>
+                          </a>
+                          <small> (18/11/2014) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/ruders.html">
+                            <img src="images/ruders/ruders.jpg" alt="Poul Ruders">
+                            <span class="firstNameCompoContemporain">Poul</span> <span class="nameCompoContemporain">Ruders</span>
+                          </a>
+                          <small> (02/04/2015) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/crumb.html">
+                            <img src="images/crumb/crumb.jpg" alt="George Crumb">
+                            <span class="firstNameCompoContemporain">George</span> <span class="nameCompoContemporain">Crumb</span>
+                          </a>
+                          <small> (30/08/2015) </small>
+                        </li>
+                        <li class="THcomposContemporains">
+                          <a href="chroniques/ades.html">
+                            <img src="images/ades/ades.jpg" alt="Thomas Adès">
+                            <span class="firstNameCompoContemporain">Thomas</span> <span class="nameCompoContemporain">Adès</span>
+                          </a>
+                          <small> (02/07/2016) </small>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
     
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="index.html">Accueil </a></div>
-    <div class="bouton"><a href="contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-  
-  <h1>Portraits de Compositeurs.</h1>
-  
+    
+    </div>
 
-  
-  
-
-
-<p><a href="chroniques/reich.html">Galerie de Portraits : Steve Reich.</a> (08/04/2008, rév. 04/07/2014) </p>
-<p><a href="chroniques/Glass.html">Galerie de Portraits : Philip Glass.</a> (15/04/2008, rév. 05/07/2014)</p>
-<p><a href="chroniques/part.html">Galerie de Portraits : Arvö Pärt.</a> (06/05/2008, rév. 08/07/2014)</p>
-<p><a href="chroniques/schnittke.html">Galerie de Portraits : Alfred Schnittke.</a> (28/05/2008, rév. 09/07/2014)</p>
-<p><a href="chroniques/rautavaara.html">Galerie de Portraits : Einojuhani Rautavaara.</a> (17/06/2008, rév. 10/07/2014)</p>
-<p><a href="chroniques/adams.html">Galerie de Portraits : John Adams.</a> (11/08/2008, rév. 11/07/2014)</p>
-<p><a href="chroniques/silvestrov.html">Galerie de Portraits : Valentin Silvestrov.</a> (16/09/2008, rév. 13/07/2014)</p>
-<p><a href="chroniques/tavener.html">Galerie de Portraits : John Tavener.</a> (30/09/2008, rév. 13/07/2014)</p>
-<p><a href="chroniques/rochberg.html">Galerie de Portraits : George Rochberg.</a> (12/11/2008, rév. 16/07/2014)</p>
-<p><a href="chroniques/tuur.html">Galerie de Portraits : Erkki Sven Tüür.</a> (22/12/2008, rév. 17/07/2014)</p>
-<p><a href="chroniques/macmillan.html">Galerie de Portraits : James MacMillan.</a> (13/01/2009, rév. 18/07/2014)</p>
-<p><a href="chroniques/shchedrin.html">Galerie de Portraits : Rodion Shchedrin.</a> (24/02/2009, rév. 19/07/2014)</p>
-<p><a href="chroniques/schat.html">Galerie de Portraits : Peter Schat.</a> (25/03/2009, rév. 20/07/2014)</p>
-<p><a href="chroniques/penderecki.html">Galerie de Portraits : Krzysztof Penderecki.</a> (24/04/2009, rév. 20/07/2014)</p>
-<p><a href="chroniques/ligeti.html">Galerie de Portraits : György Ligeti.</a> (03/11/2009, rév. 29/07/2014)</p>
-<p><a href="chroniques/rabinovitch.html">Galerie de Portraits : Alexandre Rabinovitch.</a> (01/10/2010, rév. 04/08/2014)</p>
-<p><a href="chroniques/bryars.html">Galerie de Portraits : Gavin Bryars.</a> (06/11/2010, rév. 04/08/2014) </p>
-<p><a href="chroniques/keuris.html">Galerie de Portraits : Tristan Keuris.</a> (01/12/2010, rév. 04/08/2014) </p>
-<p><a href="chroniques/greif.html">Galerie de Portraits : Olivier Greif.</a> (10/12/2010, rév. 05/08/2014) </p> 
-<p><a href="chroniques/andriessen.html">Galerie de Portraits : Louis Andriessen.</a> (17/02/2011, rév. 06/08/2014) </p>
-<p><a href="chroniques/norgard.html">Galerie de Portraits : Per Nørgård.</a> (09/01/2012, rév. 12/08/2014) </p>
-<p><a href="chroniques/kagel.html">Galerie de Portraits : Mauricio Kagel.</a> (25/04/2012, rév. 14/08/2014) </p>
-<p><a href="chroniques/henze.html">Galerie de portraits : Hans Werner Henze.</a> (20/06/2012, rév. 14/08/2014) </p>
-<p><a href="chroniques/verbey.html">Galerie de portraits : Theo Verbey.</a> (31/01/2013, rév. 18/08/2014) </p>
-<p><a href="chroniques/martland.html">Galerie de portraits : Steve Martland.</a> (03/03/2014, rév. 19/08/2014) </p>
-<p><a href="chroniques/schafer.html">Galerie de portraits : Murray Schafer.</a> (18/11/2014) </p>
-<p><a href="chroniques/ruders.html">Galerie de portraits : Poul Ruders.</a> (02/04/2015) </p>
-<p><a href="chroniques/crumb.html">Galerie de portraits : George Crumb.</a> (30/08/2015) </p>
-<p><a href="chroniques/ades.html">Galerie de portraits : Thomas Adès.</a> (02/07/2016) </p>
-  
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-  </div>
+    <script src="js/chroniques.js"></script>
+    <script src="js/affichageGalerieOuListe.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+
+</html>

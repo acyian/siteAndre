@@ -44,7 +44,7 @@
 
                 <nav class="filAriane">
                     <ul>
-                        <li class="breadcrumbItem">Musique</li>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
                         <li class="breadcrumbItem  breadcrumIitem--current">
                           <a href="chroniques.html" itemprop="url">Chroniques</a>
                         </li>
@@ -61,197 +61,207 @@
                         </select>
                     </div>
 
-                    <div id="filtreOptions" class="choixOptions">
-                        <label for="sortByFiltre"><span>Filtrer par</span></label>
-                        <select id="sortByFiltre" rel="nofollow">
-                            <option value="tousThemes">tous les thèmes</option>
-                            <option value="billetsHumeurs">billets d'humeur</option>
-                            <option value="tourMonde">tour du monde</option>
-                            <option value="composContemporains">compositeurs contemporains</option>  
-                            <option value="composOublies">compositeurs oubliés</option>
-                            <option value="interpretesActuels">interprètes actuels</option>     
-                            <option value="genresMusicaux">genres musicaux</option>
-                            <option value="faitsDivers">faits divers</option>  
+                    <div id="filtreOptionsOrdreAlpha" class="choixOptions">
+                        <label for="sortByFiltreOrdreAlpha"><span>Filtrer par ordre alphabétique</span></label>
+                        <select id="sortByFiltreOrdreAlpha" rel="nofollow">
+                            <option value="defaut">défaut</option>
+                            <option value="croissant">croissant</option>
+                            <option value="decroissant">décroissant</option>
                         </select>
+                    </div>
+
+                    <div id="affichageGalerieOuListe" class="choixOptions">
+                      <label><span>Afficher en</span></label>
+                        <figure>
+                          <a href="#" id="iconeGalerie" onclick="changeClassProduits(this.id); return false;">
+                            <img src="images/affichageEnGalerie.png" title="galerie d'image" alt="Galerie d'image">
+                          </a>
+                        </figure>
+                        <figure>
+                          <a href="#" id="iconeListe" onclick="changeClassProduits(this.id); return false;">
+                            <img src="images/affichageEnListe.png" title="Liste" alt="Liste">
+                          </a>
+                        </figure>
                     </div>
                 </div>            
 
                 <div>
-                    <ol id="listChroniques" class="gdeListCorps listNumber">
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/anutali.html">Orchestre symphonique &amp; Cuisine 3 étoiles</a><small> (24/02/2008, rév. 03/07/2014)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/femmesdenotes.html">Deux femmes de Notes : Louise Farrenc et Louise Bertin</a><small> (09/03/2008, rév. 03/07/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/hauer.html">Refusez la copie, exigez l'original ! (Josef Matthias Hauer)</a><small> ( 09/03/2008, rév. 03/07/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/caprice.html">Fais-moi un caprice</a><small> (24/03/2008, rév. 03/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/destincaprice.html">Le Destin d'un caprice</a><small> (24/03/2008, rév. 03/07/2014)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/estonie.html">Estonie</a><small> (01/04/2008, rév. 04/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/reich.html">Steve Reich</a><small> (08/04/2008, rév. 04/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/Glass.html">Philip Glass</a><small> (15/04/2008, rév. 05/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/goldberg.html">Goldberg, Diabelli et les autres</a><small> (17/04/2008, rév. 05/07/2014)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/clara.html">Le génie de Clara</a><small> (20/04/2008, rév. 05/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/finlande.html">Finlande</a><small> (27/04/2008, rév. 07/07/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/football.html">Football et Musique</a><small> (04/05/2008, rév. 07/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/part.html">Arvö Pärt</a><small> (06/05/2008, rév. 08/07/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/korngold.html">Un génie précoce nommé Wolfgang</a><small> (17/05/2008, rév. 08/07/2014)</small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/schnittke.html">Alfred Schnittke</a><small> (28/05/2008, rév. 09/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/chefs.html">Des chefs qui composent</a><small> (05/06/2008, rév. 09/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/rautavaara.html">Einojuhani Rautavaara</a><small> (17/06/2008, rév. 10/07/2014)</small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/mortier.html">Un belge à New York ?</a><small> (24/06/2008, rév. 10/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/danemark.html">Danemark</a><small> (05/08/2008, rév. 10/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/adams.html">John Adams</a><small> (11/08/2008, rév. 11/07/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/schmidt.html">Schmidt &amp; Schmitt</a><small> (22/08/2008, rév. 11/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/suede.html">Suède</a><small> (24/08/08, rév. 11/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/norvege.html">Norvège</a><small> (29/08/08, rév. 13/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/silvestrov.html">Valentin Silvestrov</a><small> (16/09/2008, rév. 13/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/tavener.html">John Tavener</a><small> (30/09/2008, rév. 13/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/winterreise.html">Itinéraires d'un voyage d'hiver</a><small> (05/10/2008, rév. 15/07/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/cantates.html">Les cantates de Bach</a><small> (12/10/2008, rév. 15/07/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/messes.html">Où sont passées les messes d'antan ?</a><small> (01/11/2008, rév. 15/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/rochberg.html">George Rochberg</a><small> (12/11/2008, rév. 16/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/musicorrhee.html">Quelques exemples de musicorrhée au 20<sup>ème</sup> siècle</a><small> (01/12/2008, rév. 16/07/2014)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/pologne.html">Pologne</a><small> (11/12/2008, rév. 17/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/tuur.html">Erkki Sven Tüür</a><small> (22/12/2008, rév. 17/07/2014)</small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/inmemoriam.html">In memoriam Richard Hickox &amp; Vernon Handley</a><small> (04/01/2009, rév. 18/07/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/montgeroult.html">Hélène de Montgeroult (1764-1836)</a><small> (09/01/2009, rév. 18/07/2014)</small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/macmillan.html">James MacMillan</a><small> (13/01/2009, rév. 18/07/2014)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/orchestrations.html">Quelques modèles d'orchestrations</a><small>  (06/02/2009, rév. 19/07/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/valentin.html">Dites-le avec des notes</a><small> (14/02/2009, rév. 19/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/shchedrin.html">Rodion Shchedrin</a><small> (24/02/2009, rév. 19/07/2014)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/ries.html">L'empreinte d'un Maître</a><small> (08/03/2009, rév. 20/07/2014)</small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/schat.html">Peter Schat</a><small> (25/03/2009, rév. 20/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/pdqbach.html">Un fils caché de Jean-Sébastien Bach ? </a><small> (01/04/2009, rév. 20/07/2014)</small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/toux.html">Remède contre la toux</a><small> (04/04/2009, rév. 20/07/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/medici.html">Video Medici</a><small> (12/04/2009, rév. 20/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/penderecki.html">Krzysztof Penderecki</a><small> (24/04/2009, rév. 20/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/lituanie.html">Lituanie</a><small> (11/05/2009, rév. 21/07/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/hadopi.html">Hadopi</a><small> (14/05/2009, rév. 21/07/2014)</small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/elisabeth.html">Queen Elisabeth : Que sont-ils devenus ?</a><small> (24/05/2009, rév. 21/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/russie.html">URSS</a><small> (03/06/2009, rév. 27/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/lettonie.html">Lettonie</a><small> (22/06/2009, rév. 27/07/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/brillant.html">Brillant mais à quel prix ?</a><small> (11/08/2009, rév. 28/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/pedigrees.html">Pedigrees</a><small> (03/09/2009, rév. 28/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/longevite.html">Longévité musicale</a><small> (14/09/2009, rév. 28/07/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/honoriscausa.html">Honoris Causa</a><small> (19/09/2009, rév. 28/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/minimalisme.html">Les pionniers du minimalisme aux USA</a><small> (02/10/2009, rév. 28/07/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/haydn.html">Hommage à papa Haydn</a><small> (19/10/2009, rév. 28/07/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/ligeti.html">György Ligeti</a><small> (03/11/2009, rév. 29/07/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/hoffmann.html">Un artiste total : Ernst Theodor Amadeus Hoffmann</a><small> (20/11/2009, rév. 29/07/2014)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/greenberg.html">Prodige musical : Jay Greenberg</a><small> (07/12/2009, rév. 29/07/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/concertosviolon.html">Le Concerto pour violon jusqu'à nos jours</a><small> (02/01/2010, rév. 30/07/2014)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/hongrie.html">Hongrie</a><small> (20/01/2010, rév. 30/07/2014)</small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/naxos.html">Euterpe à Naxos</a><small> (02/02/2010, rév. 30/07/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/gurlitt.html">Manfred Gurlitt</a><small> (12/02/2010, rév. 30/07/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/roumanie.html">Roumanie</a><small> (04/03/2010, rév. 30/07/2014)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/eduardfranck.html">Eduard Franck</a><small> (16/03/2010, rév. 01/08/2014) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/opl.html">Nouvelles de l'OPL</a><small> (07/04/2010, rév. 01/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/foulds.html">John Foulds</a><small> (07/05/2010, rév. 01/08/2014) </small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/arpeggiata.html">Arpeggiata</a><small> (07/06/2010, rév. 01/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/draeseke.html">Felix Draeseke</a><small> (22/06/2010, rév. 01/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/raff.html">Joseph Joachim Raff</a><small> (30/06/2010, rév. 03/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/fauches.html">Jeunes et déjà fauchés</a><small> (07/07/2010, rév. 03/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/tchequie.html">Tchéquie</a><small> (03/08/2010, rév. 03/08/2014)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/cras.html">Jean Cras</a><small> (09/08/2010, rév. 04/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/wagner.html">Wagner, côté jardin</a><small> (15/08/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/pierne.html">Un musicien à redécouvrir : Gabriel Pierné</a><small> (01/09/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/landowski.html">Etes-vous Boulez ou ... Landowski ?</a><small> (13/09/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/rabinovitch.html">Alexandre Rabinovitch</a><small> (01/10/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/castillon.html">Alexis de Castillon</a><small> (18/10/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/bryars.html">Gavin Bryars</a><small> (06/11/2010, rév. 04/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/slovaquie.html">Slovaquie</a><small> (21/11/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/keuris.html">Tristan Keuris</a><small> (01/12/2010, rév. 04/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/greif.html">Olivier Greif</a><small> (10/12/2010, rév. 05/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/craft.html">Schönberg n'est pas mort !</a><small> (26/12/2010, rév. 05/08/2014) </small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/hamelin.html">Un pianiste indispensable : Marc-André Hamelin</a><small> (10/01/2011, rév. 05/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/famillebach.html">Airs de famille : les autres Bach</a><small> (18/01/2011, rév. 05/08/2014) </small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/postmoderne.html">Ralph van Raat, un pianiste postmoderne</a><small> (03/02/2011, rév. 05/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/andriessen.html">Louis Andriessen</a><small> (17/02/2011, rév. 06/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/arthurs.html">Arthur Lourié et Arthur Berger</a><small> (02/03/2011, rév. 06/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/bonis.html">Mel, mélo, mélodies : Mélanie Bonis</a><small> (15/03/2011, rév. 06/08/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/concertospiano.html">Le Concerto pour piano jusqu'à nos jours</a><small> (29/03/2011, rév. 06/08/2014)</small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/concertocello.html">Le Concerto pour violoncelle jusqu'à nos jours</a><small> (18/04/2011, rév. 07/08/2014)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/lvbmeconnu.html">Beethoven, notes éparses</a><small> (02/05/2011, rév. 07/08/2014)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/gretry.html">Un Liégeois à Paris : André-Ernest-Modeste Grétry</a><small> (16/05/2011, rév. 08/08/2014)</small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/cantigas.html">Les Cantigas de Santa Maria</a><small> (02/06/2011, rév. 08/08/2014)</small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/ducros.html">Nouvelle  vague en musique française : Jérôme Ducros</a><small> (22/06/2011, rév. 08/08/2014)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/france.html">France</a><small> (08/08/2011, rév. 08/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/weinberg.html">Le cas Mieczyslaw Weinberg</a><small> (29/08/2011, rév. 08/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/clementi.html">Un chaînon manquant : Muzio Clementi</a><small> (18/09/2011, rév. 11/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/prixderome.html">Heurs et malheurs du Grand Prix de Rome de Musique</a><small> (05/10/2011, rév. 11/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/paysbas.html">Pays-Bas</a><small> (24/10/2011, rév. 11/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/belgique.html">Belgique</a><small> (23/11/2011, rév. 11/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/grawemeyer.html">Grawemeyer Award for Music Composition</a><small> (29/11/2011, rév. 12/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/reinecke.html">Carl Reinecke</a><small> (12/12/2011, rév. 12/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/chausson.html">Ernest Chausson sous le sapin</a><small> (19/12/2011, rév. 12/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/norgard.html">Per Nørgård</a><small> (09/01/2012, rév. 12/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/germains.html">Destins croisés : Hans Pfitzner &amp; Franz Schreker</a><small> (24/01/2012, rév. 12/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/valen.html">Fartein Valen ou l'art du contrepoint dissonant</a><small> (05/02/2012, rév. 13/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/popov.html">Gavriil Popov, artiste du peuple ?</a><small> (27/02/2012, rév. 13/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/khrennikov.html">Tikhon Khrennikov, le censeur encensé</a><small> (14/03/2012, rév. 13/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/einstein.html">Einstein on the Beach : le premier "audiopéra"</a><small> (26/03/2012, rév. 13/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/suisse.html">Suisse</a><small> (13/04/2012, rév. 14/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/kagel.html">Mauricio Kagel</a><small> (25/04/2012, rév. 14/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/hartmann.html">Le dédale de l'oeuvre de Karl Amadeus Hartmann</a><small> (13/05/2012, rév. 14/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/zimmermann.html">Bernd Aloïs Zimmermann n'a pas écrit que Die Soldaten</a><small> (30/05/2012, rév. 14/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/henze.html">Hans Werner Henze</a><small> (20/06/2012, rév. 14/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/bandedesquatre.html">L'autre bande des Quatre</a><small> (23/08/2012, rév. 14/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/wittgenstein.html">Pour la main gauche</a><small> (19/09/2012, rév. 15/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/gerhard.html">Robert Gerhard</a><small> (11/10/2012, rév. 15/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/eastgermany.html">A l'Est rien de nouveau ?</a><small> (29/10/2012, rév. 15/08/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/chaconne.html">L'art de la chaconne</a><small> (18/11/2012, rév. 15/08/2014)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/scelsi.html">L'univers sonore de Giacinto Scelsi (1905-1988)</a><small> (09/12/2012, rév. 15/08/2014)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/allemagne.html">Allemagne</a><small> (04/01/2013, rév. 17/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/verbey.html">Theo Verbey</a><small> (31/01/2013, rév. 18/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/antheil.html">George Antheil, bad boy des années 20</a><small> (17/02/2013, rév. 18/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/dames20.html">Musique moderne au féminin</a><small> (24/03/2013, rév. 18/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/groupes.html">The American Five, de Charles Ives à Henry Cowell</a><small> (05/05/2013, rév. 18/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/strozzi.html">Trois musiciennes baroques : Caccini, Strozzi &amp; Jacquet</a><small> (30/05/2013, rév. 18/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/koussevitzky.html">L'argent du thé russe : la Fondation Koussevitzky</a><small> (21/06/2013, rév. 18/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/garcia.html">La famille Garcia</a><small> (07/08/2013, rév. 18/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/krenek.html">Redécouvrons Ernst Krenek</a><small> (30/08/2013, rév. 18/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/hahn.html">Reynaldo Hahn</a><small> (16/09/2013, rév. 18/08/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/madrigal.html">Le madrigal</a><small> (07/10/2013, rév. 19/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/italie.html">Italie</a><small> (08/11/2013, rév. 19/08/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/scarlatti.html">Les 555 sonates de Scarlatti</a><small> (04/12/2013) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/louisferdinand.html">Louis Ferdinand, un prince musicien</a><small> (26/12/2013, rév. 19/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/gabriel.html">Gabriel, petit-fils de Serge</a><small> (17/01/2014, rév. 19/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/widor.html">L'autre visage de Charles-Marie Widor</a><small> (07/02/2014, rév. 19/08/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/martland.html">Steve Martland</a><small> (03/03/2014, rév. 19/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/autriche.html">Autriche</a><small> (24/03/2014, rév. 20/08/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/passion.html">La Passion</a><small> (14/04/2014, rév. 20/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/proms.html">Sir Henry Wood &amp; The Prom's Concerts</a><small> (05/05/2014, rév. 20/08/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/pianoameublement.html">Le piano d'ameublement, d'Erik Satie à John Cage</a><small> (09/06/2014, rév. 20/08/2014) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/portugal.html">Portugal</a><small> (25/06/2014, rév. 20/08/2014) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/roentgen.html">Julius Roentgen</a><small> (08/09/2014) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/rameau.html">C'est Rameau qu'on assassine !</a><small> (29/09/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/tombeau.html">Déplorations &amp; Tombeaux</a><small> (01/11/2014) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/schafer.html">Murray Schafer</a><small> (18/11/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/clavecin.html">L'école française de clavecin</a><small> (11/12/2014) </small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/sonate.html">La sonate pour piano jusqu'à nos jours</a><small> (07/01/2015) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/urspruch.html">Anton Urspruch</a><small> (28/01/2015) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/finzi.html">Un maître de l'élégie : Gérald Finzi</a><small> (15/02/2015) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/alwyn.html">Two british outsiders : William Alwyn &amp; Malcolm Arnold</a><small> (09/03/2015) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/ruders.html">Poul Ruders</a><small> (02/04/2015) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/terezin.html">Composer sous le 3<sup>ème</sup> Reich</a><small> (07/05/2015) </small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/creb.html">CREB, entre professionnalisme et consensualité</a><small> (08/06/2015) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/grece.html">Grèce</a><small> (08/07/2015) </small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/armida.html">Place aux jeunes : le Quatuor Armida</a><small> (01/08/2015) </small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/crumb.html">George Crumb</a><small> (30/08/2015) </small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/angleterre.html">Grande-Bretagne</a><small> (30/09/2015)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/boosey.html">L'édition musicale, de Petrucci à Boosey &amp; Hawkes. </a><small> (01/11/2015)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/gouvy.html">Théodore Gouvy</a><small> (29/11/2015)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/operacomique.html">Dans l'ombre de l'Opéra-Comique</a><small> (27/12/2015)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/adaiewsky.html">Coup de coeur pour une musique d'Ella Adaïewsky</a><small> (27/01/2016)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/boulez.html">Un hommage à Pierre Boulez</a><small> (14/02/2016)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/japon.html">Japon</a><small> (20/03/2016)</small></li>
-                        <li class="THtourMonde" style="display: block;"><a href="chroniques/espagne.html">Espagne</a><small> (17/04/2016)</small></li>
-                        <li class="THinterpretesActuels" style="display: none;"><a href="chroniques/poemeharmonique.html">Le Poème Harmonique</a><small> (15/05/2016)</small></li>
-                        <li class="THbilletHumeur" style="display: none;"><a href="chroniques/violoncelle.html">Place au violoncelle !</a><small> (05/06/2016)</small></li>
-                        <li class="THcomposContemporains" style="display: none;"><a href="chroniques/ades.html">Thomas Adès</a><small> (02/07/2016) </small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/braunfels.html">Walter Braunfels</a><small> (28/08/2016) </small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/pantheon.html">Le Panthéon des musiciens</a><small> (02/10/2016)</small></li>
-                        <li class="THcomposOublies" style="display: none;"><a href="chroniques/tchaikovsky.html">Un Tchaïkovsky peut en cacher d'autres</a><small> (30/10/2016)</small></li>
-                        <li class="THgenresMusicaux" style="display: none;"><a href="chroniques/quintette.html">Le Quintette (à clavier) jusqu'à nos jours</a><small> (02/12/2016)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/complexite.html">Information, Complexité et Musique</a><small> (06/02/2017)</small></li>
-                        <li class="THfaitsDivers" style="display: none;"><a href="chroniques/cinema.html">Le siècle des (frères) Lumière</a><small> (18/03/2017)</small></li>
+                    <ol id="listChroniquesTourMonde" class="gdeListCorps listNumber">
+                        <li class="THtourMonde">
+                          <a href="chroniques/estonie.html">
+                            <img src="images/estonie/estonie1.jpg" alt="estonie">
+                            Estonie
+                          </a>
+                          <small> (01/04/2008, rév. 04/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/finlande.html">
+                            <img src="images/finlande/finlande1.jpg" alt="finlande">
+                            Finlande
+                          </a>
+                          <small> (27/04/2008, rév. 07/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/danemark.html">
+                            <img src="images/danemark/danemark5.jpg" alt="danemark">
+                            Danemark
+                          </a>
+                          <small> (05/08/2008, rév. 10/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/suede.html">
+                            <img src="images/suede/suede.jpg" alt="suede">
+                            Suède
+                          </a>
+                          <small> (24/08/08, rév. 11/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/norvege.html">
+                            <img src="images/norvege/norvege.jpg" alt="norvege">
+                            Norvège
+                          </a>
+                          <small> (29/08/08, rév. 13/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/pologne.html">
+                            <img src="images/pologne/pologne1.jpg" alt="pologne">
+                            Pologne
+                          </a>
+                          <small> (11/12/2008, rév. 17/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/lituanie.html">
+                            <img src="images/lituanie/lituanie.jpg" alt="lituanie">
+                            Lituanie
+                          </a>
+                          <small> (11/05/2009, rév. 21/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/russie.html">
+                            <img src="images/russie/russie1.jpg" alt="russie">
+                            URSS
+                          </a>
+                          <small> (03/06/2009, rév. 27/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/lettonie.html">
+                            <img src="images/lettonie/lettonie.jpg" alt="lettonie">
+                            Lettonie
+                          </a>
+                          <small> (22/06/2009, rév. 27/07/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/hongrie.html">
+                            <img src="images/hongrie/hongrie1.jpg" alt="hongrie">
+                            Hongrie
+                          </a>
+                          <small> (20/01/2010, rév. 30/07/2014)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/roumanie.html">
+                            <img src="images/roumanie/roumanie1.jpg" alt="roumanie">
+                            Roumanie
+                          </a>
+                          <small> (04/03/2010, rév. 30/07/2014)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/tchequie.html">
+                            <img src="images/tchequie/tchequie.jpg" alt="tchequie">
+                            Tchéquie
+                          </a>
+                          <small> (03/08/2010, rév. 03/08/2014)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/slovaquie.html">
+                            <img src="images/slovaquie/slovaquie.jpg" alt="slovaquie">
+                            Slovaquie
+                          </a>
+                          <small> (21/11/2010, rév. 04/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/france.html">
+                            <img src="images/france/france1.jpg" alt="france">
+                            France
+                          </a>
+                          <small> (08/08/2011, rév. 08/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/paysbas.html">
+                            <img src="images/paysbas/paysbas.jpg" alt="paysbas">
+                            Pays-Bas
+                          </a>
+                          <small> (24/10/2011, rév. 11/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/belgique.html">
+                            <img src="images/belgique/belgique.jpg" alt="belgique">
+                            Belgique
+                          </a>
+                          <small> (23/11/2011, rév. 11/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/suisse.html">
+                            <img src="images/suisse/suisse.jpg" alt="suisse">
+                            Suisse
+                          </a>
+                          <small> (13/04/2012, rév. 14/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/allemagne.html">
+                            <img src="images/allemagne/allemagne.jpg" alt="allemagne">
+                            Allemagne
+                          </a>
+                          <small> (04/01/2013, rév. 17/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/italie.html">
+                            <img src="images/italie/italie.jpg" alt="italie">
+                            Italie
+                          </a>
+                          <small> (08/11/2013, rév. 19/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/autriche.html">
+                            <img src="images/autriche/autriche.jpg" alt="autriche">
+                            Autriche
+                          </a>
+                          <small> (24/03/2014, rév. 20/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/portugal.html">
+                            <img src="images/portugal/portugal.jpg" alt="portugal">
+                            Portugal
+                          </a>
+                          <small> (25/06/2014, rév. 20/08/2014) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/grece.html">
+                            <img src="images/grece/grece.jpg" alt="grece">
+                            Grèce
+                          </a>
+                          <small> (08/07/2015) </small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/angleterre.html">
+                            <img src="images/england/england.jpg" alt="angleterre">
+                            Grande-Bretagne
+                          </a>
+                          <small> (30/09/2015)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/japon.html">
+                            <img src="images/japon/newyorker.png" alt="japon">
+                            Japon
+                          </a>
+                          <small> (20/03/2016)</small>
+                        </li>
+                        <li class="THtourMonde">
+                          <a href="chroniques/espagne.html">
+                            <img src="images/espagne/espagne.jpg" alt="espagne">
+                            Espagne
+                          </a>
+                          <small> (17/04/2016)</small>
+                        </li>
                     </ol>
                 </div>
             </div>
@@ -268,6 +278,7 @@
     </div>
 
     <script src="js/chroniques.js"></script>
+    <script src="js/affichageGalerieOuListe.js"></script>
 
 </body>
 

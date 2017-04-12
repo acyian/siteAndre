@@ -1,62 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Complexité musicale</title>
-<!-- InstanceEndEditable -->
-<link href="../styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
 
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
 
+        <div id="corps">
 
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
 
-
-
-
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="../images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="../Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="../cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="../phys.html">Phys </a></div>
-    <div class="bouton0"><a href="../math.html">Math </a></div>
-    <div class="bouton0"><a href="../info.html">Info </a></div>
-    <div class="bouton"><a href="../feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="../wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="../references.html">Références </a></div>
-    
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="../images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="../musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="../crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="../chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="../billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="../portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="../grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="../tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="../quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-  
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
   <h2>Information, Complexité et Musique.</h2>
   <p>(Une version remaniée de cet article sera bientôt radiodiffusée sur la <a href="http://www.printempsdesarts.mc/fr/medias/la-radio-du-festival-70">Radio Parfaite</a>, antenne officielle du Festival du Printemps des Arts 2017 de  Monte-Carlo. Elle sera disponible en podcast ici)</p>
   <p>La complexité des systèmes est un sujet d'étude de la Théorie de l'information telle qu'initiée, au plan syntaxique, par Claude Shannon (1916-2001) et précisée, au plan sémantique, par Andrei Kolmogorov (1903-1987). Elle est présentée informellement ci-dessous et appliquée  à l'oeuvre d'art, en particulier musicale. </p>
@@ -190,10 +183,20 @@ Votre navigateur n'est pas compatible
 <p>- Les compositeurs du courant progressiste ont cultivé une approche  beaucoup plus savante où les redondances se sont trouvées   de plus en plus cryptées au sein de la partition. Le phénomène a même pris une ampleur déraisonnable lors de l'épisode (post)sériel des années 1950-60. Sans explication préalable, le mélomane ordinaire s'est trouvé désemparé et il ne faut pas s'étonner s'il se soit détourné d'un répertoire qui bousculait à ce point ses habitudes d'écoute. Il n'est même pas sûr que les explications circonstanciées qui auraient pu lui être fournies lui auraient été utiles.</p>
 <p>Enfin, qu'il soit clair que  si la théorie de l'information éclaire le processus mental du décodage de l'oeuvre d'art, elle ne se prononce pas sur la valeur esthétique de celle-ci, une notion éminemment subjective et peut-être même superflue. Après tout, il n'est nullement certain que l'art doive nécessairement viser la beauté,  au sens apollinien du terme. Qu'elle réussisse à libérer les démons intérieurs de leur créateur et à stimuler l'imagination des spectateurs ne serait déjà pas si mal.</p>
 <p></p>
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-</div>
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

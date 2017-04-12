@@ -1,62 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>La Symphonie</title>
-<!-- InstanceEndEditable -->
-<link href="../styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
 
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
 
+        <div id="corps">
 
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
 
-
-
-
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="../images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="../Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="../cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="../phys.html">Phys </a></div>
-    <div class="bouton0"><a href="../math.html">Math </a></div>
-    <div class="bouton0"><a href="../info.html">Info </a></div>
-    <div class="bouton"><a href="../feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="../wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="../references.html">Références </a></div>
-    
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="../images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="../musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="../crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="../chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="../billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="../portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="../grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="../tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="../quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-  
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
   <h2>La Symphonie jusqu'à nos jours : 1. La Symphonie oubliée.  </h2>
   <p>La symphonie est le genre le mieux apprécié du grand public : elle lui offre son lot d'ivresse sonore. Les tubes, de Haydn à Schostakovitch, en passant par tous les grands classiques,  tirent leur pouvoir de séduction d'un lyrisme porteur d'émotions fortes exprimées dans un langage généralement accessible. Lorsqu'il ne l'est pas, il arrive que les oeuvres soient  boudées  par le public et dès lors par les Sociétés philharmoniques, peu enclines à prendre des risques financiers.</p>
   <p>Vu l'ampleur du sujet, cette chronique suivra un développement continu selon un plan préétabli : </p>
@@ -201,10 +194,20 @@ Les cent dernières années ont vu la composition de plusieurs cycles de symphon
 <p>Le vingtième siècle a vu la composition de plusieurs cycles de symphonies de très grande qualité, depuis celui de Guy Ropartz (1864-1955) à celui de Péteris Vasks (né en 1946), en passant par celui de Carl Nielsen (1865-1931), d'Alexandre Glazunov (1865-1936), de Jean Sibelius (1865-1957), de Wilhelm Peterson-Berger (1867-1942), de Charles Tournemire (1870-1939), de Ralph Vaughan Williams (1872-1958), de Hugo Alfvén (1872-1960), d'Havergal Brian (1876-1972), de Jan van Gilse (1881-1944), de Karl Weigl (1881-1949), de Nikolaï Miaskovsky (1881-1950), de Gian Francesco Malipiero (1882-1973), d'Arnold Bax (1883-1953), d'Egon Wellesz (1885-1974), d'Heitor Villa-Lobos (1887-1959), d'Ernst Toch (1887-1964), de Kurt Atterberg (1887-1974), de Bohuslav Martinü (1890-1959), de Serge Prokofiev (1891-1953), d'Arthur Honegger (1892-1955), de Darius Milhaud (1892-1974), de Walter Piston (1894-1976), de Paul Hindemith (1895-1963), de Boris Lyatoshinsky (1895-1968), d'Howard Hanson (1896-1931), de Roger Sessions (1896-1985), d'Alexandre Tansman (1897-1986), de Roy Harris (1898-1979), de Carlos Chávez (1899-1978), d'Ernst Krenek (1900-1991), d'Edmund Rubbra (1901-1986), de Conrad Beck (1901-1986), de Vissarion Chebaline (1902-1963), de Gavriil Popov (1904-1972), de Karl Amadeus Hartmann (1905-1963), d'Eduard Tubin (1905-1982), de William Alwyn (1905-1985), de Benjamin Frankel (1906-1973), de Dmitri Chostakovitch (1906-1975) bien sûr, mais aussi d'Arnold Cooke (1906-2005), d'Ahmed Adnan Saygun (1907-1991), de Camargo Guarnieri (1907-1993), de Miloslav Kabelác (1908-1979), de Vagn Holmboe (1909-1996), de William Schuman (1910-1992), d'Allan Pettersson (1911-1980), d'Alan Hovhaness (1911-2000), de Donald Gillis (1912-1978), de Daniel Jones (1912-1993), d'Humphrey Searle (1915-1982), de David Diamond (1915-2005), d'Isang Yun (1917-1995), de Richard Arnell (né en 1917), de George Rochberg (1918-2005), de Lex van Delden (1919-1988), de Cláudio Santoro (1919-1989), de Mieczyslaw Weinberg (1919-1996), de Galina Oustvolskaïa (1919-2006), d'Alexander Lokshin (1920-1987), de Peter Racine Fricker (1920-1990), de Robert Simpson (1921-1997), de Malcolm Arnold (1921-2006), d'Hans Werner Henze (né en 1926), d'Einojuhani Rautavaara (né en 1928), de John Davison (né en 1930), d'Aubert Lemeland (né en 1932), de David Morgan (né en 1932), de Krzysztof Penderecki (né en 1933), d'Alfred Schnittke (1934-1998), de Peter Maxwell Davies (né en 1934), de Valentin Silvestrov (né en 1937), de Boris Tishchenko (né en 1939), de Leif Segerstam (né en 1944), ou bien encore de Jean-Claude Wolff (né en 1946), sans compter de nombreux chef-d'oeuvres isolés. L'ensemble des quatre symphonies que nous a laissé Ture Rangström (1884-1947) est tout à fait intéressant.</p>
   
   <p>http://en.wikipedia.org/wiki/List_of_symphony_composers</p>
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-  </div>
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

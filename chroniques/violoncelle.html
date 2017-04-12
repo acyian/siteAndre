@@ -1,62 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Violoncelle au Cmireb</title>
-<!-- InstanceEndEditable -->
-<link href="../styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
 
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
 
+        <div id="corps">
 
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
 
-
-
-
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="../images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="../Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="../cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="../phys.html">Phys </a></div>
-    <div class="bouton0"><a href="../math.html">Math </a></div>
-    <div class="bouton0"><a href="../info.html">Info </a></div>
-    <div class="bouton"><a href="../feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="../wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="../references.html">Références </a></div>
-    
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="../images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="../musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="../crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="../chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="../billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="../portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="../grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="../tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="../quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-  
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
   <h2>Place au violoncelle !</h2>
   <p>L'édition 2016 du Concours musical Reine Elisabeth de Belgique (Cmireb) s'est achevée sur la victoire incontestée du tchèque Lukas Vondracek (Son interprétation de la pièce imposée de Claude Ledoux, <a href="http://www.cmireb.be/cgi?lg=fr&pag=2427&tab=146&rec=30159&frm=0&par=secorig2018">A Butterfly's Dream</a>, fut tout simplement limpide). A presque 30 ans, cet habitué des concours  a su tirer parti  d'une expérience que ne possédaient pas ses rivaux,  son talent a fait le reste. Ce succès est relativement tardif (il n'en sera peut-être que plus pérenne) : au "Van Cliburn 2009", Vondracek &quot;n'a&quot; décroché qu'un accessit et au "Tchaikovsky 2011", il s'est retiré prématurément d'une compétition où allait émerger un certain Daniil Trifonov. Vainqueur  du &quot;Reine Elisabeth 2016&quot;, on suppose qu'il se retirera du "Tromsø 2017" auquel il envisageait de participer, qu'aurait-il à y gagner ?</p>
   <p>Quant au  Cmireb, il innove :  une session consacrée au violoncelle verra le jour, en 2017,  se répétant tous les quatre ans, en alternance avec le violon, le piano et le chant. La bonne nouvelle c'est que le jury sera tout beau tout neuf et que je serai mort avant qu'il ne soit en partie colonisé par d'anciens lauréats comme c'est devenu l'habitude pour les sessions de piano et de violon (Quatre cette année). Je suggère qu'on en profite pour lui expliquer comment déjouer  les pièges d'un mode de scrutin très particulier, aux conséquences parfois fâcheuses. </p>
@@ -108,10 +101,20 @@ d'Antonin Dvorak ou - je suis moins enthousiaste - les <a href="https://www.yout
   
   
   
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-</div>
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

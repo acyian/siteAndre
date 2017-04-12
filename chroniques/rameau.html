@@ -1,62 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Jean-Philippe Rameau</title>
-<!-- InstanceEndEditable -->
-<link href="../styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
 
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
 
+        <div id="corps">
 
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
 
-
-
-
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="../images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="../Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="../cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="../phys.html">Phys </a></div>
-    <div class="bouton0"><a href="../math.html">Math </a></div>
-    <div class="bouton0"><a href="../info.html">Info </a></div>
-    <div class="bouton"><a href="../feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="../wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="../references.html">Références </a></div>
-    
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="../images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="../musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="../crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="../chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="../billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="../portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="../grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="../tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="../quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-  
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>  
   <h2>C'est Rameau qu'on assassine !</h2>
 
 <div><img src="../images/rameau/rameau.jpg" alt="" /></div>
@@ -97,10 +90,20 @@ Votre navigateur n'est pas compatible
 <p>- historique, certes, dans la mesure où pour la première fois sont dégagées, avec naturel et autorité, les notions classiques d'octave, de tierce, de quarte, de quinte, ..., avec tous les accords qui en dérivent mais plus certainement,</p>
 <p>- musicale, par les conséquences que le musicien en a tirées dans la pratique de son art. A moins d'être sourd ou insensible, il saute aux oreilles que l'harmonie chez Rameau vibre dans chacune de ses combinaisons sonores.</p>
 <p>Pour la petite histoire, Rameau  eut 4 enfants musiciens de Marie-Louise, dont on ne parle plus guère. De par son frère organiste, Claude, il eut un neveu, Jean-François Rameau, également musicien, dont on  parle encore indirectement, par la grâce d'un écrit satyrique de Diderot,  <a href="http://beq.ebooksgratuits.com/vents/diderot-neveu.pdf">Le Neveu de Rameau</a>. Il met en scène l'auteur (Moi) et le neveu (Lui) dans un de ces dialogues dont le Siècle des Lumières était friand, ici le combat du cynisme (Lui !) contre la morale (Moi !). L'oeuvre est encore régulièrement adaptée pour le théâtre mais personne ne peut expliquer pourquoi le neveu de Rameau quand celui de Voltaire, si toutefois il en eut un, aurait aussi bien pu faire l'affaire. Peut-être Diderot cherchait-il à égratigner l'oncle Rameau sans l'affronter directement tout en se réservant, au bilan, de ne dialoguer qu'avec lui-même. </p>
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-  </div>
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

@@ -1,62 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/modeletony.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>Arpeggiata</title>
-<!-- InstanceEndEditable -->
-<link href="../styles.css" rel="stylesheet" type="text/css" />
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+  <meta name="language" content="fr" />
+  <title>Billets d'humeur</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
 </head>
+
 <body>
-<div id="site">
 
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
 
+        <div id="corps">
 
+            <div id="contenuPrincipal">
+                <h2>Billets d'humeur</h2>
+                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
 
-
-
-
-  <div id="bandeau"></div>
-  <div id="menugauche">
-    <h1>Physique</h1>
-    <div class="menu"><img src="../images/einstein3.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenuphysique.html">Présentation </a></div>
-    <div class="bouton"><a href="../Seminaires.html">Séminaires </a></div>
-    <div class="bouton"><a href="../cours.html">Cours </a></div>
-    <div><span style="color:#FC0">Divers : </span></div>
-    <div class="bouton0"><a href="../phys.html">Phys </a></div>
-    <div class="bouton0"><a href="../math.html">Math </a></div>
-    <div class="bouton0"><a href="../info.html">Info </a></div>
-    <div class="bouton"><a href="../feynmania.html">Feynmania </a></div>
-    <div class="bouton"><a href="../wolframania.html">Wolframania </a></div>
-    <div class="bouton"><a href="../references.html">Références </a></div>
-    
-</div>
-  
-  
-  <div id="menudroite">
-    <h1>Musique</h1>
-    <div class="menu"><img src="../images/beethoven100.jpg" alt="" /></div>
-    <div class="bouton"><a href="../index.html">Accueil </a></div>
-    <div class="bouton"><a href="../contenumusique.html">Présentation </a></div>
-    <div class="bouton"><a href="../musique2001.html">Musique 2001 </a></div>
-    <div class="bouton"><a href="../crossover.html">Crossover </a></div>
-    <div class="bouton"><a href="../chroniques.html">Chroniques :</a></div>
-    <div class="bouton0"><a href="../billetdhumeur.html">  Billets d'Humeur </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton0"><a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a></div>
-    <div class="bouton0"><a href="../portraitscompositeurs.html">Portraits </a></div>
-    <div class="bouton0"><a href="../grandscycles.html">Grands Cycles </a></div>
-    <div class="bouton0"><a href="../tiresdeloubli.html">Tirés de l'oubli </a></div>
-    <div class="bouton0"></div>
-    <div class="bouton"><a href="../quizz.html">Who's who </a></div>
-  </div>
-  
-  <div id="corps"><!-- InstanceBeginEditable name="mod" --><link rel="shortcut icon" href="logo.ico" />
-    
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem  breadcrumIitem--current">
+                          <a href="chroniques.html" itemprop="url">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                    </ul>
+                </nav>    
     
    <h2> Le Poème Harmonique.	</h2>
 
@@ -112,10 +105,20 @@ Votre navigateur n'est pas compatible
 </sub></sub></sub>), puis son gendre Anthoine Boesset (1587-1643) (<a href="https://www.youtube.com/watch?v=UAmUQieNFSc">Nos Esprits libres et contents</a>, <a href="https://www.youtube.com/watch?v=APqXhc2qJmQ">A la Fin cette Bergère</a>, <a href="https://www.youtube.com/watch?v=QD8T2RFWpuw">Départ que le Devoir me fait precipiter</a> et les exotiques <a href="https://www.youtube.com/watch?v=Iy-ObPzYDPQ&index=18&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Una Musiqua</a> et <a href="https://www.youtube.com/watch?v=UgvCdyEje9E">Gran Chacona</a>), ont enchanté les cours d'Henri IV et Louis XIII. Etienne Moulinié (1599-1676)  (<a href="https://www.youtube.com/watch?v=0efC-iiFTE0">Concert de différents Oyseaux</a>, <a href="https://www.youtube.com/watch?v=BhnnR0-0-KM&index=31&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">L'humaine Comédie</a>) a fait de même à la cour de Gaston d'Orléans, frère de Louis XIII.</p>
 <p></p>
 <p>Le mot de la fin sera pour Vincent Dumestre qui joue de la guitare baroque et du théorbe comme Cristina Pluhar, sa collègue d'Arpeggiata. Il a enregistré des pièces de Robert de Visée sur un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Robert-de-Visee-1650-1725-Pieces-de-Theorbe/hnum/2958941">CD</a> paru chez Alpha, dont la fameuse chaconne (Plage 12).  </p>
-  <!-- InstanceEndEditable -->
-  <div id="bas"></div>
- 
-</div>
+              </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

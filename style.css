@@ -566,8 +566,17 @@
 		    color: #cd1600;
 		}
 
+	/*======= CONTENEUR BLOC AVEC UNE IMAGE EN 1er un texte sur la droite =======*/
+		.blocImgFirstAndText{
+			margin-top: 60px;
+		}
 
-	
+		.espaceEntreDiv{
+			margin-top: 60px;
+		}
+
+
+
 	/*======= CONTENEUR PLUSIEURS IMAGES =======*/
 		#contenuPrincipal div.conteneurImages{
 		    margin-bottom: 0px;

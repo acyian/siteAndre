@@ -73,14 +73,22 @@
 		figcaption{
 			text-align: center;
 			font-size: 14px;
-		}
-
-		figcaption:nth-of-type(1){
 			font-weight: bold;
 		}
 
-		figcaption:nth-of-type(2){
+		#contenuPrincipal figure figcaption h5{
+			font-weight: bold;
+			margin-bottom: 0px;
+		    margin-top: 0px;
+		    font-size: 14px;
+		}
+
+		#contenuPrincipal figure figcaption h6{
 			color: #8d8d8d;
+			margin-bottom: 0px;
+		    margin-top: 0px;
+		    font-size: 12px;
+		    font-weight: normal;
 		}
 
 		img{
@@ -155,14 +163,14 @@
 	
 
 	/*======= SOMMAIRE =======*/
-		#sommaire{
+		.sommaire{
 			margin-bottom: 0px;
 		    padding-top: 10px;
 		    padding-bottom: 10px;
 		    border: 1px solid #ddd;
 		}
 
-		#contenuPrincipal #sommaireTitle{
+		#contenuPrincipal .sommaireTitle{
 		    margin-bottom: 0px;
 		    display: table;
 		    width: 100%;
@@ -170,7 +178,7 @@
 		    word-spacing: -2em;
 		}
 
-		#sommaireTitle h6{
+		.sommaireTitle h6{
 			display: inline-block;
 		    word-spacing: normal;
 		    font-weight: bold;
@@ -180,12 +188,12 @@
 		    padding-right: 15px;
 		}
 
-		#sommaireLink{
+		.sommaireLink{
 		    display: inline-block;
 		    word-spacing: normal;
 		}
 
-		#linksSummary{
+		.linksSummary{
 			display: none;
 			padding-left: 0px;
 		    list-style: none;
@@ -223,6 +231,10 @@
 		    line-height: 1.5;
 		    color: #333;
 		    padding-left: 140px;
+		}
+
+		.miniListCorps li:not(:first-child){
+		    padding-top: 15px;
 		}
 
 		.gdeListCorps{
@@ -564,6 +576,11 @@
 		    font-weight: lighter;
 		    text-align: center;
 		    color: #cd1600;
+		}
+
+		#contenuPrincipal h5.espaceTextConsequent{
+			margin-top: 40px;
+    		margin-bottom: 20px;
 		}
 
 	/*======= CONTENEUR BLOC AVEC UNE IMAGE EN 1er un texte sur la droite =======*/

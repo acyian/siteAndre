@@ -1,15 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <meta name="language" content="fr" />
+  <meta charset="UTF-8">
     <title>Musique en 2001</title>
     <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="logo.ico" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <!-- <link href="styles.css" rel="stylesheet" type="text/css" /> -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Oxygen|Raleway" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/design.js"></script>
     <script>
@@ -35,6 +32,7 @@
     <div id="site">
         <!-- Inclusion header -->
         <div id="header"></div>
+        
         <nav class="menuLateralAncres">
             <ul>
                 <li>
@@ -134,6 +132,7 @@
                 </li>
             </ul>
         </nav>
+
         <div id="corps">
             <div id="contenuPrincipal">
                 <h2>Les états généraux de la création musicale</h2>
@@ -150,13 +149,13 @@
                     <p>On ne peut manquer d'être interpellé par la méfiance que le grand public entretient, de façon récurrente, à l'encontre de la musique savante contemporaine.  Pour la première fois dans l'histoire de la musique, il existe un fossé profond entre la création récente et le public auquel elle est, en principe, destinée.  Le moment est venu de rétablir certaines vérités de nature à régler ce malentendu. (Télécharger <a href="im2001/musique2001.pdf">ici</a> une version pdf)</p>
                 </div>
 
-                <div id="sommaire">
-                    <div id="sommaireTitle">
+                <div class="sommaire">
+                    <div class="sommaireTitle">
                         <h6>Sommaire</h6>
-                        <a role="button" tabindex="0" id="sommaireLink">[ afficher ]</a>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
                     </div>
 
-                    <ul id="linksSummary">
+                    <ul class="linksSummary">
                         <li><a href="#multipliciteCourants20emeS">La multiplicité des courants artistiques au 20s</a></li>
                         <li><a href="#goutSonsColo">Des goûts, des sons et des couleurs</a></li>
                         <li><a href="#avisPublic">L'avis du public</a></li>
@@ -188,32 +187,40 @@
                         <div>
                             <figure>
                                 <img src="im2001/picasso.jpg" alt="Pablo Picasso" />
-                                <figcaption>Pablo Picasso</figcaption>
-                                <figcaption>D. Maar au chat (1941)</figcaption>
+                                <figcaption>
+                                    <h5>Pablo Picasso</h5>
+                                    <h6>D. Maar au chat (1941)</h6>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div>
                             <figure>
                                 <img src="im2001/baconpape.jpg" alt="Francis Bacon" />
-                                <figcaption>Francis Bacon</figcaption>
-                                <figcaption>Innocent X (1953)</figcaption>
+                                <figcaption>
+                                    <h5>Francis Bacon</h5>
+                                    <h6>Innocent X (1953)</h6>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div>
                             <figure>
                                 <img src="im2001/magritte.jpg" alt="Rene Magritte" />
-                                <figcaption>René Magritte</figcaption>
-                                <figcaption>La gâcheuse (1935)</figcaption>
+                                <figcaption>
+                                    <h5>René Magritte</h5>
+                                    <h6>La gâcheuse (1935)</h6>
+                                </figcaption>
                             </figure>
                         </div>
 
                         <div>
                             <figure>
                                 <img id="reneMagritte" src="im2001/duchamp.jpg" alt="Rene Magritte" />
-                                <figcaption>Marcel Duchamp</figcaption>
-                                <figcaption>Fontaine (1917)</figcaption>
+                                <figcaption>
+                                    <h5>Marcel Duchamp</h5>
+                                    <h6>Fontaine (1917)</h6>
+                                </figcaption>
                             </figure>
                         </div>
                     </div>
@@ -240,15 +247,19 @@
                         <div>
                             <figure>
                                 <img src="im2001/veyck.jpg" alt="Jan van Eyck" />
-                                <figcaption>Jan van Eyck</figcaption>
-                                <figcaption>L'homme au chapeau bleu (1430)</figcaption>
+                                <figcaption>
+                                    <h5>Jan van Eyck</h5>
+                                    <h6>L'homme au chapeau bleu (1430)</h6>
+                                </figcaption>
                             </figure>
                         </div>
                         <div>
                             <figure>
                                 <img src="im2001/vdweyden.jpg" alt="Rogier van der Weyden" />
-                                <figcaption>Rogier van der Weyden</figcaption>
-                                <figcaption>Portrait de femme (1455)</figcaption>
+                                <figcaption>
+                                    <h5>Rogier van der Weyden</h5>
+                                    <h6>Portrait de femme (1455)</h6>
+                                </figcaption>
                             </figure>
                         </div>
                     </div>
@@ -474,22 +485,28 @@
                         <div>
                             <figure>
                                 <img src="im2001/schonberg.jpg" alt="Arnold Schönberg" />
-                                <figcaption>Arnold Schönberg</figcaption>
-                                <figcaption>(1874-1951)</figcaption>
+                                <figcaption>
+                                    <h5>Arnold Schönberg</h5>
+                                    <h6>(1874-1951)</h6>
+                                </figcaption>
                             </figure>
                         </div>
                         <div>
                             <figure>
                                 <img src="im2001/berg.jpg" alt="Alban Berg" />
-                                <figcaption>Alban Berg</figcaption>
-                                <figcaption>(1885-1935)</figcaption>
+                                <figcaption>    
+                                    <h5>Alban Berg</h5>
+                                    <h6>(1885-1935)</h6>
+                                </figcaption>
                             </figure>
                         </div>
                         <div>
                             <figure>
                                 <img src="im2001/webern.jpg" alt="Anton Webern" />
-                                <figcaption>Anton Webern</figcaption>
-                                <figcaption>(1883-1945)</figcaption>
+                                <figcaption>
+                                    <h5>Anton Webern</h5>
+                                    <h6>(1883-1945)</h6>
+                                </figcaption>
                             </figure>
                         </div>
                     </div>
@@ -668,7 +685,9 @@
                     <p>Au fond, l’histoire de la musique possède aussi son balancier : après une phase d’hyper complexification sérielle, une réaction était obligatoire et elle est née aux USA, avec le mouvement minimaliste et la nouvelle simplicité qui lui a fait suite.  Un jour viendra, pas si lointain, où la complexité refera surface.  D’ailleurs des musiciens comme John Adams, Aaron Jay Kernis, Oliver Knussen, James Mac Millan, Erkki Sven Tüür, Esa Pekka Salonen ou Peter Sculthorpe  - la liste est incomplète -  s’attellent déjà à cette tâche, chacun à sa manière.  Ne dit-on pas qu’il faut de tout pour faire un monde?</p>
                 </div>
 
-            </div> <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+            </div> 
+
+            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
             <!-- Inclusion footer -->
             <div id="footer"></div>
         </div>

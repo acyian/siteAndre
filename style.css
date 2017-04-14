@@ -389,11 +389,11 @@
 	
 	/*======= ANCRE BAS DE PAGE =======*/
 		#ancreRetourHautPage{
-		    position: absolute;
-		    bottom: 275px;
-		    right: 8%;
-		    font-size: 12px;
-		    display: inline-block;
+		    position: fixed;
+		    bottom: 3%;
+		    z-index: 2;
+		    right: 15.6%;
+		    font-size: 30px;
 		}
 
 

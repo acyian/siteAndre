@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Two british outsiders : William Alwyn &amp; Malcolm Arnold</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,20 +36,22 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Two british outsiders : William Alwyn &amp; Malcolm Arnold</h3>
 
                 <nav class="filAriane">
                     <ul>
                         <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
-                        <li class="breadcrumbItem  breadcrumIitem--current">
-                          <a href="chroniques.html">Chroniques</a>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                        <li class="breadcrumbItem">
+                          <a href="../tourdumondedemusiqueactuelle.html">Compositeurs oubliés</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Two british outsiders : William Alwyn &amp; Malcolm Arnold</li>
                     </ul>
                 </nav>  
   
-  <h2>Two british outsiders : William Alwyn &amp; Malcolm Arnold.  </h2>
   <p>Benjamin Britten (1913-1976) a régné sans grand partage sur la musique moderne anglaise et, dans son ombre, seuls  William Walton (1902-1983) et Michael Tippett (1905-1998), réussirent à se frayer un passage vers la lumière. Ce sont deux musiciens bien moins connus, du moins de ce côté de la Manche, qui vont nous intéresser aujourd'hui, William Alwyn (1905-1985) et Malcolm  Arnold (1921-2006). </p>
   <p>L'un et l'autre ont souffert d'avoir contribué au genre de la musique dite légère, écrivant en particulier beaucoup pour le cinéma. Leur réussite dans ce domaine a suscité la moue désapprobatrice de critiques intolérants peu pressés de faire une analyse objective du versant plus savant de leur oeuvre. Cependant l'écoute de leurs pages symphoniques  révèle des richesses insoupçonnées auxquelles nous allons faire écho.</p>
   <p></p>
@@ -99,7 +102,7 @@ Benjamin Britten), il a été formé au Royal College of Music de Londres. Entho
               </div>
 
 
-            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
             <!-- Inclusion footer -->
             <div id="footer"></div>

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Coup de coeur pour une musique d'Ella Adaïewsky</title>
+  <title>Compositeurs oubliés | Coup de coeur pour une musique d'Ella Adaïewsky</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Coup de coeur pour une musique d'Ella Adaïewsky</h2>
-                <h3>Entre frustration et bonheur</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Coup de coeur pour une musique d'Ella Adaïewsky</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -145,7 +146,7 @@
             </div>
 
 
-            <a id="ancreRetourHautPage" href="#site">Retour en haut de page</a>
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
             <!-- Inclusion footer -->
             <div id="footer"></div>

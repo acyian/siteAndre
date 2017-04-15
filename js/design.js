@@ -16,11 +16,7 @@ function update_design_footer(){
     document.getElementById("contact").style.marginRight = contactMarginRight + "px";
     document.getElementById("articlesRecents").style.marginRight = widthArticlesRecents + "px";    
 
-
-    $( "#contact" ).prepend('<img src=' + window.location.protocol + '//' + window.location.host + '/' + 'siteAndre/images/ahautot.jpg>');
-   
 }
-// <img src=\"' + window.location.protocol + '//' + window.location.host + '/' + 'siteAndre/images/ahautot.jpg>
 
 function update_design(){
     update_design_footer();

@@ -304,6 +304,15 @@
 		    font-size: 30px;
 		}
 
+		blockquote.blockquoteInterieur {
+		    margin-left: 120px;
+		}
+
+		blockquote.blockquoteInterieur p{
+		    font-size: 14px;
+		}
+		
+
 	
 	/*======= DATE (revision) ET NOTES =======*/
 		i{

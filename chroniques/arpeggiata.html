@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Interprètes actuels | Arpeggiata</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#interpretesActuels").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Interprètes actuels</h2>
+                <h3>Arpeggiata</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,52 +46,44 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../interpretesActuels.html">Interprètes actuels</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Arpeggiata</li>
                     </ul>
                 </nav>    
     
-   <h2> Arpeggiata.	</h2>
 
-<div><img src="../images/arpeggiata/pluhar.jpg" alt="" /><div class="legende">Christina Pluhar</div></div>
+                <div class="blocImgFirstAndText">
 
-<p>Certain(e)s artistes ont l’art de se rendre immédiatement indispensables par leurs choix artistiques tant au niveau du répertoire que de la façon de l'aborder : Christina Pluhar fait partie de ceux-là.  Elle a fondé "son" ensemble baroque Arpeggiata en 2000 et elle le dirige tout en jouant du théorbe, de la harpe ou de la guitare baroque.  Cette musicienne autrichienne vit principalement à Paris depuis 1992 : un alliage apparemment idéal pour mettre ce qu'il faut de rigueur dans la fantaisie et de fantaisie dans la rigueur.  </p>
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/arpeggiata/pluhar.jpg" alt="Christina Pluhar"/>
+                              <figcaption>Christina Pluhar</figcaption>
+                          </figure>
+                      </div>
+                  </div>
 
-<p>Arpeggiata ne l'occupe cependant pas à temps plein.  Outre une charge d'enseignement à Graz, elle est fréquemment sollicitée comme concertiste par beaucoup d'autres ensembles (Hesperion XXI, Elyma, La Fenice, …).</p>
+                  <p>Certain(e)s artistes ont l’art de se rendre immédiatement indispensables par leurs choix artistiques tant au niveau du répertoire que de la façon de l'aborder : Christina Pluhar fait partie de ceux-là.  Elle a fondé "son" ensemble baroque Arpeggiata en 2000 et elle le dirige tout en jouant du théorbe, de la harpe ou de la guitare baroque.  Cette musicienne autrichienne vit principalement à Paris depuis 1992 : un alliage apparemment idéal pour mettre ce qu'il faut de rigueur dans la fantaisie et de fantaisie dans la rigueur.  </p>
+                  <p>Arpeggiata ne l'occupe cependant pas à temps plein.  Outre une charge d'enseignement à Graz, elle est fréquemment sollicitée comme concertiste par beaucoup d'autres ensembles (Hesperion XXI, Elyma, La Fenice, …).</p>
+                  <p>Arpeggiata est un ensemble  à géométrie variable, se consacrant au répertoire du baroque naissant.  Il excelle, en particulier, dans le mélange des genres : classique,  la (bonne) tradition populaire voire même le jazz.  A cette fin, il n'hésite pas à faire appel à des artistes extérieurs au groupe.  Il propose également des mises en scène de  spectacles où musique, danse et récitation alternent.</p>
+                  <p>Certain(e)s artistes sont spontanément généreux et Christina Pluhar est de ceux-là.  Il n'est que de voir de quels sourires et regards complices elle gratifie ses co-interprètes, en concert, pour comprendre que la musique est, pour elle, un plaisir de tous les instants.  </p>
+                  <p>L'ensemble enregistre relativement peu mais chaque nouvelle parution frise la perfection.  Les CD existants sont disponibles à l'écoute partielle sur le site <a href="http://www.jpc.de/jpcng/home/search?fastsearch=pluhar&rubric=classic&pd_orderby=score">jpc</a> et vous serez, je pense, rapidement convaincu par les albums &quot;All'Improvviso&quot; et "Los Impossibles". </p>
+                  <p>Le <a href="http://www.arpeggiata.com">site web</a> de l'ensemble est à l'image de la musicienne qui le dirige, idéal et généreux : fait rarissime, on peut y entendre beaucoup de musique en écoute intégrale.  Ceci n'empêche nullement l'ensemble de vendre énormément de CD, preuve s'il en fallait encore que seule la qualité influe sur le niveau des ventes.</p>
+                  <p>Pour en entendre davantage, promenez-vous parmi les  videos  présentées sur ce site : certaines sont des répétitions filmées, d'autres des extraits de spectacles. Sélectionnez et savourez, par exemple :</p>
 
-  
-<p>Arpeggiata est un ensemble  à géométrie variable, se consacrant au répertoire du baroque naissant.  Il excelle, en particulier, dans le mélange des genres : classique,  la (bonne) tradition populaire voire même le jazz.  A cette fin, il n'hésite pas à faire appel à des artistes extérieurs au groupe.  Il propose également des mises en scène de  spectacles où musique, danse et récitation alternent.</p>
+                  <ul class="miniListCorps">
+                    <li>La Toccata Arpeggiata de Girolamo Kapsberger, jouée par Christina Pluhar au théorbe.  C'est évidemment cette pièce arpégée qui a donné son nom à l'ensemble.</li>
+                    <li>Passaglia della Vita où le ténor Marco Beasley vous charmera par sa voix chaude et profonde. </li> 
+                    <li>Pizzicarella Mia, une tarentelle traditionnelle où une danseuse professionnelle conjure comme il se doit les effets supposés de la morsure de la tarentule, invitant même Philippe Jaroussky à la rejoindre dans son incantation.</li>
+                    <li>La Tarentella napoletana, la Ciaccona de Cazatti ou encore la Jacaras de Santiago de Murcia vous décrasseront "naturellement" les oreilles, nullement un luxe à notre époque de pollution sonore.  Dans la Jacaras, vous apprécierez la netteté des articulations entre lesquelles déambule le merveilleux psaltérion d'Elisabeth Seitz.</li>
+                    <li>Sai qui turo ou Bastiao de Santiago de Murcia (1673-1749) (encore lui, de fait un des premiers fabriquant de tubes hispaniques) sont deux pièces où Arpeggiata s'est offert la savoureuse collaboration des King's Singers. </li> 
+                    <li>Ne manquez sous aucun prétexte Ohime, chio cado de Monteverdi revisité à la sauce jazzy par Philippe Jaroussky, un modèle de &quot;crossover&quot;.</li>
+                    <li>Via Crucis, le dernier spectacle de l'ensemble est une mise en espace de la passion du Christ où les traditions savantes et populaires s'entremêlent.  L'ensemble corse Barbara Fortuna prête son concours à Arpeggiata comme dans cette pièce où Maxime Merlandi chante Maria sopra la Carpinese (un traditionnel des Pouilles).  Ninna Nanna est un anonyme, chanté par Philippe Jaroussky.</li>
+                  </ul>
 
-
-<p>Certain(e)s artistes sont spontanément généreux et Christina Pluhar est de ceux-là.  Il n'est que de voir de quels sourires et regards complices elle gratifie ses co-interprètes, en concert, pour comprendre que la musique est, pour elle, un plaisir de tous les instants.  </p>
-
-
-<p>L'ensemble enregistre relativement peu mais chaque nouvelle parution frise la perfection.  Les CD existants sont disponibles à l'écoute partielle sur le site <a href="http://www.jpc.de/jpcng/home/search?fastsearch=pluhar&rubric=classic&pd_orderby=score">jpc</a> et vous serez, je pense, rapidement convaincu par les albums &quot;All'Improvviso&quot; et "Los Impossibles". </p>
-
-
-
-<p>Le <a href="http://www.arpeggiata.com">site web</a> de l'ensemble est à l'image de la musicienne qui le dirige, idéal et généreux : fait rarissime, on peut y entendre beaucoup de musique en écoute intégrale.  Ceci n'empêche nullement l'ensemble de vendre énormément de CD, preuve s'il en fallait encore que seule la qualité influe sur le niveau des ventes.</p>
-
-<p>Pour en entendre davantage, promenez-vous parmi les  videos  présentées sur ce site : certaines sont des répétitions filmées, d'autres des extraits de spectacles. Sélectionnez et savourez, par exemple :</p>
-
-<li>La Toccata Arpeggiata de Girolamo Kapsberger, jouée par Christina Pluhar au théorbe.  C'est évidemment cette pièce arpégée qui a donné son nom à l'ensemble.</li>
-<li>Passaglia della Vita où le ténor Marco Beasley vous charmera par sa voix chaude et profonde. </li> 
-<li>Pizzicarella Mia, une tarentelle traditionnelle où une danseuse professionnelle conjure comme il se doit les effets supposés de la morsure de la tarentule, invitant même Philippe Jaroussky à la rejoindre dans son incantation.</li>
-<li>La Tarentella napoletana, la Ciaccona de Cazatti ou encore la Jacaras de Santiago de Murcia vous décrasseront "naturellement" les oreilles, nullement un luxe à notre époque de pollution sonore.  Dans la Jacaras, vous apprécierez la netteté des articulations entre lesquelles déambule le merveilleux psaltérion d'Elisabeth Seitz.</li>
-<li>Sai qui turo ou Bastiao de Santiago de Murcia (1673-1749) (encore lui, de fait un des premiers fabriquant de tubes hispaniques) sont deux pièces où Arpeggiata s'est offert la savoureuse collaboration des King's Singers. </li> 
-<li>Ne manquez sous aucun prétexte Ohime, chio cado de Monteverdi revisité à la sauce jazzy par Philippe Jaroussky, un modèle de &quot;crossover&quot;.</li>
-<li>Via Crucis, le dernier spectacle de l'ensemble est une mise en espace de la passion du Christ où les traditions savantes et populaires s'entremêlent.  L'ensemble corse Barbara Fortuna prête son concours à Arpeggiata comme dans cette pièce où Maxime Merlandi chante Maria sopra la Carpinese (un traditionnel des Pouilles).  Ninna Nanna est un anonyme, chanté par Philippe Jaroussky.</li>
-
-  
- 
-<p>Le site http://www.arpeggiata.com/ tient naturellement à jour les déplacements de l'ensemble Arpeggiata à travers le monde.  S'il ne passe pas trop loin de chez vous, faites le chemin pour aller l'écouter, à pied s'il le faut, vous ne le regretterez pas.</p> 
-
-
-
-    
-    
-    
+                  <p>Le site <a href="http://www.arpeggiata.com">http://www.arpeggiata.com/</a> tient naturellement à jour les déplacements de l'ensemble Arpeggiata à travers le monde.  S'il ne passe pas trop loin de chez vous, faites le chemin pour aller l'écouter, à pied s'il le faut, vous ne le regretterez pas.</p> 
+                </div>
               </div>
 
 
@@ -103,8 +96,6 @@
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

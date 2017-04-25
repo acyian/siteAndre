@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | L'autre bande des Quatre</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,36 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreQigangChen" href="#QigangChen" class="linavMenu active">
+                    <span>Qigang Chen 陈其钢</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreZhouLong" href="#ZhouLong" class="linavMenu">
+                    <span>Zhou Long 周龙</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreBrightSheng" href="#BrightSheng" class="linavMenu">
+                    <span>Bright Sheng 盛宗亮</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTanDun" href="#TanDun" class="linavMenu">
+                    <span>Tan Dun 谭盾</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>L'autre bande des Quatre : Qigang Chen (1951- ), Zhou Long (1953- ), Bright Sheng (1955- ) et Tan Dun (1957- )</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,128 +71,188 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">L'autre bande des Quatre</li>
                     </ul>
                 </nav>  
-  <h2>L'autre Bande des Quatre :</h2> <h2> Qigang Chen (1951- ), Zhou Long (1953- ), Bright Sheng (1955- ) et Tan Dun (1957- ).</h2>
+                
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#QigangChen">Qigang Chen 陈其钢</a></li>
+                        <li><a href="#ZhouLong">Zhou Long 周龙</a></li>
+                        <li><a href="#BrightSheng">Bright Sheng 盛宗亮</a></li>
+                        <li><a href="#TanDun">Tan Dun 谭盾</a></li>
+                    </ul>
+                </div> 
   
-  <p>La bande dont il va être question est sans lien de parenté avec celle, de sinistre mémoire - du latin sinister, qui est à gauche ! -, dont la carrière prit fin lors d'un procès mémorable. Rappelons que les dix dernières années du règne de Mao Zedong furent marquées du sceau d'une révolution qui n'eut de "culturelle" que le nom : une vaste entreprise d'intoxication ravageant la Chine, entre 1966 et 1976, tentant d'éradiquer les "Quatre Vieilleries" (Idées, Culture, Coutumes et Habitudes), saccageant les objets d'art et humiliant leurs auteurs. Inutile de préciser que les conservatoires de musique furent fermés et leurs pensionnaires rééduqués.</p>
+                <p>La bande dont il va être question est sans lien de parenté avec celle, de sinistre mémoire - du latin sinister, qui est à gauche ! -, dont la carrière prit fin lors d'un procès mémorable. Rappelons que les dix dernières années du règne de Mao Zedong furent marquées du sceau d'une révolution qui n'eut de "culturelle" que le nom : une vaste entreprise d'intoxication ravageant la Chine, entre 1966 et 1976, tentant d'éradiquer les "Quatre Vieilleries" (Idées, Culture, Coutumes et Habitudes), saccageant les objets d'art et humiliant leurs auteurs. Inutile de préciser que les conservatoires de musique furent fermés et leurs pensionnaires rééduqués.</p>
+                
+                <p><i>Note. Lors de la disparition du "Grand Timonnier", la "vraie" Bande des Quatre, emmenée par Jiang Qing (alias Madame Mao) en personne, tenta bien de poursuivre le grand oeuvre mais l'opposition se fit pressante au point de la traduire en justice.  On rappelle que le tribunal ne prononça que des peines de prison à vie, preuve s'il en fallait que les juges chinois sont capables de clémence. En 1991, Jiang Qing fut même temporairement libérée afin d'être soignée pour un cancer de la gorge, encore un peu et on se croirait au pays des droits de l'homme !  Elle préféra cependant se suicider plutôt que de réintégrer la prison. Il n'en fallut pas plus pour que l'on rouvre les Conservatoires de Pékin et de Beijing. On admirera, au passage, la patience admirable dont sont capables les graines perdues dans les milieux les plus hostiles : une seule pluie et les déserts refleurissent. L'épisode de la révolution culturelle est encore un sujet tabou en Chine : tout le monde le déplore mais personne ne le condamne à visage découvert.</i></p>
   
-  <p><i>Note. Lors de la disparition du "Grand Timonnier", la "vraie" Bande des Quatre, emmenée par Jiang Qing (alias Madame Mao) en personne, tenta bien de poursuivre le grand oeuvre mais l'opposition se fit pressante au point de la traduire en justice.  On rappelle que le tribunal ne prononça que des peines de prison à vie, preuve s'il en fallait que les juges chinois sont capables de clémence. En 1991, Jiang Qing fut même temporairement libérée afin d'être soignée pour un cancer de la gorge, encore un peu et on se croirait au pays des droits de l'homme !  Elle préféra cependant se suicider plutôt que de réintégrer la prison. Il n'en fallut pas plus pour que l'on rouvre les Conservatoires de Pékin et de Beijing. On admirera, au passage, la patience admirable dont sont capables les graines perdues dans les milieux les plus hostiles : une seule pluie et les déserts refleurissent. L'épisode de la révolution culturelle est encore un sujet tabou en Chine : tout le monde le déplore mais personne ne le condamne à visage découvert.</i></p>
-  
+                <div class="conteneurImages">
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/chen.jpg" width="160" height="194" alt="陈其钢" />
+                            <figcaption>
+                                <h5>陈其钢</h5>
+                                <h6>Qigang Chen</h6>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/zhoulong.jpg" width="160" height="194" alt="周龙" />
+                            <figcaption>
+                                <h5>周龙</h5>
+                                <h6>Zhou Long</h6>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/sheng.jpg" width="160" height="194" alt="盛宗亮" />
+                            <figcaption>
+                                <h5>盛宗亮</h5>
+                                <h6>Bright Sheng</h6>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/tandun.jpg" width="160" height="194" alt="谭盾" />
+                            <figcaption>
+                                <h5>谭盾</h5>
+                                <h6>Tan Dun</h6>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+                <p>Les portraits ci-contre, qu'on croirait tirés d'affiches de films de série B, sont ceux d'honorables musiciens. Pour ceux qui ne lisent pas le chinois, même simplifié, ils ont été rangés dans l'ordre de présentation du titre.</p>
+                <p>Ces compositeurs comptent parmi les plus représentatifs ayant surmonté l'obstacle de la révolution culturelle. Leurs oeuvres sont un mélange plus ou moins savant de musiques traditionnelle, moderne voire  d'avant-garde. Certaines partitions vous rebuteront peut-être mais beaucoup d'autres vous séduiront par leur dépaysante nouveauté.  Pour la petite histoire, à l'exception de Zhou Long, tous ont prêté leur savoir-faire musical aux cérémonies accompagnant les J-O de Pékin, en 2008.</p>
+                 
+                <div id="QigangChen">
+                  <h4>Qigang Chen 陈其钢</h4>
+               
+                  <p>Né à Shanghai dans une famille d'artistes, Qigang Chen (ne pas confondre avec Gang Chen (1935- ), l'auteur d'un anecdotique <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Gang-Chen-geb-1935-Violinkonzert-Butterfly-Lovers/hnum/9885778">Butterly Concerto</a>, pour violon) a passé la révolution dans un camp de rééducation. Lorsque le conservatoire de Pékin reprit son activité, dès 1977, sous la houlette de Luo Zhongrong, Chen fit partie des 25 candidats sélectionnés parmi 2000 postulants. Il se montra le plus brillant obtenant une bourse l'autorisant à étudier à l'étranger. Il eut ainsi le privilège d'être le dernier élève d'Olivier Messiaen, de 1984 à 1988.  Celui-ci eut fort à faire pour restaurer son autonomie intellectuelle après le lavage de cerveau que l'on devine. Chen a acquis la nationalité française en 1992.</p>
+
+                  <div class="conteneurImages">
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/chen1.jpg" alt="Iris dévoilée" />
+                            <figcaption>Iris dévoilée</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/chen2.jpg" alt="Extase" />
+                            <figcaption>Extase</figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                     
+                  <p>1990 vit le début d'une période d'émancipation à travers le monde, qui lui permit de se construire un langage propre l’éloignant  de l’univers musical parisien. Quelques oeuvres significatives jalonnent son évolution : Poème lyrique II (1991),
+                  Reflet d'un temps disparu (1996) (<a href="http://www.youtube.com/watch?v=Y_g3ar6ow1M">Début</a>, <a href="http://www.youtube.com/watch?v=IQjnrRHaHF0">Milieu</a> - au délicat parfum chinois ! - , <a href="http://www.youtube.com/watch?v=zreIFxSagbk">Fin</a>), Wu Xing (Les 5 Eléments), une oeuvre qui parvint en finale du Concours de composition Masterprize 2001, Er Huang (2009), un Concerto pour piano & orchestre, commandé par le Carnegie Hall et créé par Lang Lang et Michael Tilson Thomas, <a href="http://www.youtube.com/watch?v=8u3XoaVGjVg">Iris dévoilée</a>, pour soprano féline, <a href="http://www.youtube.com/watch?v=IBkc5RLohXk">Extase</a>, pour hautbois chinois et orchestre, enfin le ballet Épouses et Concubines (2010) qui a allègrement dépassé la 300<sup>ème</sup> représentation.  Bien plus modestement, <a href="http://www.youtube.com/watch?v=4j3ccl-TPao&feature=related">You and Me</a> fut sa contribution à la cérémonie d’ouverture des Jeux de Pékin. Chen écrit occasionnellement pour le cinéma : appréciez la qualité des envolées chorales qui accompagnent <a href="http://www.youtube.com/watch?v=yDGWzUEOHuo">The Flowers of War</a>.</p>
+                </div>
+
+                <div id="ZhouLong">
+                  <h4>Zhou Long 周龙</h4>
+                  
+                  <p>Zhou Long est né à Beijing, dans une famille d'artistes. A la révolution, il dut différer ses études, troquant le piano pour un tracteur.  Lorsque le conservatoire de Beijing reprit son activité, sous la houlette de Luo Zhongrong, il fit partie de la première promotion comprenant 100 candidats sélectionnés parmi 8000 postulants.</p>
+                  <p>Diplomé en 1983, Zhou Long fut compositeur en résidence auprès du <a href="http://www.youtube.com/watch?v=5anDlvJqGpo&feature=related">China Broadcasting Chinese Orchestra</a>, un ensemble symphonique traditionnel absolument remarquable, le temps de voyager aux USA et de s'y fixer. Il ne renia pas pour autant ses origines, devenant  directeur musical de Music from China, au service  de la musique populaire de son pays, jouée sur instruments d'origine. Il n'en fallait pas davantage pour qu'il intégre le Silk Road Project du Seattle Symphony Orchestra, en collaboration avec le célèbre violoncelliste, Yo-Yo Ma (<a href="http://www.youtube.com/watch?v=NqWGgmfshvE&feature=related">Song of eight unruly tipsy Poet</a>).</p>
+
+                  <div class="conteneurImages">
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/chen3.jpg" alt="Tales from the cave" />
+                            <figcaption>Tales from the cave</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/chen4.jpg" alt="Lan Shui" />
+                            <figcaption>Lan Shui</figcaption>
+                        </figure>
+                    </div>
+                  </div>
+
+                  <p> Professeur de composition dans plusieurs universités américaines et compositeur en résidence au Cleveland Institute of Music, il a remporté quelques distinctions particulièrement appréciées telle une place en finale du<sup></sup> Masterprize  1998 (Poems from Tang : Song of Eight Unruly Tipsy Poets). En 2011, il remporta le  convoité  Pulitzer Prize pour son opéra, Madame White Snake, créé en 2010, à l'Opera de Boston.</p>
+                  <p>Long ne se considère ni parfaitement chinois ni américain,  s'attachant à créer un son différent, mixant des thèmes populaires retravaillés selon les canons de l'harmonie occidentale, le cas échéant en recourant aux possibilités offertes par l'électronique. Ecoutez des extraits de 
+                  <a href="http://www.youtube.com/watch?v=-I8uP-ldAbA&feature=related">The Rhyme of Taigu</a> ou <a href="https://www.youtube.com/watch?v=A3BR5xjieuc">The Five Elements</a>, une oeuvre intégralement enregistrée chez <a href="http://www.bis.se/index.php?op=album&aID=BIS-CD-1739">BIS</a>.</p>
+                  <p>Il a aussi écrit pour piano solo (<a href="http://www.youtube.com/watch?v=vYl2VOTIy-k&feature=related">Wu Kui</a>) et quatuor à cordes (<a href="http://www.youtube.com/watch?v=w8VhjvHA5Pk&feature=related">A Single Bamboo Can Easily Bend</a>, <a href="http://www.youtube.com/watch?v=Fno3aGUMqgk&feature=relmfu">Chinese Folk Songs</a>, une belle interprétation du Quatuor Delray). La même oeuvre a été enregistrée chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Zhou-Long-geb-1953-Poems-from-Tang-f-Streichquartett/hnum/8675934">Delos</a>, par le Shanghai Quartet, en même temps que Poems from Tang.</p>
+                </div>
+
+                <div id="BrightSheng">
+                  <h4>Bright Sheng 盛宗亮</h4>
+
+                  <p>Bright Sheng est né à Shanghai et c'est le conservatoire de cette ville qu'il a fréquenté dès sa réouverture, en 1978.  Quatre ans plus tard, il s'envola pour les Etats-Unis ou son professeur le plus en vue fut Leonard Bernstein. Sa carrière américaine fut lancée par quelques grands interprètes sans doute sensibles à la critique implicite que ses premières oeuvres adressaient à la révolution chinoise : Kurt Masur mit H'un à son répertoire, Christoph Eschenbach fit de même avec Nanking! Nanking! et le pianiste Emanuel Ax créa Red Silk Dance à New York, en 2001.  Un concerto quadruple pour violoncelle, piano, pipa et sheng, fut également créé  à New-York avec le concours de solistes prestigieux, Yo-Yo Ma, Emanuel Ax, Wuman and Wutong, dirigés par David Zinman. <a href="https://www.youtube.com/watch?v=GsSgirwSVnE">China Dreams</a> (1995), <a href="http://www.bis.se/index.php?op=album&aID=BIS-CD-1122">Postcards</a> (1997), Concerto Flute Moon (1999) (<a href="http://www.youtube.com/watch?v=r8j0g5yYeQY">Part 1</a>), Tibetan Swing (2002) et Song and Dance of Tears (2003)  sont autant d'oeuvres symphoniques largement jouées de par le monde.</p>
+                  <p>En 2003, le Carnegie Hall lui a consacré une rétrospective, en collaboration avec le New York Philharmonic Orchestra et le Shanghai Quartet.   </p>
+                  <p>Sheng a écrit plusieurs opéras, en particulier, <a href="http://www.classicsonline.com/catalogue/product.aspx?pid=610101">The Song of Majnun</a> (Chicago, 1992), une version persane du mythe de Romeo et Juliette dont un enregistrement est paru chez Delos, The Silver River (Spoleto, 2000) et Madam Mao (Santa Fe, 2003), l'occasion sans doute de régler quelques comptes personnels avec la bande rivale.</p>
+
+                  <div class="conteneurImages">
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/sheng1.jpg" alt="The Phoenix" />
+                            <figcaption>The Phoenix</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="../images/bandedestrois/sheng2.jpg" alt="Flute Moon" />
+                            <figcaption>Flute Moon</figcaption>
+                        </figure>
+                    </div>
+                  </div>
+
+                  <p>Sheng a beaucoup écrit pour la danse (<a href="http://www.youtube.com/watch?v=1ozj6pz_n14&feature=related">The Stream flows</a>) : un temps compositeur en résidence au-près du New York City Ballet, il écrivit The Nightingale and the Rose puis Just Dance.  Chi-Lin, Zoomin et Two Birds with the Wings of One ne sont que des compilations d'oeuvres antérieures, chorégraphiées par Jean-Pierre Bonnefoux.</p>
+                  <p>Sheng a également écrit pour diverses formations de chambre dont les Quatuors Takasc, Emerson, Shanghai, de St. Petersbourg et Daedalus : citons <a href="http://www.youtube.com/watch?v=IFNaIPtMbYI">Four Movements</a>, pour trio à clavier, Tibetan Dance, 5 Quatuors à cordes à ce jour dont les <a href="http://www.bis.se/index.php?op=album&aID=BIS-CD-1138">n°3 & 4</a> ont été enregistrés chez BIS (on dit que c'est le 5<sup>ème</sup> le plus intéressant mais désolé, je n'ai pas d'extrait à proposer) et un Concertino pour clarinette et quatuor à cordes (1994).</p> <p>Parmi les oeuvres récentes, on note un Concerto pour Orchestra &quot;Zodiac Tales&quot;, créé à Detroit, et Northern Lights pour violoncelle et piano.</p>
+                  <p>Sheng a tôt reçu les faveurs de chefs fameux (Leonard Bernstein, Christoph Eschenbach, Kurt Masur, Leonard Slatkin, Charles Dutoit, Gerald Schwarz, David Zinman, Neeme Järvi,  ...) et autant de solistes renommés (Yo Yo Ma, Emanuel Ax, Peter Serkin, Yefim Brofman, Evelyn Glennie, Gil Shaham, Lynn Harrell, Truls Mork et Edgar Meyer), c'est un signe qui ne trompe pas.</p>
+                  <p>Avec un tel CV, on se doute que sa musique a largement été enregistrée, essentiellement chez Sony Classical, BIS, Delos, Koch International, New World, Telarc et Naxos. Sa <a href="http://www.brightsheng.com/recordings.html">discographie</a> présumée complète est disponible sur le site web du compositeur.</p>
+                </div>
+
+                <div id="TanDun">
+                  <h4>Tan Dun 谭盾</h4>
+              
+                  <p>Tan Dun est né dans le village de Changsha. Fasciné par le rituel musical des cérémonies sacrées, il envisagea très tôt la carrière artistique mais la révolution en décida autrement, le reconvertissant provisoirement en planteur de riz. Son salut vint du naufrage mortel d'un ferry bourré de musiciens de l'Opéra de Beijing (maintenu en activité pour des tournées de propagande) : il put intégrer l'orchestre, y tenant une partie d'alto.</p>
+                  <p>Au terme de cet épisode, il entra au conservatoire de Beijing où il reçut l'enseignement du maître japonais, Toru Takemitsu (1930-1996). Il émigra ensuite aux Etats-Unis, tentant une synthèse où l'élément théâtral oriental restait très présent.</p>
+                  <p>Tan Dun est connu pour quelques projets plutôt commerciaux voire exotiques :</p>
+
+                  <ul class="miniListCorps">
+                    <li>Il a écrit quelques musiques de films à succcès, <a href="http://www.youtube.com/watch?v=aydmihMMYXA&feature=related">Crouching Tiger</a>, Hidden Dragonet et le célèbre <a href="http://www.youtube.com/watch?v=eShkr82g4-k&feature=related">Hero</a> (<a href="http://www.youtube.com/watch?v=J9DDdNisv2U">Overture</a>, <a href="http://www.youtube.com/watch?v=HMLVAUldN1g">Love in Distance</a>, <a href="http://www.youtube.com/watch?v=tqDvulS4cNs">Warriors</a>, ...), à découvrir par les amateurs du genre  ! </li>
+                    <li>Il a honoré la commande d'une Symphonie <a href="http://www.youtube.com/watch?v=ci84dubNWCA&feature=related">1997</a>, commémorant le transfert officiel du district de Hong Kong à la Chine.</li>
+                    <li>Zen Shaolin (2006) est une production en plein air destinée à être jouée sur le site du temple bouddhiste de Shaolin dans la province chinoise de Henan.</li>
+                    <li>En 2008, il s'est lancé dans le projet singulier de l'<a href="http://www.youtube.com/watch?v=eKyV1MPMm0w&feature=relmfu">Internet Symphony</a>, commanditée par Youtube ! Dans un premier temps, des musiciens du monde entier furent conviés à étudier la partition (de 5 minutes !) et  soumettre via Internet la sono de la partie qu'ils avaient choisi de jouer. Ensuite une sélection des meilleurs instrumentistes aboutit à une première version diffusée par Youtube. Le <a href="http://www.youtube.com/watch?v=Tqiro1kdRlw&feature=channel">London Symphony Orchestra</a> reprit l'oeuvre à son répertoire. Son surnom Eroica provient de l'emprunt du thème initial de la 3<sup>ème</sup> symphonie  de Beethoven (Ecoutez et retrouvez-le mais n'y passez pas la nuit car l'oeuvre n'est pas vraiment un chef-d'oeuvre !).</li>
+                  </ul>
+
+                  <p>Tan Dun n'a pas oublié ses racines ancestrales : <a href="http://www.youtube.com/watch?v=DJW9VQwynD0&feature=related">Four Secret Roads Of Marco Polo</a>, pour zheng (sorte de cithare chinoise), piano & orchestre propose un curieux mélange de virtuosité transcendante (confiée au zheng) et de musicalité un brin lénifiante (confiée aux instruments occidentaux).</p>
+                  <p>Le reste de son oeuvre, cataloguée sur son <a href="http://www.tandunonline.com/compositions.html">site web</a>, est heureusement beaucoup plus savant que cela. Il propose quelques concertos exotiques : The Map (<a href="http://www.youtube.com/watch?v=RAc1ecb-TqI&feature=relmfu">Ghost Dance & Cry Singing</a>, <a href="http://www.youtube.com/watch?v=Nvjht7Kq-tI&feature=related">Blowing Leaf</a>, <a href="http://www.youtube.com/watch?v=IZaJMySE0AY&feature=relmfu">Daliuzi</a>, <a href="http://www.youtube.com/watch?v=ZWsOyZNxNDQ&feature=relmfu">Hmong (Miao) Suona</a>, <a href="http://www.youtube.com/watch?v=nnk0Hs8j5bI&feature=relmfu">Flying Song</a>, <a href="http://www.youtube.com/watch?v=bjz6dGjJ12E&feature=relmfu">Mapping the Portrait</a>, <a href="http://www.youtube.com/watch?v=w8e5AHfHaLs&feature=relmfu">Stone Drums</a>, <a href="http://www.youtube.com/watch?v=DzIghI9uCq8&feature=relmfu">Tongue Singing </a>, <a href="http://www.youtube.com/watch?v=8NMD0hOAmiI&feature=relmfu">Qeej (Lusheng)</a>)  oppose le violoncelle à une panoplie d'instruments traditionnels.
+                  Le <a href="http://www.youtube.com/watch?v=_sxe5GkwXrQ">Zheng Concerto</a>, doit son nom à l'instrument traditionnel mis à contribution, c'est en fait une adaptation de l'oeuvre originale pour pipa (<a href="http://www.youtube.com/watch?v=yMZMF8HORGI">Pipa Concerto</a>), <a href="http://www.youtube.com/watch?v=aU7R2JydwNE&feature=related">Water Concerto</a>, <a href="http://www.youtube.com/watch?v=3kH_mDOdDIs&feature=relmfu">Paper Concerto</a>. Par contre, <a href="http://www.youtube.com/watch?v=I0Hj8H6JJds&feature=related">Concerto for Six,</a>  pour 6 solistes (percussion, contrebasse, piano préparé, guitare, violoncelle & clarinette basse) n'est pas vraiment un concerto pas plus que <a href="http://www.youtube.com/watch?v=MtpgURs9c5Y&feature=related">Ghost Opera</a>  n'est une oeuvre théâtrale lyrique (c'est une création du Quatuor Kronos).</p>
  
-  
-  <div><img src="../images/bandedestrois/chen.jpg" width="160" height="194" alt="" /><div class="legende">陈其钢</div></div>
-  <div><img src="../images/bandedestrois/zhoulong.jpg" width="160" height="194" alt="" /><div class="legende">周龙</div></div>
-  <div><img src="../images/bandedestrois/sheng.jpg" width="160" height="194" alt="" /><div class="legende">盛宗亮</div></div>
-  <div><img src="../images/bandedestrois/tandun.jpg" width="160" height="194" alt="" /><div class="legende">谭盾</div></div>
-  
-  
-   <p>Les portraits ci-contre, qu'on croirait tirés d'affiches de films de série B, sont ceux d'honorables musiciens. Pour ceux qui ne lisent pas le chinois, même simplifié, ils ont été rangés dans l'ordre de présentation du titre.</p>
-   
- 
-  <p>Ces compositeurs comptent parmi les plus représentatifs ayant surmonté l'obstacle de la révolution culturelle. Leurs oeuvres sont un mélange plus ou moins savant de musiques traditionnelle, moderne voire  d'avant-garde. Certaines partitions vous rebuteront peut-être mais beaucoup d'autres vous séduiront par leur dépaysante nouveauté.  Pour la petite histoire, à l'exception de Zhou Long, tous ont prêté leur savoir-faire musical aux cérémonies accompagnant les J-O de Pékin, en 2008.</p>
-  
-   
-  <div>1) Qigang Chen.</div>
- 
- <p>Né à Shanghai dans une famille d'artistes, Qigang Chen (ne pas confondre avec Gang Chen (1935- ), l'auteur d'un anecdotique <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Gang-Chen-geb-1935-Violinkonzert-Butterfly-Lovers/hnum/9885778">Butterly Concerto</a>, pour violon) a passé la révolution dans un camp de rééducation. Lorsque le conservatoire de Pékin reprit son activité, dès 1977, sous la houlette de Luo Zhongrong, Chen fit partie des 25 candidats sélectionnés parmi 2000 postulants. Il se montra le plus brillant obtenant une bourse l'autorisant à étudier à l'étranger. Il eut ainsi le privilège d'être le dernier élève d'Olivier Messiaen, de 1984 à 1988.  Celui-ci eut fort à faire pour restaurer son autonomie intellectuelle après le lavage de cerveau que l'on devine. Chen a acquis la nationalité française en 1992.</p>
+                  <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/bandedestrois/chen5.jpg" alt="Bitter Love" />
+                              <figcaption>Bitter Love</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/bandedestrois/chen6.jpg" alt="Ghost Opera" />
+                              <figcaption>Ghost Opera</figcaption>
+                          </figure>
+                      </div>
+                  </div>
 
-
-    <div><img src="../images/bandedestrois/chen1.jpg" alt="" /></div>
-    <div><img src="../images/bandedestrois/chen2.jpg" alt="" /></div>
-     <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-   
-  <p>1990 vit le début d'une période d'émancipation à travers le monde, qui lui permit de se construire un langage propre l’éloignant  de l’univers musical parisien. Quelques oeuvres significatives jalonnent son évolution : Poème lyrique II (1991),
-Reflet d'un temps disparu (1996) (<a href="http://www.youtube.com/watch?v=Y_g3ar6ow1M">Début</a>, <a href="http://www.youtube.com/watch?v=IQjnrRHaHF0">Milieu</a> - au délicat parfum chinois ! - , <a href="http://www.youtube.com/watch?v=zreIFxSagbk">Fin</a>), Wu Xing (Les 5 Eléments), une oeuvre qui parvint en finale du Concours de composition Masterprize 2001, Er Huang (2009), un Concerto pour piano & orchestre, commandé par le Carnegie Hall et créé par Lang Lang et Michael Tilson Thomas, <a href="http://www.youtube.com/watch?v=8u3XoaVGjVg">Iris dévoilée</a>, pour soprano féline, <a href="http://www.youtube.com/watch?v=IBkc5RLohXk">Extase</a>, pour hautbois chinois et orchestre, enfin le ballet Épouses et Concubines (2010) qui a allègrement dépassé la 300<sup>ème</sup> représentation.  Bien plus modestement, <a href="http://www.youtube.com/watch?v=4j3ccl-TPao&feature=related">You and Me</a> fut sa contribution à la cérémonie d’ouverture des Jeux de Pékin. Chen écrit occasionnellement pour le cinéma : appréciez la qualité des envolées chorales qui accompagnent <a href="http://www.youtube.com/watch?v=yDGWzUEOHuo">The Flowers of War</a>.</p>
-
-
-<p>2) Zhou Long est né à Beijing, dans une famille d'artistes. A la révolution, il dut différer ses études, troquant le piano pour un tracteur.  Lorsque le conservatoire de Beijing reprit son activité, sous la houlette de Luo Zhongrong, il fit partie de la première promotion comprenant 100 candidats sélectionnés parmi 8000 postulants.</p>
-
-
-<p>Diplomé en 1983, Zhou Long fut compositeur en résidence auprès du <a href="http://www.youtube.com/watch?v=5anDlvJqGpo&feature=related">China Broadcasting Chinese Orchestra</a>, un ensemble symphonique traditionnel absolument remarquable, le temps de voyager aux USA et de s'y fixer. Il ne renia pas pour autant ses origines, devenant  directeur musical de Music from China, au service  de la musique populaire de son pays, jouée sur instruments d'origine. Il n'en fallait pas davantage pour qu'il intégre le Silk Road Project du Seattle Symphony Orchestra, en collaboration avec le célèbre violoncelliste, Yo-Yo Ma (<a href="http://www.youtube.com/watch?v=NqWGgmfshvE&feature=related">Song of eight unruly tipsy Poet</a>).</p>
-
-<div><img src="../images/bandedestrois/chen3.jpg" alt="" /></div>
-    <div><img src="../images/bandedestrois/chen4.jpg" alt="" /></div>
-    <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-
-<p> Professeur de composition dans plusieurs universités américaines et compositeur en résidence au Cleveland Institute of Music, il a remporté quelques distinctions particulièrement appréciées telle une place en finale du<sup></sup> Masterprize  1998 (Poems from Tang : Song of Eight Unruly Tipsy Poets). En 2011, il remporta le  convoité  Pulitzer Prize pour son opéra, Madame White Snake, créé en 2010, à l'Opera de Boston.</p>
-<p>Long ne se considère ni parfaitement chinois ni américain,  s'attachant à créer un son différent, mixant des thèmes populaires retravaillés selon les canons de l'harmonie occidentale, le cas échéant en recourant aux possibilités offertes par l'électronique. Ecoutez des extraits de 
- <a href="http://www.youtube.com/watch?v=-I8uP-ldAbA&feature=related">The Rhyme of Taigu</a> ou <a href="https://www.youtube.com/watch?v=A3BR5xjieuc">The Five Elements</a>, une oeuvre intégralement enregistrée chez <a href="http://www.bis.se/index.php?op=album&aID=BIS-CD-1739">BIS</a>.</p>
-
-<p>Il a aussi écrit pour piano solo (<a href="http://www.youtube.com/watch?v=vYl2VOTIy-k&feature=related">Wu Kui</a>) et quatuor à cordes (<a href="http://www.youtube.com/watch?v=w8VhjvHA5Pk&feature=related">A Single Bamboo Can Easily Bend</a>, <a href="http://www.youtube.com/watch?v=Fno3aGUMqgk&feature=relmfu">Chinese Folk Songs</a>, une belle interprétation du Quatuor Delray). La même oeuvre a été enregistrée chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Zhou-Long-geb-1953-Poems-from-Tang-f-Streichquartett/hnum/8675934">Delos</a>, par le Shanghai Quartet, en même temps que Poems from Tang.</p>
-
-
-<div>3) Bright Sheng.</div>
-
-<p>Bright Sheng est né à Shanghai et c'est le conservatoire de cette ville qu'il a fréquenté dès sa réouverture, en 1978.  Quatre ans plus tard, il s'envola pour les Etats-Unis ou son professeur le plus en vue fut Leonard Bernstein. Sa carrière américaine fut lancée par quelques grands interprètes sans doute sensibles à la critique implicite que ses premières oeuvres adressaient à la révolution chinoise : Kurt Masur mit H'un à son répertoire, Christoph Eschenbach fit de même avec Nanking! Nanking! et le pianiste Emanuel Ax créa Red Silk Dance à New York, en 2001.  Un concerto quadruple pour violoncelle, piano, pipa et sheng, fut également créé  à New-York avec le concours de solistes prestigieux, Yo-Yo Ma, Emanuel Ax, Wuman and Wutong, dirigés par David Zinman. <a href="https://www.youtube.com/watch?v=GsSgirwSVnE">China Dreams</a> (1995), <a href="http://www.bis.se/index.php?op=album&aID=BIS-CD-1122">Postcards</a> (1997), Concerto Flute Moon (1999) (<a href="http://www.youtube.com/watch?v=r8j0g5yYeQY">Part 1</a>), Tibetan Swing (2002) et Song and Dance of Tears (2003)  sont autant d'oeuvres symphoniques largement jouées de par le monde.</p>
-
-<p>En 2003, le Carnegie Hall lui a consacré une rétrospective, en collaboration avec le New York Philharmonic Orchestra et le Shanghai Quartet.   </p>
-
-<p>Sheng a écrit plusieurs opéras, en particulier, <a href="http://www.classicsonline.com/catalogue/product.aspx?pid=610101">The Song of Majnun</a> (Chicago, 1992), une version persane du mythe de Romeo et Juliette dont un enregistrement est paru chez Delos, The Silver River (Spoleto, 2000) et Madam Mao (Santa Fe, 2003), l'occasion sans doute de régler quelques comptes personnels avec la bande rivale.</p>
-
-
-
-<div><img src="../images/bandedestrois/sheng1.jpg" alt="" /></div>
-    <div><img src="../images/bandedestrois/sheng2.jpg" alt="" /></div>
-    <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-
-
-
-<p>Sheng a beaucoup écrit pour la danse (<a href="http://www.youtube.com/watch?v=1ozj6pz_n14&feature=related">The Stream flows</a>) : un temps compositeur en résidence au-près du New York City Ballet, il écrivit The Nightingale and the Rose puis Just Dance.  Chi-Lin, Zoomin et Two Birds with the Wings of One ne sont que des compilations d'oeuvres antérieures, chorégraphiées par Jean-Pierre Bonnefoux.</p>
-
-<p>Sheng a également écrit pour diverses formations de chambre dont les Quatuors Takasc, Emerson, Shanghai, de St. Petersbourg et Daedalus : citons <a href="http://www.youtube.com/watch?v=IFNaIPtMbYI">Four Movements</a>, pour trio à clavier, Tibetan Dance, 5 Quatuors à cordes à ce jour dont les <a href="http://www.bis.se/index.php?op=album&aID=BIS-CD-1138">n°3 & 4</a> ont été enregistrés chez BIS (on dit que c'est le 5<sup>ème</sup> le plus intéressant mais désolé, je n'ai pas d'extrait à proposer) et un Concertino pour clarinette et quatuor à cordes (1994).</p> <p>Parmi les oeuvres récentes, on note un Concerto pour Orchestra &quot;Zodiac Tales&quot;, créé à Detroit, et Northern Lights pour violoncelle et piano.</p>
-
-<p>Sheng a tôt reçu les faveurs de chefs fameux (Leonard Bernstein, Christoph Eschenbach, Kurt Masur, Leonard Slatkin, Charles Dutoit, Gerald Schwarz, David Zinman, Neeme Järvi,  ...) et autant de solistes renommés (Yo Yo Ma, Emanuel Ax, Peter Serkin, Yefim Brofman, Evelyn Glennie, Gil Shaham, Lynn Harrell, Truls Mork et Edgar Meyer), c'est un signe qui ne trompe pas.</p>
-
-<p>Avec un tel CV, on se doute que sa musique a largement été enregistrée, essentiellement chez Sony Classical, BIS, Delos, Koch International, New World, Telarc et Naxos. Sa <a href="http://www.brightsheng.com/recordings.html">discographie</a> présumée complète est disponible sur le site web du compositeur.</p>
-
-
-<p>4) Tan Dun est né dans le village de Changsha. Fasciné par le rituel musical des cérémonies sacrées, il envisagea très tôt la carrière artistique mais la révolution en décida autrement, le reconvertissant provisoirement en planteur de riz. Son salut vint du naufrage mortel d'un ferry bourré de musiciens de l'Opéra de Beijing (maintenu en activité pour des tournées de propagande) : il put intégrer l'orchestre, y tenant une partie d'alto.</p> 
-
-<p>Au terme de cet épisode, il entra au conservatoire de Beijing où il reçut l'enseignement du maître japonais, Toru Takemitsu (1930-1996).
-
-Il émigra ensuite aux Etats-Unis, tentant une synthèse où l'élément théâtral oriental restait très présent.</p>
-
-
-<p>Tan Dun est connu pour quelques projets plutôt commerciaux voire exotiques :</p>
-
-<li>Il a écrit quelques musiques de films à succcès, <a href="http://www.youtube.com/watch?v=aydmihMMYXA&feature=related">Crouching Tiger</a>, Hidden Dragonet et le célèbre <a href="http://www.youtube.com/watch?v=eShkr82g4-k&feature=related">Hero</a> (<a href="http://www.youtube.com/watch?v=J9DDdNisv2U">Overture</a>, <a href="http://www.youtube.com/watch?v=HMLVAUldN1g">Love in Distance</a>, <a href="http://www.youtube.com/watch?v=tqDvulS4cNs">Warriors</a>, ...), à découvrir par les amateurs du genre  ! </li>
-
-<li>Il a honoré la commande d'une Symphonie <a href="http://www.youtube.com/watch?v=ci84dubNWCA&feature=related">1997</a>, commémorant le transfert officiel du district de Hong Kong à la Chine.</li>
-
-<li>Zen Shaolin (2006) est une production en plein air destinée à être jouée sur le site du temple bouddhiste de Shaolin dans la province chinoise de Henan.</li>
-
-<li>En 2008, il s'est lancé dans le projet singulier de l'<a href="http://www.youtube.com/watch?v=eKyV1MPMm0w&feature=relmfu">Internet Symphony</a>, commanditée par Youtube ! Dans un premier temps, des musiciens du monde entier furent conviés à étudier la partition (de 5 minutes !) et  soumettre via Internet la sono de la partie qu'ils avaient choisi de jouer. Ensuite une sélection des meilleurs instrumentistes aboutit à une première version diffusée par Youtube. Le <a href="http://www.youtube.com/watch?v=Tqiro1kdRlw&feature=channel">London Symphony Orchestra</a> reprit l'oeuvre à son répertoire. Son surnom Eroica provient de l'emprunt du thème initial de la 3<sup>ème</sup> symphonie  de Beethoven (Ecoutez et retrouvez-le mais n'y passez pas la nuit car l'oeuvre n'est pas vraiment un chef-d'oeuvre !).</li>
-
-<p>Tan Dun n'a pas oublié ses racines ancestrales : <a href="http://www.youtube.com/watch?v=DJW9VQwynD0&feature=related">Four Secret Roads Of Marco Polo</a>, pour zheng (sorte de cithare chinoise), piano & orchestre propose un curieux mélange de virtuosité transcendante (confiée au zheng) et de musicalité un brin lénifiante (confiée aux instruments occidentaux).</p>
-
-<p>Le reste de son oeuvre, cataloguée sur son <a href="http://www.tandunonline.com/compositions.html">site web</a>, est heureusement beaucoup plus savant que cela. Il propose quelques concertos exotiques : The Map (<a href="http://www.youtube.com/watch?v=RAc1ecb-TqI&feature=relmfu">Ghost Dance & Cry Singing</a>, <a href="http://www.youtube.com/watch?v=Nvjht7Kq-tI&feature=related">Blowing Leaf</a>, <a href="http://www.youtube.com/watch?v=IZaJMySE0AY&feature=relmfu">Daliuzi</a>, <a href="http://www.youtube.com/watch?v=ZWsOyZNxNDQ&feature=relmfu">Hmong (Miao) Suona</a>, <a href="http://www.youtube.com/watch?v=nnk0Hs8j5bI&feature=relmfu">Flying Song</a>, <a href="http://www.youtube.com/watch?v=bjz6dGjJ12E&feature=relmfu">Mapping the Portrait</a>, <a href="http://www.youtube.com/watch?v=w8e5AHfHaLs&feature=relmfu">Stone Drums</a>, <a href="http://www.youtube.com/watch?v=DzIghI9uCq8&feature=relmfu">Tongue Singing </a>, <a href="http://www.youtube.com/watch?v=8NMD0hOAmiI&feature=relmfu">Qeej (Lusheng)</a>)  oppose le violoncelle à une panoplie d'instruments traditionnels.
-Le
-<a href="http://www.youtube.com/watch?v=_sxe5GkwXrQ">Zheng Concerto</a>, doit son nom à l'instrument traditionnel mis à contribution, c'est en fait une adaptation de l'oeuvre originale pour pipa (<a href="http://www.youtube.com/watch?v=yMZMF8HORGI">Pipa Concerto</a>), <a href="http://www.youtube.com/watch?v=aU7R2JydwNE&feature=related">Water Concerto</a>, <a href="http://www.youtube.com/watch?v=3kH_mDOdDIs&feature=relmfu">Paper Concerto</a>. Par contre, 
-  <a href="http://www.youtube.com/watch?v=I0Hj8H6JJds&feature=related">Concerto for Six,</a>  pour 6 solistes (percussion, contrebasse, piano préparé, guitare, violoncelle & clarinette basse) n'est pas vraiment un concerto pas plus que <a href="http://www.youtube.com/watch?v=MtpgURs9c5Y&feature=related">Ghost Opera</a>  n'est une oeuvre théâtrale lyrique (c'est une création du Quatuor Kronos).</p>
-
-
-
-
-
-<div><img src="../images/bandedestrois/chen5.jpg" alt="" /></div>
-    <div><img src="../images/bandedestrois/chen6.jpg" alt="" /></div>
-    <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-
-<p>Tan Dun recourt abondamment aux sonorités produites par une panoplie d'instruments non traditionnels ou amplifiés : de même que le Paper Concerto manipule  des bandelettes de papier, la <a href="http://www.youtube.com/watch?v=63CYla4wLIg">Passion selon Saint Mathieu</a> (2010), une commande groupée de la Bachakademie de Stuttgart adressée également à Sofia Gubaidulina, Osvaldo Golijov et Wolfgang Rihm, utilise des bols chinois remplis d'eau (à découvrir !).</p>
-
-
-<p>En 2008, il a écrit son premier Concerto pour piano, The Fire, pour Lang Lang, et en 2009, un Concerto pour violon, <a href="http://www.youtube.com/watch?v=VMpZtbsTsdo">The Love</a>. Le <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.570608">Concerto pour orchestre</a> vient de paraître chez Naxos.</p>
-<p>Tan Dun a remporté le très convoité Grawemeyer Award pour son opéra, <a href="http://www.youtube.com/watch?v=mJkbeWeV2KU&feature=related">Marco Polo</a> (1998). 
-
-    D'autres oeuvres lyriques sont : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Tan-Dun-geb-1957-Bitter-Love/hnum/1019455">Peony Pavilion</a> (1998),  <a href="https://www.youtube.com/watch?v=Y4n3tduf0oQ">Tea: The Mirror of Soul</a> (2002)  et <a href="http://www.youtube.com/watch?v=LuQ99wCQ4LM&feature=related">The First Emperor</a> (2006) honorant la mémoire de Qin Shi Huang, qui a unifié la Chine ancestrale et édifié la grande muraille.  Placido Domingo a chanté le rôle-titre à la scène.</p>
-
-
-
-  
+                  <p>Tan Dun recourt abondamment aux sonorités produites par une panoplie d'instruments non traditionnels ou amplifiés : de même que le Paper Concerto manipule  des bandelettes de papier, la <a href="http://www.youtube.com/watch?v=63CYla4wLIg">Passion selon Saint Mathieu</a> (2010), une commande groupée de la Bachakademie de Stuttgart adressée également à Sofia Gubaidulina, Osvaldo Golijov et Wolfgang Rihm, utilise des bols chinois remplis d'eau (à découvrir !).</p>
+                  <p>En 2008, il a écrit son premier Concerto pour piano, The Fire, pour Lang Lang, et en 2009, un Concerto pour violon, <a href="http://www.youtube.com/watch?v=VMpZtbsTsdo">The Love</a>. Le <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.570608">Concerto pour orchestre</a> vient de paraître chez Naxos.</p>
+                  <p>Tan Dun a remporté le très convoité Grawemeyer Award pour son opéra, <a href="http://www.youtube.com/watch?v=mJkbeWeV2KU&feature=related">Marco Polo</a> (1998). D'autres oeuvres lyriques sont : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Tan-Dun-geb-1957-Bitter-Love/hnum/1019455">Peony Pavilion</a> (1998),  <a href="https://www.youtube.com/watch?v=Y4n3tduf0oQ">Tea: The Mirror of Soul</a> (2002)  et <a href="http://www.youtube.com/watch?v=LuQ99wCQ4LM&feature=related">The First Emperor</a> (2006) honorant la mémoire de Qin Shi Huang, qui a unifié la Chine ancestrale et édifié la grande muraille.  Placido Domingo a chanté le rôle-titre à la scène.</p>
+                </div>
               </div>
 
 
@@ -180,7 +266,8 @@ Le
     
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

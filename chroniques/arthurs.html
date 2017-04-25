@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Arthur Lourié et Arthur Berger</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Arthur Lourié et Arthur Berger</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,90 +46,117 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tiresdeloubli.html">Compositeurs oubliés</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Arthur Lourié et Arthur Berger</li>
                     </ul>
                 </nav>  
   
-  <h2>Arthur Lourié et Arthur Berger.</h2>
   
- <div><img src="../images/arthurs/berger.jpg" alt="" /><div class="legende">Berger</div></div>
-  <div><img src="../images/arthurs/lourie.jpg" alt="" /><div class="legende">Lourié</div></div>
- 
- 
-<p>Arthur Lourié (1892-1966) fut russe avant d'être américain. Arthur Berger (1912-2003), a été américain toute sa vie.  Ils ne se sont jamais rencontrés sauf, virtuellement, dans cette chronique qui met en évidence leur attirance paradoxale pour le Schönberg dodécaphonique et le Stravinsky néo-classique. Ils ont relativement peu écrit - surtout Berger qui cumulait d'autres fonctions - et leur oeuvre a provoqué quelques réticences.  N'ayant pas choisi leur camp à une époque où cela s'imposait, leurs musiques sont tombées dans un oubli progressif dont elles peinent à s'extraire.</p>
+                <div class="blocImgFirstAndText">
 
-<p><i>Arthur Lourié.</i></p>
-<p>D'ascendance juive, Naoum Izraïlevitch Louria, s'est tôt converti au catholicisme, modifiant une première fois son identité en, Arthur Sergueïevitch Lurye. Ses études au conservatoire de Saint-Pétersbourg ne lui plurent guère : un professeur aussi conservateur qu'Alexandre Glazounov ne pouvait convenir à ce jeune homme qui rêvait de modernisme. Il adhéra, de fait, au mouvement futuriste russe, fréquentant poètes, peintres et musiciens à une époque où les audaces étaient encore permises en Russie. Il sympathisa avec le principe de la révolution de 1917, au point d'occuper des fonctions officielles au Narkompros (Département révolutionnaire de la culture, dirigé par Anatoly Lunacharsky) mais il déchanta bientôt.  En 1921, à la faveur d'un voyage officiel à Berlin, il fit la connaissance de Ferruccio Busoni qui le convainquit de s'exiler. Un an plus tard, on le retrouva à Paris et il francisa son nom en Arthur Vincent Lourié. Vincent est une invention à la mémoire de Van Gogh que Lourié, peintre à ses heures, venait de découvrir.  C'est à Paris qu'il rencontra Igor Stavinsky avec lequel il se lia d'une amitié teintée d'admiration réciproque. En 1941, suite à l'occupation allemande, il émigra aux Etats-Unis mais cette fois, il ne changea plus de nom !</p>
-<div><img src="../images/arthurs/louriedandy.jpg" alt="" /></div>
- 
- 
-<p>Les premières oeuvres numérotée au catalogue de Lourié sont écrites pour le piano. <a href="https://www.youtube.com/watch?v=EZj80LF6Ay4">5 Préludes fragiles</a>, opus 1 (1910) ou <a href="https://www.youtube.com/watch?v=WsYAQxYYzIc">Deux mazurkas</a>, opus 7 (1912) s'inspirent de Scriabine, y ajoutant la touche personnelle d'un musicien qui cherche à plaire.  Le dandysme notoire de l'artiste, bien capté par le peintre Pyotr Miturich, transparaît dans ces pièces.</p>
-<p>A la même époque, un "autre Lourié" écrit Deux Poèmes, opus 8 et <a href="http://www.youtube.com/watch?v=wbGXwNpV2UA&feature=related">Quatre Poèmes, opus 10</a>, dans un style librement (a)tonal,  peu pratiqué en Russie, sauf par Nikolaï Roslavets (1881-1944), un autre compositeur aussi essentiel que négligé (<a href="https://www.youtube.com/watch?v=GlpxNRipo_Q">3 Etudes</a> (1914)).</p>
+                  <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/arthurs/lourie.jpg" alt="Arthur Lourié" />
+                              <figcaption>Arthur Lourié</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/arthurs/berger.jpg" alt="Arthur Berger" />
+                              <figcaption>Arthur Berger</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                 
+                  <p>Arthur Lourié (1892-1966) fut russe avant d'être américain. Arthur Berger (1912-2003), a été américain toute sa vie.  Ils ne se sont jamais rencontrés sauf, virtuellement, dans cette chronique qui met en évidence leur attirance paradoxale pour le Schönberg dodécaphonique et le Stravinsky néo-classique. Ils ont relativement peu écrit - surtout Berger qui cumulait d'autres fonctions - et leur oeuvre a provoqué quelques réticences.  N'ayant pas choisi leur camp à une époque où cela s'imposait, leurs musiques sont tombées dans un oubli progressif dont elles peinent à s'extraire.</p>
 
-  
+                  <div id="arthurLourie">
+                    <h4>Arthur Lourié</h4>
 
-<p>C'est incontestablement au cours de sa période russe que Lourié s'est montré le plus entreprenant : <a href="https://www.youtube.com/watch?v=aZic71VFVIg">Synthèses</a> (1914), <a href="https://www.youtube.com/watch?v=heCNgclAgJk">Emploi du Temps</a> (1915) ou <a href="https://www.youtube.com/watch?v=u3xipjU3N7Y">Formes en l'air</a> (1915) sont autant de courtes pièces qui partent à l'aventure. </p>
+                    <p>D'ascendance juive, Naoum Izraïlevitch Louria, s'est tôt converti au catholicisme, modifiant une première fois son identité en, Arthur Sergueïevitch Lurye. Ses études au conservatoire de Saint-Pétersbourg ne lui plurent guère : un professeur aussi conservateur qu'Alexandre Glazounov ne pouvait convenir à ce jeune homme qui rêvait de modernisme. Il adhéra, de fait, au mouvement futuriste russe, fréquentant poètes, peintres et musiciens à une époque où les audaces étaient encore permises en Russie. Il sympathisa avec le principe de la révolution de 1917, au point d'occuper des fonctions officielles au Narkompros (Département révolutionnaire de la culture, dirigé par Anatoly Lunacharsky) mais il déchanta bientôt.  En 1921, à la faveur d'un voyage officiel à Berlin, il fit la connaissance de Ferruccio Busoni qui le convainquit de s'exiler. Un an plus tard, on le retrouva à Paris et il francisa son nom en Arthur Vincent Lourié. Vincent est une invention à la mémoire de Van Gogh que Lourié, peintre à ses heures, venait de découvrir.  C'est à Paris qu'il rencontra Igor Stavinsky avec lequel il se lia d'une amitié teintée d'admiration réciproque. En 1941, suite à l'occupation allemande, il émigra aux Etats-Unis mais cette fois, il ne changea plus de nom !</p>
+                    
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/arthurs/louriedandy.jpg" alt="Portrait Arthur Lourié Andy Warhol"/>
+                                <figcaption>
+                                  <h5>Portrait Arthur Lourié</h5>
+                                  <h6>Andy Warhol</h6>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                                  
+                    <p>Les premières oeuvres numérotée au catalogue de Lourié sont écrites pour le piano. <a href="https://www.youtube.com/watch?v=EZj80LF6Ay4">5 Préludes fragiles</a>, opus 1 (1910) ou <a href="https://www.youtube.com/watch?v=WsYAQxYYzIc">Deux mazurkas</a>, opus 7 (1912) s'inspirent de Scriabine, y ajoutant la touche personnelle d'un musicien qui cherche à plaire.  Le dandysme notoire de l'artiste, bien capté par le peintre Pyotr Miturich, transparaît dans ces pièces.</p>
+                    <p>A la même époque, un "autre Lourié" écrit Deux Poèmes, opus 8 et <a href="http://www.youtube.com/watch?v=wbGXwNpV2UA&feature=related">Quatre Poèmes, opus 10</a>, dans un style librement (a)tonal,  peu pratiqué en Russie, sauf par Nikolaï Roslavets (1881-1944), un autre compositeur aussi essentiel que négligé (<a href="https://www.youtube.com/watch?v=GlpxNRipo_Q">3 Etudes</a> (1914)).</p>
+                    <p>C'est incontestablement au cours de sa période russe que Lourié s'est montré le plus entreprenant : <a href="https://www.youtube.com/watch?v=aZic71VFVIg">Synthèses</a> (1914), <a href="https://www.youtube.com/watch?v=heCNgclAgJk">Emploi du Temps</a> (1915) ou <a href="https://www.youtube.com/watch?v=u3xipjU3N7Y">Formes en l'air</a> (1915) sont autant de courtes pièces qui partent à l'aventure. </p>
+                    <p>Sa musique pour le piano a évolué à reculons (va régresser disent les mauvaises langues) : <a href="https://www.youtube.com/watch?v=VD1j-IgnLSk">Intermezzo</a> (1928) joue la carte d'un romantisme ironiquement distancié et <a href="https://www.youtube.com/watch?v=YR_mm8Fls4U">A Phoenix Park Nocturne</a> (1936) celle de la séduction  mais avec quel talent !</p>
+                    <p>En musique instrumentale, la rencontre parisienne avec Igor Stravinsky (1882-1971), son aîné de 10 ans, a bouleversé les conceptions musicales de Lourié. L'interaction entre les deux artistes ne s'est cependant pas faite à sens unique : certes, Lourié s'est progressivement mis à écrire du Stravinsky néo-classique - en plus astringent toutefois - mais une rétroaction est nettement perceptible dans <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Igor-Strawinsky-Concerto-in-D/hnum/1538050">Apollon musagète</a> (1927), Stravinsky s'inspirant clairement de la Little Chamber Music 
+                    <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/lourie/chambermusic.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/lourie/chambermusic.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub> (1924) de Lourié.</p>
 
-<p>Sa musique pour le piano a évolué à reculons (va régresser disent les mauvaises langues) : <a href="https://www.youtube.com/watch?v=VD1j-IgnLSk">Intermezzo</a> (1928) joue la carte d'un romantisme ironiquement distancié et <a href="https://www.youtube.com/watch?v=YR_mm8Fls4U">A Phoenix Park Nocturne</a> (1936) celle de la séduction  mais avec quel talent !</p>
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/arthurs/louriedgg.jpg" alt="Concerto da Camera"/>
+                                <figcaption>Concerto da Camera</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                      
+                    <p>La musique instrumentale d'Arthur Lourié reste peu connue, attendant l'attention des interprètes et la reconnaissance du public.</p>
+                    <p> Gidon Kremer a enregistré pour DGG un CD essentiel proposant non seulement A little chamber Music (1924) mais surtout l'indispensable Concerto da Camera (1945) dont voici deux extraits, Fantasia <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/lourie/conccamera1.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/lourie/conccamera1.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub>  et Serenata 
+                    <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/lourie/conccamera2.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/lourie/conccamera2.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub>. Le même enregistrement propose Little Giding 
+                    <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/lourie/littlegidding.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/lourie/littlegidding.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub> (1945) pour ténor et ensemble instrumental.</p>
+                      
+                    <p>Je ne trouve malheureusement plus trace nulle part de cet enregistrement qui date de 1993, un scandale de plus !
+                    <p>Le <a href="http://www.youtube.com/watch?v=GtDdBbHuXYA">Concerto Spirituale</a> (1929), une oeuvre hybride pour piano, choeurs & orchestre, a reçu l'attention du grand chef russe, Gennady Rozhdestvensky et de son épouse pianiste, Viktoria Postnikova. A part celà, on se demande ce qu'on attend pour réenregistrer les trois symphonies dans de bonnes conditions (<a href="http://www.youtube.com/watch?v=JHGq0R2L2Xo">n°1</a>, <a href="http://www.youtube.com/watch?v=0FDeGnw_6EU">n°2</a>).</p>
+                    <p>Au rayon de la musique de chambre, on épinglera les <a href="https://www.hdtracks.com/index.php?file=catalogdetail&valbum_code=743625102024">3 Quatuors à cordes</a>, enregistrés par le Quatuor d'Utrecht, un autre CD essentiel ! Voici un long extrait du <a href="http://www.youtube.com/watch?v=HXibIgvCVpg&feature=related">3<sup>ème</sup> Quatuor</a>. Mentionnons enfin, chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Arthur-Lourié-Lieder/hnum/9797683">Brillant</sup></a>, une réédition aussi inattendue que bienvenue d'oeuvres vocales.</p>
+                    <p>En dépit de succès ponctuels, l'exil américain du compositeur ne fut guère heureux et il s'en plaignit plutôt amèrement dans sa correspondance avec la grande poétesse russe, Anna Akhmatova.  Il passa pas mal de temps à tenter de faire monter à la scène son oeuvre la plus ambitieuse, Le Nègre de Pierre le Grand, un opéra d'après Pouchkine mais le projet n'intéressa personne. Aujourd'hui encore nos devons nous contenter de quelques intermèdes instrumentaux - dont ce Game of Dice <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/lourie/gameofdice.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/lourie/gameofdice.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub> - à nouveau enregistrés par <a href="http://www.amazon.fr/Out-Russia-Gidon-Kremer/dp/B000000SRB/ref=sr_1_13?s=music&ie=UTF8&qid=1298978704&sr=1-13">Gidon Kremer</sup></a>, chez Teldec.</p>
+                    <p>Lourié disparut dans l'indifférence générale et il peine bien injustement à s'en remettre. Même les enregistrements disponibles ne le sont que difficilement. </p>
+                  </div>
+                  
+                  <div id="arthurBerger">
+                    <h4>Arthur Berger</h4>
 
-<p>En musique instrumentale, la rencontre parisienne avec Igor Stravinsky (1882-1971), son aîné de 10 ans, a bouleversé les conceptions musicales de Lourié. L'interaction entre les deux artistes ne s'est cependant pas faite à sens unique : certes, Lourié s'est progressivement mis à écrire du Stravinsky néo-classique - en plus astringent toutefois - mais une rétroaction est nettement perceptible dans <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Igor-Strawinsky-Concerto-in-D/hnum/1538050">Apollon musagète</a> (1927), Stravinsky s'inspirant clairement de la Little Chamber Music 
-  <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/lourie/chambermusic.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/lourie/chambermusic.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> (1924) de Lourié.</p>
-
-
- <div><img src="../images/arthurs/louriedgg.jpg" alt="" /></div>
- 
- 
-  
-  <p>La musique instrumentale d'Arthur Lourié reste peu connue, attendant l'attention des interprètes et la reconnaissance du public.</p>
-  <p> Gidon Kremer a enregistré pour DGG un CD essentiel proposant non seulement A little chamber Music (1924) mais surtout l'indispensable Concerto da Camera (1945) dont voici deux extraits, Fantasia <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/lourie/conccamera1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/lourie/conccamera1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>  et Serenata <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/lourie/conccamera2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/lourie/conccamera2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.  Le même enregistrement propose Little Giding <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/lourie/littlegidding.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/lourie/littlegidding.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> (1945) pour ténor et ensemble instrumental.</p>
-  
-  <p>Je ne trouve malheureusement plus trace nulle part de cet enregistrement qui date de 1993, un scandale de plus !
-  
-  <p>Le <a href="http://www.youtube.com/watch?v=GtDdBbHuXYA">Concerto Spirituale</a> (1929), une oeuvre hybride pour piano, choeurs & orchestre, a reçu l'attention du grand chef russe, Gennady Rozhdestvensky et de son épouse pianiste, Viktoria Postnikova. A part celà, on se demande ce qu'on attend pour réenregistrer les trois symphonies dans de bonnes conditions (<a href="http://www.youtube.com/watch?v=JHGq0R2L2Xo">n°1</a>, <a href="http://www.youtube.com/watch?v=0FDeGnw_6EU">n°2</a>).</p>
-
-
-
-<p>Au rayon de la musique de chambre, on épinglera les <a href="https://www.hdtracks.com/index.php?file=catalogdetail&valbum_code=743625102024">3 Quatuors à cordes</a>, enregistrés par le Quatuor d'Utrecht, un autre CD essentiel ! Voici un long extrait du <a href="http://www.youtube.com/watch?v=HXibIgvCVpg&feature=related">3<sup>ème</sup> Quatuor</a>. Mentionnons enfin, chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Arthur-Lourié-Lieder/hnum/9797683">Brillant</sup></a>, une réédition aussi inattendue que bienvenue d'oeuvres vocales.</p>
-
-
-<p>En dépit de succès ponctuels, l'exil américain du compositeur ne fut guère heureux et il s'en plaignit plutôt amèrement dans sa correspondance avec la grande poétesse russe, Anna Akhmatova.  Il passa pas mal de temps à tenter de faire monter à la scène son oeuvre la plus ambitieuse, Le Nègre de Pierre le Grand, un opéra d'après Pouchkine mais le projet n'intéressa personne. Aujourd'hui encore nos devons nous contenter de quelques intermèdes instrumentaux - dont ce Game of Dice <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/lourie/gameofdice.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/lourie/gameofdice.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> - à nouveau enregistrés par <a href="http://www.amazon.fr/Out-Russia-Gidon-Kremer/dp/B000000SRB/ref=sr_1_13?s=music&ie=UTF8&qid=1298978704&sr=1-13">Gidon Kremer</sup></a>, chez Teldec.</p>
-
-<p>Lourié disparut dans l'indifférence générale et il peine bien injustement à s'en remettre. Même les enregistrements disponibles ne le sont que difficilement. </p>
-
-<p><i>Arthur Berger.</i></p>
-<p><a href="http://www.arthurvberger.com/">Arthur Berger</a> compte parmi les nombreux élèves américains de la célèbre pédagogue, Nadia Boulanger. Une fois rentré au pays, il a adhéré au cercle des jeunes compositeurs d'avant-garde, ainsi qu'au Young Composers Group gravitant autour d'Aaron Copland.</p>
-
-<p>Théoricien et critique influent mais nullement sectaire, Berger n'a pas hésité pas à prendre la défense du style néo-classique de Stravinsky à une époque où il était de bon ton de s'en gausser. Mieux encore, comme Lourié, il s'en est inspiré dans quelques-unes de ses partitions les plus réussies, une audace qui lui valut d'être taxé de maniérisme par quelques détracteurs.</p>
-
-<p>L'oeuvre de Berger se répartit inégalement entre le piano, la musique de chambre et l'orchestre.  A l'orchestre, il faut impérativement connaître Ideas of Order (1952),  Polyphony (1956), Prelude, Aria & Waltz (1982), Perspectives II (1985) ou encore, pour ensemble plus réduit, la superbe Serenade Concertante (1944). Ces oeuvres ont été rassemblées sur un CD édité dans le cadre du <a href="http://www.allmusic.com/album/arthur-berger-the-complete-orchestral-music-w112208">Boston Modern Orchestra Project</a>. Sauf en cherchant sur <a href="http://www.deezer.com/search/Arthur%20Berger">Deezer</a>, je ne garantis pas que vous le trouverez facilement.</p>
-
-<p>En musique de chambre, c'est assurément le joyeux et inoffensif <a href="https://www.youtube.com/watch?v=ckpZtRR1iWc">Quatuor pour Vents</a> (1941) qui a rencontré le succès le plus vif mais ne manquez pas, à l'occasion, les Duos pour violon (ou violoncelle) & piano. Un retour vers Deezer risque de s'avérer nécessaire.</p>
-
-<p>Au piano, la sage Suite pour Piano à 4 mains (1947) contraste avec les avant-gardistes <a href="http://artofthestates.org/cgi-bin/piece.pl?pid=60">5 Pièces </a> (1969).</p>
-
-<p>Seul le label <a href="http://www.newworldrecords.org/">New World Records</a> s'est penché sérieusement sur l'oeuvre de Berger. <a href="http://www.centaurrecords.com/">Centaur</a> a néanmoins édité un CD consacré à sa musique pour piano.  Le <a href="http://www.arthurvberger.com/">site</a> officiel consacré au compositeur s'est débrouillé pour décourager le visiteur le mieux intentionné : sa rubrique "Discography" ne propose, en effet, que des extraits d'un seul enregistrement, orienté vers sa musique atonale la moins accessible.</p>   
+                    <p><a href="http://www.arthurvberger.com/">Arthur Berger</a> compte parmi les nombreux élèves américains de la célèbre pédagogue, Nadia Boulanger. Une fois rentré au pays, il a adhéré au cercle des jeunes compositeurs d'avant-garde, ainsi qu'au Young Composers Group gravitant autour d'Aaron Copland.</p>
+                    <p>Théoricien et critique influent mais nullement sectaire, Berger n'a pas hésité pas à prendre la défense du style néo-classique de Stravinsky à une époque où il était de bon ton de s'en gausser. Mieux encore, comme Lourié, il s'en est inspiré dans quelques-unes de ses partitions les plus réussies, une audace qui lui valut d'être taxé de maniérisme par quelques détracteurs.</p>
+                    <p>L'oeuvre de Berger se répartit inégalement entre le piano, la musique de chambre et l'orchestre.  A l'orchestre, il faut impérativement connaître Ideas of Order (1952),  Polyphony (1956), Prelude, Aria & Waltz (1982), Perspectives II (1985) ou encore, pour ensemble plus réduit, la superbe Serenade Concertante (1944). Ces oeuvres ont été rassemblées sur un CD édité dans le cadre du <a href="http://www.allmusic.com/album/arthur-berger-the-complete-orchestral-music-w112208">Boston Modern Orchestra Project</a>. Sauf en cherchant sur <a href="http://www.deezer.com/search/Arthur%20Berger">Deezer</a>, je ne garantis pas que vous le trouverez facilement.</p>
+                    <p>En musique de chambre, c'est assurément le joyeux et inoffensif <a href="https://www.youtube.com/watch?v=ckpZtRR1iWc">Quatuor pour Vents</a> (1941) qui a rencontré le succès le plus vif mais ne manquez pas, à l'occasion, les Duos pour violon (ou violoncelle) & piano. Un retour vers Deezer risque de s'avérer nécessaire.</p>
+                    <p>Au piano, la sage Suite pour Piano à 4 mains (1947) contraste avec les avant-gardistes <a href="http://artofthestates.org/cgi-bin/piece.pl?pid=60">5 Pièces </a> (1969).</p>
+                    <p>Seul le label <a href="http://www.newworldrecords.org/">New World Records</a> s'est penché sérieusement sur l'oeuvre de Berger. <a href="http://www.centaurrecords.com/">Centaur</a> a néanmoins édité un CD consacré à sa musique pour piano.  Le <a href="http://www.arthurvberger.com/">site</a> officiel consacré au compositeur s'est débrouillé pour décourager le visiteur le mieux intentionné : sa rubrique "Discography" ne propose, en effet, que des extraits d'un seul enregistrement, orienté vers sa musique atonale la moins accessible.</p>
+                  </div>
+                </div>   
 
   
               </div>
@@ -143,8 +171,6 @@ Votre navigateur n'est pas compatible
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

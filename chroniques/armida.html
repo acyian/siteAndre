@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Interprètes actuels | Place aux jeunes : le Quatuor Armida</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#interpretesActuels").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Interprètes actuels</h2>
+                <h3>Place aux jeunes : le Quatuor Armida</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,44 +46,51 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../interpretesActuels.html">Interprètes actuels</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Place aux jeunes : le Quatuor Armida</li>
                     </ul>
                 </nav>  
-  <h2>Place aux jeunes : le Quatuor Armida.</h2>
-  <p>Voici un court devoir de vacances, du genre de ceux qu'on ne peut manquer car il concerne de jeunes musiciens qui s'investissent totalement pour la juste cause de la musique contemporaine. Ils sont beaux à voir et à entendre.</p>
- <div><img src="../images/armida/armida.jpg" alt="" /></div>
-  
-  <p>Armida, retenez ce nom, c'est celui d'un  quatuor à cordes sans doute appelé à une grande et belle destinée. Son nom est emprunté au titre d'un <a href="https://www.youtube.com/watch?v=0MaheGfOnLw">opéra</a> de Joseph Haydn, le père du quatuor à cordes (vous suivez ?), d'après le texte de la Jérusalem délivrée du  Tasse. Pour mémoire, l'épisode de la magicienne Armida tombant amoureuse du chevalier croisé Renaud (Rinaldo) qu'elle devait neutraliser a également inspiré <a href="https://www.youtube.com/watch?v=UUhA7r-7mdc">Lully</a>, 
-Haendel, <a href="https://www.youtube.com/watch?v=35EMJ8ZRPkw">Vivaldi</a>, 
-<a href="https://www.youtube.com/watch?v=RH69bqt5sQ8">Jommelli</a> et même bien plus tard, 
-<a href="https://www.youtube.com/watch?v=vqzg0lNpOzg">Rossini</a> et, encore plus surprenant, <a href="https://www.youtube.com/watch?v=gWlM1TFH5E8">Dvořák</a> !</p>
-  <p></p>
-<div><img src="../images/armida/cdarmida.jpg" alt="" /></div>
-  <p>Comme les 800 pensionnaires de 12h30 à la Salle Pasteur du Corum à Montpellier, j'ai eu la chance d'entendre ces quatre jeunes gens  en concert mémorable. Martin Funda (1985- ), Teresa Schwamm (1988- ), Johanna Staemmler (1987- ) et Peter-Philipp Staemmler (1986- ) ont entre 25 et 30 ans et un talent évident mû par  un professionnalisme déjà sans faille. Fondé en 2006, leur ascension publique a réellement commencé lors des concours de Genève, en 2011, puis de Munich, en 2012, où ils ont tout raflé. </p>
-  <p> Ils sont entrés sur scène, sérieux mais décontractés, ont salué de concert et se sont assis sans manières face à des lutrins bien réglés. Sans accord préalable (quel confort !) ils se sont lancés dans le Quatuor, opus 1, de György Kurtág (1926- ) <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/armida/kurtag.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/armida/kurtag.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>, une oeuvre pas facile, datée de 1959. Ecrite dans la mouvance sérielle d'Anton Webern, elle paraîtrait  incompréhensible à une majorité d'auditeurs peu habitués à ce déluge d'information sonore mais sous les gestuels archets du Quatuor Armida, elle est apparue d'une lumineuse évidence. Constamment à l'écoute mutuelle, ces quatre jeunes gens ont servi l'oeuvre avec une science qui laissa le public interdit, en particulier de tousser. Les applaudissements plurent même si je dois admettre que pour ce qui est de l'ovation, il fallut attendre  l'interprétation qui suivit du  Quatuor D 887 de Schubert <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/armida/schubert.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/armida/schubert.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible</audio></sub></sub></sub>. </p>
-  
-    
-  <p>Cette programmation inhabituelle - surtout pour un concert de midi ! - n'est nullement le fruit du hasard : le Quatuor Armida milite afin que la musique contemporaine  s'insére naturellement dans le concert actuel. Il est conscient de l'effort que cette démarche exige du public mais il montre l'exemple par sa rigueur et son enthousiasme communicatif. Un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Armida-Quartett-Bartok-Kurtag-Ligeti/hnum/3408288">CD Bartok-Kurtag-Ligeti</a> est paru chez Cavi, qui alimente cette profession de foi et un autre paru chez Naxos où ils jouent le <a href="https://www.jpc.de/jpcng/classic/detail/-/art/streichquartett-1-polyphony-i/hnum/5434161">Quatuor n°1</a> d'une musicienne américaine d'origine allemande peu connue chez nous, Ursula Mamlok (1923- ). Les plus frileux seront heureux de les retrouver  dans le répertoire classico-romantique : <a href="https://www.jpc.de/jpcng/classic/detail/-/art/streichquartette-k-169-464-589/hnum/7956921">Mozart</a>, <a href="https://www.youtube.com/watch?v=1N1wS2I9aCU">Beethoven</a>, <a href="https://www.youtube.com/watch?v=X0-BtHF0GP0">Smetana</a>. Un CD devrait paraître incessamment, consacré aux quintettes à clavier d'Anton Dvorak et de Philipp Scharwenka.</p>
-<p>On souhaite longue vie commune aux Armida, à l'abri des changements qui ont frappé l'un de leurs très illustres modèles, les Artemis, une formation qui a dû lutter contre de trop nombreux changements de pupitres, une demi douzaine en 26 ans, ce qui est beaucoup trop pour maintenir la cohésion  qu'on a admirée à leurs débuts.</p>
 
-  
-  
-  
-  
-  
-              </div>
+                <p>Voici un court devoir de vacances, du genre de ceux qu'on ne peut manquer car il concerne de jeunes musiciens qui s'investissent totalement pour la juste cause de la musique contemporaine. Ils sont beaux à voir et à entendre.</p>
+
+                <div class="conteneurImageSeule">
+                    <div>
+                        <figure>
+                            <img src="../images/armida/armida.jpg" alt="Quatuor Armida"/>
+                            <figcaption>Quatuor Armida</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+                <p>Armida, retenez ce nom, c'est celui d'un  quatuor à cordes sans doute appelé à une grande et belle destinée. Son nom est emprunté au titre d'un <a href="https://www.youtube.com/watch?v=0MaheGfOnLw">opéra</a> de Joseph Haydn, le père du quatuor à cordes (vous suivez ?), d'après le texte de la Jérusalem délivrée du  Tasse. Pour mémoire, l'épisode de la magicienne Armida tombant amoureuse du chevalier croisé Renaud (Rinaldo) qu'elle devait neutraliser a également inspiré <a href="https://www.youtube.com/watch?v=UUhA7r-7mdc">Lully</a>, Haendel, <a href="https://www.youtube.com/watch?v=35EMJ8ZRPkw">Vivaldi</a>, <a href="https://www.youtube.com/watch?v=RH69bqt5sQ8">Jommelli</a> et même bien plus tard, <a href="https://www.youtube.com/watch?v=vqzg0lNpOzg">Rossini</a> et, encore plus surprenant, <a href="https://www.youtube.com/watch?v=gWlM1TFH5E8">Dvořák</a> !</p>
+
+                <div class="conteneurImageSeule">
+                    <div>
+                        <figure>
+                            <img src="../images/armida/cdarmida.jpg" alt="Armida Quartett"/>
+                            <figcaption>Armida Quartett</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <p>Comme les 800 pensionnaires de 12h30 à la Salle Pasteur du Corum à Montpellier, j'ai eu la chance d'entendre ces quatre jeunes gens  en concert mémorable. Martin Funda (1985- ), Teresa Schwamm (1988- ), Johanna Staemmler (1987- ) et Peter-Philipp Staemmler (1986- ) ont entre 25 et 30 ans et un talent évident mû par  un professionnalisme déjà sans faille. Fondé en 2006, leur ascension publique a réellement commencé lors des concours de Genève, en 2011, puis de Munich, en 2012, où ils ont tout raflé. </p>
+                <p> Ils sont entrés sur scène, sérieux mais décontractés, ont salué de concert et se sont assis sans manières face à des lutrins bien réglés. Sans accord préalable (quel confort !) ils se sont lancés dans le Quatuor, opus 1, de György Kurtág (1926- ) <sub><sub><sub> 
+                <audio controls preload="none" style="height:16px; width:18%;">
+                  <source src="../son.mp3/armida/kurtag.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/armida/kurtag.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio>
+                </sub></sub></sub>, une oeuvre pas facile, datée de 1959. Ecrite dans la mouvance sérielle d'Anton Webern, elle paraîtrait  incompréhensible à une majorité d'auditeurs peu habitués à ce déluge d'information sonore mais sous les gestuels archets du Quatuor Armida, elle est apparue d'une lumineuse évidence. Constamment à l'écoute mutuelle, ces quatre jeunes gens ont servi l'oeuvre avec une science qui laissa le public interdit, en particulier de tousser. Les applaudissements plurent même si je dois admettre que pour ce qui est de l'ovation, il fallut attendre  l'interprétation qui suivit du  Quatuor D 887 de Schubert <sub><sub><sub> 
+                <audio controls preload="none" style="height:16px; width:18%;">
+                  <source src="../son.mp3/armida/schubert.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/armida/schubert.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub>. </p>
+                
+                <p>Cette programmation inhabituelle - surtout pour un concert de midi ! - n'est nullement le fruit du hasard : le Quatuor Armida milite afin que la musique contemporaine  s'insére naturellement dans le concert actuel. Il est conscient de l'effort que cette démarche exige du public mais il montre l'exemple par sa rigueur et son enthousiasme communicatif. Un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Armida-Quartett-Bartok-Kurtag-Ligeti/hnum/3408288">CD Bartok-Kurtag-Ligeti</a> est paru chez Cavi, qui alimente cette profession de foi et un autre paru chez Naxos où ils jouent le <a href="https://www.jpc.de/jpcng/classic/detail/-/art/streichquartett-1-polyphony-i/hnum/5434161">Quatuor n°1</a> d'une musicienne américaine d'origine allemande peu connue chez nous, Ursula Mamlok (1923- ). Les plus frileux seront heureux de les retrouver  dans le répertoire classico-romantique : <a href="https://www.jpc.de/jpcng/classic/detail/-/art/streichquartette-k-169-464-589/hnum/7956921">Mozart</a>, <a href="https://www.youtube.com/watch?v=1N1wS2I9aCU">Beethoven</a>, <a href="https://www.youtube.com/watch?v=X0-BtHF0GP0">Smetana</a>. Un CD devrait paraître incessamment, consacré aux quintettes à clavier d'Anton Dvorak et de Philipp Scharwenka.</p>
+                <p>On souhaite longue vie commune aux Armida, à l'abri des changements qui ont frappé l'un de leurs très illustres modèles, les Artemis, une formation qui a dû lutter contre de trop nombreux changements de pupitres, une demi douzaine en 26 ans, ce qui est beaucoup trop pour maintenir la cohésion  qu'on a admirée à leurs débuts.</p>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -94,8 +102,6 @@ Votre navigateur n'est pas compatible</audio></sub></sub></sub>. </p>
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

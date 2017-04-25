@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Tour du monde | Autriche</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tourdumonde").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -31,12 +32,57 @@
     <div id="site">
         <!-- Inclusion header -->
         <div id="header"></div>
+        
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancrePremiereEcoleVienne" href="#premiereEcoleVienne" class="linavMenu active">
+                    <span>Première Ecole de Vienne (1750-1828)</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreDeuxiemeEcoleVienne" href="#deuxiemeEcoleVienne" class="linavMenu">
+                    <span>Deuxième Ecole de Vienne (1922-1945)</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTroisiemeEcoleVienne" href="#troisiemeEcoleVienne" class="linavMenu">
+                    <span>Troisième Ecole de Vienne (Les années 1900)</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancrePeriodeBaroque" href="#periodeBaroque" class="linavMenu">
+                    <span>La période baroque</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancrePeriodePreClassique" href="#periodePreClassique" class="linavMenu">
+                    <span>La période (pré)classique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreRomantisme" href="#romantisme" class="linavMenu">
+                    <span>Le romantisme</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancre1ereMoitie20emeSiecle" href="#1ereMoitie20emeSiecle" class="linavMenu">
+                    <span>La 1<sup>ère</sup> moitié du 20<sup>ème</sup> siècle</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancre2emeMoitie20emeSiecle" href="#2emeMoitie20emeSiecle" class="linavMenu">
+                    <span>La 2<sup>ème</sup> moitié du 20<sup>ème</sup> siècle</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Tour du monde</h2>
+                <h3>Autriche</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,210 +91,337 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Autriche</li>
                     </ul>
-                </nav>  
-  <h2>Un tour du monde de la musique actuelle : <div>L'Autriche.</div></h2>
+                </nav> 
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#premiereEcoleVienne">Première Ecole de Vienne (1750-1828)</a></li>
+                        <li><a href="#deuxiemeEcoleVienne">Deuxième Ecole de Vienne (1922-1945)</a></li>
+                        <li><a href="#troisiemeEcoleVienne">Troisième Ecole de Vienne (Les années 1900)</a></li>
+                        <li><a href="#periodeBaroque">La période baroque</a></li>
+                        <li><a href="#periodePreClassique">La période (pré)classique</a></li>
+                        <li><a href="#romantisme">Le romantisme</a></li>
+                        <li><a href="#1ereMoitie20emeSiecle">La 1<sup>ère</sup> moitié du 20<sup>ème</sup> siècle</a></li>
+                        <li><a href="#2emeMoitie20emeSiecle">La 2<sup>ème</sup> moitié du 20<sup>ème</sup> siècle</a></li>
+                    </ul>
+                </div> 
+
                 <div class="blocImgFirstAndText">
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
-                              <img src="../images/autriche/autriche.jpg" alt=""/>
-                              <figcaption></figcaption>
+                              <img src="../images/autriche/autriche.jpg" alt="Autriche"/>
+                              <figcaption>Autriche</figcaption>
                           </figure>
                       </div>
                   </div>
   
+                  <p>L’Autriche des Habsbourg-Lorraine a un temps rêvé d'unifier sous sa bannière  les territoires germaniques morcelés. Le Printemps des Peuples (1848) (Hé non les printemps politiques ne datent pas d'hier) allait en décider autrement, suite à la réaffirmation émergente, en Prusse, des exigences  de la maison rivale de Hohenzollern. L'Autriche majoritairement catholique fut défaite à la bataille de Sadowa (1866) et dut renoncer  à son idée d'une Germanie unifiée : elle se (re)tourna dès lors vers l'Est, singulièrement la Hongrie, avec laquelle est coexista  au sein d'un véritable Empire (1867-1918).  Seules les ambitions d'Hitler  réunifièrent temporairement l'Allemagne et l'Autriche mais ce Reich qui devait durer 1000 ans ne survécut pas aux années de  guerre 1939-45. </p>
+                  <p>L'histoire musicale de l'Autriche est indissociable de son ouverture permanente vers l'Europe centrale, si proche de sa capitale. Carrefour de l'Europe, Vienne a connu  les invasions ottomanes,  françaises et prussienne.  En musique, elle a également expérimenté les influences magyares et bohémiennes et ce sont ces métissages qui ont forgé l'esprit cosmopolite que l'on ressent au détour d'une sérénade mozartienne, d'un trio  Schubertien, d'une valse de  Strauss, d'une opérette de  Lehar ou d'un adagio de  Mahler.  </p>
+                  <p>Car en musique, l'Autriche c'est Vienne, même Salzbourg ne peut objecter à cela.  Cela est tellement vrai qu'on parle des Ecoles de Vienne pour résumer les temps forts de la vie musicale de ce pays, si forts qu'ils ont sérieusement éclipsé  ce qui se composait en Allemagne (et ailleurs) à ces époques.  Sauf exceptions, les membres de ces écoles successives sont suffisamment connus pour que nous ne nous y attardions pas outre mesure.  </p>
+                  
+                  <div id="premiereEcoleVienne">
+                    <h4>Première Ecole de Vienne (1750-1828)</h4>
+                  
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/haydn.jpg" alt="Joseph Haydn" />
+                              <figcaption>Joseph Haydn</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/mozart.jpg" alt="Wolfgang  Mozart" />
+                              <figcaption>Wolfgang  Mozart</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/beethoven.jpg" alt="Ludwig van Beethoven" />
+                              <figcaption>Ludwig van Beethoven</figcaption>
+                          </figure>
+                      </div>
+                    </div>
 
+                    <p>La Vienne musicale a connu sa première époque glorieuse sous le règne de  Joseph Haydn (1732-1809), le musicien le plus considérable de son  temps.  Même s'il a longuement résidé à Estherazy, afin d'honorer son contrat princier, c'est bien à Vienne que son influence s'est exercée.  Mozart (1756-1791) n'a quitté Salzbourg pour Vienne que relativement tardivement mais ce furent ses années les plus inspirées. Quant à Beethoven (1770-1827), tout allemand qu'il fut, c'est bel et bien  Vienne qui l'a nourri, se mobilisant chaque fois que le musicien, agacé par un dilettantisme récurrent (en particulier au moment de l'euphorique Congrès de  1815), manifestait l'intention de s'exiler à Kassel auprès de Jérôme Bonaparte, ou à Londres, en réponse à l'invitation de Johann Peter Salomon.  </p>
+                    
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/schubert.jpg" alt="Franz Schubert"/>
+                                <figcaption>Franz Schubert</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p>Bien que n'appartenant pas stricto sensu à cette école, il est impossible d'omettre, à ce stade, la personnalité de Franz Schubert (1797-1828), encore plus météorique que celle de Mozart. Inutile de présenter ce merveilleux musicien, un des plus sérieux candidats  au premier accessit au panthéon musical derrière l'inaccessible trinité Bach-Mozart-Beethoven.  </p>
+                    <p>Le miracle de concentrer autant de génies en si peu d'espace-temps ne pouvait durer  : 1828 (mort de Schubert) a, de fait, sonné, pour trois quarts de siècle, le glas des ambitions viennoises et le flambeau est retourné en Allemagne.</p>
+                  </div>
+                  
+                  <div id="deuxiemeEcoleVienne">
+                    <h4>Deuxième Ecole de Vienne (1922-1945)</h4>
+
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/schonberg.jpg" alt="Arnold Schönberg" />
+                              <figcaption>Arnold Schönberg</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/berg.jpg" alt="Alban Berg" />
+                              <figcaption>Alban Berg</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/webern.jpg" alt="Anton Webern" />
+                              <figcaption>Anton Webern</figcaption>
+                          </figure>
+                      </div>
+                    </div>
+
+                    <p>Autant la première école a fait fortune auprès des mélomanes, au point de monopoliser une bonne partie du répertoire des salles de concert, autant la deuxième école n'a pas fait recette.  <a href="../chroniques/craft.html">Arnold Schönberg</a>, son mentor,  était pleinement conscient du déclin de la musique germanique face aux progrès des musiques russe et française. Dès avant  la première guerre mondiale, il réfléchissait  au moyen de lui rendre son avance.  Etrangement, il n'envisageait pas tant s'appuyer sur un renouveau de l'inspiration que sur une révolution formelle destinée à bousculer les repères tonals auxquels  le monde musical était habitué.  La série de 12 sons, empruntés à la gamme chromatique, était née, magnifiée par le génie de ce  musicien essentiel.  Son école a compté deux élèves aussi importants que différents : 
+                    Alban Berg (1885-1935) a essayé de préserver le côté lyrique de la série conçue comme un hyperthème tandis qu'Anton Webern (1883-1945) en a étudié les jeux arithmétiques et combinatoires.</p>
+
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/apostel.jpg" alt="Hans Erich Apostel"/>
+                                <figcaption>Hans Erich Apostel</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p>Parmi les élèves  tardifs de Schönberg, je place sans hésitation au premier rang, Hans Erich Apostel (1901-1972). Son oeuvre, étonnamment lyrique,  mérite mille fois mieux que le silence dans lequel elle semble murée (Très bel Adagio, opus 11 (<a href="http://www.youtube.com/watch?v=r18f-tunMdo">Part 1</a>, <a href="http://www.youtube.com/watch?v=jyyZhPxF3D0">Part 2</a>), <a href="http://www.youtube.com/watch?v=3_mb91VADgc">Epitaph</a>, opus 43,  Quatuors <a href="https://www.youtube.com/watch?v=mWqaWl6Ek2g">opus 7</a> &amp; <a href="http://www.youtube.com/watch?v=fAA0r3cxAKA">opus 27</a> et enfin <a href="https://www.youtube.com/watch?v=NqSNaBzUvaU">Kubiniana</a>, 10 pièces pour piano d'après des toiles d'Alfred Kubin).</p>
+                  </div>
+                  
+                  <div id="troisiemeEcoleVienne">
+                    <h4>Troisième Ecole de Vienne (Les années 1900)</h4>
+
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/mahler.jpg" alt="Gustav Mahler"/>
+                                <figcaption>Gustav Mahler</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p>Si l'on parle d'une deuxième école, serait-ce qu'il en existe une troisième ?   D'aucuns n'hésitent pas, en effet, à franchir ce pas en regroupant sous cette appellation quelques musiciens postromantiques qui eurent en commun d'incarner la fin d'une (belle) époque.  Gustav Mahler (1860-1911), sorte d'alter ego musical du peintre, Gustav Klimt (1862-1918), est le plus justement célèbre même si, en France, il n'a été  découvert que tardivement. Mahler est surtout connu pour ses 10 Symphonies (La 10<sup>ème</sup> inachevée mais complétée ultérieurement par Derry Cooke), mais vous seriez impardonnable de ne pas (ré)écouter ses cycles de mélodies avec orchestre, même ceux d'extrême jeunesse (<a href="http://www.youtube.com/watch?v=DaXuGHLthR4">Das Klagende Lied</a>).</p>
+                    <p>Alexander von Zemlinsky (1871-1942), <a href="../chroniques/schmidt.html">Franz Schmidt</a> (1874-1939) et <a href="../chroniques/germains.html">Franz Schreker</a> (1878-1934) dont les noms sont davantage connus que les oeuvres sont aussi là pour témoigner que Vienne, dans les années 1900, était un bouillon de culture artistique.</p>
+                    
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/zemlinsky.jpg" alt="Alexander von Zemlinsky" />
+                              <figcaption>Alexander von Zemlinsky</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/schmidt.jpg" alt="Franz Schmidt" />
+                              <figcaption>Franz Schmidt</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/schreker.jpg" alt="Franz Schreker" />
+                              <figcaption>Franz Schreker</figcaption>
+                          </figure>
+                      </div>
+                    </div>        
+
+                    <p>Faudrait-il en conclure  qu'en dehors de ces trois périodes fastes, la musique autrichienne n'a guère brillé ?  Certainement pas et les paragraphes qui suivent en apportent la preuve convaincante.</p>
+                    <p>Il est vrai que le démarrage fut lent et laborieux : ni le Moyen-Age ni même la Renaissance n'ont vu l'éclosion d'un art savant affranchi de la tradition populaire.  Même le répertoire pour orgue, l'instrument  le plus en vue dans le cadre des offices religieux, n'a atteint un niveau transcendant. Le <a href="http://www.youtube.com/watch?v=jtWXt6gDZzs">Salve Regina</a> de Paul Hofhaymer (1459-1537) est représentatif du style en vigueur.</p>
+                  </div>
+                  
+                  <div id="periodeBaroque">
+                    <h4>La période baroque</h4>
+
+                    <p>La musique autrichienne n'a connu son véritable essor qu'à l'époque baroque suite au développement des instruments à cordes en provenance de Bavière et de Bohême, deux régions voisines.  Nul n'incarne mieux la virtuosité violonistique naissante que Johann Heinrich Schmelzer (1623-1680) (<a href="http://www.youtube.com/watch?v=GGAEpnUSUEg">Chaconne</a>) dont l'influence sur le tchèque Franz Ignaz von Biber (1644-1704) a été déterminante.
+                       On s'attardera moins sur l'oeuvre de Ferdinand Tobias Richter (1651-1711) (belle  <a href="http://www.youtube.com/watch?v=WZXMjelM7aY">Partita I</a> en ré mineur) et sur celle de  Georg Reutter (1656-1738) (<a href="http://www.youtube.com/watch?v=K1mVAmaxiQc">Ecce Quomodo</a>), à ne pas confondre avec son fils encore moins connu, Johann Georg Reutter (1708-1772) (<a href="http://www.youtube.com/watch?v=kmEmQ0GNVus">Servizio di Tavola</a>). </p>
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/fux.jpg" alt="Johann Fux"/>
+                                <figcaption>Johann Fux</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <p>Johann Fux (1660-1741) fut  un pédagogue apprécié dont le traité, Gradus ad Parnassum, a été consulté par des générations de musiciens. Son oeuvre composée, beaucoup trop négligée, recèle  des trésors dans les styles les plus variés : <a href="http://www.youtube.com/watch?v=pnaFWaE1X0o">Sonate d'église a tre</a>,   <a href="https://www.youtube.com/watch?v=fU1_Bs2yovk">Sinfonia a 4</a>, <a href="https://www.youtube.com/watch?v=SWZY6wWMAWU">Ouverture en ré</a>, évoquant Telemann dans ses passages exotiques, ou  <a href="http://www.youtube.com/watch?v=sAy-5j3pcfM">Te Deum</a>. Un beau CD propose un  échantillonnage de son oeuvre, en particulier  l'étonnant Concerto <a href="https://www.youtube.com/watch?v=N6wyf2PRH2Q">Le dolcezze e l'amerezze della notte</a>. </p>
+                    <p>Gunar Letzbor à la tête de son ensemble Ars Antiqua Austria a enregistré quelques belles Sonates d'église de  Benedikt Anton Aufschnaiter
+                    (1665-1742) (<a href="http://www.youtube.com/watch?v=vO4KjtDBI-o">St Johannis</a>, <a href="http://www.youtube.com/watch?v=p_UF1OjWsWI">St Hieronymi</a>). Une génération plus tard, Gregor Joseph Werner (1693-1766) écrit de la bonne musique, fonctionnelle   (<a href="http://www.youtube.com/watch?v=NQWHEmGrZ7s">Calendrier instrumental</a>, composé de 12 Suites pour orchestre).</p>
+                  </div>
+
+                  <div id="periodePreClassique">
+                    <h4>La période (pré)classique</h4>
   
-  <p>L’Autriche des Habsbourg-Lorraine a un temps rêvé d'unifier sous sa bannière  les territoires germaniques morcelés. Le Printemps des Peuples (1848) (Hé non les printemps politiques ne datent pas d'hier) allait en décider autrement, suite à la réaffirmation émergente, en Prusse, des exigences  de la maison rivale de Hohenzollern. L'Autriche majoritairement catholique fut défaite à la bataille de Sadowa (1866) et dut renoncer  à son idée d'une Germanie unifiée : elle se (re)tourna dès lors vers l'Est, singulièrement la Hongrie, avec laquelle est coexista  au sein d'un véritable Empire (1867-1918).  Seules les ambitions d'Hitler  réunifièrent temporairement l'Allemagne et l'Autriche mais ce Reich qui devait durer 1000 ans ne survécut pas aux années de  guerre 1939-45. </p>
-  
-  <p>L'histoire musicale de l'Autriche est indissociable de son ouverture permanente vers l'Europe centrale, si proche de sa capitale. Carrefour de l'Europe, Vienne a connu  les invasions ottomanes,  françaises et prussienne.  En musique, elle a également expérimenté les influences magyares et bohémiennes et ce sont ces métissages qui ont forgé l'esprit cosmopolite que l'on ressent au détour d'une sérénade mozartienne, d'un trio  Schubertien, d'une valse de  Strauss, d'une opérette de  Lehar ou d'un adagio de  Mahler.  </p>
-  <p>Car en musique, l'Autriche c'est Vienne, même Salzbourg ne peut objecter à cela.  Cela est tellement vrai qu'on parle des Ecoles de Vienne pour résumer les temps forts de la vie musicale de ce pays, si forts qu'ils ont sérieusement éclipsé  ce qui se composait en Allemagne (et ailleurs) à ces époques.  Sauf exceptions, les membres de ces écoles successives sont suffisamment connus pour que nous ne nous y attardions pas outre mesure.  </p>
-  
-  <p><i>Première Ecole de Vienne (1750-1828).</i></p>
-  
-  <div><img src="../images/autriche/haydn.jpg" alt="" /><div class="legende">Joseph Haydn</div></div><div><img src="../images/autriche/mozart.jpg" alt="" /><div class="legende">Wolfgang  Mozart</div></div><div><img src="../images/autriche/beethoven.jpg" alt="" /><div class="legende">Ludwig van Beethoven</div></div> 
-  <p>La Vienne musicale a connu sa première époque glorieuse sous le règne de  Joseph Haydn (1732-1809), le musicien le plus considérable de son  temps.  Même s'il a longuement résidé à Estherazy, afin d'honorer son contrat princier, c'est bien à Vienne que son influence s'est exercée.  Mozart (1756-1791) n'a quitté Salzbourg pour Vienne que relativement tardivement mais ce furent ses années les plus inspirées. Quant à Beethoven (1770-1827), tout allemand qu'il fut, c'est bel et bien  Vienne qui l'a nourri, se mobilisant chaque fois que le musicien, agacé par un dilettantisme récurrent (en particulier au moment de l'euphorique Congrès de  1815), manifestait l'intention de s'exiler à Kassel auprès de Jérôme Bonaparte, ou à Londres, en réponse à l'invitation de Johann Peter Salomon.  </p>
-  <div><img src="../images/autriche/schubert.jpg" alt="" /><div class="legende">Franz Schubert</div></div> 
- <p>Bien que n'appartenant pas stricto sensu à cette école, il est impossible d'omettre, à ce stade, la personnalité de Franz Schubert (1797-1828), encore plus météorique que celle de Mozart. Inutile de présenter ce merveilleux musicien, un des plus sérieux candidats  au premier accessit au panthéon musical derrière l'inaccessible trinité Bach-Mozart-Beethoven.  </p>
- <p>Le miracle de concentrer autant de génies en si peu d'espace-temps ne pouvait durer  : 1828 (mort de Schubert) a, de fait, sonné, pour trois quarts de siècle, le glas des ambitions viennoises et le flambeau est retourné en Allemagne.</p>
-  
-  <div class="grandelignevide"></div>
-  <p><i>Deuxième Ecole de Vienne (1922-1945).</i>  </p>
-  <div><img src="../images/autriche/schonberg.jpg" alt="" /><div class="legende">Arnold Schönberg</div></div><div><img src="../images/autriche/berg.jpg" alt="" /><div class="legende">Alban Berg</div></div><div><img src="../images/autriche/webern.jpg" alt="" /><div class="legende">Anton Webern</div></div>
-  <p>Autant la première école a fait fortune auprès des mélomanes, au point de monopoliser une bonne partie du répertoire des salles de concert, autant la deuxième école n'a pas fait recette.  <a href="../chroniques/craft.html">Arnold Schönberg</a>, son mentor,  était pleinement conscient du déclin de la musique germanique face aux progrès des musiques russe et française. Dès avant  la première guerre mondiale, il réfléchissait  au moyen de lui rendre son avance.  Etrangement, il n'envisageait pas tant s'appuyer sur un renouveau de l'inspiration que sur une révolution formelle destinée à bousculer les repères tonals auxquels  le monde musical était habitué.  La série de 12 sons, empruntés à la gamme chromatique, était née, magnifiée par le génie de ce  musicien essentiel.  Son école a compté deux élèves aussi importants que différents : 
-  Alban Berg (1885-1935) a essayé de préserver le côté lyrique de la série conçue comme un hyperthème tandis qu'Anton Webern (1883-1945) en a étudié les jeux arithmétiques et combinatoires.</p>
+                    <p>Quelques musiciens ont annoncé la première école de Vienne, avec des bonheurs divers, allant de la franche banalité à l'originalité. Ainsi, les symphonies de Ignaz Holzbauer (1711-1783) (<a href="https://www.youtube.com/watch?v=rnxRrJMDaD0">Symphonies</a>, opus 2 & 3), Georg Christoph Wagenseil (1715-1777) (<a href="http://www.youtube.com/watch?v=BJFu1Z_o-9k">Sinfonia</a> en ré majeur) et Leopold Mozart (1719-1787) (<a href="https://www.youtube.com/watch?v=8jhliylSE0U">7 Symphonies</a>) paraissent anodines à côté de celles de  Matthias Georg Monn (1717-1750) (<a href="http://www.youtube.com/watch?v=Oc0ShE0_vT4">Symphonie</a> en sol) ou de Anton Cajetan Adlgasser (1729-1777) (<a href="http://www.youtube.com/watch?v=SvG51ecy3JU">Symphonie</a>  en si bémol majeur).  Les oeuvres lyriques de Florian Leopold Gassmann (1729-1774) valent un petit détour (<a href="http://www.youtube.com/watch?v=d2pPq5uzeh8">L'Opera seria</a>, c'est son titre (!),  ici dans une mise en scène astucieuse mais je ne suis pas certain que tous les protagonistes aient compris la synchronisation qu'on attendait d'eux).</p>
+                    <p>Les mêmes constatations valent encore pour la génération suivante, celle qui a entouré Haydn et  Mozart.  Le lecteur pressé peut ne pas s'attarder sur les oeuvres de  Leopold Hoffman (1738-1793) (<a href="https://www.youtube.com/watch?v=xPks2z1kky8">Concerto</a> pour violon), Emanuel Aloys Förster (1748-1823) (<a href="http://www.youtube.com/watch?v=Zx4DozTp_os">Quintette</a> à cordes, opus 19), Johann Baptist Schenk (1753-1836) (<a href="http://www.youtube.com/watch?v=kJjHAsxgvNw">Scherzi Musicali</a> opus 6), Franz Anton Hoffmeister (1754-1812) (<a href="http://www.youtube.com/watch?v=DEKB56q9SPY">Concerto</a> pour piano, opus 24), Ignaz Pleyel (1757-1831) (<a href="https://www.youtube.com/watch?v=k30v5RYuvck">Symphonie</a> opus 66), Anton Eberl (1765-1807) (<a href="http://www.youtube.com/watch?v=nkjmqkB6x0o">Symphonie</a> opus 33) ou Franz Xaver Süssmayr (1766-1803) (Celui qui s'est finalement collé à l'achèvement du Requiem de Mozart) dont l'exotique <a href="http://www.youtube.com/watch?v=DgZtfdgUoZs">Sinfonia Turchesca</a> est servie par le dynamisme débridé de l'ensemble Sarband. </p>
+                    <p>Ne négligez pas, par contre, les oeuvres de Franz Joseph Aumann (1728-1797) (<a href="http://www.youtube.com/watch?v=6zrlJwd2fYg">Requiem</a>), Johann Georg Albrechtsberger (1736-1809) (<a href="http://www.youtube.com/watch?v=vB2Fm2KfafI">Prélude &amp; Fugue</a> en sol mineur), Michael Haydn (1737-1806) (Là c'est toute l'oeuvre qu'il faudrait citer tant l'artiste fut considérable : immense <a href="https://www.youtube.com/watch?v=16xMeKde1cY">Requiem</a> dont Mozart se souviendra c'est le moins qu'on puisse dire (!) et ... 41 Symphonies toutes enregistrées chez CPO !), Carl Ditters von Dittersdorf (1739-1799) (Remarquables (15) symphonies d'après les métamorphoses d'Ovide, <a href="https://www.youtube.com/watch?v=6JyKp3aAGqE">Symphonie n°4</a>), Maximilian Stadler (1748-1833) (dit l'Abbé Stadler, <a href="http://www.youtube.com/watch?v=SGOPWTHodIg">Requiem</a>, à découvrir) et l'excellent Joseph Leopold Eybler (1765-1846)  (<a href="http://www.youtube.com/watch?v=UOV6-WSzIfY">Symphonie n°2</a>, <a href="https://www.youtube.com/watch?v=S5tG69nE80Y">Die Vier Letzte Dinge</a>). Mentionnons encore Franz Joseph Clement (1780-1842), l'un des premiers violonistes-virtuoses-compositeurs, plutôt à l'aise dans ce <a href="http://www.youtube.com/watch?v=T_efpkaV3Rc">Concertino brillante</a>.</p>
+                  </div>
 
-<div><img src="../images/autriche/apostel.jpg" alt="" /><div class="legende">Hans Erich Apostel</div></div>  
-  <p>Parmi les élèves  tardifs de Schönberg, je place sans hésitation au premier rang, Hans Erich Apostel (1901-1972). Son oeuvre, étonnamment lyrique,  mérite mille fois mieux que le silence dans lequel elle semble murée (Très bel Adagio, opus 11 (<a href="http://www.youtube.com/watch?v=r18f-tunMdo">Part 1</a>, <a href="http://www.youtube.com/watch?v=jyyZhPxF3D0">Part 2</a>), <a href="http://www.youtube.com/watch?v=3_mb91VADgc">Epitaph</a>, opus 43,  Quatuors <a href="https://www.youtube.com/watch?v=mWqaWl6Ek2g">opus 7</a> &amp; <a href="http://www.youtube.com/watch?v=fAA0r3cxAKA">opus 27</a> et enfin <a href="https://www.youtube.com/watch?v=NqSNaBzUvaU">Kubiniana</a>, 10 pièces pour piano d'après des toiles d'Alfred Kubin).</p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  
-  <p><i>Troisième Ecole de Vienne (Les années 1900).</i></p>
-  <div><img src="../images/autriche/mahler.jpg" alt="" /><div class="legende">Gustav Mahler</div></div>
-  <p>Si l'on parle d'une deuxième école, serait-ce qu'il en existe une troisième ?   D'aucuns n'hésitent pas, en effet, à franchir ce pas en regroupant sous cette appellation quelques musiciens postromantiques qui eurent en commun d'incarner la fin d'une (belle) époque.  Gustav Mahler (1860-1911), sorte d'alter ego musical du peintre, Gustav Klimt (1862-1918), est le plus justement célèbre même si, en France, il n'a été  découvert que tardivement. Mahler est surtout connu pour ses 10 Symphonies (La 10<sup>ème</sup> inachevée mais complétée ultérieurement par Derry Cooke), mais vous seriez impardonnable de ne pas (ré)écouter ses cycles de mélodies avec orchestre, même ceux d'extrême jeunesse (<a href="http://www.youtube.com/watch?v=DaXuGHLthR4">Das Klagende Lied</a>).</p>
-  <p></p>
-  <p></p>
-  <p>Alexander von Zemlinsky (1871-1942), <a href="../chroniques/schmidt.html">Franz Schmidt</a> (1874-1939) et <a href="../chroniques/germains.html">Franz Schreker</a> (1878-1934) dont les noms sont davantage connus que les oeuvres sont aussi là pour témoigner que Vienne, dans les années 1900, était un bouillon de culture artistique.</p>
-  
-  <div><img src="../images/autriche/zemlinsky.jpg" alt="" /><div class="legende">Alexander von Zemlinsky</div></div><div><img src="../images/autriche/schmidt.jpg" alt="" /><div class="legende">Franz Schmidt</div></div> 
-<div><img src="../images/autriche/schreker.jpg" alt="" /><div class="legende">Franz Schreker</div></div>
-  
-   
+                  <div id="romantisme">
+                    <h4>Le romantisme</h4>
+ 
+                    <p>Le romantisme naissant a confronté tous les musiciens autrichiens au modèle Beethovenien. Deux artistes l'ayant précisément cotoyé, dans des circonstances assez différentes, ont su tirer leur épingle du jeu :</p>
 
-  
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p>Faudrait-il en conclure  qu'en dehors de ces trois périodes fastes, la musique autrichienne n'a guère brillé ?  Certainement pas et les paragraphes qui suivent en apportent la preuve convaincante.</p>
-  
-  <p>Il est vrai que le démarrage fut lent et laborieux : ni le Moyen-Age ni même la Renaissance n'ont vu l'éclosion d'un art savant affranchi de la tradition populaire.  Même le répertoire pour orgue, l'instrument  le plus en vue dans le cadre des offices religieux, n'a atteint un niveau transcendant. Le <a href="http://www.youtube.com/watch?v=jtWXt6gDZzs">Salve Regina</a> de Paul Hofhaymer (1459-1537) est représentatif du style en vigueur.</p>
-  
-  <p></p>
-<p><i>La période baroque.</i></p>
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/woelfl.jpg" alt="Joseph Woelfl"/>
+                                <figcaption>Joseph Woelfl</figcaption>
+                            </figure>
+                        </div>
+                    </div>
 
-<p>La musique autrichienne n'a connu son véritable essor qu'à l'époque baroque suite au développement des instruments à cordes en provenance de Bavière et de Bohême, deux régions voisines.  Nul n'incarne mieux la virtuosité violonistique naissante que Johann Heinrich Schmelzer (1623-1680) (<a href="http://www.youtube.com/watch?v=GGAEpnUSUEg">Chaconne</a>) dont l'influence sur le tchèque Franz Ignaz von Biber (1644-1704) a été déterminante.
-   On s'attardera moins sur l'oeuvre de Ferdinand Tobias Richter (1651-1711) (belle  <a href="http://www.youtube.com/watch?v=WZXMjelM7aY">Partita I</a> en ré mineur) et sur celle de  Georg Reutter (1656-1738) (<a href="http://www.youtube.com/watch?v=K1mVAmaxiQc">Ecce Quomodo</a>), à ne pas confondre avec son fils encore moins connu, Johann Georg Reutter (1708-1772) (<a href="http://www.youtube.com/watch?v=kmEmQ0GNVus">Servizio di Tavola</a>). </p>
-<div><img src="../images/autriche/fux.jpg" alt="" /></div>
-<p>Johann Fux (1660-1741) fut  un pédagogue apprécié dont le traité, Gradus ad Parnassum, a été consulté par des générations de musiciens. Son oeuvre composée, beaucoup trop négligée, recèle  des trésors dans les styles les plus variés : <a href="http://www.youtube.com/watch?v=pnaFWaE1X0o">Sonate d'église a tre</a>,   <a href="https://www.youtube.com/watch?v=fU1_Bs2yovk">Sinfonia a 4</a>, <a href="https://www.youtube.com/watch?v=SWZY6wWMAWU">Ouverture en ré</a>, évoquant Telemann dans ses passages exotiques, ou  <a href="http://www.youtube.com/watch?v=sAy-5j3pcfM">Te Deum</a>. Un beau CD propose un  échantillonnage de son oeuvre, en particulier  l'étonnant Concerto <a href="https://www.youtube.com/watch?v=N6wyf2PRH2Q">Le dolcezze e l'amerezze della notte</a>. </p>
-<p>Gunar Letzbor à la tête de son ensemble Ars Antiqua Austria a enregistré quelques belles Sonates d'église de  Benedikt Anton Aufschnaiter
-  (1665-1742) (<a href="http://www.youtube.com/watch?v=vO4KjtDBI-o">St Johannis</a>, <a href="http://www.youtube.com/watch?v=p_UF1OjWsWI">St Hieronymi</a>). Une génération plus tard, Gregor Joseph Werner (1693-1766) écrit de la bonne musique, fonctionnelle   (<a href="http://www.youtube.com/watch?v=NQWHEmGrZ7s">Calendrier instrumental</a>, composé de 12 Suites pour orchestre).</p>
-<p></p>
-<p><i>La période (pré)classique.</i></p>
-<p> Quelques musiciens ont annoncé la première école de Vienne, avec des bonheurs divers, allant de la franche banalité à l'originalité. Ainsi, les symphonies de Ignaz Holzbauer (1711-1783) (<a href="https://www.youtube.com/watch?v=rnxRrJMDaD0">Symphonies</a>, opus 2 & 3), Georg Christoph Wagenseil (1715-1777) (<a href="http://www.youtube.com/watch?v=BJFu1Z_o-9k">Sinfonia</a> en ré majeur) et Leopold Mozart (1719-1787) (<a href="https://www.youtube.com/watch?v=8jhliylSE0U">7 Symphonies</a>) paraissent anodines à côté de celles de  Matthias Georg Monn (1717-1750) (<a href="http://www.youtube.com/watch?v=Oc0ShE0_vT4">Symphonie</a> en sol) ou de Anton Cajetan Adlgasser (1729-1777) (<a href="http://www.youtube.com/watch?v=SvG51ecy3JU">Symphonie</a>  en si bémol majeur).  Les oeuvres lyriques de Florian Leopold Gassmann (1729-1774) valent un petit détour (<a href="http://www.youtube.com/watch?v=d2pPq5uzeh8">L'Opera seria</a>, c'est son titre (!),  ici dans une mise en scène astucieuse mais je ne suis pas certain que tous les protagonistes aient compris la synchronisation qu'on attendait d'eux).</p>
-<p>Les mêmes constatations valent encore pour la génération suivante, celle qui a entouré Haydn et  Mozart.  Le lecteur pressé peut ne pas s'attarder sur les oeuvres de  Leopold Hoffman (1738-1793) (<a href="https://www.youtube.com/watch?v=xPks2z1kky8">Concerto</a> pour violon),   
-  
-  Emanuel Aloys Förster (1748-1823) (<a href="http://www.youtube.com/watch?v=Zx4DozTp_os">Quintette</a> à cordes, opus 19), Johann Baptist Schenk
-  (1753-1836) (<a href="http://www.youtube.com/watch?v=kJjHAsxgvNw">Scherzi Musicali</a> opus 6), Franz Anton Hoffmeister (1754-1812) (<a href="http://www.youtube.com/watch?v=DEKB56q9SPY">Concerto</a> pour piano, opus 24),
-  Ignaz Pleyel
-  (1757-1831) (<a href="https://www.youtube.com/watch?v=k30v5RYuvck">Symphonie</a> opus 66), Anton Eberl (1765-1807) (<a href="http://www.youtube.com/watch?v=nkjmqkB6x0o">Symphonie</a> opus 33) ou Franz Xaver Süssmayr (1766-1803) (Celui qui s'est finalement collé à l'achèvement du Requiem de Mozart) dont l'exotique <a href="http://www.youtube.com/watch?v=DgZtfdgUoZs">Sinfonia Turchesca</a> est servie par le dynamisme débridé de l'ensemble Sarband. </p>
-<p>Ne négligez pas, par contre, les oeuvres de Franz Joseph Aumann (1728-1797) (<a href="http://www.youtube.com/watch?v=6zrlJwd2fYg">Requiem</a>), Johann Georg Albrechtsberger (1736-1809) (<a href="http://www.youtube.com/watch?v=vB2Fm2KfafI">Prélude &amp; Fugue</a> en sol mineur), 
-  Michael Haydn (1737-1806) (Là c'est toute l'oeuvre qu'il faudrait citer tant l'artiste fut considérable : immense <a href="https://www.youtube.com/watch?v=16xMeKde1cY">Requiem</a> dont Mozart se souviendra c'est le moins qu'on puisse dire (!) et ... 41 Symphonies toutes enregistrées chez CPO !), Carl Ditters von Dittersdorf
-  (1739-1799) (Remarquables (15) symphonies d'après les métamorphoses d'Ovide, <a href="https://www.youtube.com/watch?v=6JyKp3aAGqE">Symphonie n°4</a>), Maximilian Stadler (1748-1833) (dit l'Abbé Stadler, <a href="http://www.youtube.com/watch?v=SGOPWTHodIg">Requiem</a>, à découvrir) et l'excellent Joseph Leopold Eybler (1765-1846)  (<a href="http://www.youtube.com/watch?v=UOV6-WSzIfY">Symphonie n°2</a>, <a href="https://www.youtube.com/watch?v=S5tG69nE80Y">Die Vier Letzte Dinge</a>). Mentionnons encore Franz Joseph Clement (1780-1842), l'un des premiers violonistes-virtuoses-compositeurs, plutôt à l'aise dans ce <a href="http://www.youtube.com/watch?v=T_efpkaV3Rc">Concertino brillante</a>.</p>
-<p></p>
-<p><i>Le romantisme.</i></p>
-<p>Le romantisme naissant a confronté tous les musiciens autrichiens au modèle Beethovenien. Deux artistes l'ayant précisément cotoyé, dans des circonstances assez différentes, ont su tirer leur épingle du jeu :</p>
+                    <p>Dépassant le Maître de 20 cm, Joseph Woelfl (1773-1812) n'a pas hésité à le défier, au piano, dans les salons du Comte Wetzlar (1799). Woelf comptait sans doute sur son empan pour réussir des traits de virtuosité dont Beethoven n'aurait  peut-être pas  été capable mais cela n'a pas suffi pour convaincre l'assemblée, emportée par les dons incomparables de ce dernier dans le domaine de l'improvisation. Peu après cette défaite honorable, Woelfl se mit à voyager, en particulier à Londres où il fut apprécié.  On lui doit des Sonates d'excellente facture (Sonate n°1 <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/autriche/woelfl.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/autriche/woelfl.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub>- Surprise ! - et <a href="http://www.youtube.com/watch?v=5KTY2oYwHf0">Sonate</a> opus 25), 6 Concertos pour piano (<a href="https://www.youtube.com/watch?v=Qvf7I9RxWvs">n°5</a>), 5 Symphonies et même 7 Opéras).   Certes toute l'oeuvre de Woelfl  est  imprégnée de celle de Beethoven, au point de lui emprunter bien des tournures de phrases, mais ne boudons  pas notre plaisir, le modèle aurait pu être moins bon. Espérons que de courageux éditeurs  exploreront davantage cette oeuvre de qualité. </p>
 
-<div><img src="../images/autriche/woelfl.jpg" alt="" /><div class="legende">Joseph Woelfl</div></div>
-<li>Dépassant le Maître de 20 cm, Joseph Woelfl (1773-1812) n'a pas hésité à le défier, au piano, dans les salons du Comte Wetzlar (1799). Woelf comptait sans doute sur son empan pour réussir des traits de virtuosité dont Beethoven n'aurait  peut-être pas  été capable mais cela n'a pas suffi pour convaincre l'assemblée, emportée par les dons incomparables de ce dernier dans le domaine de l'improvisation. Peu après cette défaite honorable, Woelfl se mit à voyager, en particulier à Londres où il fut apprécié.  On lui doit des Sonates d'excellente facture (Sonate n°1 <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/autriche/woelfl.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/autriche/woelfl.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>- Surprise ! - et <a href="http://www.youtube.com/watch?v=5KTY2oYwHf0">Sonate</a> opus 25), 6 Concertos pour piano (<a href="https://www.youtube.com/watch?v=Qvf7I9RxWvs">n°5</a>), 5 Symphonies et même 7 Opéras).   Certes toute l'oeuvre de Woelfl  est  imprégnée de celle de Beethoven, au point de lui emprunter bien des tournures de phrases, mais ne boudons  pas notre plaisir, le modèle aurait pu être moins bon. Espérons que de courageux éditeurs  exploreront davantage cette oeuvre de qualité. </li>
-<p></p>
-<div><img src="../images/autriche/czerny.jpg" alt="" /><div class="legende">Carl Czerny</div></div>
-<li><a href="../chroniques/ries.html">Carl Czerny</a> (1791-1857) est un peu à mettre sur le même pied que Woelfl.  Cet élève de Beethoven a lui-même enseigné, à Franz Liszt et même à ... la Reine Victoria, avec un succès moindre il est vrai. Il a également beaucoup écrit et pas seulement des livres d'exercices techniques pour  pianistes débutants ou confirmés : on a dénombré, au total, 861 opus dont  24 messes, 4 requiems, environ 300 graduels et offertoires, 6 symphonies (<a href="http://www.youtube.com/watch?v=waxn4Dp0lwU">n°5</a>), des concertos (<a href="http://www.youtube.com/watch?v=dslDo3Bi7qY">pour piano à 4 mains</a>, reproduisant sans états d'âme les allures du jeune Beethoven !), 11 Sonates pour piano (<a href="https://www.youtube.com/watch?v=Xe33PB0guPw">n°2</a>, <a href="https://www.youtube.com/watch?v=6GSV1neype4">n°9</a>, <a href="https://www.youtube.com/watch?v=xwN6DJ-Rkdo">n°10</a>), des tas de Variations (<a href="http://www.youtube.com/watch?v=tnCKqjJ2AkM">sur un thème de Haydn</a>), un Nonet, des trios à clavier (<a href="http://www.youtube.com/watch?v=z_Lj6TYrCnU">opus 289</a>) et une vingtaine de quatuors à cordes. Czerny fait partie des compositeurs les plus sous-cotés en bourse, s'il vous reste quelques deniers à investir n'hésitez pas !</li>
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/czerny.jpg" alt="Carl Czerny"/>
+                                <figcaption>Carl Czerny</figcaption>
+                            </figure>
+                        </div>
+                    </div>
 
-<p>Les autres    furent davantage des "suiveurs", apportant peu à l'évolution du langage musical quoique produisant, à l'occasion, quelques  oeuvres réussies, tels Sigismund von Neukomm (1778-1858) (<a href="http://www.youtube.com/watch?v=TrzI0OQSfuk">Grande Symphonie héroïque</a>), Franz Xaver  Mozart (1791-1844) (<a href="http://www.youtube.com/watch?v=-RKpaPKulK4">Concerto n°1</a> pour piano, opus 14), le fils qui n'a pas connu son père, ou Ferdinand Schubert (1794-1859), le frère de Franz, très à l'aise dans ce <a href="http://www.youtube.com/watch?v=VtUSS1iQ3Yw">Requiem</a>.</p>   
-  
-<p>La génération suivante fut  plus entreprenante, proposant une pléiade de talents variés :</p>
+                    <p><a href="../chroniques/ries.html">Carl Czerny</a> (1791-1857) est un peu à mettre sur le même pied que Woelfl.  Cet élève de Beethoven a lui-même enseigné, à Franz Liszt et même à ... la Reine Victoria, avec un succès moindre il est vrai. Il a également beaucoup écrit et pas seulement des livres d'exercices techniques pour  pianistes débutants ou confirmés : on a dénombré, au total, 861 opus dont  24 messes, 4 requiems, environ 300 graduels et offertoires, 6 symphonies (<a href="http://www.youtube.com/watch?v=waxn4Dp0lwU">n°5</a>), des concertos (<a href="http://www.youtube.com/watch?v=dslDo3Bi7qY">pour piano à 4 mains</a>, reproduisant sans états d'âme les allures du jeune Beethoven !), 11 Sonates pour piano (<a href="https://www.youtube.com/watch?v=Xe33PB0guPw">n°2</a>, <a href="https://www.youtube.com/watch?v=6GSV1neype4">n°9</a>, <a href="https://www.youtube.com/watch?v=xwN6DJ-Rkdo">n°10</a>), des tas de Variations (<a href="http://www.youtube.com/watch?v=tnCKqjJ2AkM">sur un thème de Haydn</a>), un Nonet, des trios à clavier (<a href="http://www.youtube.com/watch?v=z_Lj6TYrCnU">opus 289</a>) et une vingtaine de quatuors à cordes. Czerny fait partie des compositeurs les plus sous-cotés en bourse, s'il vous reste quelques deniers à investir n'hésitez pas !</p>
+                    <p>Les autres furent davantage des "suiveurs", apportant peu à l'évolution du langage musical quoique produisant, à l'occasion, quelques  oeuvres réussies, tels Sigismund von Neukomm (1778-1858) (<a href="http://www.youtube.com/watch?v=TrzI0OQSfuk">Grande Symphonie héroïque</a>), Franz Xaver  Mozart (1791-1844) (<a href="http://www.youtube.com/watch?v=-RKpaPKulK4">Concerto n°1</a> pour piano, opus 14), le fils qui n'a pas connu son père, ou Ferdinand Schubert (1794-1859), le frère de Franz, très à l'aise dans ce <a href="http://www.youtube.com/watch?v=VtUSS1iQ3Yw">Requiem</a>.</p>   
+                    <p>La génération suivante fut  plus entreprenante, proposant une pléiade de talents variés :</p>
 
-<li>Sigismond Thalberg (1812-1871) fut l'un des premiers à lancer la mode du pianiste-compositeur itinérant (<a href="http://www.youtube.com/watch?v=tNBjQG6lDtU">Concerto n°1</a> pour piano, opus 5).</li>
-<li>Johann Rufinatscha (1812-1893) est beaucoup moins connu et cependant ses symphonies révèlent leur valeur à mesure qu'on les redécouvre (<a href="http://www.youtube.com/watch?v=L-WlqLI5TGA">n°4</a> et <a href="http://www.youtube.com/watch?v=QFAW7sE5dVU">n°6</a>, numérotation contestée).  
-  
-<p>- On ne présente plus Anton Bruckner (1824-1896) dont les 11 symphonies, numérotées de -1 à +9, ont éclipsé le reste de la production, peu abondante mais de valeur (Superbe <a href="http://www.youtube.com/watch?v=hSN3vvvp4YI">Requiem</a>, une réponse éloquente à tous ceux qui se sont demandés ce que Bruckner avait bien pu faire des 40 premières années de son existence, célèbre Te Deum, Quatuor et surtout fameux <a href="http://www.youtube.com/watch?v=OVAdISPTQ9s">Quintette</a> à cordes, à connaître sinon à découvrir d'urgence). Pour rappel les symphonies <a href="http://www.youtube.com/watch?v=bF1WPKMSh0k">-1</a> (ou 00) et <a href="http://www.youtube.com/watch?v=BWwnQ09kl7M&list=PL97B55244ABC21E7D">0</a> sont des oeuvres de relative jeunesse (il avait tout de même dépassé la quarantaine !), non indispensables mais fort bien accueillies par les brucknériens compulsifs.</li>
-<li>Heinrich von Herzogenberg (1843-1900) (<a href="http://www.youtube.com/watch?v=XZhpONGHS6k">Symphonie n°2</a>), Robert Fuchs (1847-1927) (<a href="http://www.youtube.com/watch?v=Two95_JALos">Symphonie n°3</a>) et Wilhelm Kienzl (1857-1941) (<a href="https://www.youtube.com/watch?v=qlnJksyHZf0">Der Evangelimann</a>) vous intéresseront peut-être, surtout le premier nommé.</li>
+                    <ul class="miniListCorps">
+                      <li>Sigismond Thalberg (1812-1871) fut l'un des premiers à lancer la mode du pianiste-compositeur itinérant (<a href="http://www.youtube.com/watch?v=tNBjQG6lDtU">Concerto n°1</a> pour piano, opus 5).</li>
+                      <li>Johann Rufinatscha (1812-1893) est beaucoup moins connu et cependant ses symphonies révèlent leur valeur à mesure qu'on les redécouvre (<a href="http://www.youtube.com/watch?v=L-WlqLI5TGA">n°4</a> et <a href="http://www.youtube.com/watch?v=QFAW7sE5dVU">n°6</a>, numérotation contestée).  
+                      <li>On ne présente plus Anton Bruckner (1824-1896) dont les 11 symphonies, numérotées de -1 à +9, ont éclipsé le reste de la production, peu abondante mais de valeur (Superbe <a href="http://www.youtube.com/watch?v=hSN3vvvp4YI">Requiem</a>, une réponse éloquente à tous ceux qui se sont demandés ce que Bruckner avait bien pu faire des 40 premières années de son existence, célèbre Te Deum, Quatuor et surtout fameux <a href="http://www.youtube.com/watch?v=OVAdISPTQ9s">Quintette</a> à cordes, à connaître sinon à découvrir d'urgence). Pour rappel les symphonies <a href="http://www.youtube.com/watch?v=bF1WPKMSh0k">-1</a> (ou 00) et <a href="http://www.youtube.com/watch?v=BWwnQ09kl7M&list=PL97B55244ABC21E7D">0</a> sont des oeuvres de relative jeunesse (il avait tout de même dépassé la quarantaine !), non indispensables mais fort bien accueillies par les brucknériens compulsifs.</li>
+                      <li>Heinrich von Herzogenberg (1843-1900) (<a href="http://www.youtube.com/watch?v=XZhpONGHS6k">Symphonie n°2</a>), Robert Fuchs (1847-1927) (<a href="http://www.youtube.com/watch?v=Two95_JALos">Symphonie n°3</a>) et Wilhelm Kienzl (1857-1941) (<a href="https://www.youtube.com/watch?v=qlnJksyHZf0">Der Evangelimann</a>) vous intéresseront peut-être, surtout le premier nommé.</li>
+                      <li>Le visionnaire Hans Rott (1858-1884) a été évoqué par ailleurs dans une chronique réservée aux talents météoriques.  Rappelons que sa <a href="http://www.youtube.com/watch?v=SxjLWC1aTh8">Symphonie</a> en mi majeur annonce on ne peut plus clairement celles de Mahler.</li>
+                      <li>Hugo Wolf (1860-1903) fut un des musiciens les plus fulgurants de son temps.  Doté d'un équilibre psychologique fragile, il n'a pas disposé du temps suffisant pour murir son talent, sauf dans le domaine du lied avec piano, où il fut le seul rival possible de Schubert (Une <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hugo-Wolf-1860-1903-Lieder-The-Anniversary-Edition/hnum/1111207">édition EMI</a> comportant 8 CD vous est proposée pour 22 euros, une offre à ne pas négliger !) ou avec orchestre (<a href="https://www.youtube.com/watch?v=-bI0iQG14vU">Der Rattenfänger</a>). Son opéra Der Corregidor (<a href="http://www.youtube.com/watch?v=jv29RwrrxHo">Prélude</a>) est un chef-d'oeuvre injustement négligé et, au vu des esquisses disponibles, on regrette qu'il n'ai jamais complété Manuel Venegas.</li>
+                      <li>Emil Nikolaus von Reznicek (1860-1945) (<a href="http://www.youtube.com/watch?v=WRAJS3muXA4">Symphonie n°4</a>), Ludwig Thuille (1861-1907) (Beau <a href="http://www.youtube.com/watch?v=Gf6mfcYpQW0">Concerto</a> pour piano, on ne peut plus romantique), Felix Weingartner (1863-1942) (Symphonies <a href="http://www.youtube.com/watch?v=c-OsQcPcITY">n°1</a>, <a href="http://www.youtube.com/watch?v=v1x8hfygj3g">n°3</a>, <a href="http://www.youtube.com/watch?v=N0speEpoKbY">n°5</a> et <a href="http://www.youtube.com/watch?v=u22csgYDJuo">n°7</a>) et Siegmund von Haussegger (1872-1948) (<a href="http://www.youtube.com/watch?v=Vm716VRpX5E">Symphonie n°2, "Nature"</a>) ont écrit des oeuvres  à consommer sans modération, toutes enregistrées chez CPO !  Alma Schindler-|Mahler (1879-1964) n'a pu accomplir la noble tâche que son talent promettait (<a href="http://www.youtube.com/watch?v=mlVM8lYSAno">Die stille Stadt</a>), pas facile d'affirmer sa personnalité quand on passe pour être la plus belle femme de Vienne et qu'on est l'épouse du meilleur compositeur du moment !</li>
+                    </ul>
 
-<li>Le visionnaire Hans Rott (1858-1884) a été évoqué par ailleurs dans une chronique réservée aux talents météoriques.  Rappelons que sa <a href="http://www.youtube.com/watch?v=SxjLWC1aTh8">Symphonie</a> en mi majeur annonce on ne peut plus clairement celles de Mahler.</li>
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/bruckner.jpg" alt="Anton Bruckner" />
+                              <figcaption>Anton Bruckner</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/vonrez.jpg" alt="Emil von Reznicek" />
+                              <figcaption>Emil von Reznicek</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/autriche/wolff.jpg" alt="Hugo Wolff" />
+                              <figcaption>Hugo Wolff</figcaption>
+                          </figure>
+                      </div>
+                    </div>
 
-<li>Hugo Wolf (1860-1903) fut un des musiciens les plus fulgurants de son temps.  Doté d'un équilibre psychologique fragile, il n'a pas disposé du temps suffisant pour murir son talent, sauf dans le domaine du lied avec piano, où il fut le seul rival possible de Schubert (Une <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hugo-Wolf-1860-1903-Lieder-The-Anniversary-Edition/hnum/1111207">édition EMI</a> comportant 8 CD vous est proposée pour 22 euros, une offre à ne pas négliger !) ou avec orchestre (<a href="https://www.youtube.com/watch?v=-bI0iQG14vU">Der Rattenfänger</a>). Son opéra Der Corregidor (<a href="http://www.youtube.com/watch?v=jv29RwrrxHo">Prélude</a>) est un chef-d'oeuvre injustement négligé et, au vu des esquisses disponibles, on regrette qu'il n'ai jamais complété Manuel Venegas.</li>
+                    <p>Vienne  n'aurait pas été la même sans ses viennoiseries, opérettes (Carl Zeller (1842-1898) : <a href="http://www.youtube.com/watch?v=MZYDrWl1RKo">Der Obersteiger</a> à qui l'incomparable Fritz Wunderlich  donne ici ses lettres de noblesse), valses (Joseph Lanner (1801-1843) : <a href="http://www.youtube.com/watch?v=noCSvKiYuoo">Hoffnungsstrahlen</a>), galops (Johann Strauss II (1825-1899) : <a href="https://www.youtube.com/watch?v=lc4CNRbq-8c">banditen</a>), danses tziganes (Joseph Hellmesberger (1855-1907) : <a href="http://www.youtube.com/watch?v=bFoq2tvA2F4">Zigeunertanz aus Die Perle von Iberien </a>) et je vous fais grâce des autres Strauss, Josef  (1827-1870), Oscar (1870-1954) et Eduard  (1835-1916). Fritz Kreisler (1875-1962) fut le violoniste-virtuose de son temps, 100 ans après Clément (<a href="http://www.youtube.com/watch?v=lJkrkbidck4">Prélude & Allegro</a>, dans le style de Pugnani, plutôt classe !). </p>
+                  </div>
 
-<li>Emil Nikolaus von Reznicek (1860-1945) (<a href="http://www.youtube.com/watch?v=WRAJS3muXA4">Symphonie n°4</a>), Ludwig Thuille (1861-1907) (Beau <a href="http://www.youtube.com/watch?v=Gf6mfcYpQW0">Concerto</a> pour piano, on ne peut plus romantique), Felix Weingartner (1863-1942) (Symphonies <a href="http://www.youtube.com/watch?v=c-OsQcPcITY">n°1</a>, <a href="http://www.youtube.com/watch?v=v1x8hfygj3g">n°3</a>, <a href="http://www.youtube.com/watch?v=N0speEpoKbY">n°5</a> et <a href="http://www.youtube.com/watch?v=u22csgYDJuo">n°7</a>) et Siegmund von Haussegger (1872-1948) (<a href="http://www.youtube.com/watch?v=Vm716VRpX5E">Symphonie n°2, "Nature"</a>) ont écrit des oeuvres  à consommer sans modération, toutes enregistrées chez CPO !  Alma Schindler-|Mahler (1879-1964) n'a pu accomplir la noble tâche que son talent promettait (<a href="http://www.youtube.com/watch?v=mlVM8lYSAno">Die stille Stadt</a>), pas facile d'affirmer sa personnalité quand on passe pour être la plus belle femme de Vienne et qu'on est l'épouse du meilleur compositeur du moment !</li>
+                  <div id="1ereMoitie20emeSiecle">
+                    <h4>La 1<sup>ère</sup> moitié du 20<sup>ème</sup> siècle</h4>
 
-<div><img src="../images/autriche/bruckner.jpg" alt="" /><div class="legende">Anton Bruckner</div></div><div><img src="../images/autriche/vonrez.jpg" alt="" /><div class="legende">Emil von Reznicek</div></div> 
-<div><img src="../images/autriche/wolff.jpg" alt="" /><div class="legende">Hugo Wolff</div></div>
-  
-   
+                    <p>Les 2<sup>ème</sup> et 3<sup>ème</sup> écoles de Vienne eurent  un effet stimulant sur  la création musicale autrichienne, dans des directions opposées évidemment. Elle dépassa  pour la deuxième fois sa rivale allemande, en net déclin il est vrai.   Dans la première mouvance, on retrouve <a href="../chroniques/hauer.html">Josef Matthias Hauer</a> (1883-1959), le rival malheureux de Schönberg, longuement présenté par ailleurs sur ce site, Hans Erich Apostel (1901-1972) (superbe <a href="https://www.youtube.com/watch?v=r18f-tunMdo">Adagio, opus 11</a>) et <a href="../chroniques/krenek.html">Ernst Krenek</a> (1900-1991) (<a href="https://www.youtube.com/watch?v=IR3YtzxL7Nw">Symphonie n°5</a>), tous musiciens dont le sérialisme personnel fut de très bon aloi.</p>
+                    <p>Le deuxième groupe est nettement plus étoffé, pour le bonheur d'un public autrichien réputé conservateur :  les musiques écrites par Karl Weigl (1882-1949) (<a href="https://www.youtube.com/watch?v=-UaaYYLyaps">Symphonie n°1</a>), Joseph Marx (1882-1964) (<a href="http://www.youtube.com/watch?v=T8vWPzEYh7k">Eine Herbstsymphonie </a>),  Egon Wellesz (1885-1974) (<a href="http://www.youtube.com/watch?v=oLNnBoh_s20">Concerto</a> pour violon) et Ernst Toch (1887-1964) (<a href="http://www.youtube.com/watch?v=3_TpaektNp8">Concerto n°1</a> pour piano) ont malheureusement une fâcheuse tendance à se ressembler. Toch cependant mériterait une chronique séparée. </p>
 
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/autriche/gal.jpg" alt="Hans Gal"/>
+                                <figcaption>Hans Gal</figcaption>
+                            </figure>
+                        </div>
+                    </div>
 
-<p> </p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p>Vienne  n'aurait pas été la même sans ses viennoiseries, opérettes (Carl Zeller
-  
-  (1842-1898) : <a href="http://www.youtube.com/watch?v=MZYDrWl1RKo">Der Obersteiger</a> à qui l'incomparable Fritz Wunderlich  donne ici ses lettres de noblesse), valses (Joseph Lanner (1801-1843) : <a href="http://www.youtube.com/watch?v=noCSvKiYuoo">Hoffnungsstrahlen</a>), galops (Johann Strauss II (1825-1899) : <a href="https://www.youtube.com/watch?v=lc4CNRbq-8c">banditen</a>), danses tziganes (Joseph Hellmesberger (1855-1907) : <a href="http://www.youtube.com/watch?v=bFoq2tvA2F4">Zigeunertanz aus Die Perle von Iberien </a>) et je vous fais grâce des autres Strauss,  
-  Josef  (1827-1870), Oscar (1870-1954) et
-  Eduard  (1835-1916).
-  
-  
-  
-  
-  Fritz Kreisler (1875-1962) fut le violoniste-virtuose de son temps, 100 ans après Clément (<a href="http://www.youtube.com/watch?v=lJkrkbidck4">Prélude & Allegro</a>, dans le style de Pugnani, plutôt classe !). </p>
+                    <p>J'avoue une nette préférence pour les oeuvres écrites par   Heinz Tiessen (1887-1971) (<a href="http://www.youtube.com/watch?v=WaEzyFeT-uU&amp;feature=related">Symphonie n°2</a>, <a href="http://www.youtube.com/watch?v=Y8vAmF-eFyA&amp;feature=relmfu">Hamlet</a> opus 30, <a href="http://www.youtube.com/watch?v=toKwm7fu9_U&amp;feature=relmfu">Vorspiel zu einem Revolutionsdrama</a> opus 33, à ne pas manquer !) et Hans Gal (1890-1987) (<a href="http://www.youtube.com/watch?v=Kxw3vn5ISwc">Concerto</a> pour violoncelle). N'hésitez pas à parcourir le <a href="http://www.jpc.de/s/hans+gal">catalogue</a> des enregistrements de ce dernier, les symphonies, en particulier. Vous n'y trouverez pas  cette Revue-Divertissement (de guerre 40-45, Gal avait rejoint l'Angleterre en 1938 au moment de l'Anschluss) (<a href="http://www.youtube.com/watch?v=Jv6JY7MJ38U">Entrée</a>, <a href="http://www.youtube.com/watch?v=KZSpVgL-vLM">Die Ballade vom Deutschen Refugee</a>, <a href="http://www.youtube.com/watch?v=vdg1O0WS4gc">Der Song vom Doppelbett</a>, <a href="http://www.youtube.com/watch?v=QAFNn28lXWY">Quodlibet</a>), extrêmement bien conduite et chantée : pas de la grande musique et pourtant quelle distinction !</p>
+                    <p> Vous apprécierez sans doute la <a href="http://www.youtube.com/watch?v=0CIjRepsSYk">Symphonie n°3</a> de Marcel Tyberg (1893-1944), même si elle démarre sans vergogne comme celle de Mahler, l'<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Julius-Burger-1897-1995-Orchesterwerke/hnum/7867176">Oeuvre orchestrale</a> de Julius Bürger (1897-1995), celle de Rudolf Wagner-Regeny (1903-1969) (<a href="http://www.youtube.com/watch?v=6sSMt0GETNA">Three orchestral Sets</a>) ou celle outrageusement classique d'Eric Zeisl (1905-1959) (<a href="https://www.youtube.com/watch?v=egfsSCfffR8">Concerto</a>, pour piano). Theodor Berger (1905-1992) fut apprécié par Furtwaengler en personne et vous comprendrez pourquoi en écoutant cette superbe <a href="http://www.youtube.com/watch?v=U4JrfyMVbPs">Symphonie &quot;Homère&quot;</a> ou encore <a href="http://www.youtube.com/watch?v=sQQbgPWsvt0">Malinconia</a> pour cordes. Gottfried von Einem (1918-1996) a produit des oeuvres fortes telles la <a href="http://www.youtube.com/watch?v=NWUXg-fipiA">Wiener Symphonie</a>, opus 49, ou les opéras La Mort de Danton et  <a href="http://www.youtube.com/watch?v=wMSkFiTsINU">Le Procès</a>.  Retenez cependant que le musicien le plus important demeure  <a href="../chroniques/korngold.html">Erich Wolfgang Korngold</a> (1897-1957)  pour lequel je vous renvoie à la chronique dédicacée.</p>
+                  </div>
 
-<p></p>
-<p><i>La 1<sup>ère</sup> moitié du 20<sup>ème</sup> siècle.</i></p>
+                  <div id="2emeMoitie20emeSiecle">
+                    <h4>La 2<sup>ème</sup> moitié du 20<sup>ème</sup> siècle</h4>
 
-<p> Les 2<sup>ème</sup> et 3<sup>ème</sup> écoles de Vienne eurent  un effet stimulant sur  la création musicale autrichienne, dans des directions opposées évidemment. Elle dépassa  pour la deuxième fois sa rivale allemande, en net déclin il est vrai.   Dans la première mouvance, on retrouve <a href="../chroniques/hauer.html">Josef Matthias Hauer</a> (1883-1959), le rival malheureux de Schönberg, longuement présenté par ailleurs sur ce site, Hans Erich Apostel (1901-1972) (superbe <a href="https://www.youtube.com/watch?v=r18f-tunMdo">Adagio, opus 11</a>) et <a href="../chroniques/krenek.html">Ernst Krenek</a> (1900-1991) (<a href="https://www.youtube.com/watch?v=IR3YtzxL7Nw">Symphonie n°5</a>), tous musiciens dont le sérialisme personnel fut de très bon aloi.</p>
+                    <p>Le recul manque pour juger correctement la musique autrichienne   récente. De très belles oeuvres figurent ponctuellement au catalogue de compositeurs réputés difficiles, hélas noyées dans une production souvent tellement ardue  qu'elle en devient inapprivoisable même par les oreilles les mieux intentionnés :</p>
 
-<p>Le deuxième groupe est nettement plus étoffé, pour le bonheur d'un public autrichien réputé conservateur :  les musiques écrites par Karl Weigl (1882-1949) (<a href="https://www.youtube.com/watch?v=-UaaYYLyaps">Symphonie n°1</a>), Joseph Marx (1882-1964) (<a href="http://www.youtube.com/watch?v=T8vWPzEYh7k">Eine Herbstsymphonie </a>),  Egon Wellesz (1885-1974) (<a href="http://www.youtube.com/watch?v=oLNnBoh_s20">Concerto</a> pour violon) et Ernst Toch (1887-1964) (<a href="http://www.youtube.com/watch?v=3_TpaektNp8">Concerto n°1</a> pour piano) ont malheureusement une fâcheuse tendance à se ressembler. Toch cependant mériterait une chronique séparée. </p>
+                    <ul class="miniListCorps">
+                      <li>Friedrich Cerha (1926- ) est exemplaire, à cet égard : Monumentum  et <a href="http://www.youtube.com/watch?v=0mBQVanDrrA">Bruchstuck, getraumt</a> sont indubitablement à découvrir alors que <a href="https://www.youtube.com/watch?v=4eg5dvsXVak">Spiegel</a> en découragera plus d'un.</li>
+                      <li>Kurt Schwertsik (1935- ) fait preuve d'une belle originalité dans <a href="http://www.youtube.com/watch?v=pfk4oyJDjk0">Chalifa und die Affen</a> et on pourrait presqu'en dire autant  de l'iconoclaste Heinz Karl Gruber (1947- ) dans <a href="http://www.youtube.com/watch?v=iPTJ9mRI4w0">Frankenstein</a> ou ce <a href="http://www.youtube.com/watch?v=ilM-Eo-dm6c">Concerto</a> pour violoncelle. La musique de Georg Friedrich Haas (1953- )  (<a href="https://www.youtube.com/watch?v=XSFYHD30_tw">In Vain</a> pour 24 instruments et  <a href="http://www.youtube.com/watch?v=2sWMC4JjSrs">Double Concerto</a> pour alto & accordéon) se laisse plus facilement apprivoiser que celles de Beat Furrer (1954- )  (<a href="https://www.youtube.com/watch?v=Rp8Nz59OX-E">Spur</a>), Bernhard Lang (1957- ) (<a href="http://www.youtube.com/watch?v=-wuTToameCs">DW 17 Doubles:Schatten II</a>, <a href="http://www.youtube.com/watch?v=XJr8hr1EK8Q">Differenz/Wiederholung 7</a>), Wolfgang Mitterer (1958- ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Donaueschinger-Musiktage-2006-Vol-3/hnum/9859649">Inwendig losgelöst</a>, pour ensembles baroque &amp; électro-acoustique) ou encore  Peter Ablinger (1959- ) (<a href="https://www.youtube.com/watch?v=mOXq2ci3bVw">Wachstum, Massenmord</a>), qui vous paraîtront plus ou moins ingérables (un double sens à méditer).</li>
+                      <li>
+                        <div class="conteneurImageSeule">
+                          <div>
+                              <figure>
+                                  <img src="../images/autriche/neuwirth.jpg" alt="Olga Neuwirth"/>
+                                  <figcaption>Olga Neuwirth</figcaption>
+                              </figure>
+                          </div>
+                        </div>Olga Neuwirth (1968- ) est une musicienne particulièrement versatile, capable d'enchanter son public comme de le décourager pour ne pas dire le perdre.  Son Concerto pour trompette  est une oeuvre majeure de ce début de 21<sup>ème</sup> siècle, créée à Vienne, en 2006, au Festival de Salzbourg, par le trompettiste Håkan Hardenberger et le Wiener Philharmoniker, placé sous la direction de Pierre Boulez (Petit <a href="https://www.youtube.com/watch?v=6ZLnWIKoOyY">extrait</a> disponible mais le chef diffère). D'autres oeuvres méritent également le détour, telles, <a href="https://www.youtube.com/watch?v=TF08H-uvBDc">Lost Highway</a>, <a href="http://www.youtube.com/watch?v=3_xKYm_pxsY">The Calligrapher</a> ou <a href="http://www.youtube.com/watch?v=vMk6oYte-Jc">No more</a>, mais ne vous réjouissez pas trop vite, <a href="http://www.youtube.com/watch?v=egv_mCi8uMI">The long Rain</a> est fort peu écoutable. <a href="http://www.youtube.com/watch?v=KKEz5TNcT5Y">Remnants of Songs</a> - jouée lors des concerts Proms de Londres ! - propose un savoureux mélange des genres.
+                      </li>
+                      <li>
+                        <div class="conteneurImageSeule">
+                          <div>
+                              <figure>
+                                  <img src="../images/autriche/doderer.jpg" alt="Johanna Doderer"/>
+                                  <figcaption>Johanna Doderer</figcaption>
+                              </figure>
+                          </div>
+                        </div>Johanna Doderer (1969- ) est à l'opposé de la précédente, adepte de la nouvelle simplicité.  Son sens de la mélodie de la couleur font merveille dans les oeuvres suivantes : <a href="http://www.youtube.com/watch?v=Z6T8-iCVvdE">Astraios</a>, <a href="http://www.youtube.com/watch?v=cPy0L9nvPtA">Der leuchtende Fluss</a>, <a href="http://www.youtube.com/watch?v=eU0Gj8I01vc">Papagenono. Eine Ausflucht</a>.
+                      </li>
+                    </ul>
 
+                    <p>Michael F.P. Huber (1971- ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Michael-F-P-Huber-geb-1971-Symphonie-Nr-2-op-44/hnum/4919013">Partita</a> pour cordes), Klaus Lang (1971- ) (<a href="http://www.youtube.com/watch?v=zYaO0NDdFXs">Missa beati Pauperes Spiritu</a>), Johannes Maria Staud (1974- ) (<a href="http://www.youtube.com/watch?v=gaqUclEIngo">Maniai</a>), ..., complètent ce palmares un brin disparate.</p>
+                    <p>La série <a href="http://www.jpc.de/s/neue+musik+aus+%C3%96sterreich">Neue Musik aus Österreich</a>, parue chez ORF, donne une bonne image de la vitalité de la musique moderne autrichienne, tous courants confondus. Pour des références concernant la jeune génération, allez donc jeter un coup d'o(r)eil(le) sur le site de <a href="http://www.musicaustria.at/magazin/neue-musik/young-composers">Music Austria</a>, vous y ferez peut-être des découvertes, par exemple un Trio à clavier de Johannes Berauer (1979- ), un Quintette à clavier de Lukas Neudinger (1980- ), la Barcarolle de Judit Varga (1979- ), le Streichquartettsatz de Ernst Wally (1976- ) ou le Caprice de Thomas Wally (1981- ) mais votre sélection différera peut-être de la mienne.</p>
+                    <p>Au niveau de la vie musicale, Salzbourg a pris une revanche sur Vienne en cumulant l'institution du Mozarteum et surtout du célèbre festival où il est de bon ton de se montrer sauf que si l'on est fauché ... .   Rappelons que ce festival se tient normalement en été mais qu'un prologue pascal existe depuis que Karajan s'est fâché avec Bayreuth. Les représentations wagnériennes qu'il y a données en ont agacé plus d'un mais je les ai d'emblée trouvées indispensables. Le regretté <a href="../chroniques/mortier.html">Gérard Mortier</a> a dirigé  ce temple festivalier dans l'esprit novateur qu'on lui a toujours connu : il s'est bientôt heurté à un noyau de résistance conservatrice telle qu'il a fini par jeter l'éponge.</p>
+                    <p>Ce conservatisme autrichien, parlons-en : aucun institution  musicale ne l'incarne mieux que le célèbre Philharmonique de Vienne, une des meilleurs phalanges symphoniques au monde. En résidence au Musikverein, elle a été dirigée  par les plus grands   : Erich Kleiber, Bruno Walter, Otto Klemperer, Wilhelm Furtwängler, Karl Böhm, Herbert von Karajan, Leonard Bernstein, Lorin Maazel, Nikolaus Harnoncourt, Pierre Boulez, ..., et Carlos Kleiber, le fils d'Erich, ce qui ferme la boucle. N'espérez cependant pas débarquer à Vienne et décrocher un billet à l'improviste : soyez plutôt organisé et prévoyez votre venue avec 10 ans d'avance ! </p>
+                    <p>Cette vénérable institution  pratique sexisme et racisme sans  gêne ni répression, abritée, sans doute, par un courant d'extrême-droite plus florissant en Autriche que partout ailleurs en Europe. <a href="http://fr.wikipedia.org/wiki/Orchestre_philharmonique_de_Vienne">Wikipedia</a> a confectionné un collier dont j'ai arrangé quelques perles :</p>
 
-<div><img src="../images/autriche/gal.jpg" alt="" /><div class="legende">Hans Gal</div></div>
-<p>J'avoue une nette préférence pour les oeuvres écrites par   Heinz Tiessen (1887-1971) (<a href="http://www.youtube.com/watch?v=WaEzyFeT-uU&amp;feature=related">Symphonie n°2</a>, <a href="http://www.youtube.com/watch?v=Y8vAmF-eFyA&amp;feature=relmfu">Hamlet</a> opus 30, <a href="http://www.youtube.com/watch?v=toKwm7fu9_U&amp;feature=relmfu">Vorspiel zu einem Revolutionsdrama</a> opus 33, à ne pas manquer !) et Hans Gal (1890-1987) (<a href="http://www.youtube.com/watch?v=Kxw3vn5ISwc">Concerto</a> pour violoncelle). N'hésitez pas à parcourir le <a href="http://www.jpc.de/s/hans+gal">catalogue</a> des enregistrements de ce dernier, les symphonies, en particulier. Vous n'y trouverez pas  cette Revue-Divertissement (de guerre 40-45, Gal avait rejoint l'Angleterre en 1938 au moment de l'Anschluss) (<a href="http://www.youtube.com/watch?v=Jv6JY7MJ38U">Entrée</a>, <a href="http://www.youtube.com/watch?v=KZSpVgL-vLM">Die Ballade vom Deutschen Refugee</a>, <a href="http://www.youtube.com/watch?v=vdg1O0WS4gc">Der Song vom Doppelbett</a>, <a href="http://www.youtube.com/watch?v=QAFNn28lXWY">Quodlibet</a>), extrêmement bien conduite et chantée : pas de la grande musique et pourtant quelle distinction !</p>
+                    <blockquote><p>Jusqu'en 1997, l'orchestre n'admettait pas de femmes dans ses rangs à titre définitif. En 1997, on confirma quand même Anna Lelkes, la harpiste qui officiait dans l'ombre depuis 20 ans (Il le fallait bien, allez trouver un homme qui joue  de la harpe !). Dix ans plus tard, l'orchestre ne comptait encore en sus qu'une violoniste, une altiste et une violoncelliste !</p>
+                    </blockquote>
+                    <blockquote><p>Par ailleurs, l'orchestre n'acceptait pas davantage des membres d'ethnies visiblement différentes jusqu'à ce qu'un violoniste demi-asiatique fasse exception, en 2001. En 1970, Otto Strasser, ancien président de la Philharmonie de Vienne, écrivait dans ses mémoires :</p>
+                    </blockquote>
+                    
+                    <blockquote class="blockquoteInterieur">
+                      <p>Je tiens pour incorrect qu'aujourd'hui les candidats à un pupitre vacant jouent derrière paravent, lors des auditions, au motif d'assurer un jugement objectif. J'ai continuellement combattu cette mesure, en particulier à partir de ma nomination à la fonction de président du Philharmonique, parce que je suis convaincu que l'artiste fait aussi partie de la personne, que l'on doit non seulement entendre mais également voir, afin de juger sa personnalité entière. ... Après qu'un candidat se fut qualifié comme étant le meilleur, lorsque le paravent fut retiré, se tenait là un Japonais, devant le jury médusé. Il ne fut par conséquent pas engagé, sa physionomie n'étant pas adaptée à la Pizzicato Polka du concert du nouvel an.</p>
+                    </blockquote>
+                    
+                    <p>Pour résumer cette pensée collective, l'orchestre regroupe des musiciens mâles blancs, qui jouent exclusivement de la musique de compositeurs mâles blancs.</p>
 
+                    <p>Les grand(e)s interprètes autrichien(ne)s furent (et sont encore) nombreux. Outre les chefs sus-mentionnés, je me contenterai d'évoquer les sopranos, Elisabeth Schwarzkopf et Gundula Janowitz,  les ténors Richard Tauber et Heinz Zednik, le violoniste Thomas Zehetmair et les pianistes, Artur Schnabel, Rudolf Serkin, Alfred Brendel et ... Friedrich Gulda car - hérésie, je sais -   je suis davantage Gulda que Gould. A propos, saviez-vous que Gulda a écrit quelques pièces légèrement teintées de jazz (<a href="http://www.youtube.com/watch?v=JY5M7TJfWu8">Concerto</a> pour violoncelle, <a href="http://www.youtube.com/watch?v=3KD2RlcEkPY">Practice, Für Paul &amp; Prelude und Fugue</a>, pour piano (en 39 min 30 s)).</p>
+                    <p>Notre connaissance actuelle de la musique ancienne doit beaucoup à <a href="https://www.youtube.com/watch?v=98UjjwzJBFE">Nikolaus Harnoncourt</a> et son Concentus Musicus : les premiers Monteverdi qui sonnaient juste, c'est à lui qu'on les doit et ils restent d'actualité.  J'aime aussi ce qu'à fait René Clemencic (1928- ), cet  hérétique de la musique ancienne  : certes il a souvent bafoué  les principes d'une musicologie érudite  mais quel régal quand la sauce prend, qu'il s'agisse des <a href="https://www.youtube.com/watch?v=N4z2Ey4PYT4">Carmina Burana</a> (les authentiques, à déguster sans retenue !), de <a href="http://www.youtube.com/watch?v=JXW2qbCmnm0">Ma Bouche rit</a> de Johannes Ockeghem, de <a href="http://www.youtube.com/watch?v=vJwRYDCsTto">Deuil angoisseux</a> de Gilles Binchois ou du chef-d'oeuvre de Guillaume Dufay, la messe &quot;Ave Regina Coelorum&quot;
+                    <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/part/dufay.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/part/dufay.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub>. Pour des notes plus gaies, voici  cette <a href="http://www.youtube.com/watch?v=YFOeIkUxCW8">Danse Ötödik</a>, quand je vous disais que l'Autriche a toujours jeté un regard vers l'Est. A propos, Clemencic est aussi l'auteur d'un oratorio fait maison, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Rene-Clemencic-geb-1928-Kabbala-Oratorium/hnum/7069631">Kabbala</a>. </p>
+                  </div>
+                </div>
 
-
-<p> Vous apprécierez sans doute la <a href="http://www.youtube.com/watch?v=0CIjRepsSYk">Symphonie n°3</a> de Marcel Tyberg (1893-1944), même si elle démarre sans vergogne comme celle de Mahler, l'<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Julius-Burger-1897-1995-Orchesterwerke/hnum/7867176">Oeuvre orchestrale</a></a> de Julius Bürger (1897-1995), celle de Rudolf Wagner-Regeny (1903-1969) (<a href="http://www.youtube.com/watch?v=6sSMt0GETNA">Three orchestral Sets</a>) ou celle outrageusement classique d'Eric Zeisl (1905-1959) (<a href="https://www.youtube.com/watch?v=egfsSCfffR8">Concerto</a>, pour piano). Theodor Berger (1905-1992) fut apprécié par Furtwaengler en personne et vous comprendrez pourquoi en écoutant cette superbe <a href="http://www.youtube.com/watch?v=U4JrfyMVbPs">Symphonie &quot;Homère&quot;</a> ou encore <a href="http://www.youtube.com/watch?v=sQQbgPWsvt0">Malinconia</a> pour cordes. Gottfried von Einem (1918-1996) a produit des oeuvres fortes telles la <a href="http://www.youtube.com/watch?v=NWUXg-fipiA">Wiener Symphonie</a>, opus 49, ou les opéras La Mort de Danton et  <a href="http://www.youtube.com/watch?v=wMSkFiTsINU">Le Procès</a>.  Retenez cependant que le musicien le plus important demeure  <a href="../chroniques/korngold.html">Erich Wolfgang Korngold</a> (1897-1957)  pour lequel je vous renvoie à la chronique dédicacée.</p>
-<p></p>
-<p><i>La 2<sup>ème</sup> moitié du 20<sup>ème</sup> siècle.</i> </p>
-
-<p>Le recul manque pour juger correctement la musique autrichienne   récente. De très belles oeuvres figurent ponctuellement au catalogue de compositeurs réputés difficiles, hélas noyées dans une production souvent tellement ardue  qu'elle en devient inapprivoisable même par les oreilles les mieux intentionnés :</p>
-<li>Friedrich Cerha (1926- ) est exemplaire, à cet égard : Monumentum  et <a href="http://www.youtube.com/watch?v=0mBQVanDrrA">Bruchstuck, getraumt</a> sont indubitablement à découvrir alors que <a href="https://www.youtube.com/watch?v=4eg5dvsXVak">Spiegel</a> en découragera plus d'un.</li>
-<li>Kurt Schwertsik (1935- ) fait preuve d'une belle originalité dans <a href="http://www.youtube.com/watch?v=pfk4oyJDjk0">Chalifa und die Affen</a> et on pourrait presqu'en dire autant  de l'iconoclaste Heinz Karl Gruber (1947- ) dans <a href="http://www.youtube.com/watch?v=iPTJ9mRI4w0">Frankenstein</a> ou ce <a href="http://www.youtube.com/watch?v=ilM-Eo-dm6c">Concerto</a> pour violoncelle. La musique de Georg Friedrich Haas (1953- )  (<a href="https://www.youtube.com/watch?v=XSFYHD30_tw">In Vain</a> pour 24 instruments et  <a href="http://www.youtube.com/watch?v=2sWMC4JjSrs">Double Concerto</a> pour alto & accordéon) se laisse plus facilement apprivoiser que celles de Beat Furrer (1954- )  (<a href="https://www.youtube.com/watch?v=Rp8Nz59OX-E">Spur</a>), Bernhard Lang (1957- ) (<a href="http://www.youtube.com/watch?v=-wuTToameCs">DW 17 Doubles:Schatten II</a>, <a href="http://www.youtube.com/watch?v=XJr8hr1EK8Q">Differenz/Wiederholung 7</a>), Wolfgang Mitterer (1958- ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Donaueschinger-Musiktage-2006-Vol-3/hnum/9859649">Inwendig losgelöst</a>, pour ensembles baroque &amp; électro-acoustique) ou encore  Peter Ablinger
-  (1959- ) (<a href="https://www.youtube.com/watch?v=mOXq2ci3bVw">Wachstum, Massenmord</a>), qui vous paraîtront plus ou moins ingérables (un double sens à méditer).</li>
-
-<div><img src="../images/autriche/doderer.jpg" alt="" /><div class="legende">Johanna Doderer</div></div>
-<div><img src="../images/autriche/neuwirth.jpg" alt="" /><div class="legende">Olga Neuwirth</div></div>
-<li>Olga Neuwirth (1968- ) est une musicienne particulièrement versatile, capable d'enchanter son public comme de le décourager pour ne pas dire le perdre.  Son Concerto pour trompette  est une oeuvre majeure de ce début de 21<sup>ème</sup> siècle, créée à Vienne, en 2006, au Festival de Salzbourg, par le trompettiste Håkan Hardenberger et le Wiener Philharmoniker, placé sous la direction de Pierre Boulez (Petit <a href="https://www.youtube.com/watch?v=6ZLnWIKoOyY">extrait</a> disponible mais le chef diffère). D'autres oeuvres méritent également le détour, telles, <a href="https://www.youtube.com/watch?v=TF08H-uvBDc">Lost Highway</a>, <a href="http://www.youtube.com/watch?v=3_xKYm_pxsY">The Calligrapher</a> ou <a href="http://www.youtube.com/watch?v=vMk6oYte-Jc">No more</a>, mais ne vous réjouissez pas trop vite, <a href="http://www.youtube.com/watch?v=egv_mCi8uMI">The long Rain</a> est fort peu écoutable. <a href="http://www.youtube.com/watch?v=KKEz5TNcT5Y">Remnants of Songs</a> - jouée lors des concerts Proms de Londres ! - propose un savoureux mélange des genres.</li>
-<li>Johanna Doderer (1969- ) est à l'opposé de la précédente, adepte de la nouvelle simplicité.  Son sens de la mélodie de la couleur font merveille dans les oeuvres suivantes : <a href="http://www.youtube.com/watch?v=Z6T8-iCVvdE">Astraios</a>, <a href="http://www.youtube.com/watch?v=cPy0L9nvPtA">Der leuchtende Fluss</a>, <a href="http://www.youtube.com/watch?v=eU0Gj8I01vc">Papagenono. Eine Ausflucht</a>.</li>
-<p>Michael F.P. Huber (1971- ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Michael-F-P-Huber-geb-1971-Symphonie-Nr-2-op-44/hnum/4919013">Partita</a> pour cordes), Klaus Lang (1971- ) (<a href="http://www.youtube.com/watch?v=zYaO0NDdFXs">Missa beati Pauperes Spiritu</a>), Johannes Maria Staud (1974- ) (<a href="http://www.youtube.com/watch?v=gaqUclEIngo">Maniai</a>), ..., complètent ce palmares un brin disparate.</p>
-
-
-
-<p>La série <a href="http://www.jpc.de/s/neue+musik+aus+%C3%96sterreich">Neue Musik aus Österreich</a>, parue chez ORF, donne une bonne image de la vitalité de la musique moderne autrichienne, tous courants confondus. Pour des références concernant la jeune génération, allez donc jeter un coup d'o(r)eil(le) sur le site de <a href="http://www.musicaustria.at/magazin/neue-musik/young-composers">Music Austria</a>, vous y ferez peut-être des découvertes, par exemple un Trio à clavier de Johannes Berauer (1979- ), un Quintette à clavier de Lukas Neudinger (1980- ), la Barcarolle de Judit Varga (1979- ), le Streichquartettsatz de Ernst Wally (1976- ) ou le Caprice de Thomas Wally (1981- ) mais votre sélection différera peut-être de la mienne.</p>
-<p>Au niveau de la vie musicale, Salzbourg a pris une revanche sur Vienne en cumulant l'institution du Mozarteum et surtout du célèbre festival où il est de bon ton de se montrer sauf que si l'on est fauché ... .   Rappelons que ce festival se tient normalement en été mais qu'un prologue pascal existe depuis que Karajan s'est fâché avec Bayreuth. Les représentations wagnériennes qu'il y a données en ont agacé plus d'un mais je les ai d'emblée trouvées indispensables. Le regretté <a href="../chroniques/mortier.html">Gérard Mortier</a> a dirigé  ce temple festivalier dans l'esprit novateur qu'on lui a toujours connu : il s'est bientôt heurté à un noyau de résistance conservatrice telle qu'il a fini par jeter l'éponge.</p>
-<p>Ce conservatisme autrichien, parlons-en : aucun institution  musicale ne l'incarne mieux que le célèbre Philharmonique de Vienne, une des meilleurs phalanges symphoniques au monde. En résidence au Musikverein, elle a été dirigée  par les plus grands   : Erich Kleiber, Bruno Walter, Otto Klemperer, Wilhelm Furtwängler, Karl Böhm, Herbert von Karajan, Leonard Bernstein, Lorin Maazel, Nikolaus Harnoncourt, Pierre Boulez, ..., et Carlos Kleiber, le fils d'Erich, ce qui ferme la boucle. N'espérez cependant pas débarquer à Vienne et décrocher un billet à l'improviste : soyez plutôt organisé et prévoyez votre venue avec 10 ans d'avance ! </p>
-<p>Cette vénérable institution  pratique sexisme et racisme sans  gêne ni répression, abritée, sans doute, par un courant d'extrême-droite plus florissant en Autriche que partout ailleurs en Europe. <a href="http://fr.wikipedia.org/wiki/Orchestre_philharmonique_de_Vienne">Wikipedia</a> a confectionné un collier dont j'ai arrangé quelques perles :</p>
-<i><li>...  Jusqu'en 1997, l'orchestre n'admettait pas de femmes dans ses rangs à titre définitif. En 1997, on confirma quand même Anna Lelkes, la harpiste qui officiait dans l'ombre depuis 20 ans (Il le fallait bien, allez trouver un homme qui joue  de la harpe !). Dix ans plus tard, l'orchestre ne comptait encore en sus qu'une violoniste, une altiste et une violoncelliste !</li>
-<li>Par ailleurs, l'orchestre n'acceptait pas davantage des membres d'ethnies visiblement différentes jusqu'à ce qu'un violoniste demi-asiatique fasse exception, en 2001. 
-  En 1970, Otto Strasser, ancien président de la Philharmonie de Vienne, écrivait dans ses mémoires :  </li>
-<p>&quot;Je tiens pour incorrect qu'aujourd'hui les candidats à un pupitre vacant jouent derrière paravent, lors des auditions, au motif d'assurer un jugement objectif. J'ai continuellement combattu cette mesure, en particulier à partir de ma nomination à la fonction de président du Philharmonique, parce que je suis convaincu que l'artiste fait aussi partie de la personne, que l'on doit non seulement entendre mais également voir, afin de juger sa personnalité entière. ... Après qu'un candidat se fut qualifié comme étant le meilleur, lorsque le paravent fut retiré, se tenait là un Japonais, devant le jury médusé. Il ne fut par conséquent pas engagé, sa physionomie n'étant pas adaptée à la Pizzicato Polka du concert du nouvel an. &quot;</p>
-<p>Pour résumer cette pensée collective, l'orchestre regroupe des musiciens mâles blancs, qui jouent exclusivement de la musique de compositeurs mâles blancs.</p></i>
-<p></p>
-<p>Les grand(e)s interprètes autrichien(ne)s furent (et sont encore) nombreux. Outre les chefs sus-mentionnés, je me contenterai d'évoquer les sopranos, Elisabeth Schwarzkopf et Gundula Janowitz,  les ténors Richard Tauber et Heinz Zednik, le violoniste Thomas Zehetmair et les pianistes, Artur Schnabel,
-  Rudolf Serkin, Alfred Brendel et ... Friedrich Gulda car - hérésie, je sais -   je suis davantage Gulda que Gould. A propos, saviez-vous que Gulda a écrit quelques pièces légèrement teintées de jazz (<a href="http://www.youtube.com/watch?v=JY5M7TJfWu8">Concerto</a> pour violoncelle, <a href="http://www.youtube.com/watch?v=3KD2RlcEkPY">Practice, Für Paul &amp; Prelude und Fugue</a>, pour piano (en 39 min 30 s)).</p>
-<p>Notre connaissance actuelle de la musique ancienne doit beaucoup à <a href="https://www.youtube.com/watch?v=98UjjwzJBFE">Nikolaus Harnoncourt</a> et son Concentus Musicus : les premiers Monteverdi qui sonnaient juste, c'est à lui qu'on les doit et ils restent d'actualité.  J'aime aussi ce qu'à fait René Clemencic (1928- ), cet  hérétique de la musique ancienne  : certes il a souvent bafoué  les principes d'une musicologie érudite  mais quel régal quand la sauce prend, qu'il s'agisse des <a href="https://www.youtube.com/watch?v=N4z2Ey4PYT4">Carmina Burana</a> (les authentiques, à déguster sans retenue !), de <a href="http://www.youtube.com/watch?v=JXW2qbCmnm0">Ma Bouche rit</a> de Johannes Ockeghem, de <a href="http://www.youtube.com/watch?v=vJwRYDCsTto">Deuil angoisseux</a> de Gilles Binchois ou du chef-d'oeuvre de Guillaume Dufay, la messe &quot;Ave Regina Coelorum&quot;
-  <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/part/dufay.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/part/dufay.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>. Pour des notes plus gaies, voici  cette <a href="http://www.youtube.com/watch?v=YFOeIkUxCW8">Danse Ötödik</a>, quand je vous disais que l'Autriche a toujours jeté un regard vers l'Est. A propos, Clemencic est aussi l'auteur d'un oratorio fait maison, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Rene-Clemencic-geb-1928-Kabbala-Oratorium/hnum/7069631">Kabbala</a>. </p>
-<p></p>
-<p></p>
-  
-              </div>
-
+            </div>
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
@@ -257,10 +430,10 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Mel, mélo, mélodies : Mélanie Bonis</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Mel, mélo, mélodies : Mélanie Bonis</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,72 +46,95 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tiresdeloubli.html">Compositeurs oubliés</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Mel, mélo, mélodies : Mélanie Bonis</li>
                     </ul>
                 </nav>  
-  <h2>Mel, mélo, mélodies : Mélanie Bonis.</h2>
 
-<div><img src="../images/bonis/bonis.jpg" alt="" /><div class="legende">Mel, à 17 ans, peinte par Corbineau</div></div>
-  
-  
-<p>Charles-Auguste Corbineau (1835-1901) est l'auteur de ce portrait d'une beauté qu'on devine fatale. De fait, à sa manière, elle le fut.</p>
-<p>Mélanie Bonis (1858-1937) est issue d'une famille modestement bourgeoise. Son père, contremaître en horlogerie, et sa mère, passementière, la destinaient à la couture, au mépris du temps qu'elle passait, en autodidacte, sur le vétuste piano familial.  Dans les bonnes familles, pieuses de surcroit, l'art ne se concevait qu'à la maison car au-dehors, la perdition était certaine. Pour une demoiselle honorable c'était tout simplement inimaginable. Pourtant, elle l'imagina.</p>
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/bonis/bonis.jpg" alt=" Mélanie Bonis 17 ans peinte par Corbineau"/>
+                              <figcaption>
+                                <h5>Mélanie Bonis à 17 ans</h5>
+                                <h6>Peinte par Corbineau</h6>
+                              </figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                  
+                  <p>Charles-Auguste Corbineau (1835-1901) est l'auteur de ce portrait d'une beauté qu'on devine fatale. De fait, à sa manière, elle le fut.</p>
+                  <p>Mélanie Bonis (1858-1937) est issue d'une famille modestement bourgeoise. Son père, contremaître en horlogerie, et sa mère, passementière, la destinaient à la couture, au mépris du temps qu'elle passait, en autodidacte, sur le vétuste piano familial.  Dans les bonnes familles, pieuses de surcroit, l'art ne se concevait qu'à la maison car au-dehors, la perdition était certaine. Pour une demoiselle honorable c'était tout simplement inimaginable. Pourtant, elle l'imagina.</p>
+                  <p>L’histoire de Mel Bonis  est tellement tragiquement romanesque que je m’étonne qu’on n’en ait pas fait un film. Le scénario est prêt - il suffit de suivre le fil de sa vie - et la musique l'est aussi, écrite de sa plume.</p>
 
-<p>L’histoire de Mel Bonis  est tellement tragiquement romanesque que je m’étonne qu’on n’en ait pas fait un film. Le scénario est prêt - il suffit de suivre le fil de sa vie - et la musique l'est aussi, écrite de sa plume.</p>
+                  <div id="scenario">
+                    <h4>Le scénario ...</h4>
 
+                    <p>Mélanie échappa à son destin de couturière par la grâce d'un ami de la famille, Jacques Maury, cornettiste à l'Opéra de Paris. Certain d'être en présence d'une authentique musicienne, Maury l'introduisit auprès de César Franck qui, convaincu, la fit entrer au Conservatoire. Elle s'assit sur les mêmes bancs que Gabriel Pierné (1863-1937) et Claude Debussy (1862-1918) et les notes qu'elle recueillit furent parmi les meilleures.</p>
 
-<p><i>Le scénario ...</i></p>
-<p>Mélanie échappa à son destin de couturière par la grâce d'un ami de la famille, Jacques Maury, cornettiste à l'Opéra de Paris. Certain d'être en présence d'une authentique musicienne, Maury l'introduisit auprès de César Franck qui, convaincu, la fit entrer au Conservatoire. Elle s'assit sur les mêmes bancs que Gabriel Pierné (1863-1937) et Claude Debussy (1862-1918) et les notes qu'elle recueillit furent parmi les meilleures.</p>
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/bonis/hettich.jpg" alt="Amédée Hettich" />
+                              <figcaption>Amédée Hettich</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/bonis/domange.jpg" alt="Albert Domange" />
+                              <figcaption>Albert Domange</figcaption>
+                          </figure>
+                      </div>
+                    </div> 
 
+                    <p>Au Conservatoire, Mélanie rencontra également Amédée Hettich (1856-1937), aspirant chanteur et poète mais aussi journaliste, il faut bien vivre. Ce fut le coup de foudre et le début de bien des problèmes.</p>
+                    <p> Ses parents, de plus en plus convaincus que le milieu artistique était malsain, entreprirent de lui trouver un meilleur parti.  Ils crurent, de bonne foi, le trouver en la personne d'Albert Domange (1836-1918), riche industriel du cuir (c'était déjà ça), de 22 ans son aîné (on ne peut pas tout avoir), deux fois veuf et père de cinq enfants (Vous avez bien lu) !</p>  
+                    <p>Trois enfants supplémentaires, Pierre, Jeanne et Edouard, naquirent de cette union mais je vous rassure, la maison était entretenue par 12 domestiques.  Domange, hermétique à la musique, ne s'opposa pas aux activités musicales de son épouse du moment qu'elle assumait son rang social et qu'elle signait ses oeuvres de son nom de jeune fille.</p>
+                    <p>Malgré un emploi du temps chargé, Mélanie entretint une relation secrète avec son Amédée, retrouvé après dix ans de mariage. Ensemble, ils collaborèrent, lui versifiant et elle composant. Journaliste à L'Art musical, Hettich introduisit la musicienne auprès de grands éditeurs parisiens tant et si bien que Mel Bonis, enfin reconnue, intégra la Société nationale de musique de 1899 à 1911, y occupant même le poste de secrétaire à partir de 1910, une première pour une femme.</p>
+                    <p> Une petite Madeleine naquit, en 1899, aussitôt confiée à une ancienne femme de chambre. Lors du décès de cette dame, en 1914, Madeleine fut de plus en plus régulièrement accueillie dans la propriété familiale de Sarcelles, au titre d'orpheline pour prévenir les commérages. L'affaire se corsa cependant le jour où Edouard et Madeleine tombèrent amoureux et voulurent se marier (vous suivez toujours ?).  Mélanie n'eut d'autre choix que de dévoiler la vérité. Ainsi, Madeleine vécut, comme sa mère, les affres d'un amour impossible. Edouard se trouva une autre épouse, eut 4 enfants, et mourut prématurément à 36 ans.
+                    Mélanie - j'abrège - noya son chagrin dans la réclusion, la religion et la composition d'une musique jamais éditée de son vivant.</p>
+                  </div>
 
-<div><img src="../images/bonis/hettich.jpg" alt="" /><div class="legende">Amédée Hettich</div></div>
- <div><img src="../images/bonis/domange.jpg" alt="" /><div class="legende">Albert Domange</div></div> 
+                  <div id="musique">
+                    <h4>... et la musique</h4>
 
-<p>Au Conservatoire, Mélanie rencontra également Amédée Hettich (1856-1937), aspirant chanteur et poète mais aussi journaliste, il faut bien vivre. Ce fut le coup de foudre et le début de bien des problèmes.</p>
-<p> Ses parents, de plus en plus convaincus que le milieu artistique était malsain, entreprirent de lui trouver un meilleur parti.  Ils crurent, de bonne foi, le trouver en la personne d'Albert Domange (1836-1918), riche industriel du cuir (c'était déjà ça), de 22 ans son aîné (on ne peut pas tout avoir), deux fois veuf et père de cinq enfants (Vous avez bien lu) !</p>  
+                    <p> Mel c’était évidemment le diminutif de Mélanie mais c’était surtout, de sa part, l’occasion de laisser planer un doute sur sa véritable identité car, en cette fin de 19 <sup> ème</sup> siècle, les milieux artistiques n'étaient pas prêts à admettre qu’une femme puisse composer autre chose que de la musique de salon.  Comme souvent en la circonstance, il se trouva un musicien mâle pour s'étonner d'un tel talent : pour <a href="../chroniques/femmesdenotes.html">Louise Bertin</a>, évoquée par ailleurs, ce fut Hector Berlioz et pour Mel Bonis, ce fut Camille Saint-Saens.</p>
 
-<p>Trois enfants supplémentaires, Pierre, Jeanne et Edouard, naquirent de cette union mais je vous rassure, la maison était entretenue par 12 domestiques.  Domange, hermétique à la musique, ne s'opposa pas aux activités musicales de son épouse du moment qu'elle assumait son rang social et qu'elle signait ses oeuvres de son nom de jeune fille.</p>
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/bonis/boniscd1.jpg" alt="CD Mélanie Bonis"/>
+                                <figcaption>CD Mélanie Bonis</figcaption>
+                            </figure>
+                        </div>
+                    </div>
 
-<p>Malgré un emploi du temps chargé, Mélanie entretint une relation secrète avec son Amédée, retrouvé après dix ans de mariage. Ensemble, ils collaborèrent, lui versifiant et elle composant. Journaliste à L'Art musical, Hettich introduisit la musicienne auprès de grands éditeurs parisiens tant et si bien que Mel Bonis, enfin reconnue, intégra la Société nationale de musique de 1899 à 1911, y occupant même le poste de secrétaire à partir de 1910, une première pour une femme.</p>
+                    <p>Les premières pièces écrites par Mel Bonis l'ont été pour le piano.  Un magnifique <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Klavierwerke/hnum/4560968">CD</a>, paru chez Etcetera, propose un florilège de pièces éparses, interprétées par le pianiste belge, Veerle Peeters.  Tout y est : une musique inspirée, servie par un piano d'une rare fluidité.</p>
+                    <p>Le label confidentiel Ligia a publié deux autres récitals bienvenus, l'un sous les doigts de <a href="http://www.amazon.fr/Femmes-L%C3%A9gende-Mel-Bonis/dp/B003AYPMG0">Maria Stembolskaya</a> - qui nous vient d'Azerbaïdjan - et l'autre interprété par <a href="http://musique.fnac.com/a1974707/Mel-Bonis-L-Ange-gardien-CD-album">Laurent Martin</a>, l'artiste français qui sauve l'honneur de la nation. Ecoutez le prenant <a href="http://www.youtube.com/watch?v=wO_QTdsE82U">Carillons mystiques</a>.</p>
+                    <p>Mel Bonis a aussi écrit des pages pour orgue romantique - un instrument qui avait trouvé son public - mais je n'ai pu trouver d'illustration sonore.</p>
+                    <p>Mel Bonis a composé un grand nombre de mélodies et de choeurs, en particulier sur des textes de Hettich. Un recueil paru chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Vokalwerke/hnum/6626095">Doron</a> ne me convainc pas vraiment mais l'interprétation laisse tellement à désirer que cela a pu altérer mon jugement. Cette autre version de la mélodie <a href="http://www.youtube.com/watch?v=uC19_wk4Zf0&feature=related">Elève-toi, mon Ame</a> est de fait bien supérieure. </p>
+                    <p>Le piano et la mélodie de salon, c'est bien, mais c'est évidemment dans la grande forme, de chambre ou symphonique, qu'on attend tout compositeur. Ici se présente une difficulté : bien qu'abondante, au total près de 300 numéros d'opus, l'oeuvre de Mel Bonis est encore loin d'être éditée.  L'<a href="http://www.mel-bonis.com/">association</a> Mel Bonis, créée en 2000, s'attelle  à cette tâche colossale et coûteuse et son site web, tenu à jour par l'arrière-petite fille de l'artiste, diffuse l'actualité récente. On apprend que la musique symphonique ne faisant malheureusment pas partie des priorités, nous ne sommes  pas près d'entendre le Cantique de Jean Racine, qui passe pourtant pour l'une de ses plus belles oeuvres, inspirée par la mort de son fils Edouard.</p>
+                    <p>Pour la musique de chambre la situation est plus satisfaisante, les partitions éditées n'attendant que des interprètes courageux.</p>
 
-<p> Une petite Madeleine naquit, en 1899, aussitôt confiée à une ancienne femme de chambre. Lors du décès de cette dame, en 1914, Madeleine fut de plus en plus régulièrement accueillie dans la propriété familiale de Sarcelles, au titre d'orpheline pour prévenir les commérages. L'affaire se corsa cependant le jour où Edouard et Madeleine tombèrent amoureux et voulurent se marier (vous suivez toujours ?).  Mélanie n'eut d'autre choix que de dévoiler la vérité. Ainsi, Madeleine vécut, comme sa mère, les affres d'un amour impossible. Edouard se trouva une autre épouse, eut 4 enfants, et mourut prématurément à 36 ans.
-Mélanie - j'abrège - noya son chagrin dans la réclusion, la religion et la composition d'une musique jamais éditée de son vivant.</p>
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/bonis/boniscd2.jpg" alt="CD Mélanie Bonis"/>
+                                <figcaption>CD Mélanie Bonis</figcaption>
+                            </figure>
+                        </div>
+                    </div>                   
+                      
+                    <p>Le label MDG a montré le chemin en publiant un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Klavierquartette-Nr-1-2/hnum/9124613">CD</a> essentiel, proposant les Quatuors à clavier n°1, opus 69, et n°2, opus 124 plus un complément de choix, Soir et Matin, opus 76, pour trio à clavier.  L'interprétation du Quatuor Mozart est sans faille.</p>
+                    <p>Ces deux oeuvres, que 25 années séparent, sont d'excellente facture : le 1<sup>er</sup> Quatuor fut créé en présence de Camille Saint-Saens et Charles Gounod dans les salons de ... Madame Domange, celle-ci tenant la partie de piano. Le 2<sup>ème</sup> Quatuor est une oeuvre tardive qui ne laisse rien paraître des tortures psychiques qu'endurait l'artiste, peu épargnée par le destin.</p>
+                    <p>Un autre <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Kammermusik-f%FCr-Fl%F6te-La-Joueuse-de-flute/hnum/5672510">CD</a>, plus anecdotique, propose de la musique pour flûte avec accompagnements divers. La flûte a beaucoup inspiré Mel Bonis : écoutez ce beau mouvement des <a href="http://www.youtube.com/watch?v=cmplx9yLPGk">Scènes de la Forêt</a> où les partenaires sont le cor et le piano.</p>
+                    <p>La musique de Mel Bonis exige de revivre et je constate, une fois de plus, que les interprètes français ne se bousculent pas au portillon.  Il s'agit pourtant d'honorer une des plus fines compositrices nationales mais c'est toujours la même histoire : on cherche souvent bien loin des trésors que l'on pourrait découvrir à deux pas de chez soi.</p>
+                  </div>
+                </div>
 
-<p><i>... et la musique.</i></p>
-<p> Mel c’était évidemment le diminutif de Mélanie mais c’était surtout, de sa part, l’occasion de laisser planer un doute sur sa véritable identité car, en cette fin de 19 <sup> ème</sup> siècle, les milieux artistiques n'étaient pas prêts à admettre qu’une femme puisse composer autre chose que de la musique de salon.  Comme souvent en la circonstance, il se trouva un musicien mâle pour s'étonner d'un tel talent : pour <a href="../chroniques/femmesdenotes.html">Louise Bertin</a>, évoquée par ailleurs, ce fut Hector Berlioz et pour Mel Bonis, ce fut Camille Saint-Saens.</p>
-
-<div><img src="../images/bonis/boniscd1.jpg" alt="" /></div>
-
-<p>
- Les premières pièces écrites par Mel Bonis l'ont été pour le piano.  Un magnifique <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Klavierwerke/hnum/4560968">CD</a>, paru chez Etcetera, propose un florilège de pièces éparses, interprétées par le pianiste belge, Veerle Peeters.  Tout y est : une musique inspirée, servie par un piano d'une rare fluidité.</p>
-
-<p>Le label confidentiel Ligia a publié deux autres récitals bienvenus, l'un sous les doigts de <a href="http://www.amazon.fr/Femmes-L%C3%A9gende-Mel-Bonis/dp/B003AYPMG0">Maria Stembolskaya</a> - qui nous vient d'Azerbaïdjan - et l'autre interprété par <a href="http://musique.fnac.com/a1974707/Mel-Bonis-L-Ange-gardien-CD-album">Laurent Martin</a>, l'artiste français qui sauve l'honneur de la nation. Ecoutez le prenant <a href="http://www.youtube.com/watch?v=wO_QTdsE82U">Carillons mystiques</a>.</p>
-
-<p>Mel Bonis a aussi écrit des pages pour orgue romantique - un instrument qui avait trouvé son public - mais je n'ai pu trouver d'illustration sonore.</p>
-
-<p>Mel Bonis a composé un grand nombre de mélodies et de choeurs, en particulier sur des textes de Hettich. Un recueil paru chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Vokalwerke/hnum/6626095">Doron</a> ne me convainc pas vraiment mais l'interprétation laisse tellement à désirer que cela a pu altérer mon jugement. Cette autre version de la mélodie <a href="http://www.youtube.com/watch?v=uC19_wk4Zf0&feature=related">Elève-toi, mon Ame</a> est de fait bien supérieure. </p>
-
-  <p>Le piano et la mélodie de salon, c'est bien, mais c'est évidemment dans la grande forme, de chambre ou symphonique, qu'on attend tout compositeur. Ici se présente une difficulté : bien qu'abondante, au total près de 300 numéros d'opus, l'oeuvre de Mel Bonis est encore loin d'être éditée.  L'<a href="http://www.mel-bonis.com/">association</a> Mel Bonis, créée en 2000, s'attelle  à cette tâche colossale et coûteuse et son site web, tenu à jour par l'arrière-petite fille de l'artiste, diffuse l'actualité récente.
-  On apprend que la musique symphonique ne faisant malheureusment pas partie des priorités, nous ne sommes  pas près d'entendre le Cantique de Jean Racine, qui passe pourtant pour l'une de ses plus belles oeuvres, inspirée par la mort de son fils Edouard.</p>
- 
-  <p>  Pour la musique de chambre la situation est plus satisfaisante, les partitions éditées n'attendant que des interprètes courageux.</p>
-
-<div><img src="../images/bonis/boniscd2.jpg" alt="" /></div>
-  
-  
-  
-<p> Le label MDG a montré le chemin en publiant un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Klavierquartette-Nr-1-2/hnum/9124613">CD</a> essentiel, proposant les Quatuors à clavier n°1, opus 69, et n°2, opus 124 plus un complément de choix, Soir et Matin, opus 76, pour trio à clavier.  L'interprétation du Quatuor Mozart est sans faille.</p>
-<p>Ces deux oeuvres, que 25 années séparent, sont d'excellente facture : le 1<sup>er</sup> Quatuor fut créé en présence de Camille Saint-Saens et Charles Gounod dans les salons de ... Madame Domange, celle-ci tenant la partie de piano. Le 2<sup>ème</sup> Quatuor est une oeuvre tardive qui ne laisse rien paraître des tortures psychiques qu'endurait l'artiste, peu épargnée par le destin.</p>
-
-
-<p>Un autre <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Melanie-Bonis-Kammermusik-f%FCr-Fl%F6te-La-Joueuse-de-flute/hnum/5672510">CD</a>, plus anecdotique, propose de la musique pour flûte avec accompagnements divers. La flûte a beaucoup inspiré Mel Bonis : écoutez ce beau mouvement des <a href="http://www.youtube.com/watch?v=cmplx9yLPGk">Scènes de la Forêt</a> où les partenaires sont le cor et le piano.</p>
- 
-
-<p>La musique de Mel Bonis exige de revivre et je constate, une fois de plus, que les interprètes français ne se bousculent pas au portillon.  Il s'agit pourtant d'honorer une des plus fines compositrices nationales mais c'est toujours la même histoire : on cherche souvent bien loin des trésors que l'on pourrait découvrir à deux pas de chez soi.</p>
-
-              </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -122,8 +146,6 @@ Mélanie - j'abrège - noya son chagrin dans la réclusion, la religion et la co
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

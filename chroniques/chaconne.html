@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Genres musicaux | L'art de la chaconne</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Genres musicaux</h2>
+                <h3>L'art de la chaconne</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,120 +46,133 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../grandscycles.html">Genres musicaux</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">L'art de la chaconne</li>
                     </ul>
                 </nav>  
-  <h2>L'art de la chaconne.</h2>
   
-  <div><img src="../images/chaconne/Chaconne.jpg" alt="" /></div>
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/chaconne/Chaconne.jpg" alt="Chaconne"/>
+                              <figcaption>Chaconne</figcaption>
+                          </figure>
+                      </div>
+                  </div>
   
+                  <p>Initialement  danse populaire d'origine  hispano-américaine, la chaconne (avec un ou deux &quot;n&quot;, à votre guise) a très vite été adoptée  par les musiciens de la période baroque qui ont vu, dans la simplicité de son déroulement,  l'occasion de multiplier les variations à l'infini. Sa chorégraphie savante fut codifiée à l'époque de Louis XIV et la figure ci-contre en détaille quelques pas (Vous trouverez <a href="http://www.early-dance.de/en/content/6390-chaconne-pour-un-homme">ici</a> une suite plus complète).</p>
+                  <p>Quelques repères facilement reconnaissables sont communs à toutes les chaconnes : une basse obstinée
+                  <sub><sub><sub> 
+                  <audio controls preload="none" style="height:16px; width:18%;">
+                    <source src="../son.mp3/chaconne/ostinato.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/chaconne/ostinato.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                  imposant d'emblée un rythme obsédant sur lequel vient se greffer une  mélodie
+                  <sub><sub><sub> 
+                  <audio controls preload="none" style="height:16px; width:18%;">
+                    <source src="../son.mp3/chaconne/theme.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/chaconne/theme.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                  autorisant toutes sortes de variations
+                  <sub><sub><sub> 
+                  <audio controls preload="none" style="height:16px; width:18%;">
+                    <source src="../son.mp3/chaconne/variation.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/chaconne/variation.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                  qui finissent généralement pas revenir au point de départ. Seules d'infimes subtilités n'ayant pas leur place ici distinguent  la chaconne de la passacaille, au point qu'en musique ancienne, les deux figures sont souvent confondues. Les compositeurs plus récents préfèrent cependant l'appellation passacaille afin de marquer qu'ils se sont libérés du schéma baroque stéréotypé. Sachez encore que le Ground, pratiqué Outre-Manche, s'apparente nettement à la chaconne.</p>
+                  
+                  <p>Les chaconnes ont conservé leur parfum populaire pendant toute la (basse) Renaissance. Les ensembles spécialisés (Hesperion XXI, Arpeggiata, Piffaro, ...) en mettent au menu de leurs concerts car elles ont un effet stimulant sur tous les publics qui en sont de fait friands. Ces chaconnes peuvent être :</p>
+
+                  <ul class="miniListCorps">
+                    <li>Joyeuses : Anonyme, <a href="http://www.youtube.com/watch?v=M9A-EbjwPhQ&amp;feature=related">Ciaccona di Paradiso e dell'Inferno</a>.</li>
+                    <li>Débridées : Salomone Rossi (1570-1630), <a href="http://www.youtube.com/watch?v=yScg02DM-jY">Ciaccona</a>.</li>
+                    <li>Enjouées : Andrea Falconiero (1586-1656), <a href="http://www.youtube.com/watch?v=Mm6y-rI-7f4&amp;feature=related">Passacaglia</a>.</li>
+                    <li>Nostalgiques : Stefano Landi (1587-1639), <a href="http://www.youtube.com/watch?v=YjzAi9f9PM0">Passacaglia della Vita</a>.</li>
+                    <li>Expressives : Claudio Monteverdi (1567-1643), <a href="http://www.youtube.com/watch?v=020L1rGjnng">Zefiro Torna</a>.</li>
+                  </ul>
+
+                  <p>Le Grand Siècle Français a fait un usage intensif de la chaconne dans les tragédies lyriques voire les Actes de Ballet :</p>
+
+                  <ul class="miniListCorps">
+                    <li>Passacailles extraites d'<a href="https://www.youtube.com/watch?v=bUH9XZYp7H8">Armide</a> ou  de <a href="http://www.youtube.com/watch?v=-U-PFE9-Vc4&amp;feature=related">Roland</a> de Jean-Baptiste Lully (1632-1687).</li>
+                    <li>Chaconne pour les Tritons, extraite d'<a href="http://www.youtube.com/watch?v=UAJaMkbrXIU&amp;feature=related">Alcyone</a> de Marin Marais (1656-1728).</li>
+                    <li>Chaconne de <a href="http://www.youtube.com/watch?v=WQwuY2d2ApE&amp;feature=related">Naïs</a> de Jean-Philippe Rameau (1683-1764). </li>
+                    <li>Chaconne de <a href="http://www.youtube.com/watch?v=NCkK9CRs8Wg&amp;feature=related">Daphnis et Chloe</a> de Joseph Bodin de Boismortier (1689-1775).</li>
+                  </ul>
+
+                  <p>De par la majesté qu'elle est capable de déployer, la chaconne a fréquemment servi de mouvement conclusif à des oeuvres importantes telles <a href="http://www.youtube.com/watch?v=8Re2dG8Kvi4&amp;feature=related">Semele</a> de  Marais, <a href="https://www.youtube.com/watch?v=uDgcsLOQ1h0">Venus et Adonis</a> de Desmarest ou les <a href="http://www.youtube.com/watch?v=L_nUt66IvIY&amp;feature=related">Indes galantes</a> de Rameau.</p>
+
+                  <p>Simultanément s'est développée une chaconne  purement instrumentale,  confiée aux instruments les plus représentatifs de l'époque :</p>
+                  
+                  <ul class="miniListCorps">
+                    <li>le clavecin : <a href="http://www.youtube.com/watch?v=kxObNkXUNbA&feature=related">Jacques Champion de Chambonnière</a> (1601-1672), <a href="http://www.youtube.com/watch?v=oEMGSOx5LTk&amp;feature=related">Louis Couperin</a> (1626-1661), <a href="http://www.youtube.com/watch?v=5XBh1b-k-VU">Jean Henry d'Anglebert</a> (1629-1691), Nicolas Lebègue (1631-1702) (Chaconnes extraites des Suites 1 <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/clavecin/chaconne1.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/clavecin/chaconne1.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> et 4 <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/clavecin/chaconne2.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/clavecin/chaconne2.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>, respectivement), <a href="https://www.youtube.com/watch?v=q8eMrY8xJLg">Johann Caspar Ferdinand Fischer</a> (1656-1746),  <a href="http://www.youtube.com/watch?v=3D39R47PDxs&feature=relmfu">John Blow</a> (1649-1708), <a href="http://www.youtube.com/watch?v=sMY1_n53Ick">Georg Muffat</a> (1653-1704), <a href="http://www.youtube.com/watch?v=yfgokHWVUE0&feature=related">Gaspard Le Roux</a> (1660-1707), <a href="http://www.youtube.com/watch?v=Glki3wkVdm8">Jacques Duphly</a> (1715-1789), <a href="https://www.youtube.com/watch?v=MDSX4jAqbxs">Bernard de Bury</a> (1720-1785), ... . Notez, une fois de plus, que ce ne sont pas forcément les meilleurs clavecinistes qui jouent des plus beaux clavecins !</li>
+                    <li>un ou deux violons : <a href="http://www.youtube.com/watch?v=gR6IQ9SPSYM&amp;feature=related">Tarquinio Merula</a> (1594-1665), <a href="http://www.youtube.com/watch?v=68kknaL6wS0">Biagio Marini</a> (1597-1665), <a href="http://www.youtube.com/watch?v=t8p9rolham8&amp;feature=fvwrel">Antonio Bertali </a> (1605-1669) (Un tube parmi les chaconnes !), <a href="http://www.youtube.com/watch?v=CIe0YsxHCoo">Johann Heinrich Schmelzer</a> (1623-1680) (dans le style inusité d'une ballade irlandaise), <a href="http://www.youtube.com/watch?v=HBVX35qecWA&amp;feature=fvwrel">Heinrich Ignaz Franz Biber </a> (1644-1704) (un extrait des Sonates du Rosaire), <a href="http://www.youtube.com/watch?v=Ph1tOjtE9v8&amp;feature=related">Johann Pachelbel</a> (1653-1706), <a href="http://www.youtube.com/watch?v=uPizjFqRfmc">Nicola Matteis</a> (1670-1698), <a href="http://www.youtube.com/watch?v=n3DytyMpI7Q">Jean-Marie Leclair</a> (1697-1764). Evidemment l'exemple le plus magistral demeure  la  savante <a href="http://www.youtube.com/watch?v=cavY1keT3zw">Chaconne</a> extraite de la Partita n°2, BWV 1004, de Johann Sebastian Bach (1685-1750). </li>
+                    <li>le  théorbe ou le luth :  Robert de Visée  (vers 1660-1732), <a href="http://www.youtube.com/watch?v=LO_jpR04Hfo&amp;feature=related">Chaconne</a> au théorbe à 14 cordes, superbe et de toutes sans doute ma préférée, <a href="http://www.youtube.com/watch?v=DiY5CAdeu_Y&feature=related">Sylvius Leopold Weiss</a> (1687-1750).</li>
+                    <li>la viole de gambe : <a href="http://www.youtube.com/watch?v=9T7RIfNT69Y&feature=related">Jean de Sainte Colombe</a> (1640-1700), <a href="http://www.youtube.com/watch?v=3j1Coekvbc0&amp;feature=related">Marin Marais</a> (1656-1728) et <a href="https://www.youtube.com/watch?v=gyf4UUuKVPw">Antoine Forqueray</a> (1672-1745).</li>
+                    <li>la voix accompagnée : <a href="http://www.youtube.com/watch?v=iGIi4x_Hj04&amp;feature=related">Giovanni Battista Fasolo</a> (1598-1664), <a href="http://www.youtube.com/watch?v=3O3BoqTiggg&amp;feature=related">Benedetto Ferrari</a> (1603-1681) et <a href="http://www.youtube.com/watch?v=8r4GM_VGVZ8&amp;feature=related">Maurizio Cazatti</a> (1620-1677).  La Chaconne "destinée" à clore l'opéra Giasone de Cavalli est, en fait, l'oeuvre d'un compositeur italien contemporain, <a href="http://www.youtube.com/watch?v=ukLxg6L1UkE">Federico Maria Sardelli</a> (1963- ).</li>
+                    <li>l'orgue : <a href="http://www.youtube.com/watch?v=qJNgbvDvJQQ">Dietrich Buxtehude </a> (1638-1707) et<a href="http://www.youtube.com/watch?v=APPMsTpHhaY&amp;feature=rellist&amp;playnext=1&amp;list=PL829E8DAC371F9AD7"> Johann Pachelbel</a> (1653-1706).</li>
+                    <li>
+                      <div class="conteneurImageSeule">
+                          <div>
+                              <figure>
+                                  <img src="../images/chaconne/lislevand.jpg" alt="Eton Choirbook"/>
+                                  <figcaption>Eton Choirbook</figcaption>
+                              </figure>
+                          </div>
+                      </div>un ensemble instrumental : <a href="http://www.youtube.com/watch?v=AQGVZtuh-50&amp;feature=rellist&amp;playnext=1&amp;list=PL6368B51E9FBAB777">Heinrich Ignaz Franz Biber </a> (1644-1704), <a href="http://www.youtube.com/watch?v=-r6lVM6QPic">Johannes Hieronymus Kapsberger</a> (?-1651), <a href="http://www.youtube.com/watch?v=7qJlPehZbVQ">Arcangelo Corelli</a> (1653-1713), <a href="http://www.youtube.com/watch?v=pv3HcV_oOeM">Benedetto Marcello</a> (1686-1739), <a href="http://www.youtube.com/watch?v=R-tL2sE1Mvk">Giuseppe Antonio Brescianello (1690-1757)</a> (1690-1757), une belle surprise de la part d'un musicien fort peu connu.
+                    </li>
+                  </ul>
+
+                  <p>Hors des sentiers battus, veuillez noter l'excellent enregistrement ci-contre de Rolf Lislevand, paru chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Rolf-Lislevand-Nuove-Musiche/hnum/6751665">ECM</a>, qui illustre notre propos comme nul autre.</p>
+                  
+                  <p>A la période classique, la chaconne est devenue quasiment obsolète,  ayant apparemment épuisé ses effets : celle de  <a href="http://www.youtube.com/watch?v=aRvHzlPr0Kw">Nicola Jommelli</a> (1714-1774), par ailleurs un compositeur parfaitement estimable, paraît effectivement datée pour ne pas dire démodée. Le genre, provisoirement éteint, ne s'est réveillé qu'à la fin de l'ère romantique  et dans un esprit très différent, privilégiant  la virtuosité et/ou les développements en forme de variations :</p>
+                  
+                  <ul class="miniListCorps">
+                    <li>Johannes Brahms (1833-1897) s'est laissé séduire par les possibilités offertes par la passacaille dans le monumental finale de la <a href="http://www.youtube.com/watch?v=wxB5vkZy7nM">4<sup>ème</sup> Symphonie</a> (positionnez-vous à 30'25"). On connaît moins sa version pour la main gauche de la <a href="http://www.youtube.com/watch?v=4dV0p-xfaNc">Chaconne</a>, BWV 1004, de Bach.</li>
+                    <li>Découvrez encore l'étonnante <a href="https://www.youtube.com/watch?v=f0nlJXooIVc">Passacaille</a> de Leopold Godowsky (1870-1938), 44 (!) variations sur le thème initial de la Symphonie inachevée de Schubert.</li>
+                    <li><a href="http://www.youtube.com/watch?v=sw9DlMNnpPM&feature=related">Ferruccio Busoni</a> (1866-1924) s'est également rendu célèbre en transcrivant pour le piano la
+                    Chaconne BWV 1004 de Bach mais sachez qu'il existe des transcriptions, pour piano solo, de la Passacaille BWV 582, dues à <a href="http://www.youtube.com/watch?v=UwagbWOEMu0&feature=related">Eugène d'Albert</a> (1864-1932),  <a href="http://www.youtube.com/watch?v=tAUkximrwHw">Igor Zhukov</a> - la plus personnelle - ou <a href="http://www.youtube.com/watch?v=NuAYn9wfWuo&feature=related">Krystian Zimerman</a> sans oublier celle, pour orchestre, de <a href="http://www.youtube.com/watch?v=jTsF9-4fE0w&feature=related">Leopold Stokowski</a>.
+                    <li>Une chaconne en sol mineur, attribuée à <a href="http://www.youtube.com/watch?v=Fwq8AGhBNJ4">Tomaso Vitali</a> (1663-1745), a fait les beaux soirs de violonistes virtuoses depuis que Ferdinand David l'a publiée vers 1860. Une simple écoute révèle  qu'elle est soit un faux - ce que beaucoup de musicologues pensent - soit un original  dénaturé par une transcription d'un goût douteux.  </li>
+                  </ul>
+
+                  <p>Le 20<sup>ème</sup> siècle a repris la passacaille à son compte en insistant sur son côté savant ou, plus modestement, sur l'attrait d'un ostinato moderne remplaçant l'antique basse obstinée :</p>
+
+                  <ul class="miniListCorps">
+                    <li>Max Reger (1873-1916) : <a href="http://www.youtube.com/watch?v=ZCafrHnRtYc">Passacaille</a>, opus 63 n°6, pour orgue.</li>
+                    <li>Maurice Ravel (1875-1937) : <a href="http://www.youtube.com/watch?v=viFtCQxrRE8">3<sup>ème</sup> mouvement</a> du trio en la majeur.</li>
+                    <li>Anton Webern (1883-1945) : <a href="http://www.youtube.com/watch?v=hZelEcPZU8A&feature=related">Passacaille</a>, opus 1, pour orchestre, essentiel !</li>
+                    <li>Jón Leifs (1899-1968) : <a href="http://www.youtube.com/watch?v=jEZv4ku9tBM">2<sup>ème</sup> mouvement</a> du Concerto pour orgue.</li>
+                    <li>Aaron Copland (1900-1990) : <a href="http://www.youtube.com/watch?v=XPrRvr2vx8M">Passacaille </a> pour piano, une oeuvre de jeunesse à découvrir !</li>
+                    <li>Dimitri Schostakovitch (1906-1975) : <a href="http://www.youtube.com/watch?v=vhJgzg8nEZI">3<sup>ème</sup> mouvement</a> du célèbre 1<sup>er</sup> Concerto pour violon.</li>
+                    <li>Benjamin Britten (1913-1976) : superbe <a href="https://www.youtube.com/watch?v=Sjl4_j066rY">Passacaille</a> de l'opéra, Peter Grimes.</li>
+                    <li>Witold Lutosławski (1913-1994) : <a href="http://www.youtube.com/watch?v=PIUeHodNgWw&feature=related">3<sup>ème</sup> mouvement</a> du Concerto pour orchestre.  </li>
+                    <li>Henri Dutilleux (1916-2013) : <a href="http://www.youtube.com/watch?v=lpQ6jWGEvhk">Andante</a> de la 1<sup>ère</sup> Symphonie, à découvrir.</li>
+                    <li>György Ligeti (1923-2006) : <a href="http://www.youtube.com/watch?v=uqGabj0b5jI">Passacaglia ungherese</a>.</li>
+                    <li>Sofia Goubaïdoulina (1931- ) : <a href="http://www.youtube.com/watch?v=l4J29fRkICM">Passacaglia</a>.</li>
+                    <li>Krzysztof Penderecki (1933- ) : <a href="http://www.youtube.com/watch?v=0r2Ht7LvTnc">4<sup>ème</sup> mouvement</a> de la 3<sup>ème</sup> Symphonie.</li>
+                    <li>Philip Glass (1937- ) : <a href="http://www.youtube.com/watch?v=Jf28vvs0BOs">3<sup>ème</sup> mouvement</a> de la 3<sup>ème</sup> Symphonie.</li>
+                    <li>John Adams (1947- ) : <a href="http://www.youtube.com/watch?v=Tx1ktwTcPz0">2<sup>ème</sup> mouvement</a> du 1<sup>er</sup> Concerto pour violon.</li>
+                  </ul>
+
+                  <p>Les fêtes de fin d'année approchant, j'ai  cherché à adoucir le sort de ceux - ils sont  plus nombreux qu'on le pense généralement - qu'agace l'omniprésence programmée de doucereux chants de Noëls. Anciennes chaconnes et autres passacailles pourraient faire l'affaire, proposant autant d'airs  sachant marier solennité, mélancolie et gaieté. N'est-ce pas là une bonne idée de cadeau pour tous ceux qui n'ont plus d'idée originale depuis longtemps ?  Si votre hôte n'apprécie que la musique de variété, j'ai aussi ce qu'il vous faut : Amedeo Minghi - vous ne connaissiez pas ? moi non plus ! - a ressucité la <a href="http://www.youtube.com/watch?v=nrfoNeoRoHc">Ciaccona</a> dans cette chanson qui en vaut bien d'autres.</p>
+                </div>
   
-  <p>Initialement  danse populaire d'origine  hispano-américaine, la chaconne (avec un ou deux &quot;n&quot;, à votre guise) a très vite été adoptée  par les musiciens de la période baroque qui ont vu, dans la simplicité de son déroulement,  l'occasion de multiplier les variations à l'infini. Sa chorégraphie savante fut codifiée à l'époque de Louis XIV et la figure ci-contre en détaille quelques pas (Vous trouverez <a href="http://www.early-dance.de/en/content/6390-chaconne-pour-un-homme">ici</a> une suite plus complète).</p>
-  <p>Quelques repères facilement reconnaissables sont communs à toutes les chaconnes : une basse obstinée
-    <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/chaconne/ostinato.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/chaconne/ostinato.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-imposant d'emblée un rythme obsédant sur lequel vient se greffer une  mélodie
-<sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/chaconne/theme.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/chaconne/theme.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
- autorisant toutes sortes de variations
- <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/chaconne/variation.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/chaconne/variation.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
- qui finissent généralement pas revenir au point de départ. Seules d'infimes subtilités n'ayant pas leur place ici distinguent  la chaconne de la passacaille, au point qu'en musique ancienne, les deux figures sont souvent confondues. Les compositeurs plus récents préfèrent cependant l'appellation passacaille afin de marquer qu'ils se sont libérés du schéma baroque stéréotypé. Sachez encore que le Ground, pratiqué Outre-Manche, s'apparente nettement à la chaconne.</p>
-  
-  
-  <p>Les chaconnes ont conservé leur parfum populaire pendant toute la (basse) Renaissance. Les ensembles spécialisés (Hesperion XXI, Arpeggiata, Piffaro, ...) en mettent au menu de leurs concerts car elles ont un effet stimulant sur tous les publics qui en sont de fait friands. Ces chaconnes peuvent être :</p>
-  <li>Joyeuses : Anonyme, <a href="http://www.youtube.com/watch?v=M9A-EbjwPhQ&amp;feature=related">Ciaccona di Paradiso e dell'Inferno</a>.</li>
-  <li>Débridées : Salomone Rossi (1570-1630), <a href="http://www.youtube.com/watch?v=yScg02DM-jY">Ciaccona</a>.</li>
-  <li>Enjouées : Andrea Falconiero (1586-1656), <a href="http://www.youtube.com/watch?v=Mm6y-rI-7f4&amp;feature=related">Passacaglia</a>.</li>
-  <li>Nostalgiques : Stefano Landi (1587-1639), <a href="http://www.youtube.com/watch?v=YjzAi9f9PM0">Passacaglia della Vita</a>.</li>
-  <li>Expressives : Claudio Monteverdi (1567-1643), <a href="http://www.youtube.com/watch?v=020L1rGjnng">Zefiro Torna</a>.</li>
-
-
-  <p>Le Grand Siècle Français a fait un usage intensif de la chaconne dans les tragédies lyriques voire les Actes de Ballet :</p>
-  <li>Passacailles extraites d'<a href="https://www.youtube.com/watch?v=bUH9XZYp7H8">Armide</a> ou  de <a href="http://www.youtube.com/watch?v=-U-PFE9-Vc4&amp;feature=related">Roland</a> de Jean-Baptiste Lully (1632-1687).</li>
-  <li>Chaconne pour les Tritons, extraite d'<a href="http://www.youtube.com/watch?v=UAJaMkbrXIU&amp;feature=related">Alcyone</a> de Marin Marais (1656-1728).</li>
-  <li>Chaconne de <a href="http://www.youtube.com/watch?v=WQwuY2d2ApE&amp;feature=related">Naïs</a> de Jean-Philippe Rameau (1683-1764). </li>
-  <li>Chaconne de <a href="http://www.youtube.com/watch?v=NCkK9CRs8Wg&amp;feature=related">Daphnis et Chloe</a> de Joseph Bodin de Boismortier (1689-1775).</li>
-  <p>De par la majesté qu'elle est capable de déployer, la chaconne a fréquemment servi de mouvement conclusif à des oeuvres importantes telles <a href="http://www.youtube.com/watch?v=8Re2dG8Kvi4&amp;feature=related">Semele</a> de  Marais, <a href="https://www.youtube.com/watch?v=uDgcsLOQ1h0">Venus et Adonis</a> de Desmarest ou les <a href="http://www.youtube.com/watch?v=L_nUt66IvIY&amp;feature=related">Indes galantes</a> de Rameau.</p>
-
-
-  <p>Simultanément s'est développée une chaconne  purement instrumentale,  confiée aux instruments les plus représentatifs de l'époque :</p>
-  
-  <li>le clavecin : <a href="http://www.youtube.com/watch?v=kxObNkXUNbA&feature=related">Jacques Champion de Chambonnière</a> (1601-1672), <a href="http://www.youtube.com/watch?v=oEMGSOx5LTk&amp;feature=related">Louis Couperin</a> (1626-1661), <a href="http://www.youtube.com/watch?v=5XBh1b-k-VU">Jean Henry d'Anglebert</a> (1629-1691), Nicolas Lebègue (1631-1702) (Chaconnes extraites des Suites 1 <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/clavecin/chaconne1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/clavecin/chaconne1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> et 4 <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/clavecin/chaconne2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/clavecin/chaconne2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, respectivement), <a href="https://www.youtube.com/watch?v=q8eMrY8xJLg">Johann Caspar Ferdinand Fischer</a> (1656-1746),  <a href="http://www.youtube.com/watch?v=3D39R47PDxs&feature=relmfu">John Blow</a> (1649-1708), <a href="http://www.youtube.com/watch?v=sMY1_n53Ick">Georg Muffat</a> (1653-1704), <a href="http://www.youtube.com/watch?v=yfgokHWVUE0&feature=related">Gaspard Le Roux</a> (1660-1707), <a href="http://www.youtube.com/watch?v=Glki3wkVdm8">Jacques Duphly</a> (1715-1789), <a href="https://www.youtube.com/watch?v=MDSX4jAqbxs">Bernard de Bury</a> (1720-1785), ... . Notez, une fois de plus, que ce ne sont pas forcément les meilleurs clavecinistes qui jouent des plus beaux clavecins !</li>
-
-<li>un ou deux violons : <a href="http://www.youtube.com/watch?v=gR6IQ9SPSYM&amp;feature=related">Tarquinio Merula</a> (1594-1665), <a href="http://www.youtube.com/watch?v=68kknaL6wS0">Biagio Marini</a> (1597-1665), <a href="http://www.youtube.com/watch?v=t8p9rolham8&amp;feature=fvwrel">Antonio Bertali </a> (1605-1669) (Un tube parmi les chaconnes !), <a href="http://www.youtube.com/watch?v=CIe0YsxHCoo">Johann Heinrich Schmelzer</a> (1623-1680) (dans le style inusité d'une ballade irlandaise), <a href="http://www.youtube.com/watch?v=HBVX35qecWA&amp;feature=fvwrel">Heinrich Ignaz Franz Biber </a> (1644-1704) (un extrait des Sonates du Rosaire), <a href="http://www.youtube.com/watch?v=Ph1tOjtE9v8&amp;feature=related">Johann Pachelbel</a> (1653-1706), <a href="http://www.youtube.com/watch?v=uPizjFqRfmc">Nicola Matteis</a> (1670-1698), <a href="http://www.youtube.com/watch?v=n3DytyMpI7Q">Jean-Marie Leclair</a> (1697-1764). Evidemment l'exemple le plus magistral demeure  la  savante <a href="http://www.youtube.com/watch?v=cavY1keT3zw">Chaconne</a> extraite de la Partita n°2, BWV 1004, de Johann Sebastian Bach (1685-1750). </li>
-
-<li>le  théorbe ou le luth :  Robert de Visée  (vers 1660-1732), <a href="http://www.youtube.com/watch?v=LO_jpR04Hfo&amp;feature=related">Chaconne</a> au théorbe à 14 cordes, superbe et de toutes sans doute ma préférée, <a href="http://www.youtube.com/watch?v=DiY5CAdeu_Y&feature=related">Sylvius Leopold Weiss</a> (1687-1750).</li>
-<li>la viole de gambe : <a href="http://www.youtube.com/watch?v=9T7RIfNT69Y&feature=related">Jean de Sainte Colombe</a> (1640-1700), <a href="http://www.youtube.com/watch?v=3j1Coekvbc0&amp;feature=related">Marin Marais</a> (1656-1728) et <a href="https://www.youtube.com/watch?v=gyf4UUuKVPw">Antoine Forqueray</a> (1672-1745).</li>
-<li>la voix accompagnée : <a href="http://www.youtube.com/watch?v=iGIi4x_Hj04&amp;feature=related">Giovanni Battista Fasolo</a> (1598-1664), <a href="http://www.youtube.com/watch?v=3O3BoqTiggg&amp;feature=related">Benedetto Ferrari</a> (1603-1681) et <a href="http://www.youtube.com/watch?v=8r4GM_VGVZ8&amp;feature=related">Maurizio Cazatti</a> (1620-1677).  La Chaconne "destinée" à clore l'opéra Giasone de Cavalli est, en fait, l'oeuvre d'un compositeur italien contemporain, <a href="http://www.youtube.com/watch?v=ukLxg6L1UkE">Federico Maria Sardelli</a> (1963- ).</li>
-<li>l'orgue : <a href="http://www.youtube.com/watch?v=qJNgbvDvJQQ">Dietrich Buxtehude </a> (1638-1707) et<a href="http://www.youtube.com/watch?v=APPMsTpHhaY&amp;feature=rellist&amp;playnext=1&amp;list=PL829E8DAC371F9AD7"> Johann Pachelbel</a> (1653-1706).</li>
-
-<div><img src="../images/chaconne/lislevand.jpg" alt="" /></div>
-<li>un ensemble instrumental : <a href="http://www.youtube.com/watch?v=AQGVZtuh-50&amp;feature=rellist&amp;playnext=1&amp;list=PL6368B51E9FBAB777">Heinrich Ignaz Franz Biber </a> (1644-1704), <a href="http://www.youtube.com/watch?v=-r6lVM6QPic">Johannes Hieronymus Kapsberger</a> (?-1651), <a href="http://www.youtube.com/watch?v=7qJlPehZbVQ">Arcangelo Corelli</a> (1653-1713), <a href="http://www.youtube.com/watch?v=pv3HcV_oOeM">Benedetto Marcello</a> (1686-1739), <a href="http://www.youtube.com/watch?v=R-tL2sE1Mvk">Giuseppe Antonio Brescianello (1690-1757)</a> (1690-1757), une belle surprise de la part d'un musicien fort peu connu.</li>
-
-<p>Hors des sentiers battus, veuillez noter l'excellent enregistrement ci-contre de Rolf Lislevand, paru chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Rolf-Lislevand-Nuove-Musiche/hnum/6751665">ECM</a>, qui illustre notre propos comme nul autre.</p>
-
-
-<p>A la période classique, la chaconne est devenue quasiment obsolète,  ayant apparemment épuisé ses effets : celle de  <a href="http://www.youtube.com/watch?v=aRvHzlPr0Kw">Nicola Jommelli</a> (1714-1774), par ailleurs un compositeur parfaitement estimable, paraît effectivement datée pour ne pas dire démodée. Le genre, provisoirement éteint, ne s'est réveillé qu'à la fin de l'ère romantique  et dans un esprit très différent, privilégiant  la virtuosité et/ou les développements en forme de variations :</p>
-
-<li>Johannes Brahms (1833-1897) s'est laissé séduire par les possibilités offertes par la passacaille dans le monumental finale de la <a href="http://www.youtube.com/watch?v=wxB5vkZy7nM">4<sup>ème</sup> Symphonie</a> (positionnez-vous à 30'25"). On connaît moins sa version pour la main gauche de la <a href="http://www.youtube.com/watch?v=4dV0p-xfaNc">Chaconne</a>, BWV 1004, de Bach.</li>
-<li>Découvrez encore l'étonnante <a href="https://www.youtube.com/watch?v=f0nlJXooIVc">Passacaille</a> de Leopold Godowsky (1870-1938), 44 (!) variations sur le thème initial de la Symphonie inachevée de Schubert.</li>
-
-<li><a href="http://www.youtube.com/watch?v=sw9DlMNnpPM&feature=related">Ferruccio Busoni</a> (1866-1924) s'est également rendu célèbre en transcrivant pour le piano la
-Chaconne BWV 1004 de Bach mais sachez qu'il existe des transcriptions, pour piano solo, de la Passacaille BWV 582, dues à <a href="http://www.youtube.com/watch?v=UwagbWOEMu0&feature=related">Eugène d'Albert</a> (1864-1932),  <a href="http://www.youtube.com/watch?v=tAUkximrwHw">Igor Zhukov</a> - la plus personnelle - ou <a href="http://www.youtube.com/watch?v=NuAYn9wfWuo&feature=related">Krystian Zimerman</a> sans oublier celle, pour orchestre, de <a href="http://www.youtube.com/watch?v=jTsF9-4fE0w&feature=related">Leopold Stokowski</a>.
-  
-<p>- Une chaconne en sol mineur, attribuée à <a href="http://www.youtube.com/watch?v=Fwq8AGhBNJ4">Tomaso Vitali</a> (1663-1745), a fait les beaux soirs de violonistes virtuoses depuis que Ferdinand David l'a publiée vers 1860. Une simple écoute révèle  qu'elle est soit un faux - ce que beaucoup de musicologues pensent - soit un original  dénaturé par une transcription d'un goût douteux.  </li>
-
-
-
-
-  <p>Le 20<sup>ème</sup> siècle a repris la passacaille à son compte en insistant sur son côté savant ou, plus modestement, sur l'attrait d'un ostinato moderne remplaçant l'antique basse obstinée :</p>
-  <li>Max Reger (1873-1916) : <a href="http://www.youtube.com/watch?v=ZCafrHnRtYc">Passacaille</a>, opus 63 n°6, pour orgue.</li>
-  <li>Maurice Ravel (1875-1937) : <a href="http://www.youtube.com/watch?v=viFtCQxrRE8">3<sup>ème</sup> mouvement</a> du trio en la majeur.</li>
-<li>Anton Webern (1883-1945) : <a href="http://www.youtube.com/watch?v=hZelEcPZU8A&feature=related">Passacaille</a>, opus 1, pour orchestre, essentiel !</li>
-<li>Jón Leifs (1899-1968) : <a href="http://www.youtube.com/watch?v=jEZv4ku9tBM">2<sup>ème</sup> mouvement</a> du Concerto pour orgue.</li>
-<li>Aaron Copland (1900-1990) : <a href="http://www.youtube.com/watch?v=XPrRvr2vx8M">Passacaille </a> pour piano, une oeuvre de jeunesse à découvrir !</li>
-<li>Dimitri Schostakovitch (1906-1975) : <a href="http://www.youtube.com/watch?v=vhJgzg8nEZI">3<sup>ème</sup> mouvement</a> du célèbre 1<sup>er</sup> Concerto pour violon.</li>
-
-<li>Benjamin Britten (1913-1976) : superbe <a href="https://www.youtube.com/watch?v=Sjl4_j066rY">Passacaille</a> de l'opéra, Peter Grimes.</li>
-
-
-<li>Witold Lutosławski (1913-1994) : <a href="http://www.youtube.com/watch?v=PIUeHodNgWw&feature=related">3<sup>ème</sup> mouvement</a> du Concerto pour orchestre.  </li>
-<li>Henri Dutilleux (1916-2013) : <a href="http://www.youtube.com/watch?v=lpQ6jWGEvhk">Andante</a> de la 1<sup>ère</sup> Symphonie, à découvrir.</li>
-<li>György Ligeti (1923-2006) : <a href="http://www.youtube.com/watch?v=uqGabj0b5jI">Passacaglia ungherese</a>.</li>
-<li>Sofia Goubaïdoulina (1931- ) : <a href="http://www.youtube.com/watch?v=l4J29fRkICM">Passacaglia</a>.</li>
-
-<li>Krzysztof Penderecki (1933- ) : <a href="http://www.youtube.com/watch?v=0r2Ht7LvTnc">4<sup>ème</sup> mouvement</a> de la 3<sup>ème</sup> Symphonie.</li>
-<li>Philip Glass (1937- ) : <a href="http://www.youtube.com/watch?v=Jf28vvs0BOs">3<sup>ème</sup> mouvement</a> de la 3<sup>ème</sup> Symphonie.</li>
-
-<li>John Adams (1947- ) : <a href="http://www.youtube.com/watch?v=Tx1ktwTcPz0">2<sup>ème</sup> mouvement</a> du 1<sup>er</sup> Concerto pour violon.</li>
-
-
-<p>Les fêtes de fin d'année approchant, j'ai  cherché à adoucir le sort de ceux - ils sont  plus nombreux qu'on le pense généralement - qu'agace l'omniprésence programmée de doucereux chants de Noëls. Anciennes chaconnes et autres passacailles pourraient faire l'affaire, proposant autant d'airs  sachant marier solennité, mélancolie et gaieté. N'est-ce pas là une bonne idée de cadeau pour tous ceux qui n'ont plus d'idée originale depuis longtemps ?  Si votre hôte n'apprécie que la musique de variété, j'ai aussi ce qu'il vous faut : Amedeo Minghi - vous ne connaissiez pas ? moi non plus ! - a ressucité la <a href="http://www.youtube.com/watch?v=nrfoNeoRoHc">Ciaccona</a> dans cette chanson qui en vaut bien d'autres.</p>
-
-
-
-  
-              </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -170,8 +184,6 @@ Chaconne BWV 1004 de Bach mais sachez qu'il existe des transcriptions, pour pian
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

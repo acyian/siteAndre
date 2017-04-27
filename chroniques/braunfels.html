@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Walter Braunfels</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,36 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreMusiqueSymphonique" href="#musiqueSymphonique" class="linavMenu active">
+                    <span>La musique symphonique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOpera" href="#opera" class="linavMenu">
+                    <span>L'opéra</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueSacree" href="#musiqueSacree" class="linavMenu">
+                    <span>La musique sacrée</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueDeChambre" href="#musiqueDeChambre" class="linavMenu">
+                    <span>La musique de chambre</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Walter Braunfels</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,83 +71,145 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tiresdeloubli.html">Compositeurs oubliés</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Walter Braunfels</li>
                     </ul>
                 </nav>  
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#musiqueSymphonique">La musique symphonique</a></li>
+                        <li><a href="#opera">L'opéra</a></li>
+                        <li><a href="#musiqueSacree">La musique sacrée</a></li>
+                        <li><a href="#musiqueDeChambre">La musique de chambre</a></li>
+                    </ul>
+                </div> 
   
-  <h2>Tiré de l'oubli : Walter Braunfels.</h2>
                 <div class="blocImgFirstAndText">
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
-                              <img src="../images/braunfels/braunfels.jpg" alt=""/>
-                              <figcaption></figcaption>
+                              <img src="../images/braunfels/braunfels.jpg" alt="Walter Braunfels"/>
+                              <figcaption>Walter Braunfels</figcaption>
                           </figure>
                       </div>
                   </div>
   
-  
-  
-  <p>Walter Braunfels (1882-1954) a connu la gloire dans les années 1920 mais elle fut de courte durée, s'éteignant  aux heures  sombres qu'a  connues l'Allemagne. Elle ne s'est jamais rallumée, du moins du vivant du compositeur. Par bonheur sa descendance s'est investie dans le projet d'entretenir sa mémoire et de veiller sur son <a href="http://www.walter-braunfels.de/wb-html/list-of-works?lang=en">oeuvre</a> :</p>
-  <li>Michael Braunfels (1917-2015), son fils, fut  pianiste et accessoirement (piètre) compositeur. Le voici, en duo avec son père, dans une version pour deux pianos des Variations paternelles, opus 46, sur une comptine française bien connue <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/braunfels/pereetfils.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/braunfels/pereetfils.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</li>
-  <li>Stephan Braunfels (1950- ), son petit-fils, est architecte de métier et accessoirement metteur en scène, ici de l'<a href="http://www.dailymotion.com/video/x29mbmk_braunfels-ulenspiegel-gera-january-28-2011_music">Ulenspiegel</a> grand-paternel, une production du théâtre de Gera (Thuringe).  </li>
-  <p>Bien que Braunfels ait été brièvement mentionné dans la chronique relative à l'<a href="allemagne.html"><span style="color:#F60">Allemagne</a></span>, quelques entregistrements récents permettent d'en affiner le portrait (musical).  </p>
-  <p></p>
-  <p>Walter est né du second mariage de son juriste de père avec Hélène Spohr,  petite-nièce du célèbre (surtout à l'époque) compositeur Ludwig Spohr (1784-1859), l'occasion de vous remémorer l'une des 9 symphonies achevées par celui-ci (<a href="https://www.youtube.com/watch?v=loEJAHV1LK0">n°2</a>). Le rapport génétique  est d'autant plus probable qu'Hélène était aussi  musicienne, ayant même travaillé avec Liszt. </p>
-  <p>Bien qu'ayant commencé le piano très jeune, Walter n'a pas manifesté l'acharnement souhaité par sa mère, préférant improviser au gré de son humeur. La  pauvreté relative de la vie musicale à Francfort l'a, dans un premier temps, détourné de la carrière artistique : Flottow, Lortzing, Gounod ou Meyerbeer, alors à la mode en province, ne constituaient pas pour lui un aliment stimulant. Il étudia donc le droit et l'économie, à Munich, où il rencontra le chef Felix Mottl qui était en train de répandre ... Wagner et Berlioz, autant de rencontres majeures qui réveillèrent son appétit musical. Il se remit dès lors sérieusement à ses premières études, soucieux de passer du statut d'amateur distingué à celui de professionnel  :  leçons de piano auprès de   Theodor Leschetitzky (Professeur d'Artur   Schnabel et d'Ignaz Paderewski) 
-  et de composition auprès de   Karl Nawratil puis surtout de   Ludwig Thuille (1861-1907) (Si vous ne  connaissez pas ce dernier, écoutez son <a href="https://www.youtube.com/watch?v=Po1ei8rb2x8">Concerto en ré</a>, pour piano, et surtout son beau <a href="https://www.youtube.com/watch?v=Igmxakl_pmM">Quintette à clavier</a>, opus 20). </p>
-  <p></p>
-  <p><i>La musique symphonique.</i></p>
-  <p>Le talent d'orchestrateur de Braunfels est apparu clairement, pour la première fois, dans les <a href="https://www.youtube.com/watch?v=6sFfdKp4kfE">Variations symphoniques</a>, opus 15, sur une  chanson  traditionnelle française (1909) et il a culminé  avec les <a href="https://www.youtube.com/watch?v=V2vA4fBaqkI">Phantastische Erscheinungen eines Themas von Hector Berlioz</a> (Apparitions fantastiques sur un Thème de Berlioz, celui de la <a href="https://www.youtube.com/watch?v=s3uM_OoogzA">Chanson de la Puce</a> (en 1:20), extrait de la Damnation de Faust) (1917). Entre-temps <a href="https://www.youtube.com/watch?v=YpknlCpEkQs">Trois Chants chinois</a> (1914) ont constitué une belle contribution au genre du lied avec orchestre.</p>
-  <p><a href="https://www.youtube.com/watch?v=ay_CpBk0ycs">Don Juan</a> (1924), fantasmagorie pour grand orchestre se réfère  à l'opéra de Mozart dont vous aurez plaisir à retrouver quelques grands thèmes (l'<a href="https://www.youtube.com/watch?v=F6H8a8HwA8g">air</a> dit du Champagne en 1:04:24, suggéré confusément en 1:00 puis exploité explicitement en 2:20, les autres sont laissés à votre sagacité). Cette oeuvre est souvent couplée au disque avec l'original <a href="https://www.youtube.com/watch?v=5bWbMI-nC_8">Concerto</a> pour orgue et choeur d'enfants (1927). L'autre concerto (1911) est une oeuvre antérieure, pour piano & orchestre, dont le bel adagio <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/braunfels/concerto.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/braunfels/concerto.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>  évoque lointainement le climat de celui du <a href="http://www.dailymotion.com/video/xsvy1_brahms-concerto-piano-no-2-adagio_music">2<sup>ème</sup></a> de Brahms.</p>
-  <p><a href="https://www.youtube.com/watch?v=1BL2bDMQ9Oc">Prélude &amp; Fugue</a>, pour orchestre (1935), est une oeuvre conventionnelle dans sa structure mais absolument magistrale dans sa réalisation. Il est incompréhensible qu'aucun orchestre digne de ce nom ne mette jamais à l'affiche ce quart d'heure de musique enivrante.  Cette oeuvre est à rapprocher de la <a href="https://www.youtube.com/watch?v=7Q2JiO1gONg&quot;">Toccata, Adagio &amp; Fuge</a>, pour orgue (1933) (zappez  les 3 premières minutes plutôt décourageantes). </p>
-  <p></p>
-  <p><i>L'opéra.</i></p>
-  <p>Au plan vocal, Braunfels a composé des lieder tout au long de sa vie, certes jamais en avance sur leur temps mais remplis de poésie comme en témoigne ce beau Die Nachtigall <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/braunfels/lieder.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/braunfels/lieder.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</p>
-  <p>Mais il s'est surtout rapidement lancé le défi d'écrire des opéras, livrets compris, sur des thèmes empruntés à des auteurs en vue   : <a href="https://www.youtube.com/watch?v=evTS8ZvbneY">Prinzessin Brambilla</a> (d'après E. T. A. Hoffmann) (1909, revu en 1930 et en 1953) et <a href="https://www.youtube.com/watch?v=UbJzVeK_NWs">Ulenspiegel</a> (d'après Charles De Coster) (1913, <a href="http://www.walter-braunfels.de/wb-html/videos-2?lang=en">Ici</a> des extraits enchaînés d'une production récente au Théâtre de Linz) furent deux oeuvres  prometteuses quoique pas totalement abouties.</p>
+                  <p>Walter Braunfels (1882-1954) a connu la gloire dans les années 1920 mais elle fut de courte durée, s'éteignant  aux heures  sombres qu'a  connues l'Allemagne. Elle ne s'est jamais rallumée, du moins du vivant du compositeur. Par bonheur sa descendance s'est investie dans le projet d'entretenir sa mémoire et de veiller sur son <a href="http://www.walter-braunfels.de/wb-html/list-of-works?lang=en">oeuvre</a> :</p>
+                  
+                  <ul class="miniListCorps">
+                    <li>Michael Braunfels (1917-2015), son fils, fut  pianiste et accessoirement (piètre) compositeur. Le voici, en duo avec son père, dans une version pour deux pianos des Variations paternelles, opus 46, sur une comptine française bien connue <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/braunfels/pereetfils.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/braunfels/pereetfils.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>.</li>
+                    <li>Stephan Braunfels (1950- ), son petit-fils, est architecte de métier et accessoirement metteur en scène, ici de l'<a href="http://www.dailymotion.com/video/x29mbmk_braunfels-ulenspiegel-gera-january-28-2011_music">Ulenspiegel</a> grand-paternel, une production du théâtre de Gera (Thuringe). </li>
+                  </ul>
 
-<div><img src="../images/braunfels/vogel.jpg" alt="" /></div>
-  <p>Le (premier) succès d'envergure est venu, en 1923, lorsque l'opéra de Munich a monté <a href="https://www.youtube.com/watch?v=UvNLIishI4g">Die Vögel</a> (1919) (Les Oiseaux, d'après Aristophane), cette fois une réussite incontestable. L'oeuvre fut même considérée comme l'opéra allemand  le plus important de son temps, à égalité avec <a href="https://www.youtube.com/watch?v=o-_oGOv4q3c">Palestrina</a> de Hans Pfizner (1869-1949), un fameux compliment (Les deux compositeurs se lièrent d'ailleurs d'une amitié forte et durable). Aucune trace de chromatismme dans ce langage intemporel qui semble avoir ignoré la mode du temps. L'oeuvre 
-  a suscité l'intérêt de quelques-uns des chefs les plus importants de l'époque (Bruno Walter, Hans Knappersbutch et Wilhelm Furtwaengler, ce dernier pas rancunier de s'être fait volé sa fiancée !).</p>
-  <p>Parmi les opéras ultérieurs, Don Gil von den Grünen Hosen (1924, d'après Tirso de Molina)
-  et  Galathea (1929, d'après un thème développé par Ovide), ne sont malheureusement pas disponibles au contraire de <a href="https://www.youtube.com/watch?v=fP4jIhaZ4iA">Der Traum ein leben</a> (1937) (Le Rêve d'une Vie, d'après Grillparzer), monté en 2001 à Regensburg.</p>
-  <p></p>
-<p><i>La musique sacrée.</i></p>
-  <p>Les menaces qui ont progressivement pesé sur la communauté juive ont convaincu Braunfels de  se convertir  au catholicisme. Opportunisme ou conviction, il s'est mis à l'écriture d'oeuvres  sacrées au rang desquelles un <a href="https://www.youtube.com/watch?v=KXpBN5L6nq8">Te Deum</a> (1921) faisant clairement écho au modèle d'<a href="https://www.youtube.com/watch?v=KeYuPPP1-Qw">Anton Bruckner</a>. Une <a href="https://www.jpc.de/jpcng/classic/detail/-/art/grosse-messe-op-37/hnum/2896898">Grand Messe</a> suivit, en 1926, puis  un grand cycle de cantates s'étalant sur 12 ans (1932-1944), toutes inspirées par la progression de l'année liturgique (Das Kirchenjahr), pour l'Avent (<a href="https://www.youtube.com/watch?v=wnY1dmTbsNw">Advent</a>), Noël (<a href="https://www.youtube.com/watch?v=4t46rql8Pto">Weihnachten</a>), la Passion (<strong>Passionskantate)</strong> et Pâques (<strong>Osterkantate)</strong>. </p>
-  <p>Das Spiel von der Auferstehung des Herrn (Le Jeu de la Résurrection du Seigneur, 1938, revu en 1954) est malheureusement indisponible. <a href="https://www.youtube.com/watch?v=eMkspd44xDE">Verkündigung</a>  est un Mystère sacré en un Prélude et 4 Actes, en fait une adaptation en allemand de L'Annonce faite à Marie de Paul Claudel; notez l'incantation  mahlérienne initiale. L'oeuvre, écrite en 1937, n'a été créée qu'après la guerre, en 1948, car Braunfels était en pleine traversée du désert. </p>
-<p>Elle avait en fait imperceptiblement commencé peu après 1923,  l'année du putsch  manqué   contre le gouvernement de la République de Weimar. Sorti de l'ombre de sa prison (après à peine plus d'un an d'incarcération, une paille pour une tentative de coup d'état !), Hitler  sollicita Braunfels afin qu'il écrive un hymne destiné au mouvement des &quot;chemises brunes&quot;, une offre évidemment repoussée.  Les racines juives du musicien refirent surface et le musicien se retrouva catalogué, en 1938, parmi les artistes dits dégénérés du 3<sup>ème</sup> Reich.</p>
-  <p>Coupé de tout public,   le compositeur se retira   sur les bords du lac de Constance où il continua d'écrire pour lui-même, en particulier <a href="https://www.youtube.com/watch?v=HEmSHenmQEg">Szenen aus der Leben der Heiligen Johanna</a> (1943), une oeuvre mettant en scène la vie de Jeanne d'Arc, un sujet curieusement à la mode en ces temps troublés (Bernard Shaw au théâtre, Carl Dreyer au cinéma et Arthur Honnegger en oratorio). L'oeuvre n'innove certes guère, étalant  ses emprunts à Wagner, mais elle s'impose par son souffle incontestable. La représentation luxuriante (2008) du Deutsche Oper de Berlin  est disponible  chez Arthaus. </p>
-  <p></p>
-  <p><i>La musique de chambre.</i></p>
-  <p>Braunfels excellent pianiste n'a que fort peu  écrit pour son instrument. Par contre, il a composé deux  Quatuors à cordes datés de 1944 (<a href="https://www.youtube.com/watch?v=9IDzouFBMcA">n°1</a> et <a href="https://www.youtube.com/watch?v=jFR39iZvEiE">n°2</a>) qui ont été suivis par un autre quatuor (en mi mineur, indisponible) et un Quintette à cordes <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/braunfels/quintette.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/braunfels/quintette.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>. Le succès ne fut pas au rendez-vous car le temps de Braunfels était  passé comme était passé celui de Korngold, logé sous d'autres cieux (Hollywood !) mais à la même enseigne. D'ailleurs la tardive <a href="https://www.youtube.com/watch?v=JIDXgWyTrjc">Sinfonia brevis</a> (1948)  n'eut pas plus de succès que la grande <a href="https://www.youtube.com/watch?v=JEgrnh0yjaw">Symphonie</a> (1953) de Korngold. </p>
-  <p></p>
-  <p>Après la guerre, Braunfels fut  réintégré à la tête du Conservatoire de Cologne d'où il avait été chassé aux heures sombres. Dès lors, il ne composa plus que deux oeuvres mineures :  <strong>Hebridentänze</strong> (1951) et le ballet Der Zauberlehrling (L'apprenti sorcier 1954) une commande de la TV allemande. En rupture avec son temps, Braunfels était démodé, ce qui a fait dire au chef James Conlon qu'il avait été réduit  au silence par deux fois.</p>
-  <p>Voici pour conclure quelques enregistrements marquants, extraits de sa <a href="http://www.musiques-regenerees.fr/ExilBerlin/Braunfels/BraunfelsDiscographie.html">discographie</a> :</p>
-<div><img src="../images/braunfels/cd1.jpg" alt="" /></div>
-<div><img src="../images/braunfels/cd2.jpg" alt="" /></div>
-<div><img src="../images/braunfels/cd3.jpg" alt="" /></div>
-<div><img src="../images/braunfels/cd4.jpg" alt="" /></div>
+                  <p>Bien que Braunfels ait été brièvement mentionné dans la chronique relative à l'<a href="allemagne.html">Allemagne</a>, quelques entregistrements récents permettent d'en affiner le portrait (musical). </p>
+                  <p>Walter est né du second mariage de son juriste de père avec Hélène Spohr,  petite-nièce du célèbre (surtout à l'époque) compositeur Ludwig Spohr (1784-1859), l'occasion de vous remémorer l'une des 9 symphonies achevées par celui-ci (<a href="https://www.youtube.com/watch?v=loEJAHV1LK0">n°2</a>). Le rapport génétique  est d'autant plus probable qu'Hélène était aussi  musicienne, ayant même travaillé avec Liszt. </p>
+                  <p>Bien qu'ayant commencé le piano très jeune, Walter n'a pas manifesté l'acharnement souhaité par sa mère, préférant improviser au gré de son humeur. La  pauvreté relative de la vie musicale à Francfort l'a, dans un premier temps, détourné de la carrière artistique : Flottow, Lortzing, Gounod ou Meyerbeer, alors à la mode en province, ne constituaient pas pour lui un aliment stimulant. Il étudia donc le droit et l'économie, à Munich, où il rencontra le chef Felix Mottl qui était en train de répandre ... Wagner et Berlioz, autant de rencontres majeures qui réveillèrent son appétit musical. Il se remit dès lors sérieusement à ses premières études, soucieux de passer du statut d'amateur distingué à celui de professionnel  :  leçons de piano auprès de   Theodor Leschetitzky (Professeur d'Artur   Schnabel et d'Ignaz Paderewski) 
+                  et de composition auprès de   Karl Nawratil puis surtout de   Ludwig Thuille (1861-1907) (Si vous ne  connaissez pas ce dernier, écoutez son <a href="https://www.youtube.com/watch?v=Po1ei8rb2x8">Concerto en ré</a>, pour piano, et surtout son beau <a href="https://www.youtube.com/watch?v=Igmxakl_pmM">Quintette à clavier</a>, opus 20). </p>
+
+                  <div id="musiqueSymphonique">
+                    <h4>La musique symphonique</h4>
+
+                    <p>Le talent d'orchestrateur de Braunfels est apparu clairement, pour la première fois, dans les <a href="https://www.youtube.com/watch?v=6sFfdKp4kfE">Variations symphoniques</a>, opus 15, sur une  chanson  traditionnelle française (1909) et il a culminé  avec les <a href="https://www.youtube.com/watch?v=V2vA4fBaqkI">Phantastische Erscheinungen eines Themas von Hector Berlioz</a> (Apparitions fantastiques sur un Thème de Berlioz, celui de la <a href="https://www.youtube.com/watch?v=s3uM_OoogzA">Chanson de la Puce</a> (en 1:20), extrait de la Damnation de Faust) (1917). Entre-temps <a href="https://www.youtube.com/watch?v=YpknlCpEkQs">Trois Chants chinois</a> (1914) ont constitué une belle contribution au genre du lied avec orchestre.</p>
+                    <p><a href="https://www.youtube.com/watch?v=ay_CpBk0ycs">Don Juan</a> (1924), fantasmagorie pour grand orchestre se réfère  à l'opéra de Mozart dont vous aurez plaisir à retrouver quelques grands thèmes (l'<a href="https://www.youtube.com/watch?v=F6H8a8HwA8g">air</a> dit du Champagne en 1:04:24, suggéré confusément en 1:00 puis exploité explicitement en 2:20, les autres sont laissés à votre sagacité). Cette oeuvre est souvent couplée au disque avec l'original <a href="https://www.youtube.com/watch?v=5bWbMI-nC_8">Concerto</a> pour orgue et choeur d'enfants (1927). L'autre concerto (1911) est une oeuvre antérieure, pour piano & orchestre, dont le bel adagio <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/braunfels/concerto.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/braunfels/concerto.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub>  évoque lointainement le climat de celui du <a href="http://www.dailymotion.com/video/xsvy1_brahms-concerto-piano-no-2-adagio_music">2<sup>ème</sup></a> de Brahms.</p>
+                    <p><a href="https://www.youtube.com/watch?v=1BL2bDMQ9Oc">Prélude &amp; Fugue</a>, pour orchestre (1935), est une oeuvre conventionnelle dans sa structure mais absolument magistrale dans sa réalisation. Il est incompréhensible qu'aucun orchestre digne de ce nom ne mette jamais à l'affiche ce quart d'heure de musique enivrante.  Cette oeuvre est à rapprocher de la <a href="https://www.youtube.com/watch?v=7Q2JiO1gONg">Toccata, Adagio &amp; Fuge</a>, pour orgue (1933) (zappez  les 3 premières minutes plutôt décourageantes). </p>
+                  </div>
+
+                  <div id="opera">
+                    <h4>L'opéra</h4>
+
+                    <p>Au plan vocal, Braunfels a composé des lieder tout au long de sa vie, certes jamais en avance sur leur temps mais remplis de poésie comme en témoigne ce beau Die Nachtigall <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/braunfels/lieder.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/braunfels/lieder.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>.</p>
+                    <p>Mais il s'est surtout rapidement lancé le défi d'écrire des opéras, livrets compris, sur des thèmes empruntés à des auteurs en vue   : <a href="https://www.youtube.com/watch?v=evTS8ZvbneY">Prinzessin Brambilla</a> (d'après E. T. A. Hoffmann) (1909, revu en 1930 et en 1953) et <a href="https://www.youtube.com/watch?v=UbJzVeK_NWs">Ulenspiegel</a> (d'après Charles De Coster) (1913, <a href="http://www.walter-braunfels.de/wb-html/videos-2?lang=en">Ici</a> des extraits enchaînés d'une production récente au Théâtre de Linz) furent deux oeuvres  prometteuses quoique pas totalement abouties.</p>
+
+                    <div class="conteneurImageSeule">
+                        <div>
+                            <figure>
+                                <img src="../images/braunfels/vogel.jpg" alt="Die Vöegel"/>
+                                <figcaption>Die Vöegel</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+ 
+                    <p>Le (premier) succès d'envergure est venu, en 1923, lorsque l'opéra de Munich a monté <a href="https://www.youtube.com/watch?v=UvNLIishI4g">Die Vögel</a> (1919) (Les Oiseaux, d'après Aristophane), cette fois une réussite incontestable. L'oeuvre fut même considérée comme l'opéra allemand  le plus important de son temps, à égalité avec <a href="https://www.youtube.com/watch?v=o-_oGOv4q3c">Palestrina</a> de Hans Pfizner (1869-1949), un fameux compliment (Les deux compositeurs se lièrent d'ailleurs d'une amitié forte et durable). Aucune trace de chromatismme dans ce langage intemporel qui semble avoir ignoré la mode du temps. L'oeuvre 
+                    a suscité l'intérêt de quelques-uns des chefs les plus importants de l'époque (Bruno Walter, Hans Knappersbutch et Wilhelm Furtwaengler, ce dernier pas rancunier de s'être fait volé sa fiancée !).</p>
+                    <p>Parmi les opéras ultérieurs, Don Gil von den Grünen Hosen (1924, d'après Tirso de Molina)
+                    et  Galathea (1929, d'après un thème développé par Ovide), ne sont malheureusement pas disponibles au contraire de <a href="https://www.youtube.com/watch?v=fP4jIhaZ4iA">Der Traum ein leben</a> (1937) (Le Rêve d'une Vie, d'après Grillparzer), monté en 2001 à Regensburg.</p>
+                  </div>
+
+                  <div id="musiqueSacree">
+                    <h4>La musique sacrée</h4>
+
+                    <p>Les menaces qui ont progressivement pesé sur la communauté juive ont convaincu Braunfels de  se convertir  au catholicisme. Opportunisme ou conviction, il s'est mis à l'écriture d'oeuvres  sacrées au rang desquelles un <a href="https://www.youtube.com/watch?v=KXpBN5L6nq8">Te Deum</a> (1921) faisant clairement écho au modèle d'<a href="https://www.youtube.com/watch?v=KeYuPPP1-Qw">Anton Bruckner</a>. Une <a href="https://www.jpc.de/jpcng/classic/detail/-/art/grosse-messe-op-37/hnum/2896898">Grand Messe</a> suivit, en 1926, puis  un grand cycle de cantates s'étalant sur 12 ans (1932-1944), toutes inspirées par la progression de l'année liturgique (Das Kirchenjahr), pour l'Avent (<a href="https://www.youtube.com/watch?v=wnY1dmTbsNw">Advent</a>), Noël (<a href="https://www.youtube.com/watch?v=4t46rql8Pto">Weihnachten</a>), la Passion (<strong>Passionskantate)</strong> et Pâques (<strong>Osterkantate)</strong>. </p>
+                    <p>Das Spiel von der Auferstehung des Herrn (Le Jeu de la Résurrection du Seigneur, 1938, revu en 1954) est malheureusement indisponible. <a href="https://www.youtube.com/watch?v=eMkspd44xDE">Verkündigung</a>  est un Mystère sacré en un Prélude et 4 Actes, en fait une adaptation en allemand de L'Annonce faite à Marie de Paul Claudel; notez l'incantation  mahlérienne initiale. L'oeuvre, écrite en 1937, n'a été créée qu'après la guerre, en 1948, car Braunfels était en pleine traversée du désert. </p>
+                    <p>Elle avait en fait imperceptiblement commencé peu après 1923,  l'année du putsch  manqué   contre le gouvernement de la République de Weimar. Sorti de l'ombre de sa prison (après à peine plus d'un an d'incarcération, une paille pour une tentative de coup d'état !), Hitler  sollicita Braunfels afin qu'il écrive un hymne destiné au mouvement des &quot;chemises brunes&quot;, une offre évidemment repoussée.  Les racines juives du musicien refirent surface et le musicien se retrouva catalogué, en 1938, parmi les artistes dits dégénérés du 3<sup>ème</sup> Reich.</p>
+                    <p>Coupé de tout public,   le compositeur se retira   sur les bords du lac de Constance où il continua d'écrire pour lui-même, en particulier <a href="https://www.youtube.com/watch?v=HEmSHenmQEg">Szenen aus der Leben der Heiligen Johanna</a> (1943), une oeuvre mettant en scène la vie de Jeanne d'Arc, un sujet curieusement à la mode en ces temps troublés (Bernard Shaw au théâtre, Carl Dreyer au cinéma et Arthur Honnegger en oratorio). L'oeuvre n'innove certes guère, étalant  ses emprunts à Wagner, mais elle s'impose par son souffle incontestable. La représentation luxuriante (2008) du Deutsche Oper de Berlin  est disponible  chez Arthaus. </p>
+                  </div>
+                 
+                  <div id="musiqueDeChambre">
+                    <h4>La musique de chambre</h4>
+
+                    <p>Braunfels excellent pianiste n'a que fort peu  écrit pour son instrument. Par contre, il a composé deux  Quatuors à cordes datés de 1944 (<a href="https://www.youtube.com/watch?v=9IDzouFBMcA">n°1</a> et <a href="https://www.youtube.com/watch?v=jFR39iZvEiE">n°2</a>) qui ont été suivis par un autre quatuor (en mi mineur, indisponible) et un Quintette à cordes <sub><sub><sub> 
+                    <audio controls preload="none" style="height:16px; width:18%;">
+                      <source src="../son.mp3/braunfels/quintette.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/braunfels/quintette.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio>
+                    </sub></sub></sub>. Le succès ne fut pas au rendez-vous car le temps de Braunfels était  passé comme était passé celui de Korngold, logé sous d'autres cieux (Hollywood !) mais à la même enseigne. D'ailleurs la tardive <a href="https://www.youtube.com/watch?v=JIDXgWyTrjc">Sinfonia brevis</a> (1948)  n'eut pas plus de succès que la grande <a href="https://www.youtube.com/watch?v=JEgrnh0yjaw">Symphonie</a> (1953) de Korngold. </p>
+                    <p>Après la guerre, Braunfels fut  réintégré à la tête du Conservatoire de Cologne d'où il avait été chassé aux heures sombres. Dès lors, il ne composa plus que deux oeuvres mineures :  <strong>Hebridentänze</strong> (1951) et le ballet Der Zauberlehrling (L'apprenti sorcier 1954) une commande de la TV allemande. En rupture avec son temps, Braunfels était démodé, ce qui a fait dire au chef James Conlon qu'il avait été réduit  au silence par deux fois.</p>
+                    <p>Voici pour conclure quelques enregistrements marquants, extraits de sa <a href="http://www.musiques-regenerees.fr/ExilBerlin/Braunfels/BraunfelsDiscographie.html">discographie</a> :</p>
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/braunfels/cd1.jpg" alt="CD1 Walter Braunfels" />
+                              <figcaption>CD1 Walter Braunfels</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/braunfels/cd2.jpg" alt="CD2 Walter Braunfels" />
+                              <figcaption>CD2 Walter Braunfels</figcaption>
+                          </figure>
+                      </div>
+                    </div>
+                    <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/braunfels/cd3.jpg" alt="CD3 Walter Braunfels" />
+                              <figcaption>CD3 Walter Braunfels</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/braunfels/cd4.jpg" alt="CD4 Walter Braunfels" />
+                              <figcaption>CD4 Walter Braunfels</figcaption>
+                          </figure>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
 
               </div>
 
@@ -136,7 +224,8 @@ Votre navigateur n'est pas compatible
     
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

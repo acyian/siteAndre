@@ -97,6 +97,11 @@
 		    margin-top: 20px;
 		}
 
+		audio{
+			height:16px; 
+			width:18%;
+		}
+
 	
 	/*======= FIL D ARIANE =======*/
 		.accessibility-hidden {
@@ -235,7 +240,7 @@
 		}
 
 		.miniListCorps.ptInterligneLi{
-			line-height: 0.1em;
+			line-height: 0.2em;
 		}
 
 		.miniListCorps li:not(:first-child){
@@ -251,15 +256,15 @@
 		}
 
 		/*Avec Nombres*/
-		.listNumber {counter-reset: exemple;} /* on initialise et nomme un compteur */
+		ol.listNumber {counter-reset: exemple;} /* on initialise et nomme un compteur */
 
-		.listNumber li {
+		ol.listNumber > li {
 			list-style-type: none;
 			counter-increment: exemple; /* on incrémente le compteur à chaque nouveau li */
 			margin-bottom: 10px;
 		}
 
-		.listNumber li:before {
+		ol.listNumber > li:before {
 			content: counter(exemple); /* on affiche le compteur */
 		    padding: 4px 15px;
 		    margin-right: 12px;

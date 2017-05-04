@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Billets d'humeur | Queen Elisabeth : Que sont-ils devenus ?</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -36,7 +37,7 @@
 
             <div id="contenuPrincipal">
                 <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h3>Queen Elisabeth : Que sont-ils devenus ?</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,151 +46,73 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Queen Elisabeth : Que sont-ils devenus ?</li>
                     </ul>
                 </nav>  
   
-  <h2>Queen Elisabeth : Que sont-ils devenus ?</h2>
+
                 <div class="blocImgFirstAndText">
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
-                              <img src="../images/elisabeth/elisabeth.jpg" alt=""/>
-                              <figcaption></figcaption>
+                              <img src="../images/elisabeth/elisabeth.jpg" style="width: 120px;" alt="Reine Elisabeth"/>
+                              <figcaption>Reine Elisabeth</figcaption>
                           </figure>
                       </div>
                   </div>
   
-  <p>Elisabeth
-    de Belgique, épouse du Roi Albert 1<sup>er</sup>et violoniste amateur - elle jouait en privé avec George Enescu et Albert Einstein ! - a oeuvré à la création d'un concours réservé
-    aux violonistes et aux pianistes du monde entier.  Ce concours portait initialement le nom d'Eugène Ysaye (1858-1931), en hommage au
-    grand artiste.  Interrompu par la guerre, après
-    deux éditions seulement (1937-38), il n'a repris qu'en 1951, cette fois, sous le nom de la
-    Reine.         </p>
-  <p>
-  On compte
-    beaucoup de concours pour instrumentistes de par le monde : le <a href="http://www.cmireb.be/fr/p/4/64/palmares.html">Reine Elisabeth</a> (Bruxelles), le <a href="http://fr.wikipedia.org/wiki/Concours_international_Tcha%C3%AFkovski">Tchaïkovski</a> (Moscou),
-    le <a href="http://konkurs.chopin.pl/en/edition/xv">Chopin</a> et le <a href="http://en.wikipedia.org/wiki/Henryk_Wieniawski_Violin_Competition"
-title=Wieniawski>Wieniawski</a> (Varsovie), le <a href="http://www.concours-long-thibaud.org/fr-fr/laureats/recherche-des-laureats.html">Long
-    Thibaud</a> (Paris) et quantité d'autres, plus ou moins importants.   Le Leventritt (New York) qui a couronné tant d'artistes reconnus (Van Cliburn (1954), John Browning (1955), Itzhak Perlman (1964), Pinchas Zukerman (1967), …), est
-    apparemment interrompu et je n'ai pas réussi à trouver le site officiel reprenant
-    ses archives.  </p>
-  <p>
-  Tous les
-    concours ne sont pas d'égale importance  : la difficulté de l'épreuve et la
-    renommée du jury finissent par tisser une toile qui attire les jeunes solistes de
-    qualité, ce qui, en retour, augmente le prestige de l'épreuve.  En échange, ces musiciens espèrent démarrer une
-    carrière internationale, toujours aléatoire sans un coup de pouce.   Dans un monde musical qui ne connaît plus de
-    frontières, la concurrence est rude, même au plus haut niveau et l'époque est
-    révolue où les candidats venaient exclusivement d'Europe ou l'Amérique du Nord
-    : les Japonais, les Chinois et les Coréens s'investissent à présent à fond dans
-    une musique qu'on leur croyait étrangère et  s'y comportent excellemment.</p>
-  <p>
-  Cette semaine,
-    la chaîne ARTE retransmet, en direct,
-    les épreuves finales du Concours Reine Elisabeth.  L'édition 2009 est consacrée au violon.  Au-delà de l'événement médiatique (?), on
-    s'interroge régulièrement sur l'utilité de ces joutes terriblement éprouvantes
-    pour de jeunes musiciens qui y jouent une part non négligeable de leur avenir.</p>
-  <p>
-   La
-    réponse est on ne peut plus claire : ces concours sont indifféremment utiles ou
-    nuisibles à la &quot;carrière&quot; de ceux qui s'y comportent bien.   Réciproquement, on trouve autant de solistes
-    renommés qui s'y sont mal classés ou  qui n'y ont jamais participé.  Bref, il n'y a pas de rapport
-    direct entre le succès aux concours et ceux à l'estrade de concert : seul compte le
-    talent qui mûrit  et au fond, c'est  très bien comme cela. </p>
-  <p>
-    Le concept du concours était largement inexistant avant 1935.  La carrière des grands interprètes du passé se
-    décidait en direct - en &quot;live&quot; comme on dit maintenant -  souvent à l'occasion du remplacement impromptu
-    d'un soliste empêché.  Yehudi Menuhin, Arthur Rubinstein, Wilhelm
-    Kempff, Wilhelm Backhaus, et
-    tant d'autres, se sont imposés naturellement sur scène.  Plus près de nous, <a href="http://www.youtube.com/watch?v=39bI2PvE6yY">Arthur Grumiaux</a> a encore pu se revendiquer de l'Ecole Belge du violon et le talent aidant,
-    cela lui a suffi pour s'imposer comme un des violonistes les plus distingués de
-    son temps.  Ses <a href="http://www.youtube.com/watch?v=-U3TsUw8TK0">sonates</a> de Beethoven en compagnie de Clara Haskil n'ont, de fait, jamais été
-    égalées.</p>
-  <p>
-    Aujourd'hui encore, on trouve des artistes qui se frayent une voie royale sans solliciter
-    l'approbation d'un jury : Anne-Sophie
-    Mutter, Hilary Hahn, Piotr Anderszewski, Leif Ove Andsnes sont dans ce cas.</p>
-    
-    
-    <p>
-    Cela
-    dit, on connaît des exemples inverses : quelques très grands noms se sont
-    effectivement illustrés dans un concours important : </p>
-    <li>La trop tôt disparue Ginette
-    Neveu s'est imposée au concours Wieniawski (1937) devant … David Oïstrakh !  Ne manquez, sous aucun prétexte, cette <a href="http://www.youtube.com/watch?v=ThHPPOoSAwQ">video</a> d'une
-    merveilleuse artiste disparue à 30 ans seulement.</li>
-    <li>Emil Gilels s'est imposé à
-    Bruxelles en 1938, Van Cliburn a gagné à Moscou en 1958, Grigory Sokolov a fait de même en 1966 et Maurizio Pollini à Varsovie en 1960.  Plus près de nous, Pinchas Zukerman l'a emport à New York en
-    1967, Viktoria Mullova à Moscou en
-    1982, Maxime Venguerov à Varsovie
-    en 1984, etc.</li>
-    
-    
-    <p>
-    Certains
-    artistes, peut-être mécontents d'un classement précédent (ou conscients d'avoir
-    progressé), ont retenté leur chance, généralement dans un autre concours, avec le ferme espoir d'un
-    classement meilleur :</p>
-    <li>L'immense <a href="http://www.youtube.com/watch?v=e5zy3oUZXGk">David Oïstrakh</a> qui
-    avait manqué la première place à Varsovie,
-    a remis les pendules à l'heure, à Bruxelles, un an plus tard (1937).</li><li>L'indispensable <a href="https://www.youtube.com/watch?v=utY6lvTabe0">Gidon Kremer</a> ne fut
-    classé que troisième à Bruxelles en
-    1967 (derrière cet autre letton, Philippe Hirschhorn et la bulgare Stoïka
-    Milanova) mais il rafla la mise à Moscou trois ans plus tard.</li><p>
-    - J'ai
-    même noté le cas, plutôt curieux, du pianiste John Browning qui l'ayant emporté à New York, en
-    <st1:metricconverter ProductID="1955, a" w:st="on">
-    1955,
-    a 
-    éprouvé le besoin de se présenter à Bruxelles, un an plus tard.  Hélas, il a trouvé Vladimir Ashkenazy sur son chemin qui l'a coiffé pour la première
-    place.</p>
-    
-    
-    <p>
-   Si
-    vous consultez les archives des palmarès des grands concours (telles que  renseignées au premier paragraphe), vous noterez  quelques observations
-    qui s'imposent avec régularité.  Je les
-    illustre sur l'exemple du concours de Bruxelles :</p>
-    <p>
-  Certains artistes, très bien classés, n'ont pas fait la carrière qu'on
-    pouvait imaginer.  Dans les années 1960, plusieurs artistes russes, profitèrent de leur périple en Occident pour se faire la
-    belle mais ils semblent y avoir perdu leur envie de jouer.  Qui se souvient encore de Ekaterina Novitzkaya, fabuleuse
-    pianiste de 16 ans qui s'imposa à Bruxelles en 1968 ?  J'ai gardé en mémoire - 40 ans ont pourtant
-    passé ! - une superbe interprétation de la sonate de  Prokofiev qu'elle avait choisie en finale.  Il
-    semble quelle se produise encore - confidentiellement - en Belgique, son pays
-    d'adoption, mais ses admirateurs espéraient davantage.</p>
-  <p>
-  D'autres artistes classés, disons en retrait, ont, au contraire,
-    parfaitement mûri, réussissant là où d'autres, a priori avantagés par un
-    classement plus flatteur, ne parvenaient pas à percer : Arturo Benedetti-Michelangeli (7<sup>ème</sup> en 1938), Philippe Entremont (7<sup>ème</sup> en
-    1952), Elisabeth Leonskaya (9<sup>ème</sup> en 1968), François René Duchâble (11<sup>ème</sup> en 1968) et Cyprien
-    Katsaris (9<sup>ème</sup> en 1992).</p>
-  <p></p>
-  <p>Le pouvoir organisateur du Concours de Bruxelles a inauguré une session de chant en 1988 mais celle-ci n'a jamais véritablement pris son envol. On y entend pourtant de très belles voix mais à la seule exception de la contalto canadienne Marie-Nicole Lemieux, première lauréate en 2000, aucune  n'a percé sur les grandes scènes internationales. La voix est un instrument fragile et il y a un réel danger à la pousser trop jeune dans ses retranchements.</p>
-  <p>
-  Enfin, il en
-    va des concours comme des vins : certaines années sont fastes; d'autres  nettement
-moins bonnes.  </p>
-    <p>
-  Au Reine Elisabeth, c'est très clair : en ignorant les palmarès récents qui réclament que le temps fasse son
-    œuvre de décantation, on note deux très grands crus classés, 1952 et 1956:</p><li>1952 : Léon Fleisher (1<sup>er</sup>), Karl Engel (2<sup>ème</sup>), Maria Tipo (3<sup>ème</sup>), Philippe Entremont (7<sup>ème</sup>), Yuri Boukoff (8<sup>ème</sup>).</li><li>1956 : Vladimir Ashkenazy (1<sup>er</sup>), John Browning (2<sup>ème</sup>), Cécile Ousset (4<sup>ème</sup>), Lazar Berman (5<sup>ème</sup>), Tamas Vazary (6<sup>ème</sup>), Peter Krankl (12<sup>ème</sup>).</li><p>
-  1971 et 1976 furent,
-    par contre, des années médiocres, on ne citera donc pas de noms.
-</p>
+                  <p>Elisabeth de Belgique, épouse du Roi Albert 1<sup>er</sup>et violoniste amateur - elle jouait en privé avec George Enescu et Albert Einstein ! - a oeuvré à la création d'un concours réservé aux violonistes et aux pianistes du monde entier.  Ce concours portait initialement le nom d'Eugène Ysaye (1858-1931), en hommage au grand artiste.  Interrompu par la guerre, après deux éditions seulement (1937-38), il n'a repris qu'en 1951, cette fois, sous le nom de la Reine.         </p>
+                  <p>On compte beaucoup de concours pour instrumentistes de par le monde : le <a href="http://www.cmireb.be/fr/p/4/64/palmares.html">Reine Elisabeth</a> (Bruxelles), le <a href="http://fr.wikipedia.org/wiki/Concours_international_Tcha%C3%AFkovski">Tchaïkovski</a> (Moscou), le <a href="http://konkurs.chopin.pl/en/edition/xv">Chopin</a> et le <a href="http://en.wikipedia.org/wiki/Henryk_Wieniawski_Violin_Competition" title=Wieniawski>Wieniawski</a> (Varsovie), le <a href="http://www.concours-long-thibaud.org/fr-fr/laureats/recherche-des-laureats.html">Long Thibaud</a> (Paris) et quantité d'autres, plus ou moins importants.   Le Leventritt (New York) qui a couronné tant d'artistes reconnus (Van Cliburn (1954), John Browning (1955), Itzhak Perlman (1964), Pinchas Zukerman (1967), …), est apparemment interrompu et je n'ai pas réussi à trouver le site officiel reprenant ses archives.  </p>
+                  <p>Tous les concours ne sont pas d'égale importance : la difficulté de l'épreuve et la renommée du jury finissent par tisser une toile qui attire les jeunes solistes de qualité, ce qui, en retour, augmente le prestige de l'épreuve.  En échange, ces musiciens espèrent démarrer une carrière internationale, toujours aléatoire sans un coup de pouce.   Dans un monde musical qui ne connaît plus de frontières, la concurrence est rude, même au plus haut niveau et l'époque est révolue où les candidats venaient exclusivement d'Europe ou l'Amérique du Nord : les Japonais, les Chinois et les Coréens s'investissent à présent à fond dans une musique qu'on leur croyait étrangère et s'y comportent excellemment.</p>
+                  <p>Cette semaine, la chaîne ARTE retransmet, en direct, les épreuves finales du Concours Reine Elisabeth.  L'édition 2009 est consacrée au violon.  Au-delà de l'événement médiatique (?), on s'interroge régulièrement sur l'utilité de ces joutes terriblement éprouvantes pour de jeunes musiciens qui y jouent une part non négligeable de leur avenir.</p>
+                  <p>La réponse est on ne peut plus claire : ces concours sont indifféremment utiles ou nuisibles à la &quot;carrière&quot; de ceux qui s'y comportent bien.   Réciproquement, on trouve autant de solistes renommés qui s'y sont mal classés ou qui n'y ont jamais participé.  Bref, il n'y a pas de rapport direct entre le succès aux concours et ceux à l'estrade de concert : seul compte le talent qui mûrit et au fond, c'est très bien comme cela. </p>
+                  <p>Le concept du concours était largement inexistant avant 1935.  La carrière des grands interprètes du passé se décidait en direct - en &quot;live&quot; comme on dit maintenant -  souvent à l'occasion du remplacement impromptu d'un soliste empêché.  Yehudi Menuhin, Arthur Rubinstein, Wilhelm Kempff, Wilhelm Backhaus, et tant d'autres, se sont imposés naturellement sur scène.  Plus près de nous, <a href="http://www.youtube.com/watch?v=39bI2PvE6yY">Arthur Grumiaux</a> a encore pu se revendiquer de l'Ecole Belge du violon et le talent aidant, cela lui a suffi pour s'imposer comme un des violonistes les plus distingués de son temps.  Ses <a href="http://www.youtube.com/watch?v=-U3TsUw8TK0">sonates</a> de Beethoven en compagnie de Clara Haskil n'ont, de fait, jamais été égalées.</p>
+                  <p>Aujourd'hui encore, on trouve des artistes qui se frayent une voie royale sans solliciter l'approbation d'un jury : Anne-Sophie Mutter, Hilary Hahn, Piotr Anderszewski, Leif Ove Andsnes sont dans ce cas.</p>
 
-    <p>
-  La question posée en titre concerne également les concertos que la formule du concours de Bruxelles impose aux générations successives de candidats : une oeuvre inédite à déchiffrer en huit jours. D'où ces oeuvres proviennent-elles ? Toutes les formules ont été essayées : </p><li>Commande d'une oeuvre à un compositeur connu (Darius Milhaud, Concert Royal pour violon - session 1959), cela ne s'est plus reproduit.</li><li>Organisation d'un concours réservé aux compositeurs belges dont l'oeuvre primée servait d'imposé (le mot dit bien ce qu'il veut dire !) </li>
-  <li>Commande d'une oeuvre à un compositeur belge. Frédéric Devreese, nous a gratifié, en 1983, d'un beau 4<sup>ème</sup> Concerto pour piano. Il est disponible sur l'album du <a href="http://www.cypres-records.com/50ans_elisabeth/fr/historique/histo.html#imposes">Cinquantenaire</a>, paru chez Cypres (de même que les oeuvres de Darius Milhaud (1892-1974), Marcel Poot (1901-1988), Frédéric van Rossum (1939- ) et Frédéric de Vreese (1929- ) ). </li>
-  <li>Organisation, depuis 1991, d'un concours biennal de composition, international cette fois, primant l'oeuvre imposée pour la session à venir. Le fait est que ces oeuvres ne survivent pas davantage aux circonstances qui leur ont donné naissance. La raison est simple : le  jury de ce concours parallèle est majoritairement composé de compositeurs, une faute déontologique 
-  évidente surtout dans le contexte sensible qu'on connaît à la musique contemporaine. On ne s'étonnera donc guère de choix  orientés, pour ne pas dire tendancieux au sens premier du terme, n'approuvant qu'une tendance dans la musique actuelle. </li>
-  <p>
-  L'histoire se répète à cet égard : les jurys successifs du Grand Prix de Rome ne faisaient pas mieux il y a 100 ans. Consultez les <a href=" http://fr.wikipedia.org/wiki/Prix_de_Rome">archives</a> et vous y trouverez une majorité de musiciens bien oubliés. </p>
- 
+                  <p>Cela dit, on connaît des exemples inverses : quelques très grands noms se sont effectivement illustrés dans un concours important : </p>
+
+                  <ul class="miniListCorps">
+                    <li>La trop tôt disparue Ginette Neveu s'est imposée au concours Wieniawski (1937) devant … David Oïstrakh !  Ne manquez, sous aucun prétexte, cette <a href="http://www.youtube.com/watch?v=ThHPPOoSAwQ">video</a> d'une merveilleuse artiste disparue à 30 ans seulement.</li>
+                    <li>Emil Gilels s'est imposé à Bruxelles en 1938, Van Cliburn a gagné à Moscou en 1958, Grigory Sokolov a fait de même en 1966 et Maurizio Pollini à Varsovie en 1960.  Plus près de nous, Pinchas Zukerman l'a emport à New York en 1967, Viktoria Mullova à Moscou en 1982, Maxime Venguerov à Varsovie en 1984, etc.</li>
+                  </ul>
+
+                  <p>Certains artistes, peut-être mécontents d'un classement précédent (ou conscients d'avoir progressé), ont retenté leur chance, généralement dans un autre concours, avec le ferme espoir d'un classement meilleur :</p>
+
+                  <ul class="miniListCorps">
+                    <li>L'immense <a href="http://www.youtube.com/watch?v=e5zy3oUZXGk">David Oïstrakh</a> qui avait manqué la première place à Varsovie, a remis les pendules à l'heure, à Bruxelles, un an plus tard (1937).</li>
+                    <li>L'indispensable <a href="https://www.youtube.com/watch?v=utY6lvTabe0">Gidon Kremer</a> ne fut classé que troisième à Bruxelles en 1967 (derrière cet autre letton, Philippe Hirschhorn et la bulgare Stoïka Milanova) mais il rafla la mise à Moscou trois ans plus tard.</li>
+                    <li>J'ai même noté le cas, plutôt curieux, du pianiste John Browning qui l'ayant emporté à New York, en 1955, a éprouvé le besoin de se présenter à Bruxelles, un an plus tard.  Hélas, il a trouvé Vladimir Ashkenazy sur son chemin qui l'a coiffé pour la première place.</li>
+                  </ul>
+
+                  <p>Si vous consultez les archives des palmarès des grands concours (telles que renseignées au premier paragraphe), vous noterez quelques observations qui s'imposent avec régularité.  Je les illustre sur l'exemple du concours de Bruxelles :</p>
+                  <p>Certains artistes, très bien classés, n'ont pas fait la carrière qu'on pouvait imaginer.  Dans les années 1960, plusieurs artistes russes, profitèrent de leur périple en Occident pour se faire la belle mais ils semblent y avoir perdu leur envie de jouer.  Qui se souvient encore de Ekaterina Novitzkaya, fabuleuse pianiste de 16 ans qui s'imposa à Bruxelles en 1968 ?  J'ai gardé en mémoire - 40 ans ont pourtant passé ! - une superbe interprétation de la sonate de  Prokofiev qu'elle avait choisie en finale.  Il semble quelle se produise encore - confidentiellement - en Belgique, son pays d'adoption, mais ses admirateurs espéraient davantage.</p>
+                  <p>D'autres artistes classés, disons en retrait, ont, au contraire, parfaitement mûri, réussissant là où d'autres, a priori avantagés par un classement plus flatteur, ne parvenaient pas à percer : Arturo Benedetti-Michelangeli (7<sup>ème</sup> en 1938), Philippe Entremont (7<sup>ème</sup> en 1952), Elisabeth Leonskaya (9<sup>ème</sup> en 1968), François René Duchâble (11<sup>ème</sup> en 1968) et Cyprien Katsaris (9<sup>ème</sup> en 1992).</p>
+                  <p>Le pouvoir organisateur du Concours de Bruxelles a inauguré une session de chant en 1988 mais celle-ci n'a jamais véritablement pris son envol. On y entend pourtant de très belles voix mais à la seule exception de la contalto canadienne Marie-Nicole Lemieux, première lauréate en 2000, aucune n'a percé sur les grandes scènes internationales. La voix est un instrument fragile et il y a un réel danger à la pousser trop jeune dans ses retranchements.</p>
+                  <p>Enfin, il en va des concours comme des vins : certaines années sont fastes; d'autres nettement moins bonnes.  </p>
+                  
+                  <p>Au Reine Elisabeth, c'est très clair : en ignorant les palmarès récents qui réclament que le temps fasse son œuvre de décantation, on note deux très grands crus classés, 1952 et 1956:</p>
+
+                  <ul class="miniListCorps">
+                    <li>1952 : Léon Fleisher (1<sup>er</sup>), Karl Engel (2<sup>ème</sup>), Maria Tipo (3<sup>ème</sup>), Philippe Entremont (7<sup>ème</sup>), Yuri Boukoff (8<sup>ème</sup>).</li>
+                    <li>1956 : Vladimir Ashkenazy (1<sup>er</sup>), John Browning (2<sup>ème</sup>), Cécile Ousset (4<sup>ème</sup>), Lazar Berman (5<sup>ème</sup>), Tamas Vazary (6<sup>ème</sup>), Peter Krankl (12<sup>ème</sup>).</li>
+                    <li>1971 et 1976 furent, par contre, des années médiocres, on ne citera donc pas de noms. </li>
+                  </ul>
+
+                  <p>La question posée en titre concerne également les concertos que la formule du concours de Bruxelles impose aux générations successives de candidats : une oeuvre inédite à déchiffrer en huit jours. D'où ces oeuvres proviennent-elles ? Toutes les formules ont été essayées : </p>
+
+                  <ul class="miniListCorps">
+                    <li>Commande d'une oeuvre à un compositeur connu (Darius Milhaud, Concert Royal pour violon - session 1959), cela ne s'est plus reproduit.</li>
+                    <li>Organisation d'un concours réservé aux compositeurs belges dont l'oeuvre primée servait d'imposé (le mot dit bien ce qu'il veut dire !) </li>
+                    <li>Commande d'une oeuvre à un compositeur belge. Frédéric Devreese, nous a gratifié, en 1983, d'un beau 4<sup>ème</sup> Concerto pour piano. Il est disponible sur l'album du <a href="http://www.cypres-records.com/50ans_elisabeth/fr/historique/histo.html#imposes">Cinquantenaire</a>, paru chez Cypres (de même que les oeuvres de Darius Milhaud (1892-1974), Marcel Poot (1901-1988), Frédéric van Rossum (1939- ) et Frédéric de Vreese (1929- ) ). </li>
+                    <li>Organisation, depuis 1991, d'un concours biennal de composition, international cette fois, primant l'oeuvre imposée pour la session à venir. Le fait est que ces oeuvres ne survivent pas davantage aux circonstances qui leur ont donné naissance. La raison est simple : le jury de ce concours parallèle est majoritairement composé de compositeurs, une faute déontologique évidente surtout dans le contexte sensible qu'on connaît à la musique contemporaine. On ne s'étonnera donc guère de choix orientés, pour ne pas dire tendancieux au sens premier du terme, n'approuvant qu'une tendance dans la musique actuelle. </li>
+                  </ul>
+
+                  <p> L'histoire se répète à cet égard : les jurys successifs du Grand Prix de Rome ne faisaient pas mieux il y a 100 ans. Consultez les <a href=" http://fr.wikipedia.org/wiki/Prix_de_Rome">archives</a> et vous y trouverez une majorité de musiciens bien oubliés. </p>
+                </div>
   
-              </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -201,8 +124,6 @@ moins bonnes.  </p>
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

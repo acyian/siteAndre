@@ -97,6 +97,11 @@
 		    margin-top: 20px;
 		}
 
+		audio{
+			height:16px; 
+			width:18%;
+		}
+
 	
 	/*======= FIL D ARIANE =======*/
 		.accessibility-hidden {
@@ -231,6 +236,11 @@
 		    line-height: 1.5;
 		    color: #333;
 		    padding-left: 140px;
+		    display: grid;
+		}
+
+		.miniListCorps.ptInterligneLi{
+			line-height: 0.2em;
 		}
 
 		.miniListCorps li:not(:first-child){
@@ -246,15 +256,15 @@
 		}
 
 		/*Avec Nombres*/
-		.listNumber {counter-reset: exemple;} /* on initialise et nomme un compteur */
+		ol.listNumber {counter-reset: exemple;} /* on initialise et nomme un compteur */
 
-		.listNumber li {
+		ol.listNumber > li {
 			list-style-type: none;
 			counter-increment: exemple; /* on incrémente le compteur à chaque nouveau li */
 			margin-bottom: 10px;
 		}
 
-		.listNumber li:before {
+		ol.listNumber > li:before {
 			content: counter(exemple); /* on affiche le compteur */
 		    padding: 4px 15px;
 		    margin-right: 12px;
@@ -561,6 +571,10 @@
 /*===============================================================*/
 
 	/*======= GENERALITES =======*/
+		.containerBlocDiv{
+			display: inline-block;
+		}
+
 		#contenuPrincipal div{
 			margin-bottom: 20px;
 		    text-align: center;
@@ -592,6 +606,15 @@
     		margin-bottom: 20px;
 		}
 
+		#contenuPrincipal .conteneurImageSeule.imgFloatRight{
+			float: right;
+		}
+
+		.conteneurImageSeule.imgFloatRight div{
+			margin-right: 0px;
+    		margin-left: 30px;
+		}
+
 	/*======= CONTENEUR BLOC AVEC UNE IMAGE EN 1er un texte sur la droite =======*/
 		.blocImgFirstAndText{
 			margin-top: 60px;
@@ -600,7 +623,6 @@
 		.espaceEntreDiv{
 			margin-top: 60px;
 		}
-
 
 
 	/*======= CONTENEUR PLUSIEURS IMAGES =======*/
@@ -633,11 +655,12 @@
 
 	
 	/*======= CONTENEUR IMAGE SEULE =======*/
-		.conteneurImageSeule{
+		#contenuPrincipal .conteneurImageSeule{
 			display: table;
 		    table-layout: fixed;
 		    word-spacing: -2em;
 		    float: left;
+		    margin-bottom: 0px;
 		}
 
 		.conteneurImageSeule div{
@@ -784,7 +807,6 @@
 	    #listChroniquesComposContemporains.vueGalerie li .firstNameCompoContemporain{
 	    	font-size: 0.7em;
 	    }
-
 
 
 	/*======= WHO S WHO =======*/

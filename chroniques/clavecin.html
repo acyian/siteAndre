@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Genres musicaux | L'école française de clavecin</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Genres musicaux</h2>
+                <h3>L'école française de clavecin</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,127 +46,200 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../grandscycles.html">Genres musicaux</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">L'école française de clavecin</li>
                     </ul>
                 </nav>  
-  <h2>L'école française de clavecin.</h2>
   
-  <p>Le clavecin a vécu ses heures de gloire,  en France, sous les règnes des quatre Louis. A partir de 1760, comme un peu partout en Europe, il a subi la concurrence du piano-forte avant de disparaître, 30 ans plus tard, dans les oubliettes de la Révolution, qui  vit dans cet instrument l'un des emblèmes de l'Ancien Régime. Elle joignit d'ailleurs le geste à la parole, vandalisant les salons et transformant les précieux caissons en bois de chauffage.</p>
-  <p>Il  a également fait fortune en Allemagne (et en Angleterre) mais nulle part ailleurs qu'en France il ne lui a mieux été  rendu justice. Lorsque J-S Bach a conçu son oeuvre pour clavier, il l'a écrite pour le clavecin, l'instrument qui était à sa disposition. Cependant, l'écriture savante voire spéculative du Clavier bien tempéré ne se préoccupe guère de la spécificité du son émis et le compositeur aurait sans doute adopté le piano moderne si celui-ci avait existé. L'école française s'est davantage intéressée à l'instrument en tant que tel, se partageant entre deux courants, l'un savant (Grandes Suites à la française) et l'autre davantage galant (Recueil de pièces de caractères). Dans  ce dernier, elle a exploité les nuances infimes que (le timbre de) l'instrument permettait, se délectant autant de la forme que du fond. On ne peut  comprendre donc aimer tout à fait ce clavecin-là si on ne vibre pas à l'écoute de ces moments de grâce qu'illustrent quelques exemples choisis un peu au hasard :</p>
-  <li><a href="https://www.youtube.com/watch?v=yKfBRGI3pp8">La Ménetou</a> (François Couperin)</li>
-  <li><a href="https://www.youtube.com/watch?v=wLFcNfguqpQ">La Félix</a> (Jacques Duphly)</li>
-  <li><a href="https://www.youtube.com/watch?v=7POXd6Vyi70">Sarabande</a> (Jean-Philippe Rameau)</li>
-  <li><a href="https://www.youtube.com/watch?v=_5h1lqcCg5o">La d'Héricourt</a> (Claude Bénigne Balbastre)</li>
-  <p>Si vous ne goûtez pas les résonances subtiles, les mélodies à peine brisées et les barres de mesure suspendues, alors cette chronique n'est pas pour vous.</p>
-  <p></p>
-  <p><i>Les instruments.</i></p>
-  <p>Le clavecin est un instrument à cordes pincées comme la guitare ou  la harpe. Complètement désossée, sa carcasse rappelle d'ailleurs la forme d'une harpe disposée horizontalement. Les cordes tendues sont excitées par le passage d'un sautereau lui-même activé par la pression d'une touche du clavier. Elles sont métalliques, de longueurs, de densités et de diamètres croissants lorsqu'on passe de l'aigu au grave, afin d'être en mesure de couvrir 5 octaves sans sortir de l'espace limité par la caisse (de résonance) de l'instrument. </p>
-  <p>L'intensité du son émis ne dépendant pas de la pression exercée sur les touches, il en est résulté une absence de maîtrise dynamique de l'interprète. Le concurrent piano-forte a clairement ambitionné de remédier à ce problème et l'histoire lui a donné raison.   Voltaire eut beau ironiser quant aux possibilités naissantes, donc encore incertaines, du piano-forte &quot;Un instrument de chaudronnier en comparaison du clavecin&quot;, rien n'y fit, d'ailleurs des détracteurs auraient pu lui objecter que &quot;Le clavecin est parfois et même plus souvent qu'à son tour un instrument de ferrailleur&quot;. En effet, tous les clavecins ne se valent pas, loin de là,  et il en est, encore aujourd'hui,  qui répandent un bruit de casseroles absolument insupportable. Par contre, lorsqu'il est de qualité, il dispense des trésors de timbres subtils que le piano n'égalera jamais. </p>
-<p>C'est en Bourgogne qu'on a exhumé les documents les plus anciens relatifs à notre instrument mais c'est  en Italie qu'on l'a manufacturé à grande échelle, sous le nom de clavicymbalum, à partir des années  1400. C'était une extension du médiéval psaltérion auquel on avait adjoint un clavier.  Les instruments issus de la péninsule sont réputés fragiles, émettant certes un beau son  mais proportionnellement frêle. Pour être franc,  l'Italie n'a pas porté le clavecin au même degré de perfection que le violon et ses produits dérivés.  </p>
-<div><img src="../images/clavecin/ruckers1.jpg" alt="" /><div class="legende">Clavecin anversois signé :</div></div>
-    <div><img src="../images/clavecin/ruckers.jpg" alt="" /><div class="legende">Andreas Ruckers</div></div>
-  <p>Les flamands n'ont pas inventé le clavecin mais ils l'ont perfectionné au sens premier du terme : le Ruckers demeure, sans doute pour l'éternité, la Rolls-Royce des clavecins, du nom de l'illustre famille de facteurs anversois (Hans, le grand-père, Ioannes et Andreas I, deux de ses fils,  et Andreas II son petit-fils). Ecouter une (belle !) oeuvre sur un clavecin (de la famille) Ruckers, c'est prendre une assurance de ne pas être déçu. </p>
-  <p>Une bonne centaine de clavecins Ruckers nous sont parvenus. On les identifie, en théorie, par la rosace qui leur tient lieu de signature.  Tous ont inévitablement dû faire l'objet de ravalements mécaniques  au cours des siècles et vu leur valeur marchande colossale, des contrefaçons ont existé, certains apprentis-faussaires n'ayant pas hésité à gommer la rosace d'origine dans l'espoir de lui substituer leur propre signature.</p>
-  <p>Les facteurs français (Blanchet, Temsch, Taskin, Goujon, Dumont, Stehlin, ..., au 18 <sup>ème</sup> siècle, ils furent plus de 100 (!) rien qu'à Paris) ont clairement  adopté le modèle flamand, créant leurs propres instruments et/ou  participant aux ravalements en question  : quand on parle d'un Ruckers/Blanchet/Taskin, on ne fait que détailler le pedigree de l'instrument. Cela dit, quelques-uns des instruments construits par Temsch rivalisent fièrement avec leurs modèles. Même des réalisations actuelles, souvent d'après modèles anciens, peuvent susciter notre admiration, nous en verrons des exemples ci-dessous. Quoi qu'il en soit, tout enregistrement de clavecin qui se respecte doit mentionner l'identité de l'instrument utilisé après quoi c'est à votre oreille de juger, le client est roi !</p>
-  <p></p>
-<p><i>Les compositeurs.</i></p>
-  <div><img src="../images/clavecin/ecole.jpg" alt="" /></div>
- <p>Bien que l'école française ait reposé sur deux piliers, François Couperin et Jean-Philippe Rameau,  sa richesse résulte tout autant de la multitude des maîtres, petits ou grands, qui ont gravité autour d'eux. </p>
- <p>La ligne du temps ci-dessus fait état d'une première génération d'où émergent les personnalités de Jacques Champion de Chambonnières (1601-1672) (<a href="https://www.youtube.com/watch?v=XjQWzlENCVg">Sarabande</a>), Henry Dumont (1610-1684) (<a href="https://www.youtube.com/watch?v=UmuhaxADHzs">Allemande</a>), Louis Couperin (1626-1661) (<a href="http://www.youtube.com/watch?v=--HTeNNhTEk">Suite en ré</a>, <a href="https://www.youtube.com/watch?v=RZKA6CeiZ9c">Suite en sol</a>, <a href="https://www.youtube.com/watch?v=nSqqWOGK0tU">Suite en fa</a>, <a href="https://www.youtube.com/watch?v=h1kvAAgpJiY">Prélude non mesuré</a>), Jean-Henry d'Anglebert (1629-1691) (<a href="http://www.youtube.com/watch?v=vgT4Szvfcmg">Suites 3 &amp; 4</a>, <a href="https://www.youtube.com/watch?v=pu89EjiQH-4">Folies d'Espagne</a>) et  Nicolas Lebègue (1631-1702) (Chaconnes extraites des Suites 1 <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/clavecin/chaconne1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/clavecin/chaconne1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> et 4 <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/clavecin/chaconne2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/clavecin/chaconne2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, respectivement). L'oeuvre de Louis Couperin, doit prioritairement retenir votre attention : elle a été magnifiquement enregistrée, en <a href="http://www.allmusic.com/album/louis-couperin-les-pi%C3%A9ces-de-clavessin-box-set-mw0001840542">5 CD</a> parus chez Astrée, par Blandine Verlet sur le Ruckers du musée Unterinden de Colmar, une  réussite incontestable !</p>
- <p>On attribue le moule de la Suite (dite) française  à   Lebègue. Elle est construite sur une succession codifiée de danses stylisées, aux tempi constrastés : Allemande (modéré), Courante (vif),  Sarabande (lent) et Gigue (vif). Ce schéma  a été adopté ailleurs en Europe, singulièrement en Allemagne, qu'on songe au Suites françaises de Bach et même aux Suites anglaises qui n'en diffèrent essentiellement que par un prélude introductif et une complexité accrue. Mais ce cadre  n'a jamais été  rigide ni figé, et presque tous les compositeurs  ont introduit des variantes : il n'est pas rare que soient intercalées des  Courantes I et II et leurs Doubles, des Bourrées  (ou des Gavottes) I et II, voire une chaconne finale.</p>
-<p>Le nombre de musiciens a sérieusement cru à partir de la  génération suivante et il n'est pas question des les passer tous en revue d'autant qu'ils ne sont pas de niveaux équivalents :  Nicolas Siret (1663-1754) (<a href="https://www.youtube.com/watch?v=Ch4VxY1ST9o">Passacaille III</a>), Pierre-Claude Fouquet (1694-1772) (<a href="https://www.youtube.com/watch?v=RoFOkLqBjt4">L'Absence ou la Solitaire</a>), Pierre Février (1696-1760) (<a href="https://www.youtube.com/watch?v=K345TMw10BE">4 Suites</a> du 1<sup>er</sup> Livre)  et Christophe Moyreau (1700-1774) (<a href="https://www.youtube.com/watch?v=q_QNUg-SLVU">Livre I</a>) s'inscrivent, de fait, un peu en retrait. Le cas Forqueray est particulier, qui a défrayé la chronique en son temps.  Les rapports n'ont jamais été franchement cordiaux entre  Jean-Baptiste Forqueray (1699-1782) et son père, Antoine Forqueray, qu'on a dit jaloux des talents de son fils au point de l'accuser publiquement  (et (in)justement, allez savoir ?) de mauvaise conduite. Le père alla jusqu'à réclamer (et obtenir pour 10 ans !) le banissement du fils, une mesure heureusement levée un an plus tard. 20 ans ayant passé, Jean-Baptiste publia, à son profit, deux versions révisées de pièces pour viole de son père, l'une conservant la viole et l'autre opérant une transcription pour clavecin (Suite n° 2, dont vous épinglerez la chaconne finale, intitulée <a href="http://www.youtube.com/watch?v=wskyKgvJb4w&amp;feature=related">La Buisson</a>, ou <a href="https://www.youtube.com/watch?v=gGpKsJcc6rE">La Silva</a>, extraite de la Suite n°5). En résumé, soyez attentifs au fait que lorsqu'un enregistrement, tel celui, hélas décevant, de <a href="https://www.youtube.com/watch?v=mzyEQg3T6E8">Gustav Leonhardt</a>, présente des pièces pour clavecin d'Antoine Forqueray (plages 2 à 14), il s'agit, en fait, de transcriptions de la main de son fils.</p>
- <p></p>
+                <p>Le clavecin a vécu ses heures de gloire,  en France, sous les règnes des quatre Louis. A partir de 1760, comme un peu partout en Europe, il a subi la concurrence du piano-forte avant de disparaître, 30 ans plus tard, dans les oubliettes de la Révolution, qui  vit dans cet instrument l'un des emblèmes de l'Ancien Régime. Elle joignit d'ailleurs le geste à la parole, vandalisant les salons et transformant les précieux caissons en bois de chauffage.</p>
+                <p>Il  a également fait fortune en Allemagne (et en Angleterre) mais nulle part ailleurs qu'en France il ne lui a mieux été  rendu justice. Lorsque J-S Bach a conçu son oeuvre pour clavier, il l'a écrite pour le clavecin, l'instrument qui était à sa disposition. Cependant, l'écriture savante voire spéculative du Clavier bien tempéré ne se préoccupe guère de la spécificité du son émis et le compositeur aurait sans doute adopté le piano moderne si celui-ci avait existé. L'école française s'est davantage intéressée à l'instrument en tant que tel, se partageant entre deux courants, l'un savant (Grandes Suites à la française) et l'autre davantage galant (Recueil de pièces de caractères). Dans  ce dernier, elle a exploité les nuances infimes que (le timbre de) l'instrument permettait, se délectant autant de la forme que du fond. On ne peut  comprendre donc aimer tout à fait ce clavecin-là si on ne vibre pas à l'écoute de ces moments de grâce qu'illustrent quelques exemples choisis un peu au hasard :</p>
 
-<div><img src="../images/clavecin/leroux.jpg" alt="" /></div> 
- <p>On ne sait rien de  Gaspard Le Roux, pas même s'il a réellement existé (les dates régulièrement mentionnées à son sujet sont donc fatalement fantaisistes). Certes son oeuvre est répertoriée mais quelques musicologues pensent que, pour une raison inconnue, un musicien en vue l'a écrite sous ce nom d'emprunt (On a évoqué d'Anglebert fils, Marin Marais ou Michel Richard Delalande). Quoi qu'il en soit, elle est de réelle qualité et le CD enregistré sur un clavecin Hemsch, par Christophe Rousset vaut assurément le détour (<a href="https://www.youtube.com/watch?v=3cJUTC8AQEE">La Favorite</a>). </p>
- <p></p>
- <p></p>
- <p></p>
- <p></p>
+                <ul class="miniListCorps">
+                  <li><a href="https://www.youtube.com/watch?v=yKfBRGI3pp8">La Ménetou</a> (François Couperin)</li>
+                  <li><a href="https://www.youtube.com/watch?v=wLFcNfguqpQ">La Félix</a> (Jacques Duphly)</li>
+                  <li><a href="https://www.youtube.com/watch?v=7POXd6Vyi70">Sarabande</a> (Jean-Philippe Rameau)</li>
+                  <li><a href="https://www.youtube.com/watch?v=_5h1lqcCg5o">La d'Héricourt</a> (Claude Bénigne Balbastre)</li>
+                </ul>
 
-<div><img src="../images/clavecin/farr.jpg" alt="" /></div>
- <p>L'oeuvre d'Elisabeth-Claude Jacquet de la Guerre (1665-1729) a déjà fait l'objet d'une courte présentation sur ce <a href="strozzi.html">site</a>. Rappelons simplement que ses deux recueils de 
-  Suites   eurent les honneurs d'une impression originale, un privilège rare à l'époque, qu'elle a partagé  avec ses collègues masculins, Jacques Champion de Chambonnières (1601-1672), Nicolas Lebègue  (1631-1702) et Jean-Henri d'Anglebert (1629-1691). Ces oeuvres, que l'on croyait perdues, ne revivent aujourd'hui que par la grâce de copies miraculeusement retrouvées sous la poussière de deux bibliothèques transalpines (Venise). Elisabeth Farr a gravé les 6 Suites pour Naxos (<a href="https://www.youtube.com/watch?v=xbW5EpqOVso">Suite n°3</a>, <a href="http://www.youtube.com/watch?v=v20gxyIRQPU">Suite n°5</a> et <a href="http://www.youtube.com/watch?v=F5kQeQd5CxU">Suites 4, 5 & 6</a>), un must ! A noter que le (remarquable) clavecin utilisé est un instrument moderne construit en 2003 par Keith Hill, d'après un modèle français.</p>
-<p>Les <a href="https://www.jpc.de/jpcng/classic/detail/-/art/harpsichord-suites/hnum/6675683">Suites 1 à 6</a> de Charles Dieupart (1667-1740) devraient également retenir votre attention d'autant qu'elles sont disponibles à petit prix chez Brillant dans une interprétation en tous points excellente.</p>
-  
-  <p></p>
-  <div><img src="../images/clavecin/lescouperin.jpg" alt="" /><div class="legende">4, rue Louis-Quinton, Chaumes-en-Brie</div></div>
- <p>François Couperin (1668-1733), neveu de Louis, est le représentant le plus fameux d'une famille de musiciens originaires de Chaumes-en-Brie, qui remonte à l'ancêtre Charles (<a href="http://www.youtube.com/watch?v=t1_JxlL9tXE">Suite en la mineur</a>). Sur l'espace de 4 générations, cette lignée a procuré 7  titulaires à l'orgue de St Gervais à Paris. </p>
+                <p>Si vous ne goûtez pas les résonances subtiles, les mélodies à peine brisées et les barres de mesure suspendues, alors cette chronique n'est pas pour vous.</p>
 
-  
+                <div id="instruments">
+                  <h4>Les instruments</h4>
 
-  <p>Délaissant la forme classique de la Suite, François Couperin a réparti son oeuvre magistrale en 27 Ordres comportant un nombre variable de pièces de caractères auxquelles il a conféré des titres évocateurs (<a href="https://www.youtube.com/watch?v=pypSfSowiiE">Les Silvains</a> (Ordre 1), <a href="https://www.youtube.com/watch?v=jDY0e5sTZh4">Les Sentiments</a> (1), <a href="https://www.youtube.com/watch?v=bIlB4w6-l44">L'enchanteresse</a> (1), <a href="https://www.youtube.com/watch?v=r-MIWDcdt_k">Les Idées heureuses</a> (2), <a href="https://www.youtube.com/watch?v=Xal_qausnNg">La Bandoline</a> (5), <a href="https://www.youtube.com/watch?v=ag3rEZjjaLA">Les Ondes</a> (5), Le Moucheron (5), <a href="https://www.youtube.com/watch?v=yKfBRGI3pp8">La Ménetou</a> (6), <a href="https://www.youtube.com/watch?v=8O_oeMTnn84">Les Barricades mystérieuses</a> (6), <a href="https://www.youtube.com/watch?v=dqkWqHmz2IY">8 Préludes</a> (7), <a href="https://www.youtube.com/watch?v=jtGBtYl2o0o">Les Charmes</a> (9), L'Olympique (9), <a href="https://www.youtube.com/watch?v=gITCRbrDR90">Les fastes de la grande et ancienne Ménestrandise</a> (11), <a href="https://www.youtube.com/watch?v=xFTnk5vntp4">Les Jumèles</a> (12), <a href="https://www.youtube.com/watch?v=8sFyywRq-SE">Les Lis naissans</a> (13), <a href="https://www.youtube.com/watch?v=VUygj9rupho">Le Dodo</a> (15), L'Himen-Amour (16), <a href="https://www.youtube.com/watch?v=6g4-3jXh5Ds">Le Tic-toc-choc</a> (18), <a href="https://www.youtube.com/watch?v=Wrixh8yrsSk">Les Ombres errantes</a> (25), <a href="https://www.youtube.com/watch?v=APoXsaVJPg0">La Convalescente</a> (26), <a href="https://www.youtube.com/watch?v=EwOfXs5wxBY">L'épineuse</a> (26). Tous ces extraits sont dûs à des interprètes différents qui jouent d'instruments différents, l'occasion de vous faire votre opinion.</p>
-  
- <p> L'ensemble représente plus de 10 heures d'une musique raffinée qu'il n'est évidemment pas question d'écouter d'une traite. Au CD, l'intégrale réalisée par Kenneth Gilbert pour le label Harmonia Mundi n'a rien perdu de son pouvoir de séduction malgré son âge (Livres III <a href="https://www.youtube.com/watch?v=egXHpVbYmZg">Ordres 13 à 19</a> et IV <a href="https://www.youtube.com/watch?v=hwuxF_fd6uU">Ordres 20 à 27</a>). L'instrument, un Franck Hubbard, d'après Hemsch, est de réelle qualité. Cela dit, n'hésitez pas à comparer avec les enregistrements d'Olivier Baumont (<a href="https://www.youtube.com/watch?v=PHF6GkfqWPY">Ordre 1</a>) qui joue une copie de Ruckers, de Blandine Verlet (<a href="https://www.youtube.com/watch?v=mLyI6clZaC8">Ordre 2</a>,  <a href="https://www.youtube.com/watch?v=b4th4fzKpaY">Ordres 24 à 27</a>) sur un Pierre Donzelague (Lyon, 1716), de Christophe Rousset (<a href="https://www.youtube.com/watch?v=BDbjXRstRrs">Ordres 1 &amp; 2</a>, sur le Ruckers de Colmar, <a href="https://www.youtube.com/watch?v=glHssCAaWG0">Ordres 13 à 19</a>, sur l'instrument de la Villa Medicis et <a href="https://www.youtube.com/watch?v=fGAezwnhEoA">Ordres 24 à 27</a> sur le Ruckers de Neuchatel) et de Scott Ross (<a href="https://www.youtube.com/watch?v=b490Mb9CCDU">Ordres 1 &amp; 2</a>) jouant sur le clavecin du château d'Assas. Au bilan, il me semble difficile de départager Kenneth Gilbert et Christophe Rousset qui ont enregistré sous le même label !</p>
-  
-  <div><img src="../images/clavecin/tharaud.jpg" alt="" /></div>
-  <p>Si rien de tout cela ne vous a convaincu, il vous reste   l'<a href="https://www.youtube.com/watch?v=pptuu4WzjoI">enregistrement</a> culte (et best-seller !), d'Alexandre Tharaud, qui a exporté au piano quelques pièces caractéristiques de Couperin  : outre de (très) véloces &quot;Barricades mystérieuses&quot; (mais c'est le tempo indiqué par le compositeur) ne manquez pas les nobles &quot;Ombres errantes&quot;, le nonchalant &quot;Dodo&quot; ou les rêveuses &quot;Jumèles&quot;. Ce n'était certes pas la première fois qu'on transposait Couperin au piano mais ce projet  cohérent   déborde  du cadre habituel de  pianistes terminant leur récital par quelques morceaux à succès, toujours les mêmes (Les Barricades mystérieuses ou le Tic-toc-choc).</p>
-  <p></p>
-  <p></p>
-  <p></p>
-  
-  
-  <div><img src="../images/clavecin/sempe.jpg" alt="" /></div>
-  <p>On ne présente plus Jean-Philippe Rameau (1683-1764) et mes fidèles lecteurs savent qu'il compte parmi mes musiciens préférés. Il a publié 3 Livres pour le clavecin, aux époques de sa vie où il ne s'occupait pas encore d'opéra (1706, 1724 et 1728). Cette oeuvre magistrale a fait l'objet de nombreux enregistrements d'où émerge celui de <a href="https://www.jpc.de/jpcng/classic/detail/-/art/jean-philippe-rameau-pieces-de-clavecin/hnum/4168927">Céline Frisch</a> (Clavecin Hemsch).  <a href="https://www.youtube.com/watch?v=NX0p2JKO_nU">Blandine Rannou</a> propose un très beau son mais sa lenteur assumée est à la limite du tenable.  Je trouve l'intégrale <a href="https://www.youtube.com/watch?v=3LTUc2XxF3c">Scott Ross</a> prosaïque et sûrement peu idiomatique; par contre celle de William Christie sur un beau Ruckers-Taskin reste d'actualité (<a href="https://www.youtube.com/watch?v=Nawz_64cpHo">Gavotte avec 6 doubles</a>). </p>
-  <p> L'américain Skip Sempé, jouant sur une superbe copie d'un modèle français du 18<sup>ème</sup>, a enregistré un beau  CD consacré à  Rameau  (<a href="http://www.youtube.com/watch?v=7POXd6Vyi70">Sarabande</a>). Il mérite d'autant mieux votre attention qu'il offre, en bonus, un DVD, proposant des pièces isolées de Jacques Champion de Chambonnières (1601-1672) (<a href="http://www.youtube.com/watch?v=XjQWzlENCVg">Sarabande</a>), Joseph Nicolas Pancrace Royer (1705-1755) (<a href="http://www.youtube.com/watch?v=mC5dDlmtrZs">Marche des Scythes</a>) et Armand-Louis Couperin (1727-1789) (<a href="http://www.youtube.com/watch?v=k_ET0i2y0Ow">La Chéron</a>).
-  
-  <div><img src="../images/clavecin/debury.jpg" alt="" /></div>
-  
-  <p>Bernard de Bury (1720-1785, dit le fils) n'a écrit qu'un seul livre de 4 Suites, publié alors qu'il n'avait que 17 ans ! Le reste de son oeuvre, en particulier l'opéra-ballet &quot;Les Caractères de la Folie&quot; attend toujours qu'on s'y intéresse. Ces Suites sont remarquables : <a href="https://www.youtube.com/watch?v=pU69DZoEaQk">La tendre Agitation &amp; Le Plaidoyer de Cithère</a> sont extraits de la 1<sup>ère</sup> Suite et <a href="https://www.youtube.com/watch?v=5GI64fl4uVw&amp;list=PLN8LSq3mnruVDWqlG1ZStUowHSng7rH5D">La belle Brune &amp; La Citherée</a>, de la 2<sup>ème</sup> Suite. Quant à la magistrale <a href="https://www.youtube.com/watch?v=MDSX4jAqbxs&amp;list=PLN8LSq3mnruVRcmeeywY-EjkuqAfa0yF5">Chaconne</a>, qui conclut la 4<sup>ème</sup> Suite, elle annonce  celle que composera <a href="https://www.youtube.com/watch?v=Glki3wkVdm8">Jacques Duphly</a> 20 ans plus tard. <a href="https://www.youtube.com/watch?v=GCKeVVRq-Zo">La Pithonisse</a>, extraite de la 3<sup>ème</sup> Suite, vous est proposée ici  dans une version différente, sous les doigts de Fernando de Luca.    
-  <p>
-  <p>
-  <p>
-  <p>  
-<p></p>
-<p></p>
-<p>Rameau tout génial qu'il fut n'était pas précisément en avance sur son temps. Que dire alors de tous ceux qui lui ont succédé jusqu'à la Révolution ? Le plus étonnant est que la qualité de la production n'a nullement fléchi et qu'on trouve encore, en France, à l'époque de Mozart et bientôt du jeune Beethoven, des musiciens emperruqués qui écrivent de très belles pages complètement rétro :  </p>
-<p></p>
-  
-  <div><img src="../images/clavecin/duphly.jpg" alt="" /></div>
-<li>Jacques Duphly (1715-1789) est mort juste à temps pour ne pas assister au saccage de ses clavecins bien aimés.  Brigitte Tramier a enregistré un florilège de ses pièces de caractères sur un beau clavecin Antoine Vater.  Elles  évoquent quelques personnages en vue de ce temps  : <a href="https://www.youtube.com/watch?v=xIyn92ISQHY">La Boucon</a> (nièce  de J.B. Forqueray), <a href="http://www.youtube.com/watch?v=2LTODfOkgik">La Pothuin</a> (un avocat du Parlement), <a href="http://www.youtube.com/watch?v=q4oxM4siKyo">La de Juigné</a> (marquise de son état), <a href="http://www.youtube.com/watch?v=kxFxmr3W3Nk">La Vanlo</a> (l'épouse du peintre du même nom, il manque un &quot;o&quot;), <a href="http://www.youtube.com/watch?v=0y9y4lLi0m0">La de Belombre</a>, <a href="http://www.youtube.com/watch?v=coyaI2i6q2c">La Cazamajor</a>,  La de La Tour (peintre), <a href="https://www.youtube.com/watch?v=_80Wi2hkjQ4">La Félix</a> (musicien), La Madin (abbé), La Victoire (seconde fille de Louis XV), etc...,  au bilan, belle musique  et  bel enregistrement (si je ne devais en posséder qu'un seul, ce serait celui-là !). Jacques Duphly se présente comme la grande révélation de cette fin de siècle français.</li>
-<p></p>
-<p></p>
-<div><img src="../images/clavecin/balbastre.jpg" alt="" /></div>
-  <li>Claude Bénigne Balbastre (1724-1799) est un musicien particulièrement attachant. Dijonnais, il fut l'élève de  Claude Rameau, le frère de  Jean-Philippe, qu'il rejoignit d'ailleurs à Paris où il exerça les plus hautes fonctions (Concert Spirituel, organiste à la Chapelle royale,  à Saint-Roch et à Notre-Dame de Paris, enfin professeur de Marie-Antoinette). Il a rempli le carnet mondain de l'époque en épousant successivement la fille du grand flûtiste, Jacques-Martin Hotteterre, puis, devenu veuf, la nièce de Boileau. 
-Il négocia habilement le virage de la Révolution conservant son poste à  Notre-Dame (provisoirement transformée en Temple de la Raison) où il exécuta à l'orgue ses adaptations des hymnes révolutionnaires. Son écriture, constamment narrative, était tellement prisée du public de l'époque qu'il se vit interdire le service de Noël dont il dénaturait l'esprit par ses improvisations extraverties (<a href="http://www.youtube.com/watch?v=lE1NQpB-F_A">Quand Jesus Naquit à Noël</a>).  Détenteur d'un magnifique Ruckers, il a écrit pour celui-ci des pièces débordantes de bonne humeur :  l'enregistrement, chez Claves, de sa 1<sup>ère</sup> Suite, par Ursula Duetschler (sur un Pascal Taskin de 1778), est un pur régal dont j'extrais "La d'Héricourt" <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/clavecin/hericourt.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/martland/hericourt.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>  et &quot;La Morisseau&quot; <sub><sub><sub> 
-  <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/clavecin/morisseau.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/clavecin/morisseau.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> , autant d'hommages  à des personnages  incertains.</li>
+                  <p>Le clavecin est un instrument à cordes pincées comme la guitare ou  la harpe. Complètement désossée, sa carcasse rappelle d'ailleurs la forme d'une harpe disposée horizontalement. Les cordes tendues sont excitées par le passage d'un sautereau lui-même activé par la pression d'une touche du clavier. Elles sont métalliques, de longueurs, de densités et de diamètres croissants lorsqu'on passe de l'aigu au grave, afin d'être en mesure de couvrir 5 octaves sans sortir de l'espace limité par la caisse (de résonance) de l'instrument. </p>
+                  <p>L'intensité du son émis ne dépendant pas de la pression exercée sur les touches, il en est résulté une absence de maîtrise dynamique de l'interprète. Le concurrent piano-forte a clairement ambitionné de remédier à ce problème et l'histoire lui a donné raison.   Voltaire eut beau ironiser quant aux possibilités naissantes, donc encore incertaines, du piano-forte &quot;Un instrument de chaudronnier en comparaison du clavecin&quot;, rien n'y fit, d'ailleurs des détracteurs auraient pu lui objecter que &quot;Le clavecin est parfois et même plus souvent qu'à son tour un instrument de ferrailleur&quot;. En effet, tous les clavecins ne se valent pas, loin de là,  et il en est, encore aujourd'hui,  qui répandent un bruit de casseroles absolument insupportable. Par contre, lorsqu'il est de qualité, il dispense des trésors de timbres subtils que le piano n'égalera jamais. </p>
+                  <p>C'est en Bourgogne qu'on a exhumé les documents les plus anciens relatifs à notre instrument mais c'est  en Italie qu'on l'a manufacturé à grande échelle, sous le nom de clavicymbalum, à partir des années  1400. C'était une extension du médiéval psaltérion auquel on avait adjoint un clavier.  Les instruments issus de la péninsule sont réputés fragiles, émettant certes un beau son  mais proportionnellement frêle. Pour être franc,  l'Italie n'a pas porté le clavecin au même degré de perfection que le violon et ses produits dérivés.  </p>
+              
+                  <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/ruckers1.jpg" alt="Clavecin anversois signé :" />
+                              <figcaption>Clavecin anversois signé :</figcaption>
+                          </figure>
+                      </div>
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/ruckers.jpg" alt="Andreas Ruckers" />
+                              <figcaption>Andreas Ruckers</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Les flamands n'ont pas inventé le clavecin mais ils l'ont perfectionné au sens premier du terme : le Ruckers demeure, sans doute pour l'éternité, la Rolls-Royce des clavecins, du nom de l'illustre famille de facteurs anversois (Hans, le grand-père, Ioannes et Andreas I, deux de ses fils,  et Andreas II son petit-fils). Ecouter une (belle !) oeuvre sur un clavecin (de la famille) Ruckers, c'est prendre une assurance de ne pas être déçu. </p>
+                  <p>Une bonne centaine de clavecins Ruckers nous sont parvenus. On les identifie, en théorie, par la rosace qui leur tient lieu de signature.  Tous ont inévitablement dû faire l'objet de ravalements mécaniques  au cours des siècles et vu leur valeur marchande colossale, des contrefaçons ont existé, certains apprentis-faussaires n'ayant pas hésité à gommer la rosace d'origine dans l'espoir de lui substituer leur propre signature.</p>
+                  <p>Les facteurs français (Blanchet, Temsch, Taskin, Goujon, Dumont, Stehlin, ..., au 18 <sup>ème</sup> siècle, ils furent plus de 100 (!) rien qu'à Paris) ont clairement  adopté le modèle flamand, créant leurs propres instruments et/ou  participant aux ravalements en question  : quand on parle d'un Ruckers/Blanchet/Taskin, on ne fait que détailler le pedigree de l'instrument. Cela dit, quelques-uns des instruments construits par Temsch rivalisent fièrement avec leurs modèles. Même des réalisations actuelles, souvent d'après modèles anciens, peuvent susciter notre admiration, nous en verrons des exemples ci-dessous. Quoi qu'il en soit, tout enregistrement de clavecin qui se respecte doit mentionner l'identité de l'instrument utilisé après quoi c'est à votre oreille de juger, le client est roi !</p>
+                </div>
+
+                <div id="compositeurs">
+                  <h4>Les compositeurs</h4>
+
+                  <div class="conteneurImages">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/ecole.jpg" alt="Compositeurs de 1600 à 1800" />
+                              <figcaption>Compositeurs de 1600 à 1800</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Bien que l'école française ait reposé sur deux piliers, François Couperin et Jean-Philippe Rameau,  sa richesse résulte tout autant de la multitude des maîtres, petits ou grands, qui ont gravité autour d'eux. </p>
+                  <p>La ligne du temps ci-dessus fait état d'une première génération d'où émergent les personnalités de Jacques Champion de Chambonnières (1601-1672) (<a href="https://www.youtube.com/watch?v=XjQWzlENCVg">Sarabande</a>), Henry Dumont (1610-1684) (<a href="https://www.youtube.com/watch?v=UmuhaxADHzs">Allemande</a>), Louis Couperin (1626-1661) (<a href="http://www.youtube.com/watch?v=--HTeNNhTEk">Suite en ré</a>, <a href="https://www.youtube.com/watch?v=RZKA6CeiZ9c">Suite en sol</a>, <a href="https://www.youtube.com/watch?v=nSqqWOGK0tU">Suite en fa</a>, <a href="https://www.youtube.com/watch?v=h1kvAAgpJiY">Prélude non mesuré</a>), Jean-Henry d'Anglebert (1629-1691) (<a href="http://www.youtube.com/watch?v=vgT4Szvfcmg">Suites 3 &amp; 4</a>, <a href="https://www.youtube.com/watch?v=pu89EjiQH-4">Folies d'Espagne</a>) et  Nicolas Lebègue (1631-1702) (Chaconnes extraites des Suites 1 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/clavecin/chaconne1.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/clavecin/chaconne1.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub> et 4 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/clavecin/chaconne2.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/clavecin/chaconne2.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>, respectivement). L'oeuvre de Louis Couperin, doit prioritairement retenir votre attention : elle a été magnifiquement enregistrée, en <a href="http://www.allmusic.com/album/louis-couperin-les-pi%C3%A9ces-de-clavessin-box-set-mw0001840542">5 CD</a> parus chez Astrée, par Blandine Verlet sur le Ruckers du musée Unterinden de Colmar, une  réussite incontestable !</p>
+                  <p>On attribue le moule de la Suite (dite) française  à   Lebègue. Elle est construite sur une succession codifiée de danses stylisées, aux tempi constrastés : Allemande (modéré), Courante (vif),  Sarabande (lent) et Gigue (vif). Ce schéma  a été adopté ailleurs en Europe, singulièrement en Allemagne, qu'on songe au Suites françaises de Bach et même aux Suites anglaises qui n'en diffèrent essentiellement que par un prélude introductif et une complexité accrue. Mais ce cadre  n'a jamais été  rigide ni figé, et presque tous les compositeurs  ont introduit des variantes : il n'est pas rare que soient intercalées des  Courantes I et II et leurs Doubles, des Bourrées  (ou des Gavottes) I et II, voire une chaconne finale.</p>
+                  <p>Le nombre de musiciens a sérieusement cru à partir de la  génération suivante et il n'est pas question des les passer tous en revue d'autant qu'ils ne sont pas de niveaux équivalents :  Nicolas Siret (1663-1754) (<a href="https://www.youtube.com/watch?v=Ch4VxY1ST9o">Passacaille III</a>), Pierre-Claude Fouquet (1694-1772) (<a href="https://www.youtube.com/watch?v=RoFOkLqBjt4">L'Absence ou la Solitaire</a>), Pierre Février (1696-1760) (<a href="https://www.youtube.com/watch?v=K345TMw10BE">4 Suites</a> du 1<sup>er</sup> Livre)  et Christophe Moyreau (1700-1774) (<a href="https://www.youtube.com/watch?v=q_QNUg-SLVU">Livre I</a>) s'inscrivent, de fait, un peu en retrait. Le cas Forqueray est particulier, qui a défrayé la chronique en son temps.  Les rapports n'ont jamais été franchement cordiaux entre  Jean-Baptiste Forqueray (1699-1782) et son père, Antoine Forqueray, qu'on a dit jaloux des talents de son fils au point de l'accuser publiquement  (et (in)justement, allez savoir ?) de mauvaise conduite. Le père alla jusqu'à réclamer (et obtenir pour 10 ans !) le banissement du fils, une mesure heureusement levée un an plus tard. 20 ans ayant passé, Jean-Baptiste publia, à son profit, deux versions révisées de pièces pour viole de son père, l'une conservant la viole et l'autre opérant une transcription pour clavecin (Suite n° 2, dont vous épinglerez la chaconne finale, intitulée <a href="http://www.youtube.com/watch?v=wskyKgvJb4w&amp;feature=related">La Buisson</a>, ou <a href="https://www.youtube.com/watch?v=gGpKsJcc6rE">La Silva</a>, extraite de la Suite n°5). En résumé, soyez attentifs au fait que lorsqu'un enregistrement, tel celui, hélas décevant, de <a href="https://www.youtube.com/watch?v=mzyEQg3T6E8">Gustav Leonhardt</a>, présente des pièces pour clavecin d'Antoine Forqueray (plages 2 à 14), il s'agit, en fait, de transcriptions de la main de son fils.</p>
 
 
-  <li>Armand-Louis Couperin (1727-1789) fut le dernier représentant de l'illustre famille. Qu'y a-t-il de plus charmant que cette pièce intitulée <a href="https://www.youtube.com/watch?v=k_ET0i2y0Ow">La Chéron</a> (filleul de Campra), adorablement jouée par le claveciniste américain, Skip Sempé ? Voici encore <a href="https://www.youtube.com/watch?v=dnv--y7nVCI">Les 4 Nations</a> et <a href="https://www.youtube.com/watch?v=5WOnqVu6OME">L'Affligée</a>, jouées par Fernando de Luca, et une belle <a href="https://www.youtube.com/watch?v=kMBz3AQnf-E">Allemande</a>, jouée par Jason Moy.</li>
-  <li>Jean-Frédéric Edelmann (1749-1794) fut le plus tardif de tous et encore a-t-il  fallu la guillotine pour mettre un terme à son activité.  Son destin fut d'autant plus tragique qu'on l'a présenté comme un sympathisant aux idées révolutionnaires (certains lui attribuent la musique de la Marseillaise) inexplicablement passé sous la guillotine, 8 jours avant Robespierre, dans le même convoi que les célèbres Carmélites chères à Bernanos et Poulenc. Certes ses <a href="https://www.youtube.com/watch?v=8nb6Y0gAhIA">Sonates</a> (faites le détour par la n°2, débutant en 20:08) n'ont guère révolutionné la musique mais de là à  faire subir à leur auteur le même sort qu'aux clavecins, bravo les révolutionnaires ... .</li>
-  <p></p>  
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/leroux.jpg" alt="Gaspard Le Roux"/>
+                              <figcaption>Gaspard Le Roux</figcaption>
+                          </figure>
+                      </div>
+                  </div>
 
-<p><i>Les interprètes.</i></p>
+                  <p>On ne sait rien de  Gaspard Le Roux, pas même s'il a réellement existé (les dates régulièrement mentionnées à son sujet sont donc fatalement fantaisistes). Certes son oeuvre est répertoriée mais quelques musicologues pensent que, pour une raison inconnue, un musicien en vue l'a écrite sous ce nom d'emprunt (On a évoqué d'Anglebert fils, Marin Marais ou Michel Richard Delalande). Quoi qu'il en soit, elle est de réelle qualité et le CD enregistré sur un clavecin Hemsch, par Christophe Rousset vaut assurément le détour (<a href="https://www.youtube.com/watch?v=3cJUTC8AQEE">La Favorite</a>). </p>
+
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/farr.jpg" alt="Elisabeth Farr"/>
+                              <figcaption>Elisabeth Farr</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>L'oeuvre d'Elisabeth-Claude Jacquet de la Guerre (1665-1729) a déjà fait l'objet d'une courte présentation sur ce <a href="strozzi.html">site</a>. Rappelons simplement que ses deux recueils de Suites   eurent les honneurs d'une impression originale, un privilège rare à l'époque, qu'elle a partagé  avec ses collègues masculins, Jacques Champion de Chambonnières (1601-1672), Nicolas Lebègue  (1631-1702) et Jean-Henri d'Anglebert (1629-1691). Ces oeuvres, que l'on croyait perdues, ne revivent aujourd'hui que par la grâce de copies miraculeusement retrouvées sous la poussière de deux bibliothèques transalpines (Venise). Elisabeth Farr a gravé les 6 Suites pour Naxos (<a href="https://www.youtube.com/watch?v=xbW5EpqOVso">Suite n°3</a>, <a href="http://www.youtube.com/watch?v=v20gxyIRQPU">Suite n°5</a> et <a href="http://www.youtube.com/watch?v=F5kQeQd5CxU">Suites 4, 5 & 6</a>), un must ! A noter que le (remarquable) clavecin utilisé est un instrument moderne construit en 2003 par Keith Hill, d'après un modèle français.</p>
+                  <p>Les <a href="https://www.jpc.de/jpcng/classic/detail/-/art/harpsichord-suites/hnum/6675683">Suites 1 à 6</a> de Charles Dieupart (1667-1740) devraient également retenir votre attention d'autant qu'elles sont disponibles à petit prix chez Brillant dans une interprétation en tous points excellente.</p>
+                
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/lescouperin.jpg" alt="4, rue Louis-Quinton, Chaumes-en-Brie"/>
+                              <figcaption>4, rue Louis-Quinton, Chaumes-en-Brie</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>François Couperin (1668-1733), neveu de Louis, est le représentant le plus fameux d'une famille de musiciens originaires de Chaumes-en-Brie, qui remonte à l'ancêtre Charles (<a href="http://www.youtube.com/watch?v=t1_JxlL9tXE">Suite en la mineur</a>). Sur l'espace de 4 générations, cette lignée a procuré 7  titulaires à l'orgue de St Gervais à Paris. </p>
+                  <p>Délaissant la forme classique de la Suite, François Couperin a réparti son oeuvre magistrale en 27 Ordres comportant un nombre variable de pièces de caractères auxquelles il a conféré des titres évocateurs (<a href="https://www.youtube.com/watch?v=pypSfSowiiE">Les Silvains</a> (Ordre 1), <a href="https://www.youtube.com/watch?v=jDY0e5sTZh4">Les Sentiments</a> (1), <a href="https://www.youtube.com/watch?v=bIlB4w6-l44">L'enchanteresse</a> (1), <a href="https://www.youtube.com/watch?v=r-MIWDcdt_k">Les Idées heureuses</a> (2), <a href="https://www.youtube.com/watch?v=Xal_qausnNg">La Bandoline</a> (5), <a href="https://www.youtube.com/watch?v=ag3rEZjjaLA">Les Ondes</a> (5), Le Moucheron (5), <a href="https://www.youtube.com/watch?v=yKfBRGI3pp8">La Ménetou</a> (6), <a href="https://www.youtube.com/watch?v=8O_oeMTnn84">Les Barricades mystérieuses</a> (6), <a href="https://www.youtube.com/watch?v=dqkWqHmz2IY">8 Préludes</a> (7), <a href="https://www.youtube.com/watch?v=jtGBtYl2o0o">Les Charmes</a> (9), L'Olympique (9), <a href="https://www.youtube.com/watch?v=gITCRbrDR90">Les fastes de la grande et ancienne Ménestrandise</a> (11), <a href="https://www.youtube.com/watch?v=xFTnk5vntp4">Les Jumèles</a> (12), <a href="https://www.youtube.com/watch?v=8sFyywRq-SE">Les Lis naissans</a> (13), <a href="https://www.youtube.com/watch?v=VUygj9rupho">Le Dodo</a> (15), L'Himen-Amour (16), <a href="https://www.youtube.com/watch?v=6g4-3jXh5Ds">Le Tic-toc-choc</a> (18), <a href="https://www.youtube.com/watch?v=Wrixh8yrsSk">Les Ombres errantes</a> (25), <a href="https://www.youtube.com/watch?v=APoXsaVJPg0">La Convalescente</a> (26), <a href="https://www.youtube.com/watch?v=EwOfXs5wxBY">L'épineuse</a> (26). Tous ces extraits sont dûs à des interprètes différents qui jouent d'instruments différents, l'occasion de vous faire votre opinion.</p>
+                  <p> L'ensemble représente plus de 10 heures d'une musique raffinée qu'il n'est évidemment pas question d'écouter d'une traite. Au CD, l'intégrale réalisée par Kenneth Gilbert pour le label Harmonia Mundi n'a rien perdu de son pouvoir de séduction malgré son âge (Livres III <a href="https://www.youtube.com/watch?v=egXHpVbYmZg">Ordres 13 à 19</a> et IV <a href="https://www.youtube.com/watch?v=hwuxF_fd6uU">Ordres 20 à 27</a>). L'instrument, un Franck Hubbard, d'après Hemsch, est de réelle qualité. Cela dit, n'hésitez pas à comparer avec les enregistrements d'Olivier Baumont (<a href="https://www.youtube.com/watch?v=PHF6GkfqWPY">Ordre 1</a>) qui joue une copie de Ruckers, de Blandine Verlet (<a href="https://www.youtube.com/watch?v=mLyI6clZaC8">Ordre 2</a>,  <a href="https://www.youtube.com/watch?v=b4th4fzKpaY">Ordres 24 à 27</a>) sur un Pierre Donzelague (Lyon, 1716), de Christophe Rousset (<a href="https://www.youtube.com/watch?v=BDbjXRstRrs">Ordres 1 &amp; 2</a>, sur le Ruckers de Colmar, <a href="https://www.youtube.com/watch?v=glHssCAaWG0">Ordres 13 à 19</a>, sur l'instrument de la Villa Medicis et <a href="https://www.youtube.com/watch?v=fGAezwnhEoA">Ordres 24 à 27</a> sur le Ruckers de Neuchatel) et de Scott Ross (<a href="https://www.youtube.com/watch?v=b490Mb9CCDU">Ordres 1 &amp; 2</a>) jouant sur le clavecin du château d'Assas. Au bilan, il me semble difficile de départager Kenneth Gilbert et Christophe Rousset qui ont enregistré sous le même label !</p>
+                
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/tharaud.jpg" alt="Alexandre Tharaud"/>
+                              <figcaption>Alexandre Tharaud</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Si rien de tout cela ne vous a convaincu, il vous reste l'<a href="https://www.youtube.com/watch?v=pptuu4WzjoI">enregistrement</a> culte (et best-seller !), d'Alexandre Tharaud, qui a exporté au piano quelques pièces caractéristiques de Couperin  : outre de (très) véloces &quot;Barricades mystérieuses&quot; (mais c'est le tempo indiqué par le compositeur) ne manquez pas les nobles &quot;Ombres errantes&quot;, le nonchalant &quot;Dodo&quot; ou les rêveuses &quot;Jumèles&quot;. Ce n'était certes pas la première fois qu'on transposait Couperin au piano mais ce projet  cohérent   déborde  du cadre habituel de  pianistes terminant leur récital par quelques morceaux à succès, toujours les mêmes (Les Barricades mystérieuses ou le Tic-toc-choc).</p>
+
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/sempe.jpg" alt="Skip Sempé"/>
+                              <figcaption>Skip Sempé</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>On ne présente plus Jean-Philippe Rameau (1683-1764) et mes fidèles lecteurs savent qu'il compte parmi mes musiciens préférés. Il a publié 3 Livres pour le clavecin, aux époques de sa vie où il ne s'occupait pas encore d'opéra (1706, 1724 et 1728). Cette oeuvre magistrale a fait l'objet de nombreux enregistrements d'où émerge celui de <a href="https://www.jpc.de/jpcng/classic/detail/-/art/jean-philippe-rameau-pieces-de-clavecin/hnum/4168927">Céline Frisch</a> (Clavecin Hemsch).  <a href="https://www.youtube.com/watch?v=NX0p2JKO_nU">Blandine Rannou</a> propose un très beau son mais sa lenteur assumée est à la limite du tenable.  Je trouve l'intégrale <a href="https://www.youtube.com/watch?v=3LTUc2XxF3c">Scott Ross</a> prosaïque et sûrement peu idiomatique; par contre celle de William Christie sur un beau Ruckers-Taskin reste d'actualité (<a href="https://www.youtube.com/watch?v=Nawz_64cpHo">Gavotte avec 6 doubles</a>). </p>
+                  <p> L'américain Skip Sempé, jouant sur une superbe copie d'un modèle français du 18<sup>ème</sup>, a enregistré un beau  CD consacré à  Rameau  (<a href="http://www.youtube.com/watch?v=7POXd6Vyi70">Sarabande</a>). Il mérite d'autant mieux votre attention qu'il offre, en bonus, un DVD, proposant des pièces isolées de Jacques Champion de Chambonnières (1601-1672) (<a href="http://www.youtube.com/watch?v=XjQWzlENCVg">Sarabande</a>), Joseph Nicolas Pancrace Royer (1705-1755) (<a href="http://www.youtube.com/watch?v=mC5dDlmtrZs">Marche des Scythes</a>) et Armand-Louis Couperin (1727-1789) (<a href="http://www.youtube.com/watch?v=k_ET0i2y0Ow">La Chéron</a>).</p>
+                  
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/clavecin/debury.jpg" alt="Bernard de Bury"/>
+                              <figcaption>Bernard de Bury</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                  
+                  <p>Bernard de Bury (1720-1785, dit le fils) n'a écrit qu'un seul livre de 4 Suites, publié alors qu'il n'avait que 17 ans ! Le reste de son oeuvre, en particulier l'opéra-ballet &quot;Les Caractères de la Folie&quot; attend toujours qu'on s'y intéresse. Ces Suites sont remarquables : <a href="https://www.youtube.com/watch?v=pU69DZoEaQk">La tendre Agitation &amp; Le Plaidoyer de Cithère</a> sont extraits de la 1<sup>ère</sup> Suite et <a href="https://www.youtube.com/watch?v=5GI64fl4uVw&amp;list=PLN8LSq3mnruVDWqlG1ZStUowHSng7rH5D">La belle Brune &amp; La Citherée</a>, de la 2<sup>ème</sup> Suite. Quant à la magistrale <a href="https://www.youtube.com/watch?v=MDSX4jAqbxs&amp;list=PLN8LSq3mnruVRcmeeywY-EjkuqAfa0yF5">Chaconne</a>, qui conclut la 4<sup>ème</sup> Suite, elle annonce  celle que composera <a href="https://www.youtube.com/watch?v=Glki3wkVdm8">Jacques Duphly</a> 20 ans plus tard. <a href="https://www.youtube.com/watch?v=GCKeVVRq-Zo">La Pithonisse</a>, extraite de la 3<sup>ème</sup> Suite, vous est proposée ici  dans une version différente, sous les doigts de Fernando de Luca.</p>
+                  <p>Rameau tout génial qu'il fut n'était pas précisément en avance sur son temps. Que dire alors de tous ceux qui lui ont succédé jusqu'à la Révolution ? Le plus étonnant est que la qualité de la production n'a nullement fléchi et qu'on trouve encore, en France, à l'époque de Mozart et bientôt du jeune Beethoven, des musiciens emperruqués qui écrivent de très belles pages complètement rétro :  </p>
+                
+                  <ul class="miniListCorps">
+                    <li>
+                      <div class="conteneurImageSeule">
+                          <div>
+                              <figure>
+                                  <img src="../images/clavecin/duphly.jpg" alt="Jacques Duphly"/>
+                                  <figcaption>Jacques Duphly</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                    Jacques Duphly (1715-1789) est mort juste à temps pour ne pas assister au saccage de ses clavecins bien aimés.  Brigitte Tramier a enregistré un florilège de ses pièces de caractères sur un beau clavecin Antoine Vater.  Elles  évoquent quelques personnages en vue de ce temps  : <a href="https://www.youtube.com/watch?v=xIyn92ISQHY">La Boucon</a> (nièce  de J.B. Forqueray), <a href="http://www.youtube.com/watch?v=2LTODfOkgik">La Pothuin</a> (un avocat du Parlement), <a href="http://www.youtube.com/watch?v=q4oxM4siKyo">La de Juigné</a> (marquise de son état), <a href="http://www.youtube.com/watch?v=kxFxmr3W3Nk">La Vanlo</a> (l'épouse du peintre du même nom, il manque un &quot;o&quot;), <a href="http://www.youtube.com/watch?v=0y9y4lLi0m0">La de Belombre</a>, <a href="http://www.youtube.com/watch?v=coyaI2i6q2c">La Cazamajor</a>,  La de La Tour (peintre), <a href="https://www.youtube.com/watch?v=_80Wi2hkjQ4">La Félix</a> (musicien), La Madin (abbé), La Victoire (seconde fille de Louis XV), etc...,  au bilan, belle musique  et  bel enregistrement (si je ne devais en posséder qu'un seul, ce serait celui-là !). Jacques Duphly se présente comme la grande révélation de cette fin de siècle français.
+                    </li>
+
+                    <li>
+                      <div class="conteneurImageSeule">
+                          <div>
+                              <figure>
+                                  <img src="../images/clavecin/balbastre.jpg" alt="Claude Bénigne Balbastre"/>
+                                  <figcaption>Claude Bénigne Balbastre</figcaption>
+                              </figure>
+                          </div>
+                      </div>
+                    Claude Bénigne Balbastre (1724-1799) est un musicien particulièrement attachant. Dijonnais, il fut l'élève de  Claude Rameau, le frère de  Jean-Philippe, qu'il rejoignit d'ailleurs à Paris où il exerça les plus hautes fonctions (Concert Spirituel, organiste à la Chapelle royale,  à Saint-Roch et à Notre-Dame de Paris, enfin professeur de Marie-Antoinette). Il a rempli le carnet mondain de l'époque en épousant successivement la fille du grand flûtiste, Jacques-Martin Hotteterre, puis, devenu veuf, la nièce de Boileau. Il négocia habilement le virage de la Révolution conservant son poste à  Notre-Dame (provisoirement transformée en Temple de la Raison) où il exécuta à l'orgue ses adaptations des hymnes révolutionnaires. Son écriture, constamment narrative, était tellement prisée du public de l'époque qu'il se vit interdire le service de Noël dont il dénaturait l'esprit par ses improvisations extraverties (<a href="http://www.youtube.com/watch?v=lE1NQpB-F_A">Quand Jesus Naquit à Noël</a>).  Détenteur d'un magnifique Ruckers, il a écrit pour celui-ci des pièces débordantes de bonne humeur :  l'enregistrement, chez Claves, de sa 1<sup>ère</sup> Suite, par Ursula Duetschler (sur un Pascal Taskin de 1778), est un pur régal dont j'extrais "La d'Héricourt" <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/clavecin/hericourt.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/martland/hericourt.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>  et &quot;La Morisseau&quot; <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/clavecin/morisseau.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/clavecin/morisseau.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> , autant d'hommages  à des personnages  incertains.
+                    </li>
+
+                    <li>Armand-Louis Couperin (1727-1789) fut le dernier représentant de l'illustre famille. Qu'y a-t-il de plus charmant que cette pièce intitulée <a href="https://www.youtube.com/watch?v=k_ET0i2y0Ow">La Chéron</a> (filleul de Campra), adorablement jouée par le claveciniste américain, Skip Sempé ? Voici encore <a href="https://www.youtube.com/watch?v=dnv--y7nVCI">Les 4 Nations</a> et <a href="https://www.youtube.com/watch?v=5WOnqVu6OME">L'Affligée</a>, jouées par Fernando de Luca, et une belle <a href="https://www.youtube.com/watch?v=kMBz3AQnf-E">Allemande</a>, jouée par Jason Moy.
+                    </li>
+                    <li>Jean-Frédéric Edelmann (1749-1794) fut le plus tardif de tous et encore a-t-il  fallu la guillotine pour mettre un terme à son activité.  Son destin fut d'autant plus tragique qu'on l'a présenté comme un sympathisant aux idées révolutionnaires (certains lui attribuent la musique de la Marseillaise) inexplicablement passé sous la guillotine, 8 jours avant Robespierre, dans le même convoi que les célèbres Carmélites chères à Bernanos et Poulenc. Certes ses <a href="https://www.youtube.com/watch?v=8nb6Y0gAhIA">Sonates</a> (faites le détour par la n°2, débutant en 20:08) n'ont guère révolutionné la musique mais de là à  faire subir à leur auteur le même sort qu'aux clavecins, bravo les révolutionnaires ... .
+                    </li>
+                  </ul>
+                </div>
   
-  <p>Aujourd'hui le clavecin a retrouvé son attrait auprès de jeunes interprètes prêts à lui consacrer leur vie d'artiste. On trouve des clavecinistes de toutes nationalités mais on attend des français qu'ils contribuent majoritairement  à la diffusion de leur répertoire historique. C'est effectivement le cas, singulièrement depuis deux générations : Blandine Rannou, Blandine Verlet, Céline Frisch, Brigitte Tramier, Olivier Baumont, Christophe Rousset, Pierre Hantaï, Frédérick Haas, Benjamin Alard, ..., sont autant d'interprètes de qualité dont certains ont brillé au hupé concours qui se tient à Bruges depuis 1964. Les anglais (Sophie Yates, Davitt Moroney, Trevor Pinnock) ont, pour une fois, été moins présents et la grande surprise provient du fort contingent de clavecinistes canadiens  (Kenneth Gilbert, Mark Edwards) et surtout américains (Scott Ross, William Christie, Jory Vinikour, Skip Sempé et Elizabeth Farrqui), qui a dit que les américains  ne parlaient que l'anglais ?</p>
-  <p> Chacun a tendance à jouer de ses instruments préférés pourvu qu'ils soient disponibles : Blandine Rannou sur &quot;son&quot; <a href="https://www.youtube.com/watch?v=NX0p2JKO_nU">Andreas Ruckers</a> de 1636,  Blandine Verlet sur un clavecin <a href="https://www.youtube.com/watch?v=hxr1yzcSZNs">Henri Hemsch</a> de 1751 ou Scott Ross sur l'instrument du <a href="https://www.youtube.com/watch?v=3gTMehPiQ9s">château d'Assas</a>, près de Montpellier !), une disparité sonore qui complique souvent le choix du mélomane, d'autant que quelques facteurs contemporains ne sont pas en reste :  <a href="https://www.youtube.com/watch?v=7POXd6Vyi70">Bruce Kennedy</a>, <a href="https://www.youtube.com/watch?v=h1kvAAgpJiY">Jan Kalsbeek</a>, <a href="http://www.youtube.com/watch?v=UY_EuIOwrBk">Marco Brighenti</a>, <a href="https://www.youtube.com/watch?v=2p2IYQJSlyw">Guido Bizzi</a>, <a href="https://www.youtube.com/watch?v=9zOd7XMIa50">Keith Hill</a>, ..., réalisent de très beaux instruments d'après des modèles anciens.</p>
-  
-<p></p>
-
-
-
-<p>Tous les instruments baroques ont eu à souffrir de la concurrence des instruments modernes en gestation, qu'on se rappelle la thèse allégorique d'Hubert Le Blanc (vers 1740)
-  "Défense de la basse de viole contre les entreprises du violon et les prétentions du violoncelle". Le clavecin n'a pas échappé à la règle lorsqu'il a trouvé le piano-forte sur son chemin. Le balancier de l'histoire n'est heureusement pas encore tombé en panne et tous ces instruments revivent aujourd'hui pour notre plus grand plaisir grâce au labeur d'artisans et d'interprètes passionnés.</p>
-              </div>
+                <div id="interpretes">
+                  <h4>Les interprètes</h4>
+                
+                  <p>Aujourd'hui le clavecin a retrouvé son attrait auprès de jeunes interprètes prêts à lui consacrer leur vie d'artiste. On trouve des clavecinistes de toutes nationalités mais on attend des français qu'ils contribuent majoritairement  à la diffusion de leur répertoire historique. C'est effectivement le cas, singulièrement depuis deux générations : Blandine Rannou, Blandine Verlet, Céline Frisch, Brigitte Tramier, Olivier Baumont, Christophe Rousset, Pierre Hantaï, Frédérick Haas, Benjamin Alard, ..., sont autant d'interprètes de qualité dont certains ont brillé au hupé concours qui se tient à Bruges depuis 1964. Les anglais (Sophie Yates, Davitt Moroney, Trevor Pinnock) ont, pour une fois, été moins présents et la grande surprise provient du fort contingent de clavecinistes canadiens  (Kenneth Gilbert, Mark Edwards) et surtout américains (Scott Ross, William Christie, Jory Vinikour, Skip Sempé et Elizabeth Farrqui), qui a dit que les américains  ne parlaient que l'anglais ?</p>
+                  <p> Chacun a tendance à jouer de ses instruments préférés pourvu qu'ils soient disponibles : Blandine Rannou sur &quot;son&quot; <a href="https://www.youtube.com/watch?v=NX0p2JKO_nU">Andreas Ruckers</a> de 1636,  Blandine Verlet sur un clavecin <a href="https://www.youtube.com/watch?v=hxr1yzcSZNs">Henri Hemsch</a> de 1751 ou Scott Ross sur l'instrument du <a href="https://www.youtube.com/watch?v=3gTMehPiQ9s">château d'Assas</a>, près de Montpellier !), une disparité sonore qui complique souvent le choix du mélomane, d'autant que quelques facteurs contemporains ne sont pas en reste :  <a href="https://www.youtube.com/watch?v=7POXd6Vyi70">Bruce Kennedy</a>, <a href="https://www.youtube.com/watch?v=h1kvAAgpJiY">Jan Kalsbeek</a>, <a href="http://www.youtube.com/watch?v=UY_EuIOwrBk">Marco Brighenti</a>, <a href="https://www.youtube.com/watch?v=2p2IYQJSlyw">Guido Bizzi</a>, <a href="https://www.youtube.com/watch?v=9zOd7XMIa50">Keith Hill</a>, ..., réalisent de très beaux instruments d'après des modèles anciens.</p>
+                  <p>Tous les instruments baroques ont eu à souffrir de la concurrence des instruments modernes en gestation, qu'on se rappelle la thèse allégorique d'Hubert Le Blanc (vers 1740) "Défense de la basse de viole contre les entreprises du violon et les prétentions du violoncelle". Le clavecin n'a pas échappé à la règle lorsqu'il a trouvé le piano-forte sur son chemin. Le balancier de l'histoire n'est heureusement pas encore tombé en panne et tous ces instruments revivent aujourd'hui pour notre plus grand plaisir grâce au labeur d'artisans et d'interprètes passionnés.</p>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>

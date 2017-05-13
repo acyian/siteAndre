@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | Le destin d'un Caprice</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>Le destin d'un Caprice</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,76 +46,71 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le destin d'un Caprice</li>
                     </ul>
                 </nav>  
   
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/destin/caprice24.jpg" alt="Caprice n°24"/>
+                              <figcaption>Caprice n°24</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Je voudrais revenir sur le plus célèbre des Caprices, opus 1, de Niccolo Paganini (1782-1840), le 24<sup>ème</sup> et dernier.  Sa célébrité est essentiellement posthume, son thème ayant inspiré nombre de cycles de variations dont le contenu musical  a surpassé celui de la pièce d'origine. Notez que l'amélioration ne fut pas toujours au rendez-vous, singulièrement lorsque des virtuoses, en mal d'écriture, se sont contentés de greffer  leur virtuosité sur celle de Paganini, par exemple, <a href="http://www.youtube.com/watch?v=C8MQHhJNwTA">Leopold Auer</a> (1845-1930), violoniste hongrois,  ou <a href="http://www.youtube.com/watch?v=YQfhoXDHus0&feature=results_main&playnext=1&list=PL852B93BEB497638F">Hans Bottermund</a> (1892-1949), violoncelliste allemand.</p>
+                  <p>Quelques années seulement après la publication de l'œuvre originale, Schumann et Liszt s'en sont emparés (Schumann dans les Études datées de 1832 puis, un an plus tard, dans les 6 Études de concert, et Liszt, dans les six Grandes Études "Paganini" (1851)).  Quelques années plus tard, ce fut le tour de Brahms (Variations sur un thème de Paganini (1862)) puis de Rachmaninov (Rapsodie pour piano et orchestre sur un thème de Paganini (1934)).  Ces deux oeuvres sont particulièrement célèbres. </p>
+                  <p>Evidemment vous ne fréquentez pas ces chroniques pour vous entendre dire ce que vous savez déjà.  Le même thème a inspiré quantité de compositeurs bien moins connus et j'ai été frappé par la qualité du travail de chacun comme si le défi de renouveler le genre avait mobilisé le meilleur de leur métier.  J'ai regroupé par genre quelques exemples qui stimuleront peut-être votre curiosité.</p>
+
+                  <div id="classiques20emeSiecle">
+                    <h4>Les classiques du 20<sup>ème</sup> siècle</h4>
+
+                    <ul class="miniListCorps">
+                      <li><a href="http://www.youtube.com/watch?v=1dGj39RDuUk&feature=related">Variations sur un thème de Paganini</a> (1947) est une belle œuvre de Boris Blacher (1903-1975), un musicien néo-classique allemand beaucoup trop négligé.</li>
+                      <li>Les <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/8010890?rk=classic&rsk=hitlist&page=1">Variations sur un thème de Paganini</a>, pour piano & orchestre, de Witold Lutoslawski (1913-1994) ont été enregistrées chez Naxos. Les voici, cette fois, dans une transcription pour deux pianos, interprétées par <a href="https://www.youtube.com/watch?v=vsQo0z5CqM8">Martha Argerich et Nelson Freire</a>.</li>    
+                      <li>J'insiste, enfin, sur l'œuvre magistrale de George Rochberg (1918-2005), <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/1383501?rk=classic&rsk=hitlist">50 Caprice Variations</a>. </li>
+                    </ul>
+                  </div>
+
+                  <div id="oeuvresRecentes">
+                    <h4>Les oeuvres récentes</h4>
+
+                    <p>Le thème de Paganini n'a apparemment pas épuisé son pouvoir de séduction voire d'inspiration, même sur des musiciens appartenant à la deuxième moitié du 20<sup>ème</sup> siècle :</p>
+               
+                    <ul class="miniListCorps">
+                      <li>Le polonais, Stanisław Skrowaczewski (1923- ), est surtout connu comme chef d'orchestre mais il a également composé un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Stanislaw-Skrowaczewski-geb-1923-Concerto-for-Orchestra/hnum/4586491">Concerto Niccolò</a>, pour la main gauche, qui est à découvrir impérativement.</li>
+                      <li>Robert Muczynski (1929-2010) est l'auteur de <a href="http://www.youtube.com/watch?v=KYdBa5xKZa0">Desperate Measures</a>, opus 48.</li>
+                      <li>Tattoo <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/destincaprice/tattoo.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/destincaprice/tattoo.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, de David Del Tredici (1937- ) est un bel exemple de la vitalité de la musique moderne américaine.</li>
+                      <li>James Barnes (1949- ) a écrit une <a href="http://www.youtube.com/watch?v=lognNTfjo3s&feature=related">Symphony Fantasy</a> plutôt ludique, qui privilégie les vents et les cuivres, son domaine de prédilection (Il est lui-même tubiste).</li>
+                      <li>Le  <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Poul-Ruders-geb-1949-Paganini-Variationen-Gitarrenkonzert-Nr-2/hnum/6584355">Concerto n°2</a>, pour guitare & orchestre, du danois Poul Ruders (1949- ) (plages 1 à 23) est scandaleusement négligé mais cela devrait changer.</li>
+                      <li><a href="http://www.youtube.com/watch?v=aXKqh0etaio&feature=related">Paganini variations</a> (1956- ) est l'oeuvre du compositeur russe, Alexander Rosenblatt (1956- ), inexplicablement méconnu lui aussi.</li>
+                      <li>Lowell Liebermann (1961- ) a également écrit une Rhapsodie sur un thème de Paganini, pour piano & orchestre, mais je n'ai pu en trouver la moindre illustration.</li>
+                    </ul>
+                  </div>
+
+                  <div id="jazzman">
+                    <h4>Les jazzman</h4>
+
+                    <p>Le swing que l'on peut facilement communiquer au thème de Paganini devait fatalement tenter les instrumentistes de jazz :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Le clarinettiste, <a href="http://www.youtube.com/watch?v=4VrSkMOuYyg">Benny Goodman</a> (1909-1986), connaît bien le répertoire classique (Mozart, Bartok, Copland, Bernstein). Il a écrit cette pièce empreinte de respect pour l'oeuvre qui lui a servi de modèle.</li>
+                      <li>Le violoniste, <a href="http://www.youtube.com/watch?v=VqwTrupenSg&feature=related">Doug Cameron</a> a écrit son cycle de variations dans un style nettement plus débridé.</li> 
+                      <li>Enfin et surtout, le  pianiste surdoué et compositeur, <a href="http://www.youtube.com/watch?v=M1DpFxQprug&feature=related">Fazil Say</a> (1970- ), improvise fréquemment (en bis) sur le même thème (Voici une <a href="http://www.youtube.com/watch?v=okl7_SDhVSU">variante</a>).</li>
+                    </ul>
+                  </div>
+                </div>
   
-  <h2>Le destin d'un Caprice.</h2>
-  
-  <div><img src="../images/destin/caprice24.jpg" alt="" /></div>
-
-
-  <p>Je voudrais revenir sur le plus célèbre des Caprices, opus 1, de Niccolo Paganini (1782-1840), le 24<sup>ème</sup> et dernier.  Sa célébrité est essentiellement posthume, son thème ayant inspiré nombre de cycles de variations dont le contenu musical  a surpassé celui de la pièce d'origine. Notez que l'amélioration ne fut pas toujours au rendez-vous, singulièrement lorsque des virtuoses, en mal d'écriture, se sont contentés de greffer  leur virtuosité sur celle de Paganini, par exemple, <a href="http://www.youtube.com/watch?v=C8MQHhJNwTA">Leopold Auer</a> (1845-1930), violoniste hongrois,  ou <a href="http://www.youtube.com/watch?v=YQfhoXDHus0&feature=results_main&playnext=1&list=PL852B93BEB497638F">Hans Bottermund</a> (1892-1949), violoncelliste allemand.</p>
-
-
-
-<p>Quelques années seulement après la publication de l'œuvre originale, Schumann et Liszt s'en sont emparés (Schumann dans les Études datées de 1832 puis, un an plus tard, dans les 6 Études de concert, et Liszt, dans les six Grandes Études "Paganini" (1851)).  Quelques années plus tard, ce fut le tour de Brahms (Variations sur un thème de Paganini (1862)) puis de Rachmaninov (Rapsodie pour piano et orchestre sur un thème de Paganini (1934)).  Ces deux oeuvres sont particulièrement célèbres. </p>
-
- 
-
-<p>Evidemment vous ne fréquentez pas ces chroniques pour vous entendre dire ce que vous savez déjà.  Le même thème a inspiré quantité de compositeurs bien moins connus et j'ai été frappé par la qualité du travail de chacun comme si le défi de renouveler le genre avait mobilisé le meilleur de leur métier.  J'ai regroupé par genre quelques exemples qui stimuleront peut-être votre curiosité.</p>
-
-
-
-
-<p><i>Les classiques du 20<sup>ème</sup> siècle.</i></p>
-
-<li><a href="http://www.youtube.com/watch?v=1dGj39RDuUk&feature=related">Variations sur un thème de Paganini</a> (1947) est une belle œuvre de Boris Blacher (1903-1975), un musicien néo-classique allemand beaucoup trop négligé.</li>
-<li>Les <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/8010890?rk=classic&rsk=hitlist&page=1">Variations sur un thème de Paganini</a>, pour piano & orchestre, de Witold Lutoslawski (1913-1994) ont été enregistrées chez Naxos. Les voici, cette fois, dans une transcription pour deux pianos, interprétées par <a href="https://www.youtube.com/watch?v=vsQo0z5CqM8">Martha Argerich et Nelson Freire</a>.</li>    
-
-<li>J'insiste, enfin, sur l'œuvre magistrale de George Rochberg (1918-2005), <a href="http://www.jpc.de/jpcng/classic/detail/-/hnum/1383501?rk=classic&rsk=hitlist">50 Caprice Variations</a>. </li>
-
-
-
-<p><i>Les oeuvres récentes.</i></p>
-
-<p>Le thème de Paganini n'a apparemment pas épuisé son pouvoir de séduction voire d'inspiration, même sur des musiciens appartenant à la deuxième moitié du 20<sup>ème</sup> siècle :</p>
- 
- <li>Le polonais, Stanisław Skrowaczewski (1923- ), est surtout connu comme chef d'orchestre mais il a également composé un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Stanislaw-Skrowaczewski-geb-1923-Concerto-for-Orchestra/hnum/4586491">Concerto Niccolò</a>, pour la main gauche, qui est à découvrir impérativement.</li>
- <li>Robert Muczynski (1929-2010) est l'auteur de <a href="http://www.youtube.com/watch?v=KYdBa5xKZa0">Desperate Measures</a>, opus 48.</li>
- <li>Tattoo 
-  <sub><sub><sub> <audio controls preload="none" style="height:16px; width:18%;">
-<source src="../son.mp3/destincaprice/tattoo.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/destincaprice/tattoo.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, de David Del Tredici (1937- ) est un bel exemple de la vitalité de la musique moderne américaine.</li>
-
-
-
-<li>James Barnes (1949- ) a écrit une <a href="http://www.youtube.com/watch?v=lognNTfjo3s&feature=related">Symphony Fantasy</a> plutôt ludique, qui privilégie les vents et les cuivres, son domaine de prédilection (Il est lui-même tubiste).</li>
-
-
-<li>Le  <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Poul-Ruders-geb-1949-Paganini-Variationen-Gitarrenkonzert-Nr-2/hnum/6584355">Concerto n°2</a>, pour guitare & orchestre, du danois Poul Ruders (1949- ) (plages 1 à 23) est scandaleusement négligé mais cela devrait changer.</li>
-<li><a href="http://www.youtube.com/watch?v=aXKqh0etaio&feature=related">Paganini variations</a> (1956- ) est l'oeuvre du compositeur russe, Alexander Rosenblatt (1956- ), inexplicablement méconnu lui aussi.</li>
-<li>Lowell Liebermann (1961- ) a également écrit une Rhapsodie sur un thème de Paganini, pour piano & orchestre, mais je n'ai pu en trouver la moindre illustration.</li>
-
-<p><i>Les jazzman.</i></p>
-<p>Le swing que l'on peut facilement communiquer au thème de Paganini devait fatalement tenter les instrumentistes de jazz :</p>
-<li>Le clarinettiste, <a href="http://www.youtube.com/watch?v=4VrSkMOuYyg">Benny Goodman</a> (1909-1986), connaît bien le répertoire classique (Mozart, Bartok, Copland, Bernstein). Il a écrit cette pièce empreinte de respect pour l'oeuvre qui lui a servi de modèle.</li>
-<li>Le violoniste, <a href="http://www.youtube.com/watch?v=VqwTrupenSg&feature=related">Doug Cameron</a> a écrit son cycle de variations dans un style nettement plus débridé.</li> 
-
-<li>Enfin et surtout, le  pianiste surdoué et compositeur, <a href="http://www.youtube.com/watch?v=M1DpFxQprug&feature=related">Fazil Say</a> (1970- ), improvise fréquemment (en bis) sur le même thème (Voici une <a href="http://www.youtube.com/watch?v=okl7_SDhVSU">variante</a>).</li>
-
- 
-
-
-
-
-  
-              </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -126,8 +122,6 @@ Votre navigateur n'est pas compatible
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

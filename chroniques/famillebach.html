@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | Airs de famille : les autres Bach</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>Airs de famille : les autres Bach</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,154 +46,194 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Airs de famille : les autres Bach</li>
                     </ul>
                 </nav>  
-  <h2>Airs de famille : les autres Bach.</h2>
   
- 
-<p>Bach est un patronyme très répandu en Allemagne   et je soupçonne bien des propriétaires de dresser leur arbre généalogique dans l'espoir de se trouver un brin d'ADN commun avec l'illustre famille Thuringeoise.  Composée  de pas moins de 90 musiciens (Instrumentistes, Organistes, Cantors ou Maîtres de Chapelle),  elle s'est étalée sur 7 générations (1600-1850) au moins !</p>
+                <p>Bach est un patronyme très répandu en Allemagne   et je soupçonne bien des propriétaires de dresser leur arbre généalogique dans l'espoir de se trouver un brin d'ADN commun avec l'illustre famille Thuringeoise.  Composée  de pas moins de 90 musiciens (Instrumentistes, Organistes, Cantors ou Maîtres de Chapelle),  elle s'est étalée sur 7 générations (1600-1850) au moins !</p>
+                <p>Leurs chances de succès sont cependant extrêmement faibles : lors de l'inauguration du monument à la gloire de Johann Sebastian, en 1843, à Leipzig, un seul membre de la lignée de Franconie (cfr ci-dessous), Wilhelm Friedrich Ernst, était présent et il avait 84 ans (mais bon pied bon oeil, dixit Robert Schumann, qui le rencontra à cette occasion). Cependant, il paraît qu'il subsiste des descendants du côté de la lignée de Meiningen. Karl Bernhard Paul Bach (1878-1968), peintre de son état, s'est présenté comme le petit-fils de Gottlieb Friedrich Bach (1714-1785), une affirmation sujette à caution si l'on se réfère à leurs dates de naissance respective !</p>
 
-<p>Leurs chances de succès sont cependant extrêmement faibles : lors de l'inauguration du monument à la gloire de Johann Sebastian, en 1843, à Leipzig, un seul membre de la lignée de Franconie (cfr ci-dessous), Wilhelm Friedrich Ernst, était présent et il avait 84 ans (mais bon pied bon oeil, dixit Robert Schumann, qui le rencontra à cette occasion). Cependant, il paraît qu'il subsiste des descendants du côté de la lignée de Meiningen. Karl Bernhard Paul Bach (1878-1968), peintre de son état, s'est présenté comme le petit-fils de Gottlieb Friedrich Bach (1714-1785), une affirmation sujette à caution si l'on se réfère à leurs dates de naissance respective !</p>
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/thuringe4.jpg" alt="Thuringe">
+                      <figcaption>Thuringe</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/famille/thuringe1.jpg" alt="Berceaux de la famille Bach">
+                      <figcaption>Berceaux de la famille Bach</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
+                <p>On possède peu de renseignements sur les origines lointaines de la famille Bach.   On pense qu'elle provenait de Slovaquie ou de Moravie et que, protestante, elle a fui la répression catholique, lors de la Contre-Réforme.
+                Elle s'est alors installée en Thuringe, dans un premier temps, puis elle s'est progressivement dispersée, en fonction des emplois qui se déclaraient vacants dans les différentes églises, chapelles et cours d'Allemagne, voire d'Europe.</p>
+                <p>L'esprit de famille a toujours régné chez les Bach.  Des fêtes rassemblèrent régulièrement jusqu'à 120 personnes à Erfurt, Arnstadt, Steinach ou Meiningen, jusqu'au milieu du 18<sup>ème</sup> siècle.  Elles disparurent un jour, aussi brusquement que les dinosaures, un météorite sur la Thuringe, peut-être ?  Le mystère reste entier.</p>
+                <p>L'arbre généalogique de la famille Bach ne peut remonter au-delà des années 1500 : les recherches butent invariablement sur la perte de nombreux registres paroissiaux, lors de la guerre de 30 ans.  Il en résulte que l'on considère habituellement que Veit Bach est l'ancêtre commun à tous les musiciens dont nous allons parler.</p>
+                <p>Johann Sebastian, qui était pleinement conscient de la valeur de ses lointains parents, fut le premier à s'intéresser à cet arbre, rassemblant ou recopiant les partitions parvenant en sa possession, en particulier lors d'échanges aux fêtes de famille. Son fils, Carl Philip Emanuel, complètera le travail lorsqu'il entrera en possession des archives paternelles.</p> 
+                <p>Dans un souci de commodité, on distingue habituellement les membres de la famille par leurs prénoms, généralement composés, eu égard au fait que les Johann et les Christoph pullulent.  Si vous êtes un intime, il est également permis de les distinguer par leurs initiales, JS, CPE, WF, etc.</p>
 
-<div><img src="../images/famille/thuringe4.jpg" alt="" /><div class="legende">Thuringe</div></div>
-<div><img src="../images/famille/thuringe1.jpg" alt="" /><div class="legende">Berceaux de la famille Bach</div></div>
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/famille1.jpg" alt="Arbre généalogique élagué de la famille Bach"/>
+                      <figcaption>Arbre généalogique élagué de la famille Bach</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
+                <p>Vu de loin, l'arbre présente quatre branches principales qui portent chacune le nom de son lieu d'établissement. Trois branches sont issues de la dispersion des fils de Johann Hans : Arnstadt (Heinrich), Franconie (Christoph donc ultérieurement Johann Sebastian, né à Eisenach) et Erfurt (Johann). Pour trouver l'origine de la quatrième branche, dite de Meiningen, il faut remonter à Lips, frère de Johann Hans.</p>
+                <p>Tous ces musiciens ne sont pas d'importance égale malgré le fait avéré qu'ils aient tous été porteurs du "gène musical".  Il suffit d'étudier les oeuvres des trois fils de Johann Hans Bach pour comprendre que ces gènes se sont manifestés de façon dominante chez Heinrich et Johann mais de façon récessive chez Christoph.  Heinrich les transmettra, à son tour, de façon dominante à  Johann Christoph et Johann Michael tandis que, dans le cas de Johann, on saute une génération.  Enfin dans le cas de Christoph, seul Georg Christoph s'illustrera à la première génération tandis qu'il faudra attendre la deuxième génération pour que naisse Johann Sebastian.  Un phénomène similaire quoique aggravé s'est produit dans la lignée de Meiningen puisqu'on ne connaît pas de (grands)-parents musiciens de qualité à Johann Ludwig.</p> 
+                <p>Le parcours de l'arbre commence donc avec Veit Bach, boulanger de son état et accessoirement joueur de cistre amateur.   On sait tellement peu de choses à son sujet que même sa descendance directe est incertaine. On connaît surtout son fils, Johann Hans, mais on connaît nettement moins bien ses frères, Lips et Caspar, voire Veit II (filiation incertaine).</p>
 
-<div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/hansbach.jpg" alt="JH"/>
+                      <figcaption>JH</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                    
+                <p>Johann Hans fut également boulanger (et accessoirement charpentier !) mais ses compétences musicales étaient suffisantes pour lui permettre de vivre de son art itinérant. Son prestige devait être réel si l'on en juge par le médaillon gravé qui est parvenu jusqu'à nous, portant l'inscription : « Hans Bach, fameux et amusant jongleur de cour, ménétrier comique, est un homme diligent, honnête et religieux ».</p>
+                <p>Il fut, en tous cas, le véritable point de départ de trois lignées prestigieuses qui maintinrent le secret de leurs gènes pendant 200 ans !</p>
 
-<p>On possède peu de renseignements sur les origines lointaines de la famille Bach.   On pense qu'elle provenait de Slovaquie ou de Moravie et que, protestante, elle a fui la répression catholique, lors de la Contre-Réforme.
-  Elle s'est alors installée en Thuringe, dans un premier temps, puis elle s'est progressivement dispersée, en fonction des emplois qui se déclaraient vacants dans les différentes églises, chapelles et cours d'Allemagne, voire d'Europe.</p>
+                <p>Ses trois fils connurent un destin glorieux, soit directement soit par descendance interposée :</p>
 
-<p>L'esprit de famille a toujours régné chez les Bach.  Des fêtes rassemblèrent régulièrement jusqu'à 120 personnes à Erfurt, Arnstadt, Steinach ou Meiningen, jusqu'au milieu du 18<sup>ème</sup> siècle.  Elles disparurent un jour, aussi brusquement que les dinosaures, un météorite sur la Thuringe, peut-être ?  Le mystère reste entier.</p>
+                <ul class="miniListCorps">
+                  <li>Johann Bach figure en tête de la lignée d'Erfurt, ville où il fut organiste à la Predigerkirche. Deux motets de sa composition ont été retranscrits par JS et ils ont été enregistrés par Konrad Junghänel dans un double album consacré aux <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Das-Alt-Bachische-Archiv/hnum/7466825">Altbachisches Archiv</a> (Archives de JS Bach). Voici  <a href="http://www.youtube.com/watch?v=GmRlWZia5hA&feature=related">Sey nun wieder zufrieden</a> puis <a href="http://www.youtube.com/watch?v=OLkBW0n2_y4&feature=related">Unser Leben ist ein Schatten</a>. Parmi sa descendance musicale, on accordera une mention spéciale à son petit-fils Johann Bernhard dont la musique orchestrale a déjà fière allure : écoutez cette belle <a href="https://www.youtube.com/watch?v=Wsu7T85UjmE">Ouverture en sol majeur</a>.  Si cela vous a plu, sachez qu'un double <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johann-Bernhard-Bach-Ouvert%FCren-D-Dur-e-moll-G-Dur-g-moll-f%FCr-Streicher-Bc/hnum/1496994">CD</a> d'oeuvres orchestrales a été enregistré chez Accent.  L'arrière petit-fils, Johann Ernst, n'est pas moins intéressant. La firme Capriccio, très dévouée à la cause de la famille Bach, a gravé une <a href="http://www.naxos.com/catalogue/item.asp?item_code=C10310-11">Passion-Oratorio</a> de belle facture.</li>
+                  <li>
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/famille/johannmichaelbach.jpg" alt="JM"/>
+                        <figcaption>JM</figcaption>
+                      </figure>
+                    </div>
+                  </div>Heinrich Bach, le chef de file de la lignée d'Arnstadt, fut, lui aussi un compositeur de valeur dont les <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Das-Alt-Bachische-Archiv/hnum/7466825">Altbachisches Archiv</a> ont  conservé le souvenir. Reinhard Goebel a enregistré, pour 	Archiv, deux de ses <a href="http://www.amazon.com/Bachiana-Family-Musica-Antiqua-Goebel/dp/B00005O44C">Sonates a Cinque</a> (plages 7 &amp; 8). 
+                  Cependant, la postérité (en particulier les studios d'enregistrement !) a surtout retenu ses deux fils, Johann Christoph et Johann Michael.  Johann Sebastian appréciait particulièrement Johann Christoph.  Vous comprendrez les raisons de cette admiration en écoutant cette belle cantate <a href="https://www.youtube.com/watch?v=01jb5-CCgOQ">Es erhub sich ein Streit</a> que JS fit d'ailleurs jouer à Leipzig bien après la mort de son auteur, une inititative rare à l'époque. Etrangement, nous ne dispososns d'aucun portrait de ce musicien renommé. Johann Michael, futur beau-père de JS, est à peine moins connu des experts. Voici sa cantate <a href="http://www.youtube.com/watch?v=32rm5RtDbm4&feature=related">Das Blut Jesu Christi</a>. Le <a href="http://www.amazon.com/Bachiana-Family-Musica-Antiqua-Goebel/dp/B00005O44C">CD</a> Archiv (plage 14), déjà cité, propose une Sonata &amp; Capriccio qui lui est attribuée.
+                  </li>
+                  <li>Christoph Bach, le fondateur de la branche de Franconie, ne fut pas un compositeur aussi fameux. La postérité l'a essentiellement retenu comme le père de Johann-Christoph, de Georg-Christoph et de Johann Ambrosius, ce dernier, père de Johann Sebastian. Parmi les trois frères, c'est assurément Georg-Christoph qui sort du rang.  Son psaume 133, "Siehe, wie fein und lieblich ist’s", remarquablement interprété - comme toujours ! - par l'ensemble Musiqua Antiqua Köln vaut le détour mais j'en ai provisoirement perdu la trace.</li>
+                </ul>
 
+                <p>En 1707, les branches de Franconie et d'Arnstadt entrèrent en collision, Johann Sebastian épousant, en premières noces, son arrière-petite cousine, Maria Barbara.  Le mélange des gènes fut particulièrement heureux puisqu'il donna naissance à deux authentiques génies : le surdoué (quoique un brin fantasque) Wilhelm Friedemann et l'indispensable - car au bilan irremplaçable - Carl Philip Emanuel.</p>
 
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/wfbach.jpg" alt="WF">
+                      <figcaption>WF</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/famille/cpebach.jpg" alt="CPE">
+                      <figcaption>CPE</figcaption>
+                    </figure>
+                  </div>
+                   <div>
+                    <figure>
+                      <img src="../images/famille/jcfbach.jpg" alt="JCF">
+                      <figcaption>JCF</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/famille/jcbach.jpg" alt="JC">
+                      <figcaption>JC</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
- 
- <p>L'arbre généalogique de la famille Bach ne peut remonter au-delà des années 1500 : les recherches butent invariablement sur la perte de nombreux registres paroissiaux, lors de la guerre de 30 ans.  Il en résulte que l'on considère habituellement que Veit Bach est l'ancêtre commun à tous les musiciens dont nous allons parler.</p>
+                <p>Devenu veuf, Johann Sebastian épousa Anna Magdalena Wilcke, également musicienne de son état, et deux nouveaux compositeurs naquirent de cette union, Johann Christoph Friedrich et Johann Christian, moins essentiels cependant que leurs demi-frères.  Les lois de la génétique ne s'appliquent décidément pas qu'aux lignées de petits pois ! J'ai évoqué les oeuvres des fils de JS dans une <a href="../chroniques/pedigrees.html">chronique</a> antérieure et je n'y reviens pas ici.</p>
 
- 
- <p>Johann Sebastian, qui était pleinement conscient de la valeur de ses lointains parents, fut le premier à s'intéresser à cet arbre, rassemblant ou recopiant les partitions parvenant en sa possession, en particulier lors d'échanges aux fêtes de famille. Son fils, Carl Philip Emanuel, complètera le travail lorsqu'il entrera en possession des archives paternelles.</p> 
-<p>Dans un souci de commodité, on distingue habituellement les membres de la famille par leurs prénoms, généralement composés, eu égard au fait que les Johann et les Christoph pullulent.  Si vous êtes un intime, il est également permis de les distinguer par leurs initiales, JS, CPE, WF, etc.</p>
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/wfebach.jpg" alt="WFE"/>
+                      <figcaption>WFE</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-<div><img src="../images/famille/famille1.jpg" alt="" /><div class="legende">Arbre généalogique élagué de la famille Bach</div></div>
+                <p>Ces fameux gènes, si actifs jusque là, s'essoufflèrent à la génération suivante : seul Johann Christoph (Troisième du nom si vous suivez et encore j'en ai laissé quatre de côté !) eut un fils musicien, Wilhelm Friedrich Ernst, celui-là même qui fut présent lors de l'inauguration du monument Bach à Leipzig.  Ses cantates <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Wilhelm-Friedrich-Ernst-Bach-1759-1845-Kantaten-und-Sinfonias/hnum/8839693">Westphalens Freude</a> (plages 1 à 4) et <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Wilhelm-Friedrich-Ernst-Bach-1759-1845-Kantaten-und-Sinfonias/hnum/8839693">Vater unser</a> (plage 8) ne manquent pas de ce charme désuet qui caractérise le classicisme finissant.  Cette <a href="http://www.youtube.com/watch?v=rEj5TZXBWkQ">Sinfonia</a> pourrait subir le même  reproche mais peut-on en vouloir au musicien d'être né quand Mozart avait 3 ans et d'être mort quand Brahms en avait autant ?  Il aurait écrit un Concerto pour piano à 6 mains dont l'exécution prévoyait deux interprètes féminines ultra minces encadrant un homme de corpulence quelconque, Nihil novi sub sole !</p>
+                <p>Aussi étonnant que cela puisse paraître, la lignée de Franconie s'arrête à la mort de WFE, c'est à se demander comment il se fait que nous soyons si nombreux sur terre !</p>
+                <p>Si vous inspectez plus attentivement l'arbre généalogique, vous noterez qu'un certain Johann Ludwig Bach, occupe une branche complètement collatérale, issue de Lips, fils de Veit I.  Pour être isolé, ce musicien n'en est pas moins essentiel : JS (re)connaissait le talent de ce lointain cousin.  Il en recopia plusieurs cantates qu'on lui a, de ce fait, longtemps attribuées par erreur.  Les musicologues (et les interprètes !), intrigués qu'une telle méprise ait pu se produire, se sont intéressés aux oeuvres vocales de JL, les proposant à l'enregistrement.  Hermann Max, dirigeant la Rheinische Kantorei et Das Kleine Konzert, a gravé plusieurs <a href="http://www.jpc.de/jpcng/home/search?fastsearch=johann%20ludwig%20bach&rubric=classic&pd_orderby=score">CD</a> essentiels pour le label Capriccio. Le grand chef-d'oeuvre est assurément la superbe <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johann-Ludwig-Bach-Trauermusik-f-Soli-Doppelchor-2-Orchester/hnum/8374840">Trauermusik</a>, écrite pour les funérailles du Duc Ernst Ludwig von Sachsen-Meiningen sur un texte du défunt qui avait préparé ses funérailles ! Voilà un must en matière de musique ancienne dont j'ai extrait deux airs, l'un pour soprano (Ach ja, die Ketten <sub><sub><sub> 
+                <audio controls preload="none">
+                  <source src="../son.mp3/famillebach/trauermusik3.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/famillebach/trauermusik3.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub>) et l'autre pour ténor (Ob gleich aller Treiber Wut <sub><sub><sub> 
+                <audio controls preload="none">
+                  <source src="../son.mp3/famillebach/trauermusik7.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/famillebach/trauermusik7.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub>).</p>
+                 
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/johannludwigbach.jpg" alt="JL">
+                      <figcaption>JL</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/famille/bachpastel.jpg" alt="JS">
+                      <figcaption>JS</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
+                <p>Johann Ludwig eut plusieurs enfants dont Gottlieb Friedrich, musicien et surtout peintre car c'est dans l'exercice de cet art qu'il est passé à la postérité : on lui attribue les pastels ci-contre, représentant son père et son lointain mais célèbre parent, JS en personne.  Aux dernières nouvelles (1968, pas très fraîches, j'en conviens), le portrait de JS appartenait à la succession de KBP, présenté en introduction.</p>
+                <p>Enfin, il se peut que vous entendiez parler d'un autre Johann Michael (1745-1820), sans rapport avec le père de Maria Barbara.  Sachez qu'il n'est que lointainement apparenté aux précédents, au point qu'aucune connexion n'a jamais pu figurer sur un arbre de dimension raisonnable.  Tout ce qu'on sait de lui, c'est qu'il n'appartenait à aucune des lignées thuringeoises mais à celle, beaucoup moins fameuse, résidant en Hesse.  Il tenait néanmoins beaucoup à ce qu'on le considère comme faisant partie intégrante de la famille. Hermann Max, encore lui, a enregistré quelques cantates, dont <a href="http://www.youtube.com/watch?v=k1ZEiGErxsE">Das Volk, so im Finstern wandelt</a>, aux accents se réclamant déjà du romantisme naissant. Ecoutez encore l'ensemble Luminis, en répétition dans <a href="http://www.youtube.com/watch?v=5F2dvDiWCHs">Fürchtet euch nicht</a>.</p>
+                <p>Je vous ai surtout proposé à l'écoute des oeuvres vocales des membres de la famille Bach parce que c'est ce qui se trouve le plus facilement sur le marché.  Outre les CD publiés chez Capriccio, je mentionne l'<a href="http://www.naxos.com/catalogue/item.asp?item_code=C51117">album</a> paru chez Naxos (4 CD). La plupart de ces musiciens étaient cependant aussi organistes en fonction.  Il n'est hélas pas facile de trouver des enregistrements permettant de se faire une idée de leurs compétences respectives. En particulier, ce qui n'arrange rien, les orgues jouées ne sont pas toujours d'excellente facture. Voici pêle-mêle quelques échantillons qui vous donneront peut-être envie de prospecter davantage, à condition que l'orgue ancien fasse partie de vos passions mélomaniaques :</p>
 
-
-
-
-<p>Vu de loin, l'arbre présente quatre branches principales qui portent chacune le nom de son lieu d'établissement. Trois branches sont issues de la dispersion des fils de Johann Hans : Arnstadt (Heinrich), Franconie (Christoph donc ultérieurement Johann Sebastian, né à Eisenach) et Erfurt (Johann). Pour trouver l'origine de la quatrième branche, dite de Meiningen, il faut remonter à Lips, frère de Johann Hans.</p>
-
-<p>Tous ces musiciens ne sont pas d'importance égale malgré le fait avéré qu'ils aient tous été porteurs du "gène musical".  Il suffit d'étudier les oeuvres des trois fils de Johann Hans Bach pour comprendre que ces gènes se sont manifestés de façon dominante chez Heinrich et Johann mais de façon récessive chez Christoph.  Heinrich les transmettra, à son tour, de façon dominante à  Johann Christoph et Johann Michael tandis que, dans le cas de Johann, on saute une génération.  Enfin dans le cas de Christoph, seul Georg Christoph s'illustrera à la première génération tandis qu'il faudra attendre la deuxième génération pour que naisse Johann Sebastian.  Un phénomène similaire quoique aggravé s'est produit dans la lignée de Meiningen puisqu'on ne connaît pas de (grands)-parents musiciens de qualité à Johann Ludwig.</p> 
-
-
-
-<p>Le parcours de l'arbre commence donc avec Veit Bach, boulanger de son état et accessoirement joueur de cistre amateur.   On sait tellement peu de choses à son sujet que même sa descendance directe est incertaine. On connaît surtout son fils, Johann Hans, mais on connaît nettement moins bien ses frères, Lips et Caspar, voire Veit II (filiation incertaine).</p>
-
-
-<div><img src="../images/famille/hansbach.jpg" alt="" /><div class="legende">JH</div></div>
-    
-<p>Johann Hans fut également boulanger (et accessoirement charpentier !) mais ses compétences musicales étaient suffisantes pour lui permettre de vivre de son art itinérant. Son prestige devait être réel si l'on en juge par le médaillon gravé qui est parvenu jusqu'à nous, portant l'inscription : « Hans Bach, fameux et amusant jongleur de cour, ménétrier comique, est un homme diligent, honnête et religieux ».</p>
-<p>Il fut, en tous cas, le véritable point de départ de trois lignées prestigieuses qui maintinrent le secret de leurs gènes pendant 200 ans !</p>
-
-<p>Ses trois fils connurent un destin glorieux, soit directement soit par descendance interposée :</p>
-
- 
-<li>Johann Bach figure en tête de la lignée d'Erfurt, ville où il fut organiste à la Predigerkirche. Deux motets de sa composition ont été retranscrits par JS et ils ont été enregistrés par Konrad Junghänel dans un double album consacré aux <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Das-Alt-Bachische-Archiv/hnum/7466825">Altbachisches Archiv</a> (Archives de JS Bach). Voici  <a href="http://www.youtube.com/watch?v=GmRlWZia5hA&feature=related">Sey nun wieder zufrieden</a> puis <a href="http://www.youtube.com/watch?v=OLkBW0n2_y4&feature=related">Unser Leben ist ein Schatten</a>. Parmi sa descendance musicale, on accordera une mention spéciale à son petit-fils Johann Bernhard dont la musique orchestrale a déjà fière allure : écoutez cette belle <a href="https://www.youtube.com/watch?v=Wsu7T85UjmE">Ouverture en sol majeur</a>.  Si cela vous a plu, sachez qu'un double <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johann-Bernhard-Bach-Ouvert%FCren-D-Dur-e-moll-G-Dur-g-moll-f%FCr-Streicher-Bc/hnum/1496994">CD</a> d'oeuvres orchestrales a été enregistré chez Accent.  L'arrière petit-fils, Johann Ernst, n'est pas moins intéressant. La firme Capriccio, très dévouée à la cause de la famille Bach, a gravé une <a href="http://www.naxos.com/catalogue/item.asp?item_code=C10310-11">Passion-Oratorio</a> de belle facture.</li>
-
-
-<div><img src="../images/famille/johannmichaelbach.jpg" alt="" /><div class="legende">JM</div></div>
-
-<li>Heinrich Bach, le chef de file de la lignée d'Arnstadt, fut, lui aussi un compositeur de valeur dont les <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Das-Alt-Bachische-Archiv/hnum/7466825">Altbachisches Archiv</a> ont  conservé le souvenir. Reinhard Goebel a enregistré, pour 	Archiv, deux de ses <a href="http://www.amazon.com/Bachiana-Family-Musica-Antiqua-Goebel/dp/B00005O44C">Sonates a Cinque</a> (plages 7 & 8).</li> <p>Cependant, la postérité (en particulier les studios d'enregistrement !) a surtout retenu ses deux fils, Johann Christoph et Johann Michael.  Johann Sebastian appréciait particulièrement Johann Christoph.  Vous comprendrez les raisons de cette admiration en écoutant cette belle cantate <a href="https://www.youtube.com/watch?v=01jb5-CCgOQ">Es erhub sich ein Streit</a> que JS fit d'ailleurs jouer à Leipzig bien après la mort de son auteur, une inititative rare à l'époque. Etrangement, nous ne dispososns d'aucun portrait de ce musicien renommé.</p>
-<p>Johann Michael, futur beau-père de JS, est à peine moins connu des experts. Voici sa cantate <a href="http://www.youtube.com/watch?v=32rm5RtDbm4&feature=related">Das Blut Jesu Christi</a>.  Le <a href="http://www.amazon.com/Bachiana-Family-Musica-Antiqua-Goebel/dp/B00005O44C">CD</a> Archiv (plage 14), déjà cité, propose une Sonata & Capriccio qui lui est attribuée.</p>
-<li>Christoph Bach, le fondateur de la branche de Franconie, ne fut pas un compositeur aussi fameux. La postérité l'a essentiellement retenu comme le père de Johann-Christoph, de Georg-Christoph et de Johann Ambrosius, ce dernier, père de Johann Sebastian. Parmi les trois frères, c'est assurément Georg-Christoph qui sort du rang.  Son psaume 133, "Siehe, wie fein und lieblich ist’s", remarquablement interprété - comme toujours ! - par l'ensemble Musiqua Antiqua Köln vaut le détour mais j'en ai provisoirement perdu la trace.</li>
-
-
-
-<p>En 1707, les branches de Franconie et d'Arnstadt entrèrent en collision, Johann Sebastian épousant, en premières noces, son arrière-petite cousine, Maria Barbara.  Le mélange des gènes fut particulièrement heureux puisqu'il donna naissance à deux authentiques génies : le surdoué (quoique un brin fantasque) Wilhelm Friedemann et l'indispensable - car au bilan irremplaçable - Carl Philip Emanuel.</p>
-
-
-
-<div><img src="../images/famille/wfbach.jpg" alt="" /><div class="legende">WF</div></div>
-<div><img src="../images/famille/cpebach.jpg" alt="" /><div class="legende">CPE</div></div>
-<div><img src="../images/famille/jcfbach.jpg" alt="" /><div class="legende">JCF</div></div>
-<div><img src="../images/famille/jcbach.jpg" alt="" /><div class="legende">JC</div></div>
-
-
-<p>Devenu veuf, Johann Sebastian épousa Anna Magdalena Wilcke, également musicienne de son état, et deux nouveaux compositeurs naquirent de cette union, Johann Christoph Friedrich et Johann Christian, moins essentiels cependant que leurs demi-frères.  Les lois de la génétique ne s'appliquent décidément pas qu'aux lignées de petits pois ! J'ai évoqué les oeuvres des fils de JS dans une <a href="../chroniques/pedigrees.html">chronique</a> antérieure et je n'y reviens pas ici.</p>
-
-<div><img src="../images/famille/wfebach.jpg" alt="" /><div class="legende">WFE</div></div>
-<p>Ces fameux gènes, si actifs jusque là, s'essoufflèrent à la génération suivante : seul Johann Christoph (Troisième du nom si vous suivez et encore j'en ai laissé quatre de côté !) eut un fils musicien, Wilhelm Friedrich Ernst, celui-là même qui fut présent lors de l'inauguration du monument Bach à Leipzig.  Ses cantates <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Wilhelm-Friedrich-Ernst-Bach-1759-1845-Kantaten-und-Sinfonias/hnum/8839693">Westphalens Freude</a> (plages 1 à 4) et <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Wilhelm-Friedrich-Ernst-Bach-1759-1845-Kantaten-und-Sinfonias/hnum/8839693">Vater unser</a> (plage 8) ne manquent pas de ce charme désuet qui caractérise le classicisme finissant.  Cette <a href="http://www.youtube.com/watch?v=rEj5TZXBWkQ">Sinfonia</a> pourrait subir le même  reproche mais peut-on en vouloir au musicien d'être né quand Mozart avait 3 ans et d'être mort quand Brahms en avait autant ?  Il aurait écrit un Concerto pour piano à 6 mains dont l'exécution prévoyait deux interprètes féminines ultra minces encadrant un homme de corpulence quelconque, Nihil novi sub sole !</p>
-<p>Aussi étonnant que cela puisse paraître, la lignée de Franconie s'arrête à la mort de WFE, c'est à se demander comment il se fait que nous soyons si nombreux sur terre !</p>
-
-
-
-
-
-
-<p>Si vous inspectez plus attentivement l'arbre généalogique, vous noterez qu'un certain Johann Ludwig Bach, occupe une branche complètement collatérale, issue de Lips, fils de Veit I.  Pour être isolé, ce musicien n'en est pas moins essentiel : JS (re)connaissait le talent de ce lointain cousin.  Il en recopia plusieurs cantates qu'on lui a, de ce fait, longtemps attribuées par erreur.  Les musicologues (et les interprètes !), intrigués qu'une telle méprise ait pu se produire, se sont intéressés aux oeuvres vocales de JL, les proposant à l'enregistrement.  Hermann Max, dirigeant la Rheinische Kantorei et Das Kleine Konzert, a gravé plusieurs <a href="http://www.jpc.de/jpcng/home/search?fastsearch=johann%20ludwig%20bach&rubric=classic&pd_orderby=score">CD</a> essentiels pour le label Capriccio. Le grand chef-d'oeuvre est assurément la superbe <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johann-Ludwig-Bach-Trauermusik-f-Soli-Doppelchor-2-Orchester/hnum/8374840">Trauermusik</a>, écrite pour les funérailles du Duc Ernst Ludwig von Sachsen-Meiningen sur un texte du défunt qui avait préparé ses funérailles ! Voilà un must en matière de musique ancienne dont j'ai extrait deux airs, l'un pour soprano (Ach ja, die Ketten <sub><sub><sub> 
-<audio controls preload="none">
-<source src="../son.mp3/famillebach/trauermusik3.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/famillebach/trauermusik3.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>) et l'autre pour ténor (Ob gleich aller Treiber Wut <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/famillebach/trauermusik7.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/famillebach/trauermusik7.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>).</p>
-
-
-
- 
-<div><img src="../images/famille/johannludwigbach.jpg" alt="" /><div class="legende">JL</div></div>
-<div><img src="../images/famille/bachpastel.jpg" alt="" /><div class="legende">JS</div></div>
-
- <p>Johann Ludwig eut plusieurs enfants dont Gottlieb Friedrich, musicien et surtout peintre car c'est dans l'exercice de cet art qu'il est passé à la postérité : on lui attribue les pastels ci-contre, représentant son père et son lointain mais célèbre parent, JS en personne.  Aux dernières nouvelles (1968, pas très fraîches, j'en conviens), le portrait de JS appartenait à la succession de KBP, présenté en introduction.</p>
- <p></p>
- <p></p>
- 
- 
- 
-
- <p>Enfin, il se peut que vous entendiez parler d'un autre Johann Michael (1745-1820), sans rapport avec le père de Maria Barbara.  Sachez qu'il n'est que lointainement apparenté aux précédents, au point qu'aucune connexion n'a jamais pu figurer sur un arbre de dimension raisonnable.  Tout ce qu'on sait de lui, c'est qu'il n'appartenait à aucune des lignées thuringeoises mais à celle, beaucoup moins fameuse, résidant en Hesse.  Il tenait néanmoins beaucoup à ce qu'on le considère comme faisant partie intégrante de la famille. Hermann Max, encore lui, a enregistré quelques cantates, dont <a href="http://www.youtube.com/watch?v=k1ZEiGErxsE">Das Volk, so im Finstern wandelt</a>, aux accents se réclamant déjà du romantisme naissant. Ecoutez encore l'ensemble Luminis, en répétition dans <a href="http://www.youtube.com/watch?v=5F2dvDiWCHs">Fürchtet euch nicht</a>.</p>
-
- 
+                <ul class="miniListCorps">                
+                  <li>Fugue sur <a href="http://www.youtube.com/watch?v=wCgd9pNRe9M">Christ lag in Todesbanden</a> de Heinrich.</li>  
+                  <li>Ciaccona <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/famillebach/ciaccona.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/famillebach/ciaccona.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub> ou Partita sopra "Du Friedefürst, Herr Jesu Christ" <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/famillebach/partitasopra.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/famillebach/partitasopra.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>, de Johann Bernhard.</li>
+                  <li>Prélude & Fugue en mi bémol majeur <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/famillebach/prelude.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/famillebach/prelude.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub> ou Choral <a href="http://www.youtube.com/watch?v=8FdqsXqNbxI&feature=related">Hilft mir Gottes Güte preisen</a> de Johann Christoph.</li>
+                  <li>Choral "Nun komm, der Heiden Heiland" <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/famillebach/jmchoral.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/famillebach/jmchoral.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>de Johann Michael.</li>
+                </ul>
+                 
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/famille/alkmaar.jpg" alt="St. Laurenskerk, Alkmaar"/>
+                      <figcaption>St. Laurenskerk, Alkmaar</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                 
+                <p>Les mêmes noms réapparaissent sans surprise mais à l'évidence, aucune des oeuvres entendues ne laisse présager la science contrapuntique que JS portera à son degré de perfection absolue dans l'<a href="http://www.youtube.com/watch?v=5Hd35AHmw3I">Art de la Fugue</a> (A ce propos, a-t-on jamais fait mieux que Helmut Walcha jouant de l'instrument de Saint-Laurent à Alkmaar ?). </p>
+                <p>Il s'imposait, au terme de ce long périple, de conclure en rendant hommage à celui que Frédéric II de Prusse appella respectueusement "Le vieux Bach" lorsque celui-ci, âgé de 62 ans, lui rendit visite à Postdam.</p>
+                <p>Aujourd'hui, le vieux se porte comme un charme, tel un arbre qui  a toujours pris soin de ne pas cacher la forêt de ses congénères.</p>
   
-   <p>Je vous ai surtout proposé à l'écoute des oeuvres vocales des membres de la famille Bach parce que c'est ce qui se trouve le plus facilement sur le marché.  Outre les CD publiés chez Capriccio, je mentionne l'<a href="http://www.naxos.com/catalogue/item.asp?item_code=C51117">album</a> paru chez Naxos (4 CD). La plupart de ces musiciens étaient cependant aussi organistes en fonction.  Il n'est hélas pas facile de trouver des enregistrements permettant de se faire une idée de leurs compétences respectives. En particulier, ce qui n'arrange rien, les orgues jouées ne sont pas toujours d'excellente facture. Voici pêle-mêle quelques échantillons qui vous donneront peut-être envie de prospecter davantage, à condition que l'orgue ancien fasse partie de vos passions mélomaniaques :</p>
- <p>Fugue sur <a href="http://www.youtube.com/watch?v=wCgd9pNRe9M">Christ lag in Todesbanden</a> de Heinrich.</p>  
- <p>Ciaccona <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/famillebach/ciaccona.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/famillebach/ciaccona.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> ou Partita sopra "Du Friedefürst, Herr Jesu Christ" <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/famillebach/partitasopra.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/famillebach/partitasopra.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, de Johann Bernhard.</p>
- <p>Prélude & Fugue en mi bémol majeur <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/famillebach/prelude.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/famillebach/prelude.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> ou Choral <a href="http://www.youtube.com/watch?v=8FdqsXqNbxI&feature=related">Hilft mir Gottes Güte preisen</a> de Johann Christoph.</p>
- <p>Choral "Nun komm, der Heiden Heiland" <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/famillebach/jmchoral.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/famillebach/jmchoral.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>de Johann Michael. </p>
- <div><img src="../images/famille/alkmaar.jpg" alt="" /><div class="legende">St. Laurenskerk, Alkmaar</div></div>
- 
-<p>Les mêmes noms réapparaissent sans surprise mais à l'évidence, aucune des oeuvres entendues ne laisse présager la science contrapuntique que JS portera à son degré de perfection absolue dans l'<a href="http://www.youtube.com/watch?v=5Hd35AHmw3I">Art de la Fugue</a> (A ce propos, a-t-on jamais fait mieux que Helmut Walcha jouant de l'instrument de Saint-Laurent à Alkmaar ?). </p>
-
-<p>Il s'imposait, au terme de ce long périple, de conclure en rendant hommage à celui que Frédéric II de Prusse appella respectueusement "Le vieux Bach" lorsque celui-ci, âgé de 62 ans, lui rendit visite à Postdam.</p>
-<p> Aujourd'hui, le vieux se porte comme un charme, tel un arbre qui  a toujours pris soin de ne pas cacher la forêt de ses congénères.</p>
-   
-
-
-  
-              </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -204,8 +245,6 @@ Votre navigateur n'est pas compatible
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

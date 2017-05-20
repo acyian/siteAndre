@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Deux femmes de notes : Louise Farrenc et Louise Bertin</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Deux femmes de notes : Louise Farrenc et Louise Bertin</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,67 +46,58 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tiresdeloubli.html">Compositeurs oubliés</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Deux femmes de notes : Louise Farrenc et Louise Bertin</li>
                     </ul>
                 </nav>  
-  
-  <h2>Deux femmes de notes : Louise Farrenc et Louise Bertin.</h2>
 
-<p>On savait depuis longtemps qu'il existait des femmes de lettres mais bien peu savent qu'il existe également un grand nombre de compositrices, une appellation acceptée par l'Académie Française depuis 1904 (Lili Boulanger venait de remporter le premier Grand Prix de Rome) mais qui n'a jamais rencontré l'assentiment de ces dames qui pensent, avec quelques raisons, que le vocable est horrible et qu'il entretient la discrimination plus qu'il ne la gomme.  A vrai dire, on trouve en librairie d'épais ouvrages recensant ces musiciennes mais cette culture demeure purement livresque et on a trop rarement l'occasion d'entendre leurs musiques. Voici quelques exceptions notables, appartenant à un passé parfois étonnamment lointain :</p>
+                <p>On savait depuis longtemps qu'il existait des femmes de lettres mais bien peu savent qu'il existe également un grand nombre de compositrices, une appellation acceptée par l'Académie Française depuis 1904 (Lili Boulanger venait de remporter le premier Grand Prix de Rome) mais qui n'a jamais rencontré l'assentiment de ces dames qui pensent, avec quelques raisons, que le vocable est horrible et qu'il entretient la discrimination plus qu'il ne la gomme.  A vrai dire, on trouve en librairie d'épais ouvrages recensant ces musiciennes mais cette culture demeure purement livresque et on a trop rarement l'occasion d'entendre leurs musiques. Voici quelques exceptions notables, appartenant à un passé parfois étonnamment lointain :</p>
+                
+                <ul class="miniListCorps">
+                  <li>L'abbesse <a href="http://www.youtube.com/watch?v=9eFPJa95qQE">Hildegard von Bingen</a>  (1098-1179) fut sans doute la première sur une  liste appelée à s'allonger.</li>
+                  <li>La comtesse <a href="http://www.youtube.com/watch?v=5Zah4VWPiNE">Beatritz de Dia</a>  (1136-1189) est la plus célèbre trobairitz (femme troubadour).</li>
+                  <li><a href="../chroniques/strozzi.html">Barbara Strozzi </a> (1619-1664), élève géniale de Francesco Cavalli à Venise, écrivit des madrigaux, des arias et des cantates, en particulier pour la cour des Gonzague à Mantoue.</li>
+                  <li><a href="../chroniques/strozzi.html">Elisabeth Jacquet de La Guerre </a> (1667-1729) fut non seulement une claveciniste prodige mais encore une compositrice appréciée sous le règne du Roi-Soleil.</li>
+                </ul>
 
-<li>L'abbesse <a href="http://www.youtube.com/watch?v=9eFPJa95qQE">Hildegard von Bingen</a>  (1098-1179) fut sans doute la première sur une  liste appelée à s'allonger.</li>
+                <p>A l'époque romantique, la profession commença à se féminiser, les musiciennes les plus célébrées s'appellant Clara Schumann, Fanny Mendelssohn ou Alma Mahler, sans que l'on sache trop s'il ne faut pas y voir une manœuvre supplémentaire de la critique pour honorer un frère ou un mari.</p>
 
-<li>La comtesse <a href="http://www.youtube.com/watch?v=5Zah4VWPiNE">Beatritz de Dia</a>  (1136-1189) est la plus célèbre trobairitz (femme troubadour).</li>
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/femmes/farrenc.jpg" alt="Louise Farrenc"/>
+                      <figcaption>Louise Farrenc</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                  
+                <p>Parmi les artistes ayant imposé leur talent sans l'aide de qui que ce soit, l'une des plus appréciée fut Louise Farrenc (1804-1875). Avec une galanterie à peine dissimulée, Berlioz dit d'elle qu'elle composait comme un homme !  Il voulait sans doute faire remarquer qu'elle ne se contentait pas d'écrire des musiques de salon, pour la voix et/ou le piano, mais qu'elle se risquait avec bonheur et intelligence à la pratique des grandes formes, instrumentales et orchestrales.  Auteur de 3 symphonies (<a href="http://www.youtube.com/watch?v=up8MVoFOheU">n°1</a>, <a href="http://www.youtube.com/watch?v=FyKgDcXgols">n°2</a>, <a href="http://www.youtube.com/watch?v=4ZeYHeXnNdo">n°3</a>), elle a interrompu sa carrière de compositrice à la mort prématurée de sa fille, en 1858. Une (double) perte assurément, comme en témoignent les œuvres que quelques éditeurs curieux n'ont pas hésité à enregistrer.  Elle poursuivit néanmoins sa carrière, entamée en 1842, comme professeur de piano au Conservatoire national de Paris.</p>
 
-<li><a href="../chroniques/strozzi.html">Barbara Strozzi </a> (1619-1664), élève géniale de Francesco Cavalli à Venise, écrivit des madrigaux, des arias et des cantates, en particulier pour la cour des Gonzague à Mantoue.</li>
+                <p>Vous n'avez aucune excuse d'ignorer l'oeuvre de cette grande artiste car elle fait l'objet d'<a href="http://www.jpc.de/jpcng/classic/search?fastsearch=Louise%20farrenc&rubric=classic&pd_orderby=score">enregistrements</a>  de plus en plus nombreux. Voici un extrait plus long d'une œuvre relativement célèbre, le Nonette en mi bémol majeur, opus 38 <sub><sub><sub> 
+                <audio controls preload="none">
+                  <source src="../son.mp3/femmesdenotes/Farrenc_Nonett.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/femmesdenotes/Farrenc_Nonett.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub>.</p>
 
-<li><a href="../chroniques/strozzi.html">Elisabeth Jacquet de La Guerre </a> (1667-1729) fut non seulement une claveciniste prodige mais encore une compositrice appréciée sous le règne du Roi-Soleil.</li>
+                <p>Aristide Farrenc, flûtiste, compositeur et éditeur de musique, est l'exemple parfait du mari qui a soutenu son artiste épouse et s'est consacré à la promotion de son œuvre. Un modèle que ne suivra pas Gustav Mahler, avec les déboires conjugaux que l'on sait.</p>
 
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/femmes/bertin.jpg" alt="Louise Bertin"/>
+                      <figcaption>Louise Bertin</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-
-<p>A l'époque romantique, la profession commença à se féminiser, les musiciennes les plus célébrées s'appellant Clara Schumann, Fanny Mendelssohn ou Alma Mahler, sans que l'on sache trop s'il ne faut pas y voir une manœuvre supplémentaire de la critique pour honorer un frère ou un mari.</p>
-
-<div><img src="../images/femmes/farrenc.jpg" alt="" /><div class="legende">Louise Farrenc</div></div>
-  
-
-<p>Parmi les artistes ayant imposé leur talent sans l'aide de qui que ce soit, l'une des plus appréciée fut Louise Farrenc (1804-1875). Avec une galanterie à peine dissimulée, Berlioz dit d'elle qu'elle composait comme un homme !  Il voulait sans doute faire remarquer qu'elle ne se contentait pas d'écrire des musiques de salon, pour la voix et/ou le piano, mais qu'elle se risquait avec bonheur et intelligence à la pratique des grandes formes, instrumentales et orchestrales.  Auteur de 3 symphonies (<a href="http://www.youtube.com/watch?v=up8MVoFOheU">n°1</a>, <a href="http://www.youtube.com/watch?v=FyKgDcXgols">n°2</a>, <a href="http://www.youtube.com/watch?v=4ZeYHeXnNdo">n°3</a>), elle a interrompu sa carrière de compositrice à la mort prématurée de sa fille, en 1858.  Une (double) perte assurément, comme en témoignent les œuvres que quelques éditeurs curieux n'ont pas hésité à enregistrer.  Elle poursuivit néanmoins sa carrière, entamée en 1842, comme professeur de piano au Conservatoire national de Paris.</p>
-
-<p>Vous n'avez aucune excuse d'ignorer l'oeuvre de cette grande artiste car elle fait l'objet d'<a href="http://www.jpc.de/jpcng/classic/search?fastsearch=Louise%20farrenc&rubric=classic&pd_orderby=score">enregistrements</a>  de plus en plus nombreux. Voici un extrait plus long d'une œuvre relativement célèbre, le Nonette en mi bémol majeur, opus 38 
-  <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/femmesdenotes/Farrenc_Nonett.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/femmesdenotes/Farrenc_Nonett.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</p>
-
- 
-<p>Aristide Farrenc, flûtiste, compositeur et éditeur de musique, est l'exemple parfait du mari qui a soutenu son artiste épouse et s'est consacré à la promotion de son œuvre. Un modèle que ne suivra pas Gustav Mahler, avec les déboires conjugaux que l'on sait.</p>
-<p></p>
-
-
-
-
-<div><img src="../images/femmes/bertin.jpg" alt="" /><div class="legende">Louise Bertin</div></div>
-
-
-
-<p>Encore moins connue - et pourtant ! - Louise Bertin (1805-1877), exacte contemporaine de la précédente, est née sous des auspices  mélangés : lourdement handicapée des membres inférieurs, la nature l'a dédommagée en lui conférant un talent musical incontestable.</p>  
-
- 
-<p>Son père a encouragé sa vocation en lui faisant donner des leçons par quelques grands professeurs de l'époque, François-Joseph Fétis et Anton Reicha.  Le résultat était encore récemment inconnu du plus grand nombre car l'œuvre de Louise Bertin dormait dans les classeurs de la Bibliothèque nationale de Paris, condamnée par les préjugés qu'une femme ne pouvait composer une "grande œuvre".  Le Festival de Radio France à Montpellier a recréé, en juillet 2008, La Esmeralda (<a href="http://www.youtube.com/watch?v=aI8ZZEFek6Y">Début</a> , <a href="http://www.youtube.com/watch?v=rLY_E15hVgQ">Fin</a>)  qu'on n'avait plus entendue depuis 172 ans. Un enregistrement relatant l'événement est désormais disponible.</p>
-
- 
-<p>Ecrit sur un livret de Victor Hugo et supervisé lors des premières répétitions  par Hector Berlioz en personne (excusez du peu), cet opéra s'est avéré un chef-d'œuvre incontestable.  Je n'ai pas regretté un instant d'avoir déboursé 40 euros, apportant du même coup ma modeste contribution à la réparation d'une injustice de l'histoire.</p>
-  
-  <p>Deux autres artistes romantiques françaises, <a href="../chroniques/montgeroult.html">Hélène de Montgeroult </a> (1764-1836) et <a href="../chroniques/bonis.html">Mel Bonis </a> 1858-1937 font l'objet d'une chronique sur ce site. Le lecteur intéressé est invité à s'y reporter.</p>
-  
-  
-  
-  <p>Au 20<sup>ème</sup> siècle, la profession s'est largement féminisée : une autre <a href="../chroniques/dames20.html">chronique </a> évoque les talents incontournables de Grazina Bacziewicz (1909-1969), Vítězslava Kaprálová (1915-1940), Galina Ustvolskaya (1919-2006), Sofia Goubaïdoulina (1931- ), Kaija Saarihao (1952- ), Lera Auerbach (1973- ), ... .  Les féministes compulsifs peuvent également consulter ce <a href="http://www.kapralova.org/DATABASE.htm">site</a>  mais ils n'y trouveront qu'une froide énumération.  </p>
-              </div>
-
+                <p>Encore moins connue - et pourtant ! - Louise Bertin (1805-1877), exacte contemporaine de la précédente, est née sous des auspices  mélangés : lourdement handicapée des membres inférieurs, la nature l'a dédommagée en lui conférant un talent musical incontestable.</p>  
+                <p>Son père a encouragé sa vocation en lui faisant donner des leçons par quelques grands professeurs de l'époque, François-Joseph Fétis et Anton Reicha.  Le résultat était encore récemment inconnu du plus grand nombre car l'œuvre de Louise Bertin dormait dans les classeurs de la Bibliothèque nationale de Paris, condamnée par les préjugés qu'une femme ne pouvait composer une "grande œuvre".  Le Festival de Radio France à Montpellier a recréé, en juillet 2008, La Esmeralda (<a href="http://www.youtube.com/watch?v=aI8ZZEFek6Y">Début</a> , <a href="http://www.youtube.com/watch?v=rLY_E15hVgQ">Fin</a>)  qu'on n'avait plus entendue depuis 172 ans. Un enregistrement relatant l'événement est désormais disponible.</p>
+                <p>Ecrit sur un livret de Victor Hugo et supervisé lors des premières répétitions  par Hector Berlioz en personne (excusez du peu), cet opéra s'est avéré un chef-d'œuvre incontestable.  Je n'ai pas regretté un instant d'avoir déboursé 40 euros, apportant du même coup ma modeste contribution à la réparation d'une injustice de l'histoire.</p>
+                <p>Deux autres artistes romantiques françaises, <a href="../chroniques/montgeroult.html">Hélène de Montgeroult </a> (1764-1836) et <a href="../chroniques/bonis.html">Mel Bonis </a> 1858-1937 font l'objet d'une chronique sur ce site. Le lecteur intéressé est invité à s'y reporter.</p>
+                <p>Au 20<sup>ème</sup> siècle, la profession s'est largement féminisée : une autre <a href="../chroniques/dames20.html">chronique </a> évoque les talents incontournables de Grazina Bacziewicz (1909-1969), Vítězslava Kaprálová (1915-1940), Galina Ustvolskaya (1919-2006), Sofia Goubaïdoulina (1931- ), Kaija Saarihao (1952- ), Lera Auerbach (1973- ), ... .  Les féministes compulsifs peuvent également consulter ce <a href="http://www.kapralova.org/DATABASE.htm">site</a>  mais ils n'y trouveront qu'une froide énumération. </p>
+            </div>
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
@@ -116,8 +108,6 @@ Votre navigateur n'est pas compatible
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs contemporains | Hans Werner Henze</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,51 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreEvolutionStylistique" href="#evolutionStylistique" class="linavMenu active">
+                    <span>L'évolution stylistique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOeuvreHenze" href="#oeuvreHenze" class="linavMenu">
+                    <span>L'oeuvre de Henze</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOperas" href="#operas" class="linavMenu">
+                    <span>Les Opéras</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreSymphonies" href="#symphonies" class="linavMenu">
+                    <span>Les Symphonies</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOeuvresConcertantes" href="#oeuvresConcertantes" class="linavMenu">
+                    <span>Oeuvres concertantes</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreAutresOeuvresOrchestrales" href="#autresOeuvresOrchestrales" class="linavMenu">
+                    <span>Autres oeuvres orchestrales</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueChambre" href="#musiqueChambre" class="linavMenu">
+                    <span>Musique de chambre</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs contemporains</h2>
+                <h3>Hans Werner Henze (1926-2012), compositeur allemand</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -47,152 +88,170 @@
                         <li class="breadcrumbItem">
                           <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Hans Werner Henze</li>
                     </ul>
                 </nav>  
-  <h2>Galerie de portraits :<div>Hans Werner Henze (1926-2012), compositeur allemand.</div></h2>
-  
-  <div><img src="../images/henze/henze.jpg" alt="" /><div class="legende">Hans Werner Henze</div></div>
-   
-   
-   <p>En 2012, Hans Werner Henze demeure le compositeur allemand le plus en vue, sinon en écoute. Successeur un temps désigné de Karl Amadeus Hartmann (1905-1963) et contemporain de Bernd Aloïs Zimmermann (1918-1970), il leur a survécu au point d'incarner  le classicisme allemand au 20<sup>ème</sup> siècle.</p>
-   
-   <p><i>Note : Afin de prévenir toute tempête de protestations quant au superlatif qui précède, sachez que je suis parfaitement instruit que Helmut Lachenmann (1935- ) et Wolfgang Rihm (1952- ) sont allemands, eux aussi. Je n'ai, pour tout dire, jamais rien compris à la musique écrite par Lachenmann (<a href="http://www.youtube.com/watch?v=y7Gzrake8nI">Pression </a>!) et ce n'est pas faute d'avoir essayé; cela dit, il m'étonnerait que je sois seul dans le cas ! Par contre, je ne suis pas insensible à la musique de Rihm (<a href="http://www.youtube.com/watch?v=i62K43AI4ro">In-Schrift</a>) et je n'exclus nullement - bien au contraire - de lui consacrer un portrait dédicacé. Accordons toutefois à Henze le privilège de l'âge.</i>  </p>
- 
-   
-   
-   <p>Henze a vécu une adolescence compliquée. Enrôlé de facto dans les Jeunesses Hitlériennes, il fut  témoin des tracasseries que ses parents subirent  de la part du régime nazi.  Allergique au climat politique et accessoirement homophobe de l'Allemagne d'après-guerre, il finit par s'expatrier en Italie, en 1953, adhérant au parti communiste comme beaucoup d'intellectuels de l'époque, déboussolés par les excès de la guerre. Il ne quitta plus son pays d'adoption sauf ponctuellement :</p>
-   
-   <li>lors de masterclasses à Dartmouth College (New Hampshire 1967), Salzbourg (1962-1967) et Cologne (1980-1991),</li>
-   <li>lors d'événements musicaux le concernant (encore Salzbourg mais le Festival cette fois, qui lui commanda plusieurs opéras),</li>
-   <li>lors d'un séjour à Cuba (1969-70) où il tenta de concrétiser son engagement politique au service de l'enseignement musical local.  Il retomba rapidement sur terre lorsqu'il fut témoin des contradictions du régime castriste, pourtant par le pire de tous ceux d'extrême gauche. C'est de cette époque que datent quelques oeuvres clairement dédicacées, le Requiem "Das Floß der Medusa" (à la mémoire de Che Guevarra), <a href="http://www.youtube.com/watch?v=D-UOzD7tVl4&feature=relmfu">Compases para preguntas ensimismadas</a> (1970), <a href="http://www.youtube.com/watch?v=NKZ3oYt5gsk">El Cimarrón</a> (d'après un livre de Miguel Barnet évoquant des épisodes de la période coloniale) et la 6<sup>ème</sup> Symphonie.</li> 
-   
-   <p>A l'autre extrémité de sa vie, en 2005, Henze s'est trouvé plongé, pendant deux mois, dans un coma atypique dont il sortit aussi mystérieusement qu'il y était entré. Deux ans plus tard, il perdit son compagnon de vie, Fausto Moroni. Diminué par ces épreuves et le poids naturel des ans, le compositeur  ralentit son travail d'écriture, se faisant aider par son assistant principal, Francesco Antonioni.</p>
-   
-    
-<p><i>L'évolution stylistique.</i></p>
-   
-    <p>Les tous premiers pas de Henze furent néo-classiques (<a href="http://www.youtube.com/watch?v=CKP2vN4XGjU&feature=related">Kammerkonzert</a> für Klavier, Flöte und Streicher (1946), une rareté à déguster ! ou <a href="http://www.youtube.com/watch?v=zkqQ9SarJV8&feature=relmfu">Concertino</a> pour pianoforte, vents et percussions (1947)). Bien que ces essais aient été jugés prometteurs, le compositeur a rayé de son catalogue la plupart des oeuvres de cette époque.</p>
-    
-  <p>Henze appartenait  à la génération de l'avant-garde des années 50 et, à ce titre, il a sacrifié à la mode en fréquentant l'école d'été de musique nouvelle de Darmstadt. Dès 1947, il a exploité les leçons reçues en s'appliquant à une écriture sérielle de sa confection, par exemple dans la 1<sup>ère</sup> Symphonie (<a href="http://www.youtube.com/watch?v=DEXTZy7V0zE&feature=relmfu">Allegro con grazia & Notturno-Lento</a>, <a href="http://www.youtube.com/watch?v=V2RigarSml4&feature=relmfu">Allegro molto</a>)  et  le Concerto n°1, pour violon (<a href="http://www.youtube.com/watch?v=mgEndPQonvU&feature=relmfu">Allegro molto</a>, <a href="http://www.youtube.com/watch?v=sDOKLXsI5JI&feature=relmfu">Vivacissimo</a>, <a href="http://www.youtube.com/watch?v=3sgyLIgkyf4&feature=relmfu">Andante con moto</a>). L'écoute de ces oeuvres ne souffre pas  du caractère rebutant que l'écriture sérielle revêt habituellement. Il faut en chercher la raison dans la technique particulière utilisée par Henze, qui utilise quelques notes seulement dans les motifs principaux, réservant le solde des demi-tons non utilisés au contrepoint. Un effet de lisibilité s'en dégage immédiatement non dénué de lyrisme. Henze a rapidement pris de plus en plus de libertés avec le dogme sériel, effaré de s'entendre reprocher par l'influent théoricien, Theodor Adorno, que sa musique n'était pas assez ... chaotique ! Ses condisciples, Boulez, Stockhausen et Nono ne lui ont pas pardonné cette distanciation, quittant même ostensiblement, dès les premières mesures, la création à Donaueschingen, de Nachtstücke und Arien (1957). Henze est  épisodiquement revenu à l'écriture sérielle comme dans <a href="http://www.youtube.com/watch?v=f0MD2O5oZvk&feature=fvwrel">Antifone</a> (1960).</p>
-  
-  <p>Polyglotte cultivé, se réclamant autant de Mozart que de Schönberg - au point d'avoir appelé son chien, Belmonte-Schönberg ! - , Henze a fait progressivement la synthèse de tous les styles qu'il a assimilés, néo-classicisme, expressionnisme allemand, vérisme italien, musique expérimentale (<a href="https://www.youtube.com/watch?v=hBuOSURLqfI">Prison Song</a>, une oeuvre aussi percutante que dérangeante, à découvrir par les passionnés d'inouï !) et dodécaphonisme (<a href="http://www.youtube.com/watch?v=B-QXenhBrhg&feature=relmfu">Whispers from Heavenly Death</a> (1948), <a href="http://www.youtube.com/watch?v=NrTnTkEky-g&feature=relmfu">Labyrinth</a> (1951)), les mâtinant à l'occasion d'influences héritées du jazz ou des musiques afro-cubaines.</p>
 
-  <p>Si sa musique n'est pas vraiment populaire, c'est qu'elle peut paraître aggressive aux oreilles non préparées (mais rappelez-vous qu'on lui a reproché de l'être encore trop peu !). Cependant, elle ne l'est pas tant que cela et à condition d'éviter les oeuvres où l'expressionnisme se fait tapageur, on a la surprise stimulante sinon agréable de découvrir un univers ne ressemblant à aucun autre au 20<sup>ème</sup> siècle. Voici quelques pistes destinées à orienter le néophyte soucieux de découvrir cette oeuvre aussi fascinante (souvent) que dérangeante (parfois).</p>
-  <p></p>
-  
-   <i>L'oeuvre de Henze.</i>
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#evolutionStylistique">L'évolution stylistique</a></li>
+                        <li><a href="#oeuvreHenze">L'oeuvre de Henze</a></li>
+                        <li><a href="#operas">Les Opéras</a></li>
+                        <li><a href="#symphonies">Les Symphonies</a></li>
+                        <li><a href="#oeuvresConcertantes">Oeuvres concertantes</a></li>
+                        <li><a href="#autresOeuvresOrchestrales">Autres oeuvres orchestrales</a></li>
+                        <li><a href="#musiqueChambre">Musique de chambre</a></li>
+                    </ul>
+                </div>
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/henze/henze.jpg" alt="Hans Werner Henze"/>
+                              <figcaption>Hans Werner Henze</figcaption>
+                          </figure>
+                      </div>
+                  </div>
    
-  <p>Deux massifs s'imposent dans l'immense catalogue des oeuvres de Henze, comportant 10 Symphonies et pas moins de 27 Opéras.</p>
-  
-    
-  <p><i>Les Opéras.</i></p>
-  
-  <p>L'opéra a, de tous temps, été le centre d'activité principale de Henze. Cette attirance naturelle a certainement joué un rôle dans sa volonté de s'affranchir de la tyrannie des 12 sons : il est bien connu que les sauts d'intervalles d'une écriture strictement sérielle malmènent autant la voix des chanteurs que les tympans des auditeurs. Henze a exploré tous les recoins de l'opéra moderne, répugnant à écrire deux fois la même oeuvre. Ce désir de renouvellement, louable en soi, a eu un prix : toutes les expériences tentées ne furent pas également abouties et je ne chercherai pas à convertir le plus grand nombre à quelques oeuvres difficiles voire problématiques. Parmi les opéras les plus accessibles, on compte les commandes du prestigieux Festival de Salzbourg : ce n'est guère surprenant, le compositeur étant parfaitement au fait que le public autrichien n'apprécie guère que les artistes se livrent à des expériences hasardeuses à son dépens (sans parler de sa dépense, vu le prix exhorbitant des places !). Parmi les opéras  régulièrement joués sur les scènes internationales, citons :</p>
-  
-  
-  <li><a href="http://www.youtube.com/watch?v=8U3kqzHW-9c">Boulevard Solitude</a> (1952), un remake de Manon Lescaut aux consonances jazzistiques.</li>
-  <li>Der Prinz von Homburg (1960).</li>
-  <li><a href="http://www.youtube.com/watch?v=KDtPYAlFHwM&feature=related">Elegy for young Lovers</a> (1961).</li>
-  <li><a href="https://www.youtube.com/watch?v=p9ZuCUhfWd0">Der junge Lord</a> (1965).</li>
-  <li><a href="http://www.youtube.com/watch?v=aMo2_uF02rY&feature=related">Les Bassarides</a> (1966).</li>
-  <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-La-Cubana-oder-Ein-Leben-f%FCr-die-Kunst/hnum/5130661">La Cubana</a>, oder Ein Leben für die Kunst (1974).</li>
-  
-  <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-The-English-Cat/hnum/6099088">The English Cat</a> (1983).</li>
-  
-  <li><a href="http://www.youtube.com/watch?v=S2Pr4WfeOCM&feature=relmfu">Venus und Adonis</a> (1993).</li>
-  
-  <li><a href="http://www.youtube.com/watch?v=s_Pf-HsXcqw">L'Upupa und der Triumph der Sohnesliebe</a> (Festival de Salzbourg, 2003).</li>
-  <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Gogo-No-Eiko-Das-verratene-Meer-Version-2003-2005/hnum/7556149">Gogo No Eiko</a> (Festival de Salzbourg, 2006, en fait la version japonaise de la version allemande de 1990 (Deutsche Oper Berlin)).</li>
-  <li><a href="http://www.youtube.com/watch?v=dvaV9szNTFQ&feature=related">Phaedra</a> (2007), s'inspirant des événements tragiques vécus par le compositeur en 2005 et  de la renaissance subséquente (Ecrit avec le concours de Francesco Antonioni).</li>
-  <li>Gisela ! (2010).</li>
-  <p>Il convient d'ajouter à cette liste quelques oeuvres vocales mixtes que je ne sais où caser telles, <a href="http://www.youtube.com/watch?v=q7vcgCCVE48&feature=related">Das Ende einer Welt</a>, <a href="http://www.youtube.com/watch?v=EnfCOouu5D0&feature=related">Ein Landarzt</a> (Opéra radiophonique), <a href="http://www.youtube.com/watch?v=_AvaxvHU1Uo">Pollicino</a> (Opéra pour enfants), la <a href="http://www.youtube.com/watch?v=5teJlFUsnc8&feature=relmfu">Cantata della fiaba estrema</a> ou encore <a href="http://www.youtube.com/watch?v=xPnHlx1KpVw&feature=relmfu">Orpheus behind the Wire</a>  pour choeur a capella.</p>
-  <p></p>
-  
-  <p><i>Les Symphonies.</i></p>
-  <div><img src="../images/henze/henze1.jpg" alt="" /></div>
-  <p>Henze s'est également imposé comme l'un des grands symphonistes du 20<sup>ème</sup> siècle. Ses 10 symphonies, s'étalant sur un demi-siècle, sont d'une telle  variété qu'il vous faudra quelque temps pour en assimiler le contenu. Inexplicablement, il n'existe aucune intégrale enregistrée : en ce qui concerne les 6 premières, Brillant vient de rééditer les gravures DGG dirigées par le compositeur. En cherchant bien, vous trouverez ce double CD pour moins de 5 euros, autant dire que vous n'avez aucune excuse de ne pas vous lancer dans l'aventure. Voici des extraits des Symphonies n°1 (<a href="http://www.youtube.com/watch?v=DEXTZy7V0zE&feature=relmfu">Allegro con grazia & Notturno-Lento</a>, <a href="http://www.youtube.com/watch?v=V2RigarSml4&feature=relmfu">Allegro molto</a>) et <a href="http://www.youtube.com/watch?v=6zi-nMm7BCA&feature=related">n°2</a>.</p>
-  
-  
-  <p>Les symphonies 7 à 10 ont été enregistrées isolément par des chefs plus ou moins connus mais de toutes façons vous n'aurez guère le choix : si    
- la 7<sup>ème</sup> est un hommage au précurseur, Karl Amadeus Hartmann, la <a href="https://www.youtube.com/watch?v=kUonvDMNFj4">8<sup>ème</sup></a> est typique du style chargé du compositeur et la <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Symphonie-Nr-9-f%FCr-Chor-Orchester/hnum/6929360">9<sup>ème</sup></a> (chorale !) règle, par texte interposé, ses comptes de jeunesse avec la barbarie nazie. Quant à sa <a href="https://www.youtube.com/watch?v=6kEDNv_N_iI">10<sup>ème</sup></a>, elle est sans doute la plus accessible de toutes et vous feriez bien de commencer par elle.</p>
-  
-  <p><i>Oeuvres concertantes.</i></p>
- 
- 
- <p>Henze a écrit quelques concertos pour instruments solistes : un Concerto pour contrebasse &amp; orchestre (1966), un Double Concerto pour hautbois, harpe et orchestre à cordes (1966), deux Concertos pour piano  (<a href="http://www.youtube.com/watch?v=H_xae9cK8vw&feature=relmfu">n° 1</a> (1950) et <a href="http://www.youtube.com/watch?v=izJu2Ms7mlk&feature=relmfu">n°2</a> (1967)) et trois Concertos pour violon  (<a href="http://www.youtube.com/watch?v=mgEndPQonvU&feature=related">n°1</a> (1947), <a href="http://www.youtube.com/watch?v=ZiGN_Z8BUeo&feature=relmfu">n°2</a> (1971) - une oeuvre étrange parsemée de chant, de réminiscences de musique élisabéthaine et même de l'énoncé du théorème de Gödel, commenté par ailleurs dans la partie scientifique de ce site ! - et <a href="http://www.youtube.com/watch?v=tUs_s2Yze5M&feature=relmfu">n°3</a> (1996)). On ajoutera à cette liste quelques oeuvres concertantes éparses : 
-  <a href="http://www.youtube.com/watch?v=zkqQ9SarJV8&feature=relmfu">Concertino</a> pour piano vents et percussions (1947), <a href="http://www.youtube.com/watch?v=bgjm9H5u0Q0">Tristan</a>, Prélude pour piano, bandes & orchestre, Ode an den Westwind (1953), pour violoncelle & orchestre, <a href="http://www.youtube.com/watch?v=PFe-73gshkM&feature=relmfu">Suite Capriccio</a> pour violoncelle &amp; orchestre (1976) et un <a href="http://www.youtube.com/watch?v=-Gf7EzrWHGg&feature=related">Requiem</a> (instrumental !) (1990-93).</p>
-  
-  
-  <p><i>Autres oeuvres orchestrales.</i></p> 
-  <p>Travailleur infatigable, jamais à court d'inspiration, Henze a  écrit beaucoup d'autres oeuvres faisant appel aux ressources de l'orchestre : <a href="http://www.youtube.com/watch?v=B-QXenhBrhg&feature=relmfu">Whispers from Heavenly Death</a> (1948), <a href="http://www.youtube.com/watch?v=4gFmgQ634gk">Appolo und Hyacinthus</a> (1948),
-     Sinfonische Zwischenspiele (1951),
-    Tancredi (1952),
-    Tanz und Salonmusik (1952), 
-    Quattro poemi (1955),
-    Drei sinfonische Etüden (1956, revision en 1964), Drei Dithyramben (1958) - à découvrir lorsque j'en aurai retrouvé la trace sonore ! - 
-    , <a href="http://www.youtube.com/watch?v=_oXsZCKP9YQ&feature=relmfu">Being beauteous</a> (1963), Cantate pour soprano coloratur, harpe & 4 violoncelles,
-     <a href="http://www.youtube.com/watch?v=2Ob2VyISx-s&feature=relmfu">In memoriam: die weisse Rose</a> (1965),
-    
-    Fantaisie pour cordes (1966), <a href="http://www.youtube.com/watch?v=D-UOzD7tVl4&feature=relmfu">Compases para preguntas ensimismadas</a> (1969-70) pour alto solo & 22 exécutants,    <a href="http://www.youtube.com/watch?v=QkKZm2BMsGM">Barcarola</a> pour grand orchestre (1979),
-    Dramatische Szenen aus ‘Orpheus’ I (1979),
-    
-    Kleine Elegien (1984-85),
-    Liebeslieder (1984),
-    
-    Cinque piccoli concerti e ritornelli (1987),
-    La selva incantata, aria and rondo (1991),
-    Introduktion, Thema und Variationen (1992),
-    Appassionatamente (1993),
-    
-    Sieben Boleros (1996),
-    Zigeunerweisen und Sarabanden (1996),
-    <a href="http://www.youtube.com/watch?v=j7OTHsSdXcg&feature=relmfu">Scorribanda Sinfonica</a> (2000-01),
-    Sebastian im Traum (2004) et
-  Fünf Botschaften für die Königin von Saba (2004).  </p>
-  <div><img src="../images/henze/undine.jpg" alt="" /></div>
-<p>Le modèle du ballet stravinskien, singulièrement "Le Sacre du Printemps", a très tôt joué un rôle non négligeable dans la carrière du compositeur, une impulsion qui date de l'époque où il dirigeait la scène de  Wiesbaden :  <a href="http://www.youtube.com/watch?v=G5S6wONGGxQ&feature=relmfu">Ballett-Variationen</a> (1949), <a href="http://www.youtube.com/watch?v=NrTnTkEky-g&feature=relmfu">Labyrinth</a> (1951) et <a href="http://www.youtube.com/watch?v=B2x7-529c74&feature=relmfu">L'usignolo dell'imperatore</a> (1959). Son oeuvre du genre la plus ambitieuse est <a href="http://www.youtube.com/watch?v=quKWTjTxhhA&feature=relmfu">Undine</a> (1957),  toujours au répertoire du Royal Ballet's et une des oeuvres préférées de l'illustre ballerine, Margot Fonteyn.</p>
+                  <p>En 2012, Hans Werner Henze demeure le compositeur allemand le plus en vue, sinon en écoute. Successeur un temps désigné de Karl Amadeus Hartmann (1905-1963) et contemporain de Bernd Aloïs Zimmermann (1918-1970), il leur a survécu au point d'incarner  le classicisme allemand au 20<sup>ème</sup> siècle.</p>
 
+                  <p><i>Note : Afin de prévenir toute tempête de protestations quant au superlatif qui précède, sachez que je suis parfaitement instruit que Helmut Lachenmann (1935- ) et Wolfgang Rihm (1952- ) sont allemands, eux aussi. Je n'ai, pour tout dire, jamais rien compris à la musique écrite par Lachenmann (<a href="http://www.youtube.com/watch?v=y7Gzrake8nI">Pression </a>!) et ce n'est pas faute d'avoir essayé; cela dit, il m'étonnerait que je sois seul dans le cas ! Par contre, je ne suis pas insensible à la musique de Rihm (<a href="http://www.youtube.com/watch?v=i62K43AI4ro">In-Schrift</a>) et je n'exclus nullement - bien au contraire - de lui consacrer un portrait dédicacé. Accordons toutefois à Henze le privilège de l'âge.</i>  </p>
 
- 
-  <p>Henze s'est également investi dans quelques genres trop souvent considérés comme mineurs :</p>
-  
-  <li>orchestrateur hors pair, il a mis son talent au service d'autres musiques comme dans ces  merveilleux <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Richard-Wagner-1813-1883-Wesendonck-Lieder-orchestriert-von-Henze/hnum/2062527">Wesendonck-Lieder</a> de Richard Wagner,    
-<p>- il a écrit plusieurs musiques de films (hauts-de-gamme), en particulier pour le cinéaste, Volker Schlöndorff, en tirant éventuellement des suites instrumentales : <a href="http://www.youtube.com/watch?v=yKYIPa1vB4k">Der junge Törless</a>, "Die verlorene Ehre der Katharina Blum" dont il a tiré cette <a href="http://www.youtube.com/watch?v=77p76fi4uA8">Suite</a> et <a href="https://www.youtube.com/watch?v=GpUWYf_Jodw">Un amour de Swann</a> dont il a tiré ces superbes <a href="http://www.youtube.com/watch?v=GpUWYf_Jodw&feature=relmfu">12 Variations pour orchestre</a>. Il est également l'auteur de la musique de <a href="http://www.youtube.com/watch?v=LnCmQ7F_8Pg&feature=related">L'amour à Mort</a>, d'Alain Resnais. </li>
-  
-  
-  <li>il a réinstrumenté quelques oeuvres baroques à une époque où cela se concevait encore : <a href="http://www.youtube.com/watch?v=wHH-xlW1FGg&feature=relmfu">Jephté</a> de Giacomo Carissimi ou <a href="http://www.youtube.com/watch?v=HGT8FeqgaMQ">Il Ritorno d'Ulisse in Patria</a> de Monteverdi sont ses réalisations les plus fameuses dans un genre (in)volontairement anachronique. Telemania (1967) est  un exercice de style "à la manière de", un genre qui a connu un succès récurrent chez pas mal de compositeurs (Mozartiana, Rossiniana, Tartiniana et beaucoup d'autres sur lesquelles je reviendrai à l'occasion).</li>   
-   
+                  <p>Henze a vécu une adolescence compliquée. Enrôlé de facto dans les Jeunesses Hitlériennes, il fut  témoin des tracasseries que ses parents subirent  de la part du régime nazi.  Allergique au climat politique et accessoirement homophobe de l'Allemagne d'après-guerre, il finit par s'expatrier en Italie, en 1953, adhérant au parti communiste comme beaucoup d'intellectuels de l'époque, déboussolés par les excès de la guerre. Il ne quitta plus son pays d'adoption sauf ponctuellement :</p>
 
-<p><i>Musique de chambre.</i></p>
-<p>La musique de chambre est relativement moins présente au catalogue des oeuvres de Henze. On y dénombre cependant plusieurs partitions de valeur : <a href="http://www.youtube.com/watch?v=PFe-73gshkM&feature=relmfu">Suite</a> pour violoncelle solo, ici superbement jouée par Matt Haimovitz, <a href="http://www.youtube.com/watch?v=XuGmXjftfxk&feature=relmfu">Neue Volkslieder und Hirtengesänge</a> (1983/1996), <a href="http://www.youtube.com/watch?v=MGz77_C9Z7o&feature=relmfu">Sonate n°2</a> pour cordes (1995) - à découvrir ! - , <a href="https://www.youtube.com/watch?v=63lNKhQfLTc">Sebastian im Traum</a> (2004) - idem - , et surtout <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Streichquartette-Nr-1-5/hnum/5130651">5 Quatuors à cordes</a> (à découvrir patiemment !). Les amateurs de guitare seront intéressés d'apprendre qu'il a écrit des oeuvres importantes pour cet instrument, tels ces <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Kammermusik-Vol-1/hnum/1612370">Canti e rimpianti amorosi</a>. Le label <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Kammermusik-mit-Gitarre-Guitar-Music-Vol-1/hnum/4330291">Naxos</a> s'y intéresse.</p> 
+                  <ul class="miniListCorps">
+                    <li>lors de masterclasses à Dartmouth College (New Hampshire 1967), Salzbourg (1962-1967) et Cologne (1980-1991),</li>
+                    <li>lors d'événements musicaux le concernant (encore Salzbourg mais le Festival cette fois, qui lui commanda plusieurs opéras),</li>
+                    <li>lors d'un séjour à Cuba (1969-70) où il tenta de concrétiser son engagement politique au service de l'enseignement musical local.  Il retomba rapidement sur terre lorsqu'il fut témoin des contradictions du régime castriste, pourtant par le pire de tous ceux d'extrême gauche. C'est de cette époque que datent quelques oeuvres clairement dédicacées, le Requiem "Das Floß der Medusa" (à la mémoire de Che Guevarra), <a href="http://www.youtube.com/watch?v=D-UOzD7tVl4&feature=relmfu">Compases para preguntas ensimismadas</a> (1970), <a href="http://www.youtube.com/watch?v=NKZ3oYt5gsk">El Cimarrón</a> (d'après un livre de Miguel Barnet évoquant des épisodes de la période coloniale) et la 6<sup>ème</sup> Symphonie.</li> 
+                  </ul>
 
-<p>Le piano est également (peu) présent au même catalogue : <a href="https://www.youtube.com/watch?v=HhKG5r2NFtw">Sonate</a>, <a href="http://www.youtube.com/watch?v=j45dvztLi44&feature=relmfu">Variations</a>, opus 13, et les charmantes <a href="http://www.youtube.com/watch?v=oOyiP71IuHE&feature=relmfu"> Lucy Escott Variations</a>.</p>
+                  <p>A l'autre extrémité de sa vie, en 2005, Henze s'est trouvé plongé, pendant deux mois, dans un coma atypique dont il sortit aussi mystérieusement qu'il y était entré. Deux ans plus tard, il perdit son compagnon de vie, Fausto Moroni. Diminué par ces épreuves et le poids naturel des ans, le compositeur  ralentit son travail d'écriture, se faisant aider par son assistant principal, Francesco Antonioni.</p>
 
-<p>De grands interprètes - surtout anglo-saxons - ont joué voire inspiré l'oeuvre de Henze : les chefs, Simon Rattle et Oliver Knussen, et les ténors, Ian Bostridge et John Mark Ainsley.
-Henze a dédié les <a href="http://www.youtube.com/watch?v=uo4-JK4Rkoc&feature=related">5 Chants napolitains</a>  au regretté Dietrich Fischer-Dieskau; <a href="http://www.youtube.com/watch?v=KI_KpmILAdM">Kammermusik</a> (1958), dédié à Benjamin Britten, fut écrit pour le tenor Peter Pears et le guitariste Julian Bream (et 8 instrumentistes), ici c'est Philip Langridge qui chante; plus récemment, Ian Bostridge a mis à son répertoire <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-1926-2012-Symphonien-Nr-7-9/hnum/2246588">Three Auden songs</a> et Six songs from the Arabian.</p>
+                  <div id="evolutionStylistique">
+                    <h4>L'évolution stylistique</h4>
 
- 
-  <p>Trop audacieuse pour les mélomanes frileux, trop sage pour les avant-gardistes purs et durs, la musique de Henze vaut votre exploration méthodique quitte à n'en retenir que la partie aisément accessible. Vu l'ampleur de la tâche et le tri nécessaire, cela risque de vous occuper un bon bout de temps. N'allez d'ailleurs pas trop vite en besogne, c'est le genre de musique qu'on commence par considérer avec scepticisme puis dont on ne peut plus se passer. Comme tant d'autres collègues (Schnittke, Rautavaara, Penderecki, ...) mais avec davantage de réserves, Henze a progressivement arrondi les aspérités de sa musique, la rendant toujours plus apaisée. Cela est particulièrement sensible dans ces oeuvres récentes que sont la 10<sup>ème</sup> Symphonie et, plus récemment, Elogium Musicum (2008), chanté en latin (sur un texte de Henze !) en hommage au compagnon défunt.</p>
-  
-  <div><img src="../images/henze/henze2.jpg" alt="" /></div> 
-  <p>Le test suivant me paraît un bon juge de votre capacité d'adhésion à l'oeuvre de Henze : un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Nachtst%FCcke-und-Arien-nach-Bachmann-Gedichten/hnum/3489633">CD</a>, paru chez Wergo propose quelques oeuvres magistrales et pas toujours faciles. L'interprétation superlative du chef (et compositeur), Peter Ruzicka, a tout pour convaincre l'élève concentré. Voici deux extraits des plages 10 (Nachtstücke und Arie <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/henze/henze1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/henze/henze1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>) et 13 (Selva Incantata <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/henze/henze2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/henze/henze2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>). La pochette du CD reprend un long entretien que le chef a obtenu du compositeur : vous y apprendrez bien d'autres  choses intéressantes sur son travail.</p>
-  <p>Henze fait partie des grands musiciens du siècle passé. Le monde musical allemand lui réserve un traitement de faveur d'autant plus nécessaire qu'il n'a pas beaucoup d'autres compositeurs de ce calibre à choyer.</p>
-  
-  
-  
+                    <p>Les tous premiers pas de Henze furent néo-classiques (<a href="http://www.youtube.com/watch?v=CKP2vN4XGjU&feature=related">Kammerkonzert</a> für Klavier, Flöte und Streicher (1946), une rareté à déguster ! ou <a href="http://www.youtube.com/watch?v=zkqQ9SarJV8&feature=relmfu">Concertino</a> pour pianoforte, vents et percussions (1947)). Bien que ces essais aient été jugés prometteurs, le compositeur a rayé de son catalogue la plupart des oeuvres de cette époque.</p>
+                    <p>Henze appartenait  à la génération de l'avant-garde des années 50 et, à ce titre, il a sacrifié à la mode en fréquentant l'école d'été de musique nouvelle de Darmstadt. Dès 1947, il a exploité les leçons reçues en s'appliquant à une écriture sérielle de sa confection, par exemple dans la 1<sup>ère</sup> Symphonie (<a href="http://www.youtube.com/watch?v=DEXTZy7V0zE&feature=relmfu">Allegro con grazia &amp; Notturno-Lento</a>, <a href="http://www.youtube.com/watch?v=V2RigarSml4&feature=relmfu">Allegro molto</a>)  et  le Concerto n°1, pour violon (<a href="http://www.youtube.com/watch?v=mgEndPQonvU&feature=relmfu">Allegro molto</a>, <a href="http://www.youtube.com/watch?v=sDOKLXsI5JI&feature=relmfu">Vivacissimo</a>, <a href="http://www.youtube.com/watch?v=3sgyLIgkyf4&feature=relmfu">Andante con moto</a>). L'écoute de ces oeuvres ne souffre pas  du caractère rebutant que l'écriture sérielle revêt habituellement. Il faut en chercher la raison dans la technique particulière utilisée par Henze, qui utilise quelques notes seulement dans les motifs principaux, réservant le solde des demi-tons non utilisés au contrepoint. Un effet de lisibilité s'en dégage immédiatement non dénué de lyrisme. Henze a rapidement pris de plus en plus de libertés avec le dogme sériel, effaré de s'entendre reprocher par l'influent théoricien, Theodor Adorno, que sa musique n'était pas assez ... chaotique ! Ses condisciples, Boulez, Stockhausen et Nono ne lui ont pas pardonné cette distanciation, quittant même ostensiblement, dès les premières mesures, la création à Donaueschingen, de Nachtstücke und Arien (1957). Henze est  épisodiquement revenu à l'écriture sérielle comme dans <a href="http://www.youtube.com/watch?v=f0MD2O5oZvk&feature=fvwrel">Antifone</a> (1960).</p>
+                    <p>Polyglotte cultivé, se réclamant autant de Mozart que de Schönberg - au point d'avoir appelé son chien, Belmonte-Schönberg ! - , Henze a fait progressivement la synthèse de tous les styles qu'il a assimilés, néo-classicisme, expressionnisme allemand, vérisme italien, musique expérimentale (<a href="https://www.youtube.com/watch?v=hBuOSURLqfI">Prison Song</a>, une oeuvre aussi percutante que dérangeante, à découvrir par les passionnés d'inouï !) et dodécaphonisme (<a href="http://www.youtube.com/watch?v=B-QXenhBrhg&feature=relmfu">Whispers from Heavenly Death</a> (1948), <a href="http://www.youtube.com/watch?v=NrTnTkEky-g&feature=relmfu">Labyrinth</a> (1951)), les mâtinant à l'occasion d'influences héritées du jazz ou des musiques afro-cubaines.</p>
+                    <p>Si sa musique n'est pas vraiment populaire, c'est qu'elle peut paraître aggressive aux oreilles non préparées (mais rappelez-vous qu'on lui a reproché de l'être encore trop peu !). Cependant, elle ne l'est pas tant que cela et à condition d'éviter les oeuvres où l'expressionnisme se fait tapageur, on a la surprise stimulante sinon agréable de découvrir un univers ne ressemblant à aucun autre au 20<sup>ème</sup> siècle. Voici quelques pistes destinées à orienter le néophyte soucieux de découvrir cette oeuvre aussi fascinante (souvent) que dérangeante (parfois).</p>
+                  </div>
+                  
+                  <div id="oeuvreHenze">
+                    <h4>L'oeuvre de Henze</h4>
 
-  
-              </div>
+                    <p>Deux massifs s'imposent dans l'immense catalogue des oeuvres de Henze, comportant 10 Symphonies et pas moins de 27 Opéras.</p>
+                  </div>
 
+                  <div id="operas">
+                    <h4>Les Opéras</h4>
+
+                    <p>L'opéra a, de tous temps, été le centre d'activité principale de Henze. Cette attirance naturelle a certainement joué un rôle dans sa volonté de s'affranchir de la tyrannie des 12 sons : il est bien connu que les sauts d'intervalles d'une écriture strictement sérielle malmènent autant la voix des chanteurs que les tympans des auditeurs. Henze a exploré tous les recoins de l'opéra moderne, répugnant à écrire deux fois la même oeuvre. Ce désir de renouvellement, louable en soi, a eu un prix : toutes les expériences tentées ne furent pas également abouties et je ne chercherai pas à convertir le plus grand nombre à quelques oeuvres difficiles voire problématiques. Parmi les opéras les plus accessibles, on compte les commandes du prestigieux Festival de Salzbourg : ce n'est guère surprenant, le compositeur étant parfaitement au fait que le public autrichien n'apprécie guère que les artistes se livrent à des expériences hasardeuses à son dépens (sans parler de sa dépense, vu le prix exhorbitant des places !). Parmi les opéras  régulièrement joués sur les scènes internationales, citons :</p>
+
+                    <ul class="miniListCorps">
+                      <li><a href="http://www.youtube.com/watch?v=8U3kqzHW-9c">Boulevard Solitude</a> (1952), un remake de Manon Lescaut aux consonances jazzistiques.</li>
+                      <li>Der Prinz von Homburg (1960).</li>
+                      <li><a href="http://www.youtube.com/watch?v=KDtPYAlFHwM&feature=related">Elegy for young Lovers</a> (1961).</li>
+                      <li><a href="https://www.youtube.com/watch?v=p9ZuCUhfWd0">Der junge Lord</a> (1965).</li>
+                      <li><a href="http://www.youtube.com/watch?v=aMo2_uF02rY&feature=related">Les Bassarides</a> (1966).</li>
+                      <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-La-Cubana-oder-Ein-Leben-f%FCr-die-Kunst/hnum/5130661">La Cubana</a>, oder Ein Leben für die Kunst (1974).</li>
+                      <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-The-English-Cat/hnum/6099088">The English Cat</a> (1983).</li>
+                      <li><a href="http://www.youtube.com/watch?v=S2Pr4WfeOCM&feature=relmfu">Venus und Adonis</a> (1993).</li>
+                      <li><a href="http://www.youtube.com/watch?v=s_Pf-HsXcqw">L'Upupa und der Triumph der Sohnesliebe</a> (Festival de Salzbourg, 2003).</li>
+                      <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Gogo-No-Eiko-Das-verratene-Meer-Version-2003-2005/hnum/7556149">Gogo No Eiko</a> (Festival de Salzbourg, 2006, en fait la version japonaise de la version allemande de 1990 (Deutsche Oper Berlin)).</li>
+                      <li><a href="http://www.youtube.com/watch?v=dvaV9szNTFQ&feature=related">Phaedra</a> (2007), s'inspirant des événements tragiques vécus par le compositeur en 2005 et  de la renaissance subséquente (Ecrit avec le concours de Francesco Antonioni).</li>
+                      <li>Gisela ! (2010).</li>
+                    </ul>
+
+                    <p>Il convient d'ajouter à cette liste quelques oeuvres vocales mixtes que je ne sais où caser telles, <a href="http://www.youtube.com/watch?v=q7vcgCCVE48&feature=related">Das Ende einer Welt</a>, <a href="http://www.youtube.com/watch?v=EnfCOouu5D0&feature=related">Ein Landarzt</a> (Opéra radiophonique), <a href="http://www.youtube.com/watch?v=_AvaxvHU1Uo">Pollicino</a> (Opéra pour enfants), la <a href="http://www.youtube.com/watch?v=5teJlFUsnc8&feature=relmfu">Cantata della fiaba estrema</a> ou encore <a href="http://www.youtube.com/watch?v=xPnHlx1KpVw&feature=relmfu">Orpheus behind the Wire</a>  pour choeur a capella.</p>
+                  </div>
+
+                  <div id="symphonies">
+                    <h4>Les Symphonies</h4>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/henze/henze1.jpg" alt="Robert"/>
+                          <figcaption>Robert</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Henze s'est également imposé comme l'un des grands symphonistes du 20<sup>ème</sup> siècle. Ses 10 symphonies, s'étalant sur un demi-siècle, sont d'une telle  variété qu'il vous faudra quelque temps pour en assimiler le contenu. Inexplicablement, il n'existe aucune intégrale enregistrée : en ce qui concerne les 6 premières, Brillant vient de rééditer les gravures DGG dirigées par le compositeur. En cherchant bien, vous trouverez ce double CD pour moins de 5 euros, autant dire que vous n'avez aucune excuse de ne pas vous lancer dans l'aventure. Voici des extraits des Symphonies n°1 (<a href="http://www.youtube.com/watch?v=DEXTZy7V0zE&feature=relmfu">Allegro con grazia &amp; Notturno-Lento</a>, <a href="http://www.youtube.com/watch?v=V2RigarSml4&feature=relmfu">Allegro molto</a>) et <a href="http://www.youtube.com/watch?v=6zi-nMm7BCA&feature=related">n°2</a>.</p>
+                    <p>Les symphonies 7 à 10 ont été enregistrées isolément par des chefs plus ou moins connus mais de toutes façons vous n'aurez guère le choix : si    
+                    la 7<sup>ème</sup> est un hommage au précurseur, Karl Amadeus Hartmann, la <a href="https://www.youtube.com/watch?v=kUonvDMNFj4">8<sup>ème</sup></a> est typique du style chargé du compositeur et la <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Symphonie-Nr-9-f%FCr-Chor-Orchester/hnum/6929360">9<sup>ème</sup></a> (chorale !) règle, par texte interposé, ses comptes de jeunesse avec la barbarie nazie. Quant à sa <a href="https://www.youtube.com/watch?v=6kEDNv_N_iI">10<sup>ème</sup></a>, elle est sans doute la plus accessible de toutes et vous feriez bien de commencer par elle.</p>
+                  </div>
+
+                  <div id="oeuvresConcertantes">
+                    <h4>Oeuvres concertantes</h4>
+
+                    <p>Henze a écrit quelques concertos pour instruments solistes : un Concerto pour contrebasse &amp; orchestre (1966), un Double Concerto pour hautbois, harpe et orchestre à cordes (1966), deux Concertos pour piano  (<a href="http://www.youtube.com/watch?v=H_xae9cK8vw&feature=relmfu">n° 1</a> (1950) et <a href="http://www.youtube.com/watch?v=izJu2Ms7mlk&feature=relmfu">n°2</a> (1967)) et trois Concertos pour violon  (<a href="http://www.youtube.com/watch?v=mgEndPQonvU&feature=related">n°1</a> (1947), <a href="http://www.youtube.com/watch?v=ZiGN_Z8BUeo&feature=relmfu">n°2</a> (1971) - une oeuvre étrange parsemée de chant, de réminiscences de musique élisabéthaine et même de l'énoncé du théorème de Gödel, commenté par ailleurs dans la partie scientifique de ce site ! - et <a href="http://www.youtube.com/watch?v=tUs_s2Yze5M&feature=relmfu">n°3</a> (1996)). On ajoutera à cette liste quelques oeuvres concertantes éparses : 
+                    <a href="http://www.youtube.com/watch?v=zkqQ9SarJV8&feature=relmfu">Concertino</a> pour piano vents et percussions (1947), <a href="http://www.youtube.com/watch?v=bgjm9H5u0Q0">Tristan</a>, Prélude pour piano, bandes & orchestre, Ode an den Westwind (1953), pour violoncelle & orchestre, <a href="http://www.youtube.com/watch?v=PFe-73gshkM&feature=relmfu">Suite Capriccio</a> pour violoncelle &amp; orchestre (1976) et un <a href="http://www.youtube.com/watch?v=-Gf7EzrWHGg&feature=related">Requiem</a> (instrumental !) (1990-93).</p>
+                  </div>
+
+                  <div id="autresOeuvresOrchestrales">
+                    <h4>Autres oeuvres orchestrales</h4>
+
+                    <p>Travailleur infatigable, jamais à court d'inspiration, Henze a  écrit beaucoup d'autres oeuvres faisant appel aux ressources de l'orchestre : <a href="http://www.youtube.com/watch?v=B-QXenhBrhg&feature=relmfu">Whispers from Heavenly Death</a> (1948), <a href="http://www.youtube.com/watch?v=4gFmgQ634gk">Appolo und Hyacinthus</a> (1948), Sinfonische Zwischenspiele (1951), Tancredi (1952), Tanz und Salonmusik (1952), Quattro poemi (1955), Drei sinfonische Etüden (1956, revision en 1964), Drei Dithyramben (1958) - à découvrir lorsque j'en aurai retrouvé la trace sonore ! - , <a href="http://www.youtube.com/watch?v=_oXsZCKP9YQ&feature=relmfu">Being beauteous</a> (1963), Cantate pour soprano coloratur, harpe &amp; 4 violoncelles, <a href="http://www.youtube.com/watch?v=2Ob2VyISx-s&feature=relmfu">In memoriam: die weisse Rose</a> (1965), Fantaisie pour cordes (1966), <a href="http://www.youtube.com/watch?v=D-UOzD7tVl4&feature=relmfu">Compases para preguntas ensimismadas</a> (1969-70) pour alto solo & 22 exécutants,    <a href="http://www.youtube.com/watch?v=QkKZm2BMsGM">Barcarola</a> pour grand orchestre (1979), Dramatische Szenen aus ‘Orpheus’ I (1979), Kleine Elegien (1984-85), Liebeslieder (1984), Cinque piccoli concerti e ritornelli (1987), La selva incantata, aria and rondo (1991), Introduktion, Thema und Variationen (1992), Appassionatamente (1993), Sieben Boleros (1996), Zigeunerweisen und Sarabanden (1996), <a href="http://www.youtube.com/watch?v=j7OTHsSdXcg&feature=relmfu">Scorribanda Sinfonica</a> (2000-01), Sebastian im Traum (2004) et Fünf Botschaften für die Königin von Saba (2004).  </p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/henze/undine.jpg" alt="Henze Undine"/>
+                          <figcaption>Henze Undine</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Le modèle du ballet stravinskien, singulièrement "Le Sacre du Printemps", a très tôt joué un rôle non négligeable dans la carrière du compositeur, une impulsion qui date de l'époque où il dirigeait la scène de  Wiesbaden :  <a href="http://www.youtube.com/watch?v=G5S6wONGGxQ&feature=relmfu">Ballett-Variationen</a> (1949), <a href="http://www.youtube.com/watch?v=NrTnTkEky-g&feature=relmfu">Labyrinth</a> (1951) et <a href="http://www.youtube.com/watch?v=B2x7-529c74&feature=relmfu">L'usignolo dell'imperatore</a> (1959). Son oeuvre du genre la plus ambitieuse est <a href="http://www.youtube.com/watch?v=quKWTjTxhhA&feature=relmfu">Undine</a> (1957),  toujours au répertoire du Royal Ballet's et une des oeuvres préférées de l'illustre ballerine, Margot Fonteyn.</p>
+                    <p>Henze s'est également investi dans quelques genres trop souvent considérés comme mineurs :</p>
+
+                    <ul class="miniListCorps">
+                      <li>orchestrateur hors pair, il a mis son talent au service d'autres musiques comme dans ces  merveilleux <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Richard-Wagner-1813-1883-Wesendonck-Lieder-orchestriert-von-Henze/hnum/2062527">Wesendonck-Lieder</a> de Richard Wagner</li>
+                      <li>il a écrit plusieurs musiques de films (hauts-de-gamme), en particulier pour le cinéaste, Volker Schlöndorff, en tirant éventuellement des suites instrumentales : <a href="http://www.youtube.com/watch?v=yKYIPa1vB4k">Der junge Törless</a>, "Die verlorene Ehre der Katharina Blum" dont il a tiré cette <a href="http://www.youtube.com/watch?v=77p76fi4uA8">Suite</a> et <a href="https://www.youtube.com/watch?v=GpUWYf_Jodw">Un amour de Swann</a> dont il a tiré ces superbes <a href="http://www.youtube.com/watch?v=GpUWYf_Jodw&feature=relmfu">12 Variations pour orchestre</a>. Il est également l'auteur de la musique de <a href="http://www.youtube.com/watch?v=LnCmQ7F_8Pg&feature=related">L'amour à Mort</a>, d'Alain Resnais. </li>
+                      <li>il a réinstrumenté quelques oeuvres baroques à une époque où cela se concevait encore : <a href="http://www.youtube.com/watch?v=wHH-xlW1FGg&feature=relmfu">Jephté</a> de Giacomo Carissimi ou <a href="http://www.youtube.com/watch?v=HGT8FeqgaMQ">Il Ritorno d'Ulisse in Patria</a> de Monteverdi sont ses réalisations les plus fameuses dans un genre (in)volontairement anachronique. Telemania (1967) est  un exercice de style "à la manière de", un genre qui a connu un succès récurrent chez pas mal de compositeurs (Mozartiana, Rossiniana, Tartiniana et beaucoup d'autres sur lesquelles je reviendrai à l'occasion).</li> 
+                    </ul>  
+                  </div>
+
+                  <div id="musiqueChambre">
+                    <h4>Musique de chambre</h4>
+
+                    <p>La musique de chambre est relativement moins présente au catalogue des oeuvres de Henze. On y dénombre cependant plusieurs partitions de valeur : <a href="http://www.youtube.com/watch?v=PFe-73gshkM&feature=relmfu">Suite</a> pour violoncelle solo, ici superbement jouée par Matt Haimovitz, <a href="http://www.youtube.com/watch?v=XuGmXjftfxk&feature=relmfu">Neue Volkslieder und Hirtengesänge</a> (1983/1996), <a href="http://www.youtube.com/watch?v=MGz77_C9Z7o&feature=relmfu">Sonate n°2</a> pour cordes (1995) - à découvrir ! - , <a href="https://www.youtube.com/watch?v=63lNKhQfLTc">Sebastian im Traum</a> (2004) - idem - , et surtout <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Streichquartette-Nr-1-5/hnum/5130651">5 Quatuors à cordes</a> (à découvrir patiemment !). Les amateurs de guitare seront intéressés d'apprendre qu'il a écrit des oeuvres importantes pour cet instrument, tels ces <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Kammermusik-Vol-1/hnum/1612370">Canti e rimpianti amorosi</a>. Le label <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Kammermusik-mit-Gitarre-Guitar-Music-Vol-1/hnum/4330291">Naxos</a> s'y intéresse.</p> 
+                    <p>Le piano est également (peu) présent au même catalogue : <a href="https://www.youtube.com/watch?v=HhKG5r2NFtw">Sonate</a>, <a href="http://www.youtube.com/watch?v=j45dvztLi44&feature=relmfu">Variations</a>, opus 13, et les charmantes <a href="http://www.youtube.com/watch?v=oOyiP71IuHE&feature=relmfu"> Lucy Escott Variations</a>.</p>
+                    <p>De grands interprètes - surtout anglo-saxons - ont joué voire inspiré l'oeuvre de Henze : les chefs, Simon Rattle et Oliver Knussen, et les ténors, Ian Bostridge et John Mark Ainsley.
+                    Henze a dédié les <a href="http://www.youtube.com/watch?v=uo4-JK4Rkoc&feature=related">5 Chants napolitains</a>  au regretté Dietrich Fischer-Dieskau; <a href="http://www.youtube.com/watch?v=KI_KpmILAdM">Kammermusik</a> (1958), dédié à Benjamin Britten, fut écrit pour le tenor Peter Pears et le guitariste Julian Bream (et 8 instrumentistes), ici c'est Philip Langridge qui chante; plus récemment, Ian Bostridge a mis à son répertoire <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-1926-2012-Symphonien-Nr-7-9/hnum/2246588">Three Auden songs</a> et Six songs from the Arabian.</p>
+                    <p>Trop audacieuse pour les mélomanes frileux, trop sage pour les avant-gardistes purs et durs, la musique de Henze vaut votre exploration méthodique quitte à n'en retenir que la partie aisément accessible. Vu l'ampleur de la tâche et le tri nécessaire, cela risque de vous occuper un bon bout de temps. N'allez d'ailleurs pas trop vite en besogne, c'est le genre de musique qu'on commence par considérer avec scepticisme puis dont on ne peut plus se passer. Comme tant d'autres collègues (Schnittke, Rautavaara, Penderecki, ...) mais avec davantage de réserves, Henze a progressivement arrondi les aspérités de sa musique, la rendant toujours plus apaisée. Cela est particulièrement sensible dans ces oeuvres récentes que sont la 10<sup>ème</sup> Symphonie et, plus récemment, Elogium Musicum (2008), chanté en latin (sur un texte de Henze !) en hommage au compagnon défunt.</p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/henze/henze2.jpg" alt="TODO"/>
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Le test suivant me paraît un bon juge de votre capacité d'adhésion à l'oeuvre de Henze : un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hans-Werner-Henze-geb-1926-Nachtst%FCcke-und-Arien-nach-Bachmann-Gedichten/hnum/3489633">CD</a>, paru chez Wergo propose quelques oeuvres magistrales et pas toujours faciles. L'interprétation superlative du chef (et compositeur), Peter Ruzicka, a tout pour convaincre l'élève concentré. Voici deux extraits des plages 10 (Nachtstücke und Arie <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/henze/henze1.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/henze/henze1.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>) et 13 (Selva Incantata <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/henze/henze2.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/henze/henze2.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>). La pochette du CD reprend un long entretien que le chef a obtenu du compositeur : vous y apprendrez bien d'autres  choses intéressantes sur son travail.</p>
+                    <p>Henze fait partie des grands musiciens du siècle passé. Le monde musical allemand lui réserve un traitement de faveur d'autant plus nécessaire qu'il n'a pas beaucoup d'autres compositeurs de ce calibre à choyer.</p>
+                  </div>
+                </div>
+            </div>
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
@@ -201,10 +260,10 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

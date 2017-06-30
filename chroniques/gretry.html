@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | Un Liégeois à Paris : André-Ernest-Modeste Grétry</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>Un Liégeois à Paris : André-Ernest-Modeste Grétry</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,89 +46,95 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Un Liégeois à Paris : André-Ernest-Modeste Grétry</li>
                     </ul>
                 </nav>  
-  
-<h2>Un Liégeois à Paris : André-Ernest-Modeste Grétry.</h2>
 
-<p>L'exode parisien des artistes belges ne date pas d'hier. Les musiciens les plus célèbres qui tentèrent l'aventure, André-Modeste Grétry (1741-1813) et César Franck (1822-1890), sont tous deux nés à Liège, la Cité ardente (Surnom hérité du roman historique éponyme de Henry Carton de Wiart (1905), relatant la vaine résistance opposée au sac de la ville par les troupes de Charles le Téméraire, en 1468). </p>
+                <p>L'exode parisien des artistes belges ne date pas d'hier. Les musiciens les plus célèbres qui tentèrent l'aventure, André-Modeste Grétry (1741-1813) et César Franck (1822-1890), sont tous deux nés à Liège, la Cité ardente (Surnom hérité du roman historique éponyme de Henry Carton de Wiart (1905), relatant la vaine résistance opposée au sac de la ville par les troupes de Charles le Téméraire, en 1468). </p>
 
-<div><img src="../images/gretry/gretry.jpg" alt="" /><div class="legende">André Grétry</div></div>
-  
-  
-<p>Si Franck a connu d'emblée un destin glorieux lui octroyant l'immortalité pour les siècles des siècles, on ne peut en dire autant de Grétry qui sort à peine de deux cents ans de purgatoire.</p> <p>Pourtant, de son vivant, il eut droit à bien des honneurs dont une imposante statue en bronze, dans sa ville natale (où Franck a dû se contenter d'un bien plus modeste buste !).</p> <p>C'est  dans son piédestal que se trouve l'urne contenant le coeur du compositeur, ramené en fête en septembre 1828, après une longue bataille juridique opposant la ville de Liège à l'unique héritier de Grétry, un neveu par alliance demeuré à Paris et peu soucieux de respecter les dernières volontés de son oncle. Celui-ci, privé de coeur, repose au Père Lachaise.</p> 
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/gretry/gretry.jpg" alt="André Grétry"/>
+                      <figcaption>André Grétry</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                  
+                <p>Si Franck a connu d'emblée un destin glorieux lui octroyant l'immortalité pour les siècles des siècles, on ne peut en dire autant de Grétry qui sort à peine de deux cents ans de purgatoire.</p> <p>Pourtant, de son vivant, il eut droit à bien des honneurs dont une imposante statue en bronze, dans sa ville natale (où Franck a dû se contenter d'un bien plus modeste buste !).</p> <p>C'est  dans son piédestal que se trouve l'urne contenant le coeur du compositeur, ramené en fête en septembre 1828, après une longue bataille juridique opposant la ville de Liège à l'unique héritier de Grétry, un neveu par alliance demeuré à Paris et peu soucieux de respecter les dernières volontés de son oncle. Celui-ci, privé de coeur, repose au Père Lachaise.</p> 
+                <p>Si Grétry n'a jamais quitté la mémoire des liégeois, même peu soucieux de musique, bien peu en ont entendu la moindre note, enfin presque.  Il y a 50 ans, lorsque la station de radiodiffusion belge - INR, à l'époque - éteignait ses émissions pour la nuit, on avait droit, en boucle, à un jingle monotone, quelque chose de ce genre <sub><sub><sub> 
+                <audio controls preload="none">
+                  <source src="../son.mp3/gretry/jinglegretry.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/gretry/jinglegretry.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub>. Les connaisseurs savaient que ce motif était cité, par deux fois, dans le mouvement lent du Cinquième Concerto pour violon d'<a href="http://www.youtube.com/watch?v=wMhitWJmYp0&feature=related">Henri Vieuxtemps</a> (Positionnez-vous à 5:37), les français royalistes l'entendaient comme l'hymne officieux de la Restauration (1815-1830) (L'<a href="http://www.youtube.com/watch?v=stm7TwELO5w">hymne officiel</a>, dérivé de la <a href="http://www.youtube.com/watch?v=4h5M78YVN8M&feature=related">Marche du Roi Henri IV</a>, contenait une strophe trop "légère" pour être chantée en présence de la famille royale) mais seuls les érudits le savaient emprunté à l'opéra Lucile de Grétry (Air, "Où peut-on être mieux qu'au sein de sa famille ?").  Quant à connaître cette Lucile, il ne fallait pas trop demander, d'ailleurs il y avait belle lurette qu'on ne la jouait plus. Aujourd'hui encore, je n'ai pas réussi à en trouver une illustration vocale, un comble !</p>
+                <p>Dans les années 1950-60, on pouvait entendre, de Grétry, l'acte de ballet <a href="https://www.youtube.com/watch?v=1wFP0Fazq3w">La Rosière républicaine</a>, sous la direction de Roger Desormières et surtout une suite de Danses villageoises <sub><sub><sub> 
+                <audio controls preload="none">
+                  <source src="../son.mp3/gretry/dansesgretry.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/gretry/dansesgretry.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub>, bricolée par je ne sais qui, à partir d'intermèdes d'opéras. L'album du cinquantenaire de l'OPL (dit, le <a href="http://www.opl.be/bottom-menu/orchestre/discographie/coffret-50-ans.html">Cube 50-50-50</a>) les republie sous la direction un brin datée de Paul Strauss. Les rares opéras enregistrés à la même époque, tels Richard Coeur de Lion et Zémire et Azor, l'ont été dans des conditions similaires, souvent servis par de belles voix (<a href="http://www.youtube.com/watch?v=ByX2CZBCf6A">Mady Mesplé</a>, Jules Bastin, ...) mais contrariés par une conception d'ensemble fort peu idiomatique. Loin de moi l'idée de critiquer le travail de chefs courageux, Edgard Donneux ou Marc Minkowski - ce dernier pas encore  rôdé à l'époque où il a enregistré <a href="http://www.youtube.com/watch?v=kjrV0sMzodg">La Caravane du Caire</a> -, mais plutôt de faire remarquer que l'ère classique attendait, autant que l'ère baroque, que de nouvelles normes s'installent, plus respectueuses de l'historiographie musicale. Celles-ci ont tardé à servir la musique de Grétry et on trouve encore, en 2002, des enregistrements poussifs, tel celui de la <a href="http://www.youtube.com/watch?v=pGBWiMecG4I">Jeunesse de Pierre le Grand</a>, une oeuvre mineure il est vrai, sous la direction d'Olivier Opdebeeck.</p>
+                <p>Mal jouée, cette musique est insipide, un signe qui ne trompe pas ni ne pardonne. Elle ne  retrouve son éclat et son sens que si on se donne la peine de la dépoussiérer en la faisant jouer par de petits ensembles nerveux  et en confiant les parties chantées à des voix jeunes et alertes, ne cherchant pas à forcer la note. C'est cette révolution qui est en marche par la grâce de quelques "classiqueux" qui y consacrent enfin une part de leur énergie :</p>
 
+                <ul class="miniListCorps">
+                  <li>Gustav Leonhardt fit oeuvre pionnière en enregistrant dans de bonnes conditions Le Jugement de Midas, avec la Petite Bande.</li>
+                  <li>Jérémie Rhorer a dirigé le Cercle de l'Harmonie, à Versailles, dans L'<a href="http://www.youtube.com/watch?v=s_aWlLV2mEU&feature=related">Amant jaloux</a>, une oeuvre qui annonce par maints détails signifiants les Noces de Figaro de Mozart.</li>
+                  <li>Guy van Waas et son ensemble, Les Agrémens, ont rendu son lustre à la musique de l'acte de ballet, <a href="http://www.youtube.com/watch?v=uf6Nu5TJwAk&feature=related">Céphale et Procris</a>.</li>
+                  <li>Jérôme Correas et son ensemble Les Paladins se sont penchés avec le même bonheur sur <a href="http://www.youtube.com/watch?v=dQt7Z9qsKVc&feature=related">La Fausse Magie</a>, une des oeuvres préférées de leur auteur.</li>
+                  <li>J'ai gardé pour la fin l'enregistrement le plus considérable à ce jour.  Hervé Niquet et son Concert Spirituel ont enregistré l'oeuvre ambitieuse de Grétry, <a href="http://www.youtube.com/watch?v=Hi8OIH357uE&feature=related">Andromaque</a>, sur un livret de Louis-Guillaume Pitra, d'après Racine. Il s'agit d'une authentique tragédie lyrique, la seule incursion de Grétry à l'Académie Royale de Musique, destinée à concurrencer les oeuvres homologues, singulièrement <a href="https://www.youtube.com/watch?v=i0ugBcl1ivA">Alceste</a>  de Christoph-Willibald von Gluck (1714-1787), l'autre protégé de Marie-Antoinette. Datée de 1780, Andromaque démontre que 117 ans après Cadmus et Hermione - l'acte fondateur du genre par Lully -, la tragédie lyrique avait conservé de beaux restes. Je ne peux décidément passer sous silence le superbe choeur, "Modérez ce Transport jaloux" <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/gretry/andromaque.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/gretry/andromaque.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>, qui ouvre le second acte.</li>
+                </ul>
 
-<p>Si Grétry n'a jamais quitté la mémoire des liégeois, même peu soucieux de musique, bien peu en ont entendu la moindre note, enfin presque.  Il y a 50 ans, lorsque la station de radiodiffusion belge - INR, à l'époque - éteignait ses émissions pour la nuit, on avait droit, en boucle, à un jingle monotone, quelque chose de ce genre 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/gretry/jinglegretry.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/gretry/jinglegretry.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>. Les connaisseurs savaient que ce motif était cité, par deux fois, dans le mouvement lent du Cinquième Concerto pour violon d'<a href="http://www.youtube.com/watch?v=wMhitWJmYp0&feature=related">Henri Vieuxtemps</a> (Positionnez-vous à 5:37), les français royalistes l'entendaient comme l'hymne officieux de la Restauration (1815-1830) (L'<a href="http://www.youtube.com/watch?v=stm7TwELO5w">hymne officiel</a>, dérivé de la <a href="http://www.youtube.com/watch?v=4h5M78YVN8M&feature=related">Marche du Roi Henri IV</a>, contenait une strophe trop "légère" pour être chantée en présence de la famille royale) mais seuls les érudits le savaient emprunté à l'opéra Lucile de Grétry (Air, "Où peut-on être mieux qu'au sein de sa famille ?").  Quant à connaître cette Lucile, il ne fallait pas trop demander, d'ailleurs il y avait belle lurette qu'on ne la jouait plus. Aujourd'hui encore, je n'ai pas réussi à en trouver une illustration vocale, un comble !</p>
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/gretry/andromaque.jpg" alt="Andromaque "/>
+                      <figcaption>Andromaque </figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-<p>Dans les années 1950-60, on pouvait entendre, de Grétry, l'acte de ballet <a href="https://www.youtube.com/watch?v=1wFP0Fazq3w">La Rosière républicaine</a>, sous la direction de Roger Desormières et surtout une suite de Danses villageoises <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/gretry/dansesgretry.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/gretry/dansesgretry.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub>, bricolée par je ne sais qui, à partir d'intermèdes d'opéras. L'album du cinquantenaire de l'OPL (dit, le <a href="http://www.opl.be/bottom-menu/orchestre/discographie/coffret-50-ans.html">Cube 50-50-50</a>) les republie sous la direction un brin datée de Paul Strauss. Les rares opéras enregistrés à la même époque, tels Richard Coeur de Lion et Zémire et Azor, l'ont été dans des conditions similaires, souvent servis par de belles voix (<a href="http://www.youtube.com/watch?v=ByX2CZBCf6A">Mady Mesplé</a>, Jules Bastin, ...) mais contrariés par une conception d'ensemble fort peu idiomatique. Loin de moi l'idée de critiquer le travail de chefs courageux, Edgard Donneux ou Marc Minkowski - ce dernier pas encore  rôdé à l'époque où il a enregistré <a href="http://www.youtube.com/watch?v=kjrV0sMzodg">La Caravane du Caire</a> -, mais plutôt de faire remarquer que l'ère classique attendait, autant que l'ère baroque, que de nouvelles normes s'installent, plus respectueuses de l'historiographie musicale. Celles-ci ont tardé à servir la musique de Grétry et on trouve encore, en 2002, des enregistrements poussifs, tel celui de la <a href="http://www.youtube.com/watch?v=pGBWiMecG4I">Jeunesse de Pierre le Grand</a>, une oeuvre mineure il est vrai, sous la direction d'Olivier Opdebeeck.</p>
+                <p>Andromaque est sans doute le chef-d'oeuvre de Grétry mais on espère d'autres découvertes de valeur dans un catalogue considérable et encore largement inexploré : une quinzaine d'opéras et trois fois plus d'opéras comiques. Le lecteur intéressé par davantage de détails - parfois anecdotiques -  est invité à consulter la biographie que lui a consacrée <a href="http://perso.infonie.be/liege06/12douze04.htm">Jean-Baptiste Rongé</a> (Biographie nationale
+                publiée par l'Académie royale des sciences, des lettres et des Beaux-arts de Belgique, Bruxelles, 1897). Vous y apprendrez quantité de détails sur la trajectoire du compositeur, que je résume à l'attention des lecteurs pressés.</p>
+                <p>Jeune musicien aux dons reconnus, Grétry reçut une bourse de la <a href="http://www.darchis.org/FR/BOURSE/index.php">Fondation Lambert Darchis</a> (Créée en 1699, elle est toujours active et c'est l'occasion d'expliquer à une majorité de Liégeois pourquoi il existe une rue Darchis, à Liège). Son but primitif était de suivre les pas de cet autre excellent musicien liégeois, Jean-Noël Hamal (1709-1778), nommé maître de musique de la cathédrale Saint-Lambert après son retour à Liège.</p>
+                <p>De cette période romaine, nous avons conservé quelques pièces instrumentales : un <a href="http://www.youtube.com/watch?v=yI1ozC500kM">Concerto pour Flûte</a> assez connu, une <a href="http://www.youtube.com/watch?v=aCmge8aztAg">Symphonie en ré</a>, de facture plutôt banale, et  <a href="http://www.youtube.com/watch?v=dFWMwwUXv4g">6 Quatuors à cordes</a> (opus 3), contemporains des premiers quatuors de Joseph Haydn (1732-1809).  Le stage de formation imposait de privilégier la création d'oeuvres religieuses et le Confitebor <sub><sub><sub><audio controls preload="none">
+                  <source src="../son.mp3/gretry/confitebor.mp3" type="audio/mpeg"/>
+                  <source src="../son.mp3/gretry/confitebor.ogg" type="audio/ogg"/>
+                  Votre navigateur n'est pas compatible
+                </audio></sub></sub></sub> est, dans ce domaine, son oeuvre la plus connue. Cependant, la musique d'église ne convenait guère au tempérament de Grétry qui se sentait attiré par le théâtre. Au terme de son séjour romain, il repartit vers le Nord, faisant halte à Genève où sa rencontre avec Voltaire fut déterminante. Celui-ci l'engagea à tenter sa chance à Paris, à l'Opéra-Comique (Le trait d'union rappelle utilement que l'intrigue, quoique légère, n'a pas vocation d'être rigolote mais qu'elle progressse par apartés parlés, entre les airs chantés), voire à la plus sévère Académie Royale de Musique, l'équivalent lyrique de la Comédie Française.</p>
+                <p>Les débuts parisiens  furent difficiles pour ce jeune homme qui débarquait en terre inconnue. Après un essai manqué &quot;Les mariages samnites&quot;, il connut enfin le succès avec Le Huron (1768), une oeuvre qui attend toujours son premier enregistrement mais dont voici l'<a href="http://www.youtube.com/watch?v=WitJAjxuV84">Ouverture</a>. Grétry écrivit une quinzaine d'opéras et plus de quarante opéras-comiques, jusqu'en 1803. Marie-Antoinette, qui raffolait de ce genre, y confina Grétry, réservant l'opéra tragique à Gluck. Andromaque, déjà évoqué, fut la seule exception notoire.</p>
+                <p>Grétry se fit plus discret pendant la Révolution, une période  qu'il traversa finalement sans trop d'encombres. Après avoir été directeur de la musique de la reine, il devint le protégé de Napoléon, qui le décora chevalier de la Légion d'honneur en 1802. Un air tiré de la Caravane du Caire  deviendra, après adaptation, un des chants militaires les plus populaires au sein de la Grande Armée : <a href="http://www.youtube.com/watch?v=PlvgcQ2Y8M0&feature=related">La Victoire est à nous</a>.</p>
+                <p>Grétry fut sans doute invité au sacre de l'Empereur.  En tous cas, le peintre Jacques-Louis David l'a représenté, comme beaucoup d'autres y compris lui-même, dans sa célèbre <a href="http://www.louvre.fr/llv/dossiers/detail_oal.jsp?CONTENT%3C%3Ecnt_id=10134198673229910&CURRENT_LLV_OAL%3C%3Ecnt_id=10134198673229910">fresque</a>, exposée au Louvre.  Si vous explorez cette toile, à la loupe - par exemple virtuellement sur la toile, à l'adresse indiquée - ne manquez pas de chercher le musicien (Réponse infra pour les myopes, les paresseux, les pressés ou les pas physionomistes).
 
-<p>Mal jouée, cette musique est insipide, un signe qui ne trompe pas ni ne pardonne. Elle ne  retrouve son éclat et son sens que si on se donne la peine de la dépoussiérer en la faisant jouer par de petits ensembles nerveux  et en confiant les parties chantées à des voix jeunes et alertes, ne cherchant pas à forcer la note. C'est cette révolution qui est en marche par la grâce de quelques "classiqueux" qui y consacrent enfin une part de leur énergie :</p>
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/david.jpg" alt="Fresque de Jacques-Louis David"/>
+                      <figcaption>Fresque de Jacques-Louis David</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-<li>Gustav Leonhardt fit oeuvre pionnière en enregistrant dans de bonnes conditions Le Jugement de Midas, avec la Petite Bande.</li>
+                <p>Destin étonnant que celui de cet artiste issu d'un milieu modeste et qui fréquenta les grands de l'époque : Voltaire, la reine Marie-Antoinette et Napoléon 1<sup>er</sup>, personnellement, et Jean-Jacques Rousseau, par écrits interposés, le musicien ayant acquis la propriété de Montmorency du philosophe, en 1798.  Doué d'un pouvoir d'invention mélodique inépuisable, Grétry s'est attaché à cerner le caractère de ses personnages avec justesse et délicatesse. Il n'a rien revendiqué d'autre sachant qu'il ne pourrait jamais rivaliser avec les plus grands spécialistes de l'harmonie (Rameau) ou de la tragédie (Gluck). Il se contenta d'exprimer avec talent les dons dont il était pourvu et de recevoir les honneurs qui en découlèrent dont l'hommage posthume rendu par 30000 personnes suivant son cortège funéraire jusqu'au Père Lachaise.</p>
+                <p>Destin tragique aussi pour un père qui perdit coup sur coup ses trois jeunes filles dont l'une, se nommant ... Lucile, avait eu le temps d'écrire deux oeuvres lyriques bien oubliées, il est vrai. Il ne se remit jamais de ce désastre et il cessa de composer, vers 1803, ne se consacrant plus qu'à des écrits, non dénués d'intérêt.</p>
 
-<li>Jérémie Rhorer a dirigé le Cercle de l'Harmonie, à Versailles, dans L'<a href="http://www.youtube.com/watch?v=s_aWlLV2mEU&feature=related">Amant jaloux</a>, une oeuvre qui annonce par maints détails signifiants les Noces de Figaro de Mozart.</li>
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/gretry/gretrydavid1.jpg" alt="TODO"/>
+                      <figcaption>TODO</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-<li>Guy van Waas et son ensemble, Les Agrémens, ont rendu son lustre à la musique de l'acte de ballet, <a href="http://www.youtube.com/watch?v=uf6Nu5TJwAk&feature=related">Céphale et Procris</a>.</li>
-
-
-<li>Jérôme Correas et son ensemble Les Paladins se sont penchés avec le même bonheur sur <a href="http://www.youtube.com/watch?v=dQt7Z9qsKVc&feature=related">La Fausse Magie</a>, une des oeuvres préférées de leur auteur.</li>
-
-<li>J'ai gardé pour la fin l'enregistrement le plus considérable à ce jour.  Hervé Niquet et son Concert Spirituel ont enregistré l'oeuvre ambitieuse de Grétry, <a href="http://www.youtube.com/watch?v=Hi8OIH357uE&feature=related">Andromaque</a>, sur un livret de Louis-Guillaume Pitra, d'après Racine. Il s'agit d'une authentique tragédie lyrique, la seule incursion de Grétry à l'Académie Royale de Musique, destinée à concurrencer les oeuvres homologues, singulièrement <a href="https://www.youtube.com/watch?v=i0ugBcl1ivA">Alceste</a>  de Christoph-Willibald von Gluck (1714-1787), l'autre protégé de Marie-Antoinette. Datée de 1780, Andromaque démontre que 117 ans après Cadmus et Hermione - l'acte fondateur du genre par Lully -, la tragédie lyrique avait conservé de beaux restes. Je ne peux décidément passer sous silence le superbe choeur, "Modérez ce Transport jaloux" <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/gretry/andromaque.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/gretry/andromaque.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, qui ouvre le second acte.</li>
-
-<div><img src="../images/gretry/andromaque.jpg" alt="" /></div>
-
-<p>Andromaque est sans doute le chef-d'oeuvre de Grétry mais on espère d'autres découvertes de valeur dans un catalogue considérable et encore largement inexploré : une quinzaine d'opéras et trois fois plus d'opéras comiques. Le lecteur intéressé par davantage de détails - parfois anecdotiques -  est invité à consulter la biographie que lui a consacrée <a href="http://perso.infonie.be/liege06/12douze04.htm">Jean-Baptiste Rongé</a> (Biographie nationale
-publiée par l'Académie royale des sciences, des lettres et des Beaux-arts de Belgique, Bruxelles, 1897). Vous y apprendrez quantité de détails sur la trajectoire du compositeur, que je résume à l'attention des lecteurs pressés.</p>
-
-
-<p>Jeune musicien aux dons reconnus, Grétry reçut une bourse de la <a href="http://www.darchis.org/FR/BOURSE/index.php">Fondation Lambert Darchis</a> (Créée en 1699, elle est toujours active et c'est l'occasion d'expliquer à une majorité de Liégeois pourquoi il existe une rue Darchis, à Liège). Son but primitif était de suivre les pas de cet autre excellent musicien liégeois, Jean-Noël Hamal (1709-1778), nommé maître de musique de la cathédrale Saint-Lambert après son retour à Liège.</p>
-
-<p>De cette période romaine, nous avons conservé quelques pièces instrumentales : un <a href="http://www.youtube.com/watch?v=yI1ozC500kM">Concerto pour Flûte</a> assez connu, une <a href="http://www.youtube.com/watch?v=aCmge8aztAg">Symphonie en ré</a>, de facture plutôt banale, et  <a href="http://www.youtube.com/watch?v=dFWMwwUXv4g">6 Quatuors à cordes</a> (opus 3), contemporains des premiers quatuors de Joseph Haydn (1732-1809).  Le stage de formation imposait de privilégier la création d'oeuvres religieuses et le Confitebor <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/gretry/confitebor.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/gretry/confitebor.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> 
-est, dans ce domaine, son oeuvre la plus connue. Cependant, la musique d'église ne convenait guère au tempérament de Grétry qui se sentait attiré par le théâtre. Au terme de son séjour romain, il repartit vers le Nord, faisant halte à Genève où sa rencontre avec Voltaire fut déterminante. Celui-ci l'engagea à tenter sa chance à Paris, à l'Opéra-Comique (Le trait d'union rappelle utilement que l'intrigue, quoique légère, n'a pas vocation d'être rigolote mais qu'elle progressse par apartés parlés, entre les airs chantés), voire à la plus sévère Académie Royale de Musique, l'équivalent lyrique de la Comédie Française.</p>
-
-<p>Les débuts parisiens  furent difficiles pour ce jeune homme qui débarquait en terre inconnue. Après un essai manqué &quot;Les mariages samnites&quot;, il connut enfin le succès avec Le Huron (1768), une oeuvre qui attend toujours son premier enregistrement mais dont voici l'<a href="http://www.youtube.com/watch?v=WitJAjxuV84">Ouverture</a>. Grétry écrivit une quinzaine d'opéras et plus de quarante opéras-comiques, jusqu'en 1803. Marie-Antoinette, qui raffolait de ce genre, y confina Grétry, réservant l'opéra tragique à Gluck. Andromaque, déjà évoqué, fut la seule exception notoire.</p>
-
-<p>Grétry se fit plus discret pendant la Révolution, une période  qu'il traversa finalement sans trop d'encombres. Après avoir été directeur de la musique de la reine, il devint le protégé de Napoléon, qui le décora chevalier de la Légion d'honneur en 1802. Un air tiré de la Caravane du Caire  deviendra, après adaptation, un des chants militaires les plus populaires au sein de la Grande Armée : <a href="http://www.youtube.com/watch?v=PlvgcQ2Y8M0&feature=related">La Victoire est à nous</a>.</p>
-
-<p>Grétry fut sans doute invité au sacre de l'Empereur.  En tous cas, le peintre Jacques-Louis David l'a représenté, comme beaucoup d'autres y compris lui-même, dans sa célèbre <a href="http://www.louvre.fr/llv/dossiers/detail_oal.jsp?CONTENT%3C%3Ecnt_id=10134198673229910&CURRENT_LLV_OAL%3C%3Ecnt_id=10134198673229910">fresque</a>, exposée au Louvre.  Si vous explorez cette toile, à la loupe - par exemple virtuellement sur la toile, à l'adresse indiquée - ne manquez pas de chercher le musicien (Réponse infra pour les myopes, les paresseux, les pressés ou les pas physionomistes).
-<div><img src="../images/david.jpg" alt="" /></div>
-
-
-<p></p>
-<p>Destin étonnant que celui de cet artiste issu d'un milieu modeste et qui fréquenta les grands de l'époque : Voltaire, la reine Marie-Antoinette et Napoléon 1<sup>er</sup>, personnellement, et Jean-Jacques Rousseau, par écrits interposés, le musicien ayant acquis la propriété de Montmorency du philosophe, en 1798.  Doué d'un pouvoir d'invention mélodique inépuisable, Grétry s'est attaché à cerner le caractère de ses personnages avec justesse et délicatesse. Il n'a rien revendiqué d'autre sachant qu'il ne pourrait jamais rivaliser avec les plus grands spécialistes de l'harmonie (Rameau) ou de la tragédie (Gluck). Il se contenta d'exprimer avec talent les dons dont il était pourvu et de recevoir les honneurs qui en découlèrent dont l'hommage posthume rendu par 30000 personnes suivant son cortège funéraire jusqu'au Père Lachaise.</p>
-
-<p>Destin tragique aussi pour un père qui perdit coup sur coup ses trois jeunes filles dont l'une, se nommant ... Lucile, avait eu le temps d'écrire deux oeuvres lyriques bien oubliées, il est vrai. Il ne se remit jamais de ce désastre et il cessa de composer, vers 1803, ne se consacrant plus qu'à des écrits, non dénués d'intérêt.</p>
-
-
-<div><img src="../images/gretry/gretrydavid1.jpg" alt="" /></div>
-
-<p><i>Réponse à la question posée supra : notre homme se trouve en bas et à droite, dans la galerie qui surplombe, Letizia Ramolino, la mère de Napoléon. Bien que représentée à une place d'honneur, celle-ci fut pourtant absente lors de la cérémonie pour cause de dissensions internes : cela existe déjà dans les meilleures familles, alors pensez si elle est Corse !</i></p>
-  
-              </div>
-
+                <p><i>Réponse à la question posée supra : notre homme se trouve en bas et à droite, dans la galerie qui surplombe, Letizia Ramolino, la mère de Napoléon. Bien que représentée à une place d'honneur, celle-ci fut pourtant absente lors de la cérémonie pour cause de dissensions internes : cela existe déjà dans les meilleures familles, alors pensez si elle est Corse !</i></p>
+            </div>
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
@@ -136,10 +143,7 @@ est, dans ce domaine, son oeuvre la plus connue. Cependant, la musique d'église
 
         </div>
     
-    
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

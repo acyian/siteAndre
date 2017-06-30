@@ -102,6 +102,10 @@
 			width:18%;
 		}
 
+		.misEnGras{
+			font-weight: bold;
+		}
+
 	
 	/*======= FIL D ARIANE =======*/
 		.accessibility-hidden {
@@ -276,6 +280,24 @@
 		    color: #8d8d8d;		
 		}
 
+		#contenuPrincipal ol.listOLWithP > li:before {	
+		    float: left;
+		}
+
+		#contenuPrincipal ol.listOLWithP p:first-of-type:first-letter {
+		    float: none;
+		    margin: 0;
+		    font-size: inherit;
+		    line-height: 0.8em;
+		    font-weight: lighter;
+		    text-align: center;
+		    color: inherit;
+		}
+
+		#contenuPrincipal ol.listOLWithP p:first-of-type {
+		    margin-top: 0px;
+		}
+
 
 	/*======= CITATION =======*/
 		blockquote{
@@ -323,7 +345,6 @@
 		}
 		
 
-	
 	/*======= DATE (revision) ET NOTES =======*/
 		i{
 			font-size: 0.8em;

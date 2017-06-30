@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs contemporains | Olivier Greif</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -17,7 +17,8 @@
            url: "../template/header.html",
            dataType: "html",
            success: function(data) {
-             $("#header").html(data);
+              $("#header").html(data);
+              $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,36 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreOeuvresPiano" href="#oeuvresPiano" class="linavMenu active">
+                    <span>Oeuvres pour piano</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueChambre" href="#musiqueChambre" class="linavMenu">
+                    <span>Musique de chambre</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOeuvresVocales" href="#oeuvresVocales" class="linavMenu">
+                    <span>Oeuvres vocales</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOeuvresSymphoniques" href="#oeuvresSymphoniques" class="linavMenu">
+                    <span>Oeuvres symphoniques</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs contemporains</h2>
+                <h3>Olivier Greif (1950 - 2000), compositeur français</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -47,195 +73,202 @@
                         <li class="breadcrumbItem">
                           <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Olivier Greif</li>
                     </ul>
                 </nav>  
-     <h2>Galerie de portraits :<div>Olivier Greif (1950 - 2000), compositeur français.</div></h2>
-  
-   <div><img src="../images/greif/greif.jpg" alt="" /></div>
-  
-  
-  <p>Il était grand temps qu'un musicien français entre dans cette galerie contemporaine et je tenais à ce que ce soit Olivier Greif qui ait cet honneur, en premier.  Il est inconcevable qu'à notre époque où la communication est omniprésente, un génie artistique de cette envergure ait pu traverser le firmament musical sans attirer l'attention générale, sauf parmi un cercle d'initiés qui oeuvrent sans répit pour que cette aberration cesse.</p> 
-  
-  <p>Ceux-ci, réunis au sein de l'<a href="http://www.oliviergreif.com/association/">Association Olivier Greif</a>, collectent les fonds nécessaires à l'édition des oeuvres largement manuscrites de Greif et à leur enregistrement, au fur et à mesure des possibilités.  Certes la tâche est immense mais elle s'impose avec force, vous pouvez déjà en juger rien qu'en parcourant la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a> d'un film commémorant le dixième anniversaire de la disparition du compositeur.</p>
-  
-      
-  
- <p><i>Note. Ce n'est pas un hasard si j'ai programmé, dans la foulée, les portraits de deux musiciens aux destins tragiquement apparentés : le néerlandais <a href="../chroniques/keuris.html">Tristan Keuris</a> (1946-1996), évoqué par ailleurs, et Olivier Greif
- (1950-2000). L'un et l'autre ont fait preuve d'indépendance stylistique à une époque où cela s'apparentait à un acte de résistance et tous les deux nous ont quitté beaucoup trop tôt, à 50 ans seulement. Découvrir leurs musiques fait partie des joies de tout mélomane aventureux, un plaisir pas si fréquent en musique contemporaine.</i></p>
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#oeuvresPiano">Oeuvres pour piano</a></li>
+                        <li><a href="#musiqueChambre">Musique de chambre</a></li>
+                        <li><a href="#oeuvresVocales">Oeuvres vocales</a></li>
+                        <li><a href="#oeuvresSymphoniques">Oeuvres symphoniques</a></li>
+                    </ul>
+                </div>
+
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/greif/greif.jpg" alt="Olivier Greif"/>
+                              <figcaption>Olivier Greif</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+                  <p>Il était grand temps qu'un musicien français entre dans cette galerie contemporaine et je tenais à ce que ce soit Olivier Greif qui ait cet honneur, en premier.  Il est inconcevable qu'à notre époque où la communication est omniprésente, un génie artistique de cette envergure ait pu traverser le firmament musical sans attirer l'attention générale, sauf parmi un cercle d'initiés qui oeuvrent sans répit pour que cette aberration cesse.</p> 
+                  <p>Ceux-ci, réunis au sein de l'<a href="http://www.oliviergreif.com/association/">Association Olivier Greif</a>, collectent les fonds nécessaires à l'édition des oeuvres largement manuscrites de Greif et à leur enregistrement, au fur et à mesure des possibilités.  Certes la tâche est immense mais elle s'impose avec force, vous pouvez déjà en juger rien qu'en parcourant la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a> d'un film commémorant le dixième anniversaire de la disparition du compositeur.</p>
+
+                  <p><i>Note. Ce n'est pas un hasard si j'ai programmé, dans la foulée, les portraits de deux musiciens aux destins tragiquement apparentés : le néerlandais <a href="../chroniques/keuris.html">Tristan Keuris</a> (1946-1996), évoqué par ailleurs, et Olivier Greif
+                  (1950-2000). L'un et l'autre ont fait preuve d'indépendance stylistique à une époque où cela s'apparentait à un acte de résistance et tous les deux nous ont quitté beaucoup trop tôt, à 50 ans seulement. Découvrir leurs musiques fait partie des joies de tout mélomane aventureux, un plaisir pas si fréquent en musique contemporaine.</i></p>
+
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/greif/daligreif.jpg" alt="Greif &amp; Dali au piano"/>
+                        <figcaption>
+                            <h5>Greif &amp; Dali</h5>
+                            <h6>Attention: Dali est au piano !</h6>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <p>Greif est né en France, de parents juifs polonais.  Il y a fait ses études, de composition mais aussi de piano (sur les mêmes bancs que les soeurs Labèque, Brigitte Engerer, Georges Pludermacher et Pascal Rogé), et il y est décédé, entouré de la dévotion d'admirateurs inconditionnels.  En 1969, il entreprit un voyage d'études aux Etats-Unis, afin de travailler à la Juilliard School of Music, sous la direction de Luciano Berio (1925-2003).  Il a profité de cette escapade pour découvrir et rencontrer Salvador Dali, Andy Warhol, Leonard Bernstein et Terry Riley, autant d'horizons nouveaux. Bien que ce séjour n'ait duré que deux ans, il a suffi pour lui inoculer le vaccin qui allait le préserver, pour toujours, du mal musical franco-sériel d'après guerre.  Ses gènes polonais avaient, sans nul doute, préparé le terrain.</p>
+                  <p>Greif développa parallèlement une carrière de pianiste virtuose et de compositeur, écrivant beaucoup pour son instrument : en 1975, il en était déjà à sa 15<sup>ème</sup>Sonate, dite "De Guerre", une oeuvre qu'il a lui-même créée, en récital, au Carnegie Hall.</p>
+                  <p>En 1976, peut-être en réponse au cancer que sa mère développait, Greif traversa une phase mystique, alimentée par les enseignements du maître indien <a href="http://www.srichinmoy.org/francais">Sri Chinmoy</a> (1931-2007), établi à New-York. Ce repli sur soi eut bientôt pour conséquence que Olivier-Haridas (ex-Greif) cessa de composer (entre 1983 et 1991) ou, pour être plus précis, il n'écrivit plus que des musiques fonctionnelles sur des textes de Sri Chinmoy, à l'usage de ce qu'il faut bien appeler une secte. Greif se fit l'apôtre de son gourou, en France, donnant des conférences sur la méditation transcendantale, ouvrant une boutique de littérature et gadgets ésotériques, à Paris, et ne maintenant, pour toute activité musicale digne de ce nom, que ses tournées de concert, seul ou en compagnie de quelques amis, le violoncelliste, Christoph Henkel, ou le pianiste et compositeur, Jean-François Zygel.</p>
+
+                  <p><i>Note : Gourou à tout faire, Chinmoy en a intrigué - et sans doute "séduit" - plus d'un par ses compétences multiples de poète, peintre et musicien.  Dans ce dernier domaine, il jouait effectivement d'un nombre invraisemblable d'instruments exotiques comme en attestent les <a href="http://www.youtube.com/watch?v=oBNv_U_fvXc&feature=related">videos</a> disponibles sur Youtube. La musique qu'il "écrivait" à l'usage de ses adeptes pose cependant question et on se prend à espérer que son message spirituel était plus consistant qu'elle. Je n'ai pas eu l'envie ni le courage de vérifier.  La question reste posée de savoir ce que Greif faisait dans cette galère mais évidemment, on ne raisonne pas un artiste.</i></p>
+
+                  <p>A partir de 1993, Greif se dégagea progressivement de cette emprise stérilisante pour reprendre une véritable activité compositionnelle.  Il ne lui restait plus que 7 années à vivre et pourtant, malgré de sérieux problèmes de santé, poussé dans le dos - comme Schubert en son temps - par quelque force mystérieuse, il allait offrir au monde musical un époustouflant recueil de chefs-d'oeuvre qu'il est devenu urgent de découvrir.</p>
+                  <p>Nous sommes encore bien loin du compte : beaucoup d'originaux, pas toujours très lisibles, n'ont pas encore été édités sous une forme exploitable et l'Association Olivier Greif, qui s'y colle autant qu'elle peut, manque de moyens. Le monde musical français pourrait et devrait prendre le relais mais comme si souvent par le passé, il rechigne à honorer d'emblée ses meilleurs artistes.  Au siècle dernier, seuls Debussy et Messiaen ont été complètement épargnés.  S'il est vrai que Radio France a épisodiquement consacré des cycles d'émisssions à Olivier Greif, qu'attend-on pour publier ces archives inestimables ?  Dois-je rappeler qu'au Pays-Bas, l'oeuvre intégrale de Peter Schat ou celle de Tristan Keuris (ah tiens, on y revient) ont été publiées en coffret alors qu'en France, à part Marcel Landowski, on ne voit pas venir grand chose ?</p>
+                  <p>Tempérons ce jugement excessif (mais nécessaire si l'on veut que les choses bougent) :</p>
+
+                  <ul class="miniListCorps">
+                    <li>L'Ina (Institut national de l'audiovisuel) a fait un effort, en 2010, pour honorer la mémoire de Greif, disparu depuis 10 ans.  Trois CD viennent de paraître, on y reviendra.  D'autres archives dorment encore pour raisons de droits d'auteurs.  Voilà qui me fait toujours bien rire (jaune) : l'auteur est mort et il s'en fiche de ses droits, sauf celui d'être entendu et reconnu à sa juste valeur, ce qui suppose la diffusion de son oeuvre.  Si des intérêts mercantiles s'y opposent, j'en conclus que les requins ne seront jamais mélomanes.</li> 
+                    <li>La cinéaste, Anne Bramard-Blagny, a consacré une <a href="http://www.rdm-video.fr/dvd_blu-ray_anne_bramard_blagny_realisateur.html">série documentaire</a> à Greif, puisant dans des enregistrements réalisés lors de concerts ou festivals où se produisaient des interprètes soucieux de s'investir, Pascal Amoyel, Jean-Claude Casadesus, Marc Minkowski, Emmanuelle Bertrand, Henri Demarquette, Henri Barda, Jennifer Smith, etc.  Elle a récidivé, en 2010, avec <a href="http://lesfilmssacem.blogspot.com/2010/07/film-du-29-juillet-nuits-demelees.html">Nuits démêlées</a>, un hommage diffusé en son temps sur Mezzo et Arte dont revoici la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a>. </li>
+                  </ul>
+
+                  <p>L'oeuvre savante de Greif est considérable - plus de 100 numéros d'opus - ce qui surprend si l'on se rappelle que les deux périodes créatrices ne font ensemble que 15 ans à peine.  On ne compte pas ici la production "ésotérique", 200 morceaux largement dépourvus de valeur, qu'il a inexplicablement incorporés à son catalogue.   Ecoutons cela de plus près. </p>
+
+                  <div id="oeuvresPiano">
+                    <h4>Oeuvres pour piano</h4>
+
+                    <p>Olivier Greif a commencé la pratique du piano très tôt - à 3 ans ! - et il est resté fidèle toute sa vie à cet instrument.  Il a joué sur les plus grandes scènes du monde, ses propres compositions mais pas seulement.  Il avouait sans honte (il n'y avait d'ailleurs pas de quoi !) qu'il aimait la musique de Francis Poulenc.  Dès l'âge de 11 ans, il écrivit son opus 1 (<a href="http://www.youtube.com/watch?v=-odENKBzbks">5 Chansons enfantines</a>) puis, 3 ans plus tard, ses deux premières Sonates pour piano, préludes à un grand cycle qui allait baliser toute sa vie.  Ses 22 Sonates forment, en effet, un des monuments les plus remarquables de la littérature pianistique du 20<sup>ème</sup>siècle.  En attendant une édition complète, penchons-nous sur quelques joyaux disponibles à l'écoute : </p>
+
+                    <ul class="miniListCorps">
+                      <li><a href="http://www.oliviergreif.com/catalogue/sonate_n_2_pour_piano_suite_pour_piano/">Sonate n°2</a> "Suite pour Piano", opus 6.</li>
+                      <li><a href="http://www.youtube.com/watch?v=WrLdEAkrz-w&feature=related">Sonate n°5</a> "Trois Pièces", opus 26.</li>
+                      <li>Sonate n°9 "Paradisiac Memories", opus 33.</li>
+                      <li>Sonate n°13, opus 47, une oeuvre colossale dont la durée approcherait l'heure si quelqu'un voulait bien se donner la peine de l'étudier.</li>
+                      <li><a href="http://www.oliviergreif.com/catalogue/sonate_n_14_pour_piano_dans_le_gout_ancien/">Sonate n°14</a> "Dans le Goût ancien", opus 48, créée par Henri Barda.</li>
+                      <li>Sonate n°15 "De Guerre", opus 54 <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/sonatedeguerre1.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/sonatedeguerre1.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>.
+                      </li>
+                      <li>Sonate n°16 "Silver String", opus 65, dédiée à Glenn Gould qui refusa poliment de la jouer.</li>
+                      <li>Sonate n°19 "Trois Pièces sérieuses", opus 289.  Notez le saut dans les numéros d'opus, consécutif à l'interruption mentionnée dans l'écriture des pièces savantes.</li>
+                      <li><a href="http://www.music-story.com/olivier-greif/le-reve-du-monde">Sonate n°20</a> "Le Rêve du Monde", opus 290.</li>
+                      <li>Sonate n°21 "Codex Domini", opus 303 <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/codexdomini.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/codexdomini.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                        </audio></sub></sub></sub>.
+                      </li>
+                      <li><a href="http://www.youtube.com/watch?v=YfrE5BAf5CA&feature=related">Sonate n°22</a> "Les Plaisirs de Chérence", opus 319 (patienter 45 secondes).</li>
+                    </ul>
+
+                    <p>Greif a encore écrit quantité de pièces isolées dont un vaste Piano Book, opus 78, véritable collection de pièces éparses, des hommages à <a href="http://www.youtube.com/watch?v=Oszt7VFlJE0">Raymond Roussel</a> (écrivain à ne pas confondre avec le compositeur Albert Roussel) ou <a href="http://www.oliviergreif.com/catalogue/tombeau_de_ravel_le/">Maurice Ravel</a>, ou encore <a href="http://www.oliviergreif.com/catalogue/triomphe_de_la_tonalit_le/">Le Triomphe de la Tonalité</a>. Sa dernière oeuvre importante est <a href="http://www.oliviergreif.com/catalogue/portraits_et_apparitions/">Portraits et Apparitions</a>, opus 359.  Beaucoup de ces pièces ont été dédiées à d'anciens camarades de conservatoire, dont les soeurs Labèque (Morbid Fixations, opus 32) sans qu'on sache avec certitude si les dédicataires en ont fait meilleur usage que Gould.</p>
+                  </div>
+                  
+                  <div id="musiqueChambre">
+                    <h4>Musique de chambre</h4>
+
+                    <p>La musique de chambre est très présente dans le catalogue des oeuvres de Greif :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Trois sonates pour piano & violon, n°1 (opus 15), <a href="http://www.oliviergreif.com/catalogue/sonate_n2_pour_violon_et_piano/">n°2 (opus 17)</a> et <a href="http://www.youtube.com/watch?v=mbTPf-AaWpk">n°3 (opus 70)</a> "The Meeting of the Waters". Mentionnons encore : Variations on Peter Philips <a href="http://www.oliviergreif.com/catalogue/variations_on_peter_philips_galiarda_dolorosa/">Galiarda Dolorosa</a>, opus 86.</li>
+                      <li><a href="http://www.youtube.com/watch?v=V9QYBhCLPQ4">Veni Creator</a>, opus 103, et <a href="http://www.youtube.com/watch?v=qqxDFy1mGHo&feature=related">Sonate de Requiem</a>, opus 283, pour violoncelle &amp; piano.</li>
+                      <li><a href="http://www.oliviergreif.com/catalogue/quintette_pour_piano_et_cordes_a_tale_of_the_world/">Quintette à clavier</a>, opus 307, "A Tale of the World".</li>
+                      <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Olivier-Greif-Streichquartett-Nr-2-op-312/hnum/9797997">The Battle of Agincourt</a> (En France, on dit Azincourt), opus 308, pour deux violoncelles, ainsi nommée par allusion au thème, datant de 1415, qui s'expose au milieu du premier mouvement. L'oeuvre résulte de la révision d'une Sonate pour violoncelle solo, avérée injouable.</li>
+                      <li><a href="http://www.youtube.com/watch?v=aaXFYuw29as">Trio</a> à clavier, opus 353.</li>
+                      <li>Sextuor pour piano, clarinette et cordes, opus 356, "Ich Ruf zu Dir" (Début de l'accompagnement de la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a> du film déjà évoqué).</li>
+                      <li>Quatre Quatuors à cordes : le premier, opus 10, a été créé dès sa parution, en 1966, par le Quatuor de l'ORTF.  C'est un exemple, parmi tant d'autres, d'archive à exhumer.  Le <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Olivier-Greif-Streichquartett-Nr-2-op-312/hnum/9797997">Deuxième Quatuor</a>, opus 314, très postérieur (1996), fait preuve d'originalité en introduisant des parties chantées (sur des sonnets de Shakespeare) dans les mouvements impairs.  Les deux mouvements pairs sont des intermezzi dont voici le <a href="http://www.youtube.com/watch?v=O3Tle43gVVk">deuxième</a>, très américain. Le <a href="http://www.oliviergreif.com/catalogue/quatuor_n_3_todesfuge/">Quatuor n°3</a>, opus 351, "Todesfuge" est le plus complexe du lot tandis que le Quatrième, opus 360, "Ulysses" <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/ulysses.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/ulysses.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, plus accessible, est sa dernière oeuvre achevée. 
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div id="oeuvresVocales">
+                    <h4>Oeuvres vocales</h4>
+
+                    <ul class="miniListCorps">
+                      <li>Greif a beaucoup écrit pour la voix : ses <a href="http://www.oliviergreif.com/catalogue/chants_de_lme_les/">Chants de l'Ame</a> forment un cycle de 9 mélodies d'une souveraine beauté. Ecoutez encore un extrait de <a href="http://www.oliviergreif.com/catalogue/lettres_de_westerbork/">Lettres de Westerbork</a>, la <a href="http://www.oliviergreif.com/catalogue/symphonie/">Symphonie</a>, opus 327, pour baryton &amp; orchestre sur des poèmes de Paul Célan ou encore sa dernière oeuvre vocale, <a href="http://www.oliviergreif.com/catalogue/loffice_des_naufrags/">L'Office des Naufragés</a>, opus, 354.</li>
+                      <li>Eloïse ou "Le Dit du Monde", opus 61, est un vaste oratorio, pour soli, choeur et orchestre, qu'on n'est pas près d'entendre, en particulier vu sa durée, supérieure à 3 heures !</li>
+                      <li><a href="http://www.oliviergreif.com/catalogue/n_opra_de_chambre_en_10_scnes_commande_de_lopra_de_paris/">Nô</a>, opus 158, opéra de chambre - une commande de l'Opéra de Paris, en collaboration avec l'élitiste IRCAM ! -  fut tellement éreinté par la critique que le compositeur ne corrigea jamais les épreuves en cours d'impression.  On imagine que le style zen de cette oeuvre, dédiée à Chinmoy, ne correspondait pas particulièrement aux attentes de l'IRCAM. </li>
+                      <li>Un an avant sa disparition, Greif terminait "son" Requiem, opus 358, pour double choeur mixte a capella. L'oeuvre mêle habilement la liturgie latine à des chants populaires anglais.  Voici deux extraits de cette oeuvre aussi émouvante que prémonitoire  : Tuba Mirum <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/tubamirum.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/tubamirum.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub> et Sanctus <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/sanctus.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/sanctus.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>.</li>
+                    </ul>
+                  </div>
+
+                  <div id="oeuvresSymphoniques">
+                    <h4>Oeuvres symphoniques</h4>
+
+                    <ul class="miniListCorps">
+                      <li>Greif a peu écrit pour l'orchestre. Outre la Symphonie, déjà évoquée, pour baryton &amp; orchestre, opus 327 et la Symphonie "Hiroshima" pour soli, choeur &amp; orchestre, opus 346, il projetait une oeuvre purement orchestrale qui ne vit pas le jour, le sort en ayant décidé ainsi.</li>
+                      <li>Deux Concertos seulement et curieusement aucun pour piano &amp; orchestre : l'un est quadruple, pour piano, violon, alto &amp; violoncelle, opus 352, <a href="http://www.youtube.com/watch?v=48qKi8PVPn8">La Danse des Morts</a>, et l'autre est pour violoncelle, opus 357, "Durch Adams Fall" (Suite de l'accompagnement de la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a> du film déjà évoqué).</li>
+                    </ul>
+
+                    <p>Les illustrations qui précèdent ont puisé largement dans la demi douzaine d'enregistrements que la maison d'édition <a href="http://www.disques-triton.com/uk/compositeur.asp?id=6">Triton</a> a consacrés à la musique de Greif.   On doit les trois enregistrements de l'Ina à l'initiative de Renaud Machart qui a pu exhumer et publier quelques archives importantes dans la collection <a href="http://www.music-story.com/olivier-greif/le-reve-du-monde">Mémoire Vive</a>. Plusieurs de ces CD sont disponibles sur le site <a href="http://www.jpc.de/jpcng/home/search?fastsearch=greif&rubric=classic&pd_orderby=score">jpc</a>.</p>
+                    <p>Je ne peux conclure sans tenter d'analyser - sans doute maladroitement - l'impression de familiarité immédiate que tout auditeur cultivé et attentif ne peut manquer de ressentir dès les premiers contacts avec l'oeuvre de Greif.  Le compositeur n'a cessé d'écrire en artiste libre, se moquant pas mal des modes et du qu'en-dira-ton. Son écriture fonctionne cependant sur un mode spongieux très caractéristique.  Greif était comme imprégné de toutes les musiques, savantes ou populaires. Il n'a jamais hésité à combiner des matériaux originaux à des emprunts, souvent microscopiques : ainsi une série, un chant populaire, une cellule répétitive, une auto citation, un emprunt au passé se retrouvent déformés, concassés puis recollés dans le seul but de projeter dans l'avenir sa propre synthèse du passé et du présent. Toute son oeuvre résonne de fragments sonores que l'on croit connaître sans pouvoir nécessairement les identifier, comme s'ils flottaient dans notre inconscient.Voici deux courts extraits enchaînés <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/greif/fragments.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/greif/fragments.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> : aux accords, plaqués au piano, dans le premier mouvement de la Sonate de Requiem, fait suite le début du finale du Trio à clavier : on croit voir furtivement passer des fantômes dont, à coup sûr, celui de Schostakovitch, dans le deuxième extrait. Revenez au début de la Sonate de Guerre <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/greif/sonatedeguerre1.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/greif/sonatedeguerre1.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>, ne sonne-t-il pas comme un écho lointain de Rachmaninov ?  D'autres références sont nettement plus explicites :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Amaryllis <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/amaryllis.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/amaryllis.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, le dernier mouvement du 4<sup>ème</sup> Quatuor s'inspire d'une pièce de Caccini <a href="https://www.youtube.com/watch?v=roJSYFu3pYk">Amarilli mia Bella</a>. Quant au 4<sup>ème</sup> mouvement 
+                      <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/ulysses.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/ulysses.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, déjà cité du même quatuor, il s'inspire d'une danse bourbonnaise (imaginaire ?) qui se dérègle inexorablement.</li>
+                      <li>La coda du premier mouvement de la Sonate n°15 <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/sonatedeguerre1fin.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/sonatedeguerre1fin.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, "annoblit" un chant bien connu des caricaturistes de l'armée allemande (Ce n'est pas pour rien que l'oeuvre porte le surnom de Sonate de Guerre).</li>
+                      <li>Revenez au début de la Sonate Codex Domini <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/greif/codexdomini.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/greif/codexdomini.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio>
+                      </sub></sub></sub> et mettez les <a href="http://www.youtube.com/watch?v=RosJptqJuvo&feature=related">paroles correctes</a> sur le motif de trois notes qui reviennent avec une insistance volontairement prosaïque; l'air fit rêver nos (grands-)parents.</li>
+                      <li>Parcourez l'oeuvre de notre musicien et cherchez d'autres exemples, il n'en manque pas.</li>
+                    </ul>
+
+                    <p>Tous les artistes essentiels marquent leur oeuvre d'une griffe personnelle qui la rend instantanément reconnaissable.  Certes cette reconnaissance est plus immédiate en peinture qu'en musique car le facteur temps n'y joue aucun rôle alors que la musique s'installe dans la durée. Lorsqu'on fréquente la musique de Greif on ne peut qu'être frappé par son art de transcender les clichés (au sens photographique et non péjoratif du terme).  Seul un immense artiste réussit habituellement cette prouesse. </p>
+                    <p>Greif, ambitieux, prophétisait : "Un jour viendra - je ne serai plus de ce monde - où ma musique vous submergera de son évidence".  Il a déjà vu juste sur le premier point; à vous d'écouter et de faire en sorte qu'il ait aussi raison sur le second.</p>
+                  </div>
+                </div>
  
-
- 
-    
-  <div><img src="../images/greif/daligreif.jpg" alt="" />
-  <div class="legende">Greif & Dali.  Attention : 
-    <div> Dali est au piano !</div>
-  </div></div>
-    
- <p>Greif est né en France, de parents juifs polonais.  Il y a fait ses études, de composition mais aussi de piano (sur les mêmes bancs que les soeurs Labèque, Brigitte Engerer, Georges Pludermacher et Pascal Rogé), et il y est décédé, entouré de la dévotion d'admirateurs inconditionnels.  En 1969, il entreprit un voyage d'études aux Etats-Unis, afin de travailler à la Juilliard School of Music, sous la direction de Luciano Berio (1925-2003).  Il a profité de cette escapade pour découvrir et rencontrer Salvador Dali, Andy Warhol, Leonard Bernstein et Terry Riley, autant d'horizons nouveaux. Bien que ce séjour n'ait duré que deux ans, il a suffi pour lui inoculer le vaccin qui allait le préserver, pour toujours, du mal musical franco-sériel d'après guerre.  Ses gènes polonais avaient, sans nul doute, préparé le terrain.</p>
- 
- 
- <p>Greif développa parallèlement une carrière de pianiste virtuose et de compositeur, écrivant beaucoup pour son instrument : en 1975, il en était déjà à sa 15<sup>ème</sup>Sonate, dite "De Guerre", une oeuvre qu'il a lui-même créée, en récital, au Carnegie Hall.</p>
- 
- <p>En 1976, peut-être en réponse au cancer que sa mère développait, Greif traversa une phase mystique, alimentée par les enseignements du maître indien <a href="http://www.srichinmoy.org/francais">Sri Chinmoy</a> (1931-2007), établi à New-York. Ce repli sur soi eut bientôt pour conséquence que Olivier-Haridas (ex-Greif) cessa de composer (entre 1983 et 1991) ou, pour être plus précis, il n'écrivit plus que des musiques fonctionnelles sur des textes de Sri Chinmoy, à l'usage de ce qu'il faut bien appeler une secte. Greif se fit l'apôtre de son gourou, en France, donnant des conférences sur la méditation transcendantale, ouvrant une boutique de littérature et gadgets ésotériques, à Paris, et ne maintenant, pour toute activité musicale digne de ce nom, que ses tournées de concert, seul ou en compagnie de quelques amis, le violoncelliste, Christoph Henkel, ou le pianiste et compositeur, Jean-François Zygel.</p>
-
-<p><i>Note : Gourou à tout faire, Chinmoy en a intrigué - et sans doute "séduit" - plus d'un par ses compétences multiples de poète, peintre et musicien.  Dans ce dernier domaine, il jouait effectivement d'un nombre invraisemblable d'instruments exotiques comme en attestent les <a href="http://www.youtube.com/watch?v=oBNv_U_fvXc&feature=related">videos</a> disponibles sur Youtube. La musique qu'il "écrivait" à l'usage de ses adeptes pose cependant question et on se prend à espérer que son message spirituel était plus consistant qu'elle. Je n'ai pas eu l'envie ni le courage de vérifier.  La question reste posée de savoir ce que Greif faisait dans cette galère mais évidemment, on ne raisonne pas un artiste.</i></p>
- 
- <p>A partir de 1993, Greif se dégagea progressivement de cette emprise stérilisante pour reprendre une véritable activité compositionnelle.  Il ne lui restait plus que 7 années à vivre et pourtant, malgré de sérieux problèmes de santé, poussé dans le dos - comme Schubert en son temps - par quelque force mystérieuse, il allait offrir au monde musical un époustouflant recueil de chefs-d'oeuvre qu'il est devenu urgent de découvrir.</p>
- 
- <p>Nous sommes encore bien loin du compte : beaucoup d'originaux, pas toujours très lisibles, n'ont pas encore été édités sous une forme exploitable et l'Association Olivier Greif, qui s'y colle autant qu'elle peut, manque de moyens. Le monde musical français pourrait et devrait prendre le relais mais comme si souvent par le passé, il rechigne à honorer d'emblée ses meilleurs artistes.  Au siècle dernier, seuls Debussy et Messiaen ont été complètement épargnés.  S'il est vrai que Radio France a épisodiquement consacré des cycles d'émisssions à Olivier Greif, qu'attend-on pour publier ces archives inestimables ?  Dois-je rappeler qu'au Pays-Bas, l'oeuvre intégrale de Peter Schat ou celle de Tristan Keuris (ah tiens, on y revient) ont été publiées en coffret alors qu'en France, à part Marcel Landowski, on ne voit pas venir grand chose ?</p>
- 
- <p>Tempérons ce jugement excessif (mais nécessaire si l'on veut que les choses bougent) :</p>
- 
- <li>L'Ina (Institut national de l'audiovisuel) a fait un effort, en 2010, pour honorer la mémoire de Greif, disparu depuis 10 ans.  Trois CD viennent de paraître, on y reviendra.  D'autres archives dorment encore pour raisons de droits d'auteurs.  Voilà qui me fait toujours bien rire (jaune) : l'auteur est mort et il s'en fiche de ses droits, sauf celui d'être entendu et reconnu à sa juste valeur, ce qui suppose la diffusion de son oeuvre.  Si des intérêts mercantiles s'y opposent, j'en conclus que les requins ne seront jamais mélomanes.</li> 
- 
- 
- <li>La cinéaste, Anne Bramard-Blagny, a consacré une <a href="http://www.rdm-video.fr/dvd_blu-ray_anne_bramard_blagny_realisateur.html">série documentaire</a> à Greif, puisant dans des enregistrements réalisés lors de concerts ou festivals où se produisaient des interprètes soucieux de s'investir, Pascal Amoyel, Jean-Claude Casadesus, Marc Minkowski, Emmanuelle Bertrand, Henri Demarquette, Henri Barda, Jennifer Smith, etc.  Elle a récidivé, en 2010, avec <a href="http://lesfilmssacem.blogspot.com/2010/07/film-du-29-juillet-nuits-demelees.html">Nuits démêlées</a>, un hommage diffusé en son temps sur Mezzo et Arte dont revoici la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a>. </li>
-
- 
-<p>L'oeuvre savante de Greif est considérable - plus de 100 numéros d'opus - ce qui surprend si l'on se rappelle que les deux périodes créatrices ne font ensemble que 15 ans à peine.  On ne compte pas ici la production "ésotérique", 200 morceaux largement dépourvus de valeur, qu'il a inexplicablement incorporés à son catalogue.   Ecoutons cela de plus près. </p>
-
-
-  
-<p><i>Oeuvres pour piano.</i></p>
- 
- <p>Olivier Greif a commencé la pratique du piano très tôt - à 3 ans ! - et il est resté fidèle toute sa vie à cet instrument.  Il a joué sur les plus grandes scènes du monde, ses propres compositions mais pas seulement.  Il avouait sans honte (il n'y avait d'ailleurs pas de quoi !) qu'il aimait la musique de Francis Poulenc.  Dès l'âge de 11 ans, il écrivit son opus 1 (<a href="http://www.youtube.com/watch?v=-odENKBzbks">5 Chansons enfantines</a>) puis, 3 ans plus tard, ses deux premières Sonates pour piano, préludes à un grand cycle qui allait baliser toute sa vie.  Ses 22 Sonates forment, en effet, un des monuments les plus remarquables de la littérature pianistique du 20<sup>ème</sup>siècle.  En attendant une édition complète, penchons-nous sur quelques joyaux disponibles à l'écoute : </p>
- 
- <li><a href="http://www.oliviergreif.com/catalogue/sonate_n_2_pour_piano_suite_pour_piano/">Sonate n°2</a> "Suite pour Piano", opus 6.</li>
- 
- <li><a href="http://www.youtube.com/watch?v=WrLdEAkrz-w&feature=related">Sonate n°5</a> "Trois Pièces", opus 26.</li>
-
- <li>Sonate n°9 "Paradisiac Memories", opus 33.</li>
- 
- <li>Sonate n°13, opus 47, une oeuvre colossale dont la durée approcherait l'heure si quelqu'un voulait bien se donner la peine de l'étudier.</li>
- 
- <li><a href="http://www.oliviergreif.com/catalogue/sonate_n_14_pour_piano_dans_le_gout_ancien/">Sonate n°14</a> "Dans le Goût ancien", opus 48, créée par Henri Barda.</li>
-
- <li>Sonate n°15 "De Guerre", opus 54 <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/sonatedeguerre1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/sonatedeguerre1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</li>
-
-<li>Sonate n°16 "Silver String", opus 65, dédiée à Glenn Gould qui refusa poliment de la jouer.</li>
-
-<li>Sonate n°19 "Trois Pièces sérieuses", opus 289.  Notez le saut dans les numéros d'opus, consécutif à l'interruption mentionnée dans l'écriture des pièces savantes.</li>
-
-<li><a href="http://www.music-story.com/olivier-greif/le-reve-du-monde">Sonate n°20</a> "Le Rêve du Monde", opus 290.</li>
-
-<li>Sonate n°21 "Codex Domini", opus 303 <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/codexdomini.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/codexdomini.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</li>
-
- <li><a href="http://www.youtube.com/watch?v=YfrE5BAf5CA&feature=related">Sonate n°22</a> "Les Plaisirs de Chérence", opus 319 (patienter 45 secondes).</li>
-
-<p>Greif a encore écrit quantité de pièces isolées dont un vaste Piano Book, opus 78, véritable collection de pièces éparses, des hommages à <a href="http://www.youtube.com/watch?v=Oszt7VFlJE0">Raymond Roussel</a> (écrivain à ne pas confondre avec le compositeur Albert Roussel) ou <a href="http://www.oliviergreif.com/catalogue/tombeau_de_ravel_le/">Maurice Ravel</a>, ou encore <a href="http://www.oliviergreif.com/catalogue/triomphe_de_la_tonalit_le/">Le Triomphe de la Tonalité</a>. Sa dernière oeuvre importante est <a href="http://www.oliviergreif.com/catalogue/portraits_et_apparitions/">Portraits et Apparitions</a>, opus 359.  Beaucoup de ces pièces ont été dédiées à d'anciens camarades de conservatoire, dont les soeurs Labèque (Morbid Fixations, opus 32) sans qu'on sache avec certitude si les dédicataires en ont fait meilleur usage que Gould.</p>
- 
-<p><i>Musique de chambre.</i></p>
-<p>La musique de chambre est très présente dans le catalogue des oeuvres de Greif :</p>
-
- 
- <li>Trois sonates pour piano & violon, n°1 (opus 15), <a href="http://www.oliviergreif.com/catalogue/sonate_n2_pour_violon_et_piano/">n°2 (opus 17)</a> et <a href="http://www.youtube.com/watch?v=mbTPf-AaWpk">n°3 (opus 70)</a> "The Meeting of the Waters". Mentionnons encore : Variations on Peter Philips <a href="http://www.oliviergreif.com/catalogue/variations_on_peter_philips_galiarda_dolorosa/">Galiarda Dolorosa</a>, opus 86.</li>
- 
- <li><a href="http://www.youtube.com/watch?v=V9QYBhCLPQ4">Veni Creator</a>, opus 103, et <a href="http://www.youtube.com/watch?v=qqxDFy1mGHo&feature=related">Sonate de Requiem</a>, opus 283, pour violoncelle & piano.</li>
-
-<li><a href="http://www.oliviergreif.com/catalogue/quintette_pour_piano_et_cordes_a_tale_of_the_world/">Quintette à clavier</a>, opus 307, "A Tale of the World".</li>
-
-<li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Olivier-Greif-Streichquartett-Nr-2-op-312/hnum/9797997">The Battle of Agincourt</a> (En France, on dit Azincourt), opus 308, pour deux violoncelles, ainsi nommée par allusion au thème, datant de 1415, qui s'expose au milieu du premier mouvement. L'oeuvre résulte de la révision d'une Sonate pour violoncelle solo, avérée injouable.</li>
-
-<li><a href="http://www.youtube.com/watch?v=aaXFYuw29as">Trio</a> à clavier, opus 353.</li>
-
-<li>Sextuor pour piano, clarinette et cordes, opus 356, "Ich Ruf zu Dir" (Début de l'accompagnement de la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a> du film déjà évoqué).</li>
-
-<li>Quatre Quatuors à cordes : le premier, opus 10, a été créé dès sa parution, en 1966, par le Quatuor de l'ORTF.  C'est un exemple, parmi tant d'autres, d'archive à exhumer.  Le <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Olivier-Greif-Streichquartett-Nr-2-op-312/hnum/9797997">Deuxième Quatuor</a>, opus 314, très postérieur (1996), fait preuve d'originalité en introduisant des parties chantées (sur des sonnets de Shakespeare) dans les mouvements impairs.  Les deux mouvements pairs sont des intermezzi dont voici le <a href="http://www.youtube.com/watch?v=O3Tle43gVVk">deuxième</a>, très américain. Le <a href="http://www.oliviergreif.com/catalogue/quatuor_n_3_todesfuge/">Quatuor n°3</a>, opus 351, "Todesfuge" est le plus complexe du lot tandis que le Quatrième, opus 360, "Ulysses" 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/ulysses.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/ulysses.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, plus accessible, est sa dernière oeuvre achevée. </li>
- 
-<p><i>Oeuvres vocales.</i></p>
- 
- <li>Greif a beaucoup écrit pour la voix : ses <a href="http://www.oliviergreif.com/catalogue/chants_de_lme_les/">Chants de l'Ame</a> forment un cycle de 9 mélodies d'une souveraine beauté. Ecoutez encore un extrait de <a href="http://www.oliviergreif.com/catalogue/lettres_de_westerbork/">Lettres de Westerbork</a>, la <a href="http://www.oliviergreif.com/catalogue/symphonie/">Symphonie</a>, opus 327, pour baryton &amp; orchestre sur des poèmes de Paul Célan ou encore sa dernière oeuvre vocale, <a href="http://www.oliviergreif.com/catalogue/loffice_des_naufrags/">L'Office des Naufragés</a>, opus, 354.</li>
-<li>Eloïse ou "Le Dit du Monde", opus 61, est un vaste oratorio, pour soli, choeur et orchestre, qu'on n'est pas près d'entendre, en particulier vu sa durée, supérieure à 3 heures !</li>
-<li><a href="http://www.oliviergreif.com/catalogue/n_opra_de_chambre_en_10_scnes_commande_de_lopra_de_paris/">Nô</a>, opus 158, opéra de chambre - une commande de l'Opéra de Paris, en collaboration avec l'élitiste IRCAM ! -  fut tellement éreinté par la critique que le compositeur ne corrigea jamais les épreuves en cours d'impression.  On imagine que le style zen de cette oeuvre, dédiée à Chinmoy, ne correspondait pas particulièrement aux attentes de l'IRCAM. </li>
-
-<li>Un an avant sa disparition, Greif terminait "son" Requiem, opus 358, pour double choeur mixte a capella. L'oeuvre mêle habilement la liturgie latine à des chants populaires anglais.  Voici deux extraits de cette oeuvre aussi émouvante que prémonitoire  : Tuba Mirum <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/tubamirum.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/tubamirum.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> et Sanctus <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/sanctus.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/sanctus.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</li>
-
-
-  
-<p><i>Oeuvres symphoniques.</i></p>
-<li>Greif a peu écrit pour l'orchestre.  Outre la Symphonie, déjà évoquée, pour baryton & orchestre, opus 327 et la Symphonie "Hiroshima" pour soli, choeur & orchestre, opus 346, il projetait une oeuvre purement orchestrale qui ne vit pas le jour, le sort en ayant décidé ainsi.</li>
-
-<li>Deux Concertos seulement et curieusement aucun pour piano & orchestre : l'un est quadruple, pour piano, violon, alto & violoncelle, opus 352, <a href="http://www.youtube.com/watch?v=48qKi8PVPn8">La Danse des Morts</a>, et l'autre est pour violoncelle, opus 357, "Durch Adams Fall" (Suite de l'accompagnement de la <a href="http://www.youtube.com/watch?v=SRtMNQN7RvY&feature=related">bande annonce</a> du film déjà évoqué).
- 
- 
-   
-
-<p>Les illustrations qui précèdent ont puisé largement dans la demi douzaine d'enregistrements que la maison d'édition <a href="http://www.disques-triton.com/uk/compositeur.asp?id=6">Triton</a> a consacrés à la musique de Greif.   On doit les trois enregistrements de l'Ina à l'initiative de Renaud Machart qui a pu exhumer et publier quelques archives importantes dans la collection <a href="http://www.music-story.com/olivier-greif/le-reve-du-monde">Mémoire Vive</a>. Plusieurs de ces CD sont disponibles sur le site <a href="http://www.jpc.de/jpcng/home/search?fastsearch=greif&rubric=classic&pd_orderby=score">jpc</a>.</li>
- 
- 
- <p>Je ne peux conclure sans tenter d'analyser - sans doute maladroitement - l'impression de familiarité immédiate que tout auditeur cultivé et attentif ne peut manquer de ressentir dès les premiers contacts avec l'oeuvre de Greif.  Le compositeur n'a cessé d'écrire en artiste libre, se moquant pas mal des modes et du qu'en-dira-ton. Son écriture fonctionne cependant sur un mode spongieux très caractéristique.  Greif était comme imprégné de toutes les musiques, savantes ou populaires. Il n'a jamais hésité à combiner des matériaux originaux à des emprunts, souvent microscopiques : ainsi une série, un chant populaire, une cellule répétitive, une auto citation, un emprunt au passé se retrouvent déformés, concassés puis recollés dans le seul but de projeter dans l'avenir sa propre synthèse du passé et du présent. Toute son oeuvre résonne de fragments sonores que l'on croit connaître sans pouvoir nécessairement les identifier, comme s'ils flottaient dans notre inconscient.   Voici deux courts extraits enchaînés 
-   <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/fragments.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/fragments.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> 
-  : aux accords, plaqués au piano, dans le premier mouvement de la Sonate de Requiem, fait suite le début du finale du Trio à clavier : on croit voir furtivement passer des fantômes dont, à coup sûr, celui de Schostakovitch, dans le deuxième extrait. Revenez au début de la Sonate de Guerre <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/sonatedeguerre1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/sonatedeguerre1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-  , ne sonne-t-il pas comme un écho lointain de Rachmaninov ?  D'autres références sont nettement plus explicites :</p>
- 
-<li>Amaryllis <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/amaryllis.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/amaryllis.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub>
-, le dernier mouvement du 4<sup>ème</sup> Quatuor s'inspire d'une pièce de Caccini <a href="https://www.youtube.com/watch?v=roJSYFu3pYk">Amarilli mia Bella</a>. Quant au 4<sup>ème</sup> mouvement 
-<sub><sub><sub> 
-<audio controls preload="none">
-<source src="../son.mp3/greif/ulysses.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/ulysses.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, déjà cité du même quatuor, il s'inspire d'une danse bourbonnaise (imaginaire ?) qui se dérègle inexorablement.</li>
-
-<li>La coda du premier mouvement de la Sonate n°15 <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/sonatedeguerre1fin.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/sonatedeguerre1fin.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, "annoblit" un chant bien connu des caricaturistes de l'armée allemande (Ce n'est pas pour rien que l'oeuvre porte le surnom de Sonate de Guerre).</li>
-
-<li>Revenez au début de la Sonate Codex Domini <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/greif/codexdomini.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/greif/codexdomini.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub> et mettez les <a href="http://www.youtube.com/watch?v=RosJptqJuvo&feature=related">paroles correctes</a> sur le motif de trois notes qui reviennent avec une insistance volontairement prosaïque; l'air fit rêver nos (grands-)parents.</li>
-
-<li>Parcourez l'oeuvre de notre musicien et cherchez d'autres exemples, il n'en manque pas.</li>
-
-<p>Tous les artistes essentiels marquent leur oeuvre d'une griffe personnelle qui la rend instantanément reconnaissable.  Certes cette reconnaissance est plus immédiate en peinture qu'en musique car le facteur temps n'y joue aucun rôle alors que la musique s'installe dans la durée. Lorsqu'on fréquente la musique de Greif on ne peut qu'être frappé par son art de transcender les clichés (au sens photographique et non péjoratif du terme).  Seul un immense artiste réussit habituellement cette prouesse. </p>
-
-
- <p>Greif, ambitieux, prophétisait : "Un jour viendra - je ne serai plus de ce monde - où ma musique vous submergera de son évidence".  Il a déjà vu juste sur le premier point; à vous d'écouter et de faire en sorte qu'il ait aussi raison sur le second.</p>
- 
- 
- 
-              </div>
-
+            </div>
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
 
@@ -247,7 +280,8 @@ Votre navigateur n'est pas compatible
     
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

@@ -91,10 +91,6 @@
 		    font-weight: normal;
 		}
 
-        .souligner{
-			text-decoration: underline;
-		}
-
 		img{
 			float: left;
 		    margin-right: 30px;
@@ -104,6 +100,10 @@
 		audio{
 			height:16px; 
 			width:18%;
+		}        
+
+		.souligner{
+			text-decoration: underline;
 		}
 
 		.misEnGras{

@@ -91,6 +91,10 @@
 		    font-weight: normal;
 		}
 
+        .souligner{
+			text-decoration: underline;
+		}
+
 		img{
 			float: left;
 		    margin-right: 30px;
@@ -223,6 +227,11 @@
 		    padding-bottom: 5px;
 		}
 
+        .largeurSpecialeTableauLarge td, 
+        .largeurSpecialeTableauLarge th{
+            width: 4%;
+        }
+
 		th{
 			font-weight: bold;
 		}
@@ -335,7 +344,6 @@
 			font-style: italic;
 		    line-height: 1.2;
 		}
-
 
 	/*======= TITLES =======*/
 		/*Navigation*/

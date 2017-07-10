@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Tour du monde | Italie</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tourdumonde").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,66 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreRDVManqueRenaissance" href="#RDVManqueRenaissance" class="linavMenu active">
+                    <span>Le rendez-vous manqué de la Renaissance</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreAgeDOrBaroque" href="#ageDOrBaroque" class="linavMenu">
+                    <span>L'âge d'or du baroque ...</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueTheatrale" href="#musiqueTheatrale" class="linavMenu">
+                    <span>... et la musique théâtrale</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueSacree" href="#musiqueSacree" class="linavMenu">
+                    <span>... et la musique sacrée</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreViolonMemeNom" href="#violonMemeNom" class="linavMenu">
+                    <span>... et le violon du même nom</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreConcertinoRipienoContinuo" href="#concertinoRipienoContinuo" class="linavMenu">
+                    <span>... Concertino, Ripieno &amp; Continuo</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreCoupDeFrein" href="#coupDeFrein" class="linavMenu">
+                    <span>Le coup de frein, du classicisme au romantisme naissant</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreEnvolLyrique" href="#envolLyrique" class="linavMenu">
+                    <span>L'envol lyrique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreEpoqueContemporaine" href="#epoqueContemporaine" class="linavMenu">
+                    <span>L'époque contemporaine</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreVieMusicaleItalie" href="#vieMusicaleItalie" class="linavMenu">
+                    <span>La vie musicale en Italie</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Tour du monde</h2>
+                <h3>Italie</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,375 +101,593 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Italie</li>
                     </ul>
-                </nav>  
-  <h2>Un tour du monde de la musique actuelle : <div>L'Italie.</div></h2>
+                </nav>
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#RDVManqueRenaissance">Le rendez-vous manqué de la Renaissance</a></li>
+                        <li><a href="#ageDOrBaroque">L'âge d'or du baroque ...</a></li>
+                        <li><a href="#musiqueTheatrale">... et la musique théâtrale</a></li>
+                        <li><a href="#musiqueSacree">... et la musique sacrée</a></li>
+                        <li><a href="#violonMemeNom">... et le violon du même nom</a></li>
+                        <li><a href="#concertinoRipienoContinuo">... Concertino, Ripieno &amp; Continuo</a></li>
+                        <li><a href="#coupDeFrein">Le coup de frein, du classicisme au romantisme naissant</a></li>
+                        <li><a href="#envolLyrique">L'envol lyrique</a></li>
+                        <li><a href="#epoqueContemporaine">L'époque contemporaine</a></li>
+                        <li><a href="#vieMusicaleItalie">La vie musicale en Italie</a></li>
+                    </ul>
+                </div>   
+
                 <div class="blocImgFirstAndText">
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
-                              <img src="../images/italie/italie.jpg" alt=""/>
-                              <figcaption></figcaption>
+                              <img src="../images/italie/italie.jpg" alt="Italie"/>
+                              <figcaption>Italie</figcaption>
                           </figure>
                       </div>
                   </div>
   
-  <p>Si pour l'épicurien, l’Italie est la patrie  du mariage de la roquette, du jambon de Parme et du parmesan, des pâtes aux coquillages et des glaces, j'en passe et des meilleures c'est bien le cas de le dire, pour l'homme cultivé, l'Italie est la patrie des arts de la Renaissance : un simple détour par n'importe quel village toscan réserve des trésors d'émotion artistique auxquels les nordiques ne sont pas habitués. Des arts de la représentation faut-il préciser, peinture, sculpture et architecture, car en musique il en fut tout autrement. Il a fallu attendre les années 1600 pour que l'Italie musicale s'éveille vraiment et impose une suprématie qui allait durer 100 ans, d'abord sous l'impulsion du génie de Monteverdi, ensuite des progrès  de la lutherie crémonaise.</p>
-<p>L'Italie n'a ensuite jamais retrouvé cette période dorée, sauf aux oreilles des amateurs d'art lyrique qui considèrent, avec quelques raisons, qu'aucun autre pays n’a tissé de liens plus intimes avec le chant, singulièrement de Monteverdi à Verdi. Même les tavernes italiennes ont  souvent résonné du chant d'amateurs étonnamment doués, ne craignant pas d'aborder un répertoire qu'on croyait réservé aux professionnels. D'où peut venir ce privilège ? Peut-être la joie de vivre sous un soleil généreux, mais cela n’explique pas tout. Naguère, il suffisait de percher un peintre (en bâtiment) italien sur une échelle pour qu’il se mette à chanter O Sole Mio ou Santa Lucia. Immigré en Belgique, sous la pluie plus souvent qu’à son tour, il avait du mérite. D’ailleurs les grecs tout aussi habitués au soleil ne chantaient pas si bien, pas même au sommet d’une échelle.</p>
+                  <p>Si pour l'épicurien, l’Italie est la patrie  du mariage de la roquette, du jambon de Parme et du parmesan, des pâtes aux coquillages et des glaces, j'en passe et des meilleures c'est bien le cas de le dire, pour l'homme cultivé, l'Italie est la patrie des arts de la Renaissance : un simple détour par n'importe quel village toscan réserve des trésors d'émotion artistique auxquels les nordiques ne sont pas habitués. Des arts de la représentation faut-il préciser, peinture, sculpture et architecture, car en musique il en fut tout autrement. Il a fallu attendre les années 1600 pour que l'Italie musicale s'éveille vraiment et impose une suprématie qui allait durer 100 ans, d'abord sous l'impulsion du génie de Monteverdi, ensuite des progrès  de la lutherie crémonaise.</p>
+                  <p>L'Italie n'a ensuite jamais retrouvé cette période dorée, sauf aux oreilles des amateurs d'art lyrique qui considèrent, avec quelques raisons, qu'aucun autre pays n’a tissé de liens plus intimes avec le chant, singulièrement de Monteverdi à Verdi. Même les tavernes italiennes ont  souvent résonné du chant d'amateurs étonnamment doués, ne craignant pas d'aborder un répertoire qu'on croyait réservé aux professionnels. D'où peut venir ce privilège ? Peut-être la joie de vivre sous un soleil généreux, mais cela n’explique pas tout. Naguère, il suffisait de percher un peintre (en bâtiment) italien sur une échelle pour qu’il se mette à chanter O Sole Mio ou Santa Lucia. Immigré en Belgique, sous la pluie plus souvent qu’à son tour, il avait du mérite. D’ailleurs les grecs tout aussi habitués au soleil ne chantaient pas si bien, pas même au sommet d’une échelle.</p>
+                  <p> Ce qui a créé le lien organique des gosiers italiens avec l'art vocal, c’est leur langue parlée, faite de voyelles largement ouvertes et d’une accentuation tonique particulière qui fait que lorsqu'un italien parle, il chante déjà. Si vous en doutiez, visionnez cette leçon de musique due à la plume de Domenico Cimarosa (<a href="http://www.youtube.com/watch?v=rmkuTgKPekA">Il maestro di Cappella</a>).</p>
+                  <p>La tradition populaire italienne est riche de belles mélodies  que les grandes voix d’autrefois  ont toujours conservées à leur répertoire. Core `ngrato, une romance napolitaine, a été chantée par les plus grands : <a href="http://www.youtube.com/watch?v=iwqQDcm9OT8">Mario Lanza</a>, <a href="http://www.youtube.com/watch?v=oTsQq7RrdnI">Benjamino Gigli</a>, <a href="http://www.youtube.com/watch?v=WznTkZmBi8A">Franco Corelli</a>,  <a href="http://www.youtube.com/watch?v=wfCUdE147cs">Giuseppe Di Stefano</a>, <a href="https://www.youtube.com/watch?v=VwMx5jv6InI">Ettore Bastianini</a>, …,  même <a href="http://www.youtube.com/watch?v=TjVjEEz7dS8">Enrico Caruso</a>. Si vous trouvez la pièce démodée,  admirez au moins la vaillance vocale qu'elle exige.  Dans un tout autre domaine, les polyphonies sardes n’ont rien à envier à leurs homologues corses mais au fond, la Corse n'est-elle pas  plus proche de la Sicile que de la France ?</p>
 
-<p> Ce qui a créé le lien organique des gosiers italiens avec l'art vocal, c’est leur langue parlée, faite de voyelles largement ouvertes et d’une accentuation tonique particulière qui fait que lorsqu'un italien parle, il chante déjà. Si vous en doutiez, visionnez cette leçon de musique due à la plume de Domenico Cimarosa (<a href="http://www.youtube.com/watch?v=rmkuTgKPekA">Il maestro di Cappella</a>).</p>
+                  <div id="RDVManqueRenaissance">
+                    <h4>Le rendez-vous manqué de la Renaissance</h4>
 
-<p>La tradition populaire italienne est riche de belles mélodies  que les grandes voix d’autrefois  ont toujours conservées à leur répertoire. Core `ngrato, une romance napolitaine, a été chantée par les plus grands : <a href="http://www.youtube.com/watch?v=iwqQDcm9OT8">Mario Lanza</a>, <a href="http://www.youtube.com/watch?v=oTsQq7RrdnI">Benjamino Gigli</a>, <a href="http://www.youtube.com/watch?v=WznTkZmBi8A">Franco Corelli</a>,  <a href="http://www.youtube.com/watch?v=wfCUdE147cs">Giuseppe Di Stefano</a>, <a href="https://www.youtube.com/watch?v=VwMx5jv6InI">Ettore Bastianini</a>, …,  même <a href="http://www.youtube.com/watch?v=TjVjEEz7dS8">Enrico Caruso</a>. Si vous trouvez la pièce démodée,  admirez au moins la vaillance vocale qu'elle exige.  Dans un tout autre domaine, les polyphonies sardes n’ont rien à envier à leurs homologues corses mais au fond, la Corse n'est-elle pas  plus proche de la Sicile que de la France ?</p>
-<p></p> 
+                    <p>L'Italie, qui fut à la pointe de la Renaissance en architecture, peinture et sculpture, n'a pas immédiatement brillé des mêmes feux en musique. Certes, on écrivait de la bonne musique dans les palais florentins, mantouans ou vénitiens mais  elle sortait majoritairement de la plume de musiciens importés, franco-flamands (Philippe Verdelot (1480-1530), Adriaan Willaert (1490-1562), Cipriano di Rore (1516-1565), Giaches de Wert (1535-1596)), hennuyers (Johannes Tinctoris (1435-1511)), namurois (Jacques Arcadelt (1507-1568)), liégeois (Johannes Ciconia (1370-1412)) voire bourguignons. Ne vous laissez pas abuser par l'italianisation de certains noms, c'était une coquetterie à la mode.</p>
+                    <p> On  sait fort peu de choses des musiciens authentiquement italiens de cette époque, pas même leurs dates exactes de naissance et de décès : celles mentionnées dans le texte sont souvent approximatives. Marchetto da Padova (1274-1326) (<a href="http://www.youtube.com/watch?v=oUUsDM354l4">Ave corpus sanctum</a>), Antonello da Caserta (???-???) (<a href="https://www.youtube.com/watch?v=r8zgiT4qmS0">Amour m'a le cuer mis</a>),  Lorenzo da Firenze (???-1372) (<a href="http://www.youtube.com/watch?v=QaG_HgxfauI">A poste messe</a>), Ghirardello da Firenze (1320-1362) (<a href="http://www.youtube.com/watch?v=A2o47vCd5cY">De poni amor a me</a>) et Francesco Landini (1325-1397) (virelai <a href="http://www.youtube.com/watch?v=YORgJfZVRmU">Adiu, Adiu, dous Dame yolie</a>) ont compté parmi les meilleurs imitateurs d'un style  venu du nord.</p>
+                    <p>Aussi diversement plaisantes qu'elles  paraissent, les musiques de Jacopo da Bologna (1340-1386) (<a href="http://www.youtube.com/watch?v=a-FYwWFgesU">Fenice fu'</a>), Giovanni da Cascia  (???-???)  (<a href="https://www.youtube.com/watch?v=zcE_w3l8tEg">Per larghi prati</a>), Vincenzo da Rimini (???-???) (<a href="http://www.youtube.com/watch?v=0Qa4LgbixcU">Nell'acqua chiara</a>), Antonio Zacara da Teramo (1350-1416) (<a href="http://www.youtube.com/watch?v=M5hx39PA6b0">Ciaramella me dolce</a>), Paolo da Firenze (1355-1436) (Une incursion bienvenue dans l'<a href="http://www.youtube.com/watch?v=xZrflg4CEbE">Ars subtilior</a>, introduit dans la péninsule par Ciconia), Bartolino da Padova (1365-1405) (<a href="http://www.youtube.com/watch?v=GSAZWRSnPWU">Imperiale sedendo fra più stelle</a>), Niccolò da Perugia (???-???) (<a href="http://www.youtube.com/watch?v=EUCfgUrA6d8">O Sommo Specchio</a>), Matteo da Perugia (1400-1416) (<a href="http://www.youtube.com/watch?v=CiL_0m9oK00">Ne me chaut</a> ) ou Bartolomeo da Bologna (1405-1427) (<a href="http://www.youtube.com/watch?v=loweYA_b1Jw">Arte psalentes</a>)  ne proposent rien qui sorte du grand ordinaire qu'on servait  un peu partout en Europe à la même époque. </p>
+                    <p>Paolo da Firenze (1355-1436)  fut sans doute le musicien le plus accompli de cette période : <a href="http://www.youtube.com/watch?v=L63AEx7_YCc">Un pellegrin uccel gentil e bello</a> montre qu'il  a parfaitement assimilé la technique alambiquée de l'Ars Subtilior, introduit par Johannes Ciconia. L'Ensemble Mala Punica qui aime cette courte période de l'histoire musicale a enregistré un beau CD &quot;Narcisso Speculando&quot; dont est extrait le très caractéristique <a href="http://www.youtube.com/watch?v=CsYKVKy4SOk">Un c'osa</a>.</p>
 
-  <p><i>Le rendez-vous manqué de la Renaissance.</i></p>
-  
-  <p>L'Italie, qui fut à la pointe de la Renaissance en architecture, peinture et sculpture, n'a pas immédiatement brillé des mêmes feux en musique. Certes, on écrivait de la bonne musique dans les palais florentins, mantouans ou vénitiens mais  elle sortait majoritairement de la plume de musiciens importés, franco-flamands (Philippe Verdelot (1480-1530), Adriaan Willaert (1490-1562), Cipriano di Rore (1516-1565), Giaches de Wert (1535-1596)), hennuyers (Johannes Tinctoris (1435-1511)), namurois (Jacques Arcadelt (1507-1568)), liégeois (Johannes Ciconia (1370-1412)) voire bourguignons. Ne vous laissez pas abuser par l'italianisation de certains noms, c'était une coquetterie à la mode.</p>
-<p> On  sait fort peu de choses des musiciens authentiquement italiens de cette époque, pas même leurs dates exactes de naissance et de décès : celles mentionnées dans le texte sont souvent approximatives. Marchetto da Padova (1274-1326) (<a href="http://www.youtube.com/watch?v=oUUsDM354l4">Ave corpus sanctum</a>), Antonello da Caserta (???-???) (<a href="https://www.youtube.com/watch?v=r8zgiT4qmS0">Amour m'a le cuer mis</a>),  Lorenzo da Firenze (???-1372) (<a href="http://www.youtube.com/watch?v=QaG_HgxfauI">A poste messe</a>), Ghirardello da Firenze (1320-1362) (<a href="http://www.youtube.com/watch?v=A2o47vCd5cY">De poni amor a me</a>) et Francesco Landini (1325-1397) (virelai <a href="http://www.youtube.com/watch?v=YORgJfZVRmU">Adiu, Adiu, dous Dame yolie</a>) ont compté parmi les meilleurs imitateurs d'un style  venu du nord.</p>
- 
-<p>Aussi diversement plaisantes qu'elles  paraissent, les musiques de 
- 
-  
-  Jacopo da Bologna (1340-1386) (<a href="http://www.youtube.com/watch?v=a-FYwWFgesU">Fenice fu'</a>),
-  Giovanni da Cascia  (???-???)  (<a href="https://www.youtube.com/watch?v=zcE_w3l8tEg">Per larghi prati</a>),
-  Vincenzo da Rimini (???-???) (<a href="http://www.youtube.com/watch?v=0Qa4LgbixcU">Nell'acqua chiara</a>),
-  
-  
-   Antonio Zacara da Teramo (1350-1416) (<a href="http://www.youtube.com/watch?v=M5hx39PA6b0">Ciaramella me dolce</a>), Paolo da Firenze (1355-1436) (Une incursion bienvenue dans l'<a href="http://www.youtube.com/watch?v=xZrflg4CEbE">Ars subtilior</a>, introduit dans la péninsule par Ciconia), 
-  Bartolino da Padova (1365-1405) (<a href="http://www.youtube.com/watch?v=GSAZWRSnPWU">Imperiale sedendo fra più stelle</a>),
-  Niccolò da Perugia (???-???) (<a href="http://www.youtube.com/watch?v=EUCfgUrA6d8">O Sommo Specchio</a>),
-  Matteo da Perugia (1400-1416) (<a href="http://www.youtube.com/watch?v=CiL_0m9oK00">Ne me chaut</a> ) ou Bartolomeo da Bologna (1405-1427) (<a href="http://www.youtube.com/watch?v=loweYA_b1Jw">Arte psalentes</a>)  ne proposent rien qui sorte du grand ordinaire qu'on servait  un peu partout en Europe à la même époque. </p>
-<p>Paolo da Firenze (1355-1436)  fut sans doute le musicien le plus accompli de cette période : <a href="http://www.youtube.com/watch?v=L63AEx7_YCc">Un pellegrin uccel gentil e bello</a> montre qu'il  a parfaitement assimilé la technique alambiquée de l'Ars Subtilior, introduit par Johannes Ciconia. L'Ensemble Mala Punica qui aime cette courte période de l'histoire musicale a enregistré un beau CD &quot;Narcisso Speculando&quot; dont est extrait le très caractéristique <a href="http://www.youtube.com/watch?v=CsYKVKy4SOk">Un c'osa</a>.</p>
-<div><img src="../images/italie/festa.jpg" alt="" /></div>
-<p>En fait, la sensibilité italienne ne prédisposait guère ses musiciens aux exercices intellectuels de la polyphonie savante et Josquin Desprez (1450-1521) n'a pas connu de rival italien. Par contre, l'inspiration populaire, riche et variée,  a trouvé un  moyen d'expression  dans la Frottola, une  pièce courte basée sur une structure couplet/refrain.  Marchetto Cara (1465-1525) (<a href="http://www.youtube.com/watch?v=Ms6Hcn9POxo">Angelo Bronzino</a>),
-  Giacomo Fogliano (1468-1548) (<a href="https://www.youtube.com/watch?v=dLIs39hzZh4">L'amor, dona, ch'io te porto</a>) et Bartolomeo Tromboncino (1470-1535) (<a href="http://www.youtube.com/watch?v=Hk4CxAy7XUw">Ostinato vo' seguire</a>) ont excellé dans ce genre relativement mineur.</p>
-<p>Il a encore fallu attendre quelques décennies pour que la  musique italienne prennent de belles couleurs grâce à  Costanzo Festa (1485-1545) (Austère <a href="http://www.youtube.com/watch?v=u3mlUP99odw">Jesu nazarene Cantica Symphonia</a> et superbes <a href="http://www.youtube.com/watch?v=6Q72pltq0zY">Lamentationes Jeremiae</a>), Sebastiano Festa (1490-1524) (Joyeuse Canzonetta, <a href="http://www.youtube.com/watch?v=ckaNyTw4jB4">L'ultimo dì di maggio</a>),
-  
-  Francesco da Milano (1497-1543) (<a href="http://www.youtube.com/watch?v=Aw3v721_QYw">Ricercare et Fantaisie</a> pour luth),
-  Vincenzo Ruffo (1508-1587) (<a href="http://www.youtube.com/watch?v=5oPWb0cs2Go">Agnus Dei</a>) et 
-  
-  
-  Vincenzo Galilei (1520-1591) (<a href="http://www.youtube.com/watch?v=AzCaHYcnDkY&list=PL-zhsjOaUqqC5KbP00J09M9KEo3n9PC9t">Passamezzo</a> pour luth). Costanzo Festa est trop peu connu comme auteur d'une oeuvre étonnante, 125 (!) variations sur le thème de la Spagna : Paul van Nevel s'en est fait le défenseur dans un enregistrement demeuré confidentiel (variations <a href="http://www.youtube.com/watch?v=Lc6hmFp4lf0">46</a> et <a href="http://www.youtube.com/watch?v=vsWjfmgYSq0">88</a>).</p>
-<p> Vers le milieu des années 1500,  est apparu un art sophistiqué authentiquement italien, dit madrigalesque. Le madrigal, premier essai transformé d'une forme musicale transalpine savante et originale, a été abondamment illustré ailleurs sur ce <a href="../chroniques/madrigal.html">site</a> : n'insistons pas et rappelons simplement qu'il a culminé grâce au talent de trois musiciens de génie, Luca Marenzio (1553-1599), Carlo Gesualdo da Venosa (1566-1613) et Claudio Monteverdi (1567-1643). </p>
-<p></p>
-<p><i>L'âge d'or du baroque ...</i></p>
-<p>Le tempérament italien a trouvé les conditions idéales de son développement musical dans la magnificence baroque. Musiques instrumentales et vocales, sacrées et profanes, ont aussitôt rivalisé d'inventions au sein d'un concert qui a commencé à prendre son sens moderne. Un artiste de génie,  Claudio Monteverdi (1567-1643), a incarné les débuts de cet âge d'or qui allait durer un siècle.</p>
-<div><img src="../images/italie/monteverdi1.jpg" alt="" /><div class="legende">Claudio Monteverdi</div></div>
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/festa.jpg" alt="Costanzo Festa Lamentationes Jeremiae"/>
+                          <figcaption>Costanzo Festa Lamentationes Jeremiae</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-<p>Monteverdi est assurément un des plus grands compositeurs européens, le premier à avoir affiché une éternelle modernité : on peut dire qu'il y a eu l'avant et l'après Monteverdi. Cet artiste détient pourtant le triste record du plus grand nombre de partitions perdues, singulièrement des opéras (Arianna,  Le Nozze d'Enea con Lavinia et une bonne douzaine d'autres). Quand on sait le prix des trois qui nous sont parvenus (<a href="https://www.youtube.com/watch?v=uJ_mjTTDM5A">Orfeo</a>, <a href="http://www.youtube.com/watch?v=CJeFcOqzdXc">Il Ritorno di Ulisse in Patria</a> et <a href="http://www.youtube.com/watch?v=rZZyySg6JZU">L'incoronazione di Poppea</a>), on demeure inconsolable. Il est possible que les oeuvres égarées correspondent à des travaux collectifs impliquant le concours d'élèves et que la dispersion du travail a entraîné celle des manuscrits.  Rappelons, à l'appui de cette thèse, que le Couronnement de Poppée, l'oeuvre ultime du Maître, nous est parvenue en pièces détachées et que l'on a jamais vraiment élucidé la part prise par chacun, dont Cavalli, dans sa composition. D'ailleurs, le thème de l'air conclusif <a href="http://www.youtube.com/watch?v=4pjXfChGWds">Pur ti miro, pur ti godo</a>, assurément l'un des plus beaux duos amoureux de l'histoire de la musique,  fut apparemment emprunté à l'opéra, Il Pastor regio, de Benedetto Ferrari, un musicien remarquable dont nous aurons à reparler. Tant que vous y êtes, réécoutez tout l'<a href="http://www.youtube.com/watch?v=j650NanGNyk">acte 3</a> de l'opéra  dans la version Harnoncourt-Ponnelle et profitez de l'extraordinaire moment théâtral que procure le finale (à partir de 23 min 40 sec) : le couronnement de Poppée (Rachel Yakar), sa jubilation intérieure puis  son duo magique avec Néron (Eric Tappy), la perfection est parfois de ce monde.</p>
+                    <p>En fait, la sensibilité italienne ne prédisposait guère ses musiciens aux exercices intellectuels de la polyphonie savante et Josquin Desprez (1450-1521) n'a pas connu de rival italien. Par contre, l'inspiration populaire, riche et variée,  a trouvé un  moyen d'expression  dans la Frottola, une  pièce courte basée sur une structure couplet/refrain.  Marchetto Cara (1465-1525) (<a href="http://www.youtube.com/watch?v=Ms6Hcn9POxo">Angelo Bronzino</a>), Giacomo Fogliano (1468-1548) (<a href="https://www.youtube.com/watch?v=dLIs39hzZh4">L'amor, dona, ch'io te porto</a>) et Bartolomeo Tromboncino (1470-1535) (<a href="http://www.youtube.com/watch?v=Hk4CxAy7XUw">Ostinato vo' seguire</a>) ont excellé dans ce genre relativement mineur.</p>
+                    <p>Il a encore fallu attendre quelques décennies pour que la  musique italienne prennent de belles couleurs grâce à  Costanzo Festa (1485-1545) (Austère <a href="http://www.youtube.com/watch?v=u3mlUP99odw">Jesu nazarene Cantica Symphonia</a> et superbes <a href="http://www.youtube.com/watch?v=6Q72pltq0zY">Lamentationes Jeremiae</a>), Sebastiano Festa (1490-1524) (Joyeuse Canzonetta, <a href="http://www.youtube.com/watch?v=ckaNyTw4jB4">L'ultimo dì di maggio</a>), Francesco da Milano (1497-1543) (<a href="http://www.youtube.com/watch?v=Aw3v721_QYw">Ricercare et Fantaisie</a> pour luth), Vincenzo Ruffo (1508-1587) (<a href="http://www.youtube.com/watch?v=5oPWb0cs2Go">Agnus Dei</a>) et  Vincenzo Galilei (1520-1591) (<a href="http://www.youtube.com/watch?v=AzCaHYcnDkY&list=PL-zhsjOaUqqC5KbP00J09M9KEo3n9PC9t">Passamezzo</a> pour luth). Costanzo Festa est trop peu connu comme auteur d'une oeuvre étonnante, 125 (!) variations sur le thème de la Spagna : Paul van Nevel s'en est fait le défenseur dans un enregistrement demeuré confidentiel (variations <a href="http://www.youtube.com/watch?v=Lc6hmFp4lf0">46</a> et <a href="http://www.youtube.com/watch?v=vsWjfmgYSq0">88</a>).</p>
+                    <p> Vers le milieu des années 1500,  est apparu un art sophistiqué authentiquement italien, dit madrigalesque. Le madrigal, premier essai transformé d'une forme musicale transalpine savante et originale, a été abondamment illustré ailleurs sur ce <a href="../chroniques/madrigal.html">site</a> : n'insistons pas et rappelons simplement qu'il a culminé grâce au talent de trois musiciens de génie, Luca Marenzio (1553-1599), Carlo Gesualdo da Venosa (1566-1613) et Claudio Monteverdi (1567-1643). </p>
+                  </div>
 
-<div><img src="../images/italie/selva.jpg" alt="" /></div>
-<p>Davantage que  les 9 livres de madrigaux, aucun mélomane digne de ce nom ne peut ignorer les oeuvres sacrées que Monteverdi a écrites pour Saint-Marc de Venise. Si les Vêpres de la Vierge ont été enregistrées un nombre incalculable de fois (ici, mises en espace à <a href="http://www.youtube.com/watch?v=2n85j6O8nIU">Saint-Marc</a>, sous la direction  de John Eliot Gardiner, excellent comme toujours, et que revoici, quelques années plus tard, à <a href="http://www.youtube.com/watch?v=S99FCAFNgaA">Versailles</a>), l'énorme recueil de la Selva Morale e Spirituale n'a pas bénéficié des mêmes attentions, ce qui est tout simplement scandaleux.  Du coup, je conserve précieusement l'ancienne version de <a href="http://www.youtube.com/watch?v=htmKjnrOeI0">Michel Corboz</a> qui, 50 ans après sa parution, n'a guère pris de rides tout en dispensant des heures de  bonheur. Des pièces détachées sont plus facilement accessibles,  telle ce <a href="http://www.youtube.com/watch?v=NTyZwUdemh0">Duo Seraphim</a> datant du temps où René Jacobs nous enchantait encore de sa voix.</p>
-<p></p>
-<p><i>... et la musique théâtrale.</i></p>
-<p>L'expression madrigalesque des sentiments  appelait une action  et sa mise en scène théâtrale. L'opéra  est  entré en gestation en Italie, peu avant 1600, le temps que divers compositeurs  expérimentent  des formes possibles :</p>
-<div><img src="../images/italie/poliziano.jpg" alt="" /></div>
+                  <div id="ageDOrBaroque">
+                    <h4>L'âge d'or du baroque ...</h4>
 
-<li>Une oeuvre étonnamment précoce et collective est demeurée sans lendemain immédiat : <a href="https://www.youtube.com/watch?v=JnTe3-jnRJ8">La Fabula di Orfeo</a> (1480, d'après des poèmes d'Angelo Poliziano (1454-1494)). Due à la collaboration de Serafino dall' Aquilano, Marchetto Cara, Bartolomeo Tromboncino et Michele Pesenti, elle fut la première tentative de mise en musique du mythe souvent reconduit d'Orphée.  Le magnifique <a href="http://www.youtube.com/watch?v=JnTe3-jnRJ8">CD</a> ci-contre, paru chez K617, en ravira plus d'un, davantage que l'ancien enregistrement de l'ensemble Huelgas, pas encore rôdé à l'époque.</li>
+                    <p>Le tempérament italien a trouvé les conditions idéales de son développement musical dans la magnificence baroque. Musiques instrumentales et vocales, sacrées et profanes, ont aussitôt rivalisé d'inventions au sein d'un concert qui a commencé à prendre son sens moderne. Un artiste de génie,  Claudio Monteverdi (1567-1643), a incarné les débuts de cet âge d'or qui allait durer un siècle.</p>
 
-<li>La comédie madrigalesque s'esseya à une transposition musicale de la Commedia dell'arte mais elle ne survécut pas longtemps à son côté  caricatural   qu'aucune intrigue digne de ce nom ne relevait. Les meilleurs specimens parvenus jusqu'à nous sont dûs à : Alessandro Striggio (Il Cicalamento delle Donne al Bucato, 1567), Orazio Vecchi (<a href="https://www.youtube.com/watch?v=e7a8GcLL8nk">L'Amfiparnaso</a>, 1594), Giovanni Croce (<a href="https://www.youtube.com/watch?v=HilvBKJPW7Q">Triaca musicale</a>, 1595, désolé pour l'interprétation ...) et Adriano Banchieri (<a href="http://www.youtube.com/watch?v=bcBpOKhIa50">La Pazzia senile</a>, 1598 et <a href="http://www.youtube.com/watch?v=ojzTjRbMoA8">La Barca di Venezia per Padova</a>, 1605). </li>
-<li>Jacopo Peri (1561-1633) trouva le bon chemin, en 1597, avec Dafne, une oeuvre aujourd'hui perdue, puis il récidiva 3 ans plus tard avec <a href="http://www.youtube.com/watch?v=MIN5btYNn0M">Euridice</a>, une commande pour les noces florentines de Henri IV (absent !) et Marie de Médicis.  Signalons que la même année, Giulio Caccini (1551-1618) qui avait  collaboré à l'oeuvre de Peri, produisit sa propre <a href="https://www.youtube.com/watch?v=fIdd7BS3cU0">Euridice</a>, effectivement montée en 1602.  De toute évidence, il s'était réservé le meilleur de son inspiration ! Comme Orfeo et Euridice, Dafne fut un  thème à la mode et en 1608, <a href="https://www.youtube.com/watch?v=sxL2iQ6SoOY">Marco da Gagliano</a> (1582-1643) écrivit la sienne en tous points excellente (Soit dit en passant, Dafne sera également le titre du premier opéra allemand, sur une musique d'Heinrich Schütz (1627), malheureusement perdue elle aussi).  Toutes ces oeuvres se déroulent cependant encore largement à la troisième personne du singulier,  un personnage souvent allégorique  commentant l'action davantage qu'il ne la vit.</li>
-<li>Bien qu'écrit dans la même veine allégorique,  <a href="http://www.youtube.com/watch?v=njX9fn2iUI4">La Rappresentazione di Anima et di Corpo</a>, d'Emilio de Cavalieri (1550-1602) a revendiqué le titre de premier opéra en date. C'est en tous cas ce qu'a affirmé son auteur, contestant de ce fait les prétentions similaires de Jacopo Peri. Aujourd'hui, il n'est pas rare qu'on contente  tout le monde en considérant que vu son argument, La Rappresentazione est le premier oratorio profane de l'histoire.</li>
-<p> Monteverdi mit, en fait, tout le monde d'accord en 1606 :  la <a href="http://www.youtube.com/watch?v=mjpFi9bn1do">toccata</a> initiale d'Orfeo a sonné l'avènement du baroque. Ce fut un coup de tonnerre semblable à ceux qui retentiront 200 et 300 ans plus tard à l'avènement des périodes romantique et moderne (L'Héroïque de Beethoven en 1804 et le Sacre du Printemps de Stravinsky en 1913). Les trois opéras montéverdiens, Orfeo, Ulysse et Poppée  sont  disponibles en plusieurs versions. On a jamais entendu meilleur Orphée  que celui d'Eric Tappy (Corboz encore !) mais je ne suis pas certain que le CD reste disponible. Je ne vous querellerai cependant pas si vous préférez l'intégrale Harnoncourt (cfr supra),  surtout qu'au DVD, vous profiterez de la mise en scène du regretté Jean-Pierre Ponnelle. </p>
-<p>Monteverdi ne facilita pas la tâche de ses successeurs immédiats :   Domenico Mazzocchi (1592-1665) (<a href="http://www.youtube.com/watch?v=QjZMBypX2Fw">La Catena d'Adone</a>), Francesco Cavalli (1602-1676) (superbe <a href="http://www.youtube.com/watch?v=OIZqhThFkwM">Ercole amante</a>), Antonio Cesti (1623-1669) (<a href="http://www.youtube.com/watch?v=yd7PuwTWMBg">Orontea</a>), Agostino Steffani (1654-1728) (<a href="http://www.youtube.com/watch?v=iny4nGATZ8I">I Trionfi del Fato</a>, <a href="http://www.youtube.com/watch?v=gJ6aCtbLOIU">Tassilone</a> et le très émouvant <a href="http://www.youtube.com/watch?v=96KAc63csJk">Niobe, Regina di Tebe</a>), Antonio Caldara (1670-1736) (<a href="http://www.youtube.com/watch?v=56p307Tazw4">La Clemenza di Tito</a>) et Giovanni Battista Bononcini (1670-1747) (<a href="http://www.youtube.com/watch?v=vXwJVHkG1To">Il lamento d'Olimpia</a>) firent de leur mieux, sans atteindre la même incandescence.</p>
-<div><img src="../images/italie/vivaldi.jpg" alt="" /><div class="legende">Antonio Vivaldi</div>
-</div>
-<div><img src="../images/italie/vinci.jpg" alt="" /><div class="legende">Leonardo Vinci</div>
-</div>
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/monteverdi1.jpg" alt="Claudio Monteverdi"/>
+                          <figcaption>Claudio Monteverdi</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
+                    <p>Monteverdi est assurément un des plus grands compositeurs européens, le premier à avoir affiché une éternelle modernité : on peut dire qu'il y a eu l'avant et l'après Monteverdi. Cet artiste détient pourtant le triste record du plus grand nombre de partitions perdues, singulièrement des opéras (Arianna,  Le Nozze d'Enea con Lavinia et une bonne douzaine d'autres). Quand on sait le prix des trois qui nous sont parvenus (<a href="https://www.youtube.com/watch?v=uJ_mjTTDM5A">Orfeo</a>, <a href="http://www.youtube.com/watch?v=CJeFcOqzdXc">Il Ritorno di Ulisse in Patria</a> et <a href="http://www.youtube.com/watch?v=rZZyySg6JZU">L'incoronazione di Poppea</a>), on demeure inconsolable. Il est possible que les oeuvres égarées correspondent à des travaux collectifs impliquant le concours d'élèves et que la dispersion du travail a entraîné celle des manuscrits.  Rappelons, à l'appui de cette thèse, que le Couronnement de Poppée, l'oeuvre ultime du Maître, nous est parvenue en pièces détachées et que l'on a jamais vraiment élucidé la part prise par chacun, dont Cavalli, dans sa composition. D'ailleurs, le thème de l'air conclusif <a href="http://www.youtube.com/watch?v=4pjXfChGWds">Pur ti miro, pur ti godo</a>, assurément l'un des plus beaux duos amoureux de l'histoire de la musique,  fut apparemment emprunté à l'opéra, Il Pastor regio, de Benedetto Ferrari, un musicien remarquable dont nous aurons à reparler. Tant que vous y êtes, réécoutez tout l'<a href="http://www.youtube.com/watch?v=j650NanGNyk">acte 3</a> de l'opéra  dans la version Harnoncourt-Ponnelle et profitez de l'extraordinaire moment théâtral que procure le finale (à partir de 23 min 40 sec) : le couronnement de Poppée (Rachel Yakar), sa jubilation intérieure puis  son duo magique avec Néron (Eric Tappy), la perfection est parfois de ce monde.</p>
 
-<p>Antonio Vivaldi (1678-1741) apparaît comme le phénomène opératique du baroque finissant : on lui attribue au moins  50 oeuvres mais le compte n'est pas certain. La qualité de cette musique saute aujourd'hui aux oreilles : <a href="http://www.youtube.com/watch?v=mna0P5cA34o">La Silvia</a>, <a href="https://www.youtube.com/watch?v=84mJOYBqteU">L'Oraccolo in Messenia</a>, <a href="http://www.youtube.com/watch?v=r5GdEzrkfIY">Tito Manlio</a>, <a href="https://www.youtube.com/watch?v=RPSrm2pQ71A">Farnace</a>, <a href="https://www.youtube.com/watch?v=Ooq0S0uspsM">Orlando finto Pazzo</a>, <a href="http://www.youtube.com/watch?v=U3lHfQ9hnnc">Griselda</a>, <a href="http://www.youtube.com/watch?v=1CSk1BvgmjE">Armida</a>, ..., impossible de citer tous les enregistrements récents, parus chez Virgin ou dans le cadre de l'Edition Vivaldi en cours chez Naïve jusqu'en 2015. Ne vous étonnez pas d'entendre parfois des mouvements entiers déjà entendus ailleurs, c'est l'illustration de la méthode du pasticcio, recyclage d'oeuvres antérieures, un procédé très répandu à une époque où il fallait produire à tour de bras.</p>
-<p>Quelques musiciens moins essentiels ont écrit des oeuvres  parfaitement estimables : Domenico Scarlatti (1685-1757) (<a href="http://www.youtube.com/watch?v=fL5Ab0hYCgg">Ottavia Restituita al Trono</a>), Nicola Porpora (1686-1768) (un des grands pourvoyeurs d'airs virtuoses pour le castrat Farinelli : <a href="http://www.youtube.com/watch?v=2ZLba_VGHso">Polifemo</a>) et surtout Leonardo Vinci (1690-1730) (<a href="http://www.youtube.com/watch?v=FZne1B1oRds">La Partenope</a>, <a href="https://www.youtube.com/watch?v=GDoqUBOtw7Y">Artaserse</a>, <a href="http://www.youtube.com/watch?v=3xWui0bzOVc">Catone in Utica</a>). Voilà un  génie méconnu, normal me direz-vous, avec un nom pareil, n'empêche qu'il n'est pas de la famille de l'illustre inventeur. Même des musiciens parfaitement inconnus ont écrit de belles choses, tels Geminiano Giacomelli (1692-1740) (<a href="http://www.youtube.com/watch?v=4C937EPhbdo">Merope</a>, bien servi par Cecilia Bartoli), ou l'étonnant Riccardo Broschi (1698-1756) (<a href="http://www.youtube.com/watch?v=6IDqAkPVoAY">Merope</a>, <a href="http://www.youtube.com/watch?v=eZq-lRF2-vg">Idaspe</a>). </p>
-<p>Giovanni Battista Pergolesi (1710-1736) a illuminé de son génie éphémère la génération suivante. Ne passez pas à côté de son opéra, <a href="http://www.youtube.com/watch?v=q7J5xKlh1YA">Lo Frate 'nnammurato</a>, il contient tous les ingrédients du Pulcinella de Stavinsky, amusez-vous à les repérer.</p>
-<p>L'opéra  italien a poursuivi son chemin  grâce, entre autres, à Niccolò Jommelli (1714-1774) (<a href="http://www.youtube.com/watch?v=RH69bqt5sQ8">Armida Abbandonata</a>), Gennaro Manna (1715-1779) (<a href="https://www.youtube.com/watch?v=uc2PgOp158M">Lucio Papiro dittatore</a>) et Antonio Mazzoni (1717-1785) (<a href="http://www.youtube.com/watch?v=s0crw51ChNs">Aminta</a>)   et l'opéra  &quot;à l'italienne&quot;, en langue originale s'il vous plaît, s'est rapidement imposé sur toutes les scènes d'Europe,  particulièrement bien servi par deux  grands  saxons, Georg Friedrich Haendel (1685-1759) et Johann Adolph Hasse (1699-1783). </p>
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/selva.jpg" alt="TODO"/>
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-<div><img src="../images/italie/fasolo.jpg" alt="" /></div>
+                    <p>Davantage que  les 9 livres de madrigaux, aucun mélomane digne de ce nom ne peut ignorer les oeuvres sacrées que Monteverdi a écrites pour Saint-Marc de Venise. Si les Vêpres de la Vierge ont été enregistrées un nombre incalculable de fois (ici, mises en espace à <a href="http://www.youtube.com/watch?v=2n85j6O8nIU">Saint-Marc</a>, sous la direction  de John Eliot Gardiner, excellent comme toujours, et que revoici, quelques années plus tard, à <a href="http://www.youtube.com/watch?v=S99FCAFNgaA">Versailles</a>), l'énorme recueil de la Selva Morale e Spirituale n'a pas bénéficié des mêmes attentions, ce qui est tout simplement scandaleux.  Du coup, je conserve précieusement l'ancienne version de <a href="http://www.youtube.com/watch?v=htmKjnrOeI0">Michel Corboz</a> qui, 50 ans après sa parution, n'a guère pris de rides tout en dispensant des heures de  bonheur. Des pièces détachées sont plus facilement accessibles,  telle ce <a href="http://www.youtube.com/watch?v=NTyZwUdemh0">Duo Seraphim</a> datant du temps où René Jacobs nous enchantait encore de sa voix.</p>
+                  </div>
 
-<p>La musique vocale profane a également épousé des formes plus modestes (beaucoup de cantates), voire plus légères. Bon nombre de tubes baroques datent du début des années 1600,  au répertoire des meilleurs groupes actuels (Arpeggiata, Accordone, ... ) :  Stefano Landi (1586-1639) (<a href="http://www.youtube.com/watch?v=wpAxBZSXW28">Passacaglia della Vita</a>, magique quand elle est chantée par Marco Beasley), Francesco Manelli (1594-1667) (sans doute celui qui s'est caché sous le sobriquet &quot;Il Fasolo&quot;  : <a href="http://www.youtube.com/watch?v=27u6Ck-WOVo">La Barchetta passaggiera</a>, <a href="http://www.youtube.com/watch?v=zM4QMzsZ3E4">Son ruinato, appassionato</a>, <a href="http://www.youtube.com/watch?v=XglR15fY2zI">Acceso mio Core</a>),
-  
-  Tarquinio Merula (1595-1665) (<a href="http://www.youtube.com/watch?v=K0G4baeFRPo">Folle è ben che si crede</a>, adorable Raquel Andueza !), Virgilio Mazzocchi (1597-1646) (superbe cantate, <a href="http://www.youtube.com/watch?v=aue3s0D_Lao">Sdegno Campion Audace</a>),  Benedetto Ferrari (1597-1681) (<a href="http://www.youtube.com/watch?v=U_mLPL8BD-k">Amanti, io vi so dire</a>) et la liste ne s'arrête évidemment pas là.</p>
-<p></p>
-<p></p>
-<p>... et la musique sacrée.</p>
-<p>Frappée de plein fouet par les exigences de la Contre-Réforme et d'un retour vers la simplicité dans la célébration du culte, la musique d'église italienne, singulièrement romaine, a vécu quelques années difficiles,  au cours desquelles le génie de  Giovanni Pierluigi da Palestrina (1525-1594), acteur (musical) principal du Concile de Trente (1545-1563), s'est trouvé particulièrement bridé.  Les musiciens éloignés de la papauté, voire carrément exilés dans les cours germaniques, furent moins atteints dans leur créativité et de fait,  
-  Annibale Padovano (1527-1575) n'a pas hésité à se lancer dans une <a href="http://www.youtube.com/watch?v=bWVzOsN_g_Q">Missa a 24</a>, richement instrumentée. A Venise, Andrea Gabrieli (1533-1595)
-  (<a href="http://www.youtube.com/watch?v=wq-8WgIoMyM">Magnificat a 12</a> et <a href="http://www.youtube.com/watch?v=YXHGzT2sd-s">Enigma Communion O sacrum Convivum a 5</a>, ici dans une superbe interprétation dirigée par Paul McCreesh) a fait preuve de la même indépendance, annonçant le faste des oeuvres de son neveu Giovanni Gabrieli (1557-1612) pour Saint-Marc (<a href="http://www.youtube.com/watch?v=YLgFLMsvZYA">Canzon Terza à Quattro</a>, <a href="http://www.youtube.com/watch?v=NAZwJy1dpMU">Omnes Gentes a 16</a>).  On décèle chez le maître 
-  Marco Antonio Ingegneri (1535-1592) (<a href="http://www.youtube.com/watch?v=_uCkM1pTM5M">Officium Hebdomadae Sanctae</a>) les germes de la nouvelle pratique que développera son élève, Monteverdi. Quant à Alessandro Striggio (1537-1592), il n'hésita pas à flirter avec la démesure dans ses deux Messes (à <a href="http://www.youtube.com/watch?v=lyWgVk-lQy8">40 &amp; 60 voix </a>!), les recommandations du Concile sont décidément bien loin !</p>
-<p>Les messes  ultérieures revinrent à des proportions plus raisonnables : Giacomo Antonio Perti (1661-1756) (<a href="http://www.youtube.com/watch?v=1AdOGSy-700">Messa a 8 per San Domenico</a>), Antonio Lotti (1667-1740) (<a href="https://www.youtube.com/watch?v=7FPGF4HCKWg">Missa del sesto tuono</a>), Benedetto Marcello (1686-1739) (<a href="http://www.youtube.com/watch?v=9L_IudT2MQs">Requiem vénitien</a>), ... .</p>
-<p>Alors que   la Messe mise en musique existait depuis la Renaissance,   l'oratorio est né en même temps que l'opéra. Il se présente effectivement comme une  &quot;opératisation&quot; des épisodes de la Bible en-dehors de toute mise puisque cela était interdit par l'Eglise. Le genre a immédiatement fait  fortune, les oratorios  fleurissant par centaines au point qu'on ne cesse d'en exhumer aujourd'hui :  
-<div><img src="../images/italie/caldara.jpg" alt="" />
-  <div class="legende">Antonio Caldara</div>
-</div>
-<div><img src="../images/italie/jomelli.jpg" alt="" />
-  <div class="legende">Niccolò Jommelli</div>
-</div>
-<p>Stefano Landi (1586-1639) (<a href="https://www.youtube.com/watch?v=P8Rh-StSzcM">Il Sant'Alessio</a>), Luigi Rossi (1597-1653) (<a href="http://www.youtube.com/watch?v=7cjp9eM2GXo">Un Peccator Pentito</a>),  Antonio Bertali (1605-1669) (<a href="http://www.youtube.com/watch?v=yEgE4s43wIg">La Strage Degl'innocenti</a>), Giacomo Carissimi (1605-1674), Francesco Provenzale (1624-1704) (<a href="http://www.youtube.com/watch?v=SnYDcaSoYRc">La Stellidaura vendicant</a>), Stradella (1639-1682) (<a href="http://www.youtube.com/watch?v=RocCp_YPSMc">Ester - Liberatrice del Popolo Hebreo</a>, <a href="http://www.youtube.com/watch?v=TGjE1A581qM">San Giovanni Battista</a>), Michelangelo Falvetti (1642-1692) (<a href="http://www.youtube.com/watch?v=214VRk-wVQM">Il Diluvio universale</a>), Giovanni Battista Bassani (1650-1716) (<a href="https://www.youtube.com/watch?v=8e80_0I99MA">La Tromba della Divina Misericordia</a>), Alessandro Scarlatti (1660-1725) (<a href="https://www.youtube.com/watch?v=_QV57C7eRcI">Il Primo Omicidio</a>), Giacomo Antonio Perti (1661-1756) (<a href="http://www.youtube.com/watch?v=cOOVnwWmymk">Gesu al Sepolcro</a>, <a href="http://www.youtube.com/watch?v=6MS5aDK1pi4">Moïse</a>), Antonio Caldara (1670-1736) (<a href="http://www.youtube.com/watch?v=PlBaOMo0by4">Maddalena ai piedi di Cristo</a>, <a href="http://www.youtube.com/watch?v=U1fDiagZqmM">La Conversion de Clovis</a>),   Giovanni Battista Pergolesi (1710-1736) (Superbes <a href="http://www.youtube.com/watch?v=2BtrbK8jcHQ">Vêpres à la Vierge</a>), Niccolò Jommelli (1714-1774) (<a href="http://www.youtube.com/watch?v=OepTMeKFsVk">Passione di Gesu</a>, <a href="http://www.youtube.com/watch?v=s5hHwuOISu8">Le Lamentazione del profeta Geremia per il Mercoledi Santo</a>, merveilleux Gérard Lesne), Giovanni Paisiello (1730-1814) (<a href="http://www.youtube.com/watch?v=FqJeiRGEIck">La Passione</a>), ... .</p>
-<p>La musique d'église de Vivaldi mérite les mêmes éloges que sa musique théâtrale : elle renferme des trésors que vous  découvrirez à (très) petit prix en vous procurant l'intégrale dirigée par <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Antonio-Vivaldi-1678-1741-Geistliche-Musik/hnum/1146606">Vittorio Negri</a> (Elle ne date pas d'hier mais elle demeure excellente sinon celle de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Geistliche-Musik-Vol-4/hnum/3864187">Robert King</a> la surpasse  en qualité mais hélas aussi en prix).</p>
-<p>Les exigences du culte ont inspiré quantité d'oeuvres aux dimensions plus modestes mais pas forcément moins intéressantes. Le Stabat Mater de Pergolèse est l'une des oeuvres baroques les plus souvent enregistrées (rien que sur le site <a href="http://www.jpc.de/s/pergol%C3%A8se+stabat+mater">jpc</a>, vous en trouverez une  collection où manque hélas  ma préférée, souvent passée sous silence et pourtant ... merci Mieke van der Sluis, Gérard Lesne &amp; René Clemencic 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/italie/stabatmater.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/italie/stabatmater.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>). Nul doute que vous apprécierez les oeuvres de  Vincenzo Ugolini (1580-1638) (superbe Motet à 3 choeurs,  <a href="http://www.youtube.com/watch?v=lfU6-8UprX8">Quae est ista</a>), Gregorio Allegri (1582-1652) (qui n'a pas écrit que le célèbre Miserere, la preuve par cette <a href="https://www.youtube.com/watch?v=UjhYd9ztAz0">Missa Vidi Turbam magnam</a>), Benedetto Ferrari (1597-1681) (<a href="http://www.youtube.com/watch?v=79BdBk4kb9Q">Queste pungenti spine</a>, encore lui, quel musicien !), Giovanni Legrenzi (1626-1690) (merveilleux <a href="http://www.youtube.com/watch?v=Bofbxcz4bqw">Lumi, potete piangere</a>), Bernardo Pasquini (1637-1710) (<a href="https://www.youtube.com/watch?v=knspnG0hUNE">Oratorio della Passione</a>), Agostino Steffani (1653-1728) (<a href="http://www.youtube.com/watch?v=PBze8HkrQ70">Stabat Mater</a>), Antonio Maria Bononcini (1677-1726)  (<a href="http://www.youtube.com/watch?v=RAQRwklrJkI">Stabat Mater</a>),  Benedetto Marcello (1686-1739) (<a href="http://www.youtube.com/watch?v=TWsk7quGOH8">Psaume 50</a> ), Leonardo Leo (1694-1744) (<a href="http://www.youtube.com/watch?v=-NQmLUqakxQ">Salve Regina</a>), à nouveau la liste pourrait ne jamais se terminer.</p>
-<p></p>
+                  <div id="musiqueTheatrale">
+                    <h4>... et la musique théâtrale</h4>
 
+                    <p>L'expression madrigalesque des sentiments  appelait une action  et sa mise en scène théâtrale. L'opéra  est  entré en gestation en Italie, peu avant 1600, le temps que divers compositeurs  expérimentent  des formes possibles :</p>
 
-<p><i>... et le violon du même nom.</i></p>
+                    <ul class="miniListCorps">
+                      <li>
+                      <div class="conteneurImageSeule">
+                        <div>
+                          <figure>
+                            <img src="../images/italie/poliziano.jpg" alt="Angelo Poliziano La Fabula di Orfeo"/>
+                            <figcaption>Angelo Poliziano La Fabula di Orfeo</figcaption>
+                          </figure>
+                        </div>
+                      </div>Une oeuvre étonnamment précoce et collective est demeurée sans lendemain immédiat : <a href="https://www.youtube.com/watch?v=JnTe3-jnRJ8">La Fabula di Orfeo</a> (1480, d'après des poèmes d'Angelo Poliziano (1454-1494)). Due à la collaboration de Serafino dall' Aquilano, Marchetto Cara, Bartolomeo Tromboncino et Michele Pesenti, elle fut la première tentative de mise en musique du mythe souvent reconduit d'Orphée.  Le magnifique <a href="http://www.youtube.com/watch?v=JnTe3-jnRJ8">CD</a> ci-contre, paru chez K617, en ravira plus d'un, davantage que l'ancien enregistrement de l'ensemble Huelgas, pas encore rôdé à l'époque.</li>
+                      <li>La comédie madrigalesque s'esseya à une transposition musicale de la Commedia dell'arte mais elle ne survécut pas longtemps à son côté  caricatural   qu'aucune intrigue digne de ce nom ne relevait. Les meilleurs specimens parvenus jusqu'à nous sont dûs à : Alessandro Striggio (Il Cicalamento delle Donne al Bucato, 1567), Orazio Vecchi (<a href="https://www.youtube.com/watch?v=e7a8GcLL8nk">L'Amfiparnaso</a>, 1594), Giovanni Croce (<a href="https://www.youtube.com/watch?v=HilvBKJPW7Q">Triaca musicale</a>, 1595, désolé pour l'interprétation ...) et Adriano Banchieri (<a href="http://www.youtube.com/watch?v=bcBpOKhIa50">La Pazzia senile</a>, 1598 et <a href="http://www.youtube.com/watch?v=ojzTjRbMoA8">La Barca di Venezia per Padova</a>, 1605). </li>
+                      <li>Jacopo Peri (1561-1633) trouva le bon chemin, en 1597, avec Dafne, une oeuvre aujourd'hui perdue, puis il récidiva 3 ans plus tard avec <a href="http://www.youtube.com/watch?v=MIN5btYNn0M">Euridice</a>, une commande pour les noces florentines de Henri IV (absent !) et Marie de Médicis.  Signalons que la même année, Giulio Caccini (1551-1618) qui avait  collaboré à l'oeuvre de Peri, produisit sa propre <a href="https://www.youtube.com/watch?v=fIdd7BS3cU0">Euridice</a>, effectivement montée en 1602.  De toute évidence, il s'était réservé le meilleur de son inspiration ! Comme Orfeo et Euridice, Dafne fut un  thème à la mode et en 1608, <a href="https://www.youtube.com/watch?v=sxL2iQ6SoOY">Marco da Gagliano</a> (1582-1643) écrivit la sienne en tous points excellente (Soit dit en passant, Dafne sera également le titre du premier opéra allemand, sur une musique d'Heinrich Schütz (1627), malheureusement perdue elle aussi).  Toutes ces oeuvres se déroulent cependant encore largement à la troisième personne du singulier,  un personnage souvent allégorique  commentant l'action davantage qu'il ne la vit.</li>
+                      <li>Bien qu'écrit dans la même veine allégorique,  <a href="http://www.youtube.com/watch?v=njX9fn2iUI4">La Rappresentazione di Anima et di Corpo</a>, d'Emilio de Cavalieri (1550-1602) a revendiqué le titre de premier opéra en date. C'est en tous cas ce qu'a affirmé son auteur, contestant de ce fait les prétentions similaires de Jacopo Peri. Aujourd'hui, il n'est pas rare qu'on contente  tout le monde en considérant que vu son argument, La Rappresentazione est le premier oratorio profane de l'histoire.</li>
+                    </ul>
 
-<p>Le 17<sup>ème</sup> siècle a manifesté un intérêt immédiat  pour les progrès de la facture  instrumentale : Giovanni Bassano (1558-1617) (<a href="http://www.youtube.com/watch?v=4BlyLbly4g8">Fantasia a tre voci</a>), Antonio Brunelli (1577-1630) (<a href="http://www.youtube.com/watch?v=G6jcOpdKWac">Canzona</a>), Girolamo Frescobaldi (1583-1643) (<a href="https://www.youtube.com/watch?v=0h_g30WimHU">Canzonas</a>), Andrea Falconieri (1585-1656)  (<a href="http://www.youtube.com/watch?v=F6O-Khn9SYE">La Suave Melodia</a>, <a href="http://www.youtube.com/watch?v=MTeVsPljBiY">Ciaccona</a>, <a href="http://www.youtube.com/watch?v=120hfW34Pkg">Folia</a>), Maurizio Cazzati (1616-1678) (<a href="http://www.youtube.com/watch?v=L_vrBLedI9E">Ciaconna </a>),  Giovanni Legrenzi (1626-1690) (Superbe <a href="http://www.youtube.com/watch?v=ggO2TxZ0MSU">Aria</a>) ont ciselé des partitions  où le luth règne encore en maître.</p>
-<div><img src="../images/italie/uccellini.jpg" alt="" /></div>
-<p>Toutefois, c'est le développement de la lutherie à cordes frottées   qui a révolutionné la musique instrumentale européenne maintenant sa longueur d'avance aux compositeurs transalpins. Les  premiers recueils  novateurs mirent le violon solo en évidence, avec un  accompagnement en arrière-plan se présentant comme une bas(s)e continue, habituellement remplie par le violoncelle, la viole de gambe, le clavecin, le théorbe, le luth, ... .  Comme il arrive fréquemment, les premiers essais comptèrent parmi les plus audacieux et, à ce titre, ils demeurent particulièrement précieux à nos oreilles contemporaines. Ces nouveaux virtuoses eurent pour noms :  Giovanni Battista Fontana (1571-1630) (<a href="http://www.youtube.com/watch?v=40bswWNzIWw">Sonate n°2</a>), Dario Castello (1590-1630) (<a href="http://www.youtube.com/watch?v=6vnFv3CdCuE">Sonate Concertate</a>), Biagio Marini (1594-1663) (<a href="http://www.youtube.com/watch?v=68kknaL6wS0">Passacaille en sol</a>), Giovanni Battista Buonamente (1595-1642) (<a href="http://www.youtube.com/watch?v=cEsMYLVrfD4">Sonata quarta</a>) et Carlo Farina (1600-1640) (<a href="http://www.youtube.com/watch?v=6k2W8_fGYGw">Sonata detta la Moretta</a>).  Aucun musicien n'incarne cependant mieux l'extravagance baroque que Marco Uccellini (1603-1680) (<a href="http://www.youtube.com/watch?v=v1Nux0nIoWY">La Luciminia contenta</a>) voire
-  
-  Antonio Bertali (1605-1669) (<a href="http://www.youtube.com/watch?v=FrzZ6InNDX4&list=PL255047AA05620D86">Sonate n°1</a> et sa célèbre <a href="http://www.youtube.com/watch?v=diDtqzXm_0c">Ciaconna</a>). </p>
-  
-  
-  
-  
-<p>Ces précurseurs furent bientôt  suivis par une  armada de (violonistes-)compositeurs  : Giovanni Antonio Pandolfi Mealli (1630-1669) (<a href="http://www.youtube.com/watch?v=Q7_5aIpnfGA">La Monella Romanesca</a>), Giovanni Battista Vitali (1632-1692) (<a href="https://www.youtube.com/watch?v=ZQ28ICrtyuQ">Capricci,Passagalli,Ciaccona</a>),  Ignazio Albertini (1644-1685) (<a href="http://www.youtube.com/watch?v=xbL8Bh4zVRc&list=PLC396907119B769D1">Sonates</a>), Arcangelo Corelli (1653-1713) (<a href="http://www.youtube.com/watch?v=VHRdFILo_Yw">La Follia</a>),  Francesco Antonio Bonporti (1653-1713) (<a href="http://www.youtube.com/watch?v=V3U3ExTU3_E">Invenzioni</a>), Antonio Veracini (1659-1745) (<a href="http://www.youtube.com/watch?v=VQKMh89NSoE">Sonate op 1-1</a>), Tomaso Antonio Vitali (1663-1745) (fils du précédent, dont la célèbre <a href="http://www.youtube.com/watch?v=wvW9PkT_oEo">Ciaccona</a>, a souvent été arrangée),     Nicola Matteis (????-1714) (<a href="http://www.youtube.com/watch?v=kKwobKWAc6k">Diverse bizzarie Sopra la Vecchia Sarabanda</a>), Tomaso Albinoni (1671-1751) (<a href="http://www.youtube.com/watch?v=A64hFW0TVws">Sonate da Camera</a>), Nicolo Porpora (1686-1768) (<a href="http://www.youtube.com/watch?v=-MgAvs4hKZ4">12 Sonates</a>),  Francesco Maria Veracini (1690-1768) (neveu du précédent, superbes <a href="http://www.youtube.com/watch?v=Pk6vU102KTU">Dissertazioni sull' Op V del Corelli</a>), Giuseppe Tartini (1692-1770) (<a href="http://www.youtube.com/watch?v=T5pn3QOGMPk">Il Trillo del Diavolo</a>).</p>
+                    <p> Monteverdi mit, en fait, tout le monde d'accord en 1606 :  la <a href="http://www.youtube.com/watch?v=mjpFi9bn1do">toccata</a> initiale d'Orfeo a sonné l'avènement du baroque. Ce fut un coup de tonnerre semblable à ceux qui retentiront 200 et 300 ans plus tard à l'avènement des périodes romantique et moderne (L'Héroïque de Beethoven en 1804 et le Sacre du Printemps de Stravinsky en 1913). Les trois opéras montéverdiens, Orfeo, Ulysse et Poppée  sont  disponibles en plusieurs versions. On a jamais entendu meilleur Orphée  que celui d'Eric Tappy (Corboz encore !) mais je ne suis pas certain que le CD reste disponible. Je ne vous querellerai cependant pas si vous préférez l'intégrale Harnoncourt (cfr supra),  surtout qu'au DVD, vous profiterez de la mise en scène du regretté Jean-Pierre Ponnelle. </p>
+                    <p>Monteverdi ne facilita pas la tâche de ses successeurs immédiats :   Domenico Mazzocchi (1592-1665) (<a href="http://www.youtube.com/watch?v=QjZMBypX2Fw">La Catena d'Adone</a>), Francesco Cavalli (1602-1676) (superbe <a href="http://www.youtube.com/watch?v=OIZqhThFkwM">Ercole amante</a>), Antonio Cesti (1623-1669) (<a href="http://www.youtube.com/watch?v=yd7PuwTWMBg">Orontea</a>), Agostino Steffani (1654-1728) (<a href="http://www.youtube.com/watch?v=iny4nGATZ8I">I Trionfi del Fato</a>, <a href="http://www.youtube.com/watch?v=gJ6aCtbLOIU">Tassilone</a> et le très émouvant <a href="http://www.youtube.com/watch?v=96KAc63csJk">Niobe, Regina di Tebe</a>), Antonio Caldara (1670-1736) (<a href="http://www.youtube.com/watch?v=56p307Tazw4">La Clemenza di Tito</a>) et Giovanni Battista Bononcini (1670-1747) (<a href="http://www.youtube.com/watch?v=vXwJVHkG1To">Il lamento d'Olimpia</a>) firent de leur mieux, sans atteindre la même incandescence.</p>
 
-<p><i>Note : Depuis les débuts du renouveau baroque, les dames se sont  illustrées pour ne pas dire imposées au violon baroque (Susanne Lautenbacher, Elizabeth Wallfisch, Alice Harnoncourt, Lucy van Dael,  Monica Hugett, Amandine Beyer, Jeanne Lamon, ...).  Impossible à ce stade de ne pas rendre le plus vibrant des hommages à Hélène Schmitt. Non contente de promouvoir - avec quelle généreuse rigueur - le répertoire le plus méconnu, elle justifie ses choix, en particulier celui de Nicola Matteis, dans une notice si justement écrite que je ne peux que la retranscrire : &quot;Quant à moi, après avoir respiré les airs ombreux de la musique de Schmelzer et de ses contemporains, je voulais de tout mon coeur me consacrer à une musique qui dirait la joie, l'exubérance de la joie et son irrésistible contagion. Et de fait, je ne pouvais penser qu'à Matteis, ce napolitain exilé à Londres, joueur de guitare et de violon, parti faire fortune et achetant dans les dernières années de sa vie un manoir dans le Norfolk, sans jamais retourner, même sur le tard de sa vie, là où il était né, dans cette ville capiteuse où même les citrons sont sucrés. Sa musique radieuse ne dit pas ces blessures-là si tant est qu'il en fût, ne sanglote ni ne pâme; elle ferait plutôt une farce à la sirène Parthénopé en l'envoyant en rêve sur les froids rivages de la Tamise pour la faire rire ...&quot;. D'autres révélations que nous lui devons ont pour nom : Ignazio Albertini (1644-1685) (<a href="http://www.youtube.com/watch?v=xbL8Bh4zVRc&list=PLC396907119B769D1">Sonates pour violon &amp; continuo</a>) et Giovanni Stefano Carbonelli (1700-1773) (<a href="http://www.youtube.com/watch?v=PxtTDNieag8">Aria con Variazioni</a> ou <a href="http://www.youtube.com/watch?v=PxtTDNieag8">Sonate</a> pour violon &amp; basse continue).</i></p>
-<div><img src="../images/italie/abacco.jpg" alt="" /></div>
-<p>Les luthiers crémonais n'ont pas créé que des violons et  quelques musiciens ont également spécifiquement écrit pour les autres membres de la famille : Joseph-Marie-Clement dall' Abaco (1710-1805) s'est illustré au violoncelle dans ces  Caprices (<a href="http://www.youtube.com/watch?v=euYEgpjmnCk">n°5</a> &amp; <a href="http://www.youtube.com/watch?v=bKXLlg53GpY">n°8</a>, superbement joués par Kristin von der Goltz), Francesco Corbetta (1615-1681) a fait de même à la  guitare (baroque)  (<a href="http://www.youtube.com/watch?v=g7mYSvUfnms">Caprice de Chaconei</a>) et Giovanni Zamboni (1650- ????) à l'archiluth (<a href="https://www.youtube.com/watch?v=oqKjY6t5Oxo">Sonate X</a>). On redécouvre encore, et avec quel plaisir !, l'art très soigné d'Angelo Berardi (1636-1694), à la  flûte (<a href="https://www.youtube.com/watch?v=HYzpWuU_EIE">Canzone sesta</a>) ou au violoncelle (Un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Angelo-Berardi-1636-1684-Sinfonie-Opera-Settima/hnum/1857030">CD</a> recommandable).</p>
-<p></p>
-<p></p>
-<p></p>
-<p><i>... Concertino, Ripieno &amp; Continuo.</i></p>
-<p>Le développement fulgurant de l'instrumentarium baroque a également stimulé le plaisir de jouer &quot;de concert&quot; : l'orchestre (baroque) était né, conservant aux italiens  leur longueur d'avance, le temps que la recette s'exporte et s'adapte un peu partout en Europe. Le CD a largement exploité le répertoire instrumental baroque et de nombreuses anthologies ont paru, couvrant toutes les décennies (<a href="http://www.youtube.com/watch?v=739R9G0qDH8">Dances and Music from the Italian Renaissance</a>, <a href="https://www.youtube.com/watch?v=BNXI9pKJFFY">Invenzioni e Stravaganze</a>, ... ).</p>
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/vivaldi.jpg" alt="Antonio Vivaldi">
+                          <figcaption>Antonio Vivaldi</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/vinci.jpg" alt="Leonardo Vinci">
+                          <figcaption>Leonardo Vinci</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-<p>Deux musiciens ont marqué de leur empreinte le genre du concerto baroque :</p>
-<li>Arcangelo Corelli (1653-1713) est réputé l'inventeur du Concerto Grosso. Parent de la  Sinfonia, il fonctionne sur le principe d'un dialogue entre les instruments solistes et le reste des cordes, soutenues par l'omniprésent continuo (d'où le sous-titre de ce paragraphe).</li>
-<li>Antonio Vivaldi (1678-1741) a étendu le concertino à toutes sortes d'instruments solistes,  du violon à la mandoline en passant par le basson, la flûte, la trompette, le violoncelle et j'en oublie. Stravinsky, qui devait être d'humeur chagrine ce jour-là,  lui a reproché d'avoir réécrit 700 fois le même concerto ce qui est parfaitement injuste : écoutez cette intégrale des <a href="http://www.youtube.com/watch?v=Ogk-OL8hGCI">Concerti pour violoncelle</a>, 4 heures de musique, et dites-moi si vous vous êtes ennuyés (faites des pauses quand même !).Une bonne partie de l'oeuvre de Vivaldi dormait dans la bibliothèque de l'obscur collège salésien San Carlo de Borgo San Martino et elle n'a  refait surface, en 1922, que suite aux besoins d'argent de cette institution pour des travaux de réfection : on vendit des manuscrits qui devinrent précieux au moment de leur expertise. Ceux-ci ont fait l'objet d'éditions modernes et enfin d'enregistrements récents.</li>
-<p><i>Note.  Beaucoup d'oeuvres anciennes ont disparu dans les incendies et d'autres dorment encore dans les réserves de bibliothèques poussiéreuses. L'essentiel de l'oeuvre d'Albinoni qui comprenait entre autres  près de 80 (!) opéras  a apparemment péri lors des bombardements de Dresde, en 1945, et personne ne s'était apparemment donné la peine  de recopier les manuscrits, on était plus sérieux au Moyen-Age ! Les amateurs du dimanche qui se contentent du célèbre <a href="http://www.youtube.com/watch?v=Cg_IQUopZnI">Adagio</a> (version d'André Rieu, tant qu'on y est !) seront déçus d'apprendre qu'il s'agit, en réalité, d'un artefact réalisé par Remo Giazotto, en 1945, sur le thème de l'andante du <a href="http://www.youtube.com/watch?v=Ei4cEn0m3bA">Concerto opus 1</a>, pour alto, de Carl Stamitz (attendez 12 min 26 sec).</i></p>
-<p>L'orchestre baroque a  tenté tous les musiciens de l'époque. La redécouverte sonore de ce répertoire immense, effectivement entamée à partir des années 1950, s'est déroulée dans une joyeuse anarchie mélangeant allègrement l'essentiel et l'accessoire. L'empressement des maisons de disques de tout graver - qui viendra encore prétendre que le marché de l'enregistrement est en crise ? - a compliqué l'établissement d'une échelle des valeurs, singulièrement pour les compositions postérieures à 1700. Beaucoup de musiciens de cette époque sont très vite passés à la postérité pour des oeuvres plus ou moins importantes : si personne ne conteste sérieusement les concerti de Vivaldi ou de Corelli, que faut-il penser des oeuvres homologues des  Marcello, Torelli, Geminiani, Castrucci, Manfredini, Galuppi, Tartini, Albinoni, Veracini, ..., dont certains sont passés à la postérité avec une facilité que - sans jeu de mot - l'on pourrait qualifier de déconcertante :   des oeuvres aimables, certes,  mais tellement interchangeables à nos oreilles. Voici, pour faire court, une sélection d'oeuvres estimables, inévitablement partielle et partiale :</p>
-<li>Evaristo Felice Dall'Abaco (1675-1742) (<a href="http://www.youtube.com/watch?v=zd7wsv1mAK0">Concerti</a> opus 3 n°5), le père de Joseph-Marie-Clement,</li>
-<li>Francesco Manfredini (1684-1762) (<a href="http://www.youtube.com/watch?v=JXPFJrNlvkM">12 Concerti</a> opus 3),</li>
-<li>Benedetto Marcello (1686-1739) (<a href="http://www.youtube.com/watch?v=D3fDuVtfw3E">12 Concerti Grossi</a>  opus 1) à ne pas confondre avec son frère, Alessandro Marcello(1669-1749) (<a href="http://www.youtube.com/watch?v=QgcOz2iZy1M">Concerto</a> pour hautbois, <a href="https://www.youtube.com/watch?v=BFJdJg6XTVA">La Cetra</a>),</li>
-<li>Francesco Geminiani (1687-1762) (<a href="https://www.youtube.com/watch?v=SDrTjUqeV-g">Concerti Grossi 1 à 12</a>), d'après l'opus 5 de Corelli,</li>
-<li>Francesco Maria Veracini (1690-1768)  (<a href="http://www.youtube.com/watch?v=IdTJE0APzY0">5 Ouvertures</a> de concert),</li>
-<li>Leonardo Leo (1694-1744) (<a href="http://www.youtube.com/watch?v=5iaxh1y1ZUs">6 Concertos</a> pour violoncelle,</li>
-<li>Pietro Locatelli (1695-1764), le Paganini baroque à moins que ce soit l'inverse, (<a href="http://www.youtube.com/watch?v=-SVF9MKsQ7Q">L'Arte del Violino</a>).</li>
+                    <p>Antonio Vivaldi (1678-1741) apparaît comme le phénomène opératique du baroque finissant : on lui attribue au moins  50 oeuvres mais le compte n'est pas certain. La qualité de cette musique saute aujourd'hui aux oreilles : <a href="http://www.youtube.com/watch?v=mna0P5cA34o">La Silvia</a>, <a href="https://www.youtube.com/watch?v=84mJOYBqteU">L'Oraccolo in Messenia</a>, <a href="http://www.youtube.com/watch?v=r5GdEzrkfIY">Tito Manlio</a>, <a href="https://www.youtube.com/watch?v=RPSrm2pQ71A">Farnace</a>, <a href="https://www.youtube.com/watch?v=Ooq0S0uspsM">Orlando finto Pazzo</a>, <a href="http://www.youtube.com/watch?v=U3lHfQ9hnnc">Griselda</a>, <a href="http://www.youtube.com/watch?v=1CSk1BvgmjE">Armida</a>, ..., impossible de citer tous les enregistrements récents, parus chez Virgin ou dans le cadre de l'Edition Vivaldi en cours chez Naïve jusqu'en 2015. Ne vous étonnez pas d'entendre parfois des mouvements entiers déjà entendus ailleurs, c'est l'illustration de la méthode du pasticcio, recyclage d'oeuvres antérieures, un procédé très répandu à une époque où il fallait produire à tour de bras.</p>
+                    <p>Quelques musiciens moins essentiels ont écrit des oeuvres  parfaitement estimables : Domenico Scarlatti (1685-1757) (<a href="http://www.youtube.com/watch?v=fL5Ab0hYCgg">Ottavia Restituita al Trono</a>), Nicola Porpora (1686-1768) (un des grands pourvoyeurs d'airs virtuoses pour le castrat Farinelli : <a href="http://www.youtube.com/watch?v=2ZLba_VGHso">Polifemo</a>) et surtout Leonardo Vinci (1690-1730) (<a href="http://www.youtube.com/watch?v=FZne1B1oRds">La Partenope</a>, <a href="https://www.youtube.com/watch?v=GDoqUBOtw7Y">Artaserse</a>, <a href="http://www.youtube.com/watch?v=3xWui0bzOVc">Catone in Utica</a>). Voilà un  génie méconnu, normal me direz-vous, avec un nom pareil, n'empêche qu'il n'est pas de la famille de l'illustre inventeur. Même des musiciens parfaitement inconnus ont écrit de belles choses, tels Geminiano Giacomelli (1692-1740) (<a href="http://www.youtube.com/watch?v=4C937EPhbdo">Merope</a>, bien servi par Cecilia Bartoli), ou l'étonnant Riccardo Broschi (1698-1756) (<a href="http://www.youtube.com/watch?v=6IDqAkPVoAY">Merope</a>, <a href="http://www.youtube.com/watch?v=eZq-lRF2-vg">Idaspe</a>). </p>
+                    <p>Giovanni Battista Pergolesi (1710-1736) a illuminé de son génie éphémère la génération suivante. Ne passez pas à côté de son opéra, <a href="http://www.youtube.com/watch?v=q7J5xKlh1YA">Lo Frate 'nnammurato</a>, il contient tous les ingrédients du Pulcinella de Stavinsky, amusez-vous à les repérer.</p>
+                    <p>L'opéra  italien a poursuivi son chemin  grâce, entre autres, à Niccolò Jommelli (1714-1774) (<a href="http://www.youtube.com/watch?v=RH69bqt5sQ8">Armida Abbandonata</a>), Gennaro Manna (1715-1779) (<a href="https://www.youtube.com/watch?v=uc2PgOp158M">Lucio Papiro dittatore</a>) et Antonio Mazzoni (1717-1785) (<a href="http://www.youtube.com/watch?v=s0crw51ChNs">Aminta</a>)   et l'opéra  &quot;à l'italienne&quot;, en langue originale s'il vous plaît, s'est rapidement imposé sur toutes les scènes d'Europe,  particulièrement bien servi par deux  grands  saxons, Georg Friedrich Haendel (1685-1759) et Johann Adolph Hasse (1699-1783). </p>
 
-<p></p>
-<p>Voici, pour résumer,   quelques musiciens  parmi les meilleurs du baroque finissant, qui se sont  illustrés  dans les trois genres évoqués :</p>
-  
-  
-  <table width="695" border="1">
-  <tr>
-    <td width="94" height="24"></td>
-    <td width="191"><div align="center">Ensembles instrumentaux</div></td>
-    <td width="191"><div align="center">Messes & Oratorios</div></td>
-    <td width="191"><div align="center">Cantates & Opéras</div></td>
-  </tr>
- 
-  <tr>
-    <td>A. Caldara</td>
-    <td><a href="http://www.youtube.com/watch?v=cz4sYC2zsP0">Sonate a 3</a> <div><a href="http://www.youtube.com/watch?v=mLrH4q9KRHE">Sonate pour violoncelle</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=PlBaOMo0by4">Maddalena ai piedi di J-C</a> <div><a href="http://www.youtube.com/watch?v=U1fDiagZqmM">La Conversion de Clovis</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=56p307Tazw4">La Clemenza di Tito</a> <div><a href="http://www.youtube.com/watch?v=3VIKbL7VjOA">Airs isolés</a></div></td>
-  </tr>
-  <tr>
-    <td>A. Vivaldi</td>
-    <td><a href="http://www.youtube.com/watch?v=o8p5z-TcWiY">Concerti pour violon</a> <div><a href="http://www.youtube.com/watch?v=Tn4S4XVmw7E">Sonates pour violoncelle</a></div></td>
-    <td><a href="https://www.youtube.com/watch?v=K6Frp0XCP0Y">Vêpres à la Vierge</a> <div><a href="http://www.youtube.com/watch?v=vhkQurdInGY">Juditha Triumphans</a></div></td>
-    <td><a href="https://www.youtube.com/watch?v=RPSrm2pQ71A">Farnace</a> <div><a href="http://www.youtube.com/watch?v=Z2yDQzXN-4w">Arsilda Regina di Ponto</a></div></td>
-  </tr>
-  <tr>
-    <td>B. Marcello</td>
-    <td><a href="https://www.youtube.com/watch?v=82g9QcZCa_A">Concerti grossi op 1</a> <div><a href="http://www.youtube.com/watch?v=Qb4baUWEQn8">6 Sonates pour violoncelle</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=9L_IudT2MQs">Requiem vénitien</a> 
-      <div><a href="http://www.youtube.com/watch?v=ozkz8VVC1Ws">Psaumes de David</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=nGfdoi-HZ1A">Arianna</a> <div><a href="http://www.youtube.com/watch?v=rLXss8TRsZA">Cantates pour basse</a></div></td>
-  </tr>
-  <tr>
-    <td>N. Porpora</td>
-    <td><a href="http://www.youtube.com/watch?v=HkBNfNKNqQ0&list=PL2u_e4oN40EoNEFpaXXDdHsMJbrRPlBz3">Sinfonia opus 2-4</a> <div><a href="http://www.youtube.com/watch?v=-MgAvs4hKZ4">12 Sonates pour violon</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=3q_slGvC45s">Salve Regina</a> <div><a href="http://www.youtube.com/watch?v=MyDIUmC2ErU">6 Duetti sulla Passione</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=C_u8trRkM_c">Polifemo</a> <div><a href="http://www.youtube.com/watch?v=xNLle7Domig">Dorindo, dormi ancor</a></div></td>
-  </tr>
-  
-  <tr>
-    <td>JB Pergolèse</td>
-    <td><a href="http://www.youtube.com/watch?v=22-I_ZGz0R4&list=TLAJg8ubePrZ8-lRWOmTD4pmyBQqz52NcK">Concerto pour violon</a> <div><a href="http://www.youtube.com/watch?v=zGedl83daNo">Concerto pour flûte</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=2BtrbK8jcHQ">Vêpres à la Vierge</a> <div><a href="https://www.youtube.com/watch?v=kQnXs05bQ0c">Messa Sant Emidio</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=dmFwPKsMdtg">L'Olimpiade</a> <div>
-<a href="http://www.youtube.com/watch?v=Cbr4jB2M_UI">Lo Frate 'nnammurato</a></div>
-     
-  </tr>
-  <tr>
-    <td>N. Jommelli</td>
-    <td><a href="http://www.youtube.com/watch?v=dtA_85NItAg">Concerto pour clavier</a> <div><a href="http://www.youtube.com/watch?v=e3-xCNUauOY&list=TLAsz50nqMHQX3TCfK3y0Bb-D-vA48P97w">Chaconne</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=OepTMeKFsVk">La Passion de J-C</a> <div><a href="http://www.youtube.com/watch?v=46D942CsFc4">Requiem</a></div></td>
-    <td><a href="http://www.youtube.com/watch?v=RH69bqt5sQ8">Armida Abbandonata</a> <div><a href="http://www.youtube.com/watch?v=6cZdFFmDA6U">L'Uccellatrice</a></div></td>
-  </tr>
-</table>
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/fasolo.jpg" alt="Vincent DUmestre Il Fasolo"/>
+                          <figcaption>Vincent DUmestre Il Fasolo</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-<p>Enfin, impossible de ne pas évoquer l'art de Domenico Scarlatti (1685-1757), le plus illustre claviériste baroque italien. Ses <a href="../chroniques/scarlatti.html">555 Sonates</a> sont tellement belles qu'elles ont toutes été enregistrées. Hélas aucune intégrale  n'est pleinement satisfaisante, même celle de Scott Ross  aurait mérité un plus bel instrument. Par contre, des enregistrements isolés existent - au clavecin comme au piano - qui raviront les plus exigeants (<a href="http://www.youtube.com/watch?v=epSrxfw0pFU">Pierre Hantaï</a> et <a href="http://www.youtube.com/watch?v=oO11q77SSw4">Frédérick Haas</a>, sur des clavecins dignes de ce nom et l'admirable <a href="http://www.youtube.com/watch?v=8FUX832BF2M">Murray Perahia</a>, au piano). Giovanni Battista (dit Il Padre) Martini  (1706-1784) a suivi l'exemple de Scarlatti comme le fera Padre Soler (1729-1783) en Espagne.</p>
-<p></p>
-<p><i>Le coup de frein, du classicisme au romantisme naissant.</i></p>
-<p>L'ère baroque s'est achevée en 1750 mais comme toujours un certain flou a existé entre ceux qui se sont attardés et d'autres qui ont anticipé sur le classicisme naissant. Les frères Sammartini, Giuseppe  (1695-1750) (<a href="http://www.youtube.com/watch?v=-wda1jEHobU">Concerto</a> pour flûte) et Giovanni Battista  (1700-1775) (<a href="http://www.youtube.com/watch?v=otJUzvxdiRI">Sinfonia</a> en sol majeur), ont déjà écrit en style galant voire Sturm und Drang et Baldassare Galuppi (1706-1785) a fait preuve d'encore plus de curiosité  dans des oeuvres ambitieuses, religieuses (<a href="https://www.youtube.com/watch?v=MvzbAweF3Nw">Kyrie</a> et <a href="https://www.youtube.com/watch?v=KhisDFiX8-I">Gloria</a>) ou théâtrales (<a href="http://www.youtube.com/watch?v=VHHQqZtxM4E">L'Olimpiade</a>, <a href="http://www.youtube.com/watch?v=-Kmn4qfPGck">Il Mondo alla Roversa</a>).</p>
-<p>Globalement la transition du baroque vers le classicisme a vu le recul de la musique italienne, plutôt mal à l'aise dans un corset trop rigide pour elle. Dès 1700, la concurrence allemande - Bach  et Haendel - était devenue forte et à partir de 1750, l'hégémonie autrichienne - Haydn, Mozart, Gluck -  acheva de la repousser dans une pénombre relative.  <strong>La querelle des Gluckistes et des Piccinnistes</strong> fut un épisode parisien de ce transfert de compétences : les encyclopédistes,  d'Alembert en tête, ardents défenseurs de l'opéra à l'italienne, se sont émus de l'influence grandissante des réformes préconisées par Gluck en vue d'un théâtre moins virtuose et plus proche du drame exprimé.  S'ensuivit une querelle de salon que Gluck alimenta davantage que Piccinini et qu'il finit par remporter.</p>
-<p>Les musiciens suivants furent talentueux à défaut d'être géniaux :  Pietro Nardini (1722-1793)  (<a href="https://www.youtube.com/watch?v=aJJ5esA2rDQ">Concerti</a> pour violon et mieux encore <a href="http://www.youtube.com/watch?v=FELDa7RfLpI">Quatuors</a> à cordes, parus chez Brillant).
-  
-  Niccolò Piccinni (1728-1800) (<a href="http://www.youtube.com/watch?v=LaJDg4GL8uk">Didone abbandonata</a>),
-  Giuseppe Sarti (1729-1802) (<a href="http://www.youtube.com/watch?v=gw3vvpGrb2g">Oratorio russe</a>),
-  
-  Antonio Sacchini (1730-1786) (<a href="http://www.youtube.com/watch?v=zcR688CF_hw">Œdipe à Colone</a>),
-  Gaetano Pugnani (1731-1798) (<a href="http://www.youtube.com/watch?v=_172a1SVN-c">Sinfonia</a> en sol majeur),
-  
-  Giovanni Paisiello (1740-1816) (<a href="https://www.youtube.com/watch?v=8T5zPSdEu_s">Concerto n°7</a> pour piano et surtout <a href="http://www.youtube.com/watch?v=jSpaYtq3V1A">Il Barbiere di Siviglia</a>, oeuvre qui annonce clairement   Rossini),
-  
-  
-  
-  Andrea Luchesi (1741-1801) (<a href="http://www.youtube.com/watch?v=4ujEC5YlHS0">Requiem</a>), ... .</p>
-<p>Le talent fut davantage présent à la génération suivante  :</p>
+                    <p>La musique vocale profane a également épousé des formes plus modestes (beaucoup de cantates), voire plus légères. Bon nombre de tubes baroques datent du début des années 1600,  au répertoire des meilleurs groupes actuels (Arpeggiata, Accordone, ... ) :  Stefano Landi (1586-1639) (<a href="http://www.youtube.com/watch?v=wpAxBZSXW28">Passacaglia della Vita</a>, magique quand elle est chantée par Marco Beasley), Francesco Manelli (1594-1667) (sans doute celui qui s'est caché sous le sobriquet &quot;Il Fasolo&quot;  : <a href="http://www.youtube.com/watch?v=27u6Ck-WOVo">La Barchetta passaggiera</a>, <a href="http://www.youtube.com/watch?v=zM4QMzsZ3E4">Son ruinato, appassionato</a>, <a href="http://www.youtube.com/watch?v=XglR15fY2zI">Acceso mio Core</a>), Tarquinio Merula (1595-1665) (<a href="http://www.youtube.com/watch?v=K0G4baeFRPo">Folle è ben che si crede</a>, adorable Raquel Andueza !), Virgilio Mazzocchi (1597-1646) (superbe cantate, <a href="http://www.youtube.com/watch?v=aue3s0D_Lao">Sdegno Campion Audace</a>),  Benedetto Ferrari (1597-1681) (<a href="http://www.youtube.com/watch?v=U_mLPL8BD-k">Amanti, io vi so dire</a>) et la liste ne s'arrête évidemment pas là.</p>
+                  </div>
 
-<li>Luigi Boccherini (1743-1805) fait partie de ces musiciens auquel le destin a réservé un sort plutôt flatteur, en premier lieu grâce à un <a href="http://www.youtube.com/watch?v=kSE15tLBdso">Menuet</a> anodin et un <a href="http://www.youtube.com/watch?v=p0f-rQV--jU">Quintette</a> opus 30 imaginatif, deux oeuvres fréquemment arrangées pour ensembles à cordes. Il a largement contribué au développement de la musique de chambre, singulièrement l'art du  quintette (à <a href="http://www.youtube.com/watch?v=PqcFZyOit1k">cordes</a> ou avec <a href="http://www.youtube.com/watch?v=6YXleGIULMA">guitare</a>). J'avoue cependant ne guère accrocher à ces oeuvres largement interchangeables, écrites à une époque où Mozart proposait ses ultimes chefs-d'oeuvre.</li>
+                  <div id="musiqueSacree">
+                    <h4>... et la musique sacrée</h4>
 
-<li>Domenico Cimarosa (1749-1801) en étonnera plus d'un avec ses opéras &quot;mozartiens&quot; <a href="http://www.youtube.com/watch?v=2lv4MokgIdc">Li Sposi per Accidenti</a>, <a href="http://www.youtube.com/watch?v=glBJowqKIAY">Le astuzie femminili</a>, sans compter le plus léger et mieux connu <a href="http://www.youtube.com/watch?v=FHgiTVn58kQ">Il Matrimonio Segreto</a>
-!</li>
+                    <p>Frappée de plein fouet par les exigences de la Contre-Réforme et d'un retour vers la simplicité dans la célébration du culte, la musique d'église italienne, singulièrement romaine, a vécu quelques années difficiles,  au cours desquelles le génie de  Giovanni Pierluigi da Palestrina (1525-1594), acteur (musical) principal du Concile de Trente (1545-1563), s'est trouvé particulièrement bridé.  Les musiciens éloignés de la papauté, voire carrément exilés dans les cours germaniques, furent moins atteints dans leur créativité et de fait, Annibale Padovano (1527-1575) n'a pas hésité à se lancer dans une <a href="http://www.youtube.com/watch?v=bWVzOsN_g_Q">Missa a 24</a>, richement instrumentée. A Venise, Andrea Gabrieli (1533-1595) (<a href="http://www.youtube.com/watch?v=wq-8WgIoMyM">Magnificat a 12</a> et <a href="http://www.youtube.com/watch?v=YXHGzT2sd-s">Enigma Communion O sacrum Convivum a 5</a>, ici dans une superbe interprétation dirigée par Paul McCreesh) a fait preuve de la même indépendance, annonçant le faste des oeuvres de son neveu Giovanni Gabrieli (1557-1612) pour Saint-Marc (<a href="http://www.youtube.com/watch?v=YLgFLMsvZYA">Canzon Terza à Quattro</a>, <a href="http://www.youtube.com/watch?v=NAZwJy1dpMU">Omnes Gentes a 16</a>).  On décèle chez le maître Marco Antonio Ingegneri (1535-1592) (<a href="http://www.youtube.com/watch?v=_uCkM1pTM5M">Officium Hebdomadae Sanctae</a>) les germes de la nouvelle pratique que développera son élève, Monteverdi. Quant à Alessandro Striggio (1537-1592), il n'hésita pas à flirter avec la démesure dans ses deux Messes (à <a href="http://www.youtube.com/watch?v=lyWgVk-lQy8">40 &amp; 60 voix </a>!), les recommandations du Concile sont décidément bien loin !</p>
+                    <p>Les messes  ultérieures revinrent à des proportions plus raisonnables : Giacomo Antonio Perti (1661-1756) (<a href="http://www.youtube.com/watch?v=1AdOGSy-700">Messa a 8 per San Domenico</a>), Antonio Lotti (1667-1740) (<a href="https://www.youtube.com/watch?v=7FPGF4HCKWg">Missa del sesto tuono</a>), Benedetto Marcello (1686-1739) (<a href="http://www.youtube.com/watch?v=9L_IudT2MQs">Requiem vénitien</a>), ... .</p>
+                    <p>Alors que   la Messe mise en musique existait depuis la Renaissance,   l'oratorio est né en même temps que l'opéra. Il se présente effectivement comme une  &quot;opératisation&quot; des épisodes de la Bible en-dehors de toute mise puisque cela était interdit par l'Eglise. Le genre a immédiatement fait  fortune, les oratorios  fleurissant par centaines au point qu'on ne cesse d'en exhumer aujourd'hui :</p>
 
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/caldara.jpg" alt="Antonio Caldara">
+                          <figcaption>Antonio Caldara</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/jomelli.jpg" alt="Niccolò Jommelli">
+                          <figcaption>Niccolò Jommelli</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
- <div><img src="../images/italie/salieri.jpg" alt="" /><div class="legende">Antonio salieri</div></div>
-    <div><img src="../images/italie/clementi.jpg" alt="" /><div class="legende">Muzio Clementi</div></div>
-     <div><img src="../images/italie/cherubini.jpg" alt="" /><div class="legende">Luigi Cherubini</div></div>
-    
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<li>Antonio Salieri (1750-1825), qui n'a évidemment pas empoisonné Mozart, mérite une réhabilitation en bonne et due forme : sa musique est d'une réelle efficacité sonore, singulièrement à l'opéra : <a href="http://www.youtube.com/watch?v=YPW382xDjuo">Les Danaïdes</a>, <a href="http://www.youtube.com/watch?v=JvMXFIlSWVU">Axur</a>, <a href="https://www.youtube.com/watch?v=vZ-KppJzwqs">Europa riconosciuta</a>, sans oublier le magnifique finale de <a href="http://www.youtube.com/watch?v=16GJfESSLbI">Prima la Musica e poi le Parole</a> (écoutez à partir de 1 min 16 sec, Mozart a peut-être écouté avant vous, ses Noces de Figaro datent en tous cas de la même année, 1786 !).  Si son <a href="http://www.youtube.com/watch?v=exXujZFSXH8">Requiem</a> ne vaut qu'un petit détour, je recommande sans hésitation les superbes <a href="http://www.youtube.com/watch?v=pUJkROWNROU">Variations</a> sur le thème des Folies d'Espagne et pourquoi pas la <a href="http://www.youtube.com/watch?v=s1bRATRhSeA">Symphonie Veneziana</a> qui ne manque effectivement pas d'allure ?</li>
+                    <p>Stefano Landi (1586-1639) (<a href="https://www.youtube.com/watch?v=P8Rh-StSzcM">Il Sant'Alessio</a>), Luigi Rossi (1597-1653) (<a href="http://www.youtube.com/watch?v=7cjp9eM2GXo">Un Peccator Pentito</a>),  Antonio Bertali (1605-1669) (<a href="http://www.youtube.com/watch?v=yEgE4s43wIg">La Strage Degl'innocenti</a>), Giacomo Carissimi (1605-1674), Francesco Provenzale (1624-1704) (<a href="http://www.youtube.com/watch?v=SnYDcaSoYRc">La Stellidaura vendicant</a>), Stradella (1639-1682) (<a href="http://www.youtube.com/watch?v=RocCp_YPSMc">Ester - Liberatrice del Popolo Hebreo</a>, <a href="http://www.youtube.com/watch?v=TGjE1A581qM">San Giovanni Battista</a>), Michelangelo Falvetti (1642-1692) (<a href="http://www.youtube.com/watch?v=214VRk-wVQM">Il Diluvio universale</a>), Giovanni Battista Bassani (1650-1716) (<a href="https://www.youtube.com/watch?v=8e80_0I99MA">La Tromba della Divina Misericordia</a>), Alessandro Scarlatti (1660-1725) (<a href="https://www.youtube.com/watch?v=_QV57C7eRcI">Il Primo Omicidio</a>), Giacomo Antonio Perti (1661-1756) (<a href="http://www.youtube.com/watch?v=cOOVnwWmymk">Gesu al Sepolcro</a>, <a href="http://www.youtube.com/watch?v=6MS5aDK1pi4">Moïse</a>), Antonio Caldara (1670-1736) (<a href="http://www.youtube.com/watch?v=PlBaOMo0by4">Maddalena ai piedi di Cristo</a>, <a href="http://www.youtube.com/watch?v=U1fDiagZqmM">La Conversion de Clovis</a>),   Giovanni Battista Pergolesi (1710-1736) (Superbes <a href="http://www.youtube.com/watch?v=2BtrbK8jcHQ">Vêpres à la Vierge</a>), Niccolò Jommelli (1714-1774) (<a href="http://www.youtube.com/watch?v=OepTMeKFsVk">Passione di Gesu</a>, <a href="http://www.youtube.com/watch?v=s5hHwuOISu8">Le Lamentazione del profeta Geremia per il Mercoledi Santo</a>, merveilleux Gérard Lesne), Giovanni Paisiello (1730-1814) (<a href="http://www.youtube.com/watch?v=FqJeiRGEIck">La Passione</a>), ... .</p>
+                    <p>La musique d'église de Vivaldi mérite les mêmes éloges que sa musique théâtrale : elle renferme des trésors que vous  découvrirez à (très) petit prix en vous procurant l'intégrale dirigée par <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Antonio-Vivaldi-1678-1741-Geistliche-Musik/hnum/1146606">Vittorio Negri</a> (Elle ne date pas d'hier mais elle demeure excellente sinon celle de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Geistliche-Musik-Vol-4/hnum/3864187">Robert King</a> la surpasse  en qualité mais hélas aussi en prix).</p>
+                    <p>Les exigences du culte ont inspiré quantité d'oeuvres aux dimensions plus modestes mais pas forcément moins intéressantes. Le Stabat Mater de Pergolèse est l'une des oeuvres baroques les plus souvent enregistrées (rien que sur le site <a href="http://www.jpc.de/s/pergol%C3%A8se+stabat+mater">jpc</a>, vous en trouverez une  collection où manque hélas  ma préférée, souvent passée sous silence et pourtant ... merci Mieke van der Sluis, Gérard Lesne &amp; René Clemencic <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/italie/stabatmater.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/italie/stabatmater.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>). Nul doute que vous apprécierez les oeuvres de  Vincenzo Ugolini (1580-1638) (superbe Motet à 3 choeurs,  <a href="http://www.youtube.com/watch?v=lfU6-8UprX8">Quae est ista</a>), Gregorio Allegri (1582-1652) (qui n'a pas écrit que le célèbre Miserere, la preuve par cette <a href="https://www.youtube.com/watch?v=UjhYd9ztAz0">Missa Vidi Turbam magnam</a>), Benedetto Ferrari (1597-1681) (<a href="http://www.youtube.com/watch?v=79BdBk4kb9Q">Queste pungenti spine</a>, encore lui, quel musicien !), Giovanni Legrenzi (1626-1690) (merveilleux <a href="http://www.youtube.com/watch?v=Bofbxcz4bqw">Lumi, potete piangere</a>), Bernardo Pasquini (1637-1710) (<a href="https://www.youtube.com/watch?v=knspnG0hUNE">Oratorio della Passione</a>), Agostino Steffani (1653-1728) (<a href="http://www.youtube.com/watch?v=PBze8HkrQ70">Stabat Mater</a>), Antonio Maria Bononcini (1677-1726)  (<a href="http://www.youtube.com/watch?v=RAQRwklrJkI">Stabat Mater</a>),  Benedetto Marcello (1686-1739) (<a href="http://www.youtube.com/watch?v=TWsk7quGOH8">Psaume 50</a> ), Leonardo Leo (1694-1744) (<a href="http://www.youtube.com/watch?v=-NQmLUqakxQ">Salve Regina</a>), à nouveau la liste pourrait ne jamais se terminer.</p>
+                  </div>
 
- <li>Muzio Clementi (1752-1832), présenté par ailleurs sur ce <a href="../chroniques/clementi.html">site</a>, a peut-être fait souffrir des générations d'apprentis pianistes, il n'en demeure pas moins un créateur de premier plan.  L'intégrale de son oeuvre pour piano est un must incontestable, disponible à petit prix sous les doigts peu experts de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-S%E4mtliche-Klaviersonaten/hnum/2975556">Costantino Mastroprimiano</a>, à prix doux sous ceux, experts, de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-Klavierwerke-Box-2-Vol-10-18/hnum/1750528">Pietro Spada</a> et au prix fort sous ceux brillantissimes de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-S%E4mtliche-Klaviersonaten-Vol-5/hnum/4298574">Howard Shelley</a>. Notez que le didactique et néanmoins passionnant <a href="https://www.youtube.com/watch?v=ruhsfzChf24">Gradus ad Parnassum</a> (court extrait joué ici par Danielle Laval) est rarement présent au rendez-vous de ces &quot;intégrales&quot; mais que Naxos  vient de combler cette lacune.</li>
- 
- <li>Luigi Cherubini (1760-1842) détient le titre de gloire du plus grand compositeur vivant de son temps, enfin c'est Beethoven qui l'a dit et on soupçonne que, muré dans son isolement, il n'était que très imparfaitement informé (Il n'a  découvert Schubert - qui fréquentait pourtant la même taverne viennoise que lui - que sur son lit de mort !).  Cela dit, l'oeuvre de  Cherubini vaut effectivement une écoute attentive ne serait-ce que pour comprendre le début de ce que Beethoven voulait dire (<a href="http://www.youtube.com/watch?v=laO7Zi6Zsm8">Requiem en do mineur</a>, <a href="http://www.youtube.com/watch?v=cz_FjyPEWEc&list=TL3Wy7w3eknK6duHan_khERhvlMrONUbTf">Chant sur la mort de Joseph Haydn</a>, sans oublier l'opéra <a href="http://www.youtube.com/watch?v=0HTlS0GSn98">Médée</a>, ressuscité en son temps par Maria Callas).</li>
-  
-  <p>Quelques compositeurs se sont illustrés dans la pratique virtuose de leur instrument de prédilection, guitare et/ou violon, curieusement souvent associés  : Giovanni Battista Viotti (1755-1824), Alessandro Rolla (1757-1841), Ferdinando Carulli (1770-1841), Mauro Giuliani (1781-1829), Giovanni Viotti (1755-1824) et
-bien sûr Niccolò Paganini (1782-1840). Quant à Domenico Dragonetti (1763-1846) et Giovanni Bottesini (1821-1889), ils se sont consacrés à la contrebasse, contribuant ainsi au maigre répertoire  de cet instrument. </p>
-  <p></p>
-  <p><i>L'envol lyrique.</i></p>
-  <p>Le chant  qui avait déjà connu ses premières heures de gloire virtuose à l'époque baroque va en connaître d'autres, nettement plus lyriques, pendant près de 100 ans. La démocratisation du concert a appelé l'agrandissement des salles et a encouragé l'éclosion de voix amples et belles. Un public de plus en plus fervent s'est constitué  à la Scala de Milan, à la Fenice de Venise ou à San Carlo de Naples, trois théâtres inaugurés vers 1778. De nombreux théâtres de province ont également vu le jour, alimentés par un large réservoir de chanteurs de qualité. Il ne restait plus qu'à mettre ces voix en valeurs, ce que firent  Gioacchino Rossini (1792-1868),   dans la veine pyrotechnique (± 40 opéras, composés en à peine 25 ans),  Giuseppe Verdi (1813-1901, ± 35 opéras) dans la veine héroïque et Giacomo Puccini (1858-1924, ± 12 opéras) dans le mode vériste. D'autres ont suivi, avec plus ou moins de bonheur et de goût : Gaspare Spontini (1774-1851), Gaetano Donizetti (1797-1848, ± 70 opéras), Vincenzo Bellini (1801-1835, ± 12 opéras), Amilcare Ponchielli (1834-1886), Arrigo Boito (1842-1918), Alfredo Catalani (1854-1893), Ruggero Leoncavallo (1858-1919), Alberto Franchetti (1860-1942), Pietro Mascagni (1863-1945), Francesco Cilea (1866-1950), Umberto Giordano (1867-1948) et Italo Montemezzi (1875-1952).
-  
-  <p>  Cet  univers est fascinant mais son étude sérieuse exigerait des développements qui ne peuvent trouver leur place ici. Je me bornerai donc à faire la publicité du <a href="https://www.youtube.com/watch?v=vd1XL9-lBpY">Mefistofele</a> de Arrigo Boïto, plus connu comme librettiste de Verdi dans ses deux chefs-d'oeuvre ultimes, Othello et Falstaff. On sait trop peu qu'il fut également un compositeur de valeur et on peut légitimement regretter l'oubli qui  frappe ses autres oeuvres scéniques, sauf peut-être <a href="http://www.youtube.com/watch?v=CduRaK-Fmg8">Nerone</a>, opéra interrompu par la mort et  complété, à des degrés divers, par Arturo Toscanini (qui l'a effectivement créé), Vincenzo Tommasini et Antonio Smareglia.</p>
-  <p>La plupart des musiciens dont la liste précède eurent ponctuellement l'ambition de briller ailleurs qu'à la scène mais on ignore largement   cette production parallèle :</p>
-  <li>Beaucoup y sont allé de belles oeuvres  religieuses, au caractère souvent théâtral : Rossini (belle <a href="https://www.youtube.com/watch?v=pyqQW7rCB0w">Petite Messe solennelle</a>), Verdi (célèbre Requiem qu'on ne présente plus), Puccini (<a href="http://www.youtube.com/watch?v=AiwyKqQxiQA&list=PL45FC2F30BC502855">Messa di Gloria</a> et Requiem), Bellini (Messes n°1, <a href="http://www.youtube.com/watch?v=rHsPIKBPUOk">n° 2</a> et n°3), Donizetti (<a href="http://www.youtube.com/watch?v=S9CodeK4swI">Requiem</a>).  </li>
-  <li>La musique de chambre est très présente chez Donizetti, auteur de 18 Quatuors à cordes (<a href="http://www.youtube.com/watch?v=E0Waxn7cMyo">n° 17</a>), tous enregistrés chez CPO.</li>
-  <li>Enfin, saviez-vous que Donizetti a écrit 13 Symphonies et  Bellini 7 (<a href="http://www.youtube.com/watch?v=2cnLTQKMBso">Symphonie en ré mineur</a>) ?</li>
-  <p>Toutes ces célébrités ne doivent pas occulter l'existence d'excellents musiciens bien moins connus : d'ascendance suisse, Carlo Evasio Soliva (1791-1853) a écrit  <a href="http://www.youtube.com/watch?v=I0mSgTIhIWg">La Testa di Bronzo</a> et <a href="http://www.youtube.com/watch?v=kGnlAwa2roU">Giulia e Sesto Pompeio</a>, qui ont fait l'objet de beaux enregistrements, à découvrir par les amateurs du genre. Saverio Mercadante (1795-1870) (<a href="http://www.youtube.com/watch?v=X2l2oD4sE1w">Il Lamento del Bardo</a>, <a href="http://www.youtube.com/watch?v=1wQt6lBCjg8">Emma d'Antiochia</a>), 
-  Giovanni Pacini (1796-1867) (<a href="http://www.youtube.com/watch?v=VL2d4bnL9Pg">L'ultimo Giorno di Pompei</a>), Lauro Rossi (1810-1885) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Lauro-Rossi-1812-1885-Cleopatra/hnum/4950425">Cleopatra</a>) et Filippo Marchetti (1831-1902) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Filippo-Marchetti-1831-1902-Romeo-Giulietta/hnum/6827091">Romeo e Giulietta</a>) ont également contribué au genre. Les amateurs de raretés vocales italiennes peuvent se tourner avec bonheur vers des enregistrements <a href="http://www.jpc.de/s/bongiovanni">Bongiovanni</a> ou vers l'album <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Opera-Italiana-Operngesamtaufnahmen/hnum/8981613">Opera italiana</a> paru chez Neos (40 CD pour 40 euros !)</p>
-<p>La musique italienne s'étant largement concentrée sur l'opéra, on admirera que  quelques artistes du cru aient eu le courage de résister à cette mode du temps, au risque avéré de se priver d'une large audience :</p>
-<li>Giovanni Sgambati (1843-1914)  fut un pianiste-compositeur surtout à l'aise dans la pratique de son instrument.  Ecoutez cet académiquement beau <a href="http://www.youtube.com/watch?v=GD9qCQmNkWo">Prélude &amp; Fugue</a>, opus 6, ou encore, pour le plaisir, l'un des bis favoris de Nelson Frère, une <a href="https://www.youtube.com/watch?v=0Iy2jjWYkRU">adaptation</a> très réussie d'un air célèbre de Gluck. Son <a href="http://www.youtube.com/watch?v=37dlnzTSF-s">Concerto</a> pour piano propose  un instrument brillant hélas flanqué d'un orchestre anémique.</li>
-<li>Luigi Mancinelli (1848-1921) mériterait que les éditeurs s'intéressent davantage à son oeuvre, certes légère mais très plaisante comme en atteste cet enregistrement Naxos reprenant <a href="http://www.youtube.com/watch?v=_OoWSJeHhYc">Scene Veneziane & Cleopatra</a>. </li>
-<li>Giuseppe Martucci (1856-1909) a été nettement plus heureux avec ses 2 symphonies (<a href="http://www.youtube.com/watch?v=a-fgTHRy9bI">n° 1</a>, <a href="http://www.youtube.com/watch?v=fASbUHQBxEc">n° 2</a>) et ses 2 concertos pour piano (<a href="http://www.youtube.com/watch?v=YofYHr6iKWw">n° 1</a>, <a href="http://www.youtube.com/watch?v=CcLJWsLdo8o&list=TLL-o91qdxJ5Sqw2oC2Wy_UmrwiTe1-SG7">n° 2</a>), à découvrir !</li>
-<p></p>
-  <div><img src="../images/italie/busoni.jpg" alt="" /><div class="legende">Ferruccio Busoni</div></div>
-  <div><img src="../images/italie/wolff.jpg" alt="" /><div class="legende">Ermanno Wolf-Ferrari</div></div>
-<p>Sans pour autant délaisser l'opéra mais en cessant de le privilégier, deux musiciens très différents, Ferruccio Busoni (1866-1924) et Ermanno Wolf-Ferrari (1876-1948), ont accéléré le renouveau instrumental italien. Il convient d'ajouter qu'ils présentaient, l'un et l'autre, le mélange assez rare des sensibilités italienne et allemande et ceci explique peut-être cela : </p>
-<li>Busoni a passé l'essentiel de son existence en Allemagne dont il a adopté une forme de rigueur qui le rapproche esthétiquement de Max Reger. Son goût pour le contrepoint l'a incité à transcrire pour le piano nombre d'oeuvres de Bach, pour le plus grand bonheur de pianistes avides d'épaisseur sonore (<a href="http://www.youtube.com/watch?v=sw9DlMNnpPM">Chaconne BW 1004</a>, <a href="http://www.dailymotion.com/video/x4pii6_bach-busoni-chorale-vladimir-horowi_music">Choral "Nun komm der Heiden Heiland" BWV 659</a>). Busoni s'est également rendu célèbre grâce à son grandiose et wagnérien <a href="http://www.youtube.com/watch?v=-rFV_g6T5lM">Concerto</a> pour piano, choeur &amp; orchestre, une oeuvre  miraculeusement préservée de la grandiloquence. Son remarquable opéra <a href="https://www.youtube.com/watch?v=xrFwfeKzRuE">Doktor Faust</a> est au répertoire des maisons exigeantes, au contraire d'Arlecchino, nettement plus anecdotique.</li>
-<li>Wolf-Ferrari a davantage hérité de sa  mère vénitienne que de son père allemand et c'est tant mieux.  Autant l'oeuvre de Busoni est dense et sévère, autant celle  de Wolf-Ferrari (Concertos pour <a href="http://www.youtube.com/watch?v=HJlrtuccFLM">violon</a> et pour <a href="http://www.youtube.com/watch?v=ZTEkIyLMwgs">cor anglais</a>) est légère et parfois sentimentale (sans honte, j'adore !). Les Joyaux de la Madonne (célèbre <a href="http://www.youtube.com/watch?v=x_B7Iavkuhs">Intermezzo</a>) est son opéra le plus connu mais écoutez aussi le prélude de <a href="https://www.youtube.com/watch?v=WSweXbiN8Wk">Il Campiello</a> : d'accord l'oeuvre, écrite en 1936, est anachronique mais quel bonheur !</li>
-  
-  <div><img src="../images/italie/pizzetti.jpg" alt="" /><div class="legende">Ildebrando Pizzetti</div></div>
-  <div><img src="../images/italie/respighi.jpg" alt="" /><div class="legende">Ottorino Respighi</div></div>
-  <div><img src="../images/italie/malipiero.jpg" alt="" /><div class="legende">G F Malipiero</div></div>
-  <div><img src="../images/italie/casella.jpg" alt="" /><div class="legende">Alfredo Casella</div></div>
-  <p>Quatre musiciens particulièrement attachants,  Ottorino Respighi (1879-1936), Ildebrando Pizzetti (1880-1968), Gian Francesco Malipiero (1882-1973) et Alfredo Casella (1883-1947), ont représenté l'Italie dans le concert européen du début du 20<sup>ème</sup> siècle, jusqu'à ce qu'un fascisme précoce ne vienne mettre un frein à cette belle vitalité :</p>
-  <li>Des quatre, Respighi est le plus justement célèbre, ayant  brillé dans tous les genres et tous les styles (<a href="https://www.youtube.com/watch?v=bB5KRHTPTjA">Concerto grégorien</a>, <a href="http://www.youtube.com/watch?v=NsE0NDzWw74">Sinfonia Drammatica</a>). Sauf les grincheux, tout le monde trouve son bonheur quelque part dans l'oeuvre de Respighi, depuis la célèbre Trilogie romaine (Pins de Rome, Fontaines de Rome, <a href="https://www.youtube.com/watch?v=C2EPHoMlqnk">Fêtes romaines</a>) jusqu'aux 3 joyeuses Suites dans le style ancien (<a href="http://www.youtube.com/watch?v=3BPloCq3ODE">Suite n°2</a>, ne manquez pas l'alerte Bergamasque à partir de 14:21). <a href="http://www.youtube.com/watch?v=-ugVAU5PneY">La Flamma</a> est son opéra le plus joué.</li>
-  <li>Pizzetti n'a pas connu les mêmes honneurs et cependant il fut l'égal de Respighi  : certes, sa <a href="https://www.youtube.com/watch?v=IvJW1h7RsH8">Sonate</a>, datée de 1942, sonne sans complexe comme issue d'un autre âge mais <a href="http://www.youtube.com/watch?v=-V-6TiWeUzo">Assassinio nella cattedrale</a> figure parmi les grands opéras du 20<sup>ème</sup> siècle. De même si <a href="http://www.youtube.com/watch?v=5mggUZWOuNk">Canti della stagione alta</a> nage à contre-courant, en plein romantisme, le <a href="http://www.youtube.com/watch?v=XIPByJMmsTc">Quatuor</a> à cordes est plus sévère. Quoi qu'il en soit, l'inspiration est au rendez-vous.</li>
-  <li>Etrangement, c'est Malipiero qui a été le mieux servi par les studios d'enregistrements, en particulier sa musique symphonique : 11 symphonies (<a href="http://www.youtube.com/watch?v=m1Tuwn0LBsA">n°8</a>, <a href="http://www.youtube.com/watch?v=_1JkOcveH4g">n°11</a>), 6 concertos pour piano (<a href="http://www.youtube.com/watch?v=sxDxyj7B864">n°6</a>) et 2 concertos pour violon (<a href="https://www.youtube.com/watch?v=6zIZL1rwrCM">n°1</a>). C'est une anomalie dont le sens m'échappe.</li>
-  <li>L'oeuvre de Casella a mis davantage de temps à s'imposer que celle de Malipiero alors qu'elle lui est supérieure en tous points. Ses 3 symphonies (<a href="http://www.youtube.com/watch?v=TP4Le57hFu0&list=PLFFEB4A78BFDBD535">n°1</a>, <a href="http://www.youtube.com/watch?v=02MMhs3mcTU">n°2</a> et <a href="http://www.youtube.com/watch?v=a7uwpB11TpM">n°3</a>) qui ont enfin trouvé des interprètes à leur mesure sont  remarquables de même que <a href="https://www.youtube.com/watch?v=k8QBZwd986A">A Notte Alta</a>, pour piano & orchestre. Voici encore le <a href="http://www.youtube.com/watch?v=U3GaXpfSGcY">Concerto</a> pour cordes, piano &amp; percussions.</li>
-  
-  
+                  <div id="violonMemeNom">
+                    <h4>... et le violon du même nom</h4>
 
-  <p></p>
-  <p><i>L'époque contemporaine.</i></p>
-  <p>L'avènement du fascisme, la guerre et ses conséquences ont bouleversé le paysage musical italien, désormais éclaté en plusieurs tendances :</p>
+                    <p>Le 17<sup>ème</sup> siècle a manifesté un intérêt immédiat  pour les progrès de la facture  instrumentale : Giovanni Bassano (1558-1617) (<a href="http://www.youtube.com/watch?v=4BlyLbly4g8">Fantasia a tre voci</a>), Antonio Brunelli (1577-1630) (<a href="http://www.youtube.com/watch?v=G6jcOpdKWac">Canzona</a>), Girolamo Frescobaldi (1583-1643) (<a href="https://www.youtube.com/watch?v=0h_g30WimHU">Canzonas</a>), Andrea Falconieri (1585-1656)  (<a href="http://www.youtube.com/watch?v=F6O-Khn9SYE">La Suave Melodia</a>, <a href="http://www.youtube.com/watch?v=MTeVsPljBiY">Ciaccona</a>, <a href="http://www.youtube.com/watch?v=120hfW34Pkg">Folia</a>), Maurizio Cazzati (1616-1678) (<a href="http://www.youtube.com/watch?v=L_vrBLedI9E">Ciaconna </a>),  Giovanni Legrenzi (1626-1690) (Superbe <a href="http://www.youtube.com/watch?v=ggO2TxZ0MSU">Aria</a>) ont ciselé des partitions  où le luth règne encore en maître.</p>
 
-<p><i>Les "rétros" ...</i></p>
-<p>Quelques musiciens largement inconnus  ont écrit sans complexe une musique avenante  aux antipodes de la création de pointe. Le doyen de ces romantiques attardés pourrait être Lorenzo Perosi (1872-1956) (<a href="http://www.youtube.com/watch?v=RzjA_2T8l30">Suite n°6</a> pour orchestre).  Il semble difficile d'écrire une musique plus facile - ce qui est rarement un compliment - mais dont la naïve sincérité  est telle qu'on ne peut que l'écouter avec plaisir, en cachette si vous craignez pour votre réputation.  Dans son sillage, 
-  
-  
-  ont oeuvré : Franco Alfano (1875-1954) (<a href="https://www.youtube.com/watch?v=Hn98n-xX4ZA">Symphonie n°2</a>), Francesco Balilla Pratella (1880-1955) (surprenant <a href="http://www.youtube.com/watch?v=CeMlJE-ZxtU">Trio</a> à clavier), Riccardo Pick-Mangiagalli (1882-1949) (<a href="http://www.youtube.com/watch?v=0S90yYZIuXE">Sortilegi</a>), Riccardo Zandonai (1883-1944) (<a href="http://www.youtube.com/watch?v=gASMiQut5jM">Concerto Romantico</a> pour violon),
-  
-  Carlo Giorgio Garofalo (1886-1962) (<a href="http://www.youtube.com/watch?v=Wc029DpgirE">Concerto</a> pour violon),
-  Giorgio Federico Ghedini (1892-1965) (original <a href="http://www.youtube.com/watch?v=sPvMEOz4wXI">Concerto Spirituale</a>, <a href="http://www.youtube.com/watch?v=M8V-JmmneaU">Musica Concertante</a>, <a href="https://www.youtube.com/watch?v=AbboL5ZoRuM">Architetture</a>, <a href="http://www.youtube.com/watch?v=TCASJkM23ng">Concerto</a> pour alto & cordes), à découvrir en priorité, Aldo Finzi (1897-1945) (<a href="http://www.youtube.com/watch?v=Xoj5zRVZP-0">Liriche</a>),  Virgilio Mortari (1902-1993) (<a href="http://www.youtube.com/watch?v=KaHMrI9XWDY">Figurazioni</a>), Franco Ferrara (1911-1985) (<a href="http://www.youtube.com/watch?v=n8Cu5APY7ks">Fantasia Tragica</a>), Gian Carlo Menotti (1911-2007) (<a href="https://www.youtube.com/watch?v=yT48bgqoXSQ">Concerto</a> pour piano), Carlo Florindo Semini (1914-2004) (<a href="http://www.youtube.com/watch?v=X3dtIssu118">Mosaici di Piazza Armerina</a>) et Ugo Amendola (1917-1995) (<a href="http://www.youtube.com/watch?v=-izg3Jb7WuM">Quatuor</a>).</p>
-  <div><img src="../images/italie/tedesco1.jpg" alt="" /><div class="legende">Mario Castelnuovo-Tedesco</div></div>
- <div><img src="../images/italie/tedesco.jpg" alt="" /></div> 
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/uccellini.jpg" alt="CD Marco Uccellini"/>
+                          <figcaption>CD Marco Uccellini</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-<p>  J'ai gardé pour le dessert l'oeuvre abondante et variée de
-Mario Castelnuovo-Tedesco (1895-1968) qui n'a pas écrit que pour la guitare (<a href="http://www.youtube.com/watch?v=zuqi8E1s4_c">Sonate</a> "Omaggio a Boccherini", <a href="http://www.youtube.com/watch?v=mh22SuqQ6LA">Tonadilla</a>, <a href="http://www.youtube.com/watch?v=7Y0cxGjGG4A">Concerto n°1</a>), loin de là ! Ce musicien élégant et toujours de bonne humeur fut un  aristocrate de la musique qu'on a plaisir à écouter (<a href="https://www.youtube.com/watch?v=2tXsteQWH-g">Concerto n°2</a> pour piano, <a href="http://www.youtube.com/watch?v=p6gZiirRnsM">I Naviganti</a>, <a href="http://www.youtube.com/watch?v=EVuEBpYvk30">Concerto n°2</a> pour violon - l'entrée du violon de Jascha Heifetz après 1min 15sec ! - et superbe <a href="http://www.youtube.com/watch?v=KNjHE-2BKN8">Ricercare</a> sur le nom de Luigi Dallapiccola,  ...).</p>
+                    <p>Toutefois, c'est le développement de la lutherie à cordes frottées qui a révolutionné la musique instrumentale européenne maintenant sa longueur d'avance aux compositeurs transalpins. Les  premiers recueils  novateurs mirent le violon solo en évidence, avec un  accompagnement en arrière-plan se présentant comme une bas(s)e continue, habituellement remplie par le violoncelle, la viole de gambe, le clavecin, le théorbe, le luth, ... .  Comme il arrive fréquemment, les premiers essais comptèrent parmi les plus audacieux et, à ce titre, ils demeurent particulièrement précieux à nos oreilles contemporaines. Ces nouveaux virtuoses eurent pour noms :  Giovanni Battista Fontana (1571-1630) (<a href="http://www.youtube.com/watch?v=40bswWNzIWw">Sonate n°2</a>), Dario Castello (1590-1630) (<a href="http://www.youtube.com/watch?v=6vnFv3CdCuE">Sonate Concertate</a>), Biagio Marini (1594-1663) (<a href="http://www.youtube.com/watch?v=68kknaL6wS0">Passacaille en sol</a>), Giovanni Battista Buonamente (1595-1642) (<a href="http://www.youtube.com/watch?v=cEsMYLVrfD4">Sonata quarta</a>) et Carlo Farina (1600-1640) (<a href="http://www.youtube.com/watch?v=6k2W8_fGYGw">Sonata detta la Moretta</a>).  Aucun musicien n'incarne cependant mieux l'extravagance baroque que Marco Uccellini (1603-1680) (<a href="http://www.youtube.com/watch?v=v1Nux0nIoWY">La Luciminia contenta</a>) voire Antonio Bertali (1605-1669) (<a href="http://www.youtube.com/watch?v=FrzZ6InNDX4&list=PL255047AA05620D86">Sonate n°1</a> et sa célèbre <a href="http://www.youtube.com/watch?v=diDtqzXm_0c">Ciaconna</a>). </p>
+                    <p>Ces précurseurs furent bientôt  suivis par une  armada de (violonistes-)compositeurs  : Giovanni Antonio Pandolfi Mealli (1630-1669) (<a href="http://www.youtube.com/watch?v=Q7_5aIpnfGA">La Monella Romanesca</a>), Giovanni Battista Vitali (1632-1692) (<a href="https://www.youtube.com/watch?v=ZQ28ICrtyuQ">Capricci,Passagalli,Ciaccona</a>),  Ignazio Albertini (1644-1685) (<a href="http://www.youtube.com/watch?v=xbL8Bh4zVRc&list=PLC396907119B769D1">Sonates</a>), Arcangelo Corelli (1653-1713) (<a href="http://www.youtube.com/watch?v=VHRdFILo_Yw">La Follia</a>),  Francesco Antonio Bonporti (1653-1713) (<a href="http://www.youtube.com/watch?v=V3U3ExTU3_E">Invenzioni</a>), Antonio Veracini (1659-1745) (<a href="http://www.youtube.com/watch?v=VQKMh89NSoE">Sonate op 1-1</a>), Tomaso Antonio Vitali (1663-1745) (fils du précédent, dont la célèbre <a href="http://www.youtube.com/watch?v=wvW9PkT_oEo">Ciaccona</a>, a souvent été arrangée),     Nicola Matteis (????-1714) (<a href="http://www.youtube.com/watch?v=kKwobKWAc6k">Diverse bizzarie Sopra la Vecchia Sarabanda</a>), Tomaso Albinoni (1671-1751) (<a href="http://www.youtube.com/watch?v=A64hFW0TVws">Sonate da Camera</a>), Nicolo Porpora (1686-1768) (<a href="http://www.youtube.com/watch?v=-MgAvs4hKZ4">12 Sonates</a>),  Francesco Maria Veracini (1690-1768) (neveu du précédent, superbes <a href="http://www.youtube.com/watch?v=Pk6vU102KTU">Dissertazioni sull' Op V del Corelli</a>), Giuseppe Tartini (1692-1770) (<a href="http://www.youtube.com/watch?v=T5pn3QOGMPk">Il Trillo del Diavolo</a>).</p>
 
-<p></p>
-<p><i>... et les "gauchos".</i></p>
-<p>Au sortir de la guerre, quelques musiciens aux prétentions nettement  savantes exercèrent une influence considérable sur la création musicale européenne.  Tous ont vécu douloureusement le(s séquelles du) fascisme et se sont tournés, comme un seul homme, vers l'idéologie marxiste-léniniste pour ne pas dire stalinienne. Ne comptez pas sur moi pour vous expliquer ce qui caractérise une musique de gauche, sauf peut-être le choix des arguments littéraires dans les oeuvres théâtrales.  
-Par bonheur, la musique ne se laisse pas si facilement récupérer et, aujourd'hui, il ne reste qu'une interprétation du dogme sériel savamment sinon harmonieusement tempérée par un lyrisme atavique  : attention les musiques qui suivent ne sont pas destinées à bercer les enfants difficiles.</p>
+                    <p><i>Note : Depuis les débuts du renouveau baroque, les dames se sont  illustrées pour ne pas dire imposées au violon baroque (Susanne Lautenbacher, Elizabeth Wallfisch, Alice Harnoncourt, Lucy van Dael,  Monica Hugett, Amandine Beyer, Jeanne Lamon, ...).  Impossible à ce stade de ne pas rendre le plus vibrant des hommages à Hélène Schmitt. Non contente de promouvoir - avec quelle généreuse rigueur - le répertoire le plus méconnu, elle justifie ses choix, en particulier celui de Nicola Matteis, dans une notice si justement écrite que je ne peux que la retranscrire : &quot;Quant à moi, après avoir respiré les airs ombreux de la musique de Schmelzer et de ses contemporains, je voulais de tout mon coeur me consacrer à une musique qui dirait la joie, l'exubérance de la joie et son irrésistible contagion. Et de fait, je ne pouvais penser qu'à Matteis, ce napolitain exilé à Londres, joueur de guitare et de violon, parti faire fortune et achetant dans les dernières années de sa vie un manoir dans le Norfolk, sans jamais retourner, même sur le tard de sa vie, là où il était né, dans cette ville capiteuse où même les citrons sont sucrés. Sa musique radieuse ne dit pas ces blessures-là si tant est qu'il en fût, ne sanglote ni ne pâme; elle ferait plutôt une farce à la sirène Parthénopé en l'envoyant en rêve sur les froids rivages de la Tamise pour la faire rire ...&quot;. D'autres révélations que nous lui devons ont pour nom : Ignazio Albertini (1644-1685) (<a href="http://www.youtube.com/watch?v=xbL8Bh4zVRc&list=PLC396907119B769D1">Sonates pour violon &amp; continuo</a>) et Giovanni Stefano Carbonelli (1700-1773) (<a href="http://www.youtube.com/watch?v=PxtTDNieag8">Aria con Variazioni</a> ou <a href="http://www.youtube.com/watch?v=PxtTDNieag8">Sonate</a> pour violon &amp; basse continue).</i></p>
 
-  <div><img src="../images/italie/dallapiccola.jpg" alt="" /><div class="legende">Luigi Dallapiccola</div></div>
-<li>Plus ancien donc peut-être plus sage, Luigi Dallapiccola (1904-1975) est celui par qui vous devez commencer cette exploration, d'autant que son oeuvre est tout simplement magistrale. Il n'a jamais cherché à étaler sa science, elle s'est imposée naturellement au travers d'oeuvres aussi diverses que  <a href="http://www.youtube.com/watch?v=d7_Cm8Y2OyA">Vol de Nuit</a>, d'après Saint Exupéry, <a href="http://www.youtube.com/watch?v=UKXJqlQj1vM">Sonatina Canonica</a>, d'après Paganini,  <a href="http://www.youtube.com/watch?v=0wGj3URCZlQ">Il Prigioniero</a>, d'après Villiers de l'Isle-Adam et Charles de Coster ou <a href="http://www.youtube.com/watch?v=Adsb2HokV6I">Tartiniana I</a> &  <a href="http://www.youtube.com/watch?v=ADqAareCDaw">Tartiniana II</a>, d'après Tartini. Vous l'avez observé, les références sont multiples et elles font mouche.</li>
-<li>Bruno Maderna (1920-1973) fut un musicien versatile dont l'oeuvre est demeurée largement accessible jusqu'en 1950 (<a href="https://www.youtube.com/watch?v=u34QWmBvJds">Concerto</a> pour piano, <a href="http://www.youtube.com/watch?v=vMOR0flIjt8">Requiem</a>) et plus hasardeusement expérimentale ensuite (<a href="http://www.youtube.com/watch?v=TBYQ3GWSACs">Hyperion</a>).</li>
-<li>Luigi Nono (1924-1990) fut un membre particulièrement actif de l'intellectualisme de gauche jusqu'à ce que l'Archipel du Goulag le fasse changer d'avis, lui comme tant d'autres. Adepte de l'ascèse sérielle (il avait  épousé Nuria Schönberg, la fille de l'illustre compositeur), membre d'un trio militant avec Boulez et Stockhausen, il finit par se fâcher avec se dernier, rejetant en particulier l'intrusion de l'aléatoire en musique. Sa rencontre avec Schnittke et Pärt déboucha sur des oeuvres au réel pouvoir de séduction, telle <a href="http://www.youtube.com/watch?v=X-CKVm8MXxU">La Lontananza Nostalgica Utopica Futura</a>, pour violon solo - Guidon Kremer ! - &amp; électronique (à découvrir absolument). Passez ensuite à Prometeo, <a href="https://www.youtube.com/watch?v=33WK3zcUgkg">Guai Ai Gelidi Mostri</a> et <a href="https://www.youtube.com/watch?v=x3PGZyoR6B0">Il Canto Sospeso</a>. </li>
-<li>La musique écrite par Luciano Berio (1925-2003) peut être nettement plus indigeste. Ne vous laissez pas abuser par la facilité de <a href="http://www.youtube.com/watch?v=Q_DpEaKsFm4">Folksongs</a> qui n'est absolument pas représentative de l'oeuvre entière.  Si <a href="https://www.youtube.com/watch?v=JwJHu2gSj1A">Sinfonia</a> est justement devenue célèbre, en grande partie grâce à son hommage à Mahler, il n'en va guère de même des 14 Sequenza pour instruments solistes (<a href="http://www.youtube.com/watch?v=QFNpao45Ax8">violoncelle</a>, <a href="http://www.youtube.com/watch?v=de1mwOaW8Dc">basson</a>, ...) qui ont toutes les chances de vous indisposer.</td>
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/abacco.jpg" alt="CD Joseph-Marie-Clement dall' Abaco"/>
+                          <figcaption>CD Joseph-Marie-Clement dall' Abaco</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-<p></li>
-<p>Par bonheur, l'Italie ne fut pas avare de musiciens indépendants demeurant à l'écart des écoles. J'ai déjà présenté par ailleurs le cas tout à fait particulier de <a href="../chroniques/scelsi.html">Giacinto Scelsi</a> (1905-1988) donc je n'insiste pas. Goffredo Petrassi (1904-2003), le pédagogue le plus influent de ce temps, ne rejeta aucun style a priori (néo-classsiques <a href="http://www.youtube.com/watch?v=vkdJF44hLak">Concerto</a> pour piano et <a href="http://www.youtube.com/watch?v=BC1CClO5qAM">Partita</a> pour orchestre, néo-baroques <a href="https://www.youtube.com/watch?v=ZsjG4l_mApM">Magnificat</a> ou <a href="http://www.youtube.com/watch?v=K1bJ7iL7pAI">Salmo IX</a>, modernes 12  pconcertosour orchestre (<a href="https://www.youtube.com/watch?v=x3gs_7p5CQM">n°5</a>)).</p>
-<div><img src="../images/italie/testi.jpg" alt="" /></div>
- <div><img src="../images/italie/romitelli.jpg" alt="" /></div>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p>Je n'ai hélas trouvé qu'un seul <a href="http://musique.fnac.com/a1578748/Flavio-Testi-Saul-CD-album">enregistrement</a>  d'une oeuvre de Flavio Testi (1923- ) et je le regrette. Cet extrait de <a href="http://www.youtube.com/watch?v=w1iKbeFRndk">Saül</a>, étonnant de conviction sonore, exige qu'on nous en propose d'autres. Aldo Clementi (1925-2011) s'est libéré, comme beaucoup d'autres, de l'emprise sérielle, n'hésitant pas à puiser son inspiration dans un passé lointain (étrange <a href="http://www.youtube.com/watch?v=wUkBHzY_kOc">Concerto n°2</a> pour violon). Ecoutez encore, de Boris Porena (1927- ), <a href="http://www.youtube.com/watch?v=P0zENmKO0dA">Musica per quartetto d'archi</a> et Vivaldi 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/italie/porena.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/italie/porena.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>, de Lorenzo Ferrero (1951- ), <a href="http://www.youtube.com/watch?v=0DN5q7OjgCk">La ruta de Cortés</a>, extraite d'une suite de 6 Poèmes symphoniques "La nueva Espana", 
-  de Giulio Castagnoli (1958- ), ce singulier <a href="http://www.youtube.com/watch?v=mn_55dO7b4w">Concerto</a> pour piano,
-  de Marco Stroppa (1959- ), <a href="http://www.youtube.com/watch?v=fFmgYi0SnCU">Spirali</a>, pour quatuor à cordes, et de Carlo Galante (1959- ), ce <a href="http://www.youtube.com/watch?v=v34EKEnVoS0">Concerto</a> pour violon.</p>
-<p>L'avant-garde pure et dure, représentée  Franco Donatoni (1927-2000) est  originale mais elle vous semblera sans doute d'un accès difficile (<a href="http://www.youtube.com/watch?v=dk2M1TVSe7A">Le Ruisseau sur l'Escalier</a>). Si la musique de Sylvano Bussotti (1931- ) (<a href="http://www.youtube.com/watch?v=PyXDrDjifLI">Lorenzaccio symphony</a>) me semble complètement datée, celles de Niccolò Castiglioni (1932-1996)  (<a href="http://www.youtube.com/watch?v=PYcYkoqFB4U">Sinfonia con rosignolo</a>), Salvatore Sciarrino (1947- ) (<a href="http://www.youtube.com/watch?v=JnAy8A9y1Jo">Morte di Borromini</a>) ou Alessandro Solbiati (1956- ) (<a href="http://www.youtube.com/watch?v=4_VArnrZ9Bg">Sinfonia Terza</a>) devraient attirer les esprits curieux et patients. </p>
+                    <p>Les luthiers crémonais n'ont pas créé que des violons et  quelques musiciens ont également spécifiquement écrit pour les autres membres de la famille : Joseph-Marie-Clement dall' Abaco (1710-1805) s'est illustré au violoncelle dans ces  Caprices (<a href="http://www.youtube.com/watch?v=euYEgpjmnCk">n°5</a> &amp; <a href="http://www.youtube.com/watch?v=bKXLlg53GpY">n°8</a>, superbement joués par Kristin von der Goltz), Francesco Corbetta (1615-1681) a fait de même à la  guitare (baroque)  (<a href="http://www.youtube.com/watch?v=g7mYSvUfnms">Caprice de Chaconei</a>) et Giovanni Zamboni (1650- ????) à l'archiluth (<a href="https://www.youtube.com/watch?v=oqKjY6t5Oxo">Sonate X</a>). On redécouvre encore, et avec quel plaisir !, l'art très soigné d'Angelo Berardi (1636-1694), à la  flûte (<a href="https://www.youtube.com/watch?v=HYzpWuU_EIE">Canzone sesta</a>) ou au violoncelle (Un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Angelo-Berardi-1636-1684-Sinfonie-Opera-Settima/hnum/1857030">CD</a> recommandable).</p>
+                  </div>
 
- <p></p>
-<div><img src="../images/italie/fedele.jpg" alt="" /><div class="legende">Ivan Fedele</div></div>
-  <div><img src="../images/italie/romitelli1.jpg" alt="" /><div class="legende">Fausto Romitelli</div></div>
-<p>Deux musiciens émergent cependant avec un maximum de force, sans doute les compositeurs les plus remarquables de l'Italie contemporaine :</p>
-<li>Ivan Fedele (1953- ) écrit de la bonne musique moderne capable de satisfaire les auditeurs exigeant clarté et complexité (<a href="http://www.youtube.com/watch?v=BtIFAa1blO4">33 noms</a>, <a href="http://www.youtube.com/watch?v=zLXVrLTUBZ4">Notturno</a>, <a href="http://www.youtube.com/watch?v=L41flQVQ7L8">La Chute de la Maison Usher</a>). Ne manquez pas davantage <a href="http://www.youtube.com/watch?v=CUay0x5oRLI">Etudes Australes I, II &amp; IV</a>, de l'excellent piano moderne. &quot;Le ali di Cantorun&quot; est un chef-d'oeuvre qui a eu la chance d'être superbement dirigé par Pierre Boulez hélas j'ai perdu la trace de l'enregistrement</li>
-<li>Fausto Romitelli (1963-2004) (<a href="http://www.youtube.com/watch?v=gnhhZY3AJRo">La sabbia del tiempo</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Fausto-Romitelli-20-Jh-1963-2004-Kammermusik-The-Nameless-City/hnum/2689676">The Nameless City</a>)  a également écrit des oeuvres extrêmement convaincantes : quel dommage qu'il ait disparu si jeune ! Deux CD made in Belgium (Ensembles Musiques nouvelles et Ictus) ont parus chez Cypres,  qui doivent  figurer en bonne place sur votre liste de cadeaux pour Noël, on vous remerciera dans 20 ans !</li>
-  <p>Le label Naxos s'intéresse à  la musique écrite par Elisabetta Brusa (1954- ), plusieurs volumes sont déjà disponibles. Le néo-tonalisme de bon aloi de la <a href="https://www.youtube.com/watch?v=fsxh5alWHu8">Symphonie n°1</a> rend la découverte agréable.</p>
-  
- 
- 
-  <p></p>
-<p>Le cinéma italien, particulièrement créatif  après la deuxième guerre mondiale, a donné du boulot aux collègues musiciens. Deux compositeurs célèbres ont fait preuve d'inspiration à cette occasion :</p>
-<li>Le nom de Nino Rota (1911-1979) a été fréquemment associé à celui de Federico Fellini (La Strada, La dolce Vita, Huit et demi, Satyricon, Amarcord, Casanova et Prova d'orchestra). Rota a également beaucoup écrit dans tous les genres traditionnels : 4 Symphonies (<a href="https://www.youtube.com/watch?v=ncAMkK-r7_E">n°1</a>, <a href="https://www.youtube.com/watch?v=NoLLwvIsmQs">n°3</a>), trois fois plus de Concertos (<a href="http://www.youtube.com/watch?v=H36IgwvkYbs">pour piano</a>, <a href="https://www.youtube.com/watch?v=-wc7tGwY_C4">pour cordes</a>),  de la musique de chambre (<a href="http://www.youtube.com/watch?v=oISfLF_N1xA">Nonette</a>, <a href="https://www.youtube.com/watch?v=qSw9J8N9aFo">Persepio</a>) sans compter une douzaine d'opéras, fort oubliés il est vrai. Son oeuvre plaisante a fait l'objet de nombreux enregistrements.  </li>
-<li>Plus près de nous, Ennio Morricone a connu la gloire cinématographique lors de sa collaboration avec Sergio Leone (Pour une Poignée de Dollars, Le Bon, la Brute et le Truand, Il était une fois dans l'Ouest,  Il était une fois la Révolution) mais il a écrit plus de 500 partitions similaires ! Ce que l'on sait moins, c'est que Morricone a également écrit beaucoup de musique pure. De façon surprenante, on ne l'entend pratiquement jamais et ce recordman des ventes de CD cinématographiques ne semble  pas s'être soucié d'assurer une pérennité à ses oeuvres plus ambitieuses. J'ai quand même déniché ces excellents Esercizi 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/italie/morricone.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/italie/morricone.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> pour cordes.</li>
-<p></p>
-<p><i>La vie musicale en Italie.</i></p>
-  
-  <p>L'Italie n'est plus aussi prodigue en &quot;grandes&quot; voix lyriques que par le passé. Mis à part Cecilia Bartoli et Luciano Pavarotti, et encore il n'est plus de ce monde, qui peut encore prétendre rivaliser avec les vedettes d'un passé pas si lointain, Renata Tebaldi, Mirella Freni, Katia Ricciarelli, Renata Scotto, Enrico Caruso, Benjamino Gigli, Franco Corelli, Tito Schipa, Giuseppe Di Stefano, ... ? Aujourd'hui, en contrepartie, les &quot;petites&quot; voix abondent, Gloria Banditelli, Sara Mingardo, Roberta Invernizzi, Franco Fagioli, Marco Beasley, ..., qui se sont recyclées au service de l'héritage baroque. Intégrées à des ensembles bien rôdés, Elyma, Capella della Pieta de Turchini, Accordone, Accademia del Piacere, Venexiana, Compagnie del Madrigale, Concerto Italiano, Capella Mediterranea, ..., elles  font des merveilles.</p>
-  <p>Les labels peu connus, <a href="http://tactus.it/home/">Tactus</a> et <a href="http://www.bongiovanni70.com/site/">Bongiovanni</a> se consacrent essentiellement à l'exhumation d'oeuvres oubliées ou négligées.  Ils ont, en particulier, gravé quantité de productions théâtrales provinciales. On ne peut que les en louer même si toutes ne sont pas d'un intérêt ni d'une qualité vocale et technique irréprochables.  Cela dit si vous collectionnez les opéras "exotiques", c'est votre unique espoir d'assouvir votre passion.</p>
-  
-  <p>Au piano, Arturo Benedetti Michelangeli et Maurizio Pollini se sont imposés comme deux des plus grands pianistes du 20<sup>ème</sup> siècle.  Ils ont connu les chefs Claudio Abbado, Riccardo Muti et Ricardo Chailly mais évidemment pas Il Maestro Arturo Toscanini.</p>
-  
-  
-  <p></p>
-  <p>Depuis Stendahl, il est de bon ton de faire son pèlerinage artistique en Italie : le nôtre,  bien trop court, se termine ici. On en sort ébloui mais avec la peur rétrospective de tout mélanger de ce qu'on a entendu. Si Monteverdi, Vivaldi et Verdi sont de fait incontournables, si Caldara, Pergolèse, Salieri, Rossini, Puccini, Respighi, Dallapiccola valaient le détour prévu, j'aime aussi me souvenir de quelques coups de coeur qui n'étaient annoncés qu'en petits caractères dans le guide quand ils n'étaient pas simplement omis :  Uccellini, Vinci, Ferrari, Marcello, Galuppi,  Martucci, Wolf-Ferrari,  Perosi, Testi, Castelnuovo-Tedesco, Ghedini, Fedele, Romitelli, pas forcément des géants  mais de vrais pourvoyeurs de plaisir sonore et d'émotion. </p>
-              </div>
+                  <div id="concertinoRipienoContinuo">
+                    <h4>... Concertino, Ripieno &amp; Continuo</h4>
+
+                    <p>Le développement fulgurant de l'instrumentarium baroque a également stimulé le plaisir de jouer &quot;de concert&quot; : l'orchestre (baroque) était né, conservant aux italiens  leur longueur d'avance, le temps que la recette s'exporte et s'adapte un peu partout en Europe. Le CD a largement exploité le répertoire instrumental baroque et de nombreuses anthologies ont paru, couvrant toutes les décennies (<a href="http://www.youtube.com/watch?v=739R9G0qDH8">Dances and Music from the Italian Renaissance</a>, <a href="https://www.youtube.com/watch?v=BNXI9pKJFFY">Invenzioni e Stravaganze</a>, ... ).</p>
+
+                    <p>Deux musiciens ont marqué de leur empreinte le genre du concerto baroque :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Arcangelo Corelli (1653-1713) est réputé l'inventeur du Concerto Grosso. Parent de la  Sinfonia, il fonctionne sur le principe d'un dialogue entre les instruments solistes et le reste des cordes, soutenues par l'omniprésent continuo (d'où le sous-titre de ce paragraphe).</li>
+                      <li>Antonio Vivaldi (1678-1741) a étendu le concertino à toutes sortes d'instruments solistes,  du violon à la mandoline en passant par le basson, la flûte, la trompette, le violoncelle et j'en oublie. Stravinsky, qui devait être d'humeur chagrine ce jour-là,  lui a reproché d'avoir réécrit 700 fois le même concerto ce qui est parfaitement injuste : écoutez cette intégrale des <a href="http://www.youtube.com/watch?v=Ogk-OL8hGCI">Concerti pour violoncelle</a>, 4 heures de musique, et dites-moi si vous vous êtes ennuyés (faites des pauses quand même !).Une bonne partie de l'oeuvre de Vivaldi dormait dans la bibliothèque de l'obscur collège salésien San Carlo de Borgo San Martino et elle n'a  refait surface, en 1922, que suite aux besoins d'argent de cette institution pour des travaux de réfection : on vendit des manuscrits qui devinrent précieux au moment de leur expertise. Ceux-ci ont fait l'objet d'éditions modernes et enfin d'enregistrements récents.</li>
+                    </ul>
+
+                    <p><i>Note. Beaucoup d'oeuvres anciennes ont disparu dans les incendies et d'autres dorment encore dans les réserves de bibliothèques poussiéreuses. L'essentiel de l'oeuvre d'Albinoni qui comprenait entre autres  près de 80 (!) opéras  a apparemment péri lors des bombardements de Dresde, en 1945, et personne ne s'était apparemment donné la peine  de recopier les manuscrits, on était plus sérieux au Moyen-Age ! Les amateurs du dimanche qui se contentent du célèbre <a href="http://www.youtube.com/watch?v=Cg_IQUopZnI">Adagio</a> (version d'André Rieu, tant qu'on y est !) seront déçus d'apprendre qu'il s'agit, en réalité, d'un artefact réalisé par Remo Giazotto, en 1945, sur le thème de l'andante du <a href="http://www.youtube.com/watch?v=Ei4cEn0m3bA">Concerto opus 1</a>, pour alto, de Carl Stamitz (attendez 12 min 26 sec).</i></p>
+
+                    <p>L'orchestre baroque a  tenté tous les musiciens de l'époque. La redécouverte sonore de ce répertoire immense, effectivement entamée à partir des années 1950, s'est déroulée dans une joyeuse anarchie mélangeant allègrement l'essentiel et l'accessoire. L'empressement des maisons de disques de tout graver - qui viendra encore prétendre que le marché de l'enregistrement est en crise ? - a compliqué l'établissement d'une échelle des valeurs, singulièrement pour les compositions postérieures à 1700. Beaucoup de musiciens de cette époque sont très vite passés à la postérité pour des oeuvres plus ou moins importantes : si personne ne conteste sérieusement les concerti de Vivaldi ou de Corelli, que faut-il penser des oeuvres homologues des  Marcello, Torelli, Geminiani, Castrucci, Manfredini, Galuppi, Tartini, Albinoni, Veracini, ..., dont certains sont passés à la postérité avec une facilité que - sans jeu de mot - l'on pourrait qualifier de déconcertante :   des oeuvres aimables, certes,  mais tellement interchangeables à nos oreilles. Voici, pour faire court, une sélection d'oeuvres estimables, inévitablement partielle et partiale :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Evaristo Felice Dall'Abaco (1675-1742) (<a href="http://www.youtube.com/watch?v=zd7wsv1mAK0">Concerti</a> opus 3 n°5), le père de Joseph-Marie-Clement,</li>
+                      <li>Francesco Manfredini (1684-1762) (<a href="http://www.youtube.com/watch?v=JXPFJrNlvkM">12 Concerti</a> opus 3),</li>
+                      <li>Benedetto Marcello (1686-1739) (<a href="http://www.youtube.com/watch?v=D3fDuVtfw3E">12 Concerti Grossi</a>  opus 1) à ne pas confondre avec son frère, Alessandro Marcello(1669-1749) (<a href="http://www.youtube.com/watch?v=QgcOz2iZy1M">Concerto</a> pour hautbois, <a href="https://www.youtube.com/watch?v=BFJdJg6XTVA">La Cetra</a>),</li>
+                      <li>Francesco Geminiani (1687-1762) (<a href="https://www.youtube.com/watch?v=SDrTjUqeV-g">Concerti Grossi 1 à 12</a>), d'après l'opus 5 de Corelli,</li>
+                      <li>Francesco Maria Veracini (1690-1768)  (<a href="http://www.youtube.com/watch?v=IdTJE0APzY0">5 Ouvertures</a> de concert),</li>
+                      <li>Leonardo Leo (1694-1744) (<a href="http://www.youtube.com/watch?v=5iaxh1y1ZUs">6 Concertos</a> pour violoncelle,</li>
+                      <li>Pietro Locatelli (1695-1764), le Paganini baroque à moins que ce soit l'inverse, (<a href="http://www.youtube.com/watch?v=-SVF9MKsQ7Q">L'Arte del Violino</a>).</li>
+                    </ul>
+
+                    <p>Voici, pour résumer,   quelques musiciens  parmi les meilleurs du baroque finissant, qui se sont  illustrés  dans les trois genres évoqués :</p>
+
+                    <table>
+                      <tr>
+                        <th></th>
+                        <th>Ensembles instrumentaux</th>
+                        <th>Messes &amp; Oratorios</th>
+                        <th>Cantates &amp; Opéras</th>
+                      </tr>
+
+                      <tr>
+                        <th>A. Caldara</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=cz4sYC2zsP0">Sonate a 3</a><br/>
+                          <a href="http://www.youtube.com/watch?v=mLrH4q9KRHE">Sonate pour violoncelle</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=PlBaOMo0by4">Maddalena ai piedi di J-C</a><br/>
+                          <a href="http://www.youtube.com/watch?v=U1fDiagZqmM">La Conversion de Clovis</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=56p307Tazw4">La Clemenza di Tito</a><br/>
+                          <a href="http://www.youtube.com/watch?v=3VIKbL7VjOA">Airs isolés</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>A. Vivaldi</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=o8p5z-TcWiY">Concerti pour violon</a><br/> 
+                          <a href="http://www.youtube.com/watch?v=Tn4S4XVmw7E">Sonates pour violoncelle</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=K6Frp0XCP0Y">Vêpres à la Vierge</a><br/>
+                          <a href="http://www.youtube.com/watch?v=vhkQurdInGY">Juditha Triumphans</a>
+                        </td>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=RPSrm2pQ71A">Farnace</a><br/>
+                          <a href="http://www.youtube.com/watch?v=Z2yDQzXN-4w">Arsilda Regina di Ponto</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>B. Marcello</th>
+                        <td>
+                          <a href="https://www.youtube.com/watch?v=82g9QcZCa_A">Concerti grossi op 1</a><br/>
+                          <a href="http://www.youtube.com/watch?v=Qb4baUWEQn8">6 Sonates pour violoncelle</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=9L_IudT2MQs">Requiem vénitien</a><br/>
+                          <a href="http://www.youtube.com/watch?v=ozkz8VVC1Ws">Psaumes de David</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=nGfdoi-HZ1A">Arianna</a><br/>
+                          <a href="http://www.youtube.com/watch?v=rLXss8TRsZA">Cantates pour basse</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>N. Porpora</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=HkBNfNKNqQ0&list=PL2u_e4oN40EoNEFpaXXDdHsMJbrRPlBz3">Sinfonia opus 2-4</a><br/>
+                          <a href="http://www.youtube.com/watch?v=-MgAvs4hKZ4">12 Sonates pour violon</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=3q_slGvC45s">Salve Regina</a><br/>
+                          <a href="http://www.youtube.com/watch?v=MyDIUmC2ErU">6 Duetti sulla Passione</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=C_u8trRkM_c">Polifemo</a><br/>
+                          <a href="http://www.youtube.com/watch?v=xNLle7Domig">Dorindo, dormi ancor</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>JB Pergolèse</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=22-I_ZGz0R4&list=TLAJg8ubePrZ8-lRWOmTD4pmyBQqz52NcK">Concerto pour violon</a><br/>
+                          <a href="http://www.youtube.com/watch?v=zGedl83daNo">Concerto pour flûte</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=2BtrbK8jcHQ">Vêpres à la Vierge</a><br/>
+                          <a href="https://www.youtube.com/watch?v=kQnXs05bQ0c">Messa Sant Emidio</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=dmFwPKsMdtg">L'Olimpiade</a><br/>
+                          <a href="http://www.youtube.com/watch?v=Cbr4jB2M_UI">Lo Frate 'nnammurato</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>N. Jommelli</th>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=dtA_85NItAg">Concerto pour clavier</a><br/>
+                          <a href="http://www.youtube.com/watch?v=e3-xCNUauOY&list=TLAsz50nqMHQX3TCfK3y0Bb-D-vA48P97w">Chaconne</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=OepTMeKFsVk">La Passion de J-C</a><br/>
+                          <a href="http://www.youtube.com/watch?v=46D942CsFc4">Requiem</a>
+                        </td>
+                        <td>
+                          <a href="http://www.youtube.com/watch?v=RH69bqt5sQ8">Armida Abbandonata</a><br/>
+                          <a href="http://www.youtube.com/watch?v=6cZdFFmDA6U">L'Uccellatrice</a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <p>Enfin, impossible de ne pas évoquer l'art de Domenico Scarlatti (1685-1757), le plus illustre claviériste baroque italien. Ses <a href="../chroniques/scarlatti.html">555 Sonates</a> sont tellement belles qu'elles ont toutes été enregistrées. Hélas aucune intégrale  n'est pleinement satisfaisante, même celle de Scott Ross  aurait mérité un plus bel instrument. Par contre, des enregistrements isolés existent - au clavecin comme au piano - qui raviront les plus exigeants (<a href="http://www.youtube.com/watch?v=epSrxfw0pFU">Pierre Hantaï</a> et <a href="http://www.youtube.com/watch?v=oO11q77SSw4">Frédérick Haas</a>, sur des clavecins dignes de ce nom et l'admirable <a href="http://www.youtube.com/watch?v=8FUX832BF2M">Murray Perahia</a>, au piano). Giovanni Battista (dit Il Padre) Martini  (1706-1784) a suivi l'exemple de Scarlatti comme le fera Padre Soler (1729-1783) en Espagne.</p>
+                  </div>
+
+                  <div id="coupDeFrein">
+                    <h4>Le coup de frein, du classicisme au romantisme naissant</h4>
+
+                    <p>L'ère baroque s'est achevée en 1750 mais comme toujours un certain flou a existé entre ceux qui se sont attardés et d'autres qui ont anticipé sur le classicisme naissant. Les frères Sammartini, Giuseppe  (1695-1750) (<a href="http://www.youtube.com/watch?v=-wda1jEHobU">Concerto</a> pour flûte) et Giovanni Battista  (1700-1775) (<a href="http://www.youtube.com/watch?v=otJUzvxdiRI">Sinfonia</a> en sol majeur), ont déjà écrit en style galant voire Sturm und Drang et Baldassare Galuppi (1706-1785) a fait preuve d'encore plus de curiosité  dans des oeuvres ambitieuses, religieuses (<a href="https://www.youtube.com/watch?v=MvzbAweF3Nw">Kyrie</a> et <a href="https://www.youtube.com/watch?v=KhisDFiX8-I">Gloria</a>) ou théâtrales (<a href="http://www.youtube.com/watch?v=VHHQqZtxM4E">L'Olimpiade</a>, <a href="http://www.youtube.com/watch?v=-Kmn4qfPGck">Il Mondo alla Roversa</a>).</p>
+                    <p>Globalement la transition du baroque vers le classicisme a vu le recul de la musique italienne, plutôt mal à l'aise dans un corset trop rigide pour elle. Dès 1700, la concurrence allemande - Bach  et Haendel - était devenue forte et à partir de 1750, l'hégémonie autrichienne - Haydn, Mozart, Gluck -  acheva de la repousser dans une pénombre relative.  <strong>La querelle des Gluckistes et des Piccinnistes</strong> fut un épisode parisien de ce transfert de compétences : les encyclopédistes,  d'Alembert en tête, ardents défenseurs de l'opéra à l'italienne, se sont émus de l'influence grandissante des réformes préconisées par Gluck en vue d'un théâtre moins virtuose et plus proche du drame exprimé.  S'ensuivit une querelle de salon que Gluck alimenta davantage que Piccinini et qu'il finit par remporter.</p>
+                    <p>Les musiciens suivants furent talentueux à défaut d'être géniaux :  Pietro Nardini (1722-1793)  (<a href="https://www.youtube.com/watch?v=aJJ5esA2rDQ">Concerti</a> pour violon et mieux encore <a href="http://www.youtube.com/watch?v=FELDa7RfLpI">Quatuors</a> à cordes, parus chez Brillant). Niccolò Piccinni (1728-1800) (<a href="http://www.youtube.com/watch?v=LaJDg4GL8uk">Didone abbandonata</a>), Giuseppe Sarti (1729-1802) (<a href="http://www.youtube.com/watch?v=gw3vvpGrb2g">Oratorio russe</a>), Antonio Sacchini (1730-1786) (<a href="http://www.youtube.com/watch?v=zcR688CF_hw">Œdipe à Colone</a>), Gaetano Pugnani (1731-1798) (<a href="http://www.youtube.com/watch?v=_172a1SVN-c">Sinfonia</a> en sol majeur), Giovanni Paisiello (1740-1816) (<a href="https://www.youtube.com/watch?v=8T5zPSdEu_s">Concerto n°7</a> pour piano et surtout <a href="http://www.youtube.com/watch?v=jSpaYtq3V1A">Il Barbiere di Siviglia</a>, oeuvre qui annonce clairement   Rossini), Andrea Luchesi (1741-1801) (<a href="http://www.youtube.com/watch?v=4ujEC5YlHS0">Requiem</a>), ... .</p>
+
+                    <p>Le talent fut davantage présent à la génération suivante  :</p>
+                    
+                    <ul class="miniListCorps">
+                      <li>Luigi Boccherini (1743-1805) fait partie de ces musiciens auquel le destin a réservé un sort plutôt flatteur, en premier lieu grâce à un <a href="http://www.youtube.com/watch?v=kSE15tLBdso">Menuet</a> anodin et un <a href="http://www.youtube.com/watch?v=p0f-rQV--jU">Quintette</a> opus 30 imaginatif, deux oeuvres fréquemment arrangées pour ensembles à cordes. Il a largement contribué au développement de la musique de chambre, singulièrement l'art du  quintette (à <a href="http://www.youtube.com/watch?v=PqcFZyOit1k">cordes</a> ou avec <a href="http://www.youtube.com/watch?v=6YXleGIULMA">guitare</a>). J'avoue cependant ne guère accrocher à ces oeuvres largement interchangeables, écrites à une époque où Mozart proposait ses ultimes chefs-d'oeuvre.</li>
+                      <li>Domenico Cimarosa (1749-1801) en étonnera plus d'un avec ses opéras &quot;mozartiens&quot; <a href="http://www.youtube.com/watch?v=2lv4MokgIdc">Li Sposi per Accidenti</a>, <a href="http://www.youtube.com/watch?v=glBJowqKIAY">Le astuzie femminili</a>, sans compter le plus léger et mieux connu <a href="http://www.youtube.com/watch?v=FHgiTVn58kQ">Il Matrimonio Segreto</a>
+                      !<div class="conteneurImages">
+                          <div>
+                            <figure>
+                              <img src="../images/italie/salieri.jpg" alt="Antonio salieri">
+                              <figcaption>Antonio salieri</figcaption>
+                            </figure>
+                          </div>
+                          <div>
+                            <figure>
+                              <img src="../images/italie/clementi.jpg" alt="Muzio Clementi">
+                              <figcaption>Muzio Clementi</figcaption>
+                            </figure>
+                          </div>
+                          <div>
+                            <figure>
+                              <img src="../images/italie/cherubini.jpg" alt="Luigi Cherubini">
+                              <figcaption>Luigi Cherubini</figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      </li>
+                      <li>Antonio Salieri (1750-1825), qui n'a évidemment pas empoisonné Mozart, mérite une réhabilitation en bonne et due forme : sa musique est d'une réelle efficacité sonore, singulièrement à l'opéra : <a href="http://www.youtube.com/watch?v=YPW382xDjuo">Les Danaïdes</a>, <a href="http://www.youtube.com/watch?v=JvMXFIlSWVU">Axur</a>, <a href="https://www.youtube.com/watch?v=vZ-KppJzwqs">Europa riconosciuta</a>, sans oublier le magnifique finale de <a href="http://www.youtube.com/watch?v=16GJfESSLbI">Prima la Musica e poi le Parole</a> (écoutez à partir de 1 min 16 sec, Mozart a peut-être écouté avant vous, ses Noces de Figaro datent en tous cas de la même année, 1786 !).  Si son <a href="http://www.youtube.com/watch?v=exXujZFSXH8">Requiem</a> ne vaut qu'un petit détour, je recommande sans hésitation les superbes <a href="http://www.youtube.com/watch?v=pUJkROWNROU">Variations</a> sur le thème des Folies d'Espagne et pourquoi pas la <a href="http://www.youtube.com/watch?v=s1bRATRhSeA">Symphonie Veneziana</a> qui ne manque effectivement pas d'allure ?</li>
+                      <li>Muzio Clementi (1752-1832), présenté par ailleurs sur ce <a href="../chroniques/clementi.html">site</a>, a peut-être fait souffrir des générations d'apprentis pianistes, il n'en demeure pas moins un créateur de premier plan.  L'intégrale de son oeuvre pour piano est un must incontestable, disponible à petit prix sous les doigts peu experts de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-S%E4mtliche-Klaviersonaten/hnum/2975556">Costantino Mastroprimiano</a>, à prix doux sous ceux, experts, de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-Klavierwerke-Box-2-Vol-10-18/hnum/1750528">Pietro Spada</a> et au prix fort sous ceux brillantissimes de <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Muzio-Clementi-1752-1832-S%E4mtliche-Klaviersonaten-Vol-5/hnum/4298574">Howard Shelley</a>. Notez que le didactique et néanmoins passionnant <a href="https://www.youtube.com/watch?v=ruhsfzChf24">Gradus ad Parnassum</a> (court extrait joué ici par Danielle Laval) est rarement présent au rendez-vous de ces &quot;intégrales&quot; mais que Naxos  vient de combler cette lacune.</li>
+                      <li>Luigi Cherubini (1760-1842) détient le titre de gloire du plus grand compositeur vivant de son temps, enfin c'est Beethoven qui l'a dit et on soupçonne que, muré dans son isolement, il n'était que très imparfaitement informé (Il n'a  découvert Schubert - qui fréquentait pourtant la même taverne viennoise que lui - que sur son lit de mort !).  Cela dit, l'oeuvre de  Cherubini vaut effectivement une écoute attentive ne serait-ce que pour comprendre le début de ce que Beethoven voulait dire (<a href="http://www.youtube.com/watch?v=laO7Zi6Zsm8">Requiem en do mineur</a>, <a href="http://www.youtube.com/watch?v=cz_FjyPEWEc&list=TL3Wy7w3eknK6duHan_khERhvlMrONUbTf">Chant sur la mort de Joseph Haydn</a>, sans oublier l'opéra <a href="http://www.youtube.com/watch?v=0HTlS0GSn98">Médée</a>, ressuscité en son temps par Maria Callas).</li>
+                    </ul>
+
+                    <p>Quelques compositeurs se sont illustrés dans la pratique virtuose de leur instrument de prédilection, guitare et/ou violon, curieusement souvent associés  : Giovanni Battista Viotti (1755-1824), Alessandro Rolla (1757-1841), Ferdinando Carulli (1770-1841), Mauro Giuliani (1781-1829), Giovanni Viotti (1755-1824) et
+                    bien sûr Niccolò Paganini (1782-1840). Quant à Domenico Dragonetti (1763-1846) et Giovanni Bottesini (1821-1889), ils se sont consacrés à la contrebasse, contribuant ainsi au maigre répertoire  de cet instrument. </p>
+                  </div>
+
+                  <div id="envolLyrique">
+                    <h4>L'envol lyrique</h4>
+
+                    <p>Le chant qui avait déjà connu ses premières heures de gloire virtuose à l'époque baroque va en connaître d'autres, nettement plus lyriques, pendant près de 100 ans. La démocratisation du concert a appelé l'agrandissement des salles et a encouragé l'éclosion de voix amples et belles. Un public de plus en plus fervent s'est constitué  à la Scala de Milan, à la Fenice de Venise ou à San Carlo de Naples, trois théâtres inaugurés vers 1778. De nombreux théâtres de province ont également vu le jour, alimentés par un large réservoir de chanteurs de qualité. Il ne restait plus qu'à mettre ces voix en valeurs, ce que firent  Gioacchino Rossini (1792-1868), dans la veine pyrotechnique (± 40 opéras, composés en à peine 25 ans),  Giuseppe Verdi (1813-1901, ± 35 opéras) dans la veine héroïque et Giacomo Puccini (1858-1924, ± 12 opéras) dans le mode vériste. D'autres ont suivi, avec plus ou moins de bonheur et de goût : Gaspare Spontini (1774-1851), Gaetano Donizetti (1797-1848, ± 70 opéras), Vincenzo Bellini (1801-1835, ± 12 opéras), Amilcare Ponchielli (1834-1886), Arrigo Boito (1842-1918), Alfredo Catalani (1854-1893), Ruggero Leoncavallo (1858-1919), Alberto Franchetti (1860-1942), Pietro Mascagni (1863-1945), Francesco Cilea (1866-1950), Umberto Giordano (1867-1948) et Italo Montemezzi (1875-1952).</p>
+                    <p>Cet  univers est fascinant mais son étude sérieuse exigerait des développements qui ne peuvent trouver leur place ici. Je me bornerai donc à faire la publicité du <a href="https://www.youtube.com/watch?v=vd1XL9-lBpY">Mefistofele</a> de Arrigo Boïto, plus connu comme librettiste de Verdi dans ses deux chefs-d'oeuvre ultimes, Othello et Falstaff. On sait trop peu qu'il fut également un compositeur de valeur et on peut légitimement regretter l'oubli qui  frappe ses autres oeuvres scéniques, sauf peut-être <a href="http://www.youtube.com/watch?v=CduRaK-Fmg8">Nerone</a>, opéra interrompu par la mort et  complété, à des degrés divers, par Arturo Toscanini (qui l'a effectivement créé), Vincenzo Tommasini et Antonio Smareglia.</p>
+
+                    <p>La plupart des musiciens dont la liste précède eurent ponctuellement l'ambition de briller ailleurs qu'à la scène mais on ignore largement cette production parallèle :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Beaucoup y sont allé de belles oeuvres  religieuses, au caractère souvent théâtral : Rossini (belle <a href="https://www.youtube.com/watch?v=pyqQW7rCB0w">Petite Messe solennelle</a>), Verdi (célèbre Requiem qu'on ne présente plus), Puccini (<a href="http://www.youtube.com/watch?v=AiwyKqQxiQA&list=PL45FC2F30BC502855">Messa di Gloria</a> et Requiem), Bellini (Messes n°1, <a href="http://www.youtube.com/watch?v=rHsPIKBPUOk">n° 2</a> et n°3), Donizetti (<a href="http://www.youtube.com/watch?v=S9CodeK4swI">Requiem</a>).  </li>
+                      <li>La musique de chambre est très présente chez Donizetti, auteur de 18 Quatuors à cordes (<a href="http://www.youtube.com/watch?v=E0Waxn7cMyo">n° 17</a>), tous enregistrés chez CPO.</li>
+                      <li>Enfin, saviez-vous que Donizetti a écrit 13 Symphonies et  Bellini 7 (<a href="http://www.youtube.com/watch?v=2cnLTQKMBso">Symphonie en ré mineur</a>) ?</li>
+                    </ul>
+
+                    <p>Toutes ces célébrités ne doivent pas occulter l'existence d'excellents musiciens bien moins connus : d'ascendance suisse, Carlo Evasio Soliva (1791-1853) a écrit  <a href="http://www.youtube.com/watch?v=I0mSgTIhIWg">La Testa di Bronzo</a> et <a href="http://www.youtube.com/watch?v=kGnlAwa2roU">Giulia e Sesto Pompeio</a>, qui ont fait l'objet de beaux enregistrements, à découvrir par les amateurs du genre. Saverio Mercadante (1795-1870) (<a href="http://www.youtube.com/watch?v=X2l2oD4sE1w">Il Lamento del Bardo</a>, <a href="http://www.youtube.com/watch?v=1wQt6lBCjg8">Emma d'Antiochia</a>), 
+                    Giovanni Pacini (1796-1867) (<a href="http://www.youtube.com/watch?v=VL2d4bnL9Pg">L'ultimo Giorno di Pompei</a>), Lauro Rossi (1810-1885) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Lauro-Rossi-1812-1885-Cleopatra/hnum/4950425">Cleopatra</a>) et Filippo Marchetti (1831-1902) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Filippo-Marchetti-1831-1902-Romeo-Giulietta/hnum/6827091">Romeo e Giulietta</a>) ont également contribué au genre. Les amateurs de raretés vocales italiennes peuvent se tourner avec bonheur vers des enregistrements <a href="http://www.jpc.de/s/bongiovanni">Bongiovanni</a> ou vers l'album <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Opera-Italiana-Operngesamtaufnahmen/hnum/8981613">Opera italiana</a> paru chez Neos (40 CD pour 40 euros !)</p>
+
+                    <p>La musique italienne s'étant largement concentrée sur l'opéra, on admirera que  quelques artistes du cru aient eu le courage de résister à cette mode du temps, au risque avéré de se priver d'une large audience :</p>
+                    
+                    <ul class="miniListCorps">
+                      <li>Giovanni Sgambati (1843-1914)  fut un pianiste-compositeur surtout à l'aise dans la pratique de son instrument.  Ecoutez cet académiquement beau <a href="http://www.youtube.com/watch?v=GD9qCQmNkWo">Prélude &amp; Fugue</a>, opus 6, ou encore, pour le plaisir, l'un des bis favoris de Nelson Frère, une <a href="https://www.youtube.com/watch?v=0Iy2jjWYkRU">adaptation</a> très réussie d'un air célèbre de Gluck. Son <a href="http://www.youtube.com/watch?v=37dlnzTSF-s">Concerto</a> pour piano propose  un instrument brillant hélas flanqué d'un orchestre anémique.</li>
+                      <li>Luigi Mancinelli (1848-1921) mériterait que les éditeurs s'intéressent davantage à son oeuvre, certes légère mais très plaisante comme en atteste cet enregistrement Naxos reprenant <a href="http://www.youtube.com/watch?v=_OoWSJeHhYc">Scene Veneziane &amp; Cleopatra</a>. </li>
+                      <li>Giuseppe Martucci (1856-1909) a été nettement plus heureux avec ses 2 symphonies (<a href="http://www.youtube.com/watch?v=a-fgTHRy9bI">n° 1</a>, <a href="http://www.youtube.com/watch?v=fASbUHQBxEc">n° 2</a>) et ses 2 concertos pour piano (<a href="http://www.youtube.com/watch?v=YofYHr6iKWw">n° 1</a>, <a href="http://www.youtube.com/watch?v=CcLJWsLdo8o&list=TLL-o91qdxJ5Sqw2oC2Wy_UmrwiTe1-SG7">n° 2</a>), à découvrir !</li>
+                    </ul>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/busoni.jpg" alt="Ferruccio Busoni">
+                          <figcaption>Ferruccio Busoni</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/wolff.jpg" alt="Ermanno Wolf-Ferrari">
+                          <figcaption>Ermanno Wolf-Ferrari</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Sans pour autant délaisser l'opéra mais en cessant de le privilégier, deux musiciens très différents, Ferruccio Busoni (1866-1924) et Ermanno Wolf-Ferrari (1876-1948), ont accéléré le renouveau instrumental italien. Il convient d'ajouter qu'ils présentaient, l'un et l'autre, le mélange assez rare des sensibilités italienne et allemande et ceci explique peut-être cela : </p>
+
+                    <ul class="miniListCorps">
+                      <li>Busoni a passé l'essentiel de son existence en Allemagne dont il a adopté une forme de rigueur qui le rapproche esthétiquement de Max Reger. Son goût pour le contrepoint l'a incité à transcrire pour le piano nombre d'oeuvres de Bach, pour le plus grand bonheur de pianistes avides d'épaisseur sonore (<a href="http://www.youtube.com/watch?v=sw9DlMNnpPM">Chaconne BW 1004</a>, <a href="http://www.dailymotion.com/video/x4pii6_bach-busoni-chorale-vladimir-horowi_music">Choral "Nun komm der Heiden Heiland" BWV 659</a>). Busoni s'est également rendu célèbre grâce à son grandiose et wagnérien <a href="http://www.youtube.com/watch?v=-rFV_g6T5lM">Concerto</a> pour piano, choeur &amp; orchestre, une oeuvre  miraculeusement préservée de la grandiloquence. Son remarquable opéra <a href="https://www.youtube.com/watch?v=xrFwfeKzRuE">Doktor Faust</a> est au répertoire des maisons exigeantes, au contraire d'Arlecchino, nettement plus anecdotique.</li>
+                      <li>Wolf-Ferrari a davantage hérité de sa  mère vénitienne que de son père allemand et c'est tant mieux.  Autant l'oeuvre de Busoni est dense et sévère, autant celle  de Wolf-Ferrari (Concertos pour <a href="http://www.youtube.com/watch?v=HJlrtuccFLM">violon</a> et pour <a href="http://www.youtube.com/watch?v=ZTEkIyLMwgs">cor anglais</a>) est légère et parfois sentimentale (sans honte, j'adore !). Les Joyaux de la Madonne (célèbre <a href="http://www.youtube.com/watch?v=x_B7Iavkuhs">Intermezzo</a>) est son opéra le plus connu mais écoutez aussi le prélude de <a href="https://www.youtube.com/watch?v=WSweXbiN8Wk">Il Campiello</a> : d'accord l'oeuvre, écrite en 1936, est anachronique mais quel bonheur !</li>
+                    </ul>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/italie/pizzetti.jpg" alt="Ildebrando Pizzetti">
+                          <figcaption>Ildebrando Pizzetti</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/respighi.jpg" alt="Ottorino Respighi">
+                          <figcaption>Ottorino Respighi</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/malipiero.jpg" alt="G F Malipiero">
+                          <figcaption>G F Malipiero</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/italie/casella.jpg" alt="Alfredo Casella">
+                          <figcaption>Alfredo Casella</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Quatre musiciens particulièrement attachants,  Ottorino Respighi (1879-1936), Ildebrando Pizzetti (1880-1968), Gian Francesco Malipiero (1882-1973) et Alfredo Casella (1883-1947), ont représenté l'Italie dans le concert européen du début du 20<sup>ème</sup> siècle, jusqu'à ce qu'un fascisme précoce ne vienne mettre un frein à cette belle vitalité :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Des quatre, Respighi est le plus justement célèbre, ayant  brillé dans tous les genres et tous les styles (<a href="https://www.youtube.com/watch?v=bB5KRHTPTjA">Concerto grégorien</a>, <a href="http://www.youtube.com/watch?v=NsE0NDzWw74">Sinfonia Drammatica</a>). Sauf les grincheux, tout le monde trouve son bonheur quelque part dans l'oeuvre de Respighi, depuis la célèbre Trilogie romaine (Pins de Rome, Fontaines de Rome, <a href="https://www.youtube.com/watch?v=C2EPHoMlqnk">Fêtes romaines</a>) jusqu'aux 3 joyeuses Suites dans le style ancien (<a href="http://www.youtube.com/watch?v=3BPloCq3ODE">Suite n°2</a>, ne manquez pas l'alerte Bergamasque à partir de 14:21). <a href="http://www.youtube.com/watch?v=-ugVAU5PneY">La Flamma</a> est son opéra le plus joué.</li>
+                      <li>Pizzetti n'a pas connu les mêmes honneurs et cependant il fut l'égal de Respighi  : certes, sa <a href="https://www.youtube.com/watch?v=IvJW1h7RsH8">Sonate</a>, datée de 1942, sonne sans complexe comme issue d'un autre âge mais <a href="http://www.youtube.com/watch?v=-V-6TiWeUzo">Assassinio nella cattedrale</a> figure parmi les grands opéras du 20<sup>ème</sup> siècle. De même si <a href="http://www.youtube.com/watch?v=5mggUZWOuNk">Canti della stagione alta</a> nage à contre-courant, en plein romantisme, le <a href="http://www.youtube.com/watch?v=XIPByJMmsTc">Quatuor</a> à cordes est plus sévère. Quoi qu'il en soit, l'inspiration est au rendez-vous.</li>
+                      <li>Etrangement, c'est Malipiero qui a été le mieux servi par les studios d'enregistrements, en particulier sa musique symphonique : 11 symphonies (<a href="http://www.youtube.com/watch?v=m1Tuwn0LBsA">n°8</a>, <a href="http://www.youtube.com/watch?v=_1JkOcveH4g">n°11</a>), 6 concertos pour piano (<a href="http://www.youtube.com/watch?v=sxDxyj7B864">n°6</a>) et 2 concertos pour violon (<a href="https://www.youtube.com/watch?v=6zIZL1rwrCM">n°1</a>). C'est une anomalie dont le sens m'échappe.</li>
+                      <li>L'oeuvre de Casella a mis davantage de temps à s'imposer que celle de Malipiero alors qu'elle lui est supérieure en tous points. Ses 3 symphonies (<a href="http://www.youtube.com/watch?v=TP4Le57hFu0&list=PLFFEB4A78BFDBD535">n°1</a>, <a href="http://www.youtube.com/watch?v=02MMhs3mcTU">n°2</a> et <a href="http://www.youtube.com/watch?v=a7uwpB11TpM">n°3</a>) qui ont enfin trouvé des interprètes à leur mesure sont  remarquables de même que <a href="https://www.youtube.com/watch?v=k8QBZwd986A">A Notte Alta</a>, pour piano &amp; orchestre. Voici encore le <a href="http://www.youtube.com/watch?v=U3GaXpfSGcY">Concerto</a> pour cordes, piano &amp; percussions.</li>
+                    </ul>
+                  </div>
+
+                  <div id="epoqueContemporaine">
+                    <h4>L'époque contemporaine</h4>
+
+                    <p>L'avènement du fascisme, la guerre et ses conséquences ont bouleversé le paysage musical italien, désormais éclaté en plusieurs tendances :</p>
+
+                    <div id="retros">
+                      <h5>Les "rétros" ...</h5>
+
+                      <p>Quelques musiciens largement inconnus  ont écrit sans complexe une musique avenante  aux antipodes de la création de pointe. Le doyen de ces romantiques attardés pourrait être Lorenzo Perosi (1872-1956) (<a href="http://www.youtube.com/watch?v=RzjA_2T8l30">Suite n°6</a> pour orchestre).  Il semble difficile d'écrire une musique plus facile - ce qui est rarement un compliment - mais dont la naïve sincérité  est telle qu'on ne peut que l'écouter avec plaisir, en cachette si vous craignez pour votre réputation.  Dans son sillage, ont oeuvré : Franco Alfano (1875-1954) (<a href="https://www.youtube.com/watch?v=Hn98n-xX4ZA">Symphonie n°2</a>), Francesco Balilla Pratella (1880-1955) (surprenant <a href="http://www.youtube.com/watch?v=CeMlJE-ZxtU">Trio</a> à clavier), Riccardo Pick-Mangiagalli (1882-1949) (<a href="http://www.youtube.com/watch?v=0S90yYZIuXE">Sortilegi</a>), Riccardo Zandonai (1883-1944) (<a href="http://www.youtube.com/watch?v=gASMiQut5jM">Concerto Romantico</a> pour violon), Carlo Giorgio Garofalo (1886-1962) (<a href="http://www.youtube.com/watch?v=Wc029DpgirE">Concerto</a> pour violon), Giorgio Federico Ghedini (1892-1965) (original <a href="http://www.youtube.com/watch?v=sPvMEOz4wXI">Concerto Spirituale</a>, <a href="http://www.youtube.com/watch?v=M8V-JmmneaU">Musica Concertante</a>, <a href="https://www.youtube.com/watch?v=AbboL5ZoRuM">Architetture</a>, <a href="http://www.youtube.com/watch?v=TCASJkM23ng">Concerto</a> pour alto &amp; cordes), à découvrir en priorité, Aldo Finzi (1897-1945) (<a href="http://www.youtube.com/watch?v=Xoj5zRVZP-0">Liriche</a>),  Virgilio Mortari (1902-1993) (<a href="http://www.youtube.com/watch?v=KaHMrI9XWDY">Figurazioni</a>), Franco Ferrara (1911-1985) (<a href="http://www.youtube.com/watch?v=n8Cu5APY7ks">Fantasia Tragica</a>), Gian Carlo Menotti (1911-2007) (<a href="https://www.youtube.com/watch?v=yT48bgqoXSQ">Concerto</a> pour piano), Carlo Florindo Semini (1914-2004) (<a href="http://www.youtube.com/watch?v=X3dtIssu118">Mosaici di Piazza Armerina</a>) et Ugo Amendola (1917-1995) (<a href="http://www.youtube.com/watch?v=-izg3Jb7WuM">Quatuor</a>).</p>
+
+                      <div class="conteneurImages">
+                        <div>
+                          <figure>
+                            <img src="../images/italie/tedesco1.jpg" alt="Mario Castelnuovo-Tedesco">
+                            <figcaption>Mario Castelnuovo-Tedesco</figcaption>
+                          </figure>
+                        </div>
+                        <div>
+                          <figure>
+                            <img src="../images/italie/tedesco.jpg" alt="TODO">
+                            <figcaption>TODO</figcaption>
+                          </figure>
+                        </div>
+                      </div>
+
+                      <p>J'ai gardé pour le dessert l'oeuvre abondante et variée de Mario Castelnuovo-Tedesco (1895-1968) qui n'a pas écrit que pour la guitare (<a href="http://www.youtube.com/watch?v=zuqi8E1s4_c">Sonate</a> "Omaggio a Boccherini", <a href="http://www.youtube.com/watch?v=mh22SuqQ6LA">Tonadilla</a>, <a href="http://www.youtube.com/watch?v=7Y0cxGjGG4A">Concerto n°1</a>), loin de là ! Ce musicien élégant et toujours de bonne humeur fut un  aristocrate de la musique qu'on a plaisir à écouter (<a href="https://www.youtube.com/watch?v=2tXsteQWH-g">Concerto n°2</a> pour piano, <a href="http://www.youtube.com/watch?v=p6gZiirRnsM">I Naviganti</a>, <a href="http://www.youtube.com/watch?v=EVuEBpYvk30">Concerto n°2</a> pour violon - l'entrée du violon de Jascha Heifetz après 1min 15sec ! - et superbe <a href="http://www.youtube.com/watch?v=KNjHE-2BKN8">Ricercare</a> sur le nom de Luigi Dallapiccola,  ...).</p>
+                    </div>
+
+                    <div id="gauchos">
+                      <h5>... et les "gauchos"</h5>
+
+                      <p>Au sortir de la guerre, quelques musiciens aux prétentions nettement  savantes exercèrent une influence considérable sur la création musicale européenne.  Tous ont vécu douloureusement le(s séquelles du) fascisme et se sont tournés, comme un seul homme, vers l'idéologie marxiste-léniniste pour ne pas dire stalinienne. Ne comptez pas sur moi pour vous expliquer ce qui caractérise une musique de gauche, sauf peut-être le choix des arguments littéraires dans les oeuvres théâtrales.  
+                      Par bonheur, la musique ne se laisse pas si facilement récupérer et, aujourd'hui, il ne reste qu'une interprétation du dogme sériel savamment sinon harmonieusement tempérée par un lyrisme atavique  : attention les musiques qui suivent ne sont pas destinées à bercer les enfants difficiles.</p>
+   
+                      <ul class="miniListCorps">
+                        <li><div class="conteneurImageSeule">
+                          <div>
+                            <figure>
+                              <img src="../images/italie/dallapiccola.jpg" alt="Luigi Dallapiccola"/>
+                              <figcaption>Luigi Dallapiccola</figcaption>
+                            </figure>
+                          </div>
+                        </div>Plus ancien donc peut-être plus sage, Luigi Dallapiccola (1904-1975) est celui par qui vous devez commencer cette exploration, d'autant que son oeuvre est tout simplement magistrale. Il n'a jamais cherché à étaler sa science, elle s'est imposée naturellement au travers d'oeuvres aussi diverses que  <a href="http://www.youtube.com/watch?v=d7_Cm8Y2OyA">Vol de Nuit</a>, d'après Saint Exupéry, <a href="http://www.youtube.com/watch?v=UKXJqlQj1vM">Sonatina Canonica</a>, d'après Paganini,  <a href="http://www.youtube.com/watch?v=0wGj3URCZlQ">Il Prigioniero</a>, d'après Villiers de l'Isle-Adam et Charles de Coster ou <a href="http://www.youtube.com/watch?v=Adsb2HokV6I">Tartiniana I</a> &amp;  <a href="http://www.youtube.com/watch?v=ADqAareCDaw">Tartiniana II</a>, d'après Tartini. Vous l'avez observé, les références sont multiples et elles font mouche.</li>
+                        <li>Bruno Maderna (1920-1973) fut un musicien versatile dont l'oeuvre est demeurée largement accessible jusqu'en 1950 (<a href="https://www.youtube.com/watch?v=u34QWmBvJds">Concerto</a> pour piano, <a href="http://www.youtube.com/watch?v=vMOR0flIjt8">Requiem</a>) et plus hasardeusement expérimentale ensuite (<a href="http://www.youtube.com/watch?v=TBYQ3GWSACs">Hyperion</a>).</li>
+                        <li>Luigi Nono (1924-1990) fut un membre particulièrement actif de l'intellectualisme de gauche jusqu'à ce que l'Archipel du Goulag le fasse changer d'avis, lui comme tant d'autres. Adepte de l'ascèse sérielle (il avait  épousé Nuria Schönberg, la fille de l'illustre compositeur), membre d'un trio militant avec Boulez et Stockhausen, il finit par se fâcher avec se dernier, rejetant en particulier l'intrusion de l'aléatoire en musique. Sa rencontre avec Schnittke et Pärt déboucha sur des oeuvres au réel pouvoir de séduction, telle <a href="http://www.youtube.com/watch?v=X-CKVm8MXxU">La Lontananza Nostalgica Utopica Futura</a>, pour violon solo - Guidon Kremer ! - &amp; électronique (à découvrir absolument). Passez ensuite à Prometeo, <a href="https://www.youtube.com/watch?v=33WK3zcUgkg">Guai Ai Gelidi Mostri</a> et <a href="https://www.youtube.com/watch?v=x3PGZyoR6B0">Il Canto Sospeso</a>. </li>
+                        <li>La musique écrite par Luciano Berio (1925-2003) peut être nettement plus indigeste. Ne vous laissez pas abuser par la facilité de <a href="http://www.youtube.com/watch?v=Q_DpEaKsFm4">Folksongs</a> qui n'est absolument pas représentative de l'oeuvre entière.  Si <a href="https://www.youtube.com/watch?v=JwJHu2gSj1A">Sinfonia</a> est justement devenue célèbre, en grande partie grâce à son hommage à Mahler, il n'en va guère de même des 14 Sequenza pour instruments solistes (<a href="http://www.youtube.com/watch?v=QFNpao45Ax8">violoncelle</a>, <a href="http://www.youtube.com/watch?v=de1mwOaW8Dc">basson</a>, ...) qui ont toutes les chances de vous indisposer.</li>
+                      </ul>
+
+                      <p>Par bonheur, l'Italie ne fut pas avare de musiciens indépendants demeurant à l'écart des écoles. J'ai déjà présenté par ailleurs le cas tout à fait particulier de <a href="../chroniques/scelsi.html">Giacinto Scelsi</a> (1905-1988) donc je n'insiste pas. Goffredo Petrassi (1904-2003), le pédagogue le plus influent de ce temps, ne rejeta aucun style a priori (néo-classsiques <a href="http://www.youtube.com/watch?v=vkdJF44hLak">Concerto</a> pour piano et <a href="http://www.youtube.com/watch?v=BC1CClO5qAM">Partita</a> pour orchestre, néo-baroques <a href="https://www.youtube.com/watch?v=ZsjG4l_mApM">Magnificat</a> ou <a href="http://www.youtube.com/watch?v=K1bJ7iL7pAI">Salmo IX</a>, modernes 12  pconcertosour orchestre (<a href="https://www.youtube.com/watch?v=x3gs_7p5CQM">n°5</a>)).</p>
+
+                      <div class="conteneurImages">
+                        <div>
+                          <figure>
+                            <img src="../images/italie/testi.jpg" alt="CD Flavio Testi">
+                            <figcaption>CD Flavio Testi</figcaption>
+                          </figure>
+                        </div>
+                        <div>
+                          <figure>
+                            <img src="../images/italie/romitelli.jpg" alt="TODO">
+                            <figcaption>TODO</figcaption>
+                          </figure>
+                        </div>
+                      </div>
+
+                      <p>Je n'ai hélas trouvé qu'un seul <a href="http://musique.fnac.com/a1578748/Flavio-Testi-Saul-CD-album">enregistrement</a>  d'une oeuvre de Flavio Testi (1923- ) et je le regrette. Cet extrait de <a href="http://www.youtube.com/watch?v=w1iKbeFRndk">Saül</a>, étonnant de conviction sonore, exige qu'on nous en propose d'autres. Aldo Clementi (1925-2011) s'est libéré, comme beaucoup d'autres, de l'emprise sérielle, n'hésitant pas à puiser son inspiration dans un passé lointain (étrange <a href="http://www.youtube.com/watch?v=wUkBHzY_kOc">Concerto n°2</a> pour violon). Ecoutez encore, de Boris Porena (1927- ), <a href="http://www.youtube.com/watch?v=P0zENmKO0dA">Musica per quartetto d'archi</a> et Vivaldi <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/italie/porena.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/italie/porena.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, de Lorenzo Ferrero (1951- ), <a href="http://www.youtube.com/watch?v=0DN5q7OjgCk">La ruta de Cortés</a>, extraite d'une suite de 6 Poèmes symphoniques "La nueva Espana", de Giulio Castagnoli (1958- ), ce singulier <a href="http://www.youtube.com/watch?v=mn_55dO7b4w">Concerto</a> pour piano, de Marco Stroppa (1959- ), <a href="http://www.youtube.com/watch?v=fFmgYi0SnCU">Spirali</a>, pour quatuor à cordes, et de Carlo Galante (1959- ), ce <a href="http://www.youtube.com/watch?v=v34EKEnVoS0">Concerto</a> pour violon.</p>
+                      <p>L'avant-garde pure et dure, représentée  Franco Donatoni (1927-2000) est  originale mais elle vous semblera sans doute d'un accès difficile (<a href="http://www.youtube.com/watch?v=dk2M1TVSe7A">Le Ruisseau sur l'Escalier</a>). Si la musique de Sylvano Bussotti (1931- ) (<a href="http://www.youtube.com/watch?v=PyXDrDjifLI">Lorenzaccio symphony</a>) me semble complètement datée, celles de Niccolò Castiglioni (1932-1996)  (<a href="http://www.youtube.com/watch?v=PYcYkoqFB4U">Sinfonia con rosignolo</a>), Salvatore Sciarrino (1947- ) (<a href="http://www.youtube.com/watch?v=JnAy8A9y1Jo">Morte di Borromini</a>) ou Alessandro Solbiati (1956- ) (<a href="http://www.youtube.com/watch?v=4_VArnrZ9Bg">Sinfonia Terza</a>) devraient attirer les esprits curieux et patients. </p>
+
+                      <div class="conteneurImages">
+                        <div>
+                          <figure>
+                            <img src="../images/italie/fedele.jpg" alt="Ivan Fedele">
+                            <figcaption>Ivan Fedele</figcaption>
+                          </figure>
+                        </div>
+                        <div>
+                          <figure>
+                            <img src="../images/italie/romitelli1.jpg" alt="Fausto Romitelli">
+                            <figcaption>Fausto Romitelli</figcaption>
+                          </figure>
+                        </div>
+                      </div>
+
+                      <p>Deux musiciens émergent cependant avec un maximum de force, sans doute les compositeurs les plus remarquables de l'Italie contemporaine :</p>
+                      
+                      <ul class="miniListCorps">
+                        <li>Ivan Fedele (1953- ) écrit de la bonne musique moderne capable de satisfaire les auditeurs exigeant clarté et complexité (<a href="http://www.youtube.com/watch?v=BtIFAa1blO4">33 noms</a>, <a href="http://www.youtube.com/watch?v=zLXVrLTUBZ4">Notturno</a>, <a href="http://www.youtube.com/watch?v=L41flQVQ7L8">La Chute de la Maison Usher</a>). Ne manquez pas davantage <a href="http://www.youtube.com/watch?v=CUay0x5oRLI">Etudes Australes I, II &amp; IV</a>, de l'excellent piano moderne. &quot;Le ali di Cantorun&quot; est un chef-d'oeuvre qui a eu la chance d'être superbement dirigé par Pierre Boulez hélas j'ai perdu la trace de l'enregistrement</li>
+                        <li>Fausto Romitelli (1963-2004) (<a href="http://www.youtube.com/watch?v=gnhhZY3AJRo">La sabbia del tiempo</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Fausto-Romitelli-20-Jh-1963-2004-Kammermusik-The-Nameless-City/hnum/2689676">The Nameless City</a>)  a également écrit des oeuvres extrêmement convaincantes : quel dommage qu'il ait disparu si jeune ! Deux CD made in Belgium (Ensembles Musiques nouvelles et Ictus) ont parus chez Cypres,  qui doivent  figurer en bonne place sur votre liste de cadeaux pour Noël, on vous remerciera dans 20 ans !</li>
+                      </ul>
+
+                      <p>Le label Naxos s'intéresse à  la musique écrite par Elisabetta Brusa (1954- ), plusieurs volumes sont déjà disponibles. Le néo-tonalisme de bon aloi de la <a href="https://www.youtube.com/watch?v=fsxh5alWHu8">Symphonie n°1</a> rend la découverte agréable.</p>
+                      <p>Le cinéma italien, particulièrement créatif  après la deuxième guerre mondiale, a donné du boulot aux collègues musiciens. Deux compositeurs célèbres ont fait preuve d'inspiration à cette occasion :</p>
+                      
+                      <ul class="miniListCorps">
+                        <li>Le nom de Nino Rota (1911-1979) a été fréquemment associé à celui de Federico Fellini (La Strada, La dolce Vita, Huit et demi, Satyricon, Amarcord, Casanova et Prova d'orchestra). Rota a également beaucoup écrit dans tous les genres traditionnels : 4 Symphonies (<a href="https://www.youtube.com/watch?v=ncAMkK-r7_E">n°1</a>, <a href="https://www.youtube.com/watch?v=NoLLwvIsmQs">n°3</a>), trois fois plus de Concertos (<a href="http://www.youtube.com/watch?v=H36IgwvkYbs">pour piano</a>, <a href="https://www.youtube.com/watch?v=-wc7tGwY_C4">pour cordes</a>),  de la musique de chambre (<a href="http://www.youtube.com/watch?v=oISfLF_N1xA">Nonette</a>, <a href="https://www.youtube.com/watch?v=qSw9J8N9aFo">Persepio</a>) sans compter une douzaine d'opéras, fort oubliés il est vrai. Son oeuvre plaisante a fait l'objet de nombreux enregistrements.  </li>
+                        <li>Plus près de nous, Ennio Morricone a connu la gloire cinématographique lors de sa collaboration avec Sergio Leone (Pour une Poignée de Dollars, Le Bon, la Brute et le Truand, Il était une fois dans l'Ouest,  Il était une fois la Révolution) mais il a écrit plus de 500 partitions similaires ! Ce que l'on sait moins, c'est que Morricone a également écrit beaucoup de musique pure. De façon surprenante, on ne l'entend pratiquement jamais et ce recordman des ventes de CD cinématographiques ne semble  pas s'être soucié d'assurer une pérennité à ses oeuvres plus ambitieuses. J'ai quand même déniché ces excellents Esercizi <sub><sub><sub> 
+                        <audio controls preload="none">
+                          <source src="../son.mp3/italie/morricone.mp3" type="audio/mpeg"/>
+                          <source src="../son.mp3/italie/morricone.ogg" type="audio/ogg"/>
+                          Votre navigateur n'est pas compatible
+                        </audio></sub></sub></sub> pour cordes.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="vieMusicaleItalie">
+                    <h4>La vie musicale en Italie</h4>
+
+                    <p>L'Italie n'est plus aussi prodigue en &quot;grandes&quot; voix lyriques que par le passé. Mis à part Cecilia Bartoli et Luciano Pavarotti, et encore il n'est plus de ce monde, qui peut encore prétendre rivaliser avec les vedettes d'un passé pas si lointain, Renata Tebaldi, Mirella Freni, Katia Ricciarelli, Renata Scotto, Enrico Caruso, Benjamino Gigli, Franco Corelli, Tito Schipa, Giuseppe Di Stefano, ... ? Aujourd'hui, en contrepartie, les &quot;petites&quot; voix abondent, Gloria Banditelli, Sara Mingardo, Roberta Invernizzi, Franco Fagioli, Marco Beasley, ..., qui se sont recyclées au service de l'héritage baroque. Intégrées à des ensembles bien rôdés, Elyma, Capella della Pieta de Turchini, Accordone, Accademia del Piacere, Venexiana, Compagnie del Madrigale, Concerto Italiano, Capella Mediterranea, ..., elles  font des merveilles.</p>
+                    <p>Les labels peu connus, <a href="http://tactus.it/home/">Tactus</a> et <a href="http://www.bongiovanni70.com/site/">Bongiovanni</a> se consacrent essentiellement à l'exhumation d'oeuvres oubliées ou négligées.  Ils ont, en particulier, gravé quantité de productions théâtrales provinciales. On ne peut que les en louer même si toutes ne sont pas d'un intérêt ni d'une qualité vocale et technique irréprochables.  Cela dit si vous collectionnez les opéras "exotiques", c'est votre unique espoir d'assouvir votre passion.</p>
+                    <p>Au piano, Arturo Benedetti Michelangeli et Maurizio Pollini se sont imposés comme deux des plus grands pianistes du 20<sup>ème</sup> siècle.  Ils ont connu les chefs Claudio Abbado, Riccardo Muti et Ricardo Chailly mais évidemment pas Il Maestro Arturo Toscanini.</p>
+                    <p>Depuis Stendahl, il est de bon ton de faire son pèlerinage artistique en Italie : le nôtre,  bien trop court, se termine ici. On en sort ébloui mais avec la peur rétrospective de tout mélanger de ce qu'on a entendu. Si Monteverdi, Vivaldi et Verdi sont de fait incontournables, si Caldara, Pergolèse, Salieri, Rossini, Puccini, Respighi, Dallapiccola valaient le détour prévu, j'aime aussi me souvenir de quelques coups de coeur qui n'étaient annoncés qu'en petits caractères dans le guide quand ils n'étaient pas simplement omis :  Uccellini, Vinci, Ferrari, Marcello, Galuppi,  Martucci, Wolf-Ferrari,  Perosi, Testi, Castelnuovo-Tedesco, Ghedini, Fedele, Romitelli, pas forcément des géants  mais de vrais pourvoyeurs de plaisir sonore et d'émotion. </p>
+                  </div>                 
+                </div>
+            
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -426,7 +700,8 @@ Votre navigateur n'est pas compatible
     
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

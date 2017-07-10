@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Tikhon Khrennikov, le censeur encensé</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Tikhon Khrennikov, le censeur encensé</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,96 +46,79 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tiresdeloubli.html">Compositeurs oubliés</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Tikhon Khrennikov, le censeur encensé</li>
                     </ul>
                 </nav>  
-  <h2>Tikhon Khrennikov, le censeur encensé.</h2>
-  <p>Un homme a régné sans grand partage sur l'organisation de la vie musicale soviéto-russe pendant presque 50 ans (1948-1991) : le camarade Tikhon Nikolayevich Khrennikov (1913-2007). Apprécié par certains et craint par tous, à l'Est, il fut le plus souvent honni à l'Ouest et, au bilan, probablement nulle part correctement jugé, faute de témoignages incontestables.</p>
-  
-  <p> L'URSS a de tous temps été la reine de l'embrouille et experte dans l'art de mélanger information et désinformation. La biographie officielle de Khrennikov offre ce mélange programmé de vérités et de contre-vérités impossibles à démêler, qui font de lui, aujourd'hui encore, un des personnages les plus controversés de l'histoire musicale du 20<sup>ème</sup> siècle. N'attendez pas de cette chronique qu'elle remette les choses à leur juste place : ceux qui furent en première ligne ont rarement témoigné à visage découvert et ils sont décédés, pas toujours de mort naturelle d'ailleurs.  Les faits contradictoires suivants suffiront à votre édification personnelle; ils sont de fait édifiants. </p>
 
-  
-  <div><i>Le politicien.</i></div>
-  
-  <div><img src="../images/khrennikov/khrennikov.jpg" alt="" /><div class="legende">Tikhon Khrennikov</div></div>
-   
-   <p>Khrennikov est né à Yelets au sein d'une famille nombreuse mais relativement aisée. Il a étudié au conservatoire de Moscou entre 1932 et 1936, dans la classe de Vissarion Shebalin, pour la composition, et celle d'Heinrich Neuhaus, pour le piano. C'est de cette époque que datent son <a href="http://www.youtube.com/watch?v=Gc4fj9h08Rg&feature=related">Concerto n°1</a>, pour piano, opus 1, et surtout la Symphonie n°1, son travail de fin d'études. Cette oeuvre prometteuse a retenu l'attention de deux chefs émigrés aux Etats-Unis, Leopold Stokowski et Eugène Ormandy, qui investirent  à perte dans l'oeuvre de celui qu'on appelait déjà le Schostakovitch de Moscou (Pour mémoire, les Conservatoires de Léningrad et de Moscou ont de tous temps rivalisé avec, au bilan, un net avantage pour le premier cité en ce qui concerne la composition).</p>
-   
-   
-<p>1936 fut une année noire pour la musique soviétique. Staline étant sorti furieux d'une représentation de l'opéra, Lady Macbeth, de Schostakovitch, des sessions officielles s'ensuivirent, destinées à transformer en ordre un souhait exprimé dès 1932 : les artistes étaient désormais priés d'écrire des oeuvres simples et optimistes, immédiatement compréhensibles par les masses populaires et de nature à les convaincre qu'elles vivaient dans le meilleur des mondes.  Tout musicien récalcitrant était taxé de formalisme et s'exposait à de sérieux désagréments allant de la simple censure à l'élimination physique. Khrennikov, qui avait déjà vu un de ses frères expédié au goulag sans autre forme de procès (on ne peut mieux dire !), choisit prudemment de cosigner les actes officiels. Sachez, pour information, que Nikolai Myaskovsky (1881-1950) et Aram Khachaturian (1903-1978), que l'on présente généralement comme de futures victimes du système, ont signé le même document.</p>
-   
-   <p>En 1947, Khrennikov entra officiellement en politique, devenant même membre du Soviet Suprême. On ne s'étonnera guère d'apprendre que le Commissaire Andrei Zhdanov ait pensé à lui pour occuper le tout nouveau poste de Secrétaire - perpétuel, c'est le cas de le dire ! - de l'Union des Compositeurs soviétiques. Il en profita pour mettre sur pied un système plutôt efficace de rétribution des artistes sous forme de droits d'auteurs et de commandes d'état. La même fonction exigeait qu'il supervise la censure des artistes réfractaires aux normes définies et il s'y montra malheureusement également diligent. L'Occident n'a largement retenu que ce rôle négatif. A l'Est, Khrennikov fut jugée avec plus de nuances sans que l'on sache clairement si les motivations étaient dictées par l'objectivité ou par la crainte. Celui qui souhaiterait instruire le dossier complet à charge et à décharge, comme il se doit, devrait certainement s'attacher à démêler en priorité les contradictions suivantes :</p>
-   
-   <li>Lors de ses interventions officielles, Khrennikov ne manquait jamais de rappeler aux compositeurs les plus en vue, Prokofiev, Schostakovitch et Katchaturian, que leur musique ne respectait pas la ligne clairement décidée par les instances du Parti et qu'ils devaient faire amende honorable. C'était son rôle, ce pour quoi on le payait. Chacun des intéressés visés a réagi à sa manière, contournant l'obstacle avec plus ou moins d'habileté. Tous ont eu peur, c'est certain, mais le fait demeure qu'au bilan, aucun  n'a été atteint dans sa création. D'ailleurs, s'il en avait été autrement, jamais l'oeuvre de Schostakovitch n'aurait gravi les sommets que l'on sait et on peut en dire autant de  la production soviétique qui est, en moyenne, supérieure à tout ce qui s'est écrit en "Occident libre" à la même époque.</li>
-   
-  <li>Il est cependant exact que d'autres musiciens, sans doute moins en vue, en particulier, Alexandre Loshkin, Nikolai Roslavets, Mieczyslaw Weinberg et Alfred Schnittke, n'eurent pas la chance de ces trois-là. Ce fut un aspect peu sympathique du "métier" de Khrennikov que d'avoir harcelé en priorité les artistes moins connus singulièrement à l'Ouest, spéculant sur le peu d'échos que l'affaire produirait. Weinberg,  emprisonné,  fut  sauvé in extremis lors de la disparition de Staline.</li>
-   
-   
-   
- <li>On a présenté Khrennikov comme un censeur plénipotentiaire n'ayant jamais tiré son pouvoir exorbitant du suffrage de ses pairs. Pourtant, par deux fois, en 1986 et en 1991, en pleine Perestroika, les membres de l'Union des compositeurs furent invités à se prononcer librement et le fait est qu'ils ont reconduit Khrennikov dans ses fonctions jusqu'au terme de 1991, date à laquelle l'ex-URSS est entrée en phase liquide. Prudence, lassitude ou indifférence, nul ne sait vraiment ce qu'il faut en penser.</li>
- 
- 
- <li>Ses rapports avec les grands interprètes russes furent on ne peut plus contrastés. Son plus cinglant adversaire fut sans doute Gennadi Rozhdestvensky : celui-ci s'est exprimé sans  ménagement ni ambiguïté au sujet du système qu'incarnait Khrennikov dans le cadre du reportage "Notes interdites", filmé par Bruno Montsaingeon, mais cela se passait dans les années ... 2000.</li>
- 
- <li>Cependant, tous les interprètes n'ont pas boudé la musique de Khrennikov, en particulier les fidèles Leonid Kogan et Ievgueni Svetlanov. On sera  davantage surpris d'apprendre que le dissident, Mstislav Rostropovitch, a collaboré à la création de son Concerto n°1, pour violoncelle, dont il fut le dédicataire enthousiaste et qu'il joua dans le monde entier.</li>
- 
- 
- <li>A l'Ouest, la réputation de Khrennikov a évidemment souffert du manque de transparence de sa biographie mais à y regarder de plus près, les choses paraissent moins simples. Sinon, comment expliquer que cet homme critiqué ait reçu autant de médailles à l'Ouest qu'à l'Est ?  On le retrouve en effet, décoré Officier de l'Ordre des Arts et des Lettres (Paris, 1994) ou recevant la Médaille Mozart (UNESCO, 2003) !  De même, le Ministère français de la culture semble avoir trouvé normal d'accueillir Khrennikov  (et toute sa famille !), à Paris, pour commémorer la mémoire de Serge Prokofiev, alors que  Lina Prokofieva s'était vu refuser son visa de sortie.</li>
- 
- 
-  <p>Khrennikov a soutenu jusqu'à son dernier souffle, en particulier lors de ses voyages en Occident, que loin de persécuter ses collègues, il s'était régulièrement interposé pour voler à leur secours. A l'appui de sa thèse, il n'a jamais manqué de faire remarquer qu'il ne fut pas pour rien dans les attributions du Prix Staline à ses administrés.</p>
-    
-   
- 
-<p><i>Note. Le <a href="http://en.wikipedia.org/wiki/USSR_State_Prize">Prix Staline</a> (1936-1953).</i></p> 
- <p><i>Véritable paradoxe au pays des soviets, l'attribution des prix Staline de 1<sup>ère</sup>, 2<sup>ème</sup> et 3<sup>ème</sup> classes impliquait une récompense financière rondelette (de 100000 à 25000 roubles) tranchant sur l'uniforme morosité ambiante. Schostakovitch décrocha la plus haute récompense en 1941 (Quintette à clavier) et en 1942 (Symphonie n°7), Prokofiev, en 1943 (Sonate n°7) et Katchaturian, en 1941 (Concerto pour violon). C'est l'inattendu Myaskovsky qui détient le record des citations avec une demi-douzaine d'accessits. Khrennikov se fit servir au passage mais curieusement il n'obtint la plupart des accessits que pour des musiques de films dépourvues d'intérêt.  C'est d'autant plus étrange qu'il eut à son actif des compositions de réelles valeurs dont le détail va suivre.</i></p>
- 
- 
-<p>On le voit, ces années tumultueuses ne furent ni tout à fait noires ni tout à fait blanches. Ce ne fut en tous cas pas uniformément le goulag pour tout le monde mais plutôt une alternance  de carottes et de bâtons. Reconnaissons, au moins, que l'arbre soviétique a porté ses fruits même pendant les saisons les plus rudes.</p>
- 
-  
-  
-  <div><i>Le musicien.</i></div>
-  
-   <p>A la fin de ses études, la carrière de Khrennikov démarra petitement avec des musiques de scène (Beaucoup de bruit pour rien dont le matériau musical fut repris dans le ballet Love for Love, une commande du Bolshoï) ou de film, à succès mais anodines. Ecoutez cette <a href="http://classical-music-online.net/en/production/27628">chanson</a>, extraite de la bande son du film "Ils se sont rencontrés à Moscou" qui lui valut le Prix Staline en 1941 (Je vous rassure d'emblée, tout n'est pas aussi nul sinon cette chronique n'aurait aucune raison d'être !).</p>
-  
-  <p>Absorbé par l'administration d'une censure omniprésente, Khrennikov n'eut guère le temps de développer un <a href="http://khrennikov.ru/eng/worklist/opus/">catalogue</a>  impressionnant. Il comporte quand même 42 numéros d'opus  dont plusieurs opéras, plus quelques musiques de film et autres chants patriotiques de moindre intérêt.</p>
-  
- 
-   
-<div><img src="../images/khrennikov/khrennikov1.jpg" alt="" /></div>
-<div><img src="../images/khrennikov/khrennikov3.jpg" alt="" /></div>
+                <p>Un homme a régné sans grand partage sur l'organisation de la vie musicale soviéto-russe pendant presque 50 ans (1948-1991) : le camarade Tikhon Nikolayevich Khrennikov (1913-2007). Apprécié par certains et craint par tous, à l'Est, il fut le plus souvent honni à l'Ouest et, au bilan, probablement nulle part correctement jugé, faute de témoignages incontestables.</p>
+                <p> L'URSS a de tous temps été la reine de l'embrouille et experte dans l'art de mélanger information et désinformation. La biographie officielle de Khrennikov offre ce mélange programmé de vérités et de contre-vérités impossibles à démêler, qui font de lui, aujourd'hui encore, un des personnages les plus controversés de l'histoire musicale du 20<sup>ème</sup> siècle. N'attendez pas de cette chronique qu'elle remette les choses à leur juste place : ceux qui furent en première ligne ont rarement témoigné à visage découvert et ils sont décédés, pas toujours de mort naturelle d'ailleurs.  Les faits contradictoires suivants suffiront à votre édification personnelle; ils sont de fait édifiants. </p>
 
-<div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div> 
-<p>Khrennikov a écrit trois symphonies d'excellente facture (n°1, opus 4 (1933), <a href="http://www.youtube.com/watch?v=5ovitMeqO7o&feature=related">n°2</a>, opus 9 (1942) et
-    <a href="http://www.youtube.com/watch?v=1xbGZZL413Q">n°3</a>, opus 22 (1973), toutes enregistrées par Ievgueni Svetlanov), quatre concertos pour piano (<a href="http://www.youtube.com/watch?v=xxvAowpDcbo&feature=related">n°1</a>, opus 1 (1932), n°2, opus 21 (1971), <a href="http://www.youtube.com/watch?v=5uIRANTw91c&feature=related">n°3</a>, opus 28 (1984) et n°4, opus 37 (1991)), deux concertos pour violon (n°1, opus 14 (1958) et
-    <a href="http://www.youtube.com/watch?v=ig6JqnsqIC4&feature=related">n°2</a>, opus 23 (1975)), deux concertos pour violoncelle (<a href="http://www.youtube.com/watch?v=j_PqYhFI4VY">n°1</a>, opus 16 (1964) et
-    <a href="http://www.youtube.com/watch?v=zGcnk3nck98&feature=related">n°2</a>, opus 30 (1986)). Sans crier au génie, le fait est que ces oeuvres, les symphonies particulièrement, ne sont nullement dénuées d'intérêt.</p>
+                <div id="politicien">
+                  <h4>Le politicien</h4>
 
-<p>Le grand paradoxe qui frappe la musique symphonique de Khrennikov, c'est qu'elle propose une musique dont l'esthétique ne se distingue pas franchement de celle empruntée par ceux qu'il pourchassait, les taxant de formalisme !  A vrai dire, il serait faux de croire que Khrennikov n'ait lui-même jamais été censuré : dans un pays où la délation règne nul n'est jamais à l'abri du zèle déployé par autrui et si Khrennikov n'eut vraisemblablement jamais à craindre pour sa vie ni même pour sa position sociale, il n'en demeure pas moins que son opéra Frol Skobeev a été effectivement recalé par le Comité d'examination (Le compositeur gagna cependant en appel de cette décision mais il dut frapper fort haut, chez Staline en personne).</p>
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/khrennikov/khrennikov.jpg" alt="Tikhon Khrennikov"/>
+                        <figcaption>Tikhon Khrennikov</figcaption>
+                      </figure>
+                    </div>
+                  </div>
 
-<p>Bien que Khrennikov ait écrit plusieurs opéras, aucun enregistrement n'est disponible, du moins sous nos longitudes :
-    &quot;Dans la tempête&quot;, &quot;Frol Skobejew&quot;, &quot;La Mère&quot;,
-    &quot;Cent démons et une femme&quot;,
-    &quot;L'enfant géant&quot;, 
-    &quot;Du bruit au cœur&quot;,
-    &quot;Dorothea&quot;, 
-    &quot;Le Veau d'or&quot;,
-    &quot;Le Roi nu&quot; et 
-    &quot;A 18 heures, après la guerre&quot; (écrit en 2003, le compositeur avait 90 ans !).</p>
+                  <p>Khrennikov est né à Yelets au sein d'une famille nombreuse mais relativement aisée. Il a étudié au conservatoire de Moscou entre 1932 et 1936, dans la classe de Vissarion Shebalin, pour la composition, et celle d'Heinrich Neuhaus, pour le piano. C'est de cette époque que datent son <a href="http://www.youtube.com/watch?v=Gc4fj9h08Rg&feature=related">Concerto n°1</a>, pour piano, opus 1, et surtout la Symphonie n°1, son travail de fin d'études. Cette oeuvre prometteuse a retenu l'attention de deux chefs émigrés aux Etats-Unis, Leopold Stokowski et Eugène Ormandy, qui investirent  à perte dans l'oeuvre de celui qu'on appelait déjà le Schostakovitch de Moscou (Pour mémoire, les Conservatoires de Léningrad et de Moscou ont de tous temps rivalisé avec, au bilan, un net avantage pour le premier cité en ce qui concerne la composition).</p>
+                  <p>1936 fut une année noire pour la musique soviétique. Staline étant sorti furieux d'une représentation de l'opéra, Lady Macbeth, de Schostakovitch, des sessions officielles s'ensuivirent, destinées à transformer en ordre un souhait exprimé dès 1932 : les artistes étaient désormais priés d'écrire des oeuvres simples et optimistes, immédiatement compréhensibles par les masses populaires et de nature à les convaincre qu'elles vivaient dans le meilleur des mondes.  Tout musicien récalcitrant était taxé de formalisme et s'exposait à de sérieux désagréments allant de la simple censure à l'élimination physique. Khrennikov, qui avait déjà vu un de ses frères expédié au goulag sans autre forme de procès (on ne peut mieux dire !), choisit prudemment de cosigner les actes officiels. Sachez, pour information, que Nikolai Myaskovsky (1881-1950) et Aram Khachaturian (1903-1978), que l'on présente généralement comme de futures victimes du système, ont signé le même document.</p>
+                  <p>En 1947, Khrennikov entra officiellement en politique, devenant même membre du Soviet Suprême. On ne s'étonnera guère d'apprendre que le Commissaire Andrei Zhdanov ait pensé à lui pour occuper le tout nouveau poste de Secrétaire - perpétuel, c'est le cas de le dire ! - de l'Union des Compositeurs soviétiques. Il en profita pour mettre sur pied un système plutôt efficace de rétribution des artistes sous forme de droits d'auteurs et de commandes d'état. La même fonction exigeait qu'il supervise la censure des artistes réfractaires aux normes définies et il s'y montra malheureusement également diligent. L'Occident n'a largement retenu que ce rôle négatif. A l'Est, Khrennikov fut jugée avec plus de nuances sans que l'on sache clairement si les motivations étaient dictées par l'objectivité ou par la crainte. Celui qui souhaiterait instruire le dossier complet à charge et à décharge, comme il se doit, devrait certainement s'attacher à démêler en priorité les contradictions suivantes :</p>
+                  
+                  <ul class="miniListCorps">
+                    <li>Lors de ses interventions officielles, Khrennikov ne manquait jamais de rappeler aux compositeurs les plus en vue, Prokofiev, Schostakovitch et Katchaturian, que leur musique ne respectait pas la ligne clairement décidée par les instances du Parti et qu'ils devaient faire amende honorable. C'était son rôle, ce pour quoi on le payait. Chacun des intéressés visés a réagi à sa manière, contournant l'obstacle avec plus ou moins d'habileté. Tous ont eu peur, c'est certain, mais le fait demeure qu'au bilan, aucun  n'a été atteint dans sa création. D'ailleurs, s'il en avait été autrement, jamais l'oeuvre de Schostakovitch n'aurait gravi les sommets que l'on sait et on peut en dire autant de  la production soviétique qui est, en moyenne, supérieure à tout ce qui s'est écrit en "Occident libre" à la même époque.</li>
+                    <li>Il est cependant exact que d'autres musiciens, sans doute moins en vue, en particulier, Alexandre Loshkin, Nikolai Roslavets, Mieczyslaw Weinberg et Alfred Schnittke, n'eurent pas la chance de ces trois-là. Ce fut un aspect peu sympathique du "métier" de Khrennikov que d'avoir harcelé en priorité les artistes moins connus singulièrement à l'Ouest, spéculant sur le peu d'échos que l'affaire produirait. Weinberg,  emprisonné,  fut  sauvé in extremis lors de la disparition de Staline.</li>
+                    <li>On a présenté Khrennikov comme un censeur plénipotentiaire n'ayant jamais tiré son pouvoir exorbitant du suffrage de ses pairs. Pourtant, par deux fois, en 1986 et en 1991, en pleine Perestroika, les membres de l'Union des compositeurs furent invités à se prononcer librement et le fait est qu'ils ont reconduit Khrennikov dans ses fonctions jusqu'au terme de 1991, date à laquelle l'ex-URSS est entrée en phase liquide. Prudence, lassitude ou indifférence, nul ne sait vraiment ce qu'il faut en penser.</li>
+                    <li>Ses rapports avec les grands interprètes russes furent on ne peut plus contrastés. Son plus cinglant adversaire fut sans doute Gennadi Rozhdestvensky : celui-ci s'est exprimé sans  ménagement ni ambiguïté au sujet du système qu'incarnait Khrennikov dans le cadre du reportage "Notes interdites", filmé par Bruno Montsaingeon, mais cela se passait dans les années ... 2000.</li>
+                    <li>Cependant, tous les interprètes n'ont pas boudé la musique de Khrennikov, en particulier les fidèles Leonid Kogan et Ievgueni Svetlanov. On sera  davantage surpris d'apprendre que le dissident, Mstislav Rostropovitch, a collaboré à la création de son Concerto n°1, pour violoncelle, dont il fut le dédicataire enthousiaste et qu'il joua dans le monde entier.</li>
+                    <li>A l'Ouest, la réputation de Khrennikov a évidemment souffert du manque de transparence de sa biographie mais à y regarder de plus près, les choses paraissent moins simples. Sinon, comment expliquer que cet homme critiqué ait reçu autant de médailles à l'Ouest qu'à l'Est ?  On le retrouve en effet, décoré Officier de l'Ordre des Arts et des Lettres (Paris, 1994) ou recevant la Médaille Mozart (UNESCO, 2003) !  De même, le Ministère français de la culture semble avoir trouvé normal d'accueillir Khrennikov  (et toute sa famille !), à Paris, pour commémorer la mémoire de Serge Prokofiev, alors que  Lina Prokofieva s'était vu refuser son visa de sortie.</li>
+                  </ul>
 
-<p>Khrennikov n'a abordé la musique de chambre que tardivement : Quatuor à cordes, opus 33 (1988),
-    <a href="http://www.youtube.com/watch?v=Cm9G1tNoZVo&feature=related">Sonate pour violoncelle et piano</a>, opus 34 (1989),
-    5 études pour instruments à vent, opus 35 (1990), <a href="http://www.youtube.com/watch?v=9E4eneREXTs&feature=relmfu">Trio pour flûte, hautbois & piano</a>, 
-<a href="http://www.youtube.com/watch?v=QyErRiXt5H8&feature=related">5 Pièces</a> pour piano.
-</p>
+                  <p>Khrennikov a soutenu jusqu'à son dernier souffle, en particulier lors de ses voyages en Occident, que loin de persécuter ses collègues, il s'était régulièrement interposé pour voler à leur secours. A l'appui de sa thèse, il n'a jamais manqué de faire remarquer qu'il ne fut pas pour rien dans les attributions du Prix Staline à ses administrés.</p>
 
-<p>Il a bien sûr écrit plusieurs ballets dont le dernier "Napoleon Bonaparte" demeure le plus célèbre. Il a été enregistré chez Russian Discs autant dire qu'il n'est pas simple de le trouver. D'une manière générale, on peut regretter que les enregistrements existants soient tous sortis des studios russes, souvent de qualité inférieure : l'oeuvre de Khrennikov méritait mieux. Excepté l'album des symphonies dirigées par Svetlanov, vous éprouverez sans doute des difficultés à les trouver sur le marché occidental.</p>
+                  <p><i>Note. Le <a href="http://en.wikipedia.org/wiki/USSR_State_Prize">Prix Staline</a> (1936-1953).</i></p> 
+                  <p><i>Véritable paradoxe au pays des soviets, l'attribution des prix Staline de 1<sup>ère</sup>, 2<sup>ème</sup> et 3<sup>ème</sup> classes impliquait une récompense financière rondelette (de 100000 à 25000 roubles) tranchant sur l'uniforme morosité ambiante. Schostakovitch décrocha la plus haute récompense en 1941 (Quintette à clavier) et en 1942 (Symphonie n°7), Prokofiev, en 1943 (Sonate n°7) et Katchaturian, en 1941 (Concerto pour violon). C'est l'inattendu Myaskovsky qui détient le record des citations avec une demi-douzaine d'accessits. Khrennikov se fit servir au passage mais curieusement il n'obtint la plupart des accessits que pour des musiques de films dépourvues d'intérêt.  C'est d'autant plus étrange qu'il eut à son actif des compositions de réelles valeurs dont le détail va suivre.</i></p>
 
-<p>Khrennikov a survécu 32 ans à Schostakovitch, jouant du piano jusqu'à un âge avancé (85 ans).  Une attaque cardiaque mit fin à sa carrière de soliste mais il conserva une charge d'enseignement au Conservatoire de  Moscou ainsi que la présidence du jury du Concours Tchaikovsky, jusqu'en 2004.</p>
-              </div>
+                  <p>On le voit, ces années tumultueuses ne furent ni tout à fait noires ni tout à fait blanches. Ce ne fut en tous cas pas uniformément le goulag pour tout le monde mais plutôt une alternance  de carottes et de bâtons. Reconnaissons, au moins, que l'arbre soviétique a porté ses fruits même pendant les saisons les plus rudes.</p>
+                </div>
+
+                <div id="musicien">
+                  <h4>Le musicien</h4>
+
+                  <p>A la fin de ses études, la carrière de Khrennikov démarra petitement avec des musiques de scène (Beaucoup de bruit pour rien dont le matériau musical fut repris dans le ballet Love for Love, une commande du Bolshoï) ou de film, à succès mais anodines. Ecoutez cette <a href="http://classical-music-online.net/en/production/27628">chanson</a>, extraite de la bande son du film "Ils se sont rencontrés à Moscou" qui lui valut le Prix Staline en 1941 (Je vous rassure d'emblée, tout n'est pas aussi nul sinon cette chronique n'aurait aucune raison d'être !).</p>
+                  <p>Absorbé par l'administration d'une censure omniprésente, Khrennikov n'eut guère le temps de développer un <a href="http://khrennikov.ru/eng/worklist/opus/">catalogue</a>  impressionnant. Il comporte quand même 42 numéros d'opus  dont plusieurs opéras, plus quelques musiques de film et autres chants patriotiques de moindre intérêt.</p>
+
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="../images/khrennikov/khrennikov1.jpg" alt="TODO">
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/khrennikov/khrennikov3.jpg" alt="TODO">
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <p>Khrennikov a écrit trois symphonies d'excellente facture (n°1, opus 4 (1933), <a href="http://www.youtube.com/watch?v=5ovitMeqO7o&feature=related">n°2</a>, opus 9 (1942) et <a href="http://www.youtube.com/watch?v=1xbGZZL413Q">n°3</a>, opus 22 (1973), toutes enregistrées par Ievgueni Svetlanov), quatre concertos pour piano (<a href="http://www.youtube.com/watch?v=xxvAowpDcbo&feature=related">n°1</a>, opus 1 (1932), n°2, opus 21 (1971), <a href="http://www.youtube.com/watch?v=5uIRANTw91c&feature=related">n°3</a>, opus 28 (1984) et n°4, opus 37 (1991)), deux concertos pour violon (n°1, opus 14 (1958) et <a href="http://www.youtube.com/watch?v=ig6JqnsqIC4&feature=related">n°2</a>, opus 23 (1975)), deux concertos pour violoncelle (<a href="http://www.youtube.com/watch?v=j_PqYhFI4VY">n°1</a>, opus 16 (1964) et <a href="http://www.youtube.com/watch?v=zGcnk3nck98&feature=related">n°2</a>, opus 30 (1986)). Sans crier au génie, le fait est que ces oeuvres, les symphonies particulièrement, ne sont nullement dénuées d'intérêt.</p>
+                  <p>Le grand paradoxe qui frappe la musique symphonique de Khrennikov, c'est qu'elle propose une musique dont l'esthétique ne se distingue pas franchement de celle empruntée par ceux qu'il pourchassait, les taxant de formalisme !  A vrai dire, il serait faux de croire que Khrennikov n'ait lui-même jamais été censuré : dans un pays où la délation règne nul n'est jamais à l'abri du zèle déployé par autrui et si Khrennikov n'eut vraisemblablement jamais à craindre pour sa vie ni même pour sa position sociale, il n'en demeure pas moins que son opéra Frol Skobeev a été effectivement recalé par le Comité d'examination (Le compositeur gagna cependant en appel de cette décision mais il dut frapper fort haut, chez Staline en personne).</p>
+                  <p>Bien que Khrennikov ait écrit plusieurs opéras, aucun enregistrement n'est disponible, du moins sous nos longitudes : &quot;Dans la tempête&quot;, &quot;Frol Skobejew&quot;, &quot;La Mère&quot;, &quot;Cent démons et une femme&quot;, &quot;L'enfant géant&quot;, &quot;Du bruit au cœur&quot;, &quot;Dorothea&quot;, &quot;Le Veau d'or&quot;, &quot;Le Roi nu&quot; et &quot;A 18 heures, après la guerre&quot; (écrit en 2003, le compositeur avait 90 ans !).</p>
+                  <p>Khrennikov n'a abordé la musique de chambre que tardivement : Quatuor à cordes, opus 33 (1988), <a href="http://www.youtube.com/watch?v=Cm9G1tNoZVo&feature=related">Sonate pour violoncelle et piano</a>, opus 34 (1989), 5 études pour instruments à vent, opus 35 (1990), <a href="http://www.youtube.com/watch?v=9E4eneREXTs&feature=relmfu">Trio pour flûte, hautbois &amp; piano</a>, 
+                  <a href="http://www.youtube.com/watch?v=QyErRiXt5H8&feature=related">5 Pièces</a> pour piano.
+                  </p>
+                  <p>Il a bien sûr écrit plusieurs ballets dont le dernier "Napoleon Bonaparte" demeure le plus célèbre. Il a été enregistré chez Russian Discs autant dire qu'il n'est pas simple de le trouver. D'une manière générale, on peut regretter que les enregistrements existants soient tous sortis des studios russes, souvent de qualité inférieure : l'oeuvre de Khrennikov méritait mieux. Excepté l'album des symphonies dirigées par Svetlanov, vous éprouverez sans doute des difficultés à les trouver sur le marché occidental.</p>
+                  <p>Khrennikov a survécu 32 ans à Schostakovitch, jouant du piano jusqu'à un âge avancé (85 ans).  Une attaque cardiaque mit fin à sa carrière de soliste mais il conserva une charge d'enseignement au Conservatoire de  Moscou ainsi que la présidence du jury du Concours Tchaikovsky, jusqu'en 2004.</p>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -146,8 +130,6 @@
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

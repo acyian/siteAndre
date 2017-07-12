@@ -433,7 +433,12 @@
 		    font-weight: bold;
 		    font-size: 1em;
 		}
-
+		
+		#contenuPrincipal h6{
+			text-align: center;
+		    font-weight: bold;
+		    font-size: 0.9em;
+		}
 	
 	/*======= ANCRE BAS DE PAGE =======*/
 		#ancreRetourHautPage{

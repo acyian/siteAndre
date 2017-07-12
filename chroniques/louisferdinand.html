@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | Louis Ferdinand, un prince musicien</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>Louis Ferdinand, un prince musicien</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,67 +46,99 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Louis Ferdinand, un prince musicien</li>
                     </ul>
                 </nav>  
-  
-  <h2>Louis Ferdinand, un prince musicien.</h2>
 
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/prince/louisferdinand.jpg" alt="Louis Ferdinand de Prusse"/>
+                              <figcaption>Louis Ferdinand de Prusse</figcaption>
+                          </figure>
+                      </div>
+                  </div>
   
-  
-  
-  <div><img src="../images/prince/louisferdinand.jpg" alt="" /><div class="legende">Louis Ferdinand de Prusse</div></div>
-  
-  <p>Prinz Friedrich Ludwig Christian von Preußen (1772-1806), surnommé en son temps l'Apollon prussien, a appartenu à la dynastie des Hohenzollern. Il est cependant connu depuis toujours sous le nom de Louis Ferdinand, une étrangeté qui a fait couler  de l'encre. Les bonnes langues ont prétendu que c'était simplement pour le distinguer des autres membres de cette famille nombreuse qui, de fait, étaient régulièrement baptisés sous les noms de Friedrich, Ludwig, Heinrich ou Wilhelm. Les mauvaises insinuent qu'il fallait opposer à la rumeur qu'il n'était peut-être pas le fils de Ferdinand, son père nourricier. Notez que la francisation des prénoms est bien d'origine, se conformant à un usage fréquent chez les Hohenzollern, volontiers francophiles depuis Frédéric le Grand (mais plus pour longtemps !).</p>
-  <p>L'arbre généalogique, sérieusement élagué   pour la circonstance, met précisément en évidence le lien de parenté liant Louis Ferdinand à son oncle-artiste-roi, Friedrich II, féru de musique comme signalé par ailleurs sur ce  <a href="../chroniques/allemagne.html">site</a>. Le nom de Christian Ludwig est également souligné afin de vous rappeler qu'il fut le dédicataire des célèbres Concertos Brandebourgeois de J. S. Bach.</p>
-  <p></p>
-  
-  <div><img src="../images/prince/prusse.jpg" alt="" /><div class="legende">Maison de Hohenzollern (<a href="http://upload.wikimedia.org/wikipedia/commons/0/0d/Hohenzollern_Genealogy.PNG">Arbre complet ici</a>)</div></div>
-  
+                  <p>Prinz Friedrich Ludwig Christian von Preußen (1772-1806), surnommé en son temps l'Apollon prussien, a appartenu à la dynastie des Hohenzollern. Il est cependant connu depuis toujours sous le nom de Louis Ferdinand, une étrangeté qui a fait couler  de l'encre. Les bonnes langues ont prétendu que c'était simplement pour le distinguer des autres membres de cette famille nombreuse qui, de fait, étaient régulièrement baptisés sous les noms de Friedrich, Ludwig, Heinrich ou Wilhelm. Les mauvaises insinuent qu'il fallait opposer à la rumeur qu'il n'était peut-être pas le fils de Ferdinand, son père nourricier. Notez que la francisation des prénoms est bien d'origine, se conformant à un usage fréquent chez les Hohenzollern, volontiers francophiles depuis Frédéric le Grand (mais plus pour longtemps !).</p>
+                  <p>L'arbre généalogique, sérieusement élagué   pour la circonstance, met précisément en évidence le lien de parenté liant Louis Ferdinand à son oncle-artiste-roi, Friedrich II, féru de musique comme signalé par ailleurs sur ce  <a href="../chroniques/allemagne.html">site</a>. Le nom de Christian Ludwig est également souligné afin de vous rappeler qu'il fut le dédicataire des célèbres Concertos Brandebourgeois de J. S. Bach.</p>
+                  
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="../images/prince/prusse.jpg" alt="Maison de Hohenzollern"/>
+                        <figcaption>
+                          <h5>Maison de Hohenzollern</h5>
+                          <h6>(<a href="http://upload.wikimedia.org/wikipedia/commons/0/0d/Hohenzollern_Genealogy.PNG">Arbre complet ici</a>)</h6>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  
+                  <p>Louis Ferdinand a mené une double carrière de pianiste-compositeur et (hélas) de chef militaire, une conséquence des invasions napoléoniennes. C'est à la bataille de Saalfeld (4 jours avant Iéna) qu'il a prématurément perdu la vie, sous les coups de sabre du maréchal des logis, Jean-Baptiste Guindey. Celui-ci ne tira heureusement aucun bénéfice immédiat de ce fait d'arme, l'empereur lui ayant reproché de n'avoir pas capturé vivant un opposant aussi illustre (en plus d'être prince Hohenzollern, il avait grade de lieutenant-général). Avec un minimum de culture musicale, Napoléon aurait ajouté que l'on n'ôtait pas la vie à un artiste aussi prometteur.</p>
+                  
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/prince/concerto3.jpg" alt="TODO"/>
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  
+                  <p>On ne sait pas grand chose des professeurs de musique de Louis Ferdinand, même les noms qui ont été avancés nous sont largement inconnus. Beethoven  l'a rencontré à Berlin, en 1796, et il a apprécié le jeu pianistique du prince, bien au-dessus du niveau pratiqué habituellement par les aristocrates.  Les deux hommes se sont revus en 1804, à Vienne, et ce fut l'occasion pour Beethoven de  lui dédier  son Concerto n°3 pour piano. Notez que la page de garde de la partition autographe, imprimée à Vienne, est  entièrement rédigée en français !</p>
+                  <p>Louis Ferdinand comprenait l'importance de l'oeuvre de Beethoven et il a cultivé l'influence des premières oeuvres du Maître de Bonn :  son Trio opus 10 se souvient en particulier de l'adagio de la <a href="http://www.youtube.com/watch?v=qeL3tAb7yV4">Sonate opus 31 n°2</a> de Beethoven et, de même, son Quatuor avec piano, opus 6, se souvient  de la <a href="http://www.youtube.com/watch?v=JGk-SdYQHFs">Sonate opus 30 n°1</a>  du même Beethoven.</p>
+                  <p>Johann Ladislas Dussek (1760-1812) fut l'autre musicien professionnel ayant compté dans la courte carrière de Louis Ferdinand : il fut d'ailleurs son Maître de chapelle de 1804 à 1806 (un excellent choix). A ce titre, il a joué les oeuvres de son Patron (il était payé pour cela) et lui a dédié son propre <a href="http://www.youtube.com/watch?v=TY4xoICpDWw">Quatuor à clavier</a> en mi bémol majeur, opus 56. A la mort de son employeur, Dussek a retrouvé du boulot au service de Talleyrand, à Paris, une ville où il est décédé sans laisser de trace (nul ne sait où il est enterré). En 1807, Dussek a composé  la superbe Sonate n° 24, opus 61, sous-titrée "Élégie harmonique sur la mort du Prince Louis Ferdinand de Prusse (1807)" (<a href="http://www.youtube.com/watch?v=_BKXUuGqNW4">Lento patetico - Tempo agitato</a>, <a href="http://www.youtube.com/watch?v=rW62rOpMr1M">Tempo vivace</a>). </p>
+                  <p>L'oeuvre peu abondante de Louis Ferdinand a  retenu l'attention des musiciens romantiques, singulièrement de Robert Schumann qui a vu en lui un précurseur  &quot;romantique de l'époque classique&quot;. Nul ne saura jamais ce que son art serait devenu s'il avait trouvé le temps de mûrir ni s'il aurait résisté à la tempête beethovenienne. On se consolera, si cela est possible, en relisant les chroniques de l'époque décrivant le prince comme adict aux jolies femmes et surtout au champagne dont il avalait quotidiennement - on peine à le croire ! - une douzaine de bouteille sans jamais trahir la moindre ivresse.  Nul doute qu'à ce rythme, la cirrhose l'aurait bientôt rattrapé pour une mort à peine différée et, au bilan, nettement moins glorieuse que celle qu'il a connue.</p>
+                  <p>Ces excès ne transparaissent cependant pas dans les 13 oeuvres  que l'on a répertoriées, elles sont au contraire d'une sagesse exemplaire :  </p>
 
-  <p>Louis Ferdinand a mené une double carrière de pianiste-compositeur et (hélas) de chef militaire, une conséquence des invasions napoléoniennes. C'est à la bataille de Saalfeld (4 jours avant Iéna) qu'il a prématurément perdu la vie, sous les coups de sabre du maréchal des logis, Jean-Baptiste Guindey. Celui-ci ne tira heureusement aucun bénéfice immédiat de ce fait d'arme, l'empereur lui ayant reproché de n'avoir pas capturé vivant un opposant aussi illustre (en plus d'être prince Hohenzollern, il avait grade de lieutenant-général). Avec un minimum de culture musicale, Napoléon aurait ajouté que l'on n'ôtait pas la vie à un artiste aussi prometteur.</p>
-  <p></p>
-  
-  <div><img src="../images/prince/concerto3.jpg" alt="" /></div>
-  
-  <p>On ne sait pas grand chose des professeurs de musique de Louis Ferdinand, même les noms qui ont été avancés nous sont largement inconnus. Beethoven  l'a rencontré à Berlin, en 1796, et il a apprécié le jeu pianistique du prince, bien au-dessus du niveau pratiqué habituellement par les aristocrates.  Les deux hommes se sont revus   en 1804, à Vienne, et ce fut l'occasion pour Beethoven de  lui dédier  son Concerto n°3 pour piano. Notez que la page de garde de la partition autographe, imprimée à Vienne, est  entièrement rédigée en français !</p>
-  <p> Louis Ferdinand comprenait l'importance de l'oeuvre de Beethoven et il a cultivé l'influence des premières oeuvres du Maître de Bonn :  son Trio opus 10 se souvient en particulier de l'adagio de la <a href="http://www.youtube.com/watch?v=qeL3tAb7yV4">Sonate opus 31 n°2</a> de Beethoven et, de même, son Quatuor avec piano, opus 6, se souvient  de la <a href="http://www.youtube.com/watch?v=JGk-SdYQHFs">Sonate opus 30 n°1</a>  du même Beethoven.</p>
-  <p> Johann Ladislas Dussek (1760-1812) fut l'autre musicien professionnel ayant compté dans la courte carrière de Louis Ferdinand : il fut d'ailleurs son Maître de chapelle de 1804 à 1806 (un excellent choix). A ce titre, il a joué les oeuvres de son Patron (il était payé pour cela) et lui a dédié son propre <a href="http://www.youtube.com/watch?v=TY4xoICpDWw">Quatuor à clavier</a> en mi bémol majeur, opus 56. A la mort de son employeur, Dussek a retrouvé du boulot au service de Talleyrand, à Paris, une ville où il est décédé sans laisser de trace (nul ne sait où il est enterré). En 1807, Dussek a composé  la superbe Sonate n° 24, opus 61, sous-titrée "Élégie harmonique sur la mort du Prince Louis Ferdinand de Prusse (1807)" (<a href="http://www.youtube.com/watch?v=_BKXUuGqNW4">Lento patetico - Tempo agitato</a>,  <a href="http://www.youtube.com/watch?v=rW62rOpMr1M">Tempo vivace</a>). </p>
-  <p></p>
-  <p> L'oeuvre peu abondante de Louis Ferdinand a  retenu l'attention des musiciens romantiques, singulièrement de Robert Schumann qui a vu en lui un précurseur  &quot;romantique de l'époque classique&quot;. Nul ne saura jamais ce que son art serait devenu s'il avait trouvé le temps de mûrir ni s'il aurait résisté à la tempête beethovenienne. On se consolera, si cela est possible, en relisant les chroniques de l'époque décrivant le prince comme adict aux jolies femmes et surtout au champagne dont il avalait quotidiennement - on peine à le croire ! - une douzaine de bouteille sans jamais trahir la moindre ivresse.  Nul doute qu'à ce rythme, la cirrhose l'aurait bientôt rattrapé pour une mort à peine différée et, au bilan, nettement moins glorieuse que celle qu'il a connue.</p>
-  <p>Ces excès ne transparaissent cependant pas dans les 13 oeuvres  que l'on a répertoriées, elles sont au contraire d'une sagesse exemplaire :  </p>
-  <li><a href="http://www.youtube.com/watch?v=RVum3euSLV4">Quintette à clavier</a> opus 1.</li>
-<li><a href="http://www.youtube.com/watch?v=7cJXFOMF0z8">Trio</a> opus 2.</li>
-<li><a href="http://www.youtube.com/watch?v=80ueZ96H8eY">Trio</a> opus 3.</li>
-<li><a href="http://www.youtube.com/watch?v=XJowqNbsYF4">Andante</a> opus 4 pour quatuor à clavier.</li>
-<li><a href="http://www.youtube.com/watch?v=WhLxUrHjfys">Quatuor à clavier</a> opus 5.</li>
- <li><a href="http://www.youtube.com/watch?v=kkvzdO2SBXA">Quatuor à clavier</a> opus 6, sans doute son oeuvre la plus aboutie.</li>
-  <li><a href="http://www.youtube.com/watch?v=ftXq070bR9M">Fugue</a> à 4 voix, opus 7, pour piano.</li>
-  <li><a href="http://www.youtube.com/watch?v=Qm_YCVeBCd4">Notturno</a> pour piano & orchestre, opus 8.</li>
- <li><a href="http://www.youtube.com/watch?v=sjsgjmjVTtI">Rondo</a> pour piano & orchestre, opus 9.</li>
- <li><a href="http://www.youtube.com/watch?v=PBnVRaKBfdo">Trio</a> opus 10.</li>
- <li><a href="http://www.youtube.com/watch?v=GR_xgVE1S7s">Larghetto</a> opus 11 pour quintette à clavier.</li>
- 
- <li><a href="http://www.youtube.com/watch?v=LucQbZozb7w">Octuor</a> opus 12.</li>
- <li><a href="http://www.youtube.com/watch?v=EIfX1VGkWnQ">Rondo</a> pour piano & orchestre, opus 13.</li>
+                  <ul class="miniListCorps">
+                    <li><a href="http://www.youtube.com/watch?v=RVum3euSLV4">Quintette à clavier</a> opus 1.</li>
+                    <li><a href="http://www.youtube.com/watch?v=7cJXFOMF0z8">Trio</a> opus 2.</li>
+                    <li><a href="http://www.youtube.com/watch?v=80ueZ96H8eY">Trio</a> opus 3.</li>
+                    <li><a href="http://www.youtube.com/watch?v=XJowqNbsYF4">Andante</a> opus 4 pour quatuor à clavier.</li>
+                    <li><a href="http://www.youtube.com/watch?v=WhLxUrHjfys">Quatuor à clavier</a> opus 5.</li>
+                    <li><a href="http://www.youtube.com/watch?v=kkvzdO2SBXA">Quatuor à clavier</a> opus 6, sans doute son oeuvre la plus aboutie.</li>
+                    <li><a href="http://www.youtube.com/watch?v=ftXq070bR9M">Fugue</a> à 4 voix, opus 7, pour piano.</li>
+                    <li><a href="http://www.youtube.com/watch?v=Qm_YCVeBCd4">Notturno</a> pour piano &amp; orchestre, opus 8.</li>
+                    <li><a href="http://www.youtube.com/watch?v=sjsgjmjVTtI">Rondo</a> pour piano &amp; orchestre, opus 9.</li>
+                    <li><a href="http://www.youtube.com/watch?v=PBnVRaKBfdo">Trio</a> opus 10.</li>
+                    <li><a href="http://www.youtube.com/watch?v=GR_xgVE1S7s">Larghetto</a> opus 11 pour quintette à clavier.</li>
+                    <li><a href="http://www.youtube.com/watch?v=LucQbZozb7w">Octuor</a> opus 12.</li>
+                    <li><a href="http://www.youtube.com/watch?v=EIfX1VGkWnQ">Rondo</a> pour piano &amp; orchestre, opus 13.</li>
+                  </ul>
 
+                  <p>Cette oeuvre a été intégralement enregistrée chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Louis-Ferdinand-Prinz-v-Preu%DFen-1772-1806-Das-Gesamtwerk/hnum/7470855">Thorofon</a> (5 CD) mais vous préférerez les extraits parus chez MDG qui sont parfaits :</p>
 
-<p>Cette oeuvre a été intégralement enregistrée chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Louis-Ferdinand-Prinz-v-Preu%DFen-1772-1806-Das-Gesamtwerk/hnum/7470855">Thorofon</a> (5 CD) mais vous préférerez les extraits parus chez MDG qui sont parfaits :</p>
-<div><img src="../images/prince/trios1.jpg" alt="" /></div>
-<div><img src="../images/prince/trios2.jpg" alt="" /></div>
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="../images/prince/trios1.jpg" alt="TODO">
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/prince/trios2.jpg" alt="TODO">
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                  </div>
 
- <p>L'armée impériale française a rendu les honneurs tardifs à (la dépouille de) Louis Ferdinand, avant de la  restituer à la Prusse. Notez dans votre agenda de voyage qu'elle repose aujourd'hui dans la crypte de la cathédrale de Berlin tandis qu'un monument à sa mémoire a été érigé non loin du champ de bataille de Saalfeld.</p>
+                  <p>L'armée impériale française a rendu les honneurs tardifs à (la dépouille de) Louis Ferdinand, avant de la  restituer à la Prusse. Notez dans votre agenda de voyage qu'elle repose aujourd'hui dans la crypte de la cathédrale de Berlin tandis qu'un monument à sa mémoire a été érigé non loin du champ de bataille de Saalfeld.</p>
+                </div>
 
-  
-  
-  <!-- TemplateEndEditable -->
- 
-   
+            </div>
 
- 
-  </div>
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+        
+        <!-- Inclusion footer -->
+        <div id="footer"></div>
+
+        </div>
+    </div>
 
 </body>
 </html>

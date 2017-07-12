@@ -63,6 +63,15 @@
 			text-decoration: underline;
 		}
 
+		.coloAutrePourLien a{
+			color: #00bdd2;
+		}
+
+		.coloAutrePourLien a:hover{
+			color: #00bdd2;
+			text-decoration: underline;
+		}
+
 		select{
 			outline: none;
 			padding: 2px;
@@ -227,18 +236,23 @@
 		td,th{
 		    border: 1px solid #ddd;
 		    width: 7.5%;
+		}
+
+		td{
 		    padding-top: 5px;
 		    padding-bottom: 5px;
 		}
 
-        .largeurSpecialeTableauLarge td, 
+		th{
+			font-weight: bold;
+			padding-top: 10px;
+		    padding-bottom: 10px;
+		}
+
+		.largeurSpecialeTableauLarge td, 
         .largeurSpecialeTableauLarge th{
             width: 4%;
         }
-
-		th{
-			font-weight: bold;
-		}
 
 
 	/*======= LISTES (ul/ol) =======*/
@@ -305,6 +319,11 @@
 
 		#contenuPrincipal ol.listOLWithP p:first-of-type {
 		    margin-top: 0px;
+		}
+
+		/*Liste à puces contenant une autre liste à puces*/
+		ul.listeAvecSousListe li.supprimeListStyle{
+			list-style: none;
 		}
 
 
@@ -685,6 +704,14 @@
 
 		.conteneurImages #reneMagritte{
 			margin-top: 95px;
+		}
+
+		.conteneur4Img div{
+			width: 25%;
+		}
+
+		.conteneur4Img div figure img{
+			width: 88%;
 		}
 
 	

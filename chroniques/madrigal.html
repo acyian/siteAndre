@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Genres musicaux | Le madrigal</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Genres musicaux</h2>
+                <h3>Le madrigal</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,145 +46,214 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../grandscycles.html">Genres musicaux</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le madrigal</li>
                     </ul>
-                </nav>  <h2>Le madrigal.</h2>
+                </nav>
   
- 
-  
-<div><img src="../images/madrigal/barberino.jpg" alt="" /></div> 
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/madrigal/barberino.jpg" alt="TODO"/>
+                              <figcaption>TODO</figcaption>
+                          </figure>
+                      </div>
+                  </div>  
 
-  
-  <p>  Le terme madrigal provient de l'italien &quot;matricale&quot; qui évoque un chant  en langue maternelle, italienne, en l'occurrence. Employé pour la première fois par Francesco da Barberino dans son essai &quot;Documenti d'Amore&quot;, daté de 1313, il évoque  la possibilité de mettre en musique des sujets légers  se démarquant des textes sacrés, chantés en latin. Toutefois, mis à part le recours au langage compréhensible par tous, aucune forme rigide n'est sous-entendue et, de fait, les musiciens du Quattrocento   ont  écrit autant de  simples Canzone, Caccia ou Ballata que d'acrobatiques motets inspirés par l'Ars subtilior. A ce propos, ne manquez pas l'enregistrement "Narcisso Speculando" d'oeuvres de Paolo da Firenze  (1355-1436),  par l'ensemble Mala Punica (<a href="http://www.youtube.com/watch?v=xZrflg4CEbE">Fra duri scogli</a>). </p>
-  <p>L'histoire de la musique réserve cependant  l'appellation &quot;madrigal&quot; à une forme postérieure, plus ambitieuse pour ne pas dire savante. Elle se  présente comme une polyphonie vocale, en principe  non accompagnée, dont le nombre de voix oscille généralement entre 3 et 6.   Le madrigal est habituellement écrit sur des poèmes de qualité, sans répétition strophique ni refrain, en soignant l'accentuation musicale des sentiments exprimés. Il est le premier essai transformé d'une forme musicale transalpine élaborée et originale.  Le genre a progressivement élargi sa structure jusqu'à 8 voix et/ou un accompagnement instrumental. Une simplification s'est opérée dans l'autre sens, vers un ton plus léger, le nombre des voix  pouvant tomber à deux.  </p>
-  <p>Cette chronique n'a aucune prétention musicologique, elle veut surtout illustrer la double difficulté du genre  : </p>
-  <li>pour les auditeurs que nous sommes, peu habitués à l'effort de concentration que son écoute réclame,
-  <p>- pour les ensembles vocaux, qui réussissent rarement à maintenir l'attention des précédents, même dans les chefs-d'oeuvre incontestés.
-  <p>Le (présumé) premier recueil de madrigaux, daté de 1520, fut composé par Bernardo Pisano (1490-1548), sur des poésies de Pétrarque. Le genre fut immédiatement adopté  par les musiciens franco-flamands alors en place dans les cours italiennes (Philippe Verdelot (1480-1552, originaire des environs d'Orange) qui fixa les règles du genre (<a href="http://www.youtube.com/watch?v=dwCNMPjge_0">Italia mia, benché 'l parlar sia indarno</a>),  Adrian Willaert (1490-1562, originaire de Bruges) (<a href="http://www.youtube.com/watch?v=Z3nsTH5kKtg">O dolce vita mia</a>, <a href="https://www.youtube.com/watch?v=Hiwe73dxraI">Aspro core e selvaggio</a>), Jacques Arcadelt (1507-1568, originaire de Namur) (<a href="http://www.youtube.com/watch?v=r4qY8vFFg3I">Ahime, ahime, dov'è'l bel viso</a>) et, last but not least, Cipriano de Rore (1515-1565, originaire de Renaix) (<a href="Anchor che col partire">Anchor che col partire</a> et <a href="http://www.youtube.com/watch?v=R5f-Uqe7_BU">Anchor che col partire</a>, ici  dans une version à une seule voix mais laquelle !) et Giaches de Wert (1535-1596, originaire de Weert, en Hollande actuelle) (<a href="http://www.youtube.com/watch?v=lLaIbcTkm1E&list=PLfuD5bmuIBppPdETyszrahUjadwyyRBNE">Io non son però morto</a>, <a href="http://www.youtube.com/watch?v=Ywx_tWXBE4A">Sorgi a rischiara</a> et <a href="http://www.youtube.com/watch?v=oSd_eft0cHg">Ah, dolente partita</a>, remarquablement chanté par un ensemble ... russe). A cette époque, les rares madrigalistes italiens, Costanzo Festa (1490-1545), Francesco de Layolle (1492-1540) (<a href="http://www.youtube.com/watch?v=6JQC8zOYj2o">Lasso la dolce vista</a>), ... , ne faisaient pas encore le poids mais cela ne dura pas.</li>
-  <p>A partir de 1550,  toutes les cours (Ferrare, Mantoue, Venise, Rome, ...) cultivèrent le madrigal,  y ajoutant  leur touche personnelle, notamment instrumentale comme à Ferrare et Venise.  Les oeuvres religieuses de Giovanni Pierluigi da Palestrina (1525-1594) - 104 messes et trois fois plus de motets ! - ont longtemps éclipsé le reste de sa production et cependant l'écoute de son <a href="http://www.youtube.com/watch?v=gxLhGlVIQ_0">Livre I</a> révèle qu'il a parfaitement assimilé les règles du genre. Avec Andrea Gabrieli (1533-1585) (<a href="http://www.youtube.com/watch?v=jFNvRXSJvzc">Vieni, vieni himeneo</a>),  Lodovico Agostini (1534-1590), Alessandro Striggio (1540-1592) (<a href="http://www.youtube.com/watch?v=YSY6AxqTChQ">Il gioco di primiera</a>), Girolamo dalla Casa (15??-1601) (<a href="http://www.youtube.com/watch?v=9roQWMGM1ac">Se il dolce bacio ch'io vi diedi</a>) et Luzzasco Luzzaschi (1545-1607) (<a href="http://www.youtube.com/watch?v=yln7eBx3bYU">Cor mio benchè lontana</a>), on entre de plain-pied dans une période de production tellement massive que  tout qui voudrait s'y consacrer à temps plein se condamnerait à l'indigestion. Les mélomanes pressés seront heureux d'apprendre que trois musiciens exceptionnels, Luca Marenzio (1553-1599), Carlo Gesualdo da Venosa (1566-1613) et Claudio Monteverdi (1567-1643), ont marqué le genre du sceau de leur individualité. </p>
-    
-    <div><img src="../images/italie/marenzio.jpg" alt="" /><div class="legende">Carlo Gesualdo da Venosa </div></div>
-     <div><img src="../images/italie/gesualdo.jpg" width="200" height="242" alt="" /><div class="legende">Carlo Gesualdo da Venosa </div></div>
-    <div><img src="../images/italie/monteverdi1.jpg" alt="" /><div class="legende">Claudio Monteverdi </div></div>
-    
-    <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-  
-<li>Marenzio a été particulièrement prolifique avec plus de 500 madrigaux
+                  <p>Le terme madrigal provient de l'italien &quot;matricale&quot; qui évoque un chant  en langue maternelle, italienne, en l'occurrence. Employé pour la première fois par Francesco da Barberino dans son essai &quot;Documenti d'Amore&quot;, daté de 1313, il évoque  la possibilité de mettre en musique des sujets légers  se démarquant des textes sacrés, chantés en latin. Toutefois, mis à part le recours au langage compréhensible par tous, aucune forme rigide n'est sous-entendue et, de fait, les musiciens du Quattrocento   ont  écrit autant de  simples Canzone, Caccia ou Ballata que d'acrobatiques motets inspirés par l'Ars subtilior. A ce propos, ne manquez pas l'enregistrement "Narcisso Speculando" d'oeuvres de Paolo da Firenze  (1355-1436),  par l'ensemble Mala Punica (<a href="http://www.youtube.com/watch?v=xZrflg4CEbE">Fra duri scogli</a>). </p>
+                  <p>L'histoire de la musique réserve cependant  l'appellation &quot;madrigal&quot; à une forme postérieure, plus ambitieuse pour ne pas dire savante. Elle se  présente comme une polyphonie vocale, en principe  non accompagnée, dont le nombre de voix oscille généralement entre 3 et 6. Le madrigal est habituellement écrit sur des poèmes de qualité, sans répétition strophique ni refrain, en soignant l'accentuation musicale des sentiments exprimés. Il est le premier essai transformé d'une forme musicale transalpine élaborée et originale.  Le genre a progressivement élargi sa structure jusqu'à 8 voix et/ou un accompagnement instrumental. Une simplification s'est opérée dans l'autre sens, vers un ton plus léger, le nombre des voix  pouvant tomber à deux.  </p>
+                  <p>Cette chronique n'a aucune prétention musicologique, elle veut surtout illustrer la double difficulté du genre  : </p>
 
-répartis en 24 livres, tous édités de son vivant. Il a pas mal voyagé, de Mantoue à Rome, en passant par la Cour des Médicis à Florence. Il   a même séjourné à Varsovie, sur ordre du pape, et y ruina sa santé.  Ciselant chaque oeuvre au plus près du texte, Marenzio s'est autorisé de réelles audaces harmoniques toutes les fois que l'expression poétique l'exigeait : 
-<a href="http://www.youtube.com/watch?v=BbPE9P23c-w">Solo et pensoso i più diserti campi</a>
- module de façon aventureuse, annonçant clairement les audaces de Gesualdo. Un grand artiste trop méconnu, sauf que je vous ai trouvé une ensemble indonésien, les <a href="http://www.youtube.com/watch?v=14YTGDL33c8&list=PLAM237dd8nmhVg7gZC8Ba1V4r8QYoT2lk">Batavia Madrigal Singers</a>, qui le chante avec  conviction !</li>
-<li>Gesualdo est d'abord passé à la postérité comme  meurtrier de sa première femme ( ! oui, il y en eut une seconde !) et de l'amant de celle-ci.   Protégé par  l'immunité que sa noble extraction lui octroyait en la circonstance,  il ne fut pas inquiété.  Il se fit néanmoins discret, se réfugiant dans son art.  Au terme de sa courte vie, il fut rattrappé par un remord tardif assorti d'autoflagellations quotidiennes, jusque dans sa musique, répandue en un langage harmoniquement torturé. La modernité de cette oeuvre singulière n'échappe à personne qui se donne la peine de l'écouter (<a href="http://www.youtube.com/watch?v=A6l4_TVGGoQ&list=PL0DAA7D48AE961C6A">Quel no crudel que la mia speme ancise</a>).</li>
-  
-  <li>La vie de Monteverdi a été marquée par une succession de pertes malheureuses : de son épouse tout d'abord, puis de son fils - après quoi il est entré dans les ordres - et enfin d'une quinzaine d'opéras dont on se demande comment il s'y est pris pour presque tous les égarer.  Par contre, ses 8 livres de madrigaux nous sont intégralement parvenus et ils représentent l'apogée du genre (<a href="http://www.youtube.com/watch?v=YKPK3CINlWU">Lamento della Ninfa</a>). Le livre 9 (<a href="http://www.youtube.com/watch?v=e6tJWY2Vaz4">Zefiro torna</a>) est une publication posthume, assemblée de bric et de broc.</li>
-  
-  
-  <p>Les oeuvres de ces trois musiciens essentiels ont été maintes fois enregistrées et le tableau suivant donne un aperçu contrasté d'interprétations existantes. Hélas rares sont celles qui atteignent le point d'incandescence   dans le déploiement des &quot;affetti&quot;.  Elles sont souvent bien trop sages comme si les interprètes redoutaient l'excès des passions exprimées. Il n'existe pas d'intégrale  des madrigaux de Marenzio, ils sont bien trop nombreux. Deux intégrales Gesualdo sont disponibles, l'une chez Naxos (Delitiae Musicae) et l'autre chez Globe (The Kassiopeia Quintet). Enfin il existe plusieurs inégrales Monteverdi, dues aux ensembles, Consort of Musicke,  Venexiana et Delitiae Musicae. Une nouvelle intégrale  des  <a href="https://www.youtube.com/watch?v=330vkLDBGoE">Arts florissants</a> de William Christie est actuellement en cours. Aucune n'est  parfaite mais, au bilan, celles de l'ensemble Venexiana, parue chez Glossa, se rapproche de l'idéal. </p>
- 
-    
-    
-  <table width="675" border="1">
-    <tr>
-      <td width="303">Les n° désignent les livres; Int = intégrale</td>
-      <td width="114">Marenzio</td>
-      <td width="113">Gesualdo</td>
-      <td width="117">Monteverdi</td>
-     
-    </tr>
-    <tr>
-      <td>Venexiana</td>
-      <td><a href="http://www.youtube.com/watch?v=BbPE9P23c-w">9</a></td>
-      <td><a href="http://www.youtube.com/watch?v=9ZVw9MkoEqw">4</a>, <a href="https://www.youtube.com/watch?v=yvBFxefFlHk">5</a></td>
-      <td>Int <a href="http://www.youtube.com/watch?v=YUgIJ212IVg">2</a>, <a href="http://www.youtube.com/watch?v=4WPqZqf1uRw">8</a>, <a href="http://www.youtube.com/watch?v=Tv3L7MNBOQ0">9</a></td>
-      
-    </tr>
-    <tr>
-      <td>Concerto vocale</td>
-      <td><a href="http://www.youtube.com/watch?v=jHHkb9g_gBQ">1</a></td>
-      <td></td>
-      <td><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libri-7-9-Ausz/hnum/8459035">7 & 9</a></td>
-      
-    </tr>
-    <tr>
-      <td>Concerto Italiano</td>
-      <td><a href="http://www.youtube.com/watch?v=MjwPJabUik8">1</a>, <a href="http://www.youtube.com/watch?v=XWm4ym3gqeQ">5</a></td>
-      <td><a href="https://www.youtube.com/watch?v=-_F1OuMeVSw">6</a></td>
-      <td><a href="http://www.youtube.com/watch?v=GrqO_ipHPMM">4</a>, <a href="http://www.youtube.com/watch?v=gvEVCbubLZs">6</a>, <a href="http://www.youtube.com/watch?v=Yy_klUuw-aM">8</a></td>
-      
-    </tr>
-    <tr>
-      <td>Delitiae Musicae</td>
-      <td></td>
-      <td><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carlo-Gesualdo-von-Venosa-S%E4mtliche-Madrigale/hnum/2771041">Int</a></td>
-      <td>Int, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libro-1/hnum/6207881">1</a>, <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.555314-16">7</a></td>
-     
-    </tr>
-    <tr>
-      <td>La Compagnia del Madrigale</td>
-      <td><a href="http://www.youtube.com/watch?v=EtWyUsgWRbU">3</a>, <a href="http://www.youtube.com/watch?v=ZKVpFjRRHUM">7</a></td>
-      <td><a href="http://www.youtube.com/watch?v=te5HRmQgp4E">6</a></td>
-      <td><a href="http://www.youtube.com/watch?v=HPcJsrxt4LU">6</a></td>
-     
-    </tr>
-     <tr>
-      <td>Consort of Musicke</td>
-      <td></td>
-      <td><a href="http://www.youtube.com/watch?v=ygLknOfKZQg">5</a></td>
-      <td>Int <a href="http://www.youtube.com/watch?v=ONbRJ85Unrs">7</a>, <a href="http://www.youtube.com/watch?v=Ctci_zhGhvY">8</a></td>
-     
-    </tr>
+                  <ul class="miniListCorps">
+                    <li>pour les auditeurs que nous sommes, peu habitués à l'effort de concentration que son écoute réclame,</li>
+                    <li>pour les ensembles vocaux, qui réussissent rarement à maintenir l'attention des précédents, même dans les chefs-d'oeuvre incontestés.</li>
+                  </ul>
 
-     
-  </table>
-    
-     <p>Parmi les innombrables enregistrements isolés de madrigaux, vous trouverez peut-être votre bonheur dans la fatalement très incomplète sélection suivante : Ensemble Metamorphoses (Gesualdo <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carlo-Gesualdo-von-Venosa-1560-1613-Madrigali-a-cinque-voci-Libro-V/hnum/9667914">5</a>, <a href="http://www.youtube.com/watch?v=mrEid3la7-Y">6</a>), Il Complesso barocco (Gesualdo <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carlo-Gesualdo-von-Venosa-1560-1613-Madrigali-a-cinque-voci-Libro-VI/hnum/4977224">6</a>), Tragicomedia (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-concertati/hnum/8529990">7 & 8</a>),   La Dolcer Maniera (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libro-4/hnum/2406263">4</a>),  Adakemia (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali/hnum/9296895">8</a>), Capella mediterranea (Monteverdi <a href="http://www.youtube.com/watch?v=mPhWDKT2gSk"> 8</a>), I Fagiolini (Monteverdi, <a href="http://www.youtube.com/watch?v=NlSb8b_X7II"> 4</a>, une interprétation qui a été mise en scène moderne  par le cinéaste John Labouchardière). Quel dommage, par ailleurs, que l'<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Instrumental-und-Vokalwerke-Amori-Di-Marte/hnum/4922785">Accademia Piacere</a> ait enregistré si peu de madrigaux !</p>
-     
+                  <p>Le (présumé) premier recueil de madrigaux, daté de 1520, fut composé par Bernardo Pisano (1490-1548), sur des poésies de Pétrarque. Le genre fut immédiatement adopté  par les musiciens franco-flamands alors en place dans les cours italiennes (Philippe Verdelot (1480-1552, originaire des environs d'Orange) qui fixa les règles du genre (<a href="http://www.youtube.com/watch?v=dwCNMPjge_0">Italia mia, benché 'l parlar sia indarno</a>),  Adrian Willaert (1490-1562, originaire de Bruges) (<a href="http://www.youtube.com/watch?v=Z3nsTH5kKtg">O dolce vita mia</a>, <a href="https://www.youtube.com/watch?v=Hiwe73dxraI">Aspro core e selvaggio</a>), Jacques Arcadelt (1507-1568, originaire de Namur) (<a href="http://www.youtube.com/watch?v=r4qY8vFFg3I">Ahime, ahime, dov'è'l bel viso</a>) et, last but not least, Cipriano de Rore (1515-1565, originaire de Renaix) (<a href="#">Anchor che col partire</a> et <a href="http://www.youtube.com/watch?v=R5f-Uqe7_BU">Anchor che col partire</a>, ici  dans une version à une seule voix mais laquelle !) et Giaches de Wert (1535-1596, originaire de Weert, en Hollande actuelle) (<a href="http://www.youtube.com/watch?v=lLaIbcTkm1E&list=PLfuD5bmuIBppPdETyszrahUjadwyyRBNE">Io non son però morto</a>, <a href="http://www.youtube.com/watch?v=Ywx_tWXBE4A">Sorgi a rischiara</a> et <a href="http://www.youtube.com/watch?v=oSd_eft0cHg">Ah, dolente partita</a>, remarquablement chanté par un ensemble ... russe). A cette époque, les rares madrigalistes italiens, Costanzo Festa (1490-1545), Francesco de Layolle (1492-1540) (<a href="http://www.youtube.com/watch?v=6JQC8zOYj2o">Lasso la dolce vista</a>), ... , ne faisaient pas encore le poids mais cela ne dura pas.</p>
+                  <p>A partir de 1550,  toutes les cours (Ferrare, Mantoue, Venise, Rome, ...) cultivèrent le madrigal,  y ajoutant  leur touche personnelle, notamment instrumentale comme à Ferrare et Venise.  Les oeuvres religieuses de Giovanni Pierluigi da Palestrina (1525-1594) - 104 messes et trois fois plus de motets ! - ont longtemps éclipsé le reste de sa production et cependant l'écoute de son <a href="http://www.youtube.com/watch?v=gxLhGlVIQ_0">Livre I</a> révèle qu'il a parfaitement assimilé les règles du genre. Avec Andrea Gabrieli (1533-1585) (<a href="http://www.youtube.com/watch?v=jFNvRXSJvzc">Vieni, vieni himeneo</a>),  Lodovico Agostini (1534-1590), Alessandro Striggio (1540-1592) (<a href="http://www.youtube.com/watch?v=YSY6AxqTChQ">Il gioco di primiera</a>), Girolamo dalla Casa (15??-1601) (<a href="http://www.youtube.com/watch?v=9roQWMGM1ac">Se il dolce bacio ch'io vi diedi</a>) et Luzzasco Luzzaschi (1545-1607) (<a href="http://www.youtube.com/watch?v=yln7eBx3bYU">Cor mio benchè lontana</a>), on entre de plain-pied dans une période de production tellement massive que  tout qui voudrait s'y consacrer à temps plein se condamnerait à l'indigestion. Les mélomanes pressés seront heureux d'apprendre que trois musiciens exceptionnels, Luca Marenzio (1553-1599), Carlo Gesualdo da Venosa (1566-1613) et Claudio Monteverdi (1567-1643), ont marqué le genre du sceau de leur individualité. </p>
 
-<p>Dans un esprit différent et historiquement discutable, quelques ensembles ont eu recours à des voix plus timbrées : le Concert d'Astrée (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libro-8-Ausz/hnum/1709685">8</a>) s'est bizarrement assuré du concours de la voix du ténor Rolando Villazon et l'ensemble <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Claudio-Monteverdi-The-Innovator/hnum/2760602">Concerto</a> de Roberto Gini a réussi de fort belles choses dans cette encyclopédie reparue chez Brillant (13 euros pour 10 CD vous ne serez pas ruinés).</p>
-    
-     
-    
+                  <div class="conteneurImages">
+                    <div>
+                      <figure>
+                        <img src="../images/italie/marenzio.jpg" alt="Luca Marenzio">
+                        <figcaption>Luca Marenzio</figcaption>
+                      </figure>
+                    </div>
+                    <div>
+                      <figure>
+                        <img src="../images/italie/gesualdo.jpg" alt="Carlo Gesualdo da Venosa">
+                        <figcaption>Carlo Gesualdo da Venosa</figcaption>
+                      </figure>
+                    </div>
+                     <div>
+                      <figure>
+                        <img src="../images/italie/monteverdi1.jpg" alt="Claudio Monteverdi">
+                        <figcaption>Claudio Monteverdi</figcaption>
+                      </figure>
+                    </div>
+                  </div>
 
-<p>  Le madrigal italien a brillé de ses derniers feux à la génération suivante, dominée par les personnalités de  Solomone Rossi (1570-1630) (<a href="http://www.youtube.com/watch?v=1Djaz3ytMgI">Al Naharot Bavel</a>, titre en hébreu vous avez bien lu, ce Rossi fut effectivement le premier musicien juif reconnu de qualité), Sigismondo d'India (1582-1629)  (Livres <a href="http://www.lavenexiana.net/india1.html">1</a>, <a href="http://www.youtube.com/watch?v=RjQ9lGJDvSg">3</a>),  Francesca Caccini (1587-1641) (<a href="http://www.youtube.com/watch?v=YI8o711XC_Y&list=PLD2D1D092CC6E9B0E">Che t'ho fatt'io</a>), Tarquino Merula (1590-1665) (<a href="http://www.youtube.com/watch?v=gMYQuBpFPPo">Un bianco Animaletto</a>),
- Michelangelo Rossi (1602-1656) (<a href="http://www.youtube.com/watch?v=geXNVFOCSo4">Or che la notte</a>) et Barbara Strozzi (1619-1677) (<a href="http://www.youtube.com/watch?v=1L4MVmhjrw0">Priego ad Amore</a>). Avec le temps, la tendance fut  à la diminution du nombre des voix, ce fut le point de départ de la cantate à une voix et de son amplification naturelle, l'opéra.</p>
-<p></p>
+                  <ul class="miniListCorps">
+                    <li>Marenzio a été particulièrement prolifique avec plus de 500 madrigaux répartis en 24 livres, tous édités de son vivant. Il a pas mal voyagé, de Mantoue à Rome, en passant par la Cour des Médicis à Florence. Il   a même séjourné à Varsovie, sur ordre du pape, et y ruina sa santé.  Ciselant chaque oeuvre au plus près du texte, Marenzio s'est autorisé de réelles audaces harmoniques toutes les fois que l'expression poétique l'exigeait : 
+                    <a href="http://www.youtube.com/watch?v=BbPE9P23c-w">Solo et pensoso i più diserti campi</a>
+                    module de façon aventureuse, annonçant clairement les audaces de Gesualdo. Un grand artiste trop méconnu, sauf que je vous ai trouvé une ensemble indonésien, les <a href="http://www.youtube.com/watch?v=14YTGDL33c8&list=PLAM237dd8nmhVg7gZC8Ba1V4r8QYoT2lk">Batavia Madrigal Singers</a>, qui le chante avec  conviction !</li>
+                    <li>Gesualdo est d'abord passé à la postérité comme  meurtrier de sa première femme ( ! oui, il y en eut une seconde !) et de l'amant de celle-ci.   Protégé par  l'immunité que sa noble extraction lui octroyait en la circonstance,  il ne fut pas inquiété.  Il se fit néanmoins discret, se réfugiant dans son art.  Au terme de sa courte vie, il fut rattrappé par un remord tardif assorti d'autoflagellations quotidiennes, jusque dans sa musique, répandue en un langage harmoniquement torturé. La modernité de cette oeuvre singulière n'échappe à personne qui se donne la peine de l'écouter (<a href="http://www.youtube.com/watch?v=A6l4_TVGGoQ&list=PL0DAA7D48AE961C6A">Quel no crudel que la mia speme ancise</a>).</li>
+                    <li>La vie de Monteverdi a été marquée par une succession de pertes malheureuses : de son épouse tout d'abord, puis de son fils - après quoi il est entré dans les ordres - et enfin d'une quinzaine d'opéras dont on se demande comment il s'y est pris pour presque tous les égarer.  Par contre, ses 8 livres de madrigaux nous sont intégralement parvenus et ils représentent l'apogée du genre (<a href="http://www.youtube.com/watch?v=YKPK3CINlWU">Lamento della Ninfa</a>). Le livre 9 (<a href="http://www.youtube.com/watch?v=e6tJWY2Vaz4">Zefiro torna</a>) est une publication posthume, assemblée de bric et de broc.</li>
+                  </ul>
 
+                  <p>Les oeuvres de ces trois musiciens essentiels ont été maintes fois enregistrées et le tableau suivant donne un aperçu contrasté d'interprétations existantes. Hélas rares sont celles qui atteignent le point d'incandescence   dans le déploiement des &quot;affetti&quot;.  Elles sont souvent bien trop sages comme si les interprètes redoutaient l'excès des passions exprimées. Il n'existe pas d'intégrale  des madrigaux de Marenzio, ils sont bien trop nombreux. Deux intégrales Gesualdo sont disponibles, l'une chez Naxos (Delitiae Musicae) et l'autre chez Globe (The Kassiopeia Quintet). Enfin il existe plusieurs inégrales Monteverdi, dues aux ensembles, Consort of Musicke,  Venexiana et Delitiae Musicae. Une nouvelle intégrale  des  <a href="https://www.youtube.com/watch?v=330vkLDBGoE">Arts florissants</a> de William Christie est actuellement en cours. Aucune n'est  parfaite mais, au bilan, celles de l'ensemble Venexiana, parue chez Glossa, se rapproche de l'idéal. </p>
 
-<p><i>Le madrigal hors d'Italie.</i></p>
-<p>Quelques musiciens voyageurs ont  emporté des recueils de madrigaux dans leurs valises, comme d'autres emportaient des espèces botaniques afin de les transplanter sous d'autres climats. Le résultat fut partout mitigé sauf en Angleterre.</p>
-<li>La France et les Flandres qui avaient collaboré  à l'époque de Verdelot et Arcadelt ont ignoré les développements du genre, lui préférant la chanson polyphonique (à 4 voix) puis l'air de cour. </li>
-<li>Le montois Roland de Lassus (1532-1594) a rejoint la cour d'Albert V de Bavière (Munich) avec ses livres (<a href="http://www.youtube.com/watch?v=bL40Zxi1IFo">I' vo piangendo</a>) et ceux de Costanzo Festa tandis que Heinrich Schütz (1585-1672) a fait pareil auprès de la cour de Dresde, avec ses Italienische Madrigale (<a href="http://www.youtube.com/watch?v=oV_makKCUhg">Ride la Primavera</a>), fruits de deux séjours vénitiens, au contact des maîtres,  Giovani Gabrieli  et  Claudio Monteverdi. Seul Hans Leo Hassler (1564-1612) a fait honneur au genre (<a href="http://www.youtube.com/watch?v=PtyCe0yXY0I">Jungfrau, dein schon Gestalt</a>) qui  cédait le pas au lied.</li>
-<li>Alfonso Ferrabosco le Vieux (1543-1588) a rencontré davantage de succès lors de l'introduction de ses madrigaux et de ceux de Luca Marenzio   à la cour d'Elisabeth 1<sup>ère</sup> d'Angleterre (1533-1603). Ce Ferrabosco  détient le record du monde du plus grand nombre de madrigaux écrits et du plus petit nombre enregistrés.  Ne le confondez pas  avec le nettement plus célèbre Alfonso Ferrabosco le Jeune (1575-1628), son fils illégitime,  qui vécut toute sa vie de violiste en Angleterre, la reine ayant toujours refusé qu'il accompagne son père lors de ses retours ponctuels sur la terre de ses ancêtres. Il s'est dit que Ferrabosco le Vieux espionnait la papauté pour le compte de la reine<sup></sup> d'où ceci explique peut-être cela.</li>
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>Marenzio</th>
+                      <th>Gesualdo</th>
+                      <th>Monteverdi</th>
+                    </tr>
+                    <tr>
+                      <td>Venexiana</td>
+                      <td><a href="http://www.youtube.com/watch?v=BbPE9P23c-w">9</a></td>
+                      <td><a href="http://www.youtube.com/watch?v=9ZVw9MkoEqw">4</a>, <a href="https://www.youtube.com/watch?v=yvBFxefFlHk">5</a></td>
+                      <td>Int <a href="http://www.youtube.com/watch?v=YUgIJ212IVg">2</a>, <a href="http://www.youtube.com/watch?v=4WPqZqf1uRw">8</a>, <a href="http://www.youtube.com/watch?v=Tv3L7MNBOQ0">9</a></td>
+                    </tr>
+                    <tr>
+                      <td>Concerto vocale</td>
+                      <td><a href="http://www.youtube.com/watch?v=jHHkb9g_gBQ">1</a></td>
+                      <td></td>
+                      <td><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libri-7-9-Ausz/hnum/8459035">7 &amp; 9</a></td>
+                    </tr>
+                    <tr>
+                      <td>Concerto Italiano</td>
+                      <td><a href="http://www.youtube.com/watch?v=MjwPJabUik8">1</a>, <a href="http://www.youtube.com/watch?v=XWm4ym3gqeQ">5</a></td>
+                      <td><a href="https://www.youtube.com/watch?v=-_F1OuMeVSw">6</a></td>
+                      <td><a href="http://www.youtube.com/watch?v=GrqO_ipHPMM">4</a>, <a href="http://www.youtube.com/watch?v=gvEVCbubLZs">6</a>, <a href="http://www.youtube.com/watch?v=Yy_klUuw-aM">8</a></td>
+                    </tr>
+                    <tr>
+                      <td>Delitiae Musicae</td>
+                      <td></td>
+                      <td><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carlo-Gesualdo-von-Venosa-S%E4mtliche-Madrigale/hnum/2771041">Int</a></td>
+                      <td>Int, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libro-1/hnum/6207881">1</a>, <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.555314-16">7</a></td>
+                    </tr>
+                    <tr>
+                      <td>La Compagnia del Madrigale</td>
+                      <td><a href="http://www.youtube.com/watch?v=EtWyUsgWRbU">3</a>, <a href="http://www.youtube.com/watch?v=ZKVpFjRRHUM">7</a></td>
+                      <td><a href="http://www.youtube.com/watch?v=te5HRmQgp4E">6</a></td>
+                      <td><a href="http://www.youtube.com/watch?v=HPcJsrxt4LU">6</a></td>
+                    </tr>
+                    <tr>
+                      <td>Consort of Musicke</td>
+                      <td></td>
+                      <td><a href="http://www.youtube.com/watch?v=ygLknOfKZQg">5</a></td>
+                      <td>Int <a href="http://www.youtube.com/watch?v=ONbRJ85Unrs">7</a>, <a href="http://www.youtube.com/watch?v=Ctci_zhGhvY">8</a></td>
+                    </tr>
+                  </table>
 
-<div><img src="../images/madrigal/elisabeth.jpg" alt="" /><div class="legende">Elisabeth 1<sup>ère</sup> (Tudor)</div></div>
-<div><img src="../images/madrigal/stuart.jpg" alt="" /><div class="legende">Jacques 1<sup>er</sup> (Stuart)</div></div>
-<p> Le madrigal anglais a prospéré pendant une très courte période de 30 ans, les historiens précisent 1593-1622, soit à cheval sur les règnes de la dernière Tudor et du premier Stuart. Il y a lieu de reconnaître que les musiciens anglais ont pris de telles libertés avec le genre italien qu'il serait plus correct de parler de style madrigalesque anglais : certes l'expression des sentiments intimes demeurent privilégiée mais le traitement est nettement plus libre, se réduisant parfois à une seul voix. Les textes sont souvent d'essence populaire et il n'est pas rare que la musique s'assouplisse, plus proche de la ballade que de l'austère madrigal, ce qui a d'ailleurs contribué à son succès.</p>
-<p>Un inventaire assez étoffé des livres parus est disponible <a href="http://fr.wikipedia.org/wiki/Liste_de_madrigalistes">ici</a>. Il évoque les musiciens anglais les plus célèbres de cette époque : William Byrd (1542-1623) (<a href="https://www.youtube.com/watch?v=le-4LI1PkSY">Through Amarillis Daunce in Greene</a>),  Thomas Morley (1557-1602) (<a href="http://www.youtube.com/watch?v=LJ7VirCScp0">Now is the Month of Maying</a>),  Peter Philips (1560-1628), John Dowland (1563-1626) (<a href="http://www.youtube.com/watch?v=UarTIqF6KM4">Come, heavy sleep</a>, <a href="http://www.youtube.com/watch?v=JB9LXUtW2FM">Come again, sweet love doth now invite</a>), John Farmer (1565-1605) (<a href="http://www.youtube.com/watch?v=A3yy_ZT_e64">Fair Phyllis I saw</a>),
-  Giles Farnaby (1565-1640),   Francis Pilkington (1570-1638) (<a href="http://www.youtube.com/watch?v=tU2u_5Kp6cs">O Softly Singing Lute</a>), John Ward (1571-1638), Thomas Tomkins (1572-1656) (<a href="http://www.youtube.com/watch?v=y1K3C_OpmXc">Woe is me for thee</a>, <a href="https://www.youtube.com/watch?v=UqudXkdrg1Y">Too much I once lamented</a>), John Wilbye (1574-1638) (<a href="http://www.youtube.com/watch?v=ADr9CtdkfOY">O Wretched Man</a>), John Bennet (1575-1614) (<a href="http://www.youtube.com/watch?v=VyGmwsTXXKQ&list=PLSYsVWi1ssBs7UZPh1Sc6-lHGvui2wDk2">All Creatures Now</a>), Thomas Weelkes (1576-1623) (<a href="http://www.youtube.com/watch?v=ytktiGj0Qqk">Death hath deprived me</a>),  Orlando Gibbons (1583-1625) (<a href="http://www.youtube.com/watch?v=eiPMKRLLInc">The Silver Swan</a>), Thomas Ravenscroft (1592-1633) (<a href="http://www.youtube.com/watch?v=jKpWEnN9bpc">The Three Ravens</a>), John Jenkins (1592-1678) et Robert Jones (1597-1615) (<a href="https://www.youtube.com/watch?v=I8_06zknVgY">Farewell, Dear Love</a>).</p>
+                  <i>Note : Les n° désignent les livres; Int = intégrale</i>
 
+                  <p>Parmi les innombrables enregistrements isolés de madrigaux, vous trouverez peut-être votre bonheur dans la fatalement très incomplète sélection suivante : Ensemble Metamorphoses (Gesualdo <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carlo-Gesualdo-von-Venosa-1560-1613-Madrigali-a-cinque-voci-Libro-V/hnum/9667914">5</a>, <a href="http://www.youtube.com/watch?v=mrEid3la7-Y">6</a>), Il Complesso barocco (Gesualdo <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carlo-Gesualdo-von-Venosa-1560-1613-Madrigali-a-cinque-voci-Libro-VI/hnum/4977224">6</a>), Tragicomedia (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-concertati/hnum/8529990">7 & 8</a>),   La Dolcer Maniera (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libro-4/hnum/2406263">4</a>),  Adakemia (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali/hnum/9296895">8</a>), Capella mediterranea (Monteverdi <a href="http://www.youtube.com/watch?v=mPhWDKT2gSk"> 8</a>), I Fagiolini (Monteverdi, <a href="http://www.youtube.com/watch?v=NlSb8b_X7II"> 4</a>, une interprétation qui a été mise en scène moderne  par le cinéaste John Labouchardière). Quel dommage, par ailleurs, que l'<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Instrumental-und-Vokalwerke-Amori-Di-Marte/hnum/4922785">Accademia Piacere</a> ait enregistré si peu de madrigaux !</p>
+                  <p>Dans un esprit différent et historiquement discutable, quelques ensembles ont eu recours à des voix plus timbrées : le Concert d'Astrée (Monteverdi <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Madrigali-Libro-8-Ausz/hnum/1709685">8</a>) s'est bizarrement assuré du concours de la voix du ténor Rolando Villazon et l'ensemble <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claudio-Monteverdi-1567-1643-Claudio-Monteverdi-The-Innovator/hnum/2760602">Concerto</a> de Roberto Gini a réussi de fort belles choses dans cette encyclopédie reparue chez Brillant (13 euros pour 10 CD vous ne serez pas ruinés).</p>
+                  <p>Le madrigal italien a brillé de ses derniers feux à la génération suivante, dominée par les personnalités de  Solomone Rossi (1570-1630) (<a href="http://www.youtube.com/watch?v=1Djaz3ytMgI">Al Naharot Bavel</a>, titre en hébreu vous avez bien lu, ce Rossi fut effectivement le premier musicien juif reconnu de qualité), Sigismondo d'India (1582-1629)  (Livres <a href="http://www.lavenexiana.net/india1.html">1</a>, <a href="http://www.youtube.com/watch?v=RjQ9lGJDvSg">3</a>),  Francesca Caccini (1587-1641) (<a href="http://www.youtube.com/watch?v=YI8o711XC_Y&list=PLD2D1D092CC6E9B0E">Che t'ho fatt'io</a>), Tarquino Merula (1590-1665) (<a href="http://www.youtube.com/watch?v=gMYQuBpFPPo">Un bianco Animaletto</a>),
+                  Michelangelo Rossi (1602-1656) (<a href="http://www.youtube.com/watch?v=geXNVFOCSo4">Or che la notte</a>) et Barbara Strozzi (1619-1677) (<a href="http://www.youtube.com/watch?v=1L4MVmhjrw0">Priego ad Amore</a>). Avec le temps, la tendance fut  à la diminution du nombre des voix, ce fut le point de départ de la cantate à une voix et de son amplification naturelle, l'opéra.</p>
 
-<p>Vous découvrirez un florilège de madrigaux  d'Angleterre et d'ailleurs dans l'album    <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Kings-Singers-Madrigal-History-Tour/hnum/2529276">Madrigal History Tour</a> des King's Singers.  Leurs voix, alertes et légères,  conviennent particulièrement aux oeuvres anglaises d'inspiration populaire. D'autres ensembles britanniques peuvent faire beaucoup moins bien, qui n'évitent pas toujours l'excès des voix blanches (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/The-Tallis-Scholars-English-Madrigals/hnum/4669829">Tallis Scholars</a>) ou des effectifs pléthoriques (<a href="https://www.youtube.com/watch?v=eqt005j1dB0">The Cambridge Singers</a>).</p>
+                  <div id="madrigalHorsItalie">
+                    <h4>Le madrigal hors d'Italie</h4>
 
-  
-  
-  <div><img src="../images/strozzi/strozzi.jpg" alt="" /></div>
-  <p>Le madrigal s'est défini comme  la rencontre rare d'un musicien, d'un poète et  d'un (groupe d')interpète(s) aux prises avec une alchimie dont le secret ne figure dans aucun grimoire. Aucun genre musical n'est davantage dépendant de sa restitution sonore : il est des chefs-d'oeuvre de Monteverdi qui, mal chantés, distillent un ennui mortel et des oeuvrettes a priori anodines qui émeuvent les âmes les moins sensibles.   Voici, pour conclure, quelques enregistrements qui m'ont plu avec une mention spéciale pour l'<a href="http://www.youtube.com/watch?v=cR2eganbp2c">enregistrement</a> de madrigaux de Barbara Strozzi, Claudio Monteverdi et  Sigismondi d'India, par la Capella Mediterranea, dirigée par Leonardo Garcia Alarcon. Une liste plus complète avec écoute possible du début des plages est accessible <a href="http://www.jpc.de/s/madrigali">ici</a>.</p>
-  <p></p>
-  
-  <div><img src="../images/madrigal/willaert.jpg" alt="" /></div>
-<div><img src="../images/madrigal/gabrieli.jpg" alt="" /></div>
-<div><img src="../images/madrigal/rossi.jpg" alt="" /></div>
-<div><img src="../images/madrigal/marenzio.jpg" alt="" /></div>
-<div><img src="../images/madrigal/palestrina.jpg" alt="" /></div>
-<div><img src="../images/madrigal/solomone.jpg" alt="" /></div>
-<div><img src="../images/madrigal/merula.jpg" alt="" /></div>
-<div><img src="../images/madrigal/schutz.jpg" alt="" /></div>
-  
-  
-  
-              </div>
+                    <p>Quelques musiciens voyageurs ont  emporté des recueils de madrigaux dans leurs valises, comme d'autres emportaient des espèces botaniques afin de les transplanter sous d'autres climats. Le résultat fut partout mitigé sauf en Angleterre.</p>
+
+                    <ul class="miniListCorps">
+                      <li>La France et les Flandres qui avaient collaboré  à l'époque de Verdelot et Arcadelt ont ignoré les développements du genre, lui préférant la chanson polyphonique (à 4 voix) puis l'air de cour. </li>
+                      <li>Le montois Roland de Lassus (1532-1594) a rejoint la cour d'Albert V de Bavière (Munich) avec ses livres (<a href="http://www.youtube.com/watch?v=bL40Zxi1IFo">I' vo piangendo</a>) et ceux de Costanzo Festa tandis que Heinrich Schütz (1585-1672) a fait pareil auprès de la cour de Dresde, avec ses Italienische Madrigale (<a href="http://www.youtube.com/watch?v=oV_makKCUhg">Ride la Primavera</a>), fruits de deux séjours vénitiens, au contact des maîtres,  Giovani Gabrieli  et  Claudio Monteverdi. Seul Hans Leo Hassler (1564-1612) a fait honneur au genre (<a href="http://www.youtube.com/watch?v=PtyCe0yXY0I">Jungfrau, dein schon Gestalt</a>) qui  cédait le pas au lied.</li>
+                      <li>Alfonso Ferrabosco le Vieux (1543-1588) a rencontré davantage de succès lors de l'introduction de ses madrigaux et de ceux de Luca Marenzio   à la cour d'Elisabeth 1<sup>ère</sup> d'Angleterre (1533-1603). Ce Ferrabosco  détient le record du monde du plus grand nombre de madrigaux écrits et du plus petit nombre enregistrés.  Ne le confondez pas  avec le nettement plus célèbre Alfonso Ferrabosco le Jeune (1575-1628), son fils illégitime,  qui vécut toute sa vie de violiste en Angleterre, la reine ayant toujours refusé qu'il accompagne son père lors de ses retours ponctuels sur la terre de ses ancêtres. Il s'est dit que Ferrabosco le Vieux espionnait la papauté pour le compte de la reine<sup></sup> d'où ceci explique peut-être cela.</li>
+                    </ul>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/elisabeth.jpg" alt="Elisabeth 1<sup>ère</sup> (Tudor)">
+                          <figcaption>Elisabeth 1<sup>ère</sup> (Tudor)</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/stuart.jpg" alt="Jacques 1<sup>er</sup> (Stuart)">
+                          <figcaption>Jacques 1<sup>er</sup> (Stuart)</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Le madrigal anglais a prospéré pendant une très courte période de 30 ans, les historiens précisent 1593-1622, soit à cheval sur les règnes de la dernière Tudor et du premier Stuart. Il y a lieu de reconnaître que les musiciens anglais ont pris de telles libertés avec le genre italien qu'il serait plus correct de parler de style madrigalesque anglais : certes l'expression des sentiments intimes demeurent privilégiée mais le traitement est nettement plus libre, se réduisant parfois à une seul voix. Les textes sont souvent d'essence populaire et il n'est pas rare que la musique s'assouplisse, plus proche de la ballade que de l'austère madrigal, ce qui a d'ailleurs contribué à son succès.</p>
+                    <p>Un inventaire assez étoffé des livres parus est disponible <a href="http://fr.wikipedia.org/wiki/Liste_de_madrigalistes">ici</a>. Il évoque les musiciens anglais les plus célèbres de cette époque : William Byrd (1542-1623) (<a href="https://www.youtube.com/watch?v=le-4LI1PkSY">Through Amarillis Daunce in Greene</a>), Thomas Morley (1557-1602) (<a href="http://www.youtube.com/watch?v=LJ7VirCScp0">Now is the Month of Maying</a>),  Peter Philips (1560-1628), John Dowland (1563-1626) (<a href="http://www.youtube.com/watch?v=UarTIqF6KM4">Come, heavy sleep</a>, <a href="http://www.youtube.com/watch?v=JB9LXUtW2FM">Come again, sweet love doth now invite</a>), John Farmer (1565-1605) (<a href="http://www.youtube.com/watch?v=A3yy_ZT_e64">Fair Phyllis I saw</a>), Giles Farnaby (1565-1640),   Francis Pilkington (1570-1638) (<a href="http://www.youtube.com/watch?v=tU2u_5Kp6cs">O Softly Singing Lute</a>), John Ward (1571-1638), Thomas Tomkins (1572-1656) (<a href="http://www.youtube.com/watch?v=y1K3C_OpmXc">Woe is me for thee</a>, <a href="https://www.youtube.com/watch?v=UqudXkdrg1Y">Too much I once lamented</a>), John Wilbye (1574-1638) (<a href="http://www.youtube.com/watch?v=ADr9CtdkfOY">O Wretched Man</a>), John Bennet (1575-1614) (<a href="http://www.youtube.com/watch?v=VyGmwsTXXKQ&list=PLSYsVWi1ssBs7UZPh1Sc6-lHGvui2wDk2">All Creatures Now</a>), Thomas Weelkes (1576-1623) (<a href="http://www.youtube.com/watch?v=ytktiGj0Qqk">Death hath deprived me</a>),  Orlando Gibbons (1583-1625) (<a href="http://www.youtube.com/watch?v=eiPMKRLLInc">The Silver Swan</a>), Thomas Ravenscroft (1592-1633) (<a href="http://www.youtube.com/watch?v=jKpWEnN9bpc">The Three Ravens</a>), John Jenkins (1592-1678) et Robert Jones (1597-1615) (<a href="https://www.youtube.com/watch?v=I8_06zknVgY">Farewell, Dear Love</a>).</p>
+                    <p>Vous découvrirez un florilège de madrigaux  d'Angleterre et d'ailleurs dans l'album    <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Kings-Singers-Madrigal-History-Tour/hnum/2529276">Madrigal History Tour</a> des King's Singers.  Leurs voix, alertes et légères,  conviennent particulièrement aux oeuvres anglaises d'inspiration populaire. D'autres ensembles britanniques peuvent faire beaucoup moins bien, qui n'évitent pas toujours l'excès des voix blanches (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/The-Tallis-Scholars-English-Madrigals/hnum/4669829">Tallis Scholars</a>) ou des effectifs pléthoriques (<a href="https://www.youtube.com/watch?v=eqt005j1dB0">The Cambridge Singers</a>).</p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/strozzi/strozzi.jpg" alt="TODO"/>
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Le madrigal s'est défini comme  la rencontre rare d'un musicien, d'un poète et  d'un (groupe d')interpète(s) aux prises avec une alchimie dont le secret ne figure dans aucun grimoire. Aucun genre musical n'est davantage dépendant de sa restitution sonore : il est des chefs-d'oeuvre de Monteverdi qui, mal chantés, distillent un ennui mortel et des oeuvrettes a priori anodines qui émeuvent les âmes les moins sensibles. Voici, pour conclure, quelques enregistrements qui m'ont plu avec une mention spéciale pour l'<a href="http://www.youtube.com/watch?v=cR2eganbp2c">enregistrement</a> de madrigaux de Barbara Strozzi, Claudio Monteverdi et  Sigismondi d'India, par la Capella Mediterranea, dirigée par Leonardo Garcia Alarcon. Une liste plus complète avec écoute possible du début des plages est accessible <a href="http://www.jpc.de/s/madrigali">ici</a>.</p>
+
+                    <div class="conteneurImages conteneur4Img">
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/willaert.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/gabrieli.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/rossi.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/marenzio.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <div class="conteneurImages conteneur4Img">
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/palestrina.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/solomone.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/merula.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/madrigal/schutz.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -195,8 +265,6 @@ répartis en 24 livres, tous édités de son vivant. Il a pas mal voyagé, de Ma
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

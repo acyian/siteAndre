@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Billets d'humeur | Video Medici</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -36,7 +37,7 @@
 
             <div id="contenuPrincipal">
                 <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h3>Video Medici</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,79 +46,31 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Video Medici</li>
                     </ul>
                 </nav>    
     
-    <h2>Video Medici</h2><p>
-    I Medici (sans "s" en
-    Italien), ce ne sont pas seulement trois papes, sept grands-ducs de
-    Toscane, deux reines de France (Catherine,
-    épouse de Henri II et Marie, épouse de Henri IV) et un extraordinaire catalogue de richesses artistiques
-    léguées, en 1743, à la ville de Florence par Anna Maria Luisa la dernière représentante de la famille.</p>
-    <p>
-    C'est
-    encore un nom illustre récupéré par la postérité au titre de label d'excellence
-    pour toutes sortes d'initiatives artistiques.  C'est l'une d'elles que je veux vous présenter.  Si vous êtes, comme je l'espère, familier des
-    programmes de la chaîne Arte,
-    vous avez certainement eu l'occasion de visionner toutes sortes de
-    documentaires de qualité dont certains sont consacrés à la musique.  
-    <a href="http://www.medici.tv/">Medici.tv</a> 
-est en
-      train de se constituer un catalogue de base accessible aux internautes. Il le
-      propose sous forme d'abonnements "stream" à
-      la journée (5 euros), au mois (25 euros) ou pour six mois (50 euros).  Il est également possible de commander le
-    contenu du DVD à graver soi-même (de 5 à 9 euros).  </p>
-<p>
-  Soucieux que
-  vous n'achetiez pas un chat dans un sac, le site vous propose de larges
-  extraits, de quoi vous mettre en appétit : il suffit de vous inscrire, c'est
-  entièrement gratuit.  Chaque semaine, à
-  titre promotionnel, un spectacle peut même être visionné dans son intégralité
-  dans d'excellentes conditions techniques.</p><p>
-  Cette semaine,
-    Pâques oblige, vous pouvez entendre un extrait de
-    
-    la Passion selon Saint-Jean de Bach dirigée par l'inégalé Masaaki Susuki,
-    l'intégralité d'un concert donné par Ton Koopman dirigeant les Magnificat de Bach et de Kuhnau, le
-    Kyrie de
-    la Messe en
-    ut de Mozart par John Elliot Gardiner et last but not least, un extrait d'une merveilleuse interprétation
-    des Sept dernières Paroles du Christ en Croix par le Concert des Nations et Jordi Savall (Version instrumentale).</p><p>
-  Au hasard du
-    catalogue, vous découvrirez d'autres perles :</p><p>
-  Le Quintette à cordes de Schubert dans la version concertante de
-    
-    la Kremerata Baltica.</p><p>
-  Toujours
-    Schubert et le Quatuor Hagen dans
-    "La jeune Fille et
-    la Mort".</p><p>
-  Le merveilleux Quatuor Artemis dans un quatuor du jeune Beethoven (opus 18-2).</p><p>
-  Esa Pekka Salonen dirigeant ses propres "L.A. Variations".</p><p>
-  La belle Hélène Grimaud dans le Concerto de Ravel.</p><p>
-  Une pléiade de
-    pianistes, Piotr Anderszewski, Grigory Sokolov, Sviatoslav Richter, Claudio Arrau,
-    etc., ou de violonistes tout aussi fameux, Yehudi Menuhin et David Oistrakh ou le prometteur Valery Sokolov.</p>
-  <p>
-  Plus de 200
-    documents à ce jour vous dévoilant Sergiu Celibidache ou Guennadi Rojdestvenski en répétition, Glenn
-    Gould dans sa retraite canadienne, Philip
-    Glass suivi pas à pas pendant trois mois ou Olivier Messiaen vous expliquant sa passion pour les chants
-    d'oiseaux.  Certains sont des archives
-    d'une valeur inestimable pour apprécier l'histoire de l'interprétation en
-    musique.</p><p>
-  Le chant n'est
-    pas en reste avec les Varady, Crespin, Callas, Schwarzkopf, Fischer Dieskau,
-    …, saisis dans leur meilleure période vocale.</p><p>
-  On le voit, il y en a pour tous les
-    goûts : connectez-vous, inscrivez-vous et piochez !</p>
-    
-    
-    
-              </div>
+                <p>I Medici (sans "s" en Italien), ce ne sont pas seulement trois papes, sept grands-ducs de Toscane, deux reines de France (Catherine, épouse de Henri II et Marie, épouse de Henri IV) et un extraordinaire catalogue de richesses artistiques léguées, en 1743, à la ville de Florence par Anna Maria Luisa la dernière représentante de la famille.</p>
+                <p>C'est encore un nom illustre récupéré par la postérité au titre de label d'excellence pour toutes sortes d'initiatives artistiques.  C'est l'une d'elles que je veux vous présenter.  Si vous êtes, comme je l'espère, familier des programmes de la chaîne Arte, vous avez certainement eu l'occasion de visionner toutes sortes de documentaires de qualité dont certains sont consacrés à la musique.  <a href="http://www.medici.tv/">Medici.tv</a> est en train de se constituer un catalogue de base accessible aux internautes. Il le propose sous forme d'abonnements "stream" à la journée (5 euros), au mois (25 euros) ou pour six mois (50 euros). Il est également possible de commander le contenu du DVD à graver soi-même (de 5 à 9 euros).  </p>
+                <p>Soucieux que vous n'achetiez pas un chat dans un sac, le site vous propose de larges extraits, de quoi vous mettre en appétit : il suffit de vous inscrire, c'est entièrement gratuit.  Chaque semaine, à titre promotionnel, un spectacle peut même être visionné dans son intégralité dans d'excellentes conditions techniques.</p>
+                <p>Cette semaine, Pâques oblige, vous pouvez entendre un extrait de la Passion selon Saint-Jean de Bach dirigée par l'inégalé Masaaki Susuki, l'intégralité d'un concert donné par Ton Koopman dirigeant les Magnificat de Bach et de Kuhnau, le Kyrie de la Messe en ut de Mozart par John Elliot Gardiner et last but not least, un extrait d'une merveilleuse interprétation des Sept dernières Paroles du Christ en Croix par le Concert des Nations et Jordi Savall (Version instrumentale).</p>
+                <p>Au hasard du catalogue, vous découvrirez d'autres perles :</p>
+
+                <ul class="miniListCorps">
+                  <li>Le Quintette à cordes de Schubert dans la version concertante de la Kremerata Baltica.</li>
+                  <li>Toujours Schubert et le Quatuor Hagen dans "La jeune Fille et la Mort".</li>
+                  <li>Le merveilleux Quatuor Artemis dans un quatuor du jeune Beethoven (opus 18-2).</li>
+                  <li>Esa Pekka Salonen dirigeant ses propres "L.A. Variations".</li>
+                  <li>La belle Hélène Grimaud dans le Concerto de Ravel.</li>
+                  <li>Une pléiade de pianistes, Piotr Anderszewski, Grigory Sokolov, Sviatoslav Richter, Claudio Arrau, etc., ou de violonistes tout aussi fameux, Yehudi Menuhin et David Oistrakh ou le prometteur Valery Sokolov.</li>
+                </ul>
+
+                <p>Plus de 200 documents à ce jour vous dévoilant Sergiu Celibidache ou Guennadi Rojdestvenski en répétition, Glenn Gould dans sa retraite canadienne, Philip Glass suivi pas à pas pendant trois mois ou Olivier Messiaen vous expliquant sa passion pour les chants d'oiseaux.  Certains sont des archives d'une valeur inestimable pour apprécier l'histoire de l'interprétation en musique.</p>
+                <p>Le chant n'est pas en reste avec les Varady, Crespin, Callas, Schwarzkopf, Fischer Dieskau, …, saisis dans leur meilleure période vocale.</p>
+                <p>On le voit, il y en a pour tous les goûts : connectez-vous, inscrivez-vous et piochez !</p>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -127,10 +80,7 @@ est en
 
         </div>
     
-    
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

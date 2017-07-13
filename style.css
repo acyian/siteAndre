@@ -119,6 +119,23 @@
 			font-weight: bold;
 		}
 
+		.misEnMajuscule{
+			text-transform: uppercase;
+		}
+
+		.fontSize14{
+			font-size: 14px;
+		}
+
+		.coloType1Chiffres{
+			color: #b5cd00; /*ancien orange*/
+		}
+
+		.coloType2Chiffres{
+			color: #00cd70; /*ancien vert*/
+		}
+
+
 	
 	/*======= FIL D ARIANE =======*/
 		.accessibility-hidden {
@@ -326,6 +343,14 @@
 			list-style: none;
 		}
 
+		.enlevePuces2ndeListe ul {
+			padding-left: 0;
+		}
+
+		.enlevePuces2ndeListe ul li{
+			list-style: none;
+		}
+
 
 	/*======= CITATION =======*/
 		blockquote{
@@ -448,9 +473,20 @@
 
 		#contenuPrincipal h5 {
 		    text-align: center;
-		    margin-bottom: 60px;
 		    font-weight: bold;
-		    font-size: 1em;
+		    margin-bottom: 20px;
+		    padding-top: 30px;
+		    margin-top: 0;
+		    font-size: 18px;
+		}
+
+		#contenuPrincipal h6.grosTitre {
+		    font-size: 24px;
+		    text-transform: uppercase;
+		    text-align: center;
+		    margin-top: 30px;
+		    padding-top: 40px;
+		    border-bottom: 1px solid #dddddd;
 		}
 
 	

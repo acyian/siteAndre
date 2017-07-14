@@ -284,6 +284,10 @@
 		    display: grid;
 		}
 
+		.petitPaddingLeftUl{
+			padding-left: 40px;
+		}
+
 		.miniListCorps.ptInterligneLi{
 			line-height: 0.2em;
 		}

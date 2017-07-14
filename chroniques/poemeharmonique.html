@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Interprètes actuels | Le Poème Harmonique</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#interpretesActuels").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Interprètes actuels</h2>
+                <h3>Le Poème Harmonique</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,67 +46,112 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../interpretesActuels.html">Interprètes actuels</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le Poème Harmonique</li>
                     </ul>
                 </nav>    
     
-   <h2> Le Poème Harmonique.	</h2>
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/poemeharmonique/poemeharmonique.jpg" alt="TODO">
+                      <figcaption>TODO</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-<div><img src="../images/poemeharmonique/poemeharmonique.jpg" alt="" /></div>
+                <p>Fondé en 1998, par Vincent Dumestre, &quot;Le Poème Harmonique&quot; est un ensemble de musique ancienne qui partage avec <a href="../chroniques/arpeggiata.html">Arpeggiata</a> une  exigence de perfection sonore au service de répertoires négligés des 16<sup>ème</sup> et 17<sup>ème</sup> siècles. Comme lui, il enregistre pour le label Alpha et chaque nouvelle parution est unanimement célébrée par la critique internationale.</p>
+                <p>Lorsqu'il ne parcourt pas le monde, il est en résidence à la restaurée Chapelle Corneille  de Rouen où il supervise, depuis cette année, l'organisation du festival des &quot;Saisons baroques&quot;. L'exceptionnelle qualité acoustique de cette formation prend  tout son sens au concert et je ne peux que vous engager à courir les entendre autant que les écouter (Par exemple à Bruxelles, Studio 4 de la Place Flagey, ce 1/7/2016) car l'expérience est autant acoustique qu'artistique.</p>
 
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/poemeharmonique/fasolo.jpg" alt="TODO"/>
+                      <figcaption>TODO</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-<p>Fondé en 1998, par Vincent Dumestre, &quot;Le Poème Harmonique&quot; est un ensemble de musique ancienne qui partage avec <a href="../chroniques/arpeggiata.html">Arpeggiata</a> une  exigence de perfection sonore au service de répertoires négligés des 16<sup>ème</sup> et 17<sup>ème</sup> siècles. Comme lui, il enregistre pour le label Alpha et chaque nouvelle parution est unanimement célébrée par la critique internationale.</p>
-<p> Lorsqu'il ne parcourt pas le monde, il est en résidence à la restaurée Chapelle Corneille  de Rouen où il supervise, depuis cette année, l'organisation du festival des &quot;Saisons baroques&quot;. L'exceptionnelle qualité acoustique de cette formation prend  tout son sens au concert et je ne peux que vous engager à courir les entendre autant que les écouter (Par exemple à Bruxelles, Studio 4 de la Place Flagey, ce 1/7/2016) car l'expérience est autant acoustique qu'artistique.</p>
-<p></p>
-<div><img src="../images/poemeharmonique/fasolo.jpg" alt="" /></div>
-<p>L'album &quot;Il Fasolo ?&quot; a particulièrement compté dans l'histoire du groupe. Son titre étrange fait référence à l'indécision qui subsiste quant à l'auteur véritable des pièces proposées, peut-être Giovanni Battista Fasolo (1598-après 1664) voire Francesco Manelli (1594-1667) ou tout autre qui aurait pris le surnom de Fasolo (= haricot, en vieux dialecte  sicilien !)  mais rien n'est sûr à ce sujet. Il propose 17 plages de musiques peu connues qu'on croirait pourtant des tubes dès la première écoute (<a href="https://www.youtube.com/watch?v=27u6Ck-WOVo">La Barchetta passaggiera</a>, <a href="https://www.youtube.com/watch?v=zM4QMzsZ3E4">Son ruinato, appassionato</a>, <a href="https://www.youtube.com/watch?v=ijEqz6O24Us">Serenata in lingua lombarda</a> et ne manquez pas la langoureuse chaconne finale, <a href="https://www.youtube.com/watch?v=XglR15fY2zI">Acceso mio Core</a>). </p>
-<p></p>
-<p></p>
-<p></p>
-<p><i>Quelques classiques du baroque.</i></p>
-<p>L'ensemble a abordé quelques grands classiques du baroque français dont les <a href="https://www.youtube.com/watch?v=Vha5Sd53Ah0">Te  Deum</a> de Marc-Antoine Charpentier (Commence en 3:30) et de Jean-Baptiste Lully (Commence en 30:18). Notez particulièrement sur cette video la présence de Claire Lefiliâtre (la deuxième soprano en commençant à gauche de l'image), certes sous-employée dans ces pièces mais dont vous n'avez pas fini d'entendre la voix tombée du ciel (cfr infra). On la retrouve plus à découvert dans  le <a href="https://www.youtube.com/watch?v=B90vsjspLQY">Miserere</a> de Michel-Richard Delalande (suivi par les 3 Leçons des Ténèbres du même).</p>
-<p></p>
-<p><i>Les productions scéniques.</i></p>
-<p> Au <a href="http://www.poemeharmonique.fr/agenda/saison/20152016/">répertoire</a> de l'ensemble  figurent  quelques représentations théâtrales  où comédiens (<a href="https://www.youtube.com/watch?v=-t_InmYLrUU&index=92&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Le Bourgeois Gentilhomme</a>,  de Lully &amp; Molière, et Le Malade imaginaire, de  Charpentier &amp; Molière), danseurs et artistes de cirque (<a href="https://www.youtube.com/watch?v=fJq04efuXto&index=22&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Le Carnaval baroque</a>), voire marionnettistes (<a href="https://www.youtube.com/watch?v=8A7g46MFqdU">Caligula</a>, un opéra du peu connu Giovanni Maria Pagliardi) se joignent aux  musiciens. </p>
-<p>A  la suite de quelques collègues précurseurs (Christie, Rousset), Dumestre a souhaité apporter sa pierre à l'édifice de la résurrection de l'oeuvre opératique de Lully et &quot;son&quot; <a href="https://www.youtube.com/watch?v=PW6zqhOUTpw">Cadmus et Hermione</a> est certainement digne d'éloges. Toujours à l'opéra, il a également joué <a href="https://www.youtube.com/watch?v=KpSJVbRq9Cs">Egisto</a> de Cavalli et <a href="https://www.youtube.com/watch?v=xZe_ZTH5OF8&index=5&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Didon et Enée</a> de Purcell. Reconnaissons cependant que dans ce domaine, la concurrence est rude et que ce n'est sans doute pas là qu'il s'est rendu indispensable. </p>
-<p></p>
-<p>Dans un registre plus intime et lorsque l'ensemble s'adjoint la voix de  Claire Lefiliâtre, l'alliage dépasse en grâce tout ce qui  se conçoit dans le genre. Si,  comme moi, vous êtes las d'entendre les bruits d'un monde en folie, réfugiez-vous dans ces deux univers parallèles :</p>
-<p><i>1. La chanson française d'autrefois.</i></p>
-<p>La &quot;bonne&quot; chanson française ne date pas d'aujourd'hui ni même d'hier. La chanson polyphonique a tenu son rang, en France, dès la Renaissance (Claude Lejeune : &quot;Qu'est devenu ce bel Oeil ?&quot; <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/poemeharmonique/lejeune.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/poemeharmonique/lejeune.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub>et Clément Janequin : <a href="https://www.youtube.com/watch?v=3pFSjUBR4Pw&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk&index=21">Toutes les Nuits</a>) mais, à côté de cette chanson savante, une variante populaire a existé   où la nostalgie a trouvé quelques-uns de ses plus beaux modes d'expression.</p>
-<p> Quelques enregistrements (Plaisir d'Amour, Aux Marches du Palais) ont immortalisé ces romances et complaintes d'autrefois, à une voix - celle de Claire Lefiliâtre évidemment ! - (Adorable <a href="https://www.youtube.com/watch?v=IENuM9z4Ztc">Les tendres Souhaits</a>, <a href="https://www.youtube.com/watch?v=6xh-_2f-cj8">Quand je menais les Chevaux boire</a>, <a href="https://www.youtube.com/watch?v=xVfL2bGa4Uo">Blanche Biche</a>) ou à plusieurs (<a href="https://www.youtube.com/watch?v=RfJZu_Bz6Yo">Le Roi a fait battre Tambour</a>, <a href="https://www.youtube.com/watch?v=5NRbXmdnRoE">La Fille au Roi Louis</a>, <a href="https://www.youtube.com/watch?v=6BZOW1lALE0">La Louison</a>, <a href="https://www.youtube.com/watch?v=0ajPLljiGYw">L'Amour de Moy</a>).</p>
-<p><i>2. L'air de cour.</i></p>
-<div><img src="../images/poemeharmonique/tessier.png" alt="" /></div>
-<div><img src="../images/poemeharmonique/moulinie.png" alt="" /></div>
-<div><img src="../images/poemeharmonique/guedron.png" alt="" /></div>
-<div><img src="../images/poemeharmonique/boesset.png" alt="" /></div>
-<p>C'est dans le domaine a priori daté de l'Air de Cour que l'ensemble a réalisé ses plus plus beaux enregistrements de musiques mélancoliques ou gaillardes. Charles Tessier (vers 1550-1610) (<a href="https://www.youtube.com/watch?v=3mZtxcYLRoQ">Quand le Flambeau du Monde</a>, <a href="https://www.youtube.com/watch?v=uPELwCRRpXY">Me voila hors du Naufrage</a>, J'aime la Dizaine <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/poemeharmonique/teissier.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/poemeharmonique/teissier.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible</audio>
-</sub></sub></sub>), Pierre Guédron (1565-1620) (<a href="https://www.youtube.com/watch?v=ImMC77l9w-I">Quel Espoir de guérir</a>, <a href="https://www.youtube.com/watch?v=W28DBy9_k1M&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk&index=109">Las ! Que ne suis-je née</a>, Dessus la Rive de la Mer ya trois belles Filles <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/poemeharmonique/guedron1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/poemeharmonique/guedron1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, Qu'on ne me parle plus d'Amour <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/poemeharmonique/guedron2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/poemeharmonique/guedron2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub>), puis son gendre Anthoine Boesset (1587-1643) (<a href="https://www.youtube.com/watch?v=UAmUQieNFSc">Nos Esprits libres et contents</a>, <a href="https://www.youtube.com/watch?v=APqXhc2qJmQ">A la Fin cette Bergère</a>, <a href="https://www.youtube.com/watch?v=QD8T2RFWpuw">Départ que le Devoir me fait precipiter</a> et les exotiques <a href="https://www.youtube.com/watch?v=Iy-ObPzYDPQ&index=18&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Una Musiqua</a> et <a href="https://www.youtube.com/watch?v=UgvCdyEje9E">Gran Chacona</a>), ont enchanté les cours d'Henri IV et Louis XIII. Etienne Moulinié (1599-1676)  (<a href="https://www.youtube.com/watch?v=0efC-iiFTE0">Concert de différents Oyseaux</a>, <a href="https://www.youtube.com/watch?v=BhnnR0-0-KM&index=31&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">L'humaine Comédie</a>) a fait de même à la cour de Gaston d'Orléans, frère de Louis XIII.</p>
-<p></p>
-<p>Le mot de la fin sera pour Vincent Dumestre qui joue de la guitare baroque et du théorbe comme Cristina Pluhar, sa collègue d'Arpeggiata. Il a enregistré des pièces de Robert de Visée sur un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Robert-de-Visee-1650-1725-Pieces-de-Theorbe/hnum/2958941">CD</a> paru chez Alpha, dont la fameuse chaconne (Plage 12).  </p>
-              </div>
+                <p>L'album &quot;Il Fasolo ?&quot; a particulièrement compté dans l'histoire du groupe. Son titre étrange fait référence à l'indécision qui subsiste quant à l'auteur véritable des pièces proposées, peut-être Giovanni Battista Fasolo (1598-après 1664) voire Francesco Manelli (1594-1667) ou tout autre qui aurait pris le surnom de Fasolo (= haricot, en vieux dialecte  sicilien !)  mais rien n'est sûr à ce sujet. Il propose 17 plages de musiques peu connues qu'on croirait pourtant des tubes dès la première écoute (<a href="https://www.youtube.com/watch?v=27u6Ck-WOVo">La Barchetta passaggiera</a>, <a href="https://www.youtube.com/watch?v=zM4QMzsZ3E4">Son ruinato, appassionato</a>, <a href="https://www.youtube.com/watch?v=ijEqz6O24Us">Serenata in lingua lombarda</a> et ne manquez pas la langoureuse chaconne finale, <a href="https://www.youtube.com/watch?v=XglR15fY2zI">Acceso mio Core</a>). </p>
+
+                <div id="qlqClassiquesBaroque">
+                  <h4>Quelques classiques du baroque</h4>
+
+                  <p>L'ensemble a abordé quelques grands classiques du baroque français dont les <a href="https://www.youtube.com/watch?v=Vha5Sd53Ah0">Te  Deum</a> de Marc-Antoine Charpentier (Commence en 3:30) et de Jean-Baptiste Lully (Commence en 30:18). Notez particulièrement sur cette video la présence de Claire Lefiliâtre (la deuxième soprano en commençant à gauche de l'image), certes sous-employée dans ces pièces mais dont vous n'avez pas fini d'entendre la voix tombée du ciel (cfr infra). On la retrouve plus à découvert dans  le <a href="https://www.youtube.com/watch?v=B90vsjspLQY">Miserere</a> de Michel-Richard Delalande (suivi par les 3 Leçons des Ténèbres du même).</p>
+                </div>
+
+                <div id="productionsSceniques">
+                  <h4>Les productions scéniques</h4>
+
+                  <p>Au <a href="http://www.poemeharmonique.fr/agenda/saison/20152016/">répertoire</a> de l'ensemble  figurent  quelques représentations théâtrales  où comédiens (<a href="https://www.youtube.com/watch?v=-t_InmYLrUU&index=92&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Le Bourgeois Gentilhomme</a>,  de Lully &amp; Molière, et Le Malade imaginaire, de  Charpentier &amp; Molière), danseurs et artistes de cirque (<a href="https://www.youtube.com/watch?v=fJq04efuXto&index=22&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Le Carnaval baroque</a>), voire marionnettistes (<a href="https://www.youtube.com/watch?v=8A7g46MFqdU">Caligula</a>, un opéra du peu connu Giovanni Maria Pagliardi) se joignent aux  musiciens. </p>
+                  <p>A la suite de quelques collègues précurseurs (Christie, Rousset), Dumestre a souhaité apporter sa pierre à l'édifice de la résurrection de l'oeuvre opératique de Lully et &quot;son&quot; <a href="https://www.youtube.com/watch?v=PW6zqhOUTpw">Cadmus et Hermione</a> est certainement digne d'éloges. Toujours à l'opéra, il a également joué <a href="https://www.youtube.com/watch?v=KpSJVbRq9Cs">Egisto</a> de Cavalli et <a href="https://www.youtube.com/watch?v=xZe_ZTH5OF8&index=5&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Didon et Enée</a> de Purcell. Reconnaissons cependant que dans ce domaine, la concurrence est rude et que ce n'est sans doute pas là qu'il s'est rendu indispensable. </p>
+                  <p>Dans un registre plus intime et lorsque l'ensemble s'adjoint la voix de  Claire Lefiliâtre, l'alliage dépasse en grâce tout ce qui  se conçoit dans le genre. Si,  comme moi, vous êtes las d'entendre les bruits d'un monde en folie, réfugiez-vous dans ces deux univers parallèles :</p>
+
+                  <div id="chansonFrançaiseAutrefois">
+                    <h5>1. La chanson française d'autrefois</h5>
+
+                    <p>La &quot;bonne&quot; chanson française ne date pas d'aujourd'hui ni même d'hier. La chanson polyphonique a tenu son rang, en France, dès la Renaissance (Claude Lejeune : &quot;Qu'est devenu ce bel Oeil ?&quot; <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/poemeharmonique/lejeune.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/poemeharmonique/lejeune.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>et Clément Janequin : <a href="https://www.youtube.com/watch?v=3pFSjUBR4Pw&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk&index=21">Toutes les Nuits</a>) mais, à côté de cette chanson savante, une variante populaire a existé   où la nostalgie a trouvé quelques-uns de ses plus beaux modes d'expression.</p>
+                    <p> Quelques enregistrements (Plaisir d'Amour, Aux Marches du Palais) ont immortalisé ces romances et complaintes d'autrefois, à une voix - celle de Claire Lefiliâtre évidemment ! - (Adorable <a href="https://www.youtube.com/watch?v=IENuM9z4Ztc">Les tendres Souhaits</a>, <a href="https://www.youtube.com/watch?v=6xh-_2f-cj8">Quand je menais les Chevaux boire</a>, <a href="https://www.youtube.com/watch?v=xVfL2bGa4Uo">Blanche Biche</a>) ou à plusieurs (<a href="https://www.youtube.com/watch?v=RfJZu_Bz6Yo">Le Roi a fait battre Tambour</a>, <a href="https://www.youtube.com/watch?v=5NRbXmdnRoE">La Fille au Roi Louis</a>, <a href="https://www.youtube.com/watch?v=6BZOW1lALE0">La Louison</a>, <a href="https://www.youtube.com/watch?v=0ajPLljiGYw">L'Amour de Moy</a>).</p>
+                  </div>
+
+                  <div id="airDeCour">
+                    <h5>2. L'air de cour</h5>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/poemeharmonique/tessier.png" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/poemeharmonique/moulinie.png" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/poemeharmonique/guedron.png" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/poemeharmonique/boesset.png" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>C'est dans le domaine a priori daté de l'Air de Cour que l'ensemble a réalisé ses plus plus beaux enregistrements de musiques mélancoliques ou gaillardes. Charles Tessier (vers 1550-1610) (<a href="https://www.youtube.com/watch?v=3mZtxcYLRoQ">Quand le Flambeau du Monde</a>, <a href="https://www.youtube.com/watch?v=uPELwCRRpXY">Me voila hors du Naufrage</a>, J'aime la Dizaine <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/poemeharmonique/teissier.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/poemeharmonique/teissier.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>), Pierre Guédron (1565-1620) (<a href="https://www.youtube.com/watch?v=ImMC77l9w-I">Quel Espoir de guérir</a>, <a href="https://www.youtube.com/watch?v=W28DBy9_k1M&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk&index=109">Las ! Que ne suis-je née</a>, Dessus la Rive de la Mer ya trois belles Filles <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/poemeharmonique/guedron1.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/poemeharmonique/guedron1.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>, Qu'on ne me parle plus d'Amour <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/poemeharmonique/guedron2.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/poemeharmonique/guedron2.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>), puis son gendre Anthoine Boesset (1587-1643) (<a href="https://www.youtube.com/watch?v=UAmUQieNFSc">Nos Esprits libres et contents</a>, <a href="https://www.youtube.com/watch?v=APqXhc2qJmQ">A la Fin cette Bergère</a>, <a href="https://www.youtube.com/watch?v=QD8T2RFWpuw">Départ que le Devoir me fait precipiter</a> et les exotiques <a href="https://www.youtube.com/watch?v=Iy-ObPzYDPQ&index=18&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">Una Musiqua</a> et <a href="https://www.youtube.com/watch?v=UgvCdyEje9E">Gran Chacona</a>), ont enchanté les cours d'Henri IV et Louis XIII. Etienne Moulinié (1599-1676)  (<a href="https://www.youtube.com/watch?v=0efC-iiFTE0">Concert de différents Oyseaux</a>, <a href="https://www.youtube.com/watch?v=BhnnR0-0-KM&index=31&list=PLeSDVL62d9u63Xod_hEURrr6IhzlXfrKk">L'humaine Comédie</a>) a fait de même à la cour de Gaston d'Orléans, frère de Louis XIII.</p>
+                    <p>Le mot de la fin sera pour Vincent Dumestre qui joue de la guitare baroque et du théorbe comme Cristina Pluhar, sa collègue d'Arpeggiata. Il a enregistré des pièces de Robert de Visée sur un <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Robert-de-Visee-1650-1725-Pieces-de-Theorbe/hnum/2958941">CD</a> paru chez Alpha, dont la fameuse chaconne (Plage 12).</p>
+                  </div>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -115,10 +161,7 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

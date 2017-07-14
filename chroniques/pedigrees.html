@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | Pedigrees</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>Pedigrees</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,308 +46,145 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Pedigrees</li>
                     </ul>
                 </nav>  
-  
-  <h2>Pedigrees.</h2> <p>
-  Il faut se
-    faire une raison : il n'existe aucune explication raisonnablement convaincante à
-    l'émergence du génie musical : les grands compositeurs sortent d'à peu près
-    nulle part.  Certes, on invoquera que
-    leurs ascendants (in)directs peuvent avoir été de bons, voire d'excellents
-    musiciens - généralement interprètes - mais cela n'explique rien.  On trouve - a contrario - un beaucoup plus
-    grand nombre de musiciens de talent n'ayant engendré aucun génie dans le
-    domaine de la composition.  </p>
-  <p>
-  Voici trois musiciens
-    passés à la postérité par fils interposé :
-  </p>
-  
-  <div><img src="../images/pedigree/ambrosiusbach.jpg" alt="" /><div class="legende">Johann Ambrosius Bach </div></div>
-  <div><img src="../images/pedigree/leopoldmozart.jpg" alt="" /><div class="legende">Léopold Mozart </div></div>
-  <div><img src="../images/pedigree/johannvb.jpg" alt="" /><div class="legende">Johann van Beethoven </div></div>
-    
-    
-    <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-    
-    
-  <p>Johann Ambrosius Bach (1645-1695) était
-    apprécié, en particulier, pour ses talents multiples d'interprète : à l'orgue
-    mais aussi au violon, à la trompette et même aux timbales !</p><p>
-  Léopold Mozart (1719-1787) était violoniste de formation,
-    accessoirement <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Leopold%20mozart&amp;rubric=classic&amp;pd_orderby=score">compositeur</a> mais surtout pédagogue renommé, mettant aussi opportunément que sévèrement ses
-    talents au service de ses deux enfants : Wolfgang et Anna (surnommée Nannerl).</p><p>
-  Johann van Beethoven (1740-1792) était  ténor à la
-    cour du Prince Electeur de Bonn.  Il est devenu célèbre pour avoir détecté, très
-    tôt, les dons exceptionnels de son fils aîné, malgré une imprégnation
-    alcoolique permanente.  </p>
-  <p>
-  Une
-    explication - plutôt triviale - au fait que les génies musicaux n'engendrent guère
-    d'autres génies est que beaucoup
-    de musiciens célèbres - Haendel, Haydn, Beethoven, Schubert, Mendelssohn, Chopin, Tchaïkovski, Brahms, Bruckner, Ravel, … - n'ont tout
-    simplement pas eu de descendance (re)connue du tout
-    !  Excepté Haydn, ils n'ont même jamais
-    fondé de famille soit qu'ils n'excellaient que dans les amours contrariées soit que
-    leurs préférences sexuelles ne les y destinaient pas.  </p>
-  <p>
-  On connaît quelques musiciens
-    d'envergure, Stravinsky, Schostakovitch, …, ayant éduqué des
-    interprètes de qualité.  Debussy eut, quant à lui, moins de
-    chance en perdant, à 14 ans, sa prometteuse Claude-Emma, surnommée Chouchou,
-    à qui il eut quand même le temps de dédier sa célèbre suite pour piano, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claude-Debussy-Childrens-Corner/hnum/5068841">Children's
-    Corner</a>.  Quant aux autres : Berlioz, Schumann, …, ils n'ont pas transmis leur métier musical à leurs enfants.  </p>
-    
-    
-    
-    <p>
-  Tous les spécialistes des races de
-    chevaux de course vous le diront : on ne marie une bonne poulinière qu'à un
-    étalon de renommée internationale et tant pis pour la consanguinité.  Le modèle est-il transposable en musique ?  Se pourrait-il que la probabilité d'engendrer
-    un génie croisse lorsque les deux parents sont génétiquement liés par un rapport de qualité à la musique ?  </p><p>
-  Voici trois cas d'école illustrés
-    par un arbre généalogique convenablement élagué : hélas, ils prouvent tout et
-    son contraire.</p>
-    <p></p>
-    <div>
-  <i>Premier exemple.</i></div><p>
-  Il existe une exception notable à ce
-    qui pourrait passer pour une règle que le génie musical ne se transmet pas
-    génétiquement : elle concerne les deux fils, Wilhelm Friedemann (1710-1784) et Carl Philippe Emanuel (1714-1788), que Johann Sébastian Bach a eu d'un premier mariage avec sa petite cousine Maria Barbara, née Bach.  </p>
-    
-   <div><img src="../images/pedigree/genebach.gif" alt="" /><div class="legende">Wilhelm Friedemann et Carl Philippe Emanuel Bach</div></div>
-    
-    <p>On ne peut qu'être fasciné par le
-    fait que Johann Sébastian et Maria Barbara soient tous deux issus d'une même
-    illustre lignée de musiciens.  Bach père
-    plaçait ses meilleurs espoirs en son aîné, Wilhelm Friedmann mais l'histoire ne lui a pas vraiment donné raison :
-    Friedmann avait peut-être hérité du génie paternel mais certainement pas de son
-    goût pour l'effort.  Les <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Wilhelm%20Friedmann&amp;rubric=classic&amp;pd_orderby=score">œuvres</a> de sa plume qui nous sont parvenues font état d'un musicien parfois
-    en avance sur son temps - comparez ses <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Wilhelm-Friedemann-Bach-Symphonien-D-Dur-F-64-d-moll-F-65-F-Dur-F-67/hnum/9784630">symphonies</a> à celles de ses exacts contemporains, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Leopold-Mozart-Symphonien-Eisen-C1-C4-D17-D25-G14/hnum/2055548">Léopold
-    Mozart</a> (1719-1787) ou <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Franz-Xaver-Richter-Grandes-Symphonies-I-VI-1744-Set-1/hnum/1663578">Franz Xaver Richter</a> (1709-1789) - mais plutôt
-    incapable d'en tirer les conclusions radicales qui s'imposaient face à un
-    classicisme mourant.  </p>
-    <p>
-  Au bilan, c'est son frère Carl Philip Emanuel qui a produit le <a href="http://www.jpc.de/jpcng/home/search/-/komponistnr/5000727">catalogue</a> d'œuvres le plus convaincant, s'imposant devant l'histoire comme l'un des rares
-    - sinon le seul - génie musical ayant réussi à se créer un style
-    authentiquement personnel se démarquant de l'aura paternelle.</p>
-    
-    <p>Les labels BIS &amp; Capriccio (tous deux distribués par <a href="http://www.naxos.com/composerinfo/Carl_Philipp_Emanuel_Bach/17646.htm">Naxos</a>) se sont pas mal investis dans la publication
-    de son œuvre monumentale.  Rien que les
-    concertos pour claviers occupent 17 CD !  L'une des caractéristiques qui rend le style instrumental de ce musicien
-    immédiatement reconnaissable tient dans les brusqueries typiques de la courte
-    époque "Sturm und Drang (Tempête et Passion)" séparant le classicisme
-    du romantisme.  Seul un orchestre qui
-    soigne les articulations peut pleinement rendre la vitalité de cette musique.  On n'a jamais fait mieux à cet égard que l'English Concert, dirigé par Trevor Pinnock, ici
-    dans le finale de
-    
-    la Symphonie Wq  182/2 
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/pedigrees/wq182-2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/pedigrees/wq182-2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    .  Le musicien est tout aussi à l'aise dans les mouvements lents comme en témoigne ce début de l'adagio de la Sonate en Trio Wq161/1
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/pedigrees/triosonate.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/pedigrees/triosonate.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    (Un <a href="http://www.hyperion-records.co.uk/al.asp?al=CDH55232&f=Purcell%20Quartet">CD</a> Hyperion que je recommande chaudement). </p>
-    <p>
-  On notera que deux autres fils
-    de Bach, <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Johann%20Christoph%20Bach&amp;rubric=classic&amp;pd_orderby=score">Johann
-    Christoph</a> et <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Johann%20Christian%20Bach&amp;rubric=classic&amp;pd_orderby=score">Johann
-    Christian</a>, nés d'un second mariage avec Anna Magdalena Wilcke - excellente musicienne
-    au demeurant - n'ont pas atteint la notoriété de leurs aînés.  En écoutant les <a href="http://www.naxos.com/composerinfo/Johann_Christian_Bach/17647.htm">symphonies</a> de Johann Christian (disponibles sur le site Naxos), vous ne manquerez pas de les trouver plus fades et convenues que celles de son demi-frère. </p>
-    <p></p>
 
+                <p>Il faut se faire une raison : il n'existe aucune explication raisonnablement convaincante à l'émergence du génie musical : les grands compositeurs sortent d'à peu près nulle part.  Certes, on invoquera que leurs ascendants (in)directs peuvent avoir été de bons, voire d'excellents musiciens - généralement interprètes - mais cela n'explique rien.  On trouve - a contrario - un beaucoup plus grand nombre de musiciens de talent n'ayant engendré aucun génie dans le domaine de la composition.  </p>
 
+                <p>Voici trois musiciens passés à la postérité par fils interposé : </p>
 
-  
-  <div><i>Deuxième exemple.</i></div><p>
-Franz Xaver Mozart (1791-1844) n'a jamais connu son père : Constanze Weber, cousine du célèbre compositeur, Carl Maria (von) Weber, était enceinte à la mort de Wolfgang.  C'est pourtant lui et non son frère aîné, Karl Thomas, qui s'est consacré
-    durablement à la musique.  Musicien de
-    valeur, il est cependant, comme tant d'autres à cette époque, né trop vieux
-    dans un monde en pleine ébullition révolutionnaire, luttant qui plus est, pour
-    entretenir la mémoire d'un père trop présent sur un terrain désormais balayé
-    par le génie de Beethoven (1770-1827).  </p>
-  <p>
-  Les rares <a href="http://www.jpc.de/jpcng/home/search?fastsearch=franz%20xaver%20mozart&amp;rubric=classic&amp;pd_orderby=score">œuvres</a> enregistrées valent cependant davantage qu'un détour d'estime : je vous
-    recommande ce <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Franz-Xaver-Mozart-Klavierkonzert-op-25/hnum/7344803">CD</a> juxtaposant adroitement le 22<sup>ème</sup> concerto de Wolfgang et le 2<sup>ème</sup> de Franz Xaver. Comparez mouvement par mouvement : les
-    climats sont semblables sauf que vingt ans ont passé et cela se sent.  Mozart fils est nettement mieux à l'aise dans
-    la forme plus intimiste de cette belle <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Franz-Xaver-Mozart-Grande-Sonate-op-19-f-Klavier-Cello/hnum/5429741">sonate</a> pour violoncelle et piano.  Signalons
-    encore un <a href="http://www.youtube.com/watch?v=TdTkR7RyMtU">récital</a>  que Barbara Bonney a consacré à quelques unes de ses mélodies : elles sont charmantes mais n'y
-    cherchez pas l'art d'écrire pour la voix que seul Mozart père possédait au plus
-  haut degré.</p>
-    
-    
-    <div><img src="../images/pedigree/genemozart.gif" alt="" /><div class="legende">Franz-Xaver Mozart</div></div>
-    
-    <p>
-  
-  <i>Note : vous remarquerez que dans l'arbre généalogique ci-contre, j'ai
-    volontairement placé entre parenthèses la particule nobiliaire dont Franz Anton
-    a généreusement gratifié ses descendants.  Le titre de noblesse est apparemment fantaisiste
-    - à l'image du personnage d'ailleurs - mais l'état civil semble n'avoir jamais
-    réagi.  Voilà pourquoi l'histoire parle de Constanze Weber et de Carl Maria von Weber.
-</i></p>
-    <p></p>
-    
-    
-  <div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div><div class="
-    lignevide"></div>
-    <div>
-  <i>Troisième exemple.</i>  </div>
-  <div><img src="../images/pedigree/genewagner.gif" alt="" /><div class="legende">Siegfried Wagner</div></div>
-  <p>Le pedigree le plus impressionnant de
-    toute l'histoire de la musique est, sans nul doute, celui de Siegfried Wagner; jugez plutôt : il est
-    le fils de Richard Wagner, évidemment,
-    mais aussi le petit-fils de Franz Liszt, par sa mère Cosima.  La naissance du jeune Siegfried a été saluée par
-    la dédicace de Richard à Cosima d'une très belle
-    pièce pour cordes intitulée <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Richard-Wagner-Symphonie-E-dur/hnum/4769837">Siegfried-Idyll</a> (CD2, plage 6, mais n'ignorez pas
-    les autres plages avec quelques fameuses raretés à découvrir).  Richard composant à cette époque son opéra Siegfried, le prénom du petit était
-    tout trouvé et les thèmes de la pièce pour cordes aussi.</p>
-  <p>
-  
-  Siegfried Wagner n'avait que 14 ans
-    à la mort de son père et il reçut ses premières leçons d'harmonie de son grand
-    père, Franz Liszt, qu'il perdit  trois ans plus tard.  Il décida alors de se tourner vers
-    l'architecture, ne revenant à la musique qu'à la faveur d'une relation
-    entretenue avec le compositeur Clement Harris (1871-1897), bien oublié aujourd'hui (écoutez cependant ses <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Clement-Harris-6-Konzertet%FCden/hnum/4671268">Etudes
-    de concert</a>).  C'est Engelbert Humperdinck (1854-1921), un élève de Richard, qui
-    complèta sa formation musicale.</p><p>
-  Bien qu'ayant reçu en héritage la
-    gestion du festival de Bayreuth, il ne put véritablement en prendre les rênes
-    qu'à partir de 1908, lorsque Cosima décida de se
-    retirer.  Celle-ci, autoritaire mais peu
-    douée pour faire le ménage, n'a jamais vu les centimètres de poussières qui
-    s'accumulaient sur des mises en scène d'un autre âge auxquelles elle interdisait
-    pieusement que l'on change quoi que ce soit.  </p>
-  <p>
-  Siegfried n'eut guère le loisir de modifier
-    cet état de chose : les finances du théâtre n'étant guère brillantes, il passa
-    le plus clair de son temps à collecter des fonds.  A sa mort, son encombrante épouse, Winnifred, prit le relais mais elle se fit exclure en 1945
-    par un tribunal de dénazification (cfr infra).  Ses
-    fils, Wolfgang et surtout Wieland, lui succédèrent, innovant
-    enfin.  Aujourd'hui ce sont les petites-filles, Eva et Katharina,
-    qui sont en charge de ce poste. </p><p>
-  On le voit : la lignée des Wagner n'est
-    pas près de s'éteindre.  Il s'en fallut
-    pourtant de peu.  Cosima qui avait le sens de la famille, réussit, en effet, à convaincre son fils de se
-    marier alors que ses préférences sexuelles étaient manifestement ailleurs.  Quatre enfants naquirent coup sur coup, si
-    j'ose dire, Wieland, Friedelind, Wolfgang et Verena. 
-    
-  </p>
-  
-  <p>Digression : Ce mariage avec la galloise, Winifred Marjorie Williams (1897-1980), n'eut pas que des effets
-    heureux.  Sa biographie personnelle fait
-    état d'une réelle sympathie pour Adolf Hitler dès leur rencontre en 1923.  Leur
-    relation ne s'éteindra jamais, Winifred servant le
-    (futur) Führer, tour à tour comme ravitailleuse lors de son emprisonnement
-    (suite au putsch manqué de 1923), d'interprète lors de négociations avec les
-    anglais ou d'hôtesse d'accueil à Wahnfried (le surnom de la villa des Wagner à
-    Bayreuth).  Le bruit d'un possible
-    mariage a même couru en 1933.  Même l'interview tardif (1975) - Winifried Wagner und die Geschichte des Hauses Wahnfried von 1914-1975 (Orig.: 302 mins., US version: 104 mins) -  réalisé par le cinéaste allemand Hans-Jürgen Syberberg, la montre bien peu repentante et plus fascinée
-    que jamais par le dictateur. La famille Wagner se serait bien
-    passée de ce scandale supplémentaire.  
-    
- <div><img src="../images/pedigree/wahnfried.jpg" alt="" /><div class="legende">Wahnfried</div></div>
-    
-   <p>
-  Richard s'était, en effet, déjà distingué par
-    des opinions ouvertement antisémites à une époque, il est vrai, où le phénomène
-    était récurrent et où l'usage était de ne point trop s'en formaliser.  </p>
-  <p>
-  Siegfried Wagner en rajouta une
-    couche en cosignant le <a href="http://fr.wikipedia.org/wiki/Manifeste_des_93">Manifeste des 93</a>.   En 1914, l'Allemagne dut faire
-    face à de graves accusations concernant le comportement barbare de son armée, à
-    l'encontre des populations civiles, lors de l'invasion de la Belgique neutre.  93 intellectuels teutons se mobilisèrent,
-    bien au chaud, pour récuser ces allégations dans un texte s'affirmant comme
-    l'un des premiers exemples d'une propagande qui va bientôt se généraliser outre-Rhin.  Il est vrai que Siegfried Wagner s'y trouvait en
-    très bonne compagnie, en particulier une fameuse brochette de prix Nobel
-    atteints de mauvaise foi patriotique : Adolf von Baeyer, Adolf von Behring, Paul
-    Ehrlich, Fritz Haber, Gerhardt Hauptmann, Philipp Lenard, Walther Nernst, Wilhelm Ostwald, Max Planck, Wilhelm Röntgen, Wilhelm Wien, la plupart chimistes ou physiciens mais j'en oublie sans doute.  Les mathématiciens allemands étaient apparemment plus lucides : je n'ai
-  noté la présence que du seul, Felix Klein.  Quant aux musiciens, seuls Engelbert Humperdinck et Felix Weingartner ont apporté leur signature.</p>
-    <p>
-  Les errements de Winnifred menacèrent l'existence du festival de Bayreuth
-    en 1945.  Celui-ci ne rouvrit ses portes qu'en
-    1951 et - symboliquement - pour la première fois, avec une œuvre non composée
-    par Wagner : la 9<sup>ème</sup> de
-    Beethoven.  Il y avait clairement un message symbolique dans cet événement vu que ce sanctuaire était traditionnellement réservé aux seuls dix opéras de la maturité de Richard (Le Vaisseau fantôme, Tannhäuser, Lohengrin, Tristan und Isolde, Les Maîtres Chanteurs de Nuremberg, le Ring complet et Parsifal). Ce <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Ludwig-van-Beethoven-Symphonie-Nr-9/hnum/1134739">concert</a>, dirigé par Furtwängler et enregistré
-    pour la circonstance, fait partie de la légende discographique que tout citoyen
-    du monde se doit de posséder. Fin de la digression.</p>
+                <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/pedigree/ambrosiusbach.jpg" alt="Johann Ambrosius Bach">
+                      <figcaption>Johann Ambrosius Bach</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/pedigree/leopoldmozart.jpg" alt="Léopold Mozart">
+                      <figcaption>Léopold Mozart</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/pedigree/johannvb.jpg" alt="Johann van Beethoven">
+                      <figcaption>Johann van Beethoven</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-    <p>
-  Venons-en à la musique de Siegfried
-    Wagner.  Si elle est, certes, très loin
-    d'égaler celle de son illustre père, elle vaut certainement celle de son
-    professeur Engelbert Humperdinck qui lui, est resté au répertoire, essentiellement grâce à son œuvre fétiche,
-    <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Engelbert-Humperdinck-H%E4nsel-Gretel/hnum/8160399">Hansel und Gretel</a>
-    et accessoirement, grâce à cet autre opéra, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Engelbert-Humperdinck-K%F6nigskinder/hnum/8226853">Königskinder</a>.  </p>
-    <p>
-  Siegfried Wagner a écrit une quinzaine
-    d'opéras dont aucun n'a survécu à la scène.  De son père, il a retenu le goût du récit féerique
-    (comme lui, il écrivait ses propres livrets) mais les sujets qu'ils affectionnaient
-    étaient nettement moins épiques, davantage tournés vers les contes des frères Grimm que vers les Nibelungen : un héritage possible de son maître Humperdinck.</p><p>
-  Pourtant ses meilleures œuvres, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Der-B%E4renh%E4uter/hnum/7146000">Der Bärenhäuter</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Der-Kobold/hnum/8623091">Der
-    Kobold</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Der-Schmied-von-Marienburg/hnum/4886720">Der Schmied von Marienburg</a>, occasionnellement montées dans les
-    théâtres de province, méritent davantage qu'un succès d'estime.  J'ajouterais volontiers à cette liste, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Sternengebot-op-5/hnum/3361258">Sternengebot</a>, où apparaissent assez clairement ses
-    talents d'orchestrateur. Voici le début du prélude
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/pedigrees/sternengebot.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/pedigrees/sternengebot.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-    </sub></sub></sub>
-    .  Les labels <a href="http://www.naxos.com/composerinfo/Siegfried_Wagner_22393/22393.htm">Marco
-    Polo</a> et <a href="http://www.jpc.de/jpcng/classic/search/-/interpret_hex/5761676e65722c536965676672696564/pd_orderby/score">CPO</a> se sont relayés pour publier des versions discographiques d'une douzaine de ses
-    opéras.  Pour des raisons plutôt faciles
-    à comprendre, on n'a pas réussi à rassembler les meilleurs interprètes du
-    moment, ce qui dessert injustement des œuvres méritant de survivre.  Si vous refusez d'investir entre 10 et 15
-    euros par opéras, sachez que CPO a rassemblé en 3 CD des airs isolés pour <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Arien-f%FCr-Sopran/hnum/3425857">soprano</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Arien-f%FCr-Mezzo-Sopran/hnum/8793203">mezzo-soprano</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Arien-f%FCr-Bariton/hnum/9742349">baryton</a>.  </p>
-    <p>
-  Siegfried a également écrit pour
-    l'orchestre et le label CPO a là encore fait de l'excellent travail : un album de <a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Siegfried-Wagner-S%E4mtliche-Orchesterwerke/hnum/8822037">7
-    CD</a>  est disponible au prix imbattable
-    de 30 euros.  J'ai sélectionné le début,
-    lyrique à souhait, du Concerto pour
-    violon
-    <sub><sub><sub> 
-    <audio controls preload="none">
-<source src="../son.mp3/pedigrees/swconcviolon.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/pedigrees/swconcviolon.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    . </p>
-    <p>
-  Je ne peux m'empêcher de penser que la
-    musique de Siegfried a - quelque part - dû pâtir des scandales successifs ayant
-    entaché la famille Wagner et que si Richard a survécu avec tant d'éclat, c'est
-    qu'il paraissait impossible de se fâcher à vie avec un tel génie.</p>
-    
-    
-    <p>
-  Il ne sort décidément
-    aucune réponse probante aux questions initialement posées : le génie génétique
-    s'étudie dans les laboratoires mais l'art, en général, échappe à toute étude
-    scientifique. Tous comptes faits, c'est mieux comme cela.  </p>
-    <p>
-  Reste un autre
-    débat, posé par ceux qui pensent, assez normalement d'ailleurs, que l'éducation
-    a aussi son mot à dire.  Je crains
-    cependant qu'il ne tourne aussi court que le précédent : certes, des parents
-    musiciens motivés peuvent convaincre leur progéniture de se lancer dans
-    l'aventure artistique mais ils peuvent, tout aussi bien, les décourager à
-    vie.  D'ailleurs, quel enfant occidental,
-    fut-il prodige, endurerait, aujourd'hui, l'incroyable pression qu'exercèrent
-    sur leur enfant Léopold Mozart et Johann van Beethoven ?</p>
-  
- 
-              </div>
+                <p>Johann Ambrosius Bach (1645-1695) était apprécié, en particulier, pour ses talents multiples d'interprète : à l'orgue mais aussi au violon, à la trompette et même aux timbales !</p>
+                <p>Léopold Mozart (1719-1787) était violoniste de formation, accessoirement <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Leopold%20mozart&amp;rubric=classic&amp;pd_orderby=score">compositeur</a> mais surtout pédagogue renommé, mettant aussi opportunément que sévèrement ses talents au service de ses deux enfants : Wolfgang et Anna (surnommée Nannerl).</p>
+                <p>Johann van Beethoven (1740-1792) était ténor à la cour du Prince Electeur de Bonn.  Il est devenu célèbre pour avoir détecté, très tôt, les dons exceptionnels de son fils aîné, malgré une imprégnation alcoolique permanente.  </p>
+                <p>Une explication - plutôt triviale - au fait que les génies musicaux n'engendrent guère d'autres génies est que beaucoup de musiciens célèbres - Haendel, Haydn, Beethoven, Schubert, Mendelssohn, Chopin, Tchaïkovski, Brahms, Bruckner, Ravel, … - n'ont tout simplement pas eu de descendance (re)connue du tout !  Excepté Haydn, ils n'ont même jamais fondé de famille soit qu'ils n'excellaient que dans les amours contrariées soit que leurs préférences sexuelles ne les y destinaient pas.  </p>
+                <p>On connaît quelques musiciens d'envergure, Stravinsky, Schostakovitch, …, ayant éduqué des interprètes de qualité.  Debussy eut, quant à lui, moins de chance en perdant, à 14 ans, sa prometteuse Claude-Emma, surnommée Chouchou, à qui il eut quand même le temps de dédier sa célèbre suite pour piano, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claude-Debussy-Childrens-Corner/hnum/5068841">Children's Corner</a>.  Quant aux autres : Berlioz, Schumann, …, ils n'ont pas transmis leur métier musical à leurs enfants.  </p>
+                <p>Tous les spécialistes des races de chevaux de course vous le diront : on ne marie une bonne poulinière qu'à un étalon de renommée internationale et tant pis pour la consanguinité.  Le modèle est-il transposable en musique ?  Se pourrait-il que la probabilité d'engendrer un génie croisse lorsque les deux parents sont génétiquement liés par un rapport de qualité à la musique ?  </p>
+                <p>Voici trois cas d'école illustrés par un arbre généalogique convenablement élagué : hélas, ils prouvent tout et son contraire.</p>
+
+                <div id="1erExemple">
+                  <h4>Premier exemple</h4>
+
+                  <p>Il existe une exception notable à ce qui pourrait passer pour une règle que le génie musical ne se transmet pas génétiquement : elle concerne les deux fils, Wilhelm Friedemann (1710-1784) et Carl Philippe Emanuel (1714-1788), que Johann Sébastian Bach a eu d'un premier mariage avec sa petite cousine Maria Barbara, née Bach.  </p>
+
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/pedigree/genebach.gif" alt="Wilhelm Friedemann et Carl Philippe Emanuel Bach"/>
+                        <figcaption>Wilhelm Friedemann et Carl Philippe Emanuel Bach</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <p>On ne peut qu'être fasciné par le fait que Johann Sébastian et Maria Barbara soient tous deux issus d'une même illustre lignée de musiciens. Bach père plaçait ses meilleurs espoirs en son aîné, Wilhelm Friedmann mais l'histoire ne lui a pas vraiment donné raison : Friedmann avait peut-être hérité du génie paternel mais certainement pas de son goût pour l'effort.  Les <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Wilhelm%20Friedmann&amp;rubric=classic&amp;pd_orderby=score">œuvres</a> de sa plume qui nous sont parvenues font état d'un musicien parfois en avance sur son temps - comparez ses <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Wilhelm-Friedemann-Bach-Symphonien-D-Dur-F-64-d-moll-F-65-F-Dur-F-67/hnum/9784630">symphonies</a> à celles de ses exacts contemporains, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Leopold-Mozart-Symphonien-Eisen-C1-C4-D17-D25-G14/hnum/2055548">Léopold Mozart</a> (1719-1787) ou <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Franz-Xaver-Richter-Grandes-Symphonies-I-VI-1744-Set-1/hnum/1663578">Franz Xaver Richter</a> (1709-1789) - mais plutôt incapable d'en tirer les conclusions radicales qui s'imposaient face à un classicisme mourant.  </p>
+                  <p>Au bilan, c'est son frère Carl Philip Emanuel qui a produit le <a href="http://www.jpc.de/jpcng/home/search/-/komponistnr/5000727">catalogue</a> d'œuvres le plus convaincant, s'imposant devant l'histoire comme l'un des rares - sinon le seul - génie musical ayant réussi à se créer un style authentiquement personnel se démarquant de l'aura paternelle.</p>
+                  <p>Les labels BIS &amp; Capriccio (tous deux distribués par <a href="http://www.naxos.com/composerinfo/Carl_Philipp_Emanuel_Bach/17646.htm">Naxos</a>) se sont pas mal investis dans la publication de son œuvre monumentale.  Rien que les concertos pour claviers occupent 17 CD !  L'une des caractéristiques qui rend le style instrumental de ce musicien immédiatement reconnaissable tient dans les brusqueries typiques de la courte époque "Sturm und Drang (Tempête et Passion)" séparant le classicisme du romantisme.  Seul un orchestre qui soigne les articulations peut pleinement rendre la vitalité de cette musique.  On n'a jamais fait mieux à cet égard que l'English Concert, dirigé par Trevor Pinnock, ici dans le finale de la Symphonie Wq 182/2 <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/pedigrees/wq182-2.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/pedigrees/wq182-2.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> . Le musicien est tout aussi à l'aise dans les mouvements lents comme en témoigne ce début de l'adagio de la Sonate en Trio Wq161/1 <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/pedigrees/triosonate.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/pedigrees/triosonate.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> (Un <a href="http://www.hyperion-records.co.uk/al.asp?al=CDH55232&f=Purcell%20Quartet">CD</a> Hyperion que je recommande chaudement). </p>
+                  <p>On notera que deux autres fils de Bach, <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Johann%20Christoph%20Bach&amp;rubric=classic&amp;pd_orderby=score">Johann Christoph</a> et <a href="http://www.jpc.de/jpcng/home/search?fastsearch=Johann%20Christian%20Bach&amp;rubric=classic&amp;pd_orderby=score">Johann Christian</a>, nés d'un second mariage avec Anna Magdalena Wilcke - excellente musicienne au demeurant - n'ont pas atteint la notoriété de leurs aînés.  En écoutant les <a href="http://www.naxos.com/composerinfo/Johann_Christian_Bach/17647.htm">symphonies</a> de Johann Christian (disponibles sur le site Naxos), vous ne manquerez pas de les trouver plus fades et convenues que celles de son demi-frère. </p>
+                </div>
+
+                <div id="2emeExemple">
+                  <h4>Deuxième exemple</h4>
+
+                  <p>Franz Xaver Mozart (1791-1844) n'a jamais connu son père : Constanze Weber, cousine du célèbre compositeur, Carl Maria (von) Weber, était enceinte à la mort de Wolfgang.  C'est pourtant lui et non son frère aîné, Karl Thomas, qui s'est consacré durablement à la musique.  Musicien de valeur, il est cependant, comme tant d'autres à cette époque, né trop vieux dans un monde en pleine ébullition révolutionnaire, luttant qui plus est, pour entretenir la mémoire d'un père trop présent sur un terrain désormais balayé par le génie de Beethoven (1770-1827).  </p>
+
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/pedigree/genemozart.gif" alt="Franz-Xaver Mozart"/>
+                        <figcaption>Franz-Xaver Mozart</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <p>Les rares <a href="http://www.jpc.de/jpcng/home/search?fastsearch=franz%20xaver%20mozart&amp;rubric=classic&amp;pd_orderby=score">œuvres</a> enregistrées valent cependant davantage qu'un détour d'estime : je vous recommande ce <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Franz-Xaver-Mozart-Klavierkonzert-op-25/hnum/7344803">CD</a> juxtaposant adroitement le 22<sup>ème</sup> concerto de Wolfgang et le 2<sup>ème</sup> de Franz Xaver. Comparez mouvement par mouvement : les climats sont semblables sauf que vingt ans ont passé et cela se sent.  Mozart fils est nettement mieux à l'aise dans la forme plus intimiste de cette belle <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Franz-Xaver-Mozart-Grande-Sonate-op-19-f-Klavier-Cello/hnum/5429741">sonate</a> pour violoncelle et piano.  Signalons encore un <a href="http://www.youtube.com/watch?v=TdTkR7RyMtU">récital</a> que Barbara Bonney a consacré à quelques unes de ses mélodies : elles sont charmantes mais n'y cherchez pas l'art d'écrire pour la voix que seul Mozart père possédait au plus haut degré.</p>
+                  
+                  <p><i>Note : vous remarquerez que dans l'arbre généalogique ci-contre, j'ai volontairement placé entre parenthèses la particule nobiliaire dont Franz Anton a généreusement gratifié ses descendants.  Le titre de noblesse est apparemment fantaisiste - à l'image du personnage d'ailleurs - mais l'état civil semble n'avoir jamais réagi.  Voilà pourquoi l'histoire parle de Constanze Weber et de Carl Maria von Weber. </i></p>
+                </div>
+
+                <div id="3emeExemple">
+                  <h4>Troisième exemple</h4>
+
+                  <p>Le pedigree le plus impressionnant de toute l'histoire de la musique est, sans nul doute, celui de Siegfried Wagner; jugez plutôt : il est le fils de Richard Wagner, évidemment, mais aussi le petit-fils de Franz Liszt, par sa mère Cosima.  La naissance du jeune Siegfried a été saluée par la dédicace de Richard à Cosima d'une très belle pièce pour cordes intitulée <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Richard-Wagner-Symphonie-E-dur/hnum/4769837">Siegfried-Idyll</a> (CD2, plage 6, mais n'ignorez pas les autres plages avec quelques fameuses raretés à découvrir).  Richard composant à cette époque son opéra Siegfried, le prénom du petit était tout trouvé et les thèmes de la pièce pour cordes aussi.</p>
+
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/pedigree/genewagner.gif" alt="Siegfried Wagner"/>
+                        <figcaption>Siegfried Wagner</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <p>Siegfried Wagner n'avait que 14 ans à la mort de son père et il reçut ses premières leçons d'harmonie de son grand père, Franz Liszt, qu'il perdit trois ans plus tard.  Il décida alors de se tourner vers l'architecture, ne revenant à la musique qu'à la faveur d'une relation entretenue avec le compositeur Clement Harris (1871-1897), bien oublié aujourd'hui (écoutez cependant ses <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Clement-Harris-6-Konzertet%FCden/hnum/4671268">Etudes de concert</a>).  C'est Engelbert Humperdinck (1854-1921), un élève de Richard, qui complèta sa formation musicale.</p>
+                  <p>Bien qu'ayant reçu en héritage la gestion du festival de Bayreuth, il ne put véritablement en prendre les rênes qu'à partir de 1908, lorsque Cosima décida de se retirer.  Celle-ci, autoritaire mais peu douée pour faire le ménage, n'a jamais vu les centimètres de poussières qui s'accumulaient sur des mises en scène d'un autre âge auxquelles elle interdisait pieusement que l'on change quoi que ce soit.  </p>
+                  <p>Siegfried n'eut guère le loisir de modifier cet état de chose : les finances du théâtre n'étant guère brillantes, il passa le plus clair de son temps à collecter des fonds.  A sa mort, son encombrante épouse, Winnifred, prit le relais mais elle se fit exclure en 1945 par un tribunal de dénazification (cfr infra).  Ses fils, Wolfgang et surtout Wieland, lui succédèrent, innovant enfin.  Aujourd'hui ce sont les petites-filles, Eva et Katharina, qui sont en charge de ce poste. </p>
+                  <p>On le voit : la lignée des Wagner n'est pas près de s'éteindre.  Il s'en fallut pourtant de peu.  Cosima qui avait le sens de la famille, réussit, en effet, à convaincre son fils de se marier alors que ses préférences sexuelles étaient manifestement ailleurs.  Quatre enfants naquirent coup sur coup, si j'ose dire, Wieland, Friedelind, Wolfgang et Verena.  </p>
+                  <p>Digression : Ce mariage avec la galloise, Winifred Marjorie Williams (1897-1980), n'eut pas que des effets heureux.  Sa biographie personnelle fait état d'une réelle sympathie pour Adolf Hitler dès leur rencontre en 1923.  Leur relation ne s'éteindra jamais, Winifred servant le (futur) Führer, tour à tour comme ravitailleuse lors de son emprisonnement (suite au putsch manqué de 1923), d'interprète lors de négociations avec les anglais ou d'hôtesse d'accueil à Wahnfried (le surnom de la villa des Wagner à Bayreuth).  Le bruit d'un possible mariage a même couru en 1933.  Même l'interview tardif (1975) - Winifried Wagner und die Geschichte des Hauses Wahnfried von 1914-1975 (Orig.: 302 mins., US version: 104 mins) - réalisé par le cinéaste allemand Hans-Jürgen Syberberg, la montre bien peu repentante et plus fascinée que jamais par le dictateur. La famille Wagner se serait bien passée de ce scandale supplémentaire.</p>
+
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/pedigree/wahnfried.jpg" alt="Wahnfried"/>
+                        <figcaption>Wahnfried</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <p>Richard s'était, en effet, déjà distingué par des opinions ouvertement antisémites à une époque, il est vrai, où le phénomène était récurrent et où l'usage était de ne point trop s'en formaliser.  </p>
+                  <p>Siegfried Wagner en rajouta une couche en cosignant le <a href="http://fr.wikipedia.org/wiki/Manifeste_des_93">Manifeste des 93</a>.  En 1914, l'Allemagne dut faire face à de graves accusations concernant le comportement barbare de son armée, à l'encontre des populations civiles, lors de l'invasion de la Belgique neutre.  93 intellectuels teutons se mobilisèrent, bien au chaud, pour récuser ces allégations dans un texte s'affirmant comme l'un des premiers exemples d'une propagande qui va bientôt se généraliser outre-Rhin.  Il est vrai que Siegfried Wagner s'y trouvait en très bonne compagnie, en particulier une fameuse brochette de prix Nobel atteints de mauvaise foi patriotique : Adolf von Baeyer, Adolf von Behring, Paul Ehrlich, Fritz Haber, Gerhardt Hauptmann, Philipp Lenard, Walther Nernst, Wilhelm Ostwald, Max Planck, Wilhelm Röntgen, Wilhelm Wien, la plupart chimistes ou physiciens mais j'en oublie sans doute.  Les mathématiciens allemands étaient apparemment plus lucides : je n'ai noté la présence que du seul, Felix Klein.  Quant aux musiciens, seuls Engelbert Humperdinck et Felix Weingartner ont apporté leur signature.</p>
+                  <p>Les errements de Winnifred menacèrent l'existence du festival de Bayreuth en 1945.  Celui-ci ne rouvrit ses portes qu'en 1951 et - symboliquement - pour la première fois, avec une œuvre non composée par Wagner : la 9<sup>ème</sup> de Beethoven.  Il y avait clairement un message symbolique dans cet événement vu que ce sanctuaire était traditionnellement réservé aux seuls dix opéras de la maturité de Richard (Le Vaisseau fantôme, Tannhäuser, Lohengrin, Tristan und Isolde, Les Maîtres Chanteurs de Nuremberg, le Ring complet et Parsifal). Ce <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Ludwig-van-Beethoven-Symphonie-Nr-9/hnum/1134739">concert</a>, dirigé par Furtwängler et enregistré pour la circonstance, fait partie de la légende discographique que tout citoyen du monde se doit de posséder. Fin de la digression.</p>
+                  <p>Venons-en à la musique de Siegfried Wagner.  Si elle est, certes, très loin d'égaler celle de son illustre père, elle vaut certainement celle de son professeur Engelbert Humperdinck qui lui, est resté au répertoire, essentiellement grâce à son œuvre fétiche, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Engelbert-Humperdinck-H%E4nsel-Gretel/hnum/8160399">Hansel und Gretel</a> et accessoirement, grâce à cet autre opéra, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Engelbert-Humperdinck-K%F6nigskinder/hnum/8226853">Königskinder</a>.  </p>
+                  <p>Siegfried Wagner a écrit une quinzaine d'opéras dont aucun n'a survécu à la scène.  De son père, il a retenu le goût du récit féerique (comme lui, il écrivait ses propres livrets) mais les sujets qu'ils affectionnaient étaient nettement moins épiques, davantage tournés vers les contes des frères Grimm que vers les Nibelungen : un héritage possible de son maître Humperdinck.</p>
+                  <p>Pourtant ses meilleures œuvres, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Der-B%E4renh%E4uter/hnum/7146000">Der Bärenhäuter</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Der-Kobold/hnum/8623091">Der Kobold</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Der-Schmied-von-Marienburg/hnum/4886720">Der Schmied von Marienburg</a>, occasionnellement montées dans les théâtres de province, méritent davantage qu'un succès d'estime.  J'ajouterais volontiers à cette liste, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Sternengebot-op-5/hnum/3361258">Sternengebot</a>, où apparaissent assez clairement ses talents d'orchestrateur. Voici le début du prélude <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/pedigrees/sternengebot.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/pedigrees/sternengebot.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio> </sub></sub></sub> .  Les labels <a href="http://www.naxos.com/composerinfo/Siegfried_Wagner_22393/22393.htm">Marco Polo</a> et <a href="http://www.jpc.de/jpcng/classic/search/-/interpret_hex/5761676e65722c536965676672696564/pd_orderby/score">CPO</a> se sont relayés pour publier des versions discographiques d'une douzaine de ses opéras.  Pour des raisons plutôt faciles à comprendre, on n'a pas réussi à rassembler les meilleurs interprètes du moment, ce qui dessert injustement des œuvres méritant de survivre.  Si vous refusez d'investir entre 10 et 15 euros par opéras, sachez que CPO a rassemblé en 3 CD des airs isolés pour <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Arien-f%FCr-Sopran/hnum/3425857">soprano</a>, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Arien-f%FCr-Mezzo-Sopran/hnum/8793203">mezzo-soprano</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Siegfried-Wagner-Arien-f%FCr-Bariton/hnum/9742349">baryton</a>.  </p>
+                  <p>Siegfried a également écrit pour l'orchestre et le label CPO a là encore fait de l'excellent travail : un album de <a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Siegfried-Wagner-S%E4mtliche-Orchesterwerke/hnum/8822037">7 CD</a>  est disponible au prix imbattable de 30 euros.  J'ai sélectionné le début, lyrique à souhait, du Concerto pour violon <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/pedigrees/swconcviolon.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/pedigrees/swconcviolon.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> . </p>
+                  <p>Je ne peux m'empêcher de penser que la musique de Siegfried a - quelque part - dû pâtir des scandales successifs ayant entaché la famille Wagner et que si Richard a survécu avec tant d'éclat, c'est qu'il paraissait impossible de se fâcher à vie avec un tel génie.</p>
+                  <p>Il ne sort décidément aucune réponse probante aux questions initialement posées : le génie génétique s'étudie dans les laboratoires mais l'art, en général, échappe à toute étude scientifique. Tous comptes faits, c'est mieux comme cela.  </p>
+                  <p>Reste un autre débat, posé par ceux qui pensent, assez normalement d'ailleurs, que l'éducation a aussi son mot à dire.  Je crains cependant qu'il ne tourne aussi court que le précédent : certes, des parents musiciens motivés peuvent convaincre leur progéniture de se lancer dans l'aventure artistique mais ils peuvent, tout aussi bien, les décourager à vie.  D'ailleurs, quel enfant occidental, fut-il prodige, endurerait, aujourd'hui, l'incroyable pression qu'exercèrent sur leur enfant Léopold Mozart et Johann van Beethoven ?</p>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -358,8 +196,6 @@ Votre navigateur n'est pas compatible
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

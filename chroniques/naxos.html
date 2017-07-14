@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Billets d'humeur | Euterpe à Naxos</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -36,7 +37,7 @@
 
             <div id="contenuPrincipal">
                 <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h3>Euterpe à Naxos</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,204 +46,98 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Euterpe à Naxos</li>
                     </ul>
                 </nav>    
-    <h2>Euterpe à Naxos.</h2>
     
-   <div><img src="../images/naxos/naxos1.gif" alt="" /></div>
-   <div><img src="../images/naxos/naxos2.jpg" alt="" /><div class="legende">Klaus Heyman</div></div> 
+               <div class="conteneurImages">
+                  <div>
+                    <figure>
+                      <img src="../images/naxos/naxos1.gif" alt="Label Naxos">
+                      <figcaption>Label Naxos</figcaption>
+                    </figure>
+                  </div>
+                  <div>
+                    <figure>
+                      <img src="../images/naxos/naxos2.jpg" alt="Klaus Heyman">
+                      <figcaption>Klaus Heyman</figcaption>
+                    </figure>
+                  </div>
+                </div>
     
-     <p>Le label Naxos a été fondé, en 1987,
-    par l'Allemand <a href="http://www.naxos.com/aboutus.asp?page=klaus">Klaus Heymann</a>.  Il est basé, depuis toujours, à Hong Kong.  Heymann est un homme d'affaire avisé qui a
-    successivement travaillé pour Braun,
-    fondé une entreprise de vente par correspondance pour les forces armées américaines
-    du Pacifique, puis a distribué les marques Bose et Revox en Extrême-Orient.  Conscient qu'il n'y
-    avait guère de sens de vendre du matériel Hi-Fi à des
-    populations n'ayant pas directement accès au marché du disque classique, ne
-    serait-ce que pour des raisons financières, il se mit en tête de combler
-    cette lacune en fondant ce qui apparaît, aujourd'hui, comme l'équivalent
-    musical des éditions littéraires Penguin Books (en
-    anglais) ou Livre de Poche (en
-    français).</p>
-    <p>
-  Les
-    débuts furent laborieux, la politique des prix compressés requérant de
-    n'impliquer que des interprètes de seconde zone, souvent en provenance des pays
-    de l'Est européen, voire des amateurs, tel le Hong Kong Philharmonic Orchestra qui
-    enregistra, dès ses débuts, pour Marco
-    Polo, la branche asiatique de Naxos.</p><p>
-  Si le succès fut immédiatement au
-    rendez-vous dans ces contrées curieusement avides de musique classique, il n'en
-    alla pas de même en Europe de l'Ouest où il était de bon ton de snober
-    l'entreprise, au motif qu'aucune star ne faisait partie de l'écurie. </p>
-    <p>
-  La
-    crise aidant, les temps ont changé insensiblement.  Les Majors (DGG, Decca, etc.) ont
-    perdu de leur superbe et ont, en tout cas, cessé d'être incontournables.  En pratiquant une politique artistique de
-    plus en plus exigeante, Naxos est devenu un acteur privilégié de la scène
-    musicale, sans doute le plus actif dans le répertoire classique.</p>
-    <p>Sa
-      politique repose sur trois principes simples :</p>
-    <li>Aucun doublon : une œuvre déjà présente au
-    catalogue n'est généralement pas réenregistrée.  Il faut s'en faire une raison, le répertoire de la première heure s'en
-    trouve sacrifié et personne ne se passionnera, de fait, pour des symphonies de
-    Beethoven tout simplement mal interprétées.  Pleinement conscient du problème, Naxos a préféré changer de cap : sans nécessairement
-    renier ses classiques, il explore à présent, systématiquement, un répertoire rarement,
-    sinon jamais joué.  Voilà comment un catalogue
-    - initialement grand public - s'est reconverti en une collection de pièces
-  rares.</li>
-    <li>Place aux jeunes
-    interprètes cherchant
-    un emploi stable et stimulant, plutôt qu'une hypothétique fortune qui n'est, de
-    toute façon, plus guère à l'ordre du jour dans le domaine classique.   Cela dit, des artistes confirmés rejoignent,
-    peu à peu, l'écurie Naxos et on peut prévoir que le phénomène ira en
-    s'amplifiant.  Espérons, en tout cas, que
-    l'exemple d'<a href="http://www.naxos.com/artistinfo/Herve_Niquet_31792/31792.htm">Hervé
-    Niquet</a> et de son ensemble, Le Concert Spirituel, fera école.  Ils ont mis leur enthousiasme au service
-    d'un baroque français manquant cruellement, jusqu'il y a peu, de main-d'œuvre
-    autochtone : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marc-Antoine-Charpentier-Te-Deum/hnum/8007869">Marc
-    Antoine Charpentier</a> (1643-1704) et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jean-Baptiste-Lully-Grosse-Motetten-Vol-1/hnum/1391219">Lully</a> (1632-1687) mais aussi les bien moins connus, Joseph Michel (1688-1736), <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Joseph-Bodin-de-Boismortier-Don-Quichotte-chez-la-Duchesse/hnum/7963957">Joseph
-    Bodin de Boismortier</a> (1689-1755) et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Louis-Nicolas-Clerambault-Le-Triomphe-dIris-1706/hnum/1821190">Louis-Nicolas Clérambault</a> (1676-1749).  Il semble toutefois que Hervé Niquet, auréolé
-    d'une nouvelle gloire, se déploie à présent sur d'autres fronts peut-être plus
-  lucratifs, enregistrant énormément pour la maison Glossa.</li>
-    <li>Contrôle des prix : un CD se négocie entre 6 et 7 €, soit
-    deux à trois fois moins cher que chez la concurrence.  Seul le label <a href="../chroniques/brillant.html">Brillant</a>, chroniqué par ailleurs, fait mieux mais sur base d'un
-</li>
-    <p>
-  Naxos a, par ailleurs, développé un
-    concept original qui devrait intéresser toutes les parties concernées par
-    l'épineux problème du piratage informatique des médias.  S'il fallait suivre les labels traditionnels,
-    plus ou moins 1 € serait la norme pour télécharger légalement une piste isolée.  C'est excessif et inabordable pour le commun
-    des mortels.  La conséquence est claire :
-    tout le répertoire que des artistes curieux voudraient patiemment exhumer est largement
-    voué aux oubliettes.  C'est contre-culturel et donc inacceptable.  Si ces artistes veulent une juste reconnaissance
-    de leur "travail", c'est sur la quantité des auditeurs potentiels
-    qu'ils doivent miser, par une politique de prix attractive par
-    téléchargement.  De fait, le
-    "marché" du CD classique est inexploité à 90% et sans argument
-    attractif auprès d'un public largement ignorant, il le restera.  </p>
-    <p>
-  Naxos propose une solution radicale
-    à ce problème qui a au moins le mérite de supprimer les intermédiaires, de tous
-    poils, trop gourmands : l'entièreté de son catalogue - y compris celui de son
-    antenne Marco Polo - est disponible, en écoute intégrale ("streaming"), pour un prix ridiculement bas : 20
-    $/an, environ.  De plus, quelques maisons de
-    qualité se sont jointes au projet : les catalogues, BIS (label suédois), Capriccio (label autrichien), Da Capo (label
-    danois) et tout récemment Ondine (label finlandais) sont désormais également accessibles sans supplément de prix
-    !  A ce tarif, plus personne ne peut
-    affirmer que le répertoire classique est inaccessible au plus grand nombre. </p>
-    <p>
-  D'autres maisons, apparemment plus
-    gourmandes, Chandos, Hänssler et Hungaroton ont adhéré au  projet  moyennant une cotisation nettement
-    supérieure, 225 $ annuels (150 $ en bande réduite).   Je maintiens que c'est largement excessif et
-    d'ailleurs contre-productif mais voilà, je vous avais  prévenu, la gourmandise 
-</p>
-    <p>
-  Il me semble que cette formule
-    mériterait d'être étudiée et généralisée : une politique véritablement
-    culturelle des Etats pourrait aller dans le sens d'une cotisation raisonnable, incorporée
-    d'office dans les connections Internet.  </p>
-    <p>
-  Autre possibilité : après les
-    chèques-repas, les chèques-cadeaux, les éco-chèques, à
-    quand les chèques-téléchargements ?  Après tout, le jour où les pécules de
-    vacances des Européens seront uniquement valables pour des séjours proches, les
-    routes seront moins encombrées et on cessera de voir se croiser des Toulousains
-    se rendant en Espagne et des Barcelonais en partance pour Toulouse.</p>
-    <p>
-  Bien que basé à l'autre bout du
-    monde (Hong Kong), le site d'accueil de Naxos est extrêmement
-    fiable et attentif à toutes vos éventuelles demandes d'assistance.   La sécurisation du paiement est assurée et au
-    bilan, le service fonctionne parfaitement.</p>
-    <p>
-  Voici quelques perles disponibles "en
-    ligne" :</p>
-    <p>
-  Les Sonates du Padre Antonio Soler (1729-1783) en 13 CD : une
-    occasion unique d'entendre ces œuvres tardives dans leur genre qui valent celles,
-    beaucoup plus connues, de Domenico
-    Scarlatti.  Leur caractère
-    hispanisant ajoute une touche bienvenue  d'exotisme :
-    <sub><sub><sub> 
-    <audio controls preload="none">
-<source src="../son.mp3/naxos/sonatedesoler.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/naxos/sonatedesoler.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    . </p><p>
-  L'intégrale de l'oeuvre pour piano
-    de Franz Liszt, y compris les
-    nombreuses transcriptions.</p><p>
-  Les Symphonies d'Alfred Schnittke, y compris la n° 0 - une œuvre de jeunesse exhumée des tiroirs - et
-    l'ultime n° 10, reconstituée par Alexandre Raskatov, d'après les esquisses inachevées (offre
-    du catalogue BIS).</p><p>
-  Les Cantates de Bach, dans l'interprétation de référence de Masaaki Suzuki (autre offre - d'une valeur inestimable
-    - du catalogue BIS).</p><p>
-  Les excellentes musiques de film d'Alfred Schnittke (offre du catalogue
-    Capriccio).</p><p>
-  Les Quatuors de Niels Gade (1817-1890), les Symphonies de Rued Langgaard (1893-1952) (ici le scherzo de
-    la 16<sup>ème</sup>  Symphonie :
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/naxos/sy16.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/naxos/sy16.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    ) ou celles, plus complexes, de Per Norgard (1932 - ) (offres du catalogue Dacapo).</p><p>
-  L'œuvre symphonique de Joonas Kokkonen (1921-1996) dont sont extraites ces "Métamorphoses
-    pour cordes et clavecin"
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/naxos/metamorphoses.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/naxos/metamorphoses.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    (offre du catalogue Ondine).</p><p>
-  Un large éventail de l'œuvre de Krzysztof Penderecki (les symphonies, les
-    grandes œuvres religieuses et ce beau sextuor :
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/naxos/sextuor.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/naxos/sextuor.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    ).</p><p>
-  L'œuvre pour piano et celle pour
-    orchestre de George Rochberg (essentiel !).  </p>
-    <p>
-  L'œuvre d'Arnold Schönberg, superbement dirigée par Robert Craft (Bis !).  Oui il s'agit bien de ce chef, très proche de
-    Stravinsky.   Je me suis toujours demandé
-    comment il s'y était pris pour justifier auprès de son ami qu'il enregistrait
-    l'œuvre de Schönberg, un compositeur dont Stravinsky ne voulait pas entendre
-    parler !  Le lecteur intéressé trouvera
-    des éléments de réponse dans un long <a href="../annexes/Craft.pdf"><strong>article</strong></a>, publié par Craft en 1982 et consacré aux rapports ambigus entre les deux musiciens.</p>
-    <p>
-  La musique contemporaine est
-    largement présente dans ce catalogue, en particulier grâce à une série (<a href="http://www.naxos.com/series/american_classics.htm">American Classics</a>) entièrement consacrée à la musique
-    américaine.   Vous trouverez aussi, entre
-    autres :</p>
-    <p>
-  Boris Tchaïkovski (1925-1996), Concerto pour piano,
-    dont voici le finale :
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/naxos/concertopiano.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/naxos/concertopiano.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    , </p><p>
-  John Tavener (1944- ) : un CD remarquable regroupant
-    quelques pièces pour piano dont "Ypakoe"
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/naxos/ypakoe.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/naxos/ypakoe.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    , … </p><p>
-  … et je m'arrête ici car il y a plus
-    de 10 000 titres disponibles, sans compter les DVD !</p><p>
-    
-    
-              </div>
+                <p>Le label Naxos a été fondé, en 1987, par l'Allemand <a href="http://www.naxos.com/aboutus.asp?page=klaus">Klaus Heymann</a>.  Il est basé, depuis toujours, à Hong Kong.  Heymann est un homme d'affaire avisé qui a successivement travaillé pour Braun, fondé une entreprise de vente par correspondance pour les forces armées américaines du Pacifique, puis a distribué les marques Bose et Revox en Extrême-Orient.  Conscient qu'il n'y avait guère de sens de vendre du matériel Hi-Fi à des populations n'ayant pas directement accès au marché du disque classique, ne serait-ce que pour des raisons financières, il se mit en tête de combler cette lacune en fondant ce qui apparaît, aujourd'hui, comme l'équivalent musical des éditions littéraires Penguin Books (en anglais) ou Livre de Poche (en français).</p>
+                <p>Les débuts furent laborieux, la politique des prix compressés requérant de n'impliquer que des interprètes de seconde zone, souvent en provenance des pays de l'Est européen, voire des amateurs, tel le Hong Kong Philharmonic Orchestra qui enregistra, dès ses débuts, pour Marco Polo, la branche asiatique de Naxos.</p>
+                <p>Si le succès fut immédiatement au rendez-vous dans ces contrées curieusement avides de musique classique, il n'en alla pas de même en Europe de l'Ouest où il était de bon ton de snober l'entreprise, au motif qu'aucune star ne faisait partie de l'écurie. </p>
+                <p>La crise aidant, les temps ont changé insensiblement.  Les Majors (DGG, Decca, etc.) ont perdu de leur superbe et ont, en tout cas, cessé d'être incontournables.  En pratiquant une politique artistique de plus en plus exigeante, Naxos est devenu un acteur privilégié de la scène musicale, sans doute le plus actif dans le répertoire classique.</p>
+                <p>Sa politique repose sur trois principes simples :</p>
+
+                <ul class="miniListCorps">
+                  <li>Aucun doublon : une œuvre déjà présente au catalogue n'est généralement pas réenregistrée.  Il faut s'en faire une raison, le répertoire de la première heure s'en trouve sacrifié et personne ne se passionnera, de fait, pour des symphonies de Beethoven tout simplement mal interprétées.  Pleinement conscient du problème, Naxos a préféré changer de cap : sans nécessairement renier ses classiques, il explore à présent, systématiquement, un répertoire rarement, sinon jamais joué.  Voilà comment un catalogue - initialement grand public - s'est reconverti en une collection de pièces rares.</li>
+                  <li>Place aux jeunes interprètes cherchant un emploi stable et stimulant, plutôt qu'une hypothétique fortune qui n'est, de toute façon, plus guère à l'ordre du jour dans le domaine classique.   Cela dit, des artistes confirmés rejoignent, peu à peu, l'écurie Naxos et on peut prévoir que le phénomène ira en s'amplifiant.  Espérons, en tout cas, que l'exemple d'<a href="http://www.naxos.com/artistinfo/Herve_Niquet_31792/31792.htm">Hervé Niquet</a> et de son ensemble, Le Concert Spirituel, fera école.  Ils ont mis leur enthousiasme au service d'un baroque français manquant cruellement, jusqu'il y a peu, de main-d'œuvre autochtone : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marc-Antoine-Charpentier-Te-Deum/hnum/8007869">Marc Antoine Charpentier</a> (1643-1704) et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jean-Baptiste-Lully-Grosse-Motetten-Vol-1/hnum/1391219">Lully</a> (1632-1687) mais aussi les bien moins connus, Joseph Michel (1688-1736), <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Joseph-Bodin-de-Boismortier-Don-Quichotte-chez-la-Duchesse/hnum/7963957">Joseph Bodin de Boismortier</a> (1689-1755) et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Louis-Nicolas-Clerambault-Le-Triomphe-dIris-1706/hnum/1821190">Louis-Nicolas Clérambault</a> (1676-1749).  Il semble toutefois que Hervé Niquet, auréolé d'une nouvelle gloire, se déploie à présent sur d'autres fronts peut-être plus lucratifs, enregistrant énormément pour la maison Glossa.</li>
+                  <li>Contrôle des prix : un CD se négocie entre 6 et 7 €, soit deux à trois fois moins cher que chez la concurrence.  Seul le label <a href="../chroniques/brillant.html">Brillant</a>, chroniqué par ailleurs, fait mieux mais sur base d'un Naxos a, par ailleurs, développé un concept original qui devrait intéresser toutes les parties concernées par l'épineux problème du piratage informatique des médias.  S'il fallait suivre les labels traditionnels, plus ou moins 1 € serait la norme pour télécharger légalement une piste isolée.  C'est excessif et inabordable pour le commun des mortels.  La conséquence est claire : tout le répertoire que des artistes curieux voudraient patiemment exhumer est largement voué aux oubliettes.  C'est contre-culturel et donc inacceptable.  Si ces artistes veulent une juste reconnaissance de leur "travail", c'est sur la quantité des auditeurs potentiels qu'ils doivent miser, par une politique de prix attractive par téléchargement.  De fait, le "marché" du CD classique est inexploité à 90% et sans argument attractif auprès d'un public largement ignorant, il le restera. </li>
+                </ul>
+
+                <p>Naxos propose une solution radicale à ce problème qui a au moins le mérite de supprimer les intermédiaires, de tous poils, trop gourmands : l'entièreté de son catalogue - y compris celui de son antenne Marco Polo - est disponible, en écoute intégrale ("streaming"), pour un prix ridiculement bas : 20 $/an, environ.  De plus, quelques maisons de qualité se sont jointes au projet : les catalogues, BIS (label suédois), Capriccio (label autrichien), Da Capo (label danois) et tout récemment Ondine (label finlandais) sont désormais également accessibles sans supplément de prix !  A ce tarif, plus personne ne peut affirmer que le répertoire classique est inaccessible au plus grand nombre. </p>
+                <p>D'autres maisons, apparemment plus gourmandes, Chandos, Hänssler et Hungaroton ont adhéré au projet moyennant une cotisation nettement supérieure, 225 $ annuels (150 $ en bande réduite).   Je maintiens que c'est largement excessif et d'ailleurs contre-productif mais voilà, je vous avais  prévenu, la gourmandise </p>
+                <p>Il me semble que cette formule mériterait d'être étudiée et généralisée : une politique véritablement culturelle des Etats pourrait aller dans le sens d'une cotisation raisonnable, incorporée d'office dans les connections Internet.  </p>
+                <p>Autre possibilité : après les chèques-repas, les chèques-cadeaux, les éco-chèques, à quand les chèques-téléchargements ?  Après tout, le jour où les pécules de vacances des Européens seront uniquement valables pour des séjours proches, les routes seront moins encombrées et on cessera de voir se croiser des Toulousains se rendant en Espagne et des Barcelonais en partance pour Toulouse.</p>
+                <p>Bien que basé à l'autre bout du monde (Hong Kong), le site d'accueil de Naxos est extrêmement fiable et attentif à toutes vos éventuelles demandes d'assistance.   La sécurisation du paiement est assurée et au bilan, le service fonctionne parfaitement.</p>
+
+                <p>Voici quelques perles disponibles "en ligne" :</p>
+
+                <ul class="miniListCorps">
+                  <li>Les Sonates du Padre Antonio Soler (1729-1783) en 13 CD : une occasion unique d'entendre ces œuvres tardives dans leur genre qui valent celles, beaucoup plus connues, de Domenico Scarlatti.  Leur caractère hispanisant ajoute une touche bienvenue d'exotisme : <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/naxos/sonatedesoler.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/naxos/sonatedesoler.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> . </li>
+                  <li>L'intégrale de l'oeuvre pour piano de Franz Liszt, y compris les nombreuses transcriptions.</li>
+                  <li>Les Symphonies d'Alfred Schnittke, y compris la n° 0 - une œuvre de jeunesse exhumée des tiroirs - et l'ultime n° 10, reconstituée par Alexandre Raskatov, d'après les esquisses inachevées (offre du catalogue BIS).</li>
+                  <li>Les Cantates de Bach, dans l'interprétation de référence de Masaaki Suzuki (autre offre - d'une valeur inestimable - du catalogue BIS).</li>
+                  <li>Les excellentes musiques de film d'Alfred Schnittke (offre du catalogue Capriccio).</li>
+                  <li>Les Quatuors de Niels Gade (1817-1890), les Symphonies de Rued Langgaard (1893-1952) (ici le scherzo de la 16<sup>ème</sup>  Symphonie : <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/naxos/sy16.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/naxos/sy16.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> ) ou celles, plus complexes, de Per Norgard (1932 - ) (offres du catalogue Dacapo).</li>
+                  <li> L'œuvre symphonique de Joonas Kokkonen (1921-1996) dont sont extraites ces "Métamorphoses pour cordes et clavecin"<sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/naxos/metamorphoses.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/naxos/metamorphoses.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> (offre du catalogue Ondine).</li>
+                  <li>Un large éventail de l'œuvre de Krzysztof Penderecki (les symphonies, les grandes œuvres religieuses et ce beau sextuor : <sub><sub><sub>
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/naxos/sextuor.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/naxos/sextuor.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> ).</li>
+                  <li>L'œuvre pour piano et celle pour orchestre de George Rochberg (essentiel !).  </li>
+                  <li>L'œuvre d'Arnold Schönberg, superbement dirigée par Robert Craft (Bis !).  Oui il s'agit bien de ce chef, très proche de Stravinsky.   Je me suis toujours demandé comment il s'y était pris pour justifier auprès de son ami qu'il enregistrait l'œuvre de Schönberg, un compositeur dont Stravinsky ne voulait pas entendre parler !  Le lecteur intéressé trouvera des éléments de réponse dans un long <a href="../annexes/Craft.pdf"><strong>article</strong></a>, publié par Craft en 1982 et consacré aux rapports ambigus entre les deux musiciens.</li>
+                </ul>
+
+                <p>La musique contemporaine est largement présente dans ce catalogue, en particulier grâce à une série (<a href="http://www.naxos.com/series/american_classics.htm">American Classics</a>) entièrement consacrée à la musique américaine. Vous trouverez aussi, entre autres :</p>
+
+                <ul class="miniListCorps">
+                  <li>Boris Tchaïkovski (1925-1996), Concerto pour piano, dont voici le finale : <sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/naxos/concertopiano.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/naxos/concertopiano.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub> , </li>
+                  <li>John Tavener (1944- ) : un CD remarquable regroupant quelques pièces pour piano dont "Ypakoe"<sub><sub><sub> 
+                  <audio controls preload="none"> 
+                    <source src="../son.mp3/naxos/ypakoe.mp3" type="audio/mpeg"/> 
+                    <source src="../son.mp3/naxos/ypakoe.ogg" type="audio/ogg"/> 
+                    Votre navigateur n'est pas compatible 
+                  </audio></sub></sub></sub> , … </li>
+                  <li>… et je m'arrête ici car il y a plus de 10 000 titres disponibles, sans compter les DVD !</li>
+                </ul>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -254,8 +149,6 @@ Votre navigateur n'est pas compatible
     
     
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

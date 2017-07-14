@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Tour du monde | Pays-Bas</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tourdumonde").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,10 +33,60 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                 <li>
+                    <a id="ancreBaroqueClassique" href="#baroqueClassique" class="linavMenu active">
+                    <span>Les périodes baroque et classique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreErePostRomantique" href="#erePostRomantique" class="linavMenu">
+                    <span>L'ère (post)romantique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancre1ereMoitie20emeS" href="#1ereMoitie20emeS" class="linavMenu">
+                    <span>La première moitié du 20<sup>ème</sup> siècle</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreProlongementRomantique" href="#prolongementRomantique" class="linavMenu">
+                    <span>Le prolongement romantique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreModernite" href="#modernite" class="linavMenu">
+                    <span>Modernité</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreCourantSeriel" href="#courantSeriel" class="linavMenu">
+                    <span>Le courant sériel</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancre2emeMoitie20emeS" href="#2emeMoitie20emeS" class="linavMenu">
+                    <span>La deuxième moitié du 20<sup>ème</sup> siècle</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancrePostmodernisme" href="#postmodernisme" class="linavMenu">
+                    <span>Postmodernisme à la sauce hollandaise</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreRichesHeures" href="#richesHeures" class="linavMenu">
+                    <span>Les riches heures de la vie musicale néerlandaise</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
+                <h2>Tour du monde</h2>
                 <h3>Textes d'opinions humoristiques souvent satiriques</h3>
 
                 <nav class="filAriane">
@@ -45,250 +96,325 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tourdumondedemusiqueactuelle.html">Tour du monde</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Pays-Bas</li>
                     </ul>
                 </nav>  
-    <h2>Un tour du monde de la musique actuelle : <div>Les Pays-Bas.</div></h2>
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#baroqueClassique">Les périodes baroque et classique</a></li>
+                        <li><a href="#erePostRomantique">L'ère (post)romantique</a></li>
+                        <li><a href="#1ereMoitie20emeS">La première moitié du 20<sup>ème</sup> siècle</a></li>
+                        <li><a href="#prolongementRomantique">Le prolongement romantique</a></li>
+                        <li><a href="#modernite">Modernité</a></li>
+                        <li><a href="#courantSeriel">Le courant sériel</a></li>
+                        <li><a href="#2emeMoitie20emeS">La deuxième moitié du 20<sup>ème</sup> siècle</a></li>
+                        <li><a href="#postmodernisme">Postmodernisme à la sauce hollandaise</a></li>
+                        <li><a href="#richesHeures">Les riches heures de la vie musicale néerlandaise</a></li>
+                    </ul>
+                </div>
+
                 <div class="blocImgFirstAndText">
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
-                              <img src="../images/paysbas/paysbas.jpg" alt=""/>
-                              <figcaption></figcaption>
+                              <img src="../images/paysbas/paysbas.jpg" alt="Pays-Bas"/>
+                              <figcaption>Pays-Bas</figcaption>
                           </figure>
                       </div>
                   </div>
   
-  
-  <p>Un temps Bourguignons puis Habsbourgeois, les Pays-Bas actuels sont directement issus des 7 Provinces Unies septentrionales.   Protestantes, elles brisèrent leur dépendance espagnole lors du traité de Westphalie (1648), qui scella la fin de la Guerre de Trente ans.  Ce fut le début d'une ère de grande prospérité, encore appelée Age d'Or des Pays-Bas.</p>
-  
-   <p>Ce pays a vu naître quelques-uns des peintres les plus fameux de l'histoire, de Jérôme Bosch (1450-1516) à Vincent Van Gogh (1853-1890), en passant par Rembrandt Harmenszoon van Rijn (1606-1669) - Rembrandt (son prénom !) pour les intimes - ou Jan Vermeer de Delft (1632-1675), dont les oeuvres sont convoitées par les amateurs d'art (très) fortunés.</p>
-   
-   <p>Sa position en musique ne fut guère aussi favorable, du moins à ses débuts : l'austérité du culte calviniste, bien implanté dès 1580, représentait un obstacle naturel à la création musicale savante telle que pratiquée dans les provinces catholiques du sud, par les musiciens franco-hennuyers-flamands. Par bonheur, nombre d'immigrants furent attirés par la richesse des lieux et par le vent de liberté qui y a toujours soufflé. Parmi eux se trouvèrent des artistes qui  réintroduisirent en Hollande le gène musical manquant et ne demandant qu'à s'exprimer.  Je mentionnerai fréquemment que tel ou tel compositeur habituellement référencé comme hollandais ne l'est pas absolument, en tous cas au premier degré.</p>
-   
-   <p>Le premier "étranger" abusivement revendiqué fut Jacob Obrecht (1457-1505), au motif qu'il servit à Saint-Martin d'Utrecht et qu'il y enseigna les rudiments de la musique au grand Erasme (1469-1536).  Sachez cependant qu'Obrecht est né à Gand et que vous fâcheriez n'importe quel flamand de le confondre - lui ou un autre - avec un hollandais.</p>
-  <p> Cette chronique n'a qu'un seul but : convaincre le lecteur que ce plat pays  a vu naître des musiciens sinon exceptionnels, du moins d'une valeur largement insoupçonnée. L'âge d'or musical des Pays-Bas est cependant tardif, ne commençant véritablement qu'avec les années 1900. Autant dire qu'en ce qui concerne la musique écrite avant cette date, l'inventaire sera plutôt vite fait.</p>
-
- 
-
-<p>Le premier compositeur hollandais fameux, renommé serait plus exact, Jan Pieterszoon Sweelinck (1562-1621), n'est pas franchement passionnant et le fait qu'on l'ait surnommé l'Orphée d'Amsterdam en dit long sur la morosité du paysage sonore ambiant.  Il est surtout connu pour des livres pour claviers (orgue et clavecin, écoutez, par exemple, cette <a href="http://www.youtube.com/watch?v=G6ihF82lvEA&feature=related">Fantaisie Chromatique</a>) mais il a également écrit des recueils vocaux (<a href="http://www.youtube.com/watch?v=fEt9QwCOFeg">Psaume 42</a>).</p>
-<p>Moins connu, Jacob van Eyck (1590-1657) interpelle davantage nos oreilles contemporaines, en particulier grâce à une surprenante collection de musiques pour flûte qui devraient plaire à tous (Un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jacob-van-Eyck-1590-1657-Der-Fluyten-Lust-Hof-Ausz/hnum/1301474">triple CD</a>, remarquable en tous points, est paru chez Brillant, label hollandais, je vous le rappelle).  Avant d'investir dans la musique  au temps de Rembrandt, procurez-vous cet autre <a href="http://classique.abeillemusique.com/CD/Classique/BRIL93100/5028421931005/Brilliant-Classics/Music-From-The-Golden-Age-of-Rembrandt/Musique-de-l-Age-d-Or-de-Rembrandt/cleart-23891.html">triple CD</a> paru chez le même éditeur. La dépense (11 euros) ne vous ruinera pas et au moins vous saurez si vous souhaitez approfondir l'écoute des musiciens les plus représentatifs, Constantijn Huygens (1596-1687) et surtout Carolus Hacquart (1640-1701). Je précise, à nouveau, que ce dernier est né à Bruges, n'ayant émigré à Amsterdam qu'à l'âge de 30 ans. Ses <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carolus-Hacquart-1640-1701-Cantiones-Sonate/hnum/5770797">motets latins</a> surpassent sans difficulté les psaumes  du <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Herman-Hollanders-17-Jh-Parnassus-Ecclesiasticus-Teile-1-3/hnum/9947740">Parnassus Ecclesiasticus</a> de son contemporain batave, Herman Hollanders (1595-1640), typiques de la musique un brin  bâtarde qui n'a cessé de meubler les offices réformés.</p>
-
-<p><i>Les périodes baroque et classique.</i></p> 
-
-<p>Il faudra attendre deux ou trois générations pour que la situation de l'art musical néerlandais s'améliore grâce à quelques artistes mineurs mais bienvenus :</p>
-
-<li>Johan Schenck, (1660-1712), né à Amsterdam  de parents allemands, apporta  un souffle nouveau en réalisant une synthèse précoce des styles français, allemand et italien.  Le CD est là pour témoigner de l'art de Schenck, tel ce curieux <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johannes-Schenck-1656-1712-Bacchus-Ceres-en-Venus/hnum/3495157">Bacchus, Ceres en Venus</a>, premier opéra chanté en vieux néerlandais ou encore ces <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johannes-Schenck-1656-1712-Sonaten-op-8-Nr-7-12-f%FCr-2-Gamben-Le-Nymphe-di-Rheno/hnum/3601527">Sonates</a> pour deux violes de gambe, opus 8, enregistrées chez Naxos.</li>
-
-<li>Willem de Fesch (1687-1757) voyagea beaucoup, transitant par Anvers pour aboutir à Londres, ce qui explique que son Oratorio, <a href="https://www.youtube.com/watch?v=z1E77LVMOZM">Joseph</a>, soit chanté en anglais. Ses <a href="http://www.youtube.com/watch?v=lCz5n-PL4kY&feature=related">Concerti</a> font quelque peu penser à Antonio Vivaldi (1678-1741).</li>
-<li>Le Comte Unico Wilhelm van Wassenaer (1692-1766) fut un diplomate-compositeur de  talent dont l'oeuvre principale, <a href="http://www.youtube.com/watch?v=q8lzbFkrlUs">6 Concerti Armonici</a>, a longtemps été attribuée (à tort) à Pergolèse. Stravinsky a puisé quelques idées dans cet ensemble lors de la composition de son Pulcinella, par ailleurs essentiellement inspiré par de vraies oeuvres de Pergolèse.</li> 
-
-<li>Pieter Hellendaal (1721-1799) termina également sa carrière à Londres. Ses <a href="https://www.youtube.com/watch?v=TF1ePdQVdCk">Concerti Grossi</a>, opus 3,   valent un (petit) détour.</li>
-<li>Vous consentirez un détour nettement plus long pour admirer l'oeuvre de Joseph Schmitt (1734-1791), le "Haydn hollandais". Nous devons à la New Dutch Academy d'avoir restauré un pan de la musique de Schmitt avec une verdeur de ton tout à fait réjouissante. Un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Joseph-Schmitt-1734-1791-Fr%FChe-Symphonien-Kammermusik/hnum/8648116">CD</a>  incontournable vous révèle ce musicien étonnant, à redécouvrir absolument (<a href="http://www.youtube.com/watch?v=F1GUYUe53bE">Symphonie en sol majeur</a>).</li>
-<li>Johann Wilhelm Wilms (1772-1847), natif de Solingen en Allemagne, a bizarrement été mieux servi par le disque que Schmitt. Sa fort peu révolutionnaire <a href="https://www.youtube.com/watch?v=E0yBXUQNIT4">Symphonie n°6</a>  survint un peu tard dans le cours de l'histoire.</li>
-
-<p><i>L'ère (post)romantique.</i></p>
-<p> Les hollandais sont romantiques dans l'âme si l'on en juge par le le grand nombre de partitions du genre, parfois écrites bien après 1900. Elles sont souvent d'excellente facture :</p>
-
-<li>On connait peu Johannes Bernardus van Bree (1801-1857) dont voici un <a href="http://www.youtube.com/watch?v=68eFlJ1DCTk">Concerto pour violon</a> qui annonce les oeuvres virtuoses un brin secondaires qui fleuriront au cours du siècle.</li>
-
-<li>Johannes Verhulst (1816-1891), fut tôt remarqué par Félix Mendelssohn (1809-1847) qui le prit un temps pour élève à Leipzig. Il y perfectionna audiblement ses classiques : Schubert dans  ce court lied, <a href="http://www.youtube.com/watch?v=cx4usPdvGkw">Mei Regen</a>, et naturellement son professeur, dans ce <a href="http://www.youtube.com/watch?v=_AdlU7YzU5w">Nocturne</a>, la  Messe, opus 20, ou cette <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johannes-Verhulst-1816-1891-Symphonie-e-moll-op-46/hnum/5233834">Symphonie</a>, opus 46. Il convient de noter que l'enfance de Verhuslt a baigné dans la musique d'église catholique, un avantage certain.</li>
-
-<li>Elève du précédent, Daniël de Lange (1841-1918) n'a pas écrit énormément mais l'oeuvre est de qualité tel ce <a href="http://www.youtube.com/watch?v=sZO-YbPvOm0&feature=related">Requiem</a>, sans doute son oeuvre la plus précieuse. </li>
-
-<li>Bernard Zweers (1854-1924) a également étudié à Leipzig. Revenu au pays natal, il y a développé un art typiquement national que ses symphonies illustrent à merveille (<a href="https://www.youtube.com/watch?v=8fXLIPKmyTA">Symphonie n°3</a>, à découvrir !).</li>
-
-<li>Julius Röntgen (1855-1932), un lointain parent du fameux physicien, fut une personnalité importante dans la vie musicale hollandaise. Il n'est pas complètement hollandais puisqu'il est né à Leipzig, n'ayant émigré vers Amsterdam qu'à l'âge de 22 ans. Il s'est beaucoup investi dans la vie musicale de son pays d'adoption, en particulier lors de la création du célèbre Concertgebouw Orkest (dont il espérait la première direction, cependant offerte à Hans von Bülow). Voici un compositeur à découvrir, à qui d'aucuns reprochent 25 symphonies à une époque où cela ne se faisait plus, mais porteuses de belles inspirations (<a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Julius-R%F6ntgen-1855-1932-Symphonien-Nr-8-15/hnum/6142788">Symphonies 8 & 15</a> - une intégrale est en cours chez CPO - , <a href="http://www.youtube.com/watch?v=9ElQqO5VZlg&feature=related">Sonate pour violoncelle & piano</a>, opus 41, <a href="http://www.youtube.com/watch?v=5V3zC2R4AcY&feature=related">Trio à clavier n°10</a>, et surtout, <a href="http://www.youtube.com/watch?v=RNpWVagcZe8">Aus Goethes Faust</a> (1930), aux accents tardivement malhériens).  </li>
-
-
-
-
-<li>Alphons Diepenbrock (1862-1921) est un musicien original à moitié autodidacte dont le style devrait plaire, accommodant la polyphonie renaissante à la sauce wagnérienne puis, sur le tard, à l'impressionisme debussyste.  Son œuvre orchestrale est disponible à petit prix chez <a href="http://www.qobuz.com/telechargement-album-mp3/Alphons-Diepenbrock-/Classique-Musique-Symphonique/Hans-Vonk-Musique-Post-romantique/Brilliant-Classics/default/fiche_produit/id_produit-5028421934129.html">Brillant</a> et à grand frais chez Chandos. Ecoutez <a href="http://www.youtube.com/watch?v=DVkpQR9njX8">Im grossen Schweigen</a>, cette curieuse <a href="http://www.youtube.com/watch?v=19mXwd22RL4&feature=related">Invitation au Voyage</a> qui tente de marcher dans les pas de Henri Duparc ou encore son oeuvre la plus aboutie, <a href="http://www.youtube.com/watch?v=SuyAS8nMhjA">Elektra</a>.</li>
-
-<li>Johan Wagenaar (1862-1941) (<a href="http://www.youtube.com/watch?v=4SwC_AAuf-s&feature=related">Frühlingsgewalt, Op. 11</a>),  nettement plus léger comme en témoigne cet enregistrement <a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Johan-Wagenaar-1862-1941-Symphonische-Dichtungen/hnum/6927133">CPO</a>, et Carl Smulders (1863-1934) (<a href="https://www.youtube.com/watch?v=-v76TNzStBU">Rash Hashana</a>) complètent le tableau d'honneur.</li>
-
-
-
-
-<li>Le label Chandos s'est également intéressé aux symphonies de Cornelis Dopper (1870-1939) (<a href="http://www.youtube.com/watch?v=Efuqh43oR6A">n°2</a>, <a href="http://www.youtube.com/watch?v=M8DCiyhU2uA">n°7</a>). Ne nous plaignons pas, les enregistrements Chandos sont soignés comme toujours.</li>
-
-<li>On ne fait pas tous les jours la connaissance d'un musicien aussi intéressant que Dirk Schäfer (1873-1931) (<a href="http://www.youtube.com/watch?v=fHCEPinHid4">Quintette</a>, opus 5 et <a href="http://www.youtube.com/watch?v=fHCEPinHid4">Sonate</a>, opus 13, pour violoncelle et piano).</li>
-
-<div><img src="../images/paysbas/zweers3.jpg" alt="" /></div><div><img src="../images/paysbas/diepenbrock.jpg" alt="" /></div> 
-
-<div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-<p><i>La première moitié du 20<sup>ème</sup> siècle.</i></p>
-
-
-<p>L'âge d'or de la musique néerlandaise commence véritablement avec l'aube du 20<sup>ème</sup> siècle. Plusieurs courants ont coexisté pas toujours pacifiquement. Dans un premier temps, un  mouvement "naturellement" germanophile s'est heurté à un courant francophile, minoritaire mais actif et la tension est montée d'un cran lors du premier conflit mondial. A ces dissensions à caractère politique se sont superposés des conflits esthétiques, liés à l'émergence de la modernité contrariée par la puissance du mouvement postromantique.</p>
-
-
-
-<p><i>Le prolongement romantique.</i></p>
-
-<p>C'est peut-être en Hollande que le courant postromantique a (sur)vécu avec le plus d'intensité. Le Concertgebouw Orkest, une des plus prestigieuses phalanges symphoniques au monde, a très tôt honoré les grandes fresques d'Anton Bruckner, de Gustav Mahler ou de Richard Strauss, à une époque où, en France, on trouvait ces musiques parfaitement indigestes. Du même coup, il s'est trouvé beaucoup de musiciens à l'aise dans un style déjà porté et un public conditionné pour les suivre dans leur démarche conservatrice. Des chefs aussi charismatiques que Willem Mengelberg (de 1895 à 1945 !) voire même Bernard Haitink (de 1959 à 1988) ont contribué à cautionner ces choix.</p>
-
-<p>Une lignée incarne l'évolution de la musique néerlandaise au tournant du 20<sup>ème</sup> siècle : chez les Andriessen, on est musicien de père en fils. Nico Andriessen (1845-1913), organiste de son état, eut deux fils, Willem (1887-1964) et Hendrik (1892-1981). Hendrik, le plus doué, nous a laissé des partitions fort intéressantes  (<a href="http://www.youtube.com/watch?v=ZwbZz7NSTMA&feature=related">Ricercare</a> ou <a href="http://www.youtube.com/watch?v=vFQ6uHnanpQ">Variations sur un Thème de Kuhnau</a>) et, en prime, deux fils, Jurriaan (1925-1996) et Louis (1939- ) aussi différents qu'il est possible. Juriaan a cultivé un art simple, presque naïf, cherchant à flatter le goût des publics pas trop exigeants (<a href="http://www.youtube.com/watch?v=oHznP6TvvwA&feature=related">Portrait de Hedwig</a> ou, un peu moins basique, <a href="http://www.youtube.com/watch?v=Mh1fOB781xM">Sonnet n°43</a>), tandis que <a href="../chroniques/andriessen.html">Louis</a> optait pour le chemin opposé, explorant avec beaucoup de discernement les voies de la modernité. Gijs Andriessen (1957- ) est le fils de Juriaan mais il a bifurqué vers le jazz et la musique de film.</p>
-
-
-<p><i>Modernité.</i></p>
-
-<div><img src="../images/paysbas/escher.jpg" alt="" />
-  <div class="legende">Rudolf Escher (1912-1980)</div></div>
-<div><img src="../images/paysbas/pijper.jpg" alt="" /><div class="legende">Willem Pijper (1894-1947)</div></div>
-<div><img src="../images/paysbas/mvermeulen.jpg" alt="" /><div class="legende">Matthijs Vermeulen (1888-1967)</div></div>
-
-<p>Trois compositeurs très différents ont porté très haut les aspirations de la nouvelle musique néerlandaise : Matthijs Vermeulen (1888-1967), Willem Pijper (1894-1947) et Rudolf Escher (1912-1980). Ils eurent en commun de chercher leur inspiration du côté de la France musicale, incarnée à leurs yeux par le trio Debussy-Ravel-Roussel. Ce choix esthétique ne manque pas de surprendre de la part de musiciens que l'on croirait d'essence germanique.</p>
-<li>Willem Pijper (1894-1947), émule à ses débuts d'Albert Roussel (1869-1937), est généralement considéré comme l'initiateur du courant moderniste hollandais.  Il a écrit une œuvre en évolution constante, démarrant sur un mode classique (<a href="http://www.youtube.com/watch?v=KfSev1yslxU">Symphonie n°1</a>) et adoptant, dès 1920, une atonalité libre d'où l'émotion n'est jamais absente.  Sa <a href="http://www.youtube.com/watch?v=AThgjBBN1fo">3<sup>ème</sup> Symphonie</a> (1926) en témoigne qui fut son plus grand succès, servi par les chefs les plus en vue, hollandais bien sûr, mais aussi ... français, tel Pierre Monteux, dans l'extrait mentionné.  Le <a href="http://www.youtube.com/watch?v=Ee3QNUUCKLM&feature=related">Concerto pour piano</a> (1927) ou la <a href="http://www.youtube.com/watch?v=OcxJViDvfp4&feature=related">Sonate pour piano</a> (1930) sont tout aussi intéressants. Pijper fut  un pédagogue influent qui anima les conservatoires d'Amsterdam et de Rotterdam, ouvrant la voie à toute une génération de compositeurs aux esthétiques diverses.</li>
-
-<li>Rudolf Escher (1912-1980) - (demi) cousin du célèbre dessinateur Maurits Cornelis Escher -  fait partie de ces musiciens dont la notoriété n'a jamais tenu qu'à un fil, celui de l'oeuvre unique, <a href="http://www.youtube.com/watch?v=pb6hpFkzwDw&feature=related">Musique pour l'esprit en deuil</a>, qui a connu un tel succès qu'on a failli oublier complètement le reste de sa production (<a href="http://www.youtube.com/watch?v=yl1KBHFIDsU&feature=related">Sonate n°1</a>, pour piano).</li>
-
-<li>Matthijs Vermeulen (1888-1967) est le grand oublié de l'histoire de la musique néerlandaise. Il doit sans doute ce dédain à son parcours atypique : parti pour suivre l'exemple paternel dans le métier de forgeron, il dévia vers la prêtrise avant de découvrir la musique et de réaliser qu'elle était sa véritable vocation. Très doué et bien soutenu par son professeur, Daniël de Lange, il récupéra rapidement un sérieux retard dans ses études musicales. Sa 1<sup>ère </sup>Symphonie, opus 1, date de ses 25 ans. Il gagna simultanément sa vie grâce à des critiques musicales particulièrement pertinentes, qu'il parsemait de réflexions à caractère éminemment politiques. Ses prises de positions lui valurent quelques déboires, notamment lorsqu'il afficha clairement ses sympathies pour la musique française - singulièrement celle de Debussy - et qu'il   critiqua (ou)vertement le germanisme ambiant. En 1914, le sujet était sensible et Vermeulen faisait partie de ceux qui fustigeaint les exactions allemandes envers les civils.  Ne parvenant pas à faire jouer sa musique symphonique, il émigra un temps en France, sans y rencontrer davantage de succès. En 1939, sa carrière prit enfin son véritable départ lorsque Eduard van Beinum, chef en second du Concertgebouw Orkest, conduisit sa Troisième Symphonie. Encouragé, il en composa 4 autres et vous pouvez découvrir l'intégrale des 7 Symphonies dans un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Matthijs-Vermeulen-1888-1967-Symphonien-Nr-1-7/hnum/6430425">triple album</a>, difficile mais passionnnant, paru chez Donemus  (<a href="http://www.youtube.com/watch?v=_4u-5N1UCmM&feature=related">Symphonie n°3</a> ou <a href="http://www.youtube.com/watch?v=w_eAHZxD9e0&feature=related">Symphonie n°6</a>).</li>
-<div><img src="../images/paysbas/escher1.jpg" alt="" /></div>
-<div><img src="../images/paysbas/vermeulen1.jpg" alt="" /></div>
-
-<div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-
-<p>J'ajoute volontiers deux compositeurs à ce palmares d'excellence :</p>
-
-<li>L'histoire s'est révélée relativement injuste envers Jan van Gilse (1881-1944). Willem Pijper ne l'épargna guère, indisposé par son militantisme pro-allemand. Sa première manière emprunte clairement à quelques modèles germains, Max Reger ou Richard Strauss (comme dans ce Nonett 
-  <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/paysbas/vangilse.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/paysbas/vangilse.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-). Van Gilse n'a récupéré l'estime de ses pairs qu'à la faveur de la seconde guerre mondiale, quand il est devenu clair qu'il avait fait la distinction qui s'imposait entre musique et politique (<a href="http://www.youtube.com/watch?v=AfY5XSvg6-Y">Musique funéraire</a> extraite de l'opéra Thyl Uilenspiegel). Ses <a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Jan-van-Gilse-1881-1944-Symphonien-Nr-1-2/hnum/9664777">Symphonies 1 & 2</a> ont été enregistrées chez CPO.</li>
-
-
-
-
-<li>Lex van Delden (1919-1988), d'origine juive, vit ses études - à la fois comme musicien et comme chirurgien - interrompues par la guerre. Entré en résistance, il dut attendre la fin des hostilités pour prendre sa revanche, au plan musical seulement (une blessure de guerre le rendit borgne), devenant un des compositeurs hollandais les plus joués de son temps. Bien que resté attaché à la forme mélodique, son oeuvre brille d'une profonde originalité (<a href="http://www.youtube.com/watch?v=V9L9GXJ1Vkc">Musica di Castato</a> ou <a href="http://www.youtube.com/watch?v=4_cKBlHWB98">Concerto pour deux orchestres à cordes</a>).</li>
-
-
-<p>Quantité d'autres musiciens ont gravité en orbite autour de ces stars : Jakob van Domselaer (1890-1960) (<a href="http://www.youtube.com/watch?v=bHWJ76Jz89o">Concerto n°1</a>, pour piano), Marinus de Jong (1891-1984) (<a href="http://www.youtube.com/watch?v=QkSNxQ-z4zQ">Morgenstond</a>), Oscar van Hemel (1892-1981) - d'origine belge - (<a href="https://www.youtube.com/watch?v=LmGVydeW-24">Ballade pour orchestre</a>), Henriette Bosmans (1895-1952) (<a href="https://www.youtube.com/watch?v=9mUF4n6uBuY">Poeme pour violoncelle</a>), Leo Smit (1900-1943) (<a href="http://www.youtube.com/watch?v=hGm-kCNO3GI">Symphonie en Do</a>),  Léon Orthel (1905-1985) (<a href="http://www.youtube.com/watch?v=-V2iWCZOmVg">Symphonie n°4</a>, aux accents ravéliens évidents), Willem van Otterloo (1907-1978) (<a href="http://www.youtube.com/watch?v=9EM6UERqiZw&feature=related">Intrada</a>) - surtout connu comme chef d'orchestre - , Henk Badings (1907-1987) (<a href="http://www.youtube.com/watch?v=XuMAT0O9MoA">Symphonie n°3</a>),   Hans Henkemans (1913-1995) (<a href="http://www.youtube.com/watch?v=63HS9kWZ35c">Concerto pour violon</a>), Marius Flothuis (1914-2001) (<a href="http://www.youtube.com/watch?v=fbxrYdF4tig">Quatuor à cordes, Op. 44</a> ou <a href="http://www.youtube.com/watch?v=ADiHqQd6Y0Y">Symfonische muziek, Op 59</a>),  Ton de Leeuw (1926-1996) (<a href="http://www.youtube.com/watch?v=2Djlk8KtjbQ">Mouvements rétrogrades</a> ou <a href="http://www.youtube.com/watch?v=K2N8_2G3MyY&feature=related">Etude africaine n°2</a>), Hans Kox (1930- ) (<a href="http://www.youtube.com/watch?v=iEvyt_woTEA&feature=related">Memories and Reflections</a> ou <a href="http://www.youtube.com/watch?v=amEYD5Bnt3c">Concert sur l'Oeuf</a>, d'après Jérôme Bosch), Theo Loevendie (1930- ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Theo-Loevendie-geb-1930-Gassir-the-Hero/hnum/7021905">Gassir, the Hero</a>), Jan van Vlijmen (1935-2004) (<a href="https://www.youtube.com/watch?v=EdUgVo4a41o">Sextuor à cordes</a>), Otto Ketting (1935- ) (<a href="http://www.youtube.com/watch?v=uTkhQxtcTQ8">Chéops</a>),  Jan Vriend (1938- ), Daan Manneke (1939- ) et Willem van Manen (1940- ).</p>
-
-
-
-<p><i>Le courant sériel.</i></p>
-
-
-<p>Le courant sériel n'a pas vraiment séduit - convaincu ? - les musiciens hollandais qui s'en sont tenus à distance respectable. Kees van Baaren (1906-1970) (<a href="https://www.youtube.com/watch?v=HfH7WHZP96E">Concerto n°1</a>, pour piano), un élève de Willem Pijper, a été le fer de lance de ce mouvement mais il est resté bien seul.  Il a compté parmi ses élèves  Louis Andriessen, Peter Schat et Jan van Vlijmen mais chacun a trouvé sa propre voie en-dehors du sérialisme strict.</p>
-
-
-
-
-<p><i>La deuxième moitié du 20<sup>ème</sup> siècle.</i></p>
-
-<div><img src="../images/schat/schat.jpg" alt="" /><div class="legende">Peter Schat (1935-2003)</div></div>
-<div><img src="../images/andriessen/andriessen.jpg" alt="" /><div class="legende">Louis Andriessen (1939- )</div></div>
-<div><img src="../images/paysbas/keuris.jpg" alt="" /><div class="legende">Tristan Keuris (1946-1996)</div></div>
-
-
-<p>La deuxième moitié du 20<sup>ème</sup> siècle a été dominée par trois compositeurs essentiels, déjà commentés sur ce site, <a href="../chroniques/schat.html">Peter Schat</a> (1935-2003), <a href="../chroniques/andriessen.html">Louis Andriessen</a> (1939- ) et <a href="../chroniques/keuris.html">Tristan Keuris</a> (1946-1996). Suivent, à distances variables, quelques musiciens qui valent qu'on s'intéresse à leur musique : Geert van Keulen (1943- ), <a href="http://www.youtube.com/watch?v=otmriGXcz_A">Diderik Wagenaar</a> (1946- ), Pieter de Jong (1948- ), <a href="http://www.youtube.com/watch?v=Kq3WZhVk6Ts">Cornelis de Bondt</a> (1953- ), <a href="http://player.qobuz.com/#!/album/0761203757428">David Porcelijn</a> (1947- ) - par ailleurs un excellent chef qui s'est beaucoup investi dans la défense de musiques peu connues - , <a href="http://www.youtube.com/watch?v=VOKJCH50i-s&feature=relmfu">Peter-Jan Wagemans</a> (1952- ), <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Rob-Zuidam-geb-1964-Requiem-Aeternam/hnum/4920145">Rob Zuidam</a> (1964- ) et Robin de Raaff (1968- ) dont le Concerto pour orchestre <sub><sub><sub> 
-<audio controls preload="none">
-<source src="../son.mp3/paysbas/deraaff.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/paysbas/deraaff.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> a été enregistré, chez Donemus, par le Concertgebouw Orkest, en personne.</p>
-
-<div><img src="../images/paysbas/veldhuis.jpg" alt="" /><div class="legende">Jacob Ter Veldhuis (1951- )</div></div>
-<p>Le musicien le plus éclectique de cette génération est sans doute <a href="http://www.jacobtv.net/audiovideo/audio.html">Jacob Ter Veldhuis</a>, alias JacobTV (1951- ). Ne vous méprenez pas, ce passionné de musiques pop-rock a terminé un cursus complet d'études musicales au conservatoire de Groningen. C'est dans un mélange des genres de haute tenue qu'il a fini par trouver sa véritable voie, en particulier dans son oeuvre phare, <a href="http://www.quintette-spirale.fr/?page_id=64">Heartbreakers</a>, qui renouvelle une technique déjà expérimentée par Steve Reich (dans City Life, par exemple) où la voix enregistrée est mixée à un accompagnement instrumental jazzifiant. <a href="http://www.youtube.com/watch?v=Qs3HAAjTDp8">I was like wow</a> offre un autre exemple de ce rap avant la lettre, l'écriture soignée en plus. L'oratorio <a href="http://www.youtube.com/watch?v=f5AcAEZQLUs&feature=related">Paradiso</a> est très différent, proposant un hymne  lyrique à la vie. D'autres oeuvres témoignent de la grande habileté de ce musicien étonnant, telle ce Concerto pour 2 percussions et orchestre <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/paysbas/veldhuis.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/paysbas/veldhuis.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, superbement enregistré chez Chandos, par le duo Safri.</p>
-
-
-
-<div><img src="../images/paysbas/paradiso.jpg" alt="" /></div><div><img src="../images/paysbas/tenholt1.jpg" alt="" /></div>
-
-
-
-
-
-<div class="grandelignevide"></div><div class="grandelignevide"></div><div class="grandelignevide"></div>
-<p><i>Postmodernisme à la sauce hollandaise.</i></p>
-
-<p>J'ai classé à part un important contingent de musiciens appartenant aux courants postmoderne et/ou minimaliste, qui a connu un réel succès aux Pays-Bas. Tous n'ont pas fait preuve de la même rigueur et cela peut peser lors d'écoutes répétées.</p>
-<div><img src="../images/paysbas/tenholt.jpg" alt="" /><div class="legende">Simeon ten Holt (1923- )</div></div>
-
-<p>Simeon ten Holt (1923-2012) est la figure de proue du mouvement minimaliste néerlandais. Son oeuvre pour  piano(s) a été magnifiquement enregistrée en 11 CD chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Simeon-ten-Holt-geb-1923-Complete-Multiple-Piano-Works/hnum/4611309">Brillant</a> et elle est accessible pour ... 20 euros.  <a href="http://www.youtube.com/watch?v=K-4bh8J84Go"> Canto Ostinato</a>, ici dans sa version pour 4 pianos, est la partition fétiche, qui de fait ne se démode pas : au-delà de cellules répétitives que chacun entend au premier coup d'oreille, on ne peut qu'être séduit par la subtile contorsion de ses méandres, aux pouvoirs nettement hypnotiques. J'aime également la version pour 2 pianos de <a href="http://www.youtube.com/watch?v=LbRz8mU73iQ&feature=related">Sandra et Jeroen van Veen</a>. Le même Jeroen van Veen a enregistré d'autres pièces de ten Holt pour piano solo (ici <a href="http://www.youtube.com/watch?v=6G2Vb7ZjepI&feature=related">Solo devils dance IV</a>), que l'on trouvera dans cet autre album Brillant, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jeroen-van-Veen-Minimal-Piano-Collection/hnum/3184233">Minimal Piano Collection I</a>.</p>
-
-<p>Cet enregistrement a connu une suite intéressante, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jeroen-van-Veen-Friends-Minimal-Piano-Collection-X-XX/hnum/3480081">Minimal Piano Collection II</a> où on découvre quelques autres musiciens néerlandais, en particulier Klaas de Vries (1944- ), Chiel Meijering (1954- ) 
-  <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/paysbas/meijering.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/paysbas/meijering.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> 
-  et Douwe Eisenga (1961- ) (<a href="http://www.youtube.com/watch?v=a9TWDgB4_B8&feature=related">Concerto pour piano</a> ou <a href="http://www.youtube.com/watch?v=3nFlrfMyE3A&feature=related">Les Chants estivaux</a>). L'interprète, le pianiste Jeroen van Veen, s'est également essayé à la composition mais ses Préludes sont de facture plutôt banale, sauf peut-être ce prélude n° 9 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/paysbas/vanveen.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/paysbas/vanveen.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.
-
-
-<p>Je suis nettement moins enthousiaste envers l'oeuvre de Erik Lotichius (1929 - ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Erik-Lotichius-geb-1929-Klavierkonzert-Nr-2/hnum/1835605">Concerto pour piano</a>), qui pêche par un  laxisme que l'estrade du concert ne lui pardonnera pas facilement.</p>
-
-<p>Je ne sais trop que penser de Joep Franssens (1955- ), qui incarne le mouvement néo-romantique dans sa décomplexion la plus totale. On peut hurler à l'imposture ou admirer l'efficacité sonore de Grace (<a href="http://www.youtube.com/watch?v=Y5QSEuHS108">1<sup>ère</sup> partie</a>, <a href="http://www.youtube.com/watch?v=RaN5NHRNdFY&feature=related">2<sup>ème</sup> partie</a>), où la référence à cet autre musicien controversé, Michael Nyman est bien présente. Harmonie des Sphères est l'autre oeuvre à succès de Franssens et reconnaissons, à tout le moins, que l'épisode que voici 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/paysbas/franssens.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/paysbas/franssens.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> 
-  ne manque pas d'allure. Theo Verbey (1959- ) est un musicien peu connu en-dehors de son pays d'origine et cependant <a href="http://www.jpc.de/jpcng/classic/search?fastsearch=verbey&rubric=classic&pd_orderby=score">deux enregistrements</a> récents forcent le respect. Je vous les recommande vivement. Ecoutez également les remarquables <a href="http://www.youtube.com/watch?v=m6a25g4Xu5k">Variations pour Orchestre</a> qui ouvrent la séquence video proposée.</p>
-<div><img src="../images/paysbas/vanderaa.jpg" alt="" /><div class="legende">Michel van der Aa (1970- )</div></div>
-<div><img src="../images/paysbas/simons.jpg" alt="" /><div class="legende">Marijn Simons (1982- )</div></div>
-
-
-<p>Deux musiciens particulièrement doués, Michel van der Aa (1970- ) et Marijn Simons (1982- ), émergent parmi la jeune génération :</p>
-
-<li>Michel van der Aa s'investit essentiellement dans des oeuvres théâtrales imaginatives où les techniques modernes sont entremêlées, One (2002), After Life (2005/06) and The Book of Disquiet (2008). Un temps d'adaptation est nécessaire pour apprécier cette musique qui ne verse assurément pas dans la facilité. Vous pouvez découvrir quelques facettes de son art en explorant le  site <a href="http://www.vanderaa.net/multimedia/">vanderaa.net</a>.</li>
-
-<li>Marijn Simons est nettement plus abordable. Violoniste de formation mais surtout véritable touche-à-tout, aucune de ses oeuvres, <a href="http://www.youtube.com/watch?v=16Lik87KML8">Capriccio</a>, for Stan and Oliver (!), <a href="http://www.youtube.com/watch?v=4xiLApo0YLc&feature=related">Water Songs</a>, <a href="http://www.youtube.com/watch?v=sLMfDB_vK1U">Quatuor n°4</a> - avec le compositeur au violon, chapeau ! -  ne passent inaperçues. James Mac Millan a apparemment pris ce jeune musicien sous son aile protectrice, ayant en particulier dirigé sa <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marijn-Simons-geb-1982-Symphonie-Nr-1/hnum/3221516">Symphonie</a>. Deux autres enregistrements sont disponibles : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marijn-Simons-geb-1982-Violinkonzert-Nr-1/hnum/1631108">Concerto pour violon n°1</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marijn-Simons-geb-1982-The-Legend-of-Kwahkaazuh/hnum/4981408">The Legend of Kwahkaazuh</a>.</li>
-
-
-
- 
-<p><i>Les riches heures de la vie musicale néerlandaise.</i></p>
-
-<p>Deux festivals satisfont la gourmandise des hollandais pour tous les genres musicaux :</p>
-
-<li>Créé en 1947, le Holland Festival (chaque année en juin, essentiellement à Amsterdam) est l'un des théâtres les plus actifs de la modernité.  Il n'a cessé de produire des spectacles surprenants (Classiques revisités mais aussi modernes, d'avant-garde, expérimentaux, happenings, mélanges de genres) dont se sont inspirés beaucoup d'autres festivals européens.</li>
-
-<li>Le festival d'Utrecht, se tenant fin août et début septembre, est La Mecque de la musique ancienne. Ceci n'est point un hasard : les musiciens hollandais furent parmi les premiers à animer le mouvement baroqueux. Gustav Leonhardt, Max van Egmond, Frans Brüggen, Jaap Schröder, Ton Koopman, Bob van Asperen et Anner Bylsma sont passés par là et la plupart de leurs interprétations gravées au disque ont particulièrement bien vieilli.</li>
-
-
-<p>Une vie musicale intense repose inévitablement sur un réservoir d'interprètes de qualité. Que ce réservoir existe en a  surpris plus d'un par le passé; dans ses célèbres chroniques musicales (à lire absolument !), Bernard Shaw nous a fait la description amusée suivante de deux concerts londoniens :</p>
-
-
-<p><i>Jamais l’Angleterre n’avait été aussi humiliée par les Hollandais comme elle vient de l’être à l’exposition des Inventions.
-
-Mardi dernier, une chorale anglaise (dirigée par Mr Rocckstro) a donné à South Kensington, un concert de musique sacrée des XVIe et XVIIe siècles.  Huit chanteurs hollandais venus d’Amsterdam en ont fait autant.
-
-Nous avions d’une part, un ensemble de chanteurs anglais, chargés de défendre la réputation qu’ont leurs compatriotes d’être les meilleurs du monde et de l’autre, un malheureux double quatuor de Hollandais et de Hollandaises dont nous avons souvent vus les visages aux murs des musées mais jamais dans une salle de concert.  Quel Britannique aurait été s’imaginer que ces gens-là avaient de la voix, des traditions musicales ou des grands compositeurs ? 
-
-Le chœur de Mr Rockstro a chanté la Missa brevis à quatre voix de Palestrina.  La plupart des messieurs et dames d’Angleterre sont capables de chanter faux sans effort notoire mais l’extraordinaire aptitude des chanteurs de Mr Rockstro dans ce domaine surpasse de très loin tout ce que l’on peut obtenir d‘ordinaire.  C’est presque d’instinct qu’ils semblent éviter la note juste.  ... Au début de chaque mouvement, le clavecin donnait la note de départ.  La note d’arrivée, en revanche, dépendait totalement de la longueur du mouvement, au cours duquel les choristes ne manifestaient aucune préférence marquée pour une tonalité plutôt qu’une autre.</i></p>
-
-<p><i>Le lendemain de cette déroute anglaise, c’était le triomphe hollandais.
-...  Arrivèrent sur la scène quatre dames hollandaises et quatre messieurs assortis ... .  Le public les regarda fixement et les étrangers parurent quelque peu réfrigérés et inquiets.  Ils chantèrent le psaume 122, mis en musique pour quatre voix par Sweelinck.  Au début, l’auditoire resta froid et légèrement désorienté.  Les béotiens les plus indécrottables ne tardèrent pas à quitter les lieux.  Ce ne fut qu’à la fin du concert que les Hollandais, s’avançant pour répondre aux applaudissements émus qui les rappelaient pour la deuxième fois, purent enfin s’apercevoir que les Britanniques, aussi stupides et aussi lents qu’ils aient pu paraître de prime abord, étaient en fin de compte sensibles à quelque chose d’un peu meilleur que Strauss. Ne fut-ce que pour ce seul concert, que tous les péchés commis contre la musique par le comité des Inventions lui soient remis; les souffrances infligées par le chœur de Mr Rockstro étaient oubliées avant même que l’on eût entendu six mesures du psaume de Sweelinck.</i></p>
- 
-<p><i>The dramatic Review, le 18 juiller 1885.</i></p>
-
-
-<p>Cette aptitude musicale ne s'est jamais démentie surtout dans le domaine de la musique symphonique : les orchestres hollandais sont excellents et le meilleur d'entre eux, le Concertgebouw Orkest, fait partie des 5 meilleures phalanges européennes. Il a été conduit par des chefs renommés : Willem Mengelberg (dont le règne a duré 50 ans, un record !), Edouard van Beinum, Bernard Haitink, Eugen Jochum, Riccardo Chailly et, actuellement, Mariss Jansons. L'orchestre s'est spécialisé dans les symphonies de Bruckner et de Mahler bien avant tout le monde mais il est tout aussi à l'aise dans la musique moderne de Varèse à Messiaen, sans oublier les musiciens du terroir qu'il a généreusement servis. Sans prétendre rivaliser, la Philharmonie de Rotterdam est d'un très bon niveau ainsi que l'orchestre et les Choeurs de la Radio Hilversum.</p>
-
-
-<p> Le violoncelliste Pieter Wispelwey, les violonistes Vera Beths, Isabelle van Keulen, Janine Jansen et Jaap van Zweden - j'allais oublier André Rieu ! - , les pianistes, Reinbert de Leeuw, Ronald Brautigam, Jeroen van Veen et Ralph van Raat sont autant d'interprètes appréciés.  Willem Breuker (1944-2010) est un clarinnetiste de jazz à la virtuosité étincelante qui a collaboré avec l'Ensemble Volhaarding. ASKO, souvent dirigé par Reinbert de Leeuw, est l'autre ensemble réputé pour ses interprétations de musique contemporaine.</p>
-
-<p>Quelques très belles voix, Cristina Deutekom, Elly Ameling et Bernard Kruysen, ont enchanté les oreilles des amateurs les plus exigeants et je ne peux absolument  passer sous silence la voix inoubliable de Aafje Heynis (1924- ), l'une des rares contraltos ayant pu rivaliser avec Kathleen Ferrier.</p>
-  
-<p>Deux labels, <a href="http://www.jpc.de/jpcng/home/search/-/label/NM">NM</a> (Nederlandse Muziek) et <a href="http://www.jpc.de/jpcng/home/search/-/label/Donemus">Donemus</a>, défendent particulièrement la musique des pays-Bas, puisant éventuellement dans les archives de la radio néerlandaise, tenues à jour et ouvertes à la diffusion. C'est à NM que l'on doit le coffet des enregistrements consacrés à <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Peter-Schat-geb-1935-S%E4mtliche-Werke/hnum/3664529">Peter Schat</a>. N'hésitez pas à fouiller les archives du site avro.nl, où j'ai trouvé cette interprétation du récent <a href="http://cultuurgids.avro.nl/front/detailklassiek.html?item=8216812">2<sup>ème</sup> Concerto</a> pour piano de Jacob Ter Veldhuis, interprété par Ronald Brautigam (Positionnez le curseur après 15 minutes). Bernard Shaw avait raison, les hollandais aiment et servent la musique ! </p>
-              </div>
+                  <p>Un temps Bourguignons puis Habsbourgeois, les Pays-Bas actuels sont directement issus des 7 Provinces Unies septentrionales.   Protestantes, elles brisèrent leur dépendance espagnole lors du traité de Westphalie (1648), qui scella la fin de la Guerre de Trente ans. Ce fut le début d'une ère de grande prospérité, encore appelée Age d'Or des Pays-Bas.</p>
+                  <p>Ce pays a vu naître quelques-uns des peintres les plus fameux de l'histoire, de Jérôme Bosch (1450-1516) à Vincent Van Gogh (1853-1890), en passant par Rembrandt Harmenszoon van Rijn (1606-1669) - Rembrandt (son prénom !) pour les intimes - ou Jan Vermeer de Delft (1632-1675), dont les oeuvres sont convoitées par les amateurs d'art (très) fortunés.</p>
+                  <p>Sa position en musique ne fut guère aussi favorable, du moins à ses débuts : l'austérité du culte calviniste, bien implanté dès 1580, représentait un obstacle naturel à la création musicale savante telle que pratiquée dans les provinces catholiques du sud, par les musiciens franco-hennuyers-flamands. Par bonheur, nombre d'immigrants furent attirés par la richesse des lieux et par le vent de liberté qui y a toujours soufflé. Parmi eux se trouvèrent des artistes qui  réintroduisirent en Hollande le gène musical manquant et ne demandant qu'à s'exprimer.  Je mentionnerai fréquemment que tel ou tel compositeur habituellement référencé comme hollandais ne l'est pas absolument, en tous cas au premier degré.</p>
+                  <p>Le premier "étranger" abusivement revendiqué fut Jacob Obrecht (1457-1505), au motif qu'il servit à Saint-Martin d'Utrecht et qu'il y enseigna les rudiments de la musique au grand Erasme (1469-1536).  Sachez cependant qu'Obrecht est né à Gand et que vous fâcheriez n'importe quel flamand de le confondre - lui ou un autre - avec un hollandais.</p>
+                  <p>Cette chronique n'a qu'un seul but : convaincre le lecteur que ce plat pays  a vu naître des musiciens sinon exceptionnels, du moins d'une valeur largement insoupçonnée. L'âge d'or musical des Pays-Bas est cependant tardif, ne commençant véritablement qu'avec les années 1900. Autant dire qu'en ce qui concerne la musique écrite avant cette date, l'inventaire sera plutôt vite fait.</p>
+                  <p>Le premier compositeur hollandais fameux, renommé serait plus exact, Jan Pieterszoon Sweelinck (1562-1621), n'est pas franchement passionnant et le fait qu'on l'ait surnommé l'Orphée d'Amsterdam en dit long sur la morosité du paysage sonore ambiant.  Il est surtout connu pour des livres pour claviers (orgue et clavecin, écoutez, par exemple, cette <a href="http://www.youtube.com/watch?v=G6ihF82lvEA&feature=related">Fantaisie Chromatique</a>) mais il a également écrit des recueils vocaux (<a href="http://www.youtube.com/watch?v=fEt9QwCOFeg">Psaume 42</a>).</p>
+                  <p>Moins connu, Jacob van Eyck (1590-1657) interpelle davantage nos oreilles contemporaines, en particulier grâce à une surprenante collection de musiques pour flûte qui devraient plaire à tous (Un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jacob-van-Eyck-1590-1657-Der-Fluyten-Lust-Hof-Ausz/hnum/1301474">triple CD</a>, remarquable en tous points, est paru chez Brillant, label hollandais, je vous le rappelle).  Avant d'investir dans la musique  au temps de Rembrandt, procurez-vous cet autre <a href="http://classique.abeillemusique.com/CD/Classique/BRIL93100/5028421931005/Brilliant-Classics/Music-From-The-Golden-Age-of-Rembrandt/Musique-de-l-Age-d-Or-de-Rembrandt/cleart-23891.html">triple CD</a> paru chez le même éditeur. La dépense (11 euros) ne vous ruinera pas et au moins vous saurez si vous souhaitez approfondir l'écoute des musiciens les plus représentatifs, Constantijn Huygens (1596-1687) et surtout Carolus Hacquart (1640-1701). Je précise, à nouveau, que ce dernier est né à Bruges, n'ayant émigré à Amsterdam qu'à l'âge de 30 ans. Ses <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Carolus-Hacquart-1640-1701-Cantiones-Sonate/hnum/5770797">motets latins</a> surpassent sans difficulté les psaumes  du <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Herman-Hollanders-17-Jh-Parnassus-Ecclesiasticus-Teile-1-3/hnum/9947740">Parnassus Ecclesiasticus</a> de son contemporain batave, Herman Hollanders (1595-1640), typiques de la musique un brin  bâtarde qui n'a cessé de meubler les offices réformés.</p>
+
+                  <div id="baroqueClassique">
+                    <h4>Les périodes baroque et classique</h4>
+
+                    <p>Il faudra attendre deux ou trois générations pour que la situation de l'art musical néerlandais s'améliore grâce à quelques artistes mineurs mais bienvenus :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Johan Schenck, (1660-1712), né à Amsterdam  de parents allemands, apporta  un souffle nouveau en réalisant une synthèse précoce des styles français, allemand et italien.  Le CD est là pour témoigner de l'art de Schenck, tel ce curieux <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johannes-Schenck-1656-1712-Bacchus-Ceres-en-Venus/hnum/3495157">Bacchus, Ceres en Venus</a>, premier opéra chanté en vieux néerlandais ou encore ces <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johannes-Schenck-1656-1712-Sonaten-op-8-Nr-7-12-f%FCr-2-Gamben-Le-Nymphe-di-Rheno/hnum/3601527">Sonates</a> pour deux violes de gambe, opus 8, enregistrées chez Naxos.</li>
+                      <li>Willem de Fesch (1687-1757) voyagea beaucoup, transitant par Anvers pour aboutir à Londres, ce qui explique que son Oratorio, <a href="https://www.youtube.com/watch?v=z1E77LVMOZM">Joseph</a>, soit chanté en anglais. Ses <a href="http://www.youtube.com/watch?v=lCz5n-PL4kY&feature=related">Concerti</a> font quelque peu penser à Antonio Vivaldi (1678-1741).</li>
+                      <li>Le Comte Unico Wilhelm van Wassenaer (1692-1766) fut un diplomate-compositeur de  talent dont l'oeuvre principale, <a href="http://www.youtube.com/watch?v=q8lzbFkrlUs">6 Concerti Armonici</a>, a longtemps été attribuée (à tort) à Pergolèse. Stravinsky a puisé quelques idées dans cet ensemble lors de la composition de son Pulcinella, par ailleurs essentiellement inspiré par de vraies oeuvres de Pergolèse.</li> 
+                      <li>Pieter Hellendaal (1721-1799) termina également sa carrière à Londres. Ses <a href="https://www.youtube.com/watch?v=TF1ePdQVdCk">Concerti Grossi</a>, opus 3,   valent un (petit) détour.</li>
+                      <li>Vous consentirez un détour nettement plus long pour admirer l'oeuvre de Joseph Schmitt (1734-1791), le "Haydn hollandais". Nous devons à la New Dutch Academy d'avoir restauré un pan de la musique de Schmitt avec une verdeur de ton tout à fait réjouissante. Un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Joseph-Schmitt-1734-1791-Fr%FChe-Symphonien-Kammermusik/hnum/8648116">CD</a>  incontournable vous révèle ce musicien étonnant, à redécouvrir absolument (<a href="http://www.youtube.com/watch?v=F1GUYUe53bE">Symphonie en sol majeur</a>).</li>
+                      <li>Johann Wilhelm Wilms (1772-1847), natif de Solingen en Allemagne, a bizarrement été mieux servi par le disque que Schmitt. Sa fort peu révolutionnaire <a href="https://www.youtube.com/watch?v=E0yBXUQNIT4">Symphonie n°6</a>  survint un peu tard dans le cours de l'histoire.</li>
+                    </ul>
+                  </div>
+
+                  <div id="erePostRomantique">
+                    <h4>L'ère (post)romantique</h4>
+
+                    <p>Les hollandais sont romantiques dans l'âme si l'on en juge par le le grand nombre de partitions du genre, parfois écrites bien après 1900. Elles sont souvent d'excellente facture :</p>
+
+                    <ul class="miniListCorps">
+                      <li>On connait peu Johannes Bernardus van Bree (1801-1857) dont voici un <a href="http://www.youtube.com/watch?v=68eFlJ1DCTk">Concerto pour violon</a> qui annonce les oeuvres virtuoses un brin secondaires qui fleuriront au cours du siècle.</li>
+                      <li>Johannes Verhulst (1816-1891), fut tôt remarqué par Félix Mendelssohn (1809-1847) qui le prit un temps pour élève à Leipzig. Il y perfectionna audiblement ses classiques : Schubert dans  ce court lied, <a href="http://www.youtube.com/watch?v=cx4usPdvGkw">Mei Regen</a>, et naturellement son professeur, dans ce <a href="http://www.youtube.com/watch?v=_AdlU7YzU5w">Nocturne</a>, la  Messe, opus 20, ou cette <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Johannes-Verhulst-1816-1891-Symphonie-e-moll-op-46/hnum/5233834">Symphonie</a>, opus 46. Il convient de noter que l'enfance de Verhuslt a baigné dans la musique d'église catholique, un avantage certain.</li>
+                      <li>Elève du précédent, Daniël de Lange (1841-1918) n'a pas écrit énormément mais l'oeuvre est de qualité tel ce <a href="http://www.youtube.com/watch?v=sZO-YbPvOm0&feature=related">Requiem</a>, sans doute son oeuvre la plus précieuse. </li>
+                      <li>Bernard Zweers (1854-1924) a également étudié à Leipzig. Revenu au pays natal, il y a développé un art typiquement national que ses symphonies illustrent à merveille (<a href="https://www.youtube.com/watch?v=8fXLIPKmyTA">Symphonie n°3</a>, à découvrir !).</li>
+                      <li>Julius Röntgen (1855-1932), un lointain parent du fameux physicien, fut une personnalité importante dans la vie musicale hollandaise. Il n'est pas complètement hollandais puisqu'il est né à Leipzig, n'ayant émigré vers Amsterdam qu'à l'âge de 22 ans. Il s'est beaucoup investi dans la vie musicale de son pays d'adoption, en particulier lors de la création du célèbre Concertgebouw Orkest (dont il espérait la première direction, cependant offerte à Hans von Bülow). Voici un compositeur à découvrir, à qui d'aucuns reprochent 25 symphonies à une époque où cela ne se faisait plus, mais porteuses de belles inspirations (<a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Julius-R%F6ntgen-1855-1932-Symphonien-Nr-8-15/hnum/6142788">Symphonies 8 &amp; 15</a> - une intégrale est en cours chez CPO - , <a href="http://www.youtube.com/watch?v=9ElQqO5VZlg&feature=related">Sonate pour violoncelle &amp; piano</a>, opus 41, <a href="http://www.youtube.com/watch?v=5V3zC2R4AcY&feature=related">Trio à clavier n°10</a>, et surtout, <a href="http://www.youtube.com/watch?v=RNpWVagcZe8">Aus Goethes Faust</a> (1930), aux accents tardivement malhériens).  </li>
+                      <li>Alphons Diepenbrock (1862-1921) est un musicien original à moitié autodidacte dont le style devrait plaire, accommodant la polyphonie renaissante à la sauce wagnérienne puis, sur le tard, à l'impressionisme debussyste.  Son œuvre orchestrale est disponible à petit prix chez <a href="http://www.qobuz.com/telechargement-album-mp3/Alphons-Diepenbrock-/Classique-Musique-Symphonique/Hans-Vonk-Musique-Post-romantique/Brilliant-Classics/default/fiche_produit/id_produit-5028421934129.html">Brillant</a> et à grand frais chez Chandos. Ecoutez <a href="http://www.youtube.com/watch?v=DVkpQR9njX8">Im grossen Schweigen</a>, cette curieuse <a href="http://www.youtube.com/watch?v=19mXwd22RL4&feature=related">Invitation au Voyage</a> qui tente de marcher dans les pas de Henri Duparc ou encore son oeuvre la plus aboutie, <a href="http://www.youtube.com/watch?v=SuyAS8nMhjA">Elektra</a>.</li>
+                      <li>Johan Wagenaar (1862-1941) (<a href="http://www.youtube.com/watch?v=4SwC_AAuf-s&feature=related">Frühlingsgewalt, Op. 11</a>),  nettement plus léger comme en témoigne cet enregistrement <a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Johan-Wagenaar-1862-1941-Symphonische-Dichtungen/hnum/6927133">CPO</a>, et Carl Smulders (1863-1934) (<a href="https://www.youtube.com/watch?v=-v76TNzStBU">Rash Hashana</a>) complètent le tableau d'honneur.</li>
+                      <li>Le label Chandos s'est également intéressé aux symphonies de Cornelis Dopper (1870-1939) (<a href="http://www.youtube.com/watch?v=Efuqh43oR6A">n°2</a>, <a href="http://www.youtube.com/watch?v=M8DCiyhU2uA">n°7</a>). Ne nous plaignons pas, les enregistrements Chandos sont soignés comme toujours.</li>
+                      <li>On ne fait pas tous les jours la connaissance d'un musicien aussi intéressant que Dirk Schäfer (1873-1931) (<a href="http://www.youtube.com/watch?v=fHCEPinHid4">Quintette</a>, opus 5 et <a href="http://www.youtube.com/watch?v=fHCEPinHid4">Sonate</a>, opus 13, pour violoncelle et piano).</li>
+                    </ul>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/zweers3.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/diepenbrock.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="1ereMoitie20emeS">
+                    <h4>La première moitié du 20<sup>ème</sup> siècle</h4>
+
+                    <p>L'âge d'or de la musique néerlandaise commence véritablement avec l'aube du 20<sup>ème</sup> siècle. Plusieurs courants ont coexisté pas toujours pacifiquement. Dans un premier temps, un  mouvement "naturellement" germanophile s'est heurté à un courant francophile, minoritaire mais actif et la tension est montée d'un cran lors du premier conflit mondial. A ces dissensions à caractère politique se sont superposés des conflits esthétiques, liés à l'émergence de la modernité contrariée par la puissance du mouvement postromantique.</p>
+                  </div>
+
+                  <div id="prolongementRomantique">
+                    <h4>Le prolongement romantique</h4>
+
+                    <p>C'est peut-être en Hollande que le courant postromantique a (sur)vécu avec le plus d'intensité. Le Concertgebouw Orkest, une des plus prestigieuses phalanges symphoniques au monde, a très tôt honoré les grandes fresques d'Anton Bruckner, de Gustav Mahler ou de Richard Strauss, à une époque où, en France, on trouvait ces musiques parfaitement indigestes. Du même coup, il s'est trouvé beaucoup de musiciens à l'aise dans un style déjà porté et un public conditionné pour les suivre dans leur démarche conservatrice. Des chefs aussi charismatiques que Willem Mengelberg (de 1895 à 1945 !) voire même Bernard Haitink (de 1959 à 1988) ont contribué à cautionner ces choix.</p>
+                    <p>Une lignée incarne l'évolution de la musique néerlandaise au tournant du 20<sup>ème</sup> siècle : chez les Andriessen, on est musicien de père en fils. Nico Andriessen (1845-1913), organiste de son état, eut deux fils, Willem (1887-1964) et Hendrik (1892-1981). Hendrik, le plus doué, nous a laissé des partitions fort intéressantes  (<a href="http://www.youtube.com/watch?v=ZwbZz7NSTMA&feature=related">Ricercare</a> ou <a href="http://www.youtube.com/watch?v=vFQ6uHnanpQ">Variations sur un Thème de Kuhnau</a>) et, en prime, deux fils, Jurriaan (1925-1996) et Louis (1939- ) aussi différents qu'il est possible. Juriaan a cultivé un art simple, presque naïf, cherchant à flatter le goût des publics pas trop exigeants (<a href="http://www.youtube.com/watch?v=oHznP6TvvwA&feature=related">Portrait de Hedwig</a> ou, un peu moins basique, <a href="http://www.youtube.com/watch?v=Mh1fOB781xM">Sonnet n°43</a>), tandis que <a href="../chroniques/andriessen.html">Louis</a> optait pour le chemin opposé, explorant avec beaucoup de discernement les voies de la modernité. Gijs Andriessen (1957- ) est le fils de Juriaan mais il a bifurqué vers le jazz et la musique de film.</p>
+                  </div>
+
+                  <div id="modernite">
+                    <h4>Modernité</h4>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/escher.jpg" alt="Rudolf Escher (1912-1980)">
+                          <figcaption>Rudolf Escher (1912-1980)</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/pijper.jpg" alt="Willem Pijper (1894-1947)">
+                          <figcaption>Willem Pijper (1894-1947)</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/mvermeulen.jpg" alt="Matthijs Vermeulen (1888-1967)">
+                          <figcaption>Matthijs Vermeulen (1888-1967)</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Trois compositeurs très différents ont porté très haut les aspirations de la nouvelle musique néerlandaise : Matthijs Vermeulen (1888-1967), Willem Pijper (1894-1947) et Rudolf Escher (1912-1980). Ils eurent en commun de chercher leur inspiration du côté de la France musicale, incarnée à leurs yeux par le trio Debussy-Ravel-Roussel. Ce choix esthétique ne manque pas de surprendre de la part de musiciens que l'on croirait d'essence germanique.</p>
+
+                    <ul class="miniListCorps">
+                      <li>Willem Pijper (1894-1947), émule à ses débuts d'Albert Roussel (1869-1937), est généralement considéré comme l'initiateur du courant moderniste hollandais.  Il a écrit une œuvre en évolution constante, démarrant sur un mode classique (<a href="http://www.youtube.com/watch?v=KfSev1yslxU">Symphonie n°1</a>) et adoptant, dès 1920, une atonalité libre d'où l'émotion n'est jamais absente.  Sa <a href="http://www.youtube.com/watch?v=AThgjBBN1fo">3<sup>ème</sup> Symphonie</a> (1926) en témoigne qui fut son plus grand succès, servi par les chefs les plus en vue, hollandais bien sûr, mais aussi ... français, tel Pierre Monteux, dans l'extrait mentionné.  Le <a href="http://www.youtube.com/watch?v=Ee3QNUUCKLM&feature=related">Concerto pour piano</a> (1927) ou la <a href="http://www.youtube.com/watch?v=OcxJViDvfp4&feature=related">Sonate pour piano</a> (1930) sont tout aussi intéressants. Pijper fut  un pédagogue influent qui anima les conservatoires d'Amsterdam et de Rotterdam, ouvrant la voie à toute une génération de compositeurs aux esthétiques diverses.</li>
+                      <li>Rudolf Escher (1912-1980) - (demi) cousin du célèbre dessinateur Maurits Cornelis Escher -  fait partie de ces musiciens dont la notoriété n'a jamais tenu qu'à un fil, celui de l'oeuvre unique, <a href="http://www.youtube.com/watch?v=pb6hpFkzwDw&feature=related">Musique pour l'esprit en deuil</a>, qui a connu un tel succès qu'on a failli oublier complètement le reste de sa production (<a href="http://www.youtube.com/watch?v=yl1KBHFIDsU&feature=related">Sonate n°1</a>, pour piano).</li>
+                      <li>Matthijs Vermeulen (1888-1967) est le grand oublié de l'histoire de la musique néerlandaise. Il doit sans doute ce dédain à son parcours atypique : parti pour suivre l'exemple paternel dans le métier de forgeron, il dévia vers la prêtrise avant de découvrir la musique et de réaliser qu'elle était sa véritable vocation. Très doué et bien soutenu par son professeur, Daniël de Lange, il récupéra rapidement un sérieux retard dans ses études musicales. Sa 1<sup>ère </sup>Symphonie, opus 1, date de ses 25 ans. Il gagna simultanément sa vie grâce à des critiques musicales particulièrement pertinentes, qu'il parsemait de réflexions à caractère éminemment politiques. Ses prises de positions lui valurent quelques déboires, notamment lorsqu'il afficha clairement ses sympathies pour la musique française - singulièrement celle de Debussy - et qu'il   critiqua (ou)vertement le germanisme ambiant. En 1914, le sujet était sensible et Vermeulen faisait partie de ceux qui fustigeaint les exactions allemandes envers les civils.  Ne parvenant pas à faire jouer sa musique symphonique, il émigra un temps en France, sans y rencontrer davantage de succès. En 1939, sa carrière prit enfin son véritable départ lorsque Eduard van Beinum, chef en second du Concertgebouw Orkest, conduisit sa Troisième Symphonie. Encouragé, il en composa 4 autres et vous pouvez découvrir l'intégrale des 7 Symphonies dans un <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Matthijs-Vermeulen-1888-1967-Symphonien-Nr-1-7/hnum/6430425">triple album</a>, difficile mais passionnnant, paru chez Donemus  (<a href="http://www.youtube.com/watch?v=_4u-5N1UCmM&feature=related">Symphonie n°3</a> ou <a href="http://www.youtube.com/watch?v=w_eAHZxD9e0&feature=related">Symphonie n°6</a>).</li>
+                    </ul>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/escher1.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/vermeulen1.jpg" alt="TODO">
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>J'ajoute volontiers deux compositeurs à ce palmares d'excellence :</p>
+
+                    <ul class="miniListCorps">
+                      <li>L'histoire s'est révélée relativement injuste envers Jan van Gilse (1881-1944). Willem Pijper ne l'épargna guère, indisposé par son militantisme pro-allemand. Sa première manière emprunte clairement à quelques modèles germains, Max Reger ou Richard Strauss (comme dans ce Nonett <sub><sub><sub> 
+                      <audio controls preload="none">
+                      <source src="../son.mp3/paysbas/vangilse.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/paysbas/vangilse.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>
+                      ). Van Gilse n'a récupéré l'estime de ses pairs qu'à la faveur de la seconde guerre mondiale, quand il est devenu clair qu'il avait fait la distinction qui s'imposait entre musique et politique (<a href="http://www.youtube.com/watch?v=AfY5XSvg6-Y">Musique funéraire</a> extraite de l'opéra Thyl Uilenspiegel). Ses <a href="http://www.jpc.de/jpcng/cpo/detail/-/art/Jan-van-Gilse-1881-1944-Symphonien-Nr-1-2/hnum/9664777">Symphonies 1 &amp; 2</a> ont été enregistrées chez CPO.</li>
+                      <li>Lex van Delden (1919-1988), d'origine juive, vit ses études - à la fois comme musicien et comme chirurgien - interrompues par la guerre. Entré en résistance, il dut attendre la fin des hostilités pour prendre sa revanche, au plan musical seulement (une blessure de guerre le rendit borgne), devenant un des compositeurs hollandais les plus joués de son temps. Bien que resté attaché à la forme mélodique, son oeuvre brille d'une profonde originalité (<a href="http://www.youtube.com/watch?v=V9L9GXJ1Vkc">Musica di Castato</a> ou <a href="http://www.youtube.com/watch?v=4_cKBlHWB98">Concerto pour deux orchestres à cordes</a>).</li>
+                    </ul>
+
+                    <p>Quantité d'autres musiciens ont gravité en orbite autour de ces stars : Jakob van Domselaer (1890-1960) (<a href="http://www.youtube.com/watch?v=bHWJ76Jz89o">Concerto n°1</a>, pour piano), Marinus de Jong (1891-1984) (<a href="http://www.youtube.com/watch?v=QkSNxQ-z4zQ">Morgenstond</a>), Oscar van Hemel (1892-1981) - d'origine belge - (<a href="https://www.youtube.com/watch?v=LmGVydeW-24">Ballade pour orchestre</a>), Henriette Bosmans (1895-1952) (<a href="https://www.youtube.com/watch?v=9mUF4n6uBuY">Poeme pour violoncelle</a>), Leo Smit (1900-1943) (<a href="http://www.youtube.com/watch?v=hGm-kCNO3GI">Symphonie en Do</a>),  Léon Orthel (1905-1985) (<a href="http://www.youtube.com/watch?v=-V2iWCZOmVg">Symphonie n°4</a>, aux accents ravéliens évidents), Willem van Otterloo (1907-1978) (<a href="http://www.youtube.com/watch?v=9EM6UERqiZw&feature=related">Intrada</a>) - surtout connu comme chef d'orchestre - , Henk Badings (1907-1987) (<a href="http://www.youtube.com/watch?v=XuMAT0O9MoA">Symphonie n°3</a>),   Hans Henkemans (1913-1995) (<a href="http://www.youtube.com/watch?v=63HS9kWZ35c">Concerto pour violon</a>), Marius Flothuis (1914-2001) (<a href="http://www.youtube.com/watch?v=fbxrYdF4tig">Quatuor à cordes, Op. 44</a> ou <a href="http://www.youtube.com/watch?v=ADiHqQd6Y0Y">Symfonische muziek, Op 59</a>),  Ton de Leeuw (1926-1996) (<a href="http://www.youtube.com/watch?v=2Djlk8KtjbQ">Mouvements rétrogrades</a> ou <a href="http://www.youtube.com/watch?v=K2N8_2G3MyY&feature=related">Etude africaine n°2</a>), Hans Kox (1930- ) (<a href="http://www.youtube.com/watch?v=iEvyt_woTEA&feature=related">Memories and Reflections</a> ou <a href="http://www.youtube.com/watch?v=amEYD5Bnt3c">Concert sur l'Oeuf</a>, d'après Jérôme Bosch), Theo Loevendie (1930- ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Theo-Loevendie-geb-1930-Gassir-the-Hero/hnum/7021905">Gassir, the Hero</a>), Jan van Vlijmen (1935-2004) (<a href="https://www.youtube.com/watch?v=EdUgVo4a41o">Sextuor à cordes</a>), Otto Ketting (1935- ) (<a href="http://www.youtube.com/watch?v=uTkhQxtcTQ8">Chéops</a>),  Jan Vriend (1938- ), Daan Manneke (1939- ) et Willem van Manen (1940- ).</p>
+                  </div>
+
+                  <div id="courantSeriel">
+                    <h4>Le courant sériel</h4>
+
+                    <p>Le courant sériel n'a pas vraiment séduit - convaincu ? - les musiciens hollandais qui s'en sont tenus à distance respectable. Kees van Baaren (1906-1970) (<a href="https://www.youtube.com/watch?v=HfH7WHZP96E">Concerto n°1</a>, pour piano), un élève de Willem Pijper, a été le fer de lance de ce mouvement mais il est resté bien seul.  Il a compté parmi ses élèves  Louis Andriessen, Peter Schat et Jan van Vlijmen mais chacun a trouvé sa propre voie en-dehors du sérialisme strict.</p>
+                  </div>
+
+                  <div id="2emeMoitie20emeS">
+                    <h4>La deuxième moitié du 20<sup>ème</sup> siècle</h4>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/schat/schat.jpg" alt="Peter Schat (1935-2003)">
+                          <figcaption>Peter Schat (1935-2003)</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/andriessen/andriessen.jpg" alt="Louis Andriessen (1939- )">
+                          <figcaption>Louis Andriessen (1939- )</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/keuris.jpg" alt="Tristan Keuris (1946-1996)">
+                          <figcaption>Tristan Keuris (1946-1996)</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>La deuxième moitié du 20<sup>ème</sup> siècle a été dominée par trois compositeurs essentiels, déjà commentés sur ce site, <a href="../chroniques/schat.html">Peter Schat</a> (1935-2003), <a href="../chroniques/andriessen.html">Louis Andriessen</a> (1939- ) et <a href="../chroniques/keuris.html">Tristan Keuris</a> (1946-1996). Suivent, à distances variables, quelques musiciens qui valent qu'on s'intéresse à leur musique : Geert van Keulen (1943- ), <a href="http://www.youtube.com/watch?v=otmriGXcz_A">Diderik Wagenaar</a> (1946- ), Pieter de Jong (1948- ), <a href="http://www.youtube.com/watch?v=Kq3WZhVk6Ts">Cornelis de Bondt</a> (1953- ), <a href="http://player.qobuz.com/#!/album/0761203757428">David Porcelijn</a> (1947- ) - par ailleurs un excellent chef qui s'est beaucoup investi dans la défense de musiques peu connues - , <a href="http://www.youtube.com/watch?v=VOKJCH50i-s&feature=relmfu">Peter-Jan Wagemans</a> (1952- ), <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Rob-Zuidam-geb-1964-Requiem-Aeternam/hnum/4920145">Rob Zuidam</a> (1964- ) et Robin de Raaff (1968- ) dont le Concerto pour orchestre <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/paysbas/deraaff.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/paysbas/deraaff.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> a été enregistré, chez Donemus, par le Concertgebouw Orkest, en personne.</p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/veldhuis.jpg" alt="Jacob Ter Veldhuis (1951- )"/>
+                          <figcaption>Jacob Ter Veldhuis (1951- )</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Le musicien le plus éclectique de cette génération est sans doute <a href="http://www.jacobtv.net/audiovideo/audio.html">Jacob Ter Veldhuis</a>, alias JacobTV (1951- ). Ne vous méprenez pas, ce passionné de musiques pop-rock a terminé un cursus complet d'études musicales au conservatoire de Groningen. C'est dans un mélange des genres de haute tenue qu'il a fini par trouver sa véritable voie, en particulier dans son oeuvre phare, <a href="http://www.quintette-spirale.fr/?page_id=64">Heartbreakers</a>, qui renouvelle une technique déjà expérimentée par Steve Reich (dans City Life, par exemple) où la voix enregistrée est mixée à un accompagnement instrumental jazzifiant. <a href="http://www.youtube.com/watch?v=Qs3HAAjTDp8">I was like wow</a> offre un autre exemple de ce rap avant la lettre, l'écriture soignée en plus. L'oratorio <a href="http://www.youtube.com/watch?v=f5AcAEZQLUs&feature=related">Paradiso</a> est très différent, proposant un hymne  lyrique à la vie. D'autres oeuvres témoignent de la grande habileté de ce musicien étonnant, telle ce Concerto pour 2 percussions et orchestre <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/paysbas/veldhuis.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/paysbas/veldhuis.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>, superbement enregistré chez Chandos, par le duo Safri.</p>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/paradiso.jpg" alt="TODO"/>
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/tenholt1.jpg" alt="TODO"/>
+                          <figcaption>TODO</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="postmodernisme">
+                    <h4>Postmodernisme à la sauce hollandaise</h4>
+
+                    <p>J'ai classé à part un important contingent de musiciens appartenant aux courants postmoderne et/ou minimaliste, qui a connu un réel succès aux Pays-Bas. Tous n'ont pas fait preuve de la même rigueur et cela peut peser lors d'écoutes répétées.</p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/tenholt.jpg" alt="Simeon ten Holt (1923- )"/>
+                          <figcaption>Simeon ten Holt (1923- )</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Simeon ten Holt (1923-2012) est la figure de proue du mouvement minimaliste néerlandais. Son oeuvre pour  piano(s) a été magnifiquement enregistrée en 11 CD chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Simeon-ten-Holt-geb-1923-Complete-Multiple-Piano-Works/hnum/4611309">Brillant</a> et elle est accessible pour ... 20 euros.  <a href="http://www.youtube.com/watch?v=K-4bh8J84Go"> Canto Ostinato</a>, ici dans sa version pour 4 pianos, est la partition fétiche, qui de fait ne se démode pas : au-delà de cellules répétitives que chacun entend au premier coup d'oreille, on ne peut qu'être séduit par la subtile contorsion de ses méandres, aux pouvoirs nettement hypnotiques. J'aime également la version pour 2 pianos de <a href="http://www.youtube.com/watch?v=LbRz8mU73iQ&feature=related">Sandra et Jeroen van Veen</a>. Le même Jeroen van Veen a enregistré d'autres pièces de ten Holt pour piano solo (ici <a href="http://www.youtube.com/watch?v=6G2Vb7ZjepI&feature=related">Solo devils dance IV</a>), que l'on trouvera dans cet autre album Brillant, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jeroen-van-Veen-Minimal-Piano-Collection/hnum/3184233">Minimal Piano Collection I</a>.</p>
+                    <p>Cet enregistrement a connu une suite intéressante, <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Jeroen-van-Veen-Friends-Minimal-Piano-Collection-X-XX/hnum/3480081">Minimal Piano Collection II</a> où on découvre quelques autres musiciens néerlandais, en particulier Klaas de Vries (1944- ), Chiel Meijering (1954- ) <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/paysbas/meijering.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/paysbas/meijering.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> et Douwe Eisenga (1961- ) (<a href="http://www.youtube.com/watch?v=a9TWDgB4_B8&feature=related">Concerto pour piano</a> ou <a href="http://www.youtube.com/watch?v=3nFlrfMyE3A&feature=related">Les Chants estivaux</a>). L'interprète, le pianiste Jeroen van Veen, s'est également essayé à la composition mais ses Préludes sont de facture plutôt banale, sauf peut-être ce prélude n° 9 <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/paysbas/vanveen.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/paysbas/vanveen.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>.
+
+                    <p>Je suis nettement moins enthousiaste envers l'oeuvre de Erik Lotichius (1929 - ) (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Erik-Lotichius-geb-1929-Klavierkonzert-Nr-2/hnum/1835605">Concerto pour piano</a>), qui pêche par un  laxisme que l'estrade du concert ne lui pardonnera pas facilement.</p>
+                    <p>Je ne sais trop que penser de Joep Franssens (1955- ), qui incarne le mouvement néo-romantique dans sa décomplexion la plus totale. On peut hurler à l'imposture ou admirer l'efficacité sonore de Grace (<a href="http://www.youtube.com/watch?v=Y5QSEuHS108">1<sup>ère</sup> partie</a>, <a href="http://www.youtube.com/watch?v=RaN5NHRNdFY&feature=related">2<sup>ème</sup> partie</a>), où la référence à cet autre musicien controversé, Michael Nyman est bien présente. Harmonie des Sphères est l'autre oeuvre à succès de Franssens et reconnaissons, à tout le moins, que l'épisode que voici <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/paysbas/franssens.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/paysbas/franssens.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> ne manque pas d'allure. Theo Verbey (1959- ) est un musicien peu connu en-dehors de son pays d'origine et cependant <a href="http://www.jpc.de/jpcng/classic/search?fastsearch=verbey&rubric=classic&pd_orderby=score">deux enregistrements</a> récents forcent le respect. Je vous les recommande vivement. Ecoutez également les remarquables <a href="http://www.youtube.com/watch?v=m6a25g4Xu5k">Variations pour Orchestre</a> qui ouvrent la séquence video proposée.</p>
+
+                    <div class="conteneurImages">
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/vanderaa.jpg" alt="Michel van der Aa (1970- )">
+                          <figcaption>Michel van der Aa (1970- )</figcaption>
+                        </figure>
+                      </div>
+                      <div>
+                        <figure>
+                          <img src="../images/paysbas/simons.jpg" alt="Marijn Simons (1982- )">
+                          <figcaption>Marijn Simons (1982- )</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Deux musiciens particulièrement doués, Michel van der Aa (1970- ) et Marijn Simons (1982- ), émergent parmi la jeune génération :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Michel van der Aa s'investit essentiellement dans des oeuvres théâtrales imaginatives où les techniques modernes sont entremêlées, One (2002), After Life (2005/06) and The Book of Disquiet (2008). Un temps d'adaptation est nécessaire pour apprécier cette musique qui ne verse assurément pas dans la facilité. Vous pouvez découvrir quelques facettes de son art en explorant le  site <a href="http://www.vanderaa.net/multimedia/">vanderaa.net</a>.</li>
+                      <li>Marijn Simons est nettement plus abordable. Violoniste de formation mais surtout véritable touche-à-tout, aucune de ses oeuvres, <a href="http://www.youtube.com/watch?v=16Lik87KML8">Capriccio</a>, for Stan and Oliver (!), <a href="http://www.youtube.com/watch?v=4xiLApo0YLc&feature=related">Water Songs</a>, <a href="http://www.youtube.com/watch?v=sLMfDB_vK1U">Quatuor n°4</a> - avec le compositeur au violon, chapeau ! -  ne passent inaperçues. James Mac Millan a apparemment pris ce jeune musicien sous son aile protectrice, ayant en particulier dirigé sa <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marijn-Simons-geb-1982-Symphonie-Nr-1/hnum/3221516">Symphonie</a>. Deux autres enregistrements sont disponibles : <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marijn-Simons-geb-1982-Violinkonzert-Nr-1/hnum/1631108">Concerto pour violon n°1</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Marijn-Simons-geb-1982-The-Legend-of-Kwahkaazuh/hnum/4981408">The Legend of Kwahkaazuh</a>.</li>
+                    </ul>
+                  </div>
+
+                  <div id="richesHeures">
+                    <h4>Les riches heures de la vie musicale néerlandaise</h4>
+
+                    <p>Deux festivals satisfont la gourmandise des hollandais pour tous les genres musicaux :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Créé en 1947, le Holland Festival (chaque année en juin, essentiellement à Amsterdam) est l'un des théâtres les plus actifs de la modernité.  Il n'a cessé de produire des spectacles surprenants (Classiques revisités mais aussi modernes, d'avant-garde, expérimentaux, happenings, mélanges de genres) dont se sont inspirés beaucoup d'autres festivals européens.</li>
+                      <li>Le festival d'Utrecht, se tenant fin août et début septembre, est La Mecque de la musique ancienne. Ceci n'est point un hasard : les musiciens hollandais furent parmi les premiers à animer le mouvement baroqueux. Gustav Leonhardt, Max van Egmond, Frans Brüggen, Jaap Schröder, Ton Koopman, Bob van Asperen et Anner Bylsma sont passés par là et la plupart de leurs interprétations gravées au disque ont particulièrement bien vieilli.</li>
+                    </ul>
+
+                    <p>Une vie musicale intense repose inévitablement sur un réservoir d'interprètes de qualité. Que ce réservoir existe en a  surpris plus d'un par le passé; dans ses célèbres chroniques musicales (à lire absolument !), Bernard Shaw nous a fait la description amusée suivante de deux concerts londoniens :</p>
+
+                    <p><i>Jamais l’Angleterre n’avait été aussi humiliée par les Hollandais comme elle vient de l’être à l’exposition des Inventions. Mardi dernier, une chorale anglaise (dirigée par Mr Rocckstro) a donné à South Kensington, un concert de musique sacrée des XVIe et XVIIe siècles.  Huit chanteurs hollandais venus d’Amsterdam en ont fait autant. Nous avions d’une part, un ensemble de chanteurs anglais, chargés de défendre la réputation qu’ont leurs compatriotes d’être les meilleurs du monde et de l’autre, un malheureux double quatuor de Hollandais et de Hollandaises dont nous avons souvent vus les visages aux murs des musées mais jamais dans une salle de concert.  Quel Britannique aurait été s’imaginer que ces gens-là avaient de la voix, des traditions musicales ou des grands compositeurs ? Le chœur de Mr Rockstro a chanté la Missa brevis à quatre voix de Palestrina.  La plupart des messieurs et dames d’Angleterre sont capables de chanter faux sans effort notoire mais l’extraordinaire aptitude des chanteurs de Mr Rockstro dans ce domaine surpasse de très loin tout ce que l’on peut obtenir d‘ordinaire.  C’est presque d’instinct qu’ils semblent éviter la note juste.  ... Au début de chaque mouvement, le clavecin donnait la note de départ.  La note d’arrivée, en revanche, dépendait totalement de la longueur du mouvement, au cours duquel les choristes ne manifestaient aucune préférence marquée pour une tonalité plutôt qu’une autre.</i></p>
+
+                    <p><i>Le lendemain de cette déroute anglaise, c’était le triomphe hollandais. ...  Arrivèrent sur la scène quatre dames hollandaises et quatre messieurs assortis ... .  Le public les regarda fixement et les étrangers parurent quelque peu réfrigérés et inquiets.  Ils chantèrent le psaume 122, mis en musique pour quatre voix par Sweelinck.  Au début, l’auditoire resta froid et légèrement désorienté.  Les béotiens les plus indécrottables ne tardèrent pas à quitter les lieux.  Ce ne fut qu’à la fin du concert que les Hollandais, s’avançant pour répondre aux applaudissements émus qui les rappelaient pour la deuxième fois, purent enfin s’apercevoir que les Britanniques, aussi stupides et aussi lents qu’ils aient pu paraître de prime abord, étaient en fin de compte sensibles à quelque chose d’un peu meilleur que Strauss. Ne fut-ce que pour ce seul concert, que tous les péchés commis contre la musique par le comité des Inventions lui soient remis; les souffrances infligées par le chœur de Mr Rockstro étaient oubliées avant même que l’on eût entendu six mesures du psaume de Sweelinck.</i></p>
+                  
+                    <p><i>The dramatic Review, le 18 juillet 1885</i></p>
+
+                    <p>Cette aptitude musicale ne s'est jamais démentie surtout dans le domaine de la musique symphonique : les orchestres hollandais sont excellents et le meilleur d'entre eux, le Concertgebouw Orkest, fait partie des 5 meilleures phalanges européennes. Il a été conduit par des chefs renommés : Willem Mengelberg (dont le règne a duré 50 ans, un record !), Edouard van Beinum, Bernard Haitink, Eugen Jochum, Riccardo Chailly et, actuellement, Mariss Jansons. L'orchestre s'est spécialisé dans les symphonies de Bruckner et de Mahler bien avant tout le monde mais il est tout aussi à l'aise dans la musique moderne de Varèse à Messiaen, sans oublier les musiciens du terroir qu'il a généreusement servis. Sans prétendre rivaliser, la Philharmonie de Rotterdam est d'un très bon niveau ainsi que l'orchestre et les Choeurs de la Radio Hilversum.</p>
+                    <p>Le violoncelliste Pieter Wispelwey, les violonistes Vera Beths, Isabelle van Keulen, Janine Jansen et Jaap van Zweden - j'allais oublier André Rieu ! - , les pianistes, Reinbert de Leeuw, Ronald Brautigam, Jeroen van Veen et Ralph van Raat sont autant d'interprètes appréciés.  Willem Breuker (1944-2010) est un clarinnetiste de jazz à la virtuosité étincelante qui a collaboré avec l'Ensemble Volhaarding. ASKO, souvent dirigé par Reinbert de Leeuw, est l'autre ensemble réputé pour ses interprétations de musique contemporaine.</p>
+                    <p>Quelques très belles voix, Cristina Deutekom, Elly Ameling et Bernard Kruysen, ont enchanté les oreilles des amateurs les plus exigeants et je ne peux absolument  passer sous silence la voix inoubliable de Aafje Heynis (1924- ), l'une des rares contraltos ayant pu rivaliser avec Kathleen Ferrier.</p>
+                    <p>Deux labels, <a href="http://www.jpc.de/jpcng/home/search/-/label/NM">NM</a> (Nederlandse Muziek) et <a href="http://www.jpc.de/jpcng/home/search/-/label/Donemus">Donemus</a>, défendent particulièrement la musique des pays-Bas, puisant éventuellement dans les archives de la radio néerlandaise, tenues à jour et ouvertes à la diffusion. C'est à NM que l'on doit le coffet des enregistrements consacrés à <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Peter-Schat-geb-1935-S%E4mtliche-Werke/hnum/3664529">Peter Schat</a>. N'hésitez pas à fouiller les archives du site avro.nl, où j'ai trouvé cette interprétation du récent <a href="http://cultuurgids.avro.nl/front/detailklassiek.html?item=8216812">2<sup>ème</sup> Concerto</a> pour piano de Jacob Ter Veldhuis, interprété par Ronald Brautigam (Positionnez le curseur après 15 minutes). Bernard Shaw avait raison, les hollandais aiment et servent la musique ! </p>
+                  </div>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -298,10 +424,10 @@ Le chœur de Mr Rockstro a chanté la Missa brevis à quatre voix de Palestrina.
 
         </div>
     
-    
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs contemporains | Krzysztof Penderecki</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,46 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreApogeeSonorismePolonais" href="#apogeeSonorismePolonais" class="linavMenu active">
+                    <span>L'apogée du sonorisme polonais</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTournant" href="#tournant" class="linavMenu">
+                    <span>Le tournant : la Passion selon Saint Luc</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOeuvreReligieuse" href="#œuvreReligieuse" class="linavMenu">
+                    <span>L'œuvre religieuse</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreOeuvreSymphonique" href="#œuvreSymphonique" class="linavMenu">
+                    <span>L'œuvre symphonique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMusiqueChambre" href="#musiqueChambre" class="linavMenu">
+                    <span>La musique de chambre</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreScene" href="#scene" class="linavMenu">
+                    <span>La scène</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs contemporains</h2>
+                <h3>Krzysztof Penderecki (1933- ), compositeur polonais</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -47,341 +83,209 @@
                         <li class="breadcrumbItem">
                           <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Krzysztof Penderecki</li>
                     </ul>
-                </nav>    <h2>Galerie de portraits : <div>Krzysztof Penderecki (1933- ), compositeur polonais.</div></h2>
+                </nav>
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#apogeeSonorismePolonais">L'apogée du sonorisme polonais</a></li>
+                        <li><a href="#tournant">Le tournant : la Passion selon Saint Luc</a></li>
+                        <li><a href="#œuvreReligieuse">L'œuvre religieuse</a></li>
+                        <li><a href="#œuvreSymphonique">L'œuvre symphonique</a></li>
+                        <li><a href="#musiqueChambre">La musique de chambre</a></li>
+                        <li><a href="#scene">La scène</a></li>
+                    </ul>
+                </div>
+
                 <div class="blocImgFirstAndText">
                   <div class="conteneurImageSeule">
                       <div>
                           <figure>
-                              <img src="../images/penderecki/penderecki1.jpg" alt=""/>
-                              <figcaption></figcaption>
+                              <img src="../images/penderecki/penderecki1.jpg" alt="Krzysztof Penderecki"/>
+                              <figcaption>Krzysztof Penderecki</figcaption>
                           </figure>
                       </div>
                   </div>
-    
-    <p>Penderecki est le quatrième mousquetaire de la musique polonaise.  Toutefois, si Fryderyk Chopin (1810-1849),
-    Karol Szymanowski (1882-1937) et Witold
-    Lutos&#322;awski (1913-1994) se sont imposés au panthéon (inter)national, bien des
-    commentateurs, singulièrement en Europe continentale de l'Ouest,    rechignent à estimer que Penderecki les y a
-    rejoints.
-    </p>
-    <p>
-   Il
-      faut chercher l'origine de ce désaccord dans les conflits d'école qui ont perturbé l'histoire de la musique
-      après 1945.  Penderecki a, de fait, suivi une trajectoire sinueuse dont voici les méandres. </p>
-    <p>
-    
-    <i>L'apogée du sonorisme
-      polonais.</i></p><p>
-       Les
-      débuts de Penderecki ont été fulgurants.  Ayant commencé à composer dès la fin de ses études, en 1958, il s'est
-      immédiatement imposé à la reconnaissance de ses pairs.  C'est ainsi qu'ayant soumis - anonymement
-      comme le prévoyait le règlement - trois partitions au deuxième concours de
-      composition de Varsovie (1959), il y
-      rafla les trois premiers prix avec "Strophes",
-      "Emanations" et "Psaumes de David"
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/psalmsdavid.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/psalmsdavid.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-      !  </p>
-      <p>
-    Il poursuivit sur sa lancée, toujours
-      avec autant de succès.  En 1961, juste
-      après <a href="https://www.youtube.com/watch?v=LDl4I7gB1Ck">Dimensions
-      of Time and Silence</a>, il écrivit cette pièce pour 52 cordes qui
-      fit sensation et, du même coup, le tour du monde : <a href="http://www.youtube.com/watch?v=wQDnv7D7gpY">Thrène
-      pour les victimes d'Hiroshima</a> (Attention à vos oreilles, au tout
-      début : tenez bon 70 secondes !).  Initialement,
-      cette pièce s'appelait simplement 8'37" : son temps présumé d'exécution.  C'est en l'entendant, lors de sa création, que le compositeur réalisa
-      que cette musique convenait parfaitement pour décrire l'horreur de l'explosion atomique,
-      encore dans toutes les mémoires.  L'UNESCO le gratifia d'un prix spécial pour
-  cette œuvre opportunément emblématique. </p>
-      <p><i>
-    Note ou anecdote : le titre
-      8'37" n'était pas une idée originale, John
-      Cage (1912-1992) l'avait eue avant lui, écrivant - si l'on peut dire (!) - une
-      pièce pour piano silencieux, <a href="http://www.youtube.com/watch?v=gN2zcLBr_VM&feature=related">4'33"</a>,
-      sorte de version sonore du <a href="http://www.productionmyarts.com/arts-en-profondeur/20e-siecle/malevitch-carre-blanc-sur-fond-blanc-fr.htm">Carré
-      blanc sur fond blanc</a> de Kasimir
-      Malevitch (1878-1935), actuellement exposé au MomA de New-York.  Une différence cependant : dans le tableau de
-      Malevitch, il y a quand même deux sortes de blancs !  </i></p>
-      <p>
-    D'autres œuvres suivirent dans la
-      même esthétique sonoriste, telles <a href="https://www.youtube.com/watch?v=BaI9jefxuY8">Anaklasis</a>
-      (1959), "Polymorphia"
-      (1961), pour 48 cordes (bizarrement récupérée par plusieurs chorégraphes), Phonograms (1961), l'étonnante <a href="https://www.youtube.com/watch?v=0KTwhQBIwx0">Fluorescences</a>
-      (1962), <a href="https://www.youtube.com/watch?v=w38Io51YesQ">De Natura
-      Sonoris 1 &amp; 2 </a>(1966-71) ou <a href="https://www.youtube.com/watch?v=JyC7WBuyQYo">Kosmogonia</a> (1970).</p><p>
-    Fluorescences atteint un point de rupture : les objets les plus divers (scie, sonnette
-      électrique, machine à écrire, bris de verre, lames métalliques, …) intègrent un
-      orchestre conventionnel où les instruments sont eux-mêmes bricolés ou manipulés
-      pour produire les sons les plus inattendus.</p><p>  Au rang des procédés d'écriture, la verticalité harmonique classique
-      fait place à des grappes de notes empilées (clusters)
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/polymorphyclusters.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/polymorphyclusters.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-      et l'horizontalité
-      thématique est remplacée par de larges glissandi
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/polymorphyglissandi.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/polymorphyglissandi.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-      accompagnés d'effets d'archets
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/polymorphyarchets.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/polymorphyarchets.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-      .  Tous ces extraits sont issus de Polymorphia, une histoire effrayante qui se termine bien, par un grand accord parfait
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/polymorphyfin.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/polymorphyfin.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-      </sub></sub></sub>
-</p>
-      <p>
-    Tous ces effets sonores  ont tellement bien fonctionné qu'au festival de Donaueschingen, Penderecki fut salué comme le Messie
-      de l'avant-garde.  La nouveauté du
-      langage étonna les uns et séduisit les autres.  </p>
-      <p>
-    Le "grand" public a
-      toujours témoigné une réserve prudente à l'égard du sonorisme, sentant venir
-      le moment où les salles de concerts ne résonneraient plus que de sons astucieux,
-      voire étonnants mais gratuits.  Ce
-      système compositionnel s'inscrit, en effet, dans une surenchère permanente qui
-      contraint le compositeur à aller toujours plus loin dans l'expérimentation
-      formelle.  Il se trouve vite confronté à
-      l'exigence d'en faire toujours plus, sous peine de ne plus étonner.  </p><p>
-    Penderecki a parfaitement mesuré les
-      limites naturelles du procédé et  a réfléchi à la meilleure manière de lui injecter
-      quelques nouveaux gènes capables d'en assurer la viabilité sur le long terme.  </p>
-      <p>
-      
-      
-    <i>Le tournant : la Passion selon Saint Luc.</i></p>
-      <p>
-    Penderecki fit volte face, prenant à
-  contre-pied ceux qui croyaient suffisamment le connaître pour le cataloguer.  En 1966, il publia son œuvre majeure, 
-     <a href="http://www.youtube.com/watch?v=nkqydMUOoEs">La Passion selon Saint Luc</a>, alliant
-      plusieurs techniques compositionnelles, thématiques ou sérielles, et couvrant 1000
-      ans de musique occidentale, de l'organum médiéval au sonorisme des jeunes
-      années.  </p>
-      <p>
-    Cette œuvre offre une preuve
-      tangible d'un phénomène maintes fois observé : un musicien triche rarement
-      lorsqu'il écrit une œuvre religieuse d'une certaine ampleur.  La nécessité de faire passer un message fort le
-      contraint à l'expressivité et c'est ce qu'on observe avec cette Passion
-      qui réussit pleinement à concilier les exigences de la tradition et de la
-      modernité. </p>
-  <p>
-    Ce chef-d'œuvre est à consommer sans modération, même s'il est probable qu'il vous faudra du
-      temps pour en digérer la nouveauté.  Ne
-      fuyez pas précipitamment en affirmant : "Je n'aime pas ! ".  Vous disiez la même chose des épinards quand vous
-      aviez trois ans et j'espère - pour votre santé -  que vous avez changé
-      d'avis.  </p><p>
-    Certes, cette œuvre poignante exige
-      idéalement le concert et je ne l'y
-      ai jamais entendue mais à qui la faute ?  Dans l'attente de cet improbable
-      événement, il reste le CD.  Je garde
-      précieusement la version profondément idiomatique de l'Orchestre et des Chœurs
-      de Cracovie, dirigés par Henryk Czyz (Edition Polskie Nagrania),  don
-      d'un ami polonais qui ne savait trop comment s'en débarrasser, merci Stasz ! </p><p>
-    Voici deux extraits significatifs : Judica me Deus
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/passion9.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/passion9.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-      et Et surgens omnis multitudo
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/passion13.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/passion13.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-      . </p><p>
-    Vous devrez probablement vous rabattre sur l'une des versions facilement
-      disponibles en Occident (Rendez-vous sur le site <a href="http://www.jpc.de/jpcng/classic/search/-/interpret_hex/50656e64657265636b692c4b727a79737a746f66/pd_orderby/score?page=1">jpc</a> : Wit chez Naxos, Soustrot chez MDG ou Penderecki en personne chez Argo). </p><p></p>
-   <div> <i>L'œuvre religieuse.</i></div>
-    <p>
-    Après cette Passion, la musique de
-      Penderecki ne fut plus jamais la même.  Sans abandonner  le courant sonoriste qui lui avait valu tant
-      de considération, il lui a insensiblement conféré un visage de plus en plus
-      humain.  C'est l'époque des grandes
-      fresques religieuses écrites dans la mouvance de
-      
-      la Passion : </p><p>
-    <a href="http://www.youtube.com/watch?v=f403XsOAFXE">Stabat Mater</a> (1962)</p><p>
-    <a href="http://www.youtube.com/watch?v=w_jvgdAFJlM">Dies Irae</a> (1968)</p><p>
-    <a href="http://www.youtube.com/watch?v=98UI_PYEUDY">Utrenja</a> (Prière du Matin, 1971, mêle le sonorisme au rite orthodoxe : superbe !)</p><p>
-    <a href="https://www.youtube.com/watch?v=fEmwfaAmPb0">Magnificat</a> (1973)</p><p>
-    <a href="https://www.youtube.com/watch?v=s8yzgpa_xSY">The Dream of Jacob</a> (1974)</p><p>
-    <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Te-Deum/hnum/5503618">Te Deum</a> (1979)</p><p>
-    <a href="http://www.youtube.com/watch?v=_OD12l9FAIU">Agnus Dei</a> (1981)</p>
-    <p>
-    <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Polnisches-Requiem/hnum/2906601">Requiem polonais</a> (1984, révisé par deux fois, en 1993 et en 2006, à
-      la mort de Jean-Paul II).  Cette œuvre
-      est célèbre mais  ambiguë, oscillant entre les styles extrêmes, sans
-      réussir leur parfaite intégration comme dans 
-      
-      la Passion. </p><p>
-    <a href="http://www.youtube.com/watch?v=BIwKnelfCLE">De profundis</a> (1996)</p><p>
-    <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557980">Hymne
-      an den heiligen Daniel</a> & Hymne an den heiligen Adalbert (1997)</p><p>
-    <a href="http://www.youtube.com/watch?v=Y1AeZOEA0TU&list=PLxl_gIF7wA3lxO43jDDPaATIV5BZCC5dA">Credo</a> (1998) (Résultat d'une commande d'une messe complète qui ne
-      vit jamais le jour, Penderecki s'étant attardé sur le Credo en lui conférant
-      des dimensions imprévues : 1 heure !) </p><p>
-    <a href="http://www.youtube.com/watch?v=2koJTGhz7JE">Benedictus</a> (2002)</p><p>
-               
-      
-      La Passion, Utrenja et Hymne an den heiligen
-      Daniel<a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557980"></a> font partie des œuvres à découvrir en priorité.</p>
-<div><i>
-    L'œuvre symphonique. </i></div>
-<p>
-    En musique
-      symphonique, Penderecki est finalement revenu à une forme qu'on pourrait qualifier de
-      romantique.  Il faut toutefois réaliser
-      que le geste lyrique n'est, la plupart du temps, que suggéré à l'auditeur qui -
-      comme toujours en musique moderne - doit faire l'autre moitié du chemin.  </p>
-<p>
-    Penderecki 
-      s'est mis à la symphonie  relativement tard, en 1973, comme s'il voulait
-      s'assurer qu'il était prêt pour cette grande forme.  Toutes, sauf la 6<sup>ème</sup>, jugée inaboutie par son auteur, ont été enregistrées sous
-      le label <a href="http://www.naxos.com/composerinfo/Krzysztof_Penderecki_21188/21188.htm">Naxos</a> par le chef polonais Antoni Wit.   La <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.570450">8<sup>ème</sup></a> est récente (2005) et nul, à ce jour, ne sait si la 9<sup>ème</sup>,
-      en projet, verra le jour, superstition oblige.</p>
-<p>
-    Il a composé
-      plusieurs concertos pour divers instruments, tous recommandables :</p>
-<li>pour <a href="http://www.youtube.com/watch?v=fj8GJ0LsTL8">piano</a> &quot;Résurrection&quot; (incontournable !)</li>
-<li>pour <a href="http://www.youtube.com/watch?v=XgZKC4uhOxw">violon n°1</a>, dédié à Isaac Stern</li>
-<li>pour <a href="http://www.youtube.com/watch?v=z3jSugm-4VE">violon n°2</a>, dédié à Anne-Sophie Mutter</li>
-<li>pour <a href="http://www.youtube.com/watch?v=XytQbEMe8Z0">violoncelle n°1</a></li>
-<li>pour <a href="http://www.youtube.com/watch?v=ApJU2QbbXpc">violoncelle n°2</a> (incontournable !)</li>
-<li>pour <a href="http://www.youtube.com/watch?v=wkVzgD-fnlA">flûte</a></li>
-<p>Ne manquez pas ce superbe <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Klarinettenkonzert/hnum/7907368">CD</a> consacré aux Concertos pour flûte et clarinette.</p>
-<p>
-    Que les concertos
-      pour violon et violoncelle aient reçu l'approbation interprétative d'Anne Sophie Muter et de Mstislav
-      Rostropovitch constitue  une preuve par l'absurde, à
-      l'adresse des sceptiques, qu'ils sont dignes de considération. </p>
-      <div><i>
-    La musique de chambre. </i></div><p>
-    La musique de
-      chambre est relativement peu abondante mais de qualité :</p><p>
-    Deux sonates
-      pour piano et violon (1953 & 1999) fort différentes, on s'en doute, en lisant leurs dates de parution.</p>
-      
-    <div><img src="../images/penderecki/penderecki2.jpg" alt="" /><div class="legende">Quatuor à cordes</div></div>
 
-<p>Deux
-      courts <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Streichquartette-Nr-1-2/hnum/7069419">Quatuors
-      à cordes</a> de jeunesse, en rébellion contre la tradition classique du
-      genre, épuisent le catalogue des effets d'archets concevables (arco,
-      pizzicato, col legno, con sordino, sul ponticello).  Une notation non conventionnelle étant requise,
-      les œuvres furent justement dédiées au valeureux copiste Julian Zarzycki.  </p>
-<p>
-    Un <a href="http://www.youtube.com/watch?v=b1k47VuFXHA">3<sup>ème</sup> quatuor</a>, daté de 2008,
-      revient à une forme plus traditionnelle.  C'est déjà le cas du Trio à cordes de 1991<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Streichquartette-Nr-1-2/hnum/7069419"></a>.</p><p>
-    Un <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557052">Sextuor</a> (2000) vaut une mention toute spéciale tant il est réussi.</p>
-<div><i>
-    La scène. </i></div><p>
-    A ce jour,
-      Penderecki a écrit 4 opéras qui comme tant d'œuvres modernes, peuvent difficilement
-      se passer de la scène :</p><p>
-    <a href="http://www.youtube.com/watch?v=o60EERz6nvo">Les
-      Diables de Loudun</a> (d'après Aldous
-      Huxley)</p><p>
-    <a href="http://www.youtube.com/watch?v=_Z75cdL2Kv8">Lost
-      Paradise</a> (d'après John Milton)</p><p>
-    Die
-      schwarze Maske (d'après Gerhart
-      Hauptmann)</p><p>
-    <a href="http://www.amazon.com/gp/recsradio/radio/B0007CEXDQ/ref=pd_krex_listen_dp_img?ie=UTF8&refTagSuffix=dp_img">Ubu
-      Rex</a> (d'après Alfred Jarry)</p>
-      <p>
-    Tous reposent
-      le vieux problème : "Prima la musica o la scena ?".  Ecouter "Les Diables de Loudun" en version de concert - ou  chez soi,
-      sur une installation domestique - demeure une épreuve redoutable alors que cela
-      ne pose aucun problème avec Il Trovatore de Verdi, Fidelio de Beethoven ou n'importe quel opéra de Wagner.</p>
-      
-        
-      <p>
-    Les
-      compositeurs ont leurs petites manies.  Même à des années de distance, beaucoup d'œuvres de Penderecki
-      commencent par quelques accords similaires.  Il est intéressant d'entendre ce qu'ils
-      deviennent dans des contextes différents :</p><p>
-    Symphonie n°1 (1973)
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/sy1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/sy1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    </p><p>
-    Symphonie n°5 (1992)
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/sy5.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/sy5.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    </p><p>
-    Concerto pour violon n°2 (1995)
-      <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/penderecki/concertoviolon2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/penderecki/concertoviolon2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    </p>
-    
-      
-    <p>
-    Penderecki compose, il enseigne - on
-      l'a sollicité de New Haven à Pékin - et il dirige, ses œuvres bien
-      sûr mais pas seulement.  Il trouve même
-      le temps d'assister à quantité de séances honorifiques qui lui sont consacrées
-      : élections à une dizaine d'Académies un peu partout dans le monde, une dizaine
-      de Doctorats "Honoris Causa" dont celui de
-      
-      la KUL 
-      (Louvain, Leuven pour les puristes) plus une ribambelle de prix de composition et de
-      décorations en tous genres.  A
-      l'évidence, l'homme est présent sur tous les fronts; il doit être de santé
-      robuste. </p><p>
-    Ce n'est pas un luxe car une sotte
-      critique ne s'est guère gênée pour tenter de l'éreinter : tandis qu'il
-      abandonnait le champ expérimental de ses jeunes années et que son succès grandissait
-      auprès du public, il eut à subir les moues désapprobatrices de ceux qui n'ont
-      jamais compris qu'il ait souhaité évoluer vers un style musical de plus en plus
-      accessible.  Ceux qui l'avaient glorifié
-      à ses débuts se sont sentis trahis : ils ont bien essayé de le culpabiliser en
-      prétendant qu'il avait renié ses idéaux de jeunesse mais rien n'y fit :
-      Penderecki, n'ayant plus rien à prouver, écrit la musique qu'il a envie
-      d'écrire, un point c'est tout. </p>
-      <p>
-    La trajectoire
-      de Penderecki est donc passée du sonorisme des jeunes années au postromantisme
-      tardif.  La transition ne s'est faite pas
-      continûment : elle a connu des retours marqués vers l'expérimentation primitive
-      mais globalement, elle va dans le sens décrit - et parfois même au-delà -  comme
-      dans cette récente <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557980">Chaconne</a>,
-      complètement rétro, composée après la mort du pape polonais : elle n'a, de
-      fait, plus rien à voir - ni à entendre - avec les expérimentations
-      juvéniles (Ne vous fiez pas à la
-      pochette du CD qui prétend que cette pièce fait partie du Requiem polonais, c'est une erreur manifeste).</p>
-      <p>
-    Proche, à ses
-      débuts, des recherches du hongrois György Ligeti (1923-2006), Penderecki a évolué, se rapprochant peu à peu de la démarche
-      du Finlandais Einojuhani Rautavaara (1928- ).  Mon seul petit regret - vous allez trouver que je ne suis jamais content - 
-      est que sa recherche d'un compromis stylistique 
-      se soit transformée, avec le temps, en une phagocytose du sonorisme par le
-      postromantisme trop complète à mon goût.  </p>
-                </div>
+                  <p>Penderecki est le quatrième mousquetaire de la musique polonaise.  Toutefois, si Fryderyk Chopin (1810-1849), Karol Szymanowski (1882-1937) et Witold Lutos&#322;awski (1913-1994) se sont imposés au panthéon (inter)national, bien des commentateurs, singulièrement en Europe continentale de l'Ouest, rechignent à estimer que Penderecki les y a rejoints. </p>
+                  <p>Il faut chercher l'origine de ce désaccord dans les conflits d'école qui ont perturbé l'histoire de la musique après 1945. Penderecki a, de fait, suivi une trajectoire sinueuse dont voici les méandres. </p>
+
+                  <div id="apogeeSonorismePolonais">
+                    <h4>L'apogée du sonorisme polonais</h4>
+
+                    <p>Les débuts de Penderecki ont été fulgurants.  Ayant commencé à composer dès la fin de ses études, en 1958, il s'est immédiatement imposé à la reconnaissance de ses pairs. C'est ainsi qu'ayant soumis - anonymement comme le prévoyait le règlement - trois partitions au deuxième concours de composition de Varsovie (1959), il y rafla les trois premiers prix avec "Strophes", "Emanations" et "Psaumes de David"<sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/psalmsdavid.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/psalmsdavid.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio></sub></sub></sub> !  </p>
+                    <p>Il poursuivit sur sa lancée, toujours avec autant de succès.  En 1961, juste après <a href="https://www.youtube.com/watch?v=LDl4I7gB1Ck">Dimensions of Time and Silence</a>, il écrivit cette pièce pour 52 cordes qui fit sensation et, du même coup, le tour du monde : <a href="http://www.youtube.com/watch?v=wQDnv7D7gpY">Thrène pour les victimes d'Hiroshima</a> (Attention à vos oreilles, au tout début : tenez bon 70 secondes !).  Initialement, cette pièce s'appelait simplement 8'37" : son temps présumé d'exécution.  C'est en l'entendant, lors de sa création, que le compositeur réalisa que cette musique convenait parfaitement pour décrire l'horreur de l'explosion atomique, encore dans toutes les mémoires.  L'UNESCO le gratifia d'un prix spécial pour cette œuvre opportunément emblématique. </p>
+
+                    <p><i>Note ou anecdote : le titre 8'37" n'était pas une idée originale, John Cage (1912-1992) l'avait eue avant lui, écrivant - si l'on peut dire (!) - une pièce pour piano silencieux, <a href="http://www.youtube.com/watch?v=gN2zcLBr_VM&feature=related">4'33"</a>, sorte de version sonore du <a href="http://www.productionmyarts.com/arts-en-profondeur/20e-siecle/malevitch-carre-blanc-sur-fond-blanc-fr.htm">Carré blanc sur fond blanc</a> de Kasimir Malevitch (1878-1935), actuellement exposé au MomA de New-York.  Une différence cependant : dans le tableau de Malevitch, il y a quand même deux sortes de blancs ! </i></p>
+
+                    <p>D'autres œuvres suivirent dans la même esthétique sonoriste, telles <a href="https://www.youtube.com/watch?v=BaI9jefxuY8">Anaklasis</a> (1959), "Polymorphia"(1961), pour 48 cordes (bizarrement récupérée par plusieurs chorégraphes), Phonograms (1961), l'étonnante <a href="https://www.youtube.com/watch?v=0KTwhQBIwx0">Fluorescences</a> (1962), <a href="https://www.youtube.com/watch?v=w38Io51YesQ">De Natura Sonoris 1 &amp; 2 </a>(1966-71) ou <a href="https://www.youtube.com/watch?v=JyC7WBuyQYo">Kosmogonia</a> (1970).</p>
+                    <p>Fluorescences atteint un point de rupture : les objets les plus divers (scie, sonnette électrique, machine à écrire, bris de verre, lames métalliques, …) intègrent un orchestre conventionnel où les instruments sont eux-mêmes bricolés ou manipulés pour produire les sons les plus inattendus.</p>
+                    <p>Au rang des procédés d'écriture, la verticalité harmonique classique fait place à des grappes de notes empilées (clusters) <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/polymorphyclusters.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/polymorphyclusters.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio></sub></sub></sub> et l'horizontalité thématique est remplacée par de larges glissandi <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/polymorphyglissandi.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/polymorphyglissandi.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio></sub></sub></sub> accompagnés d'effets d'archets <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/polymorphyarchets.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/polymorphyarchets.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio></sub></sub></sub> .  Tous ces extraits sont issus de Polymorphia, une histoire effrayante qui se termine bien, par un grand accord parfait <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/polymorphyfin.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/polymorphyfin.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio> </sub></sub></sub>
+                    </p>
+                    <p>Tous ces effets sonores ont tellement bien fonctionné qu'au festival de Donaueschingen, Penderecki fut salué comme le Messie de l'avant-garde.  La nouveauté du langage étonna les uns et séduisit les autres.  </p>
+                    <p>Le "grand" public a toujours témoigné une réserve prudente à l'égard du sonorisme, sentant venir le moment où les salles de concerts ne résonneraient plus que de sons astucieux, voire étonnants mais gratuits.  Ce système compositionnel s'inscrit, en effet, dans une surenchère permanente qui contraint le compositeur à aller toujours plus loin dans l'expérimentation formelle.  Il se trouve vite confronté à l'exigence d'en faire toujours plus, sous peine de ne plus étonner.  </p>
+                    <p>Penderecki a parfaitement mesuré les limites naturelles du procédé et a réfléchi à la meilleure manière de lui injecter quelques nouveaux gènes capables d'en assurer la viabilité sur le long terme.  </p>
+                  </div>
+
+                  <div id="tournant">
+                    <h4>Le tournant : la Passion selon Saint Luc</h4>
+
+                    <p>Penderecki fit volte face, prenant à contre-pied ceux qui croyaient suffisamment le connaître pour le cataloguer.  En 1966, il publia son œuvre majeure, <a href="http://www.youtube.com/watch?v=nkqydMUOoEs">La Passion selon Saint Luc</a>, alliant plusieurs techniques compositionnelles, thématiques ou sérielles, et couvrant 1000 ans de musique occidentale, de l'organum médiéval au sonorisme des jeunes années.  </p>
+                    <p>Cette œuvre offre une preuve tangible d'un phénomène maintes fois observé : un musicien triche rarement lorsqu'il écrit une œuvre religieuse d'une certaine ampleur.  La nécessité de faire passer un message fort le contraint à l'expressivité et c'est ce qu'on observe avec cette Passion qui réussit pleinement à concilier les exigences de la tradition et de la modernité. </p>
+                    <p>Ce chef-d'œuvre est à consommer sans modération, même s'il est probable qu'il vous faudra du temps pour en digérer la nouveauté.  Ne fuyez pas précipitamment en affirmant : "Je n'aime pas ! ".  Vous disiez la même chose des épinards quand vous aviez trois ans et j'espère - pour votre santé - que vous avez changé d'avis.  </p>
+                    <p>Certes, cette œuvre poignante exige idéalement le concert et je ne l'y ai jamais entendue mais à qui la faute ?  Dans l'attente de cet improbable événement, il reste le CD.  Je garde précieusement la version profondément idiomatique de l'Orchestre et des Chœurs de Cracovie, dirigés par Henryk Czyz (Edition Polskie Nagrania), don d'un ami polonais qui ne savait trop comment s'en débarrasser, merci Stasz ! </p>
+                    <p>Voici deux extraits significatifs : Judica me Deus <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/passion9.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/passion9.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio></sub></sub></sub> et Et surgens omnis multitudo <sub><sub><sub> 
+                    <audio controls preload="none"> 
+                      <source src="../son.mp3/penderecki/passion13.mp3" type="audio/mpeg"/> 
+                      <source src="../son.mp3/penderecki/passion13.ogg" type="audio/ogg"/> 
+                      Votre navigateur n'est pas compatible 
+                    </audio></sub></sub></sub> . </p>
+                    <p>Vous devrez probablement vous rabattre sur l'une des versions facilement disponibles en Occident (Rendez-vous sur le site <a href="http://www.jpc.de/jpcng/classic/search/-/interpret_hex/50656e64657265636b692c4b727a79737a746f66/pd_orderby/score?page=1">jpc</a> : Wit chez Naxos, Soustrot chez MDG ou Penderecki en personne chez Argo). </p>
+                  </div>
+
+                  <div id="œuvreReligieuse">
+                    <h4>L'œuvre religieuse</h4>
+
+                    <p>Après cette Passion, la musique de Penderecki ne fut plus jamais la même.  Sans abandonner le courant sonoriste qui lui avait valu tant de considération, il lui a insensiblement conféré un visage de plus en plus humain.  C'est l'époque des grandes fresques religieuses écrites dans la mouvance de la Passion : </p>
+
+                    <ul class="miniListCorps">
+                      <li><a href="http://www.youtube.com/watch?v=f403XsOAFXE">Stabat Mater</a> (1962)</li>
+                      <li><a href="http://www.youtube.com/watch?v=w_jvgdAFJlM">Dies Irae</a> (1968)</li>
+                      <li><a href="http://www.youtube.com/watch?v=98UI_PYEUDY">Utrenja</a> (Prière du Matin, 1971, mêle le sonorisme au rite orthodoxe : superbe !)</li>
+                      <li><a href="https://www.youtube.com/watch?v=fEmwfaAmPb0">Magnificat</a> (1973)</li>
+                      <li><a href="https://www.youtube.com/watch?v=s8yzgpa_xSY">The Dream of Jacob</a> (1974)</li>
+                      <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Te-Deum/hnum/5503618">Te Deum</a> (1979)</li>
+                      <li><a href="http://www.youtube.com/watch?v=_OD12l9FAIU">Agnus Dei</a> (1981)</li>
+                      <li><a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Polnisches-Requiem/hnum/2906601">Requiem polonais</a> (1984, révisé par deux fois, en 1993 et en 2006, à la mort de Jean-Paul II).  Cette œuvre est célèbre mais ambiguë, oscillant entre les styles extrêmes, sans réussir leur parfaite intégration comme dans la Passion. </li>
+                      <li><a href="http://www.youtube.com/watch?v=BIwKnelfCLE">De profundis</a> (1996)</li>
+                      <li><a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557980">Hymne an den heiligen Daniel</a> &amp; Hymne an den heiligen Adalbert (1997)</li>
+                      <li><a href="http://www.youtube.com/watch?v=Y1AeZOEA0TU&list=PLxl_gIF7wA3lxO43jDDPaATIV5BZCC5dA">Credo</a> (1998) (Résultat d'une commande d'une messe complète qui ne vit jamais le jour, Penderecki s'étant attardé sur le Credo en lui conférant des dimensions imprévues : 1 heure !) </li>
+                      <li><a href="http://www.youtube.com/watch?v=2koJTGhz7JE">Benedictus</a> (2002)</li>
+                    </ul>
+
+                    <p>La Passion, Utrenja et Hymne an den heiligen Daniel<a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557980"></a> font partie des œuvres à découvrir en priorité.</p>
+                  </div>
+
+                  <div id="œuvreSymphonique">
+                    <h4>L'œuvre symphonique</h4>
+
+                    <p>En musique symphonique, Penderecki est finalement revenu à une forme qu'on pourrait qualifier de romantique.  Il faut toutefois réaliser que le geste lyrique n'est, la plupart du temps, que suggéré à l'auditeur qui - comme toujours en musique moderne - doit faire l'autre moitié du chemin.  </p>
+                    <p>Penderecki s'est mis à la symphonie relativement tard, en 1973, comme s'il voulait s'assurer qu'il était prêt pour cette grande forme.  Toutes, sauf la 6<sup>ème</sup>, jugée inaboutie par son auteur, ont été enregistrées sous le label <a href="http://www.naxos.com/composerinfo/Krzysztof_Penderecki_21188/21188.htm">Naxos</a> par le chef polonais Antoni Wit.  La <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.570450">8<sup>ème</sup></a> est récente (2005) et nul, à ce jour, ne sait si la 9<sup>ème</sup>, en projet, verra le jour, superstition oblige.</p>
+
+                    <p>Il a composé plusieurs concertos pour divers instruments, tous recommandables :</p>
+
+                    <ul class="miniListCorps">
+                      <li>pour <a href="http://www.youtube.com/watch?v=fj8GJ0LsTL8">piano</a> &quot;Résurrection&quot; (incontournable !)</li>
+                      <li>pour <a href="http://www.youtube.com/watch?v=XgZKC4uhOxw">violon n°1</a>, dédié à Isaac Stern</li>
+                      <li>pour <a href="http://www.youtube.com/watch?v=z3jSugm-4VE">violon n°2</a>, dédié à Anne-Sophie Mutter</li>
+                      <li>pour <a href="http://www.youtube.com/watch?v=XytQbEMe8Z0">violoncelle n°1</a></li>
+                      <li>pour <a href="http://www.youtube.com/watch?v=ApJU2QbbXpc">violoncelle n°2</a> (incontournable !)</li>
+                      <li>pour <a href="http://www.youtube.com/watch?v=wkVzgD-fnlA">flûte</a></li>
+                    </ul>
+
+                    <p>Ne manquez pas ce superbe <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Klarinettenkonzert/hnum/7907368">CD</a> consacré aux Concertos pour flûte et clarinette.</p>
+                    <p> Que les concertos pour violon et violoncelle aient reçu l'approbation interprétative d'Anne Sophie Muter et de Mstislav Rostropovitch constitue une preuve par l'absurde, à l'adresse des sceptiques, qu'ils sont dignes de considération. </p>
+                  </div>
+
+                  <div id="musiqueChambre">
+                    <h4>La musique de chambre</h4>
+
+                    <p>La musique de chambre est relativement peu abondante mais de qualité :</p>
+                    <p>Deux sonates pour piano et violon (1953 &amp; 1999) fort différentes, on s'en doute, en lisant leurs dates de parution.</p>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/penderecki/penderecki2.jpg" alt="Quatuor à cordes"/>
+                          <figcaption>Quatuor à cordes</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Deux courts <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Streichquartette-Nr-1-2/hnum/7069419">Quatuors à cordes</a> de jeunesse, en rébellion contre la tradition classique du genre, épuisent le catalogue des effets d'archets concevables (arco, pizzicato, col legno, con sordino, sul ponticello).  Une notation non conventionnelle étant requise, les œuvres furent justement dédiées au valeureux copiste Julian Zarzycki.  </p>
+                    <p>Un <a href="http://www.youtube.com/watch?v=b1k47VuFXHA">3<sup>ème</sup> quatuor</a>, daté de 2008, revient à une forme plus traditionnelle.  C'est déjà le cas du Trio à cordes de 1991 <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Krzysztof-Penderecki-Streichquartette-Nr-1-2/hnum/7069419"></a>.</p>
+                    <p>Un <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557052">Sextuor</a> (2000) vaut une mention toute spéciale tant il est réussi.</p>
+                  </div>
+
+                  <div id="scene">
+                    <h4>La scène</h4>
+
+                    <p>A ce jour, Penderecki a écrit 4 opéras qui comme tant d'œuvres modernes, peuvent difficilement se passer de la scène :</p>
+
+                    <ul class="miniListCorps">
+                      <li><a href="http://www.youtube.com/watch?v=o60EERz6nvo">Les Diables de Loudun</a> (d'après Aldous Huxley)</li>
+                      <li><a href="http://www.youtube.com/watch?v=_Z75cdL2Kv8">Lost Paradise</a> (d'après John Milton)</li>
+                      <li>Die schwarze Maske (d'après Gerhart Hauptmann)</li>
+                      <li><a href="http://www.amazon.com/gp/recsradio/radio/B0007CEXDQ/ref=pd_krex_listen_dp_img?ie=UTF8&refTagSuffix=dp_img">Ubu Rex</a> (d'après Alfred Jarry)</li>
+                    </ul>
+
+                    <p>Tous reposent le vieux problème : "Prima la musica o la scena ?".  Ecouter "Les Diables de Loudun" en version de concert - ou chez soi, sur une installation domestique - demeure une épreuve redoutable alors que cela ne pose aucun problème avec Il Trovatore de Verdi, Fidelio de Beethoven ou n'importe quel opéra de Wagner.</p>
+                    <p>Les compositeurs ont leurs petites manies.  Même à des années de distance, beaucoup d'œuvres de Penderecki commencent par quelques accords similaires.  Il est intéressant d'entendre ce qu'ils deviennent dans des contextes différents :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Symphonie n°1 (1973) <sub><sub><sub> 
+                      <audio controls preload="none"> 
+                        <source src="../son.mp3/penderecki/sy1.mp3" type="audio/mpeg"/> 
+                        <source src="../son.mp3/penderecki/sy1.ogg" type="audio/ogg"/> 
+                        Votre navigateur n'est pas compatible 
+                      </audio></sub></sub></sub></li>
+                      <li>Symphonie n°5 (1992) <sub><sub><sub> 
+                      <audio controls preload="none"> 
+                        <source src="../son.mp3/penderecki/sy5.mp3" type="audio/mpeg"/> 
+                        <source src="../son.mp3/penderecki/sy5.ogg" type="audio/ogg"/> 
+                        Votre navigateur n'est pas compatible 
+                      </audio></sub></sub></sub></li>
+                      <li>Concerto pour violon n°2 (1995) <sub><sub><sub> 
+                      <audio controls preload="none"> 
+                        <source src="../son.mp3/penderecki/concertoviolon2.mp3" type="audio/mpeg"/> 
+                        <source src="../son.mp3/penderecki/concertoviolon2.ogg" type="audio/ogg"/> 
+                        Votre navigateur n'est pas compatible 
+                      </audio></sub></sub></sub></li>
+                    </ul>
+
+                    <p>Penderecki compose, il enseigne - on l'a sollicité de New Haven à Pékin - et il dirige, ses œuvres bien sûr mais pas seulement.  Il trouve même le temps d'assister à quantité de séances honorifiques qui lui sont consacrées : élections à une dizaine d'Académies un peu partout dans le monde, une dizaine de Doctorats "Honoris Causa" dont celui de la KUL (Louvain, Leuven pour les puristes) plus une ribambelle de prix de composition et de décorations en tous genres.  A l'évidence, l'homme est présent sur tous les fronts; il doit être de santé robuste. </p>
+                    <p>Ce n'est pas un luxe car une sotte critique ne s'est guère gênée pour tenter de l'éreinter : tandis qu'il abandonnait le champ expérimental de ses jeunes années et que son succès grandissait auprès du public, il eut à subir les moues désapprobatrices de ceux qui n'ont jamais compris qu'il ait souhaité évoluer vers un style musical de plus en plus accessible.  Ceux qui l'avaient glorifié à ses débuts se sont sentis trahis : ils ont bien essayé de le culpabiliser en prétendant qu'il avait renié ses idéaux de jeunesse mais rien n'y fit : Penderecki, n'ayant plus rien à prouver, écrit la musique qu'il a envie d'écrire, un point c'est tout. </p>
+                    <p>La trajectoire de Penderecki est donc passée du sonorisme des jeunes années au postromantisme tardif.  La transition ne s'est faite pas continûment : elle a connu des retours marqués vers l'expérimentation primitive mais globalement, elle va dans le sens décrit - et parfois même au-delà - comme dans cette récente <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557980">Chaconne</a>, complètement rétro, composée après la mort du pape polonais : elle n'a, de fait, plus rien à voir - ni à entendre - avec les expérimentations juvéniles (Ne vous fiez pas à la pochette du CD qui prétend que cette pièce fait partie du Requiem polonais, c'est une erreur manifeste).</p>
+                    <p>Proche, à ses débuts, des recherches du hongrois György Ligeti (1923-2006), Penderecki a évolué, se rapprochant peu à peu de la démarche du Finlandais Einojuhani Rautavaara (1928- ).  Mon seul petit regret - vous allez trouver que je ne suis jamais content - est que sa recherche d'un compromis stylistique se soit transformée, avec le temps, en une phagocytose du sonorisme par le postromantisme trop complète à mon goût.  </p>  
+                  </div> 
+                </div> 
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -391,10 +295,10 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
 
 </body>
 </html>

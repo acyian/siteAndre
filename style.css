@@ -128,7 +128,7 @@
 		}
 
 		.coloType1Chiffres{
-			color: #b5cd00; /*ancien orange*/
+			color: #cd0000; /*ancien orange*/
 		}
 
 		.coloType2Chiffres{
@@ -494,11 +494,12 @@
 		    border-bottom: 1px solid #dddddd;
 		}
 		
-		#contenuPrincipal h6{
+		/*CHANGER CI_DESSOUS (ANDRE A MIT CA POUR FICHIER ARITHMETIQUE: créer une class...)*/
+		/*#contenuPrincipal h6{
 			text-align: center;
 		    font-weight: bold;
 		    font-size: 0.9em;
-		}
+		}*/
 	
 	/*======= ANCRE BAS DE PAGE =======*/
 		#ancreRetourHautPage{

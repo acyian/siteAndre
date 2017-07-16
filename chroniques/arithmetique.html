@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | Gammes et Tempéraments</title>
+  <meta name="description" content="Le modèle pythagoricien n'a rien perdu de sa pertinence en musique théorique, sa connaissance approfondie explique bien des choses aux profanes." />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("../template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreJustesse" href="#justesse" class="linavMenu active">
+                    <span>Entre justesse ...</span>
+                    </a>
+</li>
+                
+                <li>
+                    <a id="ancregammes" href="#gammes" class="linavMenu">
+                    <span>Construction de la gamme pythagoricienne</span>
+                    </a>
+</li>
+                
+                <li>
+                    <a id="ancretemperament" href="#temperament" class="linavMenu">
+                    <span>Une question de tempérament</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancrerameau" href="#rameau" class="linavMenu">
+                    <span>L'orthographe selon Rameau</span>
+                    </a>
+</li>
+                <li>
+                    <a id="ancreschonberg" href="#schonberg" class="linavMenu">
+                    <span>L'orthographe selon Schönberg</span>
+                    </a>
+      </li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>Gammes et Tempéraments, de l'arithmétique à l'orthographe musicales</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Gammes et Tempéraments, ...</li>
+                    </ul>
+                </nav>  
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#justesse">Entre justesse ...</a></li>
+                        <li><a href="#transposabilite">... et transposabilité</a></li>
+                        <li><a href="#gammes">Construction de la gamme pythagoricienne</a></li>
+                        <li><a href="#temperament">Une question de tempérament</a></li>
+                        <li><a href="#rameau">L'orthographe selon Rameau</a></li>
+                        <li><a href="#schonberg">L'orthographe selon Schönberg</a></li>
+                    </ul>
+                </div>
+  
+                
+                  
+                  <p>Personne ne conteste raisonnablement que la théorie musicale  repose sur les principes de l'acoustique physique. En privilégiant les rapports consonants que les fréquences des sons entretiennent entre elles, l'acoustique fait appel, à son tour,  à l'étude des fractions simples. Cependant, il n'y a que les mathématiciens pour s'intéresser à l'arithmétique musicale et les physiciens pour invoquer les lois de l'acoustique. Les musiciens ne se soucient généralement ni de l'une ni de l'autre : peu concernés par les sciences exactes, ils estiment avec quelques raisons qu'ils n'en ont nul besoin et qu'il leur suffit d'obéir à leur instinct. De fait, la théorie musicale, ils l'apprennent le plus souvent à un âge  précoce (le plus tôt est le mieux) où aucune des bases scientifiques nécessaires n'est acquise. Lorsqu'ils seraient en âge de les assimiler, leur formation musicale est suffisamment engagée pour qu'ils n'éprouvent plus le besoin d'y revenir,  ne serait-ce que pour asseoir ce qu'ils ont appris sur des bases logiques incontestables. Il vaut peut-être mieux qu'il en soit ainsi car ils s'apercevraient  que cette logique  a souvent fait défaut à l'enseignement  qu'ils ont reçu. Cette chronique s'inspire, en particulier quoique très librement, de la lecture de quelques textes  du grand musicologue français, Jacques Chailley (1910-1999). La sentence   qui ouvre ses leçons dispensées en Sorbonne (Formation et transformation du langage musical - Intervalles et échelles) interpelle, </p>
+                  
+                  <blockquote>
+                        <p>Il règne dans la Musique un ordre admirable. Mais on a pu l'accuser de désordre par la faute de ceux qui ont entrepris de l'expliquer. (Aristoxène, Elém. Harm.)</p>
+              </blockquote>
+
+                  
+                  <p>mais force est de constater qu'elle n'a guère été suivie d'effets. Parfaitement conscient des nombreux contresens qui parsèment la théorie musicale,  déjà déplorés par Jean-Jacques Rousseau dans des articles parus dans l'Encyclopédie de Diderot, Chailley n'a jamais rien entrepris qui aurait été dans le sens de la réforme d'un enseignement qui en aurait pourtant tiré  un grand bénéfice. La théorie musicale rechigne, en fait, à faire le travail de rationalisation que se sont imposées toutes les théories scientifiques au tournant des années 1900.  Rien qu'une rationalisation de la gestion des clefs et des altérations ne serait pas  un luxe mais il semble aussi difficile de réformer l'orthographe musicale (précisons : d'usage et non grammaticale !) que son équivalent français.  Les musiciens (comme les académiciens) ont leurs raisons que nous allons tenter de comprendre car, de toutes façons, ils  auront toujours le dernier mot.</p>
+                  
+                 
+          <div id="justesse">
+    <h4>Entre justesse et transposition</h4>
+
+<h6>a) Justesse</h6>
+            <p>La musique étant l'art d'ordonner les sons,  la justesse de leurs superpositions (harmonie) ou de leurs enchaînements (mélodie) semble primordiale. C'était certainement une évidence à l'époque baroque mais ce l'est peut-être  moins de nos jours car nos oreilles sont devenues nettement plus (trop ?) tolérantes.</p>
+                    <p>Un son se distingue d'un bruit du fait qu'il est périodique, sollicitant nos tympans à la fréquence de f impulsions par secondes (f  en Hz). C'est cette fréquence qui fixe sa &quot;hauteur&quot;, grave ou aiguë. On a identifié depuis très longtemps la règle essentielle de la consonance : deux sons résonnent  en harmonie si le rapport de leurs fréquences fondamentales s'exprime par une fraction simple.  En dehors du trivial unisson, on retient prioritairement les rapports  : 2/1 (octave), 3/2 (quinte), 4/3 (quarte), 5/4 (tierce majeure), 5/3 (sixte majeure), 6/5 (tierce mineure) et 8/5 (sixte mineure). </p>
+                    <p>La justification de cette règle est d'ordre physique : tout son  fait vibrer l'air à sa fréquence  fondamentale, f, mais aussi et simultanément aux fréquences multiples (dites harmoniques), 2f, 3f, 4f, ..., avec des intensités relatives (et accessoirement des déphasages) qui dépendent (du timbre) de l'instrument émetteur. Deux sons distincts sont consonants lorsqu'ils partagent un nombre &quot;appréciable&quot; de composantes harmoniques. Voici les exemples les plus simples  : </p>
+                    
+                    
+    <ul class="miniListCorps">
+<li>Le son situé à l'octave (supérieure) du son de référence possède le spectre des fréquences, 2f, 4f, 6f, ..., d'où  toutes ses composantes harmoniques sont présentes dans le spectre  de référence. La consonance est parfaite dans ce cas.</li>
+                      <li>Le son situé à la quinte (supérieure) du son de référence possède le spectre des fréquences, 3f/2, 3f, 9f/2, 6f, ... . Il partage la moitié de  ses composantes harmoniques avec le son de référence. La consonance est excellente dans ce cas.</li>
+                      <li>Le son situé à la quarte (supérieure) du son de référence possède le spectre des fréquences, 4f/3, 8f/3, 4f, 16f/3, ... . Il partage le tiers de  ses composantes harmoniques avec le son de référence. La consonance est encore très bonne.</li>
+                      <li>Et ainsi de suite pour une consonance qui s'appauvrit progressivement sans que l'on soit en mesure de quantifier cette dégradation avec précision, d'autant que la physiologie de la chaîne qui relie l'oreille au cerveau a aussi son mot à dire.</li>
+    </ul>
+    <p>L'intervalle entre deux sons est défini selon le rapport (et non  la différence !) de leurs fréquences respectives. Cette règle géométrique (et non arithmétique !) découle du fait que l'oreille humaine est sensible au phénomène d'octave : une mélodie répétée en doublant les fréquences de chaque note sonne comme la mélodie primitive mais en plus aiguë, à l'octave supérieure. Cela reste vrai si on multiplie les fréquences des notes par un facteur constant quelconque, x (&gt;1;  si x &lt; 1,  la deuxième mélodie sonnera en plus grave). Une autre manière d'exprimer la propriété invoquée de l'oreille consiste à dire que sa réponse en fréquence est logarithmique : des sons émis en séquence, dont les fréquences croissent (ou décroissent) selon une progression géométrique, f, x f, x<sup>2</sup> f, x<sup>3</sup> f, ..., sont perçus  comme &quot;équidistants&quot;.</p>
+    <p>On définit, sur cette base, l'intervalle séparant deux sons de fréquences, f<sub>1</sub> et f<sub>2</sub> : Int = 1200 ℓg(f<sub>2</sub>/f<sub>1</sub>) (mesuré en cents), où ℓg désigne le logarithme en base 2. Connaissant l'intervalle qui sépare deux sons, il est possible de retrouver leur rapport fréquentiel, il suffit d'inverser la formule précédente sous la forme, f<sub>2</sub>/f<sub>1</sub> = 2<sup>Int/1200</sup>. Voici les valeurs de quelques intervalles  consonants :</p> 
+                    
+<table>
+         <tr>
+                           <th>unisson (1/1)</th>
+                           <th>octave (2/1)</th>
+                           <th>quinte (3/2)</th>
+                           <th>quarte (4/3)</th>
+                           <th>tierce majeure (5/4)</th>
+                           <th>sixte majeure (5/3)</th>
+                           <th>tierce mineure (6/5)</th>
+                           <th>sixte mineure (8/5)</th>  
+          </tr>
+                       <tr>
+                           <td>0 (cents)</td>
+       <td>1200 (cents)</td>
+                           <td>701.955 (cents)</td>
+                           <td>498.045 (cents)</td>
+                           <td>386.314 (cents)</td>
+                           <td>884.359 (cents)</td>
+                           <td>315.641 (cents)</td>
+                           <td>813.686 (cents)</td>
+                       </tr>
+            </table>
+                  <figcaption>Valeurs (en cents) de quelques  intervalles purs</figcaption>
+                 
+<p>Le défaut de consonance, en tous cas le désagrément qu'il provoque à l'audition, est largement imputable au phénomène physique de battement. Lorsqu'on superpose deux sons de fréquences nettement différentes, tout se passe bien, l'oreille   les perçoit distinctement. Lorsque les fréquences se rapprochent, un  battement apparaît sous la forme d'une ondulation  de l'intensité résultante, à la fréquence, f<sub>batt</sub> = f<sub>2</sub> - f<sub>1</sub>. Le temps que dure une oscillation complète s'appelle la période de battement, T<sub>batt</sub> = 1/(f<sub>2</sub> - f<sub>1</sub>). Ce phénomène peut représenter une gêne pour l'oreille, à la manière d'une lumière stroboscopique perturbante pour l'oeil.  La plage des fréquences gênantes, f<sub>batt</sub>,  se situe (très) approximativement entre 5 Hz et 25 Hz : en-deça, le battement est d'autant mieux toléré que les notes se suivent et s'estompent à un rythme soutenu  et, au-delà, l'oreille ne détecte plus le phénomène, incapable de suivre  la cadence des oscillations. On traduit cette plage fréquentielle,  en termes d'intervalles, en partant de la formule,   f<sub>batt</sub> = f<sub>2</sub> - f<sub>1</sub> =   f<sub>1</sub> (2<sup>Int/1200</sup>-1) &cong; f<sub>1</sub> 0.693 (Int/1200).   On en déduit  la zone critique : 10390/f<sub>1</sub> &lt; Int &lt; 43290/f<sub>1</sub>.  Dans l'octave du milieu, f<sub>1</sub> est de l'ordre de 260 Hz d'où on a : 33 (cents) &lt; Int < 165 (cents). Une ou deux octaves plus bas, ces limites devraient être corrigées à la hausse.</p>
+    
+    <p><i>Note. Les octaves inférieures  sont très fréquentées par l'orgue qui est, de fait, l'instrument le plus sensible aux  battements. Le problème  est encore aggravé par le fait que c'est aussi l'intrument où les notes sont souvent maintenues le plus longtemps.  Les organistes sont, de ce fait, particulièrement concernés par les problèmes de justesse et de tempérament (cfr infra). Toujours, à l'orgue, le phénomène de battement est exceptionnellement cultivé : la plupart des instruments possèdent un registre particulier qu'on nomme &quot;voix céleste&quot;, qui implique des tuyaux volontairement accordés sur des fréquences voisines. Le battement y est alors cultivé pour ses trémolos évocateurs.</i></p>
+    
+   <p> Les intervalles usuels de types &quot;courts&quot;, 2<sup>de</sup> mineure (do-ré<i>b</i>) et 2<sup>de</sup> majeure (do-ré), sont concernés par la limite calculée et ils sont, de ce fait, classés parmi les intervalles dissonants. Les intervalles plus "longs" y échappent, d'où on pourrait s'étonner que la quarte augmentée (do-fa#) et la quinte diminuée (do-sol<i>b</i>) soient également rangés parmi les intervalles particulièrement dissonants.   </p>
+   <p>La réponse est que les battements ne concernent pas que les fréquences fondamentales des sons mais aussi celles de leurs  harmoniques. Autrement dit, si les sons étaient dépourvus d'harmoniques, par exemple émis  par des diapasons sinusoïdaux (pas très musicaux évidemment car complètement détimbrés), alors, effectivement, aucun  battement secondaire n'existerait. Mais l'existence de ces harmoniques a pour conséquence que des battements secondaires peuvent se produire entre harmoniques de rangs plus ou moins élevés. Voyons cela sur l'exemple de la superposition d'un moderne do<sub>4</sub> (261.63 Hz) et de sa tierce majeure, pure (5/4 x 261.63 = 327.04 Hz) ou<sub></sub> tempérée (1.26 x 261.63 = 329.65 Hz).</p>
+   
+   <div class="conteneurImageSeule">
+<div>
+                          <figure>
+                              <img src="../images/arithm/rapportsf.png" alt="Intervalles entre composantes harmoniques"/>
+                              <figcaption>Intervalles entre composantes harmoniques</figcaption>
+                          </figure>
+                      </div>
+  </div>
+   <p>Lorsque deux sons  entretiennent  un rapport fréquentiel, f<sub>2</sub>/f<sub>1</sub> = m/n, simple et exact, par exemple 1.25 = 5/4  (cas de la tierce majeure pure), aucun battement,  fondamental ou secondaire, n'est à redouter. Cela apparaît sur la figure ci-contre (à gauche) qui mentionne les intervalles (en cents) entre  les premières combinaisons d'harmoniques possibles : elles sont soit supérieures à 300 cents soit nulles, dans tous les cas en-dehors de la zone gênante. Si, pour quelque raison que ce soit, le rapport 5/4 n'est pas absolument respecté,  par exemple s'il vaut 1.26 (ce qui est le cas de la moderne tierce majeure tempérée), la même figure (à droite) montre que la consonance est, par exemple, menacée par un battement  entre les harmoniques de rangs m = 5 (du son de fréquence f<sub>1</sub>) et n = 4 (du son de fréquence f<sub>2</sub>), d'autant plus perceptible que les intensités des harmoniques en question sont grandes. Ce battement prend la forme d'une ondulation de l'intensité, à  la fréquence, n f<sub>2</sub> - m f<sub>1</sub>, de l'ordre de 10 Hz dans l'exemple traité. Le phénomène apparait nettement sur la figure ci-dessous (à droite). Je ne vous le fais pas entendre  car, sauf à être particulièrement sensibles,  nos oreilles contemporaines ne protestent plus guère contre cette tierce tempérée pas trop juste. Nos ancêtres étaient plus exigeants,  il y a 500 ans !</p>
+    
+        <div class="conteneurImages">
+<div> <figure>
+                              <img src="../images/arithm/battements.png" alt="Tierces pure et impure" />
+                              <figcaption>Tierce pure (5/4) ou impure (tempérée, 1.26), superposée à un moderne do<sub>4</sub></figcaption>
+</figure></div>
+                      </div>
+ 
+             <h6>b) Transposition</h6>   
+<p>Transposer un air, c'est  multiplier la fréquence de chacune de ses notes par un facteur constant, x. On recourt à la transposition toutes les fois que l'on veut jouer un même air sur un instrument (éventuellement la voix) dont la tessiture diffère de celle de l'instrument prévu originellement. On pourrait s'étonner que des musiciens réputés sérieux s'encombrent d'une telle notion : si le compositeur a pris la peine d'écrire son oeuvre pour un instrument donné, dans une tonalité précisée, c'est pour qu'elle soit jouée de cette façon et pas d'une autre. Cette latitude a pourtant toujours existé,  ne fut-ce que pour satisfaire de nombreux amateurs désireux d'adapter des oeuvres pas trop difficiles du répertoire à leur usage personnel. Les chanteurs (ou les chanteuses !) de toutes tessitures sont également demandeurs, qui rêvent  d'interpréter  &quot;leur&quot; Voyage d'Hiver de Schubert, même s'ils ne sont pas ténors comme la partition l'a prévu. </p>
+<p>Apparentée  à la transposition mais fondamentalement plus importante, la modulation est utilisée par le compositeur toutes les fois qu'il veut agrémenter un mouvement en cours par une diversion durable, dans une tonalité contrastée,  en changeant de tonique et/ou de mode.</p>
+<p><i>Note. Ce procédé est omniprésent en musique dite classique. Il a même  inspiré des oeuvres à caractère didactique dont ces deux curiosités rarement entendues :</i></p>
+
+<ul class="miniListCorps">
+<li><i>
+ <a href="https://www.youtube.com/watch?v=wTuTtfiQTQc">Le Petit Labyrinthe harmonique</a>, pour orgue, dans tous les tons majeurs, a été attribué à J-S Bach (BWV 591) mais  on penche actuellement pour une oeuvre de Johann David Heinichen.</i></li> 
+ <li><i><a href="https://www.youtube.com/watch?v=8If1mQwGMjg">Deux Préludes</a>,  dans tous les tons majeurs, du jeune Beethoven à l'époque où, élève de Neefe, il écrivait encore pour orgue (opus 39).</i></li>
+</ul>
+
+<p>Justesse et transposition sont mathématiquement incompatibles et ce conflit a préoccupé les musiciens à toutes les époques, depuis la Renaissance. Epris de justesse, les premiers compositeurs baroques ont renoncé à la modulation intégrale mais leurs successeurs ont fait le choix inverse, abandonnant la justesse à tout prix, au bénéfice d'une plus grande liberté d'écriture. Les ressorts de ce revirement  vont nous occuper.</p>
+</div>
+
+                    
+<div id="gammes">
+<h4>Construction de la gamme pythagoricienne</h4>
+                    <p>On crédite habituellement  Pythagore (né vers -580) et plus probablement ses élèves,  d'avoir développé le premier modèle de gamme musicale. Ils l'ont fait en privilégiant les deux intervalles les plus immédiatement consonants, l'octave et la quinte.</p>
+                  <p>La gamme d'essence pythagoricienne est ancienne mais elle n'a, au fond, rien perdu de son actualité. Elle a, en particulier, conditionné l'orthographe musicale telle que nous la connaissons encore aujourd'hui. Sa construction s'effectue en deux temps :</p>
+          
+          <ul class="miniListCorps">
+<li>
+  On commence par construire un ensemble de notes entretenant un rapport de quinte juste au sein d'une octave unique, c'est l'objet de cette longue section.</li> 
+ <li>On tente ensuite d'étendre le schéma trouvé aux  octaves voisines, ce sera l'objet de la section suivante, relative au tempérament.</li>
+</ul>        
+    <p>L'incommensurabilité (géométrique, pas arithmétique, cfr supra !) entre les intervalles d'octave et de quinte rend cette double opération  irréalisable en toute rigueur,  d'où un compromis s'avérera nécessaire. </p>              
+                  
+  <h5 class="espaceTextConsequent">a) Un cycle de 6 quintes (7 notes)</h5>
+ 
+                  
+  <p>Le schéma pythagoricien génère  les notes successives, au sein de l'octave de référence, [f<sub>0</sub> - 2f<sub>0</sub>[, en suivant  la procédure élémentaire suivante  :</p>
+  
+  <ul class="miniListCorps">
+                    <li>Partant d'une note de base, de fréquence f<sub>0</sub>, on génère les notes situées aux quintes  ascendantes successives. Pour ce faire on multiplie itérativement f<sub>0</sub> par 3/2, ce qui génère la suite des (notes de) fréquences, f<sub>k</sub> = f<sub>0</sub> (3/2)<sup>k</sup> (k=0, 1, 2, 3, ...). Toutes ces notes, distantes d'un intervalle de quinte, sont consonantes.</li>
+                    <li>Sauf f<sub>0</sub> et f<sub>1</sub> = 3/2 f<sub>0</sub>,  aucune n'appartient   à l'octave de base, [f<sub>0 </sub>- 2f<sub>0</sub>[, d'où on les y ramène par autant de division par 2 qu'il est nécessaire. Ces divisions  ne modifient pas la consonance des notes puisqu'elles ne font que les transporter  une octave plus bas. On obtient ainsi une suite de (notes  de) fréquences, f<sub>0 </sub>(1, 3<sup>1</sup>/2<sup>1</sup>,  3<sup>2</sup>/2<sup>3</sup>,  3<sup>3</sup>/2<sup>4</sup>, 3<sup>4</sup>/2<sup>6</sup>, 3<sup>5</sup>/2<sup>7</sup>,  3<sup>6</sup>/2<sup>9</sup>,  3<sup>7</sup>/2<sup>11</sup>, 3<sup>8</sup>/2<sup>12</sup>, 3<sup>9</sup>/2<sup>14</sup>,  3<sup>10</sup>/2<sup>15</sup>,  3<sup>11</sup>/2<sup>17</sup>, ...), toutes consonantes, au motif imagé que  &quot;les amis de mes amis sont encore mes amis&quot;.</li>
+                   
+</ul>
+
+
+    <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/arithm/quintes7.png" alt="Cycle de 7 quintes"/>
+                              <figcaption>Cycle de 6 quintes (7 notes)</figcaption>
+                          </figure>
+                      </div>
+  </div>
+
+
+<p>On rend cette suite (provisoirement limitée à 6 itérations) plus parlante en la représentant  graphiquement, le long d'un cercle dont le périmètre complet représente l'octave.  Sur la figure ci-contre,  12 points rouges graduent ce cercle  de 0 à 1200 (cents), par pas de 100 (cents). </p>
+<p>Un cercle ne possèdant ni début ni fin,  il importe peu où l'on  marque le point (noir) qui situe la note de départ. Toutefois, dès que ce point initial est fixé, tous les autres suivent   à un intervalle de quinte (ascendante) valant, Q = 1200 ℓg(3/2)  = 701.95 (cents), ce qui correspond  à un arc de cercle de 3.67543 radians (soit 210° 35' 12&quot; ou encore 0.584963 tour de circonférence), orienté dans le sens horlogique. Une quinte descendante correspondrait au rapport inverse (2/3) donc au même arc de cercle mais orienté dans l'autre sens. On verra bientôt en quoi cet angle si proche de 210° a été une bénédiction pour (l'histoire de) la musique mais on verra aussi que le petit  excédent de 35' 12&quot; a été source de bien des  embarras, on n'est jamais content !</p>
+<p>  Sur la figure précédente, on est parti (avec une idée derrière la tête  !) du point 0, situé une quinte en-dessous du point 1, lui-même situé au sommet du cercle. Les six quintes ascendantes successives sont donc, 0-1, 1-2, 2-3, ... et 5-6. Ne confondez pas l'ordre des 6 quintes, qui sont des intervalles, avec celui des 7 notes qu'elles définissent et qui parcourent l'octave  dans l'ordre horlogique,  1, 3, 5, 0, 2, 4, 6. </p>
+<p>La première chose à faire est, sans doute, de justifier le choix fait de se limiter (provisoirement !) à 7 notes. Ne répondez pas que c'est parce que tout le monde sait bien que la gamme occidentale comporte 7 notes, c'est précisément ce que nous tentons de justifier, au moins heuristiquement !</p>
+<p><i>Note. Cercle ou spirale des quintes ? Dans la suite nous serons amenés à empiler un nombre de quintes de plus en plus grand d'où un problème éventuel de représentation. Toute note quelle que soit sa fréquence, f, est désignée par un point sur le cercle des quintes et sa position est connue dès que la note de base (le diapason) est fixée. L'inverse est plus délicat : à tout point correspond certes une note de fréquence, f, mais aussi toutes les notes situées aux octaves inférieures et supérieures, de fréquences, f 2<sup>k</sup> (k = 0, &plusmn;1, &plusmn;2, ...). Vous trouverez, dans la littérature, l'idée incongrue de remplacer le cercle des quintes par une spirale, au motif que cela permet de distinguer les octaves. Ce n'est pas une bonne idée car la métrique des intervalles n'est pas (aisément) définie sur une telle spirale or cette métrique est importante si l'on veut situer aisément chaque note : par exemple, sur le cercle, chaque quinte est mesurée par un arc de 701.95 cents (de même pour tous les autres intervalles sauf que la valeur diffère). L'idée d'une spirale est d'autant plus saugrenue que personne ne proteste de devoir lire l'heure sur un cadran de montre qui indique 5 heures tous les jours de la semaine, matin et soir, sans autre explication. Dans tous les cas, le contexte résout les ambiguïtés liées à cette représentation modulaire.</i></p>
+
+  <h5 class="espaceTextConsequent">b) L'alternance des quintes  ascendantes et des quartes descendantes </h5>
+  <p>Empiler des quintes et les ramener à l'octave de référence n'est pas la façon la plus élégante de procéder, d'autant qu'à force de multiplier itérativement la fréquence de base par 3/2, on se retrouve vite dans le domaine des ultrasons ! La variante suivante est équivalente mais  plus réaliste. Le début est identique : on conserve la note de base, de fréquence, f<sub>0</sub>, mais cette fois, on alterne une quinte ascendante et une quarte descendante. La quarte est le complément naturel de la quinte : un son situé une quarte en-dessous d'un son  de fréquence, f<sub>0</sub>, possède, par définition, la fréquence 3f<sub>0</sub>/4; il se situe donc une octave  en-dessous de   la quinte ascendante. On représente une quarte <em>descendante</em>, en se déplaçant de q = 1200 ℓg(4/3)  = 498.045 (cents) dans le sens contre-horlogique, ce qui revient bien au même que d'augmenter d'une quinte (à une octave près). Encore dit autrement, une quinte (701.95) plus une quarte (498.045) vaut une octave 1200 (cents).</p>
+  
+  <div class="conteneurImageSeule">
+                <div>
+                          <figure>
+                              <img src="../images/arithm/domajeur.png" alt="Mode de do majeur"/>
+                              <figcaption>Mode (de do) majeur</figcaption>
+                          </figure>
+                      </div>
+  </div>
+  
+  <p>Remplacer l'empilement des quintes  par l'alternance répétée d'une quinte ascendante et d'une quarte descendante ne change donc rien au résultat du calcul de la suite des fréquences des notes engendrées (Multipliez les fractions si vous doutez encore!). Cependant, on en tire  ce bénéfice qu'en partant de la fréquence basse (f<sub>0</sub>) de l'octave, [f<sub>0</sub> - 2f<sub>0</sub>[, il n'est plus nécessaire de changer artificiellement d'octave,  pendant les 6 premières itérations. Les 7 notes de  la gamme heptatonique apparaissent spontanément, dans l'énumération dite &quot;par les quintes&quot;, fa, do, sol, ré, la, mi, si. La note de départ, fa, ne joue aucun rôle particulier dans ce processus et l'on pourrait partir de n'importe quelle autre note mais si l'on veut retarder autant que possible l'apparition des altérations, alors il convient de partir de cette note-là.</p>
+  
+  
+  
+  <p>La figure précédente situe les 7 notes que chacun (re)connaît et elle souligne les intervalles qui les séparent par un système de flèches. Deux types d'intervalles apparaissent (ton et demi-ton diatonique, on y reviendra),   qui définissent le mode (de do) majeur. Ne confondez pas :</p>
+  
+  <ul class="miniListCorps">
+<li>l'ordre des quintes ascendantes : fa, <strong>do</strong>, sol, ré, la, mi, si, où la tonique (do, dans ce cas) occupe obligatoirement la deuxième position et</li>
+                    <li> l'ordre des fréquences croissantes (du grave vers l'aigu) : <strong>do</strong>, ré mi, fa, sol, la, si, où la tonique occupe, cette fois, la première position.</li>
+</ul>
+<p>Les musiciens inscrivent traditionnellement ces notes sur une portée comportant (au moins) 5 lignes, dans l'ordre vertical ascendant des fréquences croissantes. Cette portée peut être vue comme une échelle un peu spéciale dont les échelons successifs (les lignes et les interlignes) seraient de hauteurs ... inégales, cela apparaît clairement sur le cercle des quintes (Les intervalles, mi-fa et si-do, sont, à vue de nez, deux fois plus court que les autres). Vous commencez à comprendre pourquoi il faut commencer le solfège le plus tôt possible : seul un jeune enfant peut s'accommoder, sans broncher, d'une échelle pareille. Reconnaissons que cela ne perturbe aucun musicien aguerri, les autres ayant abandonné depuis longtemps. Trève d'ironie, la succession des flèches définit les degrés de la gamme et c'est bien pratique : si do est la tonique, de degré <strong>&#8544;</strong>, la quarte (fa) occupe le degré <strong>&#8547;</strong>, la quinte (sol) occupe le degré <strong>&#8548;</strong> et l'octave (do supérieur) le degré <strong>&#8551;</strong>, les noms sont évocateurs. Sur une portée, on monte d'un degré toute les fois qu'on passe d'une ligne à l'interligne suivante (ou l'inverse) comme représenté sur la figure ci-dessous.</p>
+<div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/portee.png" alt="Portée musicale"/>
+                        <figcaption>Portée musicale (notation anglo-saxonne)</figcaption>
+    </figure></div>
+                      
+</div>
+
+
+ <p><i>Note. Dans tous les domaines de l'activité humaine, y compris scientifiques, les traditions sont porteuses de conventions séculaires (mal)heureuses, impossibles à changer tant elles sont ancrées dans les habitudes.  La notation musicale n'échappe pas à cette constatation.Cette figure utilise la convention anglo-saxonne de représenter les notes par des lettres : C = do, D = ré, E = mi, F = fa, G = sol, A = la et B = si (mais les germanophones utilisent H !). Cet ordre étrange  pourrait laisser penser  que les anglo-saxons démarrent l'octave à partir du  la mais ce n'est pas le cas. Dans tout système de notation, chaque note est, en théorie, porteuse d'un  indice  qui rappelle le numéro de l'octave à laquelle elle appartient (la<sub>3</sub>, la<sub>4</sub>, la<sub>5</sub>, ...). Les anglo-saxons  respectent  la recommandation internationale qui situe le  diapason moderne (la = 440 Hz) dans l'octave n°4, ce que ne font pas les latins qui en sont encore à le situer dans l'octave n°3. Bref, do<sub>3</sub> = C<sub>4</sub>, ré<sub>3</sub> = D<sub>4</sub>, mi<sub>3</sub> = E<sub>4</sub>, fa<sub>3</sub> = F<sub>4</sub>, sol<sub>3</sub> = G<sub>4</sub>, la<sub>3</sub> = A<sub>4</sub>, si<sub>3</sub> = B<sub>4</sub> et on recommence une octave plus haut, do<sub>4</sub> = C<sub>5</sub>, etc. </i></p>
+ <p><i> Dans l'immense majorité des cas, une partition   représente graphiquement  les notes sur une portée, une aide au déchiffrement des interprètes. Les rares exceptions concernent les musiques expérimentales (Stockhausen) et/ou algorithmiques (Xenakis). Dans le cadre théorique lié à l'enseignement de la musique, l'appellation des notes diffère cependant selon les écoles, recourant  à une version syllabique (pays latins et Russie) et/ou alphabétique (pays anglo-saxons). On a même  rêvé d'une écriture chiffrée.</i></p>
+ <ul class="miniListCorps">
+<li><i>Les  systèmes syllabique et alphabétique ont  coexisté, en France, jusqu'à ce que les théoriciens décrètent (vers 1700 ?) qu'ils faisaient double emploi, d'où le système syllabique s'est imposé. Dans l'article &quot;<a href="http://xn--encyclopdie-ibb.eu/index.php/beaux-arts/714335161-musique/712247184-SOLFIER">Solfier</a>&quot;  de l'Encyclopédie, Rousseau déplore cet abandon, rappelant mais apparemment en vain, que les deux notations poursuivent des buts différents : pour faire simple, la notation alphabétique (C, D, E, ...) s'adresse à l'oeil qui voit les notes couchées sur une partition ou les touches d'un clavier tandis que la notation syllabique s'adresse à l'oreille qui entend la  solmisation de ces notes (do, ré, mi, ...). La tradition française ayant opté pour une solmisation fixe (un do, altéré ou non, se chante do, etc), la distinction devenait, de fait, superflue.</i></li>
+                    <li><i>Les anglo-saxons sont, au contraire, adeptes d'une solmisation mobile (ou flottante), ne se servant des syllabes que comme de paroles conventionnelles sur l'air à chanter; peu importe que la tonique soit un do ou un mi, ils ne respectent que les intervalles. Vous ne faites rien d'autre lorsque vous chantez (juste !) la-la-la-la !</i> </li>
+                    <li><i>Une troisième voie existe qui n'a guère fait fortune. Si l'on avait confié le principe de la notation musicale à des mathématiciens, il est probable qu'ils auraient mis au point un système rationnel chiffré respectant les intervalles entre les notes. Etrangement, c'est un philosophe des Lumières, Jean-Jacques Rousseau, qui s'est risqué dans l'aventure. Ni mathématicien ni vraiment musicien (du moins professionnel, ce qui n'a pas empêché qu'on lui ait confié, et non à Rameau,  les articles sur la musique dans l'Encyclopédie), il a envoyé à l'Académie un projet de notation de ce type. Plutôt mal conçu, il a été recalé pour de mauvaises raisons et il est tombé aux oubliettes ... sauf que, &quot;relooké&quot;, il refait périodiquement surface (en particulier en Chine !), apprécié pour les facilités qu'il offre dans le cadre de l'initiation des enfants. Si vous voulez approfondir la question, reportez-vous au document intitulé <a href="../annexes/rousseau.pdf">Le Devenir du Système de Notation musicale de Jean-Jacques Rousseau</a>, issu des recherches du musicologue canadien, Claude Dauphin. </i></li>
+                    <li><i>J'ai rappelé par ailleurs (dans  <a href="../musique2001.html">Musique 2001</a>) le principe d'une variante théoriquement supérieure, reposant sur l'arithmétique en base 12, mais  les musiciens ne sont pas près de l'adopter, officiellement parce qu'aucune méthode chiffrée ne peut, à leur avis, rendre justice aux subtilités du langage musical et officieusement parce qu'ils sont conservateurs dans l'âme. Je n'en veux pour meilleure preuve que même lorsqu'ils entrent à l'école dodécaphonique, domaine où l'arithmétique en base 12 prend tout sons sens, ils continuent d'écrire sur une portée avec des dièses et des bémols, qui ne remplissent pourtant plus aucune fonction tonale. </i><i>Pour la petite histoire, sachez qu'il existe depuis 1944 (euh 1160 !) une pittoresque <a href="http://www.dozenal.org/">Dozenal (formerly Duodecimal) Society of America</a>  qui prône, sans grand succès, la généralisation  du système arithmétique en base 12 dans tous les secteurs d'activité de la société.  Elle a reçu, en 1948, un opuscule rédigé par  Velizar Godjevatz (1898-1986), un musicien américain formé à Oxford et Berlin, et mettant en évidence les avantages &quot;évidents&quot; d'une notation musicale chiffrée en base 12, ambitionnant de supprimer purement et simplement les altérations et les clefs (Je vous ai bricolé un <a href="../annexes/godjevatz.pdf">facsimile</a> du <a href="https://babel.hathitrust.org/cgi/pt?id=uc1.31822012461760;view=1up;seq=1">texte complet</a>, normalement introuvable sauf par les soins de la bibliothèque digitale  <a href="https://www.hathitrust.org/">HathiTrust</a>). Au plan syntaxique, la démonstration semble  convaincante, tel fut en tous cas l'avis du  célèbre critique musical, George Bernard Shaw, sollicité par la Société en tant que rapporteur. Il renvoie clairement aux commentaires faits en introduction de cette chronique.</i></li>
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/arithm/shaw.png" alt="Rapport de G-B Shaw"/>
+                          <figcaption>Rapport de G-B Shaw</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+ </ul>
+  
+ 
+<h5 class="espaceTextConsequent">c) Les altérations</h5>
+
+  <p>Sept notes par octave, c'est trop peu ! On aimerait  poursuivre l'alternance des quintes et des quartes  et ainsi définir de nouvelles notes qu'il va falloir nommer. Leur donner des noms inédits  ne serait pas une bonne idée, pensez aux compositeurs et aux interprètes qui devraient gérer un vocabulaire de plus en plus encombrant !  Dès le Moyen-Age, les théoriciens de la musique ont trouvé  une solution astucieuse, toujours en vigueur, c'est le principe de l'altération. </p>
+  
+  
+  
+  <p> Reconsidérons  l'alternance des quintes ascendantes et des quartes descendantes, au départ de la note, fa, mais reportons-la sur une portée. La figure  suivante est facile à décoder : une quinte fait monter de 5 degrés, une quarte fait descendre de 4 degrés, lignes et interlignes compris, et les 7 notes traditionnelles apparaissent  bien dans l'ordre des quintes, fa, do, sol, ré, la, mi, si. On constate qu'une quinte supplémentaire amènerait à dépasser  l'octave de référence (note blanche sur la figure) d'où une division par 2 s'impose, qui ramène la note au niveau du fa initial (on descend de 8 degrés). Cependant cette note ne peut être un vrai fa car elle n'en possède pas la fréquence. On calcule aisément l'intervalle qui sépare ces deux notes en effectuant les produits successifs correspondant aux 4 quintes ascendantes (3/2)<sup>4</sup>, entremêlées aux 3 quartes descendantes (3/4)<sup>3</sup>, enfin à l'abaissement d'une octave (1/2) : Int = 1200 ℓg(3<sup>7</sup>/2<sup>11</sup>) = 113.685 (cents) (ce qui correspond à un rapport de fréquences valant, 3<sup>7</sup>/2<sup>11</sup> = 1.06787). On  appelle  &quot;fa dièse = fa#&quot; cet autre fa. En poursuivant l'alternance, on engendrerait de nouvelles notes diésées, séparées de &quot;leur&quot; note naturelle par le même intervalle, appelé demi-ton chromatique, t<sub>c</sub>  = 113.685 (cents). </p>
+  
+  <div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/quintesquartes.png" alt="Cycle alterné de quintes et de quartes"/>
+                        <figcaption>Cycle alterné de quintes et de quartes</figcaption>
+    </figure></div>
+  </div> 
+  
+  
+   
+  
+  <p>La portée précédente peut être prolongée, vers la droite, autant de fois qu'on le souhaite : le cycle, fa, do, sol, ré, la, mi, si, est suivi d'un deuxième cycle avec dièses, fa#, do#, sol#, ré#, la#, mi#, si#, puis par un troisième cycle, avec doubles dièses, fa##, do##, sol##, ..., si##, etc. La règle précédente demeure valable : chaque fois qu'on ajoute  un  dièse à la note naturelle, on augmente l'intervalle de t<sub>c</sub>.</p>
+
+
+  <p>Rien n'empêche de prolonger la portée vers la gauche, au départ du fa initial : une première quarte ascendante génère une nouvelle sorte de si qu'on distingue du si habituel en lui collant cette fois un bémol (<i>b</i>). On  calcule aisément que l'intervalle qui sépare le si naturel du si<i>b</i> vaut encore un demi-ton chromatique et cela reste vrai à tous les niveaux : un bémol abaisse la note de 113.685 (cents). Le lecteur déjà égaré va pouvoir se récupérer grâce à la figure suivante, qui empile 20 quintes à partir de fa<i>b</i>.</p>
+  
+  
+  <h5 class="espaceTextConsequent">d) Un cycle de 20 quintes (21 notes)</h5>
+  
+  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                            <img src="../images/arithm/gamme21.png" alt="Cycle de 21 quintes"/>
+                              <figcaption>Cycle de 20 quintes (21 notes)</figcaption>
+                          </figure>
+              </div>
+    </div>
+  <p>L'empilement de 20 quintes (ou l'alternance équivalente de quintes et de quartes), ramenées à une octave unique,  détermine 21 notes, naturelles ou simplement altérées. Il n'est pas nécessaire  de s'embarrasser des calculs  de fractions car nous savons, une fois pour toutes, qu'une quinte ascendante  correspond à une rotation de Q = 701.95 (cents) dans le sens horlogique. Les 21 notes se notent comme suit, dans l'ordre des quintes et au départ de fa<i>b</i> (histoire de se conformer à l'usage, cfr supra) : fa<i>b</i>, do<i>b</i>, sol<i>b</i>, ré<i>b</i>, la<i>b</i>, mi<i>b</i>, si<i>b</i>, fa, do, sol, ré, la mi, si, fa#, do#, sol#, ré#, la#, mi#, si#. Ne le confondez pas avec l'ordre selon les fréquences (du grave vers l'aigu) que vous lisez en parcourant le cercle dans le sens horlogique, selon l'usage à partir du do (do, si#, ré<i>b</i>, do#, ré, etc). </p>
+  <p>Les intervalles qui séparent les 21 notes sont de  deux types principaux :</p>
+  
+  <ul class="miniListCorps">
+                    <li>Le demi-ton diatonique valant, t<sub>d</sub> = 1200 ℓg(2<sup>8</sup>/3<sup>5</sup>) = 90.225 (cents), sépare les notes naturelles mi-fa et si-do.</li>
+                    <li>Le demi-ton chromatique valant, t<sub>c</sub> = 1200 ℓg(3<sup>7</sup>/2<sup>11</sup>) = 113.68 (cents), sépare les notes naturelles de leurs variantes simplement altérées (en # ou en <i>b</i>), par exemple, ré-ré#. </li>
+</ul>
+<p>Les autres intervalles observés sont des combinaisons linéaires de ces deux-là. Par exemple :
+
+<ul class="miniListCorps">
+                    <li>Le ton, valant, T = t<sub>d</sub> + t<sub>c</sub> = 
+1200 ℓg(3<sup>2</sup>/2<sup>3</sup>) = 203.91 (cents), sépare les notes naturelles do-ré, ré-mi, fa-sol, sol-la et la-si. Le mode majeur est donc caractérisé par la succession d'intervalles, T, T, t<sub>d</sub>, T, T, T, t<sub>d</sub>.</li>
+                    <li>Le petit intervalle séparant les notes, dites anharmoniques, par exemple mi<i>b</i>-ré#,  vaut, P = t<sub>c</sub> - t<sub>d</sub> = 1200 ℓg(3<sup>12</sup>/2<sup>19</sup>) = 23.46 (cents), c'est le comma pythagoricien (très approximativement 1/9 de ton). <br/>
+                    <i>Note. En théorie moderne, deux notes sont dites anharmoniques (ou synonymes) lorsqu'elles correspondent à une même touche du clavier également tempéré (ex. do#-réb). Ce n'est manifestement pas le sens primitif, l'anharmonie ayant existé bien avant l'avènement du tempérament égal, d'où il semble utile de revenir à l'étymologie &quot;abscence d'harmonie&quot; : la petitesse du comma pythagoricien empêche, de fait, ces notes de sonner en harmonie, revoyez les explications relatives au phénomène de battement.</i></li>
+                    <li>La quinte vaut, Q = 
+3t<sub>c</sub> + 4t<sub>d</sub> = 701.955 (cents), la quarte vaut, q = 2t<sub>c</sub> + 3t<sub>d</sub> = 498.045 (cents) et l'octave vaut naturellement, 
+5t<sub>c</sub> + 7t<sub>d</sub> = 1200 (cents).</li>
+</ul>
+
+ 
+<p> Si vous avez suivi, les notes multiplement altérées  sont distantes de la note naturelle de même nom d'autant de demi-tons chromatiques que l'on compte de dièses ou de bémols. Par exemple, les intervalles, fa<i>b</i>-fa, fa<i>bb</i>-fa<i>b</i>, fa-fa# ou fa#-fa## valent tous t<sub>c</sub>, d'où l'intervalle fabb-fa vaut 2t<sub>c</sub>. Les altérations triples sont rarement prises en considération.</p>
+
+ <p><i>Note. Bien que la logique ait peu à dire sur la question, vous trouverez dans la littérature au moins une autre &quot;explication&quot; au fait qu'on se soit limité à 7 (noms de) notes, recourant aux symboles d'altérations pour les autres. </i></p>
+            
+            <ul class="miniListCorps">
+                    <li><i>Si l'on suit le cycle des  quintes, en partant de fa, on observe qu'on repasse un peu en-deça de ce fa après cinq itérations (mi n'est distant de fa que d'un demi-ton diatonique, t<sub>d</sub> = 90.225 (cents)). On pourrait certainement décider de s'arrêter là et formaliser le cycle sur base de 5 (noms de) notes seulement. On obtiendrait une gamme pentatonique (pentaphonique serait plus judicieux), fa, do, sol, ré, la, semblable à celle effectivement en usage dans certaines contrées d'Orient. Dans ce système, mi et  si n'existeraient plus que comme des fa et  do altérés, qu'on noterait, par exemple (une fantaisie),  fa<i>&lt;</i> et do<i>&lt; </i>(situés un demi-ton diatonique plus bas que les fa et do naturels). Dans ce système, un cycle de 15 quintes détaillerait les notes dans l'ordre, fa<i>></i>, do<i>></i>, sol<i>></i>, ré<i>></i>, la<i>></i>, fa, do sol, ré, la, fa<i>&lt;</i>, do<i>&lt;</i>, sol<i>&lt;</i>, ré<i>&lt;</i>, la<i>&lt;</i>,  où les altérations,<i> ></i> et <i>&lt;</i>, porteraient  sur un un demi-ton diatonique, t<sub>d</sub>.</i></li>
+                    <li><i>En poursuivant  le cycle des  quintes,  on observe qu'on repasse également à proximité du  fa initial après sept itérations (fa# n'est distant de fa que d'un demi-ton chromatique, t<sub>c</sub> = 113.685 (cents)). On retrouve précisément la gamme heptatonique traditionnelle (heptaphonique serait à nouveau mieux). Les altérations sont, évidemment, les # et les <i>b</i> traditionnels, qui portent, cette fois, sur un demi-ton chromatique, t<sub>c</sub>.</i></li>
+                     <li><i>Une troisième possibilité résulte d'un nouveau passage à proximité du fa initial après douze itérations (mi# n'est distant de fa que d'un comma pythagoricien, P), c'est la gamme dodécaphonique (tiens, on ne dit pas dodécatonique !), pour laquelle une saine logique exigerait qu'on invente 5 nouveaux noms de notes non altérées. Un cycle de 36 quintes se déclinerait dans ce cas (nouvelle fantaisie) :  fa<sub><font face="Symbol">&darr;</font></sub>, do<sub><font face="Symbol">&darr;</font></sub>, sol<sub><font face="Symbol">&darr;</font></sub>, ré<sub><font face="Symbol">&darr;</font></sub>, la<sub><font face="Symbol">&darr;</font></sub>, mi<sub><font face="Symbol">&darr;</font></sub>, si<sub><font face="Symbol">&darr;</font></sub>, U<sub><font face="Symbol">&darr;</font></sub>, V<sub><font face="Symbol">&darr;</font></sub>, W<sub><font face="Symbol">&darr;</font></sub>, X<sub><font face="Symbol">&darr;</font></sub>, Y<sub><font face="Symbol">&darr;</font></sub>, fa, do, sol, ré, la, mi, si, U, V, W, X, Y, fa<sub><font face="Symbol">&uarr;</font></sub>, do<sub><font face="Symbol">&uarr;</font></sub>, sol<sub><font face="Symbol">&uarr;</font></sub>, ré<sub><font face="Symbol">&uarr;</font></sub>, la<sub><font face="Symbol">&uarr;</font></sub>, mi<sub><font face="Symbol">&uarr;</font></sub>, si<sub><font face="Symbol">&uarr;</font></sub>, U<sub><font face="Symbol">&uarr;</font></sub>, V<sub><font face="Symbol">&uarr;</font></sub>, W<sub><font face="Symbol">&uarr;</font></sub>, X<sub><font face="Symbol">&uarr;</font></sub>, Y<sub><font face="Symbol">&uarr;</font></sub>, où les altérations, <font face="Symbol">&darr;</font> et <font face="Symbol">&uarr;</font>, porteraient cette fois sur un comma pythagoricien, P. Une gamme dodécaphonique existe effectivement mais ce n'est pas celle décrite ici, le comma pythagoricien a bien trop mauvaise réputation. La vraie gamme dodécaphonique (cfr infra) éradique ce comma par le choix du tempérament égal et elle prend alors le nom de gamme chromatique.</i></li>
+</ul>
+
+
+<h5 class="espaceTextConsequent">e) Problèmes de transposition</h5>
+<p>Dans la figure précédente, les repères fléchés  signent le mode (de do) majeur. Sauf altérations passagères, les notes utilisées dans ce mode sont  celles désignées par les vecteurs, ici les notes naturelles. Pour transposer (moduler) dans une autre tonalité majeure, par exemple ré (ou ré#), il suffit de faire tourner l'ensemble des 7 vecteurs  en positionnant la flèche en gras en face de la  nouvelle tonique. </p>
+<p>La figure suivante affiche, à gauche, le résultat de la transposition en ré majeur. On constate que les notes constitutives du nouveau ton (do#, ré, mi, fa#, sol, la, si) recouvrent largement l'ensemble des notes naturelles (seules les notes do et fa sont diésées) : on dit que les tonalités de do et de ré majeur sont proches d'où une modulation peut se faire en douceur. Déplacez mentalement la tonique en face du do# et vérifiez que toutes les notes sont, à présent, diésées : ce mode est particulièrement éloigné (de do majeur). </p>
+<p> Parmi les 21 tonalités majeures envisageables,  six (ré#, mi#, sol#, la#, si# et fab) posent  un problème supplémentaire. Il apparaît clairement sur la figure de droite,  qui concerne la transposition en  ré# majeur : deux notes   sont manifestement manquantes.  On les génère en poursuivant l'empilement des quintes, ce qui fait apparaître les  notes doublement altérées.</p>
+  <div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/transpo21.png" alt="Transpositon en ré M ou en ré# M"/>
+                        <figcaption>Transpositon en ré M ou en ré# M</figcaption>
+    </figure></div>
+  </div> 
+   <p></p>
+<h5 class="espaceTextConsequent">f) Un cycle de 34 quintes (35 notes)  </h5>
+
+  <div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/arithm/gamme35parquintes.png" alt="Cycle de 35 quintes" />
+                              <figcaption>Cycle de 34 quintes (35 notes)</figcaption>
+                                 </figure></div>
+</div>
+
+<p>Empilons donc 34 quintes, par le procédé que nous connaissons, et générons toutes les notes au plus doublement altérées, de fabb à si##. La liste complète s'écrit dans l'ordre suivant des quintes ascendantes :</p>
+<div class="containerBlocDiv">
+fa<i>b</i><i>b</i>&#8201;do<i>b</i><i>b</i>&#8201;sol<i>b</i><i>b</i>&#8201;ré<i>b</i><i>b</i>&#8201;la<i>b</i><i>b</i>&#8201;mi<i>b</i><i>b</i>&#8201;si<i>b</i><i>b</i>&#8201;fa<i>b</i>&#8201;do<i>b</i>&#8201;sol<i>b</i>&#8201;ré<i>b</i>&#8201;la<i>b</i>&#8201;mi<i>b</i>&#8201;si<i>b</i>&#8201;fa&#8201;do&#8201;sol&#8201;ré&#8201;la&#8201;mi&#8201;si&#8201;fa#&#8201;do#&#8201;sol#&#8201;ré#&#8201;la#&#8201;mi#&#8201;si#&#8201;fa##&#8201;do##&#8201;sol##&#8201;ré##&#8201;la##&#8201;mi##&#8201;si##</div>
+
+<p>  Le cercle ci-dessus a été étudié en détails pour la première fois par William Holder (1616-1697) dans son traité &quot;A Treatise of the natural Grounds and Principles of Harmony&quot;, daté de 1694. Divisé en 53 parties égales (points verts sur la figure),  on constate, qu'à peu de choses près, les 35 notes occupent chacune un de ces sites. Holder en a déduit qu'une partition de l'octave en 53 parties égales était proche de l'idéal,  sauf que les problèmes de transpositions subsistent dans certaines tonalités, qui exigeraient de nouvelles notes triplement altérées. Personne n'a évidemment souhaité s'engager dans  cette direction, ni les facteurs, les accordeurs, les compositeurs ni les interprètes !</p>
+
+<h5 class="espaceTextConsequent">g) Réduction de la gamme à 12 notes  </h5>
+
+<p>Le système de Holder est impraticable mais il constitue une  base de travail qu'on peut simplifier. Le premier élagage consiste à écarter les tonalités exotiques, basées sur une tonique doublement altérée (par exemple do## majeur). On ne conserve donc que les 21 tonalités, de fa<i>b</i> à si#. A ces 21 notes, nous devons ajouter  six notes doublement altérées, si<i>b</i><i>b</i>, fa##, do##, sol##, ré## et la##, afin de couvrir tous les cas de transpositions majeures (Si vous doutez, promenez la tonique de fa<i>b</i> à si#, sur la figure suivante et retenez les notes dont vous avez besoin). Au bilan (provisoire), nous avons  besoin de 27 notes, que nous extrayons de la liste précédente, toujours dans l'ordre des quintes :</p>
+
+<div class="containerBlocDiv"> <span class="souligner">si<i>b</i><i>b</i> <strong>fa<i>b</i></strong> do<i>b</i> sol<i>b</i> ré<i>b</i> la<i>b</i> mi<i>b</i></span> si<i>b</i> fa do sol ré la mi si fa# do# sol# ré# la# <span class="souligner">mi# <strong>si#</strong> fa## do## sol## ré## la##</span></div>
+
+ <div class="conteneurImageSeule">
+                <div>
+                          <figure>
+                            <img src="../images/arithm/notes27.png" alt="Cycle de 26 quintes"/>
+                              <figcaption>Cycle de 26 quintes (27 notes)</figcaption>
+                          </figure>
+              </div>
+    </div>
+    <p>On retomberait sur cette liste tronquée  en empilant 26 quintes au départ de si<i>b</i><i>b</i>, comme représenté ci-contre.</p>
+    <p> Cette liste contient l'information relative aux 21 gammes majeures, de fa<i>b</i> à si#; récapitulons-les : </p>
+    
+    <ul class="miniListCorps">
+                    
+<li> 7 notes consécutives sont constitutives d'une tonalité particulière  : la tonique (degré <strong>&#8544;</strong>, en position 2), la note située à sa gauche immédiate (degré <strong>&#8547;</strong>) et les 5 notes situées à sa droite immédiate (dans l'ordre, les degrés <strong>&#8548;</strong>, <strong>&#8545;</strong>, <strong>&#8549;</strong>, <strong>&#8546;</strong> et <strong>&#8550;</strong>). On en déduit immédiatement le nombre de dièses ou de bémols inscrits à la clef. A titre d'exemple, on a souligné les sous-ensembles de 7 notes constitutives des tonalités extrêmes, fa<i>b</i> et si# majeurs.</li>
+                    <li>Inversement connaissant le nombre de dièses ou de bémols à la clef, on en déduit  dans quelle tonalité on se trouve. Par exemple 4 dièses à la clef, nécessairement fa#, do#, sol# et ré#,  sont constitutifs de mi majeur et 3 bémols à la clef, nécessairement si<i>b</i>, mi<i>b</i> et la<i>b</i>, sont constitutifs de mi<i>b</i> majeur.</li>
+    </ul>
+    <p>Un second élagage est rendu possible par le fait que les notes  se regroupent par deux (ou par trois) autour des sommets d'un dodécagone presque régulier. Au voisinage de chaque sommet, les notes ne sont distantes que d'un comma pythagoricien (on pourrait dès lors les appeler anharmoniques, cfr supra), d'où l'idée de n'en retenir qu'une seule par sommet. Cela se fait très simplement, il suffit de  sélectionner  12 notes consécutives dans la liste précédente : on constate que, quel que soit le point de départ qu'on se donne, chaque note est bien voisine d'un sommet différent du dodécagone.  Il existe, en théorie, 10 gammes de 12 notes, de ce type, qu'on pourrait également qualifier d'anharmoniques car elle ne diffèrent que par le choix de notes  anharmoniques. On n'en conserve habituellement que  6, précisément celles  qui contiennent les notes naturelles (do, ré, mi, fa, sol, la ,si) : </p>
+<table class="largeurSpecialeTableauLarge">
+                 <tr>
+                           <th>do</th>
+                           <td></td>
+                           <th>ré<i>b</i></th>
+                           <td></td>
+                           <th>ré</th>
+                           <td></td>
+                           <th>mi<i>b</i></th>
+                           <td></td>
+                           <th>mi</th>
+                           <td></td>
+                           <th>fa</th>
+                           <td></td>
+                           <th>sol<i>b</i></th>
+                           <td></td>
+                           <th>sol</th>
+                           <td></td>
+                           <th>la<i>b</i></th>
+                           <td></td>
+                           <th>la</th>
+                           <td></td>
+                           <th>si<i>b</i></th>
+                           <td></td>
+                           <th>si</th>
+                           <td></td>
+                           <th>(do)</th>
+                           
+                           
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                          
+                       </tr>
+                    </table>
+                    
+                    <table class="largeurSpecialeTableauLarge">
+                       <tr>
+                           <th>do</th>
+                           <td></td>
+                           <th>ré<i>b</i></th>
+                           <td></td>
+                           <th>ré</th>
+                           <td></td>
+                           <th>mi<i>b</i></th>
+                           <td></td>
+                           <th>mi</th>
+                           <td></td>
+                           <th>fa</th>
+                           <td></td>
+                           <th>fa#</th>
+                           <td></td>
+                           <th>sol</th>
+                           <td></td>
+                           <th>la<i>b</i></th>
+                           <td></td>
+                           <th>la</th>
+                           <td></td>
+                           <th>si<i>b</i></th>
+                           <td></td>
+                           <th>si</th>
+                           <td></td>
+                           <th>(do)</th>
+                           
+                           
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                          
+                       </tr>
+                    </table>
+                    
+                    <table class="largeurSpecialeTableauLarge">
+                       <tr>
+                           <th>do</th>
+                           <td></td>
+                           <th>do#</th>
+                           <td></td>
+                           <th>ré</th>
+                           <td></td>
+                           <th>mi<i>b</i></th>
+                           <td></td>
+                           <th>mi</th>
+                           <td></td>
+                           <th>fa</th>
+                           <td></td>
+                           <th>fa#</th>
+                           <td></td>
+                           <th>sol</th>
+                           <td></td>
+                           <th>la<i>b</i></th>
+                           <td></td>
+                           <th>la</th>
+                           <td></td>
+                           <th>si<i>b</i></th>
+                           <td></td>
+                           <th>si</th>
+                           <td></td>
+                           <th>(do)</th>
+                           
+                           
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                          
+                       </tr>
+                    </table>
+                    
+<table class="largeurSpecialeTableauLarge">
+                       <tr>
+                           <th>do</th>
+                           <td></td>
+                           <th>do#</th>
+                           <td></td>
+                           <th>ré</th>
+                           <td></td>
+                           <th>mi<i>b</i></th>
+                           <td></td>
+                           <th>mi</th>
+                           <td></td>
+                           <th>fa</th>
+                           <td></td>
+                           <th>fa#</th>
+                           <td></td>
+                           <th>sol</th>
+                           <td></td>
+                           <th>sol#</th>
+                           <td></td>
+                           <th>la</th>
+                           <td></td>
+                           <th>si<i>b</i></th>
+                           <td></td>
+                           <th>si</th>
+                           <td></td>
+                           <th>(do)</th>
+                           
+                           
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                          
+                      </tr>
+                    </table>
+                    
+                    <table class="largeurSpecialeTableauLarge">
+                       <tr>
+                           <th>do</th>
+                           <td></td>
+                           <th>do#</th>
+                           <td></td>
+                           <th>ré</th>
+                           <td></td>
+                           <th>ré#</th>
+                           <td></td>
+                           <th>mi</th>
+                           <td></td>
+                           <th>fa</th>
+                           <td></td>
+                           <th>fa#</th>
+                           <td></td>
+                           <th>sol</th>
+                           <td></td>
+                           <th>sol#</th>
+                           <td></td>
+                           <th>la</th>
+                           <td></td>
+                           <th>si<i>b</i></th>
+                           <td></td>
+                           <th>si</th>
+                           <td></td>
+                           <th>(do)</th>
+                           
+                           
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                          
+                       </tr>
+                    </table>
+                    
+        <table class="largeurSpecialeTableauLarge">
+                       <tr>
+                           <th>do</th>
+                           <td></td>
+                           <th>do#</th>
+                           <td></td>
+                           <th>ré</th>
+                           <td></td>
+                           <th>ré#</th>
+                           <td></td>
+                           <th>mi</th>
+                           <td></td>
+                           <th>fa</th>
+                           <td></td>
+                           <th>fa#</th>
+                           <td></td>
+                           <th>sol</th>
+                           <td></td>
+                           <th>sol#</th>
+                           <td></td>
+                           <th>la</th>
+                           <td></td>
+                           <th>la#</th>
+                           <td></td>
+                           <th>si</th>
+                           <td></td>
+                           <th>(do)</th>
+                           
+                           
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>c</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                           <td>t<sub>d</sub></td>
+                           <td></td>
+                          
+                       </tr>
+                    </table>
+                    <figcaption>Alternance des demi-tons dans les 6  gammes anharmoniques (pythagoriciennes) usuelles </figcaption>
+
+        <p><i>Note. Les variantes anharmoniques aident à comprendre la progression des tonalités adoptée par leur auteur dans quelques recueils célèbres   :</i></p>
+
+<ul class="miniListCorps">
+                    
+<li><i>La troisième ligne du tableau ci-avant reproduit  l'ordre essentiellement didactique des tonalités majeures retenues par J-S Bach dans le Livre I des 24 Préludes et Fugues du  Clavier bien tempéré  (do, do#, ré,  mi<i>b</i>, mi, fa, fa#, sol, la<i>b</i>, la, si<i>b</i>, si). On trouve l'ordre des tonalités mineures en reliant  si<i>b</i> à ré#. Johann Caspar Fischer l'avait précédé dans son <a href="https://www.youtube.com/watch?v=KQRGpuot-zk">Ariadne Musica</a>, pour orgue (1715). </i></li>
+                    <li><i>Dans son hommage à Bach, Dimitri Schostakovitch a ordonné ses 24 Préludes et Fugues, opus 87, dans l'ordre normal des quintes ascendantes,  de réb à fa# pour les tonalités majeures et de mib à sol# pour les tonalités mineures. Chopin ne procédera pas autrement dans son recueil de Préludes.</i></li>
+                    <li><i>D'autres recueils plus anciens  ou plus récents ont suivi des logiques plus ou moins différentes. Vous en trouverez des exemples sur <a href="https://en.wikipedia.org/wiki/Music_written_in_all_major_and/or_minor_keys">Wikipedia</a>.</i></li>
+</ul>
+
+<h5 class="espaceTextConsequent">h) L'imbroglio des octaves, des quintes et des tierces  </h5>
+<p>Il semblerait que nous ayons bien progressé dans la construction d'une gamme acceptable mais le modèle pythagoricien souffre encore de deux défauts majeurs qu'il faut corriger :</p>
+<ul class="miniListCorps">
+                    <li>Une partition de l'octave de base en 12 parties (plus ou moins égales) semble se dégager mais le problème de l'étendre aux octaves voisines demeure entier. L'idée, qui paraît naturelle,  de reproduire la succession des 12 notes une octave plus haut, en doublant simplement les fréquences de chacune, ne fonctionne malheureusement pas car le rapport de quinte 3/2 ne serait pas respecté, ce qui est inconcevable dans un modèle qui fait tout pour préserver les quintes justes. Pour que cela fonctionne, il faudrait que lorsqu'on empile 12 quintes, on retombe  sur la note de départ, auquel cas on aurait effectivement réussi à partitionner harmonieusement l'octave considérée (et dès lors, toutes les autres). Cela n'arrive malheureusement jamais car l'équation, (3/2)<sup>N</sup> = 2<sup>k</sup>, n'a pas de solution entière en N et k. L'impossibilité apparaît mieux lorsqu'on réécrit l'équation sous la forme équivalente, 3<sup>N</sup> = 2<sup>N+k</sup> : une puissance de 3, nécessairement impaire, n'est jamais égale à une puissance de 2, évidemment paire. L'équation est cependant "presque" satisfaite pour les valeurs, N=12 et k=7. C'est bien pour cela qu'on a fini par partitionner l'octave en 12 intervalles mais le fait demeure que  "12 quintes excèdent de fort peu 7 octaves", la figure suivante le rappelle.</li>
+                    <li>Même sans sortir de l'octave de base, on a cet autre problème que le modèle ne respecte pas la pureté de l'intervalle de tierce, cela apparaît également sur la figure. C'est la conséquence inévitable d'une incompatibilité de nature arithmétique entre la quinte et la tierce. Cette fois c'est  l'équation, (3/2)<sup>N</sup> = 2<sup>k </sup>(5/4)<sup>j</sup>, qui ne possède pas de solutions entières en N, k et j. Il existe, par bonheur, une solution approchée, N=4, k=2 et j=1, qui se traduit comme suit : en partant d'une note de référence quelconque, 4 quintes successives excèdent de peu une tierce majeure située deux octaves plus haut. L'écart s'élève à un comma syntonique, Z = 1200 ℓg(81/80) = 21.506 (cents). </li>
+        </ul>
+        
+        <div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/tierceM.png" alt="Intervalles simples"/>
+                              <figcaption>12 Quintes (resp. 4) excèdent une octave (resp. une tierce)</figcaption>
+          </figure></div>
+</div>
+<p>Dans les deux cas, c'est déjà ça, les quintes s'avèrent trop longues. Evidemment, il ne faut pas trop demander :  pour refermer l'octave sur le cycle des quintes il faudrait diminuer, en moyenne, 12 quintes de P soit environ P/12 = 1.955 (cents par quinte), tandis que pour rendre les tierces pures, il faudrait diminuer, en moyenne, 4 quintes de Z, soit  Z/4 = 5.38 (cents par quinte) ce qui est nettement plus ! Vous étiez prévenus, un compromis  s'avère nécessaire, c'est tout le problème du (choix d'un bon) tempérament. </p>
+
+
+<h4>L'espoir déçu d'une gamme naturelle</h4>
+ <div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/interv.png" alt="Intervalles purs"/>
+                              <figcaption>Intervalles purs</figcaption>
+          </figure></div>
+</div>
+<p>Le modèle pythagoricien n'assure, par construction, que la pureté de l'intervalle de quinte ascendante donc de quarte descendante.  Il ne se préoccupe absolument pas de la justesse des autres intervalles, par exemple des tierces (majeures, 5/4),  fausses d'un comma syntonique, Z. Cependant le travail qu'on a fait, en empilant des quintes justes, ne pourrait-on le faire aussi pour les tierces ? C'est en effet possible mais au prix d'une complication inévitable : passer de une à deux dimensions. </p>
+<p>Rappelons  l'alignement des quintes, toutes espacées d'un intervalle, Q = 701.955 (cents) :</p>
+
+<div class="conteneurImages">
+                <div> <figure>
+                              <img src="../images/arithm/quintesenligne.png" alt="Suite de quintes" />
+                              <figcaption>Suite de quintes</figcaption>
+                                 </figure></div>
+        </div>
+                     
+ <p>On étend le modèle aux tierces (majeures) en propageant le tableau dans la direction verticale du plan :                     
+        au départ de n'importe quelle note,  toute progression horizontale (de gauche à droite) fait monter d'une quinte (3/2) et toute progression verticale (de haut en bas) fait monter d'une tierce majeure (5/4), toujours ramenées à l'octave de base. Le tableau résultant est infini mais la figure ci-dessous ne fait que l'ébaucher, au départ de la note do, prise comme référence.<div class="conteneurImages">
+                      <div> <figure>
+                              <img src="../images/arithm/QettM.png" alt="Réseau de quintes et de tierces" />
+                              <figcaption>Réseau de quintes et de tierces</figcaption>
+          </figure></div>
+        </div>
+
+
+<p> Le point délicat concerne l'appellation des notes. Il devrait être clair que  les notes présentes sur la  ligne du &quot;do&quot; reçoivent un nom conforme au cycle des quintes mais que  pour toutes les autres, il faut trouver une nouvelle nomenclature. Il se  démontre que chaque note se situe dans le voisinage immédiat, c'est-à-dire à quelques schismas près, d'une note située quelques part dans le  cycle des quintes. Le tableau ci-contre montre quelques exemples.</p>
+
+<p><i>Note technique. Bien que ce ne soit pas le lieu d'une savante démonstration, indiquons néanmoins le principe de cette nomenclature. Il est commode de numéroter comme suit les lignes et les colonnes de ce tableau infini : la ligne et la colonne qui se croisent sur la note "do" portent chacune le n°0. Les lignes supérieures et les colonnes situées à gauche sont numérotées, -1, -2, etc, tandis que les lignes inférieures et les colonnes situées à droite sont numérotées, +1, +2, etc. Les coordonnées (u, v) de n'importe quelle note sont à présent définies par les numéros de la ligne et de la colonne qui se croisent sur elle. Par exemple, la note située dans le coin inférieur gauche possède les coordonnées, u = -1, et v = 2. On passe du "do" de référence à cette note en empilant u quintes (rapport 3/2, attention si u est négatif, la quinte est descendante, de rapport 2/3) et v tierces (rapport 5/4, attention si v est négatif, la tierce est descendante, de rapport 4/5). On calcule que la note la plus proche (à v &sigma; près) dans le cycle des quintes est caractérisée par le doublet  (m = Mod[1+u-8v,7], n = Floor[(1+u-8v)/7]), où l'entier, m, désigne la note selon le code, fa (m=0), do (m=1), sol (m=2), ré (m=3), la (m=4), mi (m=5) et si (m=6), et où l'entier relatif, n, indique le nombre d'altérations (n bémols si n est négatif et n dièses s'il est positif). Dans l'exemple, u = -1, et v = 2, on trouve : m = 5 et n = -3, donc la note incriminée est située 2&sigma; au-dessus du mibbb.</i></p>
+<p>Cette description  compliquée  suffit à montrer que l'extension rigoureuse de ce tableau théoriquement infini le rend quasiment inutilisable. Il constitue cependant, mais dans une version radicalement simplifiée, le principe de base de la gamme naturelle développée par Gioseffo Zarlino (1517-1590). La simplification consiste à ignorer les anharmonies et les petits schismas correcteurs. On obtient dès lors la simplification suivante :</p>
+<div class="conteneurImageSeule">
+<div>
+                          <figure>
+                            <img src="../images/arithm/zarlinogamme.png" alt="Gamme de Zarlino"/>
+                              <figcaption>Gamme de Zarlino (en do) et intervalles naturels</figcaption>
+                          </figure>
+              </div>
+    </div>
+<p> L'octave y est partitionné en intervalles pré-définis, fixant  comme suit les fréquences relatives des notes : f<sub>0</sub> {1 (do), 9/8 (ré), 5/4 (mi), 4/3 (fa), 3/2 (sol), 5/3 (la), 15/8 (si), 2 (do)}. Ce choix est dicté par le souci de reproduire par trois fois l'accord parfait (majeur), composé d'une note de base, de sa tierce (majeure) et de sa quinte, soit les rapports {1, 5/4, 3/2}; on a bien les accords parfaits, do-mi-sol, sol-si-ré et fa-la-do (Révisez vos fractions !).  Les 7 notes naturelles ont été ombrées et le motif de l'accord parfait (trois fois répétable) a été mis en évidence, en rose. Il reste alors à compléter par les notes altérées afin que la partition de l'octave soit harmonieuse.</p>
+<p>Cette gamme dont l'origine remonterait à Aristoxène (né vers -352) est basée non plus sur l'obsession arithmétique mais sur l'harmonie acoustique qu'assure l'accord parfait.</p>
+
+
+
+ 
+<p>Ce réseau tonal  pourrait à la rigueur être reporté sur le cercle d'octave mais le résultat serait fort peu lisible du fait de l'incommensurabilité entre les intervalles de quinte et de tierce. On observerait une accumulation pseudo-périodique de notes, difficile à débrouiller. Topologiquement la structure correcte est celle d'un tore (donc tridimesionnel) où le cycle des quintes est parcouru hélicoïdalement selon les arcs de grands cercles et les tierces selon les arcs de petits cercles. </p>
+<p>A diapason égal, les fréquences des notes zarliniennes ne coïncident évidemment pas exactement avec celles du modèle pythagoricien. Les intervalles ont tendance à se multiplier, c'est le prix qu'on paye pour la justesse des tierces :</p>
+
+<ul class="miniListCorps">
+                    
+	<li>Il existe à présent deux sortes de tons, le long (9/8, 203.91 cents) pour les intervalles do-ré, fa-sol et la-si et le court (10/9, 182.404 cents) pour les intervalles ré-mi et sol-la, la différence étant le comma syntonique, Z.</li>
+  	<li>De même, il existe à présent trois sortes de demi-tons, le diatonique (16/15, 111.731 cents) pour les intervalles mi-fa et si-do, le chromatique long (135/128, 92.178 cents) pour les intervalles fa-fa#, la-la# et ré<i>b</i>-ré et le chromatique court (25/24, 70.672 cents) pour les intervalles do-do#, ré-ré#, sol-sol#, mi<i>b</i>-mi, la<i>b</i>-la et si<i>b</i>-si. Les demi-tons chromatiques sont à nouveau distincts d'un comma syntonique, tout cela est inscrit dans le tableau précédent. A noter que rien que dans l'intervalle, do-ré,  les altérations se succèdent dans l'ordre inverse de ce qui se passe en mode pythagoricien : do-do#-ré<i>b</i>-ré au lieu de do-ré<i>b</i>-do#-ré. L'intervalle do#-ré<i>b</i> n'est pas mince, mesurant 41 cents soit un peu moins que deux commas.</li>
+               
+</ul>
+
+<p>Cette démultiplication des intervalles est incompatible avec le principe de la construction d'une gamme stable d'où après quelques essais infructueux concernant les instruments à sons fixes l'approche Zarlinienne a été abandonnée, à regrets. On a bien tenté de construire des claviers spéciaux adaptés à la gamme de Zarlino, par exemple  à doubles feintes pour jouer différemment les altérations voisines ou plus compliqué encore des claviers transpositeurs mobiles mais l'accumulation des difficultés a fait capoter le projet. L'objection touche moins les instruments à son variables, en particulier la voix non accompagnée qui a tendance à se conformer aux intervalles consonants purs. </p>
+<p>Le lecteur intéressé par les détails plus techniques peut se référer à l'article complet paru dans <a href="https://fr.wikipedia.org/wiki/Gamme_naturelle">Wikipedia</a>. Ne manquez pas la référence additionnelle à l'<a href="http://people.irisa.fr/Francois.Schwarzentruber/gammes/">applet sonore</a> du Professeur François Schwarzentruber.</p>
+<div class="conteneurImageSeule">
+                <div>
+                          <figure>
+                              <img src="../images/arithm/pesarese.png" alt="Clavier zarlinien"/>
+                              <figcaption>Clavier zarlinien (Domenico Pesarese, 1548)</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+
+<p>On pourrait imaginer un clavier respectant ces nouvelles règles : partant d'une note de base  quelconque, par exemple le moderne do<sub>4</sub> (261.626 Hz), on construirait l'ensemble des notes situées aux octaves, aux quintes  et aux tierces  supérieures et inférieures, par rapport à ce do<sub>4</sub>, mais demeurant dans l'intervalle la<sub>0 </sub>- do<sub>8</sub>. Elles sont  au nombre de 39, ce qui est insuffisant pour couvrir l'ambitus complet d'un piano moderne. Il semble alors naturel de réitérer les octaves, quintes et tierces en les appliquant aux 39 notes définies à l'étape précédente, hélas  le nombre des notes explose à la valeur 601, je vous épargne les calculs ! </p>
+
+   
+<p>Inutile de dire que cette voie est sans issue et qu'aucun instrument à son fixe ne peut adopter ce genre de gamme. Un tel instrument requiert, en effet, autant de systèmes oscillants autonomes (par exemple des cordes sur un clavecin ou un piano) que de notes distinctes à émettre, d'où les facteurs d'instruments protesteraient avec raison. De plus ce n'est ni nécessaire (l'oreille non exercée ne distingue généralement pas deux sons distants de moins de 4 cents) ni souhaitable (deux notes de fréquences voisines font entendre un phénomène de battement désagréable à l'oreille). Il faut donc prévoir un critère qui interrompt judicieusement cette suite infinie de notes. </p>
+<p>&nbsp;</p>
+<p>L'histoire de la musique s'est trouvée confrontée à plusieurs problèmes contradictoires réclamant une solution de compromis : améliorer la pureté des tierces sans trop compromettre celle des quintes au sein d'un système de notes réparties entre les octaves successives et autorisant un maximum sinon toutes les modulations. La solution est venue d'un aménagement de la théorie pythagoricienne, laborieusement mise au point par plusieurs  théoriciens, pendant plus d'un siècle, le temps que les esprits se convainquent d'adopter le tempérament égal.</p>
+
+
+</div>
+       
+       <div id="temperament">
+                    <h4>Le choix d'un tempérament</h4>
+                    
+ <p>Guéris de l'utopie zarlinienne, les théoriciens sont revenus au modèle pythagoricien, prêts à lâcher du lest  en termes de quintes pures. Nous l'avons dit, les quintes pures sont trop longues  pour fermer l'octave  et elles sont aussi trop longues  pour engendrer des tierces majeures pure. Il faut donc se résoudre à raccourcir les quintes (tempérer les quintes est le mot juste), toutes les quintes ou certaines d'entre elles seulement. On a inventé des tempéraments par dizaines et leur nombre indique bien qu'il n'en existe aucun qui soit parfait. Les présenter tous n'aurait aucun sens mais il vaut la peine d'en expliquer quelques-uns parmi les plus significatifs. Nous le faisons en mettant en évidence les avantages et les inconvénients de chacuns. </p>
+              
+
+<h5 class="espaceTextConsequent">a) Tempérer les quintes pour respecter l'octave</h5>
+<p>12 quintes justes sont trop longues de P = 23.46 (cents) pour refermer exactement l'octave, quel(s) raccourcissement(s) peut-on envisager ? Le plus simple est de redessiner le cercle de l'octave en positionnant les notes dans l'ordre des quintes avec un choix anharmonique, par exemple, mi<i>b</i> si<i>b</i> fa do sol ré la mi si fa# do# sol#. Dans cette représentation, une quinte pure est représentée par un arc mesurant 101.955 (cents) afin que 12x101.955 - 23.46 = 1200 (cents).</p> 
+<br/>
+
+<h6>a-1 Une solution extrême : la quinte du loup</h6>
+
+<div class="conteneurImageSeule">
+        <div>
+                          <figure>
+                            <img src="../images/arithm/loup.png" alt="Quinte du loup"/>
+                              <figcaption>Quinte du loup</figcaption>
+                          </figure>
+          </div>
+    </div>
+<p>Une solution extrême consiste à raccourcir une  seule quinte de l'entièreté de P. De cette façon, les 11 autres quintes restent pures. La quinte raccourcie est inutilisable car elle sonne complètement faux, d'où son surnom de &quot;quinte du loup&quot;. Les tonalités où cette quinte intervient sont donc proscrites, ce qui est une limitation sévère. On peut certes décider de la situer au sein d'une tonalité éloignée (de do majeur), par exemple entre sol# et mi<i>b</i>, mais l'objection demeure que les modulations autorisées seront limitées aux tonalités voisines (de do majeur) sans quoi la quinte défectueuse réapparaîtra. Inutile d'ajouter que le problème des tierces fausses n'est pas réglé par cette option, à l'exception du raccourcissement dû à la quinte du loup, il n'est même pas activement abordé. Quintes et tierces confondues, un calcul de fausseté globale, quantité définie dans la note ci-dessous, donne une valeur de 65.31 (cents).</p>
+
+<br/>
+
+<h6>a-2 Un compromis célèbre : le tempérament Werckmeister <strong>&#8546;</strong> (1691)</h6>
+
+<div class="conteneurImageSeule">
+        <div>
+                          <figure>
+                            <img src="../images/arithm/weckmeister.png" alt="Werckmeister III"/>
+                              <figcaption>Werckmeister <strong>&#8546;</strong></figcaption>
+                          </figure>
+          </div>
+    </div>
+
+<p>Le tempérament suivant, dû à Andreas Werckmeister (1645-1706), a connu un certain succès à l'époque baroque : il raccourcit les quintes  do-sol, sol-ré, ré-la et si-fa#<i></i> de P/4, qui deviennent, de ce fait,  trop courtes de 5.865 (cents), un défaut acceptable pour l'oreille. Les 8 autres quintes restent pures et les tierces s'en trouvent (un peu) améliorées, surtout do-mi, qui profite de l'amputation de trois quarts de comma. Les tierces les plus éloignées demeurent en l'état d'imperfection pythagoricienne. Quintes et tierces confondues, le  calcul détaillé ci-dessous livre une fausseté globale de 53.11 (cents).</p>
+
+<h6>a-3 Un compromis prometteur : le tempérament égal</h6>
+
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/arithm/temperamentegal.png" alt="Tempérament égal"/>
+                              <figcaption>Tempérament égal</figcaption>
+                          </figure>
+              </div>
+         </div>
+<p>Si l'on pousse à l'extrême la logique de la répartition de P sur plusieurs quintes, on aboutit, à la limite, à un partage équitable entre les 12 quintes, qui se trouvent raccourcies chacunes de 2 cents environ, ce qui est tout à fait raisonnable. Les tierces demeurent fausses à concurrence de  1200 ℓg(4/5 2<sup>4/12</sup>) = 13.685 (cents) mais c'est déjà mieux que les tierces pythagoriciennes (fausses de Z = 21.506 (cents) pour rappel). Les quintes raccourcies valent à présent Q-P/12 = 700 (cents)  une valeur commensurable avec la quinte (1200 cents) qui garantit la fermeture de l'octave :  les intervalles entre les 12 notes partitionnant l'octave valent désormais exactement 100 cents garantissait la modulation universelle. Elles occupent désormais les points rouges qui servaient de séparateurs. La fausseté globale est minimale dans ce tempréament et elle vaut 47.89 (cents) et il n'y a pas moyen de faire mieux.</p><br/>
+
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                            <img src="../images/arithm/optimal.png" alt="Calcul du meilleur tempérament"/>
+                              <figcaption>Tempérament optimal</figcaption>
+                          </figure>
+              </div>
+         </div>
+<p><i>Note à l'usage des matheux. Vous trouverez dans la littérature, y compris dans celle remontant au 18<sup>ème</sup> siècle, quantité d'autres descriptions amputant une quinte par-ci une quinte par-là, à la recherche du meilleur compromis. C'est plutôt étonnant car il fut un temps où les mathématiciens (Euler, d'Alembert, Descartes, ...) s'intéressaient beaucoup à cette recherche. Ils auraient dû (sa)voir que ce problème d'optimisation quadratique ne possédait qu'une seule solution, précisément celle du tempérament égal. On s'en convainc en posant que les 12 quintes successives sont amputées (donc faussées) d'une quantité, z<sub>i</sub> (i = 1, 2, ..., 12; n'oubliez pas la contrainte que le total de ces amputations doit valoir le comma, P). Les 12 tierces s'en trouvent faussées, à leur tour, d'une quantité égale à, Z-(z<sub>i</sub> + z<sub>i+1</sub> + z<sub>i+2</sub> + z<sub>i+3</sub>), où l'entier i parcourt encore les valeurs de 1 à 12. On peut définir, sur cette base, une grandeur, F, qui quantifie raisonnablement la fausseté de la gamme résultante, quantité que l'on minimise par les procédés habituels de l'analyse mathématique ; on trouve que le minimum de fausseté, F, est atteint lorsque tous les z<sub>i</sub> sont égaux à P/12, c'est bien le tempérament égal. Sans doute les musiciens objecteront-ils qu'une bonne ouïe vaut mieux qu'un calcul aussi savant soit-il. Il n'empêche que pour cette fois ce furent les mathématiques qui eurent raison : le tempérament égal s'est progressivement imposé, non sans mal il est vrai.</i></p>
+
+<p>La solution n'avait pas échappé aux théoriciens de la Renaissance (On dit même qu'elle était connue des chinois, depuis très longtemps). S'ils l'ont rejetée, dans un premier temps, c'est qu'ils étaient obsédés par la pureté des tierces nouvellement apprivoisées. </p>
+<h5 class="espaceTextConsequent">b) Tempérer les quintes pour respecter les tierces  </h5>
+
+
+<p>Bien qu'à ce stade toute prospection supplémentaire paraisse superflue, au motif que l'optimum mathématique ait été prouvé en coïncidence avec le tempérament égal, l'histoire de la musique baroque mais aussi son renouveau actuel serait incompréhensible sans faire le détour par les tempéraments inégaux,  adaptés à une plus grande pureté des tierces (donc une dégradation des quintes). </p>
+<p>4 quintes pures étant trop longues de Z = 21.506 (cents) pour fabriquer une tierce majeure pure et Z n'étant après tout pas si éloigné de P = 23.46 (cents), les théoriciens de l'époque baroque ont passé un certain temps à chercher d'autres compromis basés sur l'amputation des quintes d'une fraction de Z. Le nombre de recettes proposées indique clairement qu'aucune d'entre elles ne s'imposait vraiment. Afin de ne pas lasser le lecteur, celui-ci est prié de se reporter à quelques exposés plus détaillés qui traduisent bien l'indécision du moment.</p>
+
+<h6>b-1 Autre solution extrême : encore un loup !</h6>
+<p>Le tempérament qui garantit le maximum (8) de tierces pures est la transposition fidèle aux tierces de que la section a-1 a réservé aux quintes : 11 quintes sont raccourcies de Z/4 et la douzième, fatalement fausse, est allongée de 7Z/4 - Sch = 35.682 (cents), afin de garantir la fermeture de l'octave. Ce loup peut à nouveau être déplacé dans l'intervalle éloigné sol#-mi<i>b</i> mais  les modulations dans les tons éloignés demeurent problématiques.</p>
+<p>Dans tous les cas, les tempéraments fidèles à la justesse recouraient à un tempérament inégal qui faisait inévitablement obstacle à la modulation. Ces tempéraments inégaux ne manquaient pas de charme : du fait d'une répartition inégale des cents, chacune avait sa couleur particulière malheureusement non transposable. </p>
+
+<h6>b-2 Le tempérament ordinaire ?</h6>
+
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/arithm/rousseau.png" alt="Rousseau : Dictionnaire de Musique"/>
+                              <figcaption>Rousseau : Dictionnaire de Musique (p. 502)</figcaption>
+                          </figure>
+              </div>
+         </div>
+<p>Diderot fait mention d'un "Tempérament ordinaire" dans ses écrits   et Rousseau y fait également allusion dans son tardif Dictionnaire de Musique (1768, disponible au catalogue  de la bibliothèque numérique Gallica). Il s'agirait, selon toute vraisemblance, du tempérament en usage en France vers le milieu du 18<sup>ème</sup> siècle. Etrangement, ni l'un ni l'autre n'en donne une descripton précise  comme si le sujet était suffisamment connu de tous pour se passer des détails (mais alors à qu(o)i  sert le Dictionnaire ?).  Les musicologues ont analysé   la description  de Rousseau,  un brin obscure et même contradictoire, et ils ont fini par admettre (sans garantie !)  que 6 quintes (fa-do-dol-ré-la-mi-si) doivent être amputées de Z/4, les trois suivantes demeurer pures et les trois dernières être dilatées de Z/2 - Sch, ce qui  referme l'octave. Cela est représenté dans la figure ci-dessous. Les musiciens actuels sont au moins d'accord sur un point : ce tempérament ordinaire est plaisant et jouable dans toutes les tonalités. </p>
+
+<div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/ordinaire.png" alt="Tempérament ordinaire" />
+                              <figcaption>Tempérament ordinaire ?</figcaption>
+          </figure></div>
+</div>
+
+<p>On aurait pu espérer que Rameau, notoirement impliqué dans la théorie musicale au point de lui avoir consacré trois traités successifs (1722, 1726 et 1737), nous aurait éclairé définitivement sur la nature du tempérament idéal à ses oreilles mais il n'en est rien. D'un exposé à l'autre, il n'a cessé de se contredire pour finir par recommander du bout des lèvres le tempérament égal en pleine ascension. Le raffinement harmonique de sa musique  est pourtant en parfaite contradiction avec cette recommandation et cela ne fait pas l'affaire des interprètes actuels qui en sont toujours à se demander quel tempérament ils doivent utiliser. Même un spécialiste de l'oeuvre de Rameau, le chef William Christie, entretient le doute à ce sujet (cfr la section que la <a href="http://www.hpschd.nu/index.html?nav/nav-4.html&t/welcome.html&http://www.hpschd.nu/tech/tmp/rameau.html">CBH Technical Library</a> consacre au clavecin).</p>
+
+<h6>b-3 Le tempérament de J-S Bach</h6>
+
+
+<p>Une autre polémique divise les musicologues concernant la diffusion du tempérament ordinaire en-dehors des frontières de l'Hexagone. Nul ne sait avec exactitude comment étaient accordés les instruments joués par J-S Bach ni ne connaît le tempérament souhaité par le compositeur dans son oeuvre didactique et magistrale &quot;Das Wohltemperierte Klavier&quot;, regroupant 24 préludes et Fugues dans tous les demi-tons majeurs et mineurs de la gamme chromatique (Le premier cahier date de 1722 et le second, identique dans son esprit, date de 1744). </p>
+                    
+                    <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/arithm/klavier.png" alt="Das Wohltemperierte Klavier"/>
+                              <figcaption>Das Wohltemperierte Klavier</figcaption>
+                          </figure>
+              </div>
+        </div>
+<p>Bien que le principe du tempérament égal ait été connu à l'époque de Bach, celui-ci n'était nullement en usage. &quot;Bien&quot; tempéré ne signifie donc pas &quot;également&quot; tempéré mais  &quot;convenablement&quot; tempéré de telle manière que les modulation dans les 24 tonalités majeures et mineures soient possibles ce qui n'est pas le cas de tous les  tempéraments.</p>
+<p>Si l'on y réfléchit un instant, cela n'aurait, en effet, eu aucun sens  que Bach passe son temps à écrire une pièce en do majeur puis une autre en do# majeur quand celle-ci sonnerait simplement comme la précédente, un demi-ton plus haut. L'entreprise n'est intéressante que dans la mesure où le temprémaent adopté est inégal quoique jouable dans toutes les tonalités sans réaccord de l'instrument. Chaque prélude reçoit alors sa couleur particulière, ce qui est bien dans l'esprit baroque. Quand on comprend ce raisonnement il ne reste plus qu'à en tirer la conclusion inéluctable : le Clavier bien tempéré &quot;doit&quot; être joué sur un (bon !) clavecin convenablement accordé. Réécoutez  Kenneth Gilbert, c'est tout à fait convaincant.</p>
+<p>J'ai longtemps cru et (bêtement) répété que si Bach avait disposé du piano moderne, il aurait écrit son oeuvre pour cet instrument mais c'est un contresens manifeste.  Cela dit, rien n'empêche que vous conserviez précieusement  la version pianistique qui vous tient à coeur ! </p>
+<p>Reste qu'à ce stade, on ne connait toujours pas le tempérament sous-entendu par Bach. Le musicologue, Bradley Lehman, a publié une thèse en 2005, tendant à démontrer que la clé de l'énigme se trouvait peut-être dans la succession de volutes, présumée cryptée,  gribouillées par Bach en haut de la page de garde du manuscrit de son  premier cahier. Vous en trouverez un aggrandissement ci-dessous, renversé pour les besoins de la démonstration à venir.</p>
+<div class="conteneurImages">
+                      <div> <figure>
+                        <img src="../images/arithm/rebus.png" alt="Tempérament ordinaire crypté ?" />
+                              <figcaption>Tempérament crypté ?</figcaption>
+          </figure></div>
+</div>
+
+<p>Plus personne  aujourd'hui ne pense que ces arabesques sont là pour faire joli, d'ailleurs ce n'est pas le cas. Le compositeur  cryptait volontiers quelques messages numérologiques dans ses partitions (cfr cet exposé magistral de <a href="http://www.canalacademie.com/ida2742-Symbolique-et-rhetorique-chez-Jean-Sebastien-Bach.html">Gilles Cantagrel</a>); n'aurait-il pas utilisé le procédé dans un autre registre ? Certains le pensent et Lehman croit pouvoir affirmer que ce rébus  indique le tempérament souhaité. C'est d'autant plus crédible que dans le texte de présentation qui complète la page de garde, Bach précise   son intention d'inciter les clavecinistes à faire la démonstration qu'il est possible de jouer dans tous les tons majeurs et mineurs. Reste à décrypter la devinette, si devinette il y a. </p>
+
+
+
+<p>Quelques observations sautent aux yeux lorsqu'on regarde la fresque, de gauche à droite :</p>
+<ul class="miniListCorps">
+                    <li>12 volutes se suivent : la première est déformée et fait l'objet d'interprétations divergentes (cfr infra); les 5 qui suivent sont toutes à double boucles, suivies par 3 volutes dépourvues de boucle et enfin par 3 volutes à boucle simple.</li>
+                    <li>Une lettre, C, apparaît clairement, entre les volutes 2 et 3; elle n'est renversée que parce que on a retourné la figure. Cette lettre évoque sans doute  la place du do sur le cycle des quintes tel que nous le représentons depuis le début (C'est pour cela que la figure est inversée).</li>
+                    <li>Quelques lignes incurvées supplémentaires sont observables dont l'interprétation s'avère sujette à caution, à supposer qu'elles soient réellement interprétables.</li>
+         </ul>
+<p> </p>
+<p>Les 12 volutes réparties en trois classes font irrésistiblement penser aux 12 quintes, tempérées de trois façons différentes. La lettre C représente sans aucun doute la note do, située parmi les quintes à doubles boucles. Je n'ai entendu personne mettre en doute la pertinence de la thèse  du rébus, par contre les interprétations divergent :</p>
+
+<ul class="miniListCorps">
+          <li>Lehman pense que la première boucle échappe à tout codage : elle ne fait que signifier, qu'une fois fixés les tempéraments des 11 dernières quintes la première ne peut qu'être ajustée afin que l'octave se referme. Sa thèse est que les 5 quintes à doubles boucles (fa-do-sol-ré-la-mi) sont amputées de P/6, les 3 quintes  dépourvues de boucle (mi-si-fa#-do#) demeurent intactes et les 3 quintes à boucle simple (do#-sol#-mi<i>b</i>-si<i>b</i>) sont amputées  de P/12 (Deux fois moins de boucles, tempérament réduit de moitié !). De cette façon, la quinte restante, si<i>b</i>-fa, est dilatée de P/12 afin que les 12 quintes reconstituent l'octave. Ce tempérament est jouable dans tous les tons où il présente les différences subtiles attendues.</li>
+                    <li> Le claveciniste, Dominic Eckersley, a contesté l'interprétation de Lehman dans un article documenté et argumenté (The Rosetta revisited, 2012). Eckersley est d'avis que la première volute fait partie intégrante d'un premier sous-ensemble de 6 quintes et qu'elle correspond à une amputation (zarlinienne et non pythagoricienne) de Z/4 par quinte. Les 3 quintes suivantes restant pures (là tout le monde est d'accord), il en déduit que les 3 dernières quintes doivent subir une légère dilatation de (Z/6-Sch/3) chacune. Si vous suivez, vous réalisez que ce n'est rien d'autre que le tempérament ordinaire français ! Cela n'aurait rien de choquant : Bach appréciait les compétences développées par l'école française de clavecin  (cfr cette <a href="../chroniques/clavecin.html">chronique</a>) et il a très bien pu considérer que ce tempérament ordinaire convenait mieux que la cohorte des tempéraments germaniques dont vous trouverez une description <a href="https://fr.wikipedia.org/wiki/Temp%C3%A9rament_in%C3%A9gal">ici</a>.</li>
+         </ul>
+
+<h6>b-4 Le tempérament de Vallotti</h6>
+
+         <p>L'étude des tempéraments n'est plus d'actualité aujourd'hui puisqu'on a adopté le tempérament égal. Seuls les baroqueux continuent  de s'y intéresser, par la force des choses. Un tempérament commode car facile  à implémenter est celui de Francesco Antonio Vallotti : il diminue les 6 quintes allant de fa à si de Z/6 et dilate la quinte sol#-mi<i>b</i> du schisma résiduel, les autres quintes demeurant pures. Cela dit les querelles d'écoles ne se sont pas tues et  les interprètes peuvent parfaitement  hésiter  avant d'opter pour un tempérament ! Au clavecin il n'est d'ailleurs pas rare que l'instrument soit réaccordé à la pause d'un concert afin de mieux convenir au répertoire de la deuxième partie.</p>
+         
+         
+          <h4>Et la musique dans tout cela ?</h4>
+          <p>La musique médiévale primitive est largement restée fidèle à l'idéal pythagoricien. Vers l'an 1000, l'organum parallèle superpose un fragment de mélodie grégorienne (vox principalis, aiguë) et un accompagnement en notes parallèles situées une quinte (ou une quarte) plus bas (vox organa). Un siècle plus tard, en Angleterre, la tierce et la sixte ont fait leur apparition : c'est le procédé du <a href="https://fr.wikipedia.org/wiki/Gymel" title="Gymel">gymel</a> et c'est toujours en Angleterre que la tierce a acquis le statut de consonance imparfaite (&quot;Contenance angloise&quot;, sic), pendant   le (trop) court Age d'or instauré par John Dunstable (1390-1453). L'oeuvre de Dunstable a malheureusement été largement détruite lors du saccage des monastères à l'époque de la Réforme, à partir de 1538. Nous n'en avons conservé que des copies passées à temps sur le continent, où elles ont  influencé durablement la génération de Guillaume Dufay.</p>
+<p>Avec le temps (et le commerce des épices ?), les oreilles continentales se sont habituées aux frottements créés par ces tierces un peu fausses jusqu'à y prendre goût. L'idée a dès lors germé de les purifier, ce qui réclamait soit des aménagements dans le modèle pythagoricien, c'est la technique du tempérament, soit une refonte complète de la théorie, c'est l'idéal d'une gamme naturelle. La Renaissance tardive a même voulu faire son idéal de ces tierces pures dans un ensemble de pièces vocales a capella bie ne n conformité avec l'idéal de pureté de la Contre-Réforme. </p>
+<p>L'histoire de la musique a vécu une lente appropriation d'intervalles de moins en moins confortables. Elle l'a fait par nécessité en se donnant lesm oyens d'y parvenir avec la complicité d'auditeurs tolérants; est une longue quête de s'est initialement confondue avec celle de la musique vocale mais, à partir de la Renaissance et surtout de l'époque baroque, la musique instrumentale s'est développée, posant avec acuité le problème du &quot;bien&quot; jouer ensemble. Chanter ou jouer juste d'un instrument à sons mobiles requiert les compétences qu'on devine mais jouer juste d'un instrument à sons fixes exige de prendre en compte les exigences du facteur et de s'assurer la collaboration d'un accordeur respectant un tempérament à définir. </p>
+                   
+
+  <p>La  Renaissance a vu la fin de l'hégémonie du modèle pythagoricien. C'est la naissance de la musique instrumentale en ensembles qui a enclanché le mouvement. Prenant conscience du casse-tête qui s'annonçait, les musiciens de  l'âge baroque ont tenté de revenir au schéma simple du cycle des 12 quintes, qu'ils ont tenté de traficoter plus ou moins subtilement. </p>
+  <p>Le modèle zarlinien a fait fureur - Rousseau ne jurait que par lui - jusqu'à ce qu'on se rende à l'évidence qu'il était utopique d'en généraliser l'usage. Les choeurs non accompagnés étaient particulièrement demandeurs de sa justesse intrinsèque mais même dans ce cas les objections ne manquaient pas : comme l'a noté jacques Chailley, les accords zarliniens se satisfont de leur propre justesse sans chercher ailleurs leur résolution. Il en résulte un chant lisse certes impeccable (Palestrina, Victoria) mais un peu fade et lassant. Avec ses tierces légèrement trop longues (de Z/4), le modèle pythagoricien crée davantage de tensions qui demandent à être résolues. Il en résulte un discours dynamique quand le discours zarlinien est nettement plus statique. Le tempérament égal représente un compromis auquel nos oreilles se sont habituées, abolissant notre instinct de justesse au grand dam de quelques musiciens légitimement nostalgiques du grand âge baroque.</p>
+ 
+   
+  <p>Une gamme n'est utile que si on peut asssocier une fréquence à chaque note en vue de l'accordage de l'intrument.</p>
+  <p>Les premiers artisans du tempérament n'ont eu pour but que de  refermer le cycle des quintes sur une octave, ce qui règle en principe la facture d'un instrument à clavier périodique.  La conséquence naturelle c'est qu'en déformant différemment les quintes le tempérament inégal induit des successions d'intervalles différents dans toutes les tonalités jouables. </p>
+  <p>La période baroque a été dominée par deux courants instrumentaux : le clavecin et l'orgue et la prolifération des ensembles à plusieurs instruments. Le clavecin a imposé le perfectionnement des techniques de tempéraments inégaux capables de concilier la justesse des notes et les possibilités de modulations dans les tons les plus éloignés. Le déploiement des ensembles instrumentaux de plus en plus variés a rendu nécessaire l'adoption d'un tempérament commun de plus en plus égal. Lorsque la révolution française a brûlé les clavecins symboles de l'Ancien Régime le moment était venu de frnchir le pas de ce tempérament égal. La facture des piano(forte) n'a cependant réellement suivi qu'avec un temps de retard, au point que le tempérament égal n'est devenu effectif que vers 1850 seulement, Beethoven était mort depuis plus de 20 ans !</p> 
+
+<p>Les musiciens baroques, férus de pittoresque, se sont délectés de cette possibilité de créer des atmosphères différentes propres à chaque tonalité. Marc-Antoine Charpentier a voulu aller (trop?) loin dans cette direction et Rameau a été plus prudent ne s'accordant avec son illustre prédécesseur que dans quelques cas flagrants (cfr ce lien : <a href="http://www.musebaroque.fr/MB_Archive/Documents/tonalites.htm">Muse baroque</a>). A l'opposé, le tempérament égal gomme ces possibilités et ce serait un abus  de prétendre qu'en musique classico-romantique l'ut majeur demeure martial et le fa majeur furieux et emporté : les deux sonnent  pareillement à une quinte de distance). </p>
+ 
+
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/arithm/gammechrom.png" alt="Tempérament égal"/>
+                              <figcaption>Tempérament égal</figcaption>
+                          </figure>
+              </div>
+         </div>
+
+
+                             
+<p>Le tempérament égal  revient à diviser l'octave en douze intervalles rigoureusement égaux à 100 cents chacun. Dans ce système, le cycle des notes se répète avec une périodicité parfaite d'où la transposition devient un jeu d'enfant : il suffit de décaler les intervalles du pas constant désiré et on est certain de retomber sur une note de la gamme ainsi définie. Aucune figure nouvelle n'est nécessaire pour visualiser ce tempérament égal : les 12 points rouges,  qui graduaient le cercle de l'octave, de 30° en 30°,  conviennent à présent pour désigner les 12 demi-tons du tempérament égal. On note que, par rapport au cycle pythagoricien,  les notes  anharmoniques ont purement et simplement fusionné. Le piano est par excellence l'instrument qui a adopté le tempérament égal (à quelques subtilités près qui concernent le registre aigu). Il a pu se le permettre dès que l'intensité du son produit a permis de masquer les imperfections mais n'essayez pas de l'utiliser au clavecin, cela ne sonnera pas de manière satisfaisante.</p>
+<p>Le prix à payer pour cette simplification, c'est que plus aucun intervalle n'est rigoureusement juste puisque les rapports de fréquences des notes, tous du type, 2<sup>k/12</sup> (k entier), sont pour la plupart devenus  irrationnels, bien loin de l'idéal pythagoricien des fractions simples : si les quintes et les quartes sont  pures à 1.95 cents près, ce qui est excellent,  les tierces majeurs et les sixtes mineures ne le sont qu'à 13.686 cents et c'est encore pire pour les tierces mineures et les sixtes majeures, pures à 15.641 cents seulement.</p>
+<p> Aucun musicien de l'époque baroque naissante, tel François Couperin, n'était prêt à souscrire à des écarts aussi importants. Pourtant avec le temps en particulier le développement de la musique pour ensembles instrumentaux, les musiciens ont compris que les problèmes de transposition allaient vite devenir insoluble , c'était  la voie ouverte inexorablement au tempérament égal. Celui-ci ne sera pourtant effectif à tous les niveaux que vers 1850, le temps que les accordeurs se mettent d'accord. </p>
+<p>Car même admis dans son principe,  le tempérament égal  a dû vaincre bien des réticences, et en tous cas des obstacles :
+  
+</p>
+
+<ul class="miniListCorps">
+                    <li>Parmi tous les tempéraments envisageables, il est resté longtemps un des plus diffcile à accorder, précisément par ce qu'aucun de ses intervalles n'est rigoureuseuement exact : l'accord par l'ouïe, traditionnellement basé sur des tests fondés sur les battements devient  problématique. C'était à ce point qu'en 1945, Llewelyn Lloyd a publié un article (The Myth of Equal Temperament”, Music & Letters (1940b), 347-361) dans se croyait encore autorisé à proclamer que le tempérament égal demeurait un mythe impossible à atteindre. Les chorales a capella ne peuvent spontanémént adhérer à un système contraire à l'intuition du chanter juste et les Aujourd'hui ces problèmes sont très simplifiés par l'apparition  des diapasons électroniques.</li>
+                    <li>Ces colorations spécifiques ont complètement disparu, en musique occidentale, depuis l'adoption du tempérament égal (cfr infra). </li>
+</ul>
+
+       </div>
+
+<div id="rameau">
+        <h4>L'orthographe selon Rameau</h4>
+                    
+<div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                            <img src="../images/arithm/traiterameau.png" alt="Traité de musique théorique de Rameau"/>
+                              <figcaption>Traité (Rameau, 1737)</figcaption>
+                          </figure>
+              </div>
+      </div>
+
+<p>Dans les années 1950, il n'était pas courant d'entendre de la musique de Rameau  (malgré les efforts en leurs temps de D'Indy, Saint-Saens et Debussy) et quand par bonheur on en entendait c'était sur des instruments modernes accordés au tempérament égal, bref une hérésie. Dans son &quot;Nouveau Systeme de Musique Theorique&quot; (1726), Rameau donne des indications sur  le tempérament qu'il préfère pas assez, apparemment, pour que les musicologues s'accordent à le restituer totalement.</p>
+
+        
+  <p>Il faut s'en faire une raison, le tempérament égal est une hérésie musicale à laquelle nos oreilles se sont pourtant parfaitement habituées. Seules certaines oreilles fragiles mais expérimentées en souffrent encore, telles celles du grand baroqueux, Nikolaus Harnoncourt, qui ne parvenait pas à s'y faire. Alors oublié le tempérament inégal ? Pas du tout et les apprentis musiciens en savent quelque chose qui doivent apprendre une orthographe peu en rapport avec la simplicité que leur promettait une gamme "enfin rationnalisée". </p>      
+
+<p>Nous voici de retour au questionnement initial, celui ayant trait à l'orthographe musical. Le principe du tempérament égal est l'assimilation des notes anharmoniques, plus rien ne devrait distinguer un do# d'un ré<i>b</i>. En tous cas, il est devenu impossible de trouver une justification logique à cette exigence. Dès lors comment se fait-il que pour tout musicien sensé, l'impératif demeure de continuer à faire cette différence ? Elle ne concerne pourtant certainement pas les facteurs de pianos qui, de fait, ne prévoient qu'une seule touche pour les deux notes confondues. Elle ne concernerait pas davantage  les logiciels informatiques  destinés à  restituter des partitions sur synthétiseurs :   un tel logiciel n'a même pas besoin de savoir qu'une note de fréquence 277.183 Hz (au diapason moderne, la<sub>4</sub> = 440 Hz) se note indifféremment, do#<sub>4</sub> ou  ré<i>b</i><sub>4</sub>, la seule chose qu'il veut savoir c'est quelle fréquence il doit émettre (et bien sûr dans quelle durée et avec quel timbre). Mais, et c'est le point important, cela n'est vrai que pour les synthétiseurs et pas du tout pour les interprètes humains. Au royaume des synthétiseurs, il est bien vrai que l'orthographe musicale pourrait être simplifiée à l'extrême mais cette simplification aurait un prix qu'au fond on connaît bien : la restitution musicale d'un synthétiseur est stéréotypée, dépourvue d'affect. Dans ce domaine, tout est programmé : la moindre dose de hasard ou mieux de libre arbitre qu'on tenterait d'y introduire serait encore programmé, ce ne serait qu'un pseudo-hasard, un pseudo libre arbitre. D'ailleurs &quot;l'interprétation&quot; du lendemain ressemblerait à s'y méprendre à celle du jour or ce n'est pas ce qu'on attend d'une interprétation véritable. Un concert est un moment privilégié parcequ'il est unique, il ne se reproduira plus à l'identique, c'est la raison principale pour laquelle le grand répertoire à la vie si dure au concert, il ne s'épuise jamais. Il résulte de ces considérations que les interprètes n'ont rien gagné en facilité d'apprentissage par le fait de l'adoption du tempérament égal ni d'ailleurs les compositeurs obligés de suivre le mouvement. Ils doivent continuer d'apprendre une orthographe vieille de plus de 300 ans non seulement parce que c'est la seule manière de continuer à honorer les grandes oeuvres si prisées d'un passé baroque mais encore parce que c'est la seule manière de conserver sa part d'humanité dans les musiques plus récentes. Tonalités lissées. Au bilan, les seuls qui se frottent les mains ce sont les facteurs d'instruments (à sons fixes), car pour eux un do# vaut désormais un ré<i>b</i> et cela leur fait une fameuse différence. </p>
+
+</div>
+
+<div id="schonberg">
+        <h4>L'orthographe selon Schönberg</h4>
+<p>Il existe cependant un autre royaume, très différent, où cette simplification serait parfaitement envisageable, c'est celui de la musique dodécaphonique. </p>
+<p>&nbsp;</p>
+<p>1722, une année charnière </p>
+
+
+<p>La notation musicale est évidemment nécessaire car elle préserve le patrimoine. Un tableau de maître se détériore avec le temps, il peut disparaître complètement ou simplement volé mais une symphonie, un quatuor ou un opéra sont en principe préservés. La notation pérennise en principe les intenions de l'auteur mais elle ne peut pas tout et il revient à l'exécutant d'interpréter ce qu'il lit qui ne contient pas tout. La question n'est certainement pas de se demander si l'écriture musicale pourrait se passer de règles aussi compliquées mais si ces règles remplissent effectivement leur mission. Nous ne rêvons pas d'une musique entièrement digitalisée, c'est-à-dire confiée aux soins d'un système informatique aussi perfectionné soit-il. Ce qui importe dans la phrase musicale ce n'est pas tellement ce qu'elle dit que ce qu'elle ne fait que suggérer. l'ordinateur dans l'éat actuel est parfaitement incapable de libre arbitre, d'improviser une initiative imprévisible mais sensible et cela vaut autant pour l'ordinateur-interprète que celui tout à fait hypothétique ordinateur-compositeur dans l'état actuel de la science informatique. Voila la vraie raison de l'essentialité de la musique : elle est le dernier bastion que l'informatique ne peut prendre et c'est un informaticien à ses heures qui vous le dit.</p>
+<p>Une réforme de l'orthographe grammaticale ne sera pas à l'ordre du jour avant longtemps. On le justifie habituellement en rappelant que les conséquences désastreuses (pour la compréhension des textes) qu'aurait une tolérance visant à ne plus distinguer des variantes grammaticales aussi sensibles que &quot;il s'est amusé . L'argument est cependant moins fort qu'il y paraît car si l'on prononce les deux phrases dans leur contexte, plus rien n'empêche la confusion qui dans les faits n'existe pas. Ce point devrait faire réfléchir : l'auditeur n'entendra jamais que ce qui est joué et si l'interprétation est bonne il ne saura jamais quelles notes ont été utilisées. De même un interprète synthétiseur ne se formalisera pas des erreurs grammaticales quand les fréquences des notes et leur tempi sont respectés. </p>
+<p>Est-il possible sinon souhaitable de réformer l'orthographe musicale ? Il ne vous a pas échappé, cher lecteur, que sonnant prend deux &quot;n&quot; alors que consonant ou dissonant n'en prennent qu'un ! La liste des anomalies de ce genre est très longue en français (balayons devant notre porte !) et malgré de louables tentatives je n'ai pas encore vu poindre l'aube d'une réforme de ce qu'on appelle l'orthographe d'usage et qu'on pourrait appeler plus sûrement l'orthographe syntaxique. Il n'a jamais été question de toucher à l'orthographe sémantique, celle qui distingue &quot;ses erreurs&quot; de &quot;ces erreurs&quot; et dont une assimilation abusive créerait la confusion évidente. La musique possède également ces deux sortes d'orthographes et il ne sera jamais question de revendiquer que la réforme syntaxique, au premier rang desquels on trouve assurément l'attirail invraisemblable des clés. Leur seule utilité est de compresser l'écriture en économisant les lignes de portées mais à quel prix capable de décourager des cohortes d'apprentis. Est-ce cela le but que l'on poursuit. Dans l'opuscule déjà mentionné Jodzevatz démontre un gain substantiel de lisibilité pour un prix modéré.</p>
+<p>Shakespeare ne se lit pas dans la langue d'origine. racine ? Villon et surtout Machaut bien, il est même essentiel qu'il en soit ainsi, quand la poésie rejoint la musique (revoir le texte cité dans complexité) ! </p>
+
+
+<h5 class="espaceTextConsequent">&nbsp;</h5>
+
+</div>
+
+
+                   
+
+         </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+
+
+</body>
+</html>

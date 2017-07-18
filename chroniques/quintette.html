@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Genres musicaux | Le Quintette (à clavier) jusqu'à nos jours</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,61 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreEvolutionFormule" href="#evolutionFormule" class="linavMenu active">
+                    <span>Evolution de la formule du concert à 5</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintetteClavier" href="#quintetteClavier" class="linavMenu">
+                    <span>Le quintette à clavier</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreIncontournables" href="#incontournables" class="linavMenu">
+                    <span>Les incontournables</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesFrançais" href="#quintettesFrançais" class="linavMenu">
+                    <span>Quintettes français</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesRusses" href="#quintettesRusses" class="linavMenu">
+                    <span>Quintettes russes</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesAustroAllemands" href="#quintettesAustroAllemands" class="linavMenu">
+                    <span>Quintettes austro-allemands</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesOutreManche" href="#quintettesOutreManche" class="linavMenu">
+                    <span>Quintettes d'Outre-Manche</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreQuintettesIciAilleurs" href="#quintettesIciAilleurs" class="linavMenu">
+                    <span>Quintettes d'ici et d'ailleurs</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreBrocante" href="#brocante" class="linavMenu">
+                    <span>Brocante</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Genres musicaux</h2>
+                <h3>Le Quintette (à clavier) jusqu'à nos jours</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,159 +96,145 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../grandscycles.html">Genres musicaux</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Le Quintette (à clavier) jusqu'à nos jours</li>
                     </ul>
-                </nav>  
+                </nav> 
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#evolutionFormule">Evolution de la formule du concert à 5</a></li>
+                        <li><a href="#quintetteClavier">Le quintette à clavier</a></li>
+                        <li><a href="#incontournables">Les incontournables</a></li>
+                        <li><a href="#quintettesFrançais">Quintettes français</a></li>
+                        <li><a href="#quintettesRusses">Quintettes russes</a></li>
+                        <li><a href="#quintettesAustroAllemands">Quintettes austro-allemands</a></li>
+                        <li><a href="#quintettesOutreManche">Quintettes d'Outre-Manche</a></li>
+                        <li><a href="#quintettesIciAilleurs">Quintettes d'ici et d'ailleurs</a></li>
+                        <li><a href="#brocante">Brocante</a></li>
+                    </ul>
+                </div>  
   
-  <h2>Le Quintette (à clavier) jusqu'à nos jours.</h2>
-  
-  <div><img src="../images/quintette/quintette.jpg" alt="" /></div>
-   
-  <p>En musique instrumentale, le quintette à clavier apparaît comme la discipline  chambriste la plus traditionnellement soignée, après le sacro-saint quatuor à cordes. Cette forme d'inspiration relativement récente (200 ans quand même !) désigne habituellement le piano accompagnant quatre instruments pouvant être  à vents (au moins partiellement), c'est la forme divertissante, ou (intégralement) à cordes, c'est la forme savante,  celle   qui nous occupera principalement.</p>
-<p></p>
-  <p><i>Evolution de la formule du concert à 5.</i></p>
-  <p>La période baroque a multiplié les combinaisons instrumentales,  mêlant allègrement cordes, bois, vents et clavier (Sonata a 5 d'<a href="https://www.youtube.com/watch?v=ayhbK8JeNKU
-  ">Albinoni</a>, <a href="https://www.youtube.com/watch?v=M1Us-8qkYE4
-  ">Telemann</a>, <a href="https://www.youtube.com/watch?v=XSNClEvxsYY
-  ">Haendel </a> et tant d'autres ... ). Notez qu'un sixième instrument peut être présent qui ne joue qu'un rôle  de ponctuation, c'est le continuo. L'ère (pré-)classique n'a guère innové dans ses Sérénades et autres Divertissements. Même  le grand Joseph Haydn (1732-1809), qui avait pourtant contribué à formaliser le genre du quatuor à cordes,   n'a écrit que des  quintettes pour formations  subalternes,   dans un esprit de pur divertissement (<a href="https://www.youtube.com/watch?v=UPP10hoGLUk
-  ">Divertimento</a> pour baryton - instrument à cordes non vocales ! - , alto, violoncelle et 2 cors). Notez que cet autre <a href="https://www.youtube.com/watch?v=V07kHNrn29E
-  ">Divertimento</a> célèbre (en si bémol majeur), reprenant le choral de Saint Antoine (en 3:40) immortalisé par Brahms dans ses célèbres <a href="https://www.youtube.com/watch?v=BAuqxEMRapg
-  ">Variations</a> pour orchestre, n'est qu'attribué au maître viennois. </p>
-  <p>Ni  Mozart
-    (<a href="https://www.youtube.com/watch?v=F40X8bRxKI4
-  ">Quintette  KV 452</a>) ni
-    Beethoven (<a href="https://www.youtube.com/watch?v=L7iPBTndQyg
-  ">opus 16</a>) ne se sont  passionnés pour le genre, ne léguant que des oeuvres secondaires.  Au bilan, on préférera les contributions sérieuses d'<a href="https://www.youtube.com/watch?v=tLjF8yrBlJA
-  ">Anton Reicha</a> (1770-1836),  un proche de Beethoven, voire celles plus guillerettes de <a href="https://www.youtube.com/watch?v=MFQ6FecTqYE
-  ">Franz Danzi</a> (1763-1826). Les oeuvres de Reicha ont fait l'objet d'une belle intégrale, parue en 10 CD, chez <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Anton-Reicha-1770-1836-S%E4mtliche-Bl%E4serquintette-Vol-1-10/hnum/6522966
-  ">CPO</a>. </p>
-  <p> Un (ou deux) siècle(s) plus tard, on trouve encore des compositeurs amoureux du mélange des  timbres  instrumentaux :  <a href="https://www.youtube.com/watch?v=8bSG27NHFF8
-  ">Anton Rubinstein (1855)</a>, <a href="https://www.youtube.com/watch?v=Ve0bjarsvns
-  ">Paul Taffanel (1876)</a>,  <a href="https://www.youtube.com/watch?v=4wbKyA4PqVQ
-  ">Rimsky-Korsakow (1876)</a> - une oeuvre à la gaieté communicative -, <a href="https://www.youtube.com/watch?v=xruEriSipTA
-  ">Zdenek Fibich (1893)</a>, <a href="https://www.youtube.com/watch?v=4B2CbG4bo-s
-  ">Gustav Holst (1903)</a>, <a href="https://www.youtube.com/watch?v=7qHwk8iJSv8
-  ">Carl Nielsen (1922)</a>, <a href="https://www.youtube.com/watch?v=H0t56uVd4ps
-  ">Hans Huber (1918)</a>,   et, plus près de nous, le jeune <a href="https://www.youtube.com/watch?v=zM7dsOYMWgI">Elliott Carter (1948)</a> et le moins jeune <a href="https://www.youtube.com/watch?v=H6y3HBZIH3U
-  ">Jean Françaix (1987)</a>.</p>
-  <p>Boccherini (1743-1805) et Mozart (1756-1791) ont été parmi les premiers à croire en une formule plus sobre sur le papier mais, au bilan, plus ambitieuse : l'adjonction d'un  instrument au quatuor à cordes classique. Au début, cela s'est fait dans plusieurs directions :</p>
-  <li>La plupart du temps, par adjonction d'un 5<sup>ème</sup> instrument à cordes, généralement un second alto (Beethoven (opus 29), Brahms (opus 88 & 111), Bridge (mi mineur), Bruckner (<a href="https://www.youtube.com/watch?v=8cTbsCpTSls
-  ">fa majeur</a>, si vous ne connaissez pas, précipitez-vous !), Dvořák (opus 1 & opus 97), Mendelssohn (opus 18 & opus 87)
- mais la référence demeure précisément Mozart
-dans ses fameux Quintettes  de maturité (KV 515, 516, 593 &amp; <a href="https://www.youtube.com/watch?v=9L9IQL4unl8
-  ">614</a>)). Il existe une variante rare avec second violoncelle  (Boccherini (cfr infra) et Shubert (inégalable et célébrissime ut majeur)) et même une troisième carrément exotique, pour contrebasse (Dvořák (opus 77)).</li>
-  <li>Mozart a opté pour une clarinette  dans le grand Quintette  (<a href="https://www.youtube.com/watch?v=_mKUYMQsFwM
-  ">KV 581</a>) et cette  formule a fait école à l'époque romantique  (<a href="https://www.youtube.com/watch?v=iN8O_LIpSlw
-  ">Carl Maria von Weber</a>, <a href="https://www.youtube.com/watch?v=2KHvgLKAiIY
-  ">Max Reger</a>, <a href="https://www.youtube.com/watch?v=pmQ99RWlJrY&amp;spfreload=10
-  ">Johannes Brahms</a>, même  l'inattendu <a href="https://www.youtube.com/watch?v=Y4uBUVgQqp8
-  ">Giaccomo Meyerbeer</a>, mais c'est pour amuser la galerie), voire au 20<sup>ème</sup> siècle (<a href="https://www.youtube.com/watch?v=6Cxkj1CvtkQ
-  ">Paul Hindemith</a>, dans une oeuvre à découvrir d'urgence, ou
-<a href="https://www.youtube.com/watch?v=bOrOJNSmyuE
-  ">Jean Françaix</a>, qu'on a connu mieux inspiré). Il existe encore d'autres variantes, notamment pour hautbois, mais cela nous écarte du sujet.</li>
-  
-  <div><img src="../images/quintette/boccherini.jpg" alt="" /><div class="legende">Monsieur Quintettes</div></div>
-  <li>Luigi Boccherini demeure le  spécialiste auto-proclamé des quintettes en tous genres : il en a écrit près de 200 (!), pour cordes seules (<a href="https://www.youtube.com/watch?v=_aF9yco57VE
-  ">opus 27</a> mais la liste est dix fois plus longue), avec flûte, avec <a href="https://www.youtube.com/watch?v=6YXleGIULMA
-  ">guitare</a> et, on y arrive, avec piano (12 Quintettes à clavier,    <a href="https://www.youtube.com/watch?v=PmKfNqOYc8Y">opus 56 (1797) & 57 (1799)</a>). Ne délaissez pas  ce musicien, que l'on réduit un peu vite à son opus 11 n°5 dont le <a href="https://www.youtube.com/watch?v=I8HUUnhsAKg
-  ">Menuet</a> (en 12:55) a fait N fois le tour du monde et son opus 30 n°6, autre tube inoxydable mieux connu sous l'appellation <a href="https://www.youtube.com/watch?v=I8HUUnhsAKg
-  ">&quot;La Musica notturna delle strade di Madrid&quot;</a> (Si  vous ne connaissez pas, commencez en 7:10). Car toute sa musique, mélange de styles classique et galant, sait accrocher les oreilles attentives par quelques tournures  inattendues qui sonnent toujours juste. Voici un fondu-enchaîné de trois extraits aussi significatifs que plaisants <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/quintette/boccherini.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/quintette/boccherini.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>.</li>
-  <p></p>
-  <p><i>Le quintette à clavier.</i></p>
-  <p>La forme pour cordes et piano qui va désormais nous occuper a  adopté l'effectif du quatuor à cordes classique (deux violons, un alto et un violoncelle). Pourtant, dans son Quintette  <a href="https://www.youtube.com/watch?v=g3k81__bwrM
-  ">&quot;La Truite&quot; (1819)</a> (ainsi nommé parce qu'il reprend la mélodie d'un lied antérieur, Die Forelle), Franz Schubert a réitéré une expérience  déjà tentée  par <a href="http://www.youtube.com/watch?v=duguKeOazK4&amp;feature=related">Jan Ladislav Dussek</a> (1801) (et  l'inévitable Boccherini) et consistant à remplacer  le second violon par une contrebasse. Cette  formule, également adoptée  par  <a href="https://www.youtube.com/watch?v=fGL3zCqrg6c">Ferdinand Ries</a> (1815), <a href="https://www.youtube.com/watch?v=Fi_ks4mN3X4">Johann Nepomuk Hummel</a>  (1822),  <a href="http://www.editionsilvertrust.com/limmer-piano-quintet.htm">Franz Limmer</a> (1834), <a href="https://www.youtube.com/watch?v=jypbFP89Hng">Louise Farrenc</a> (1839), <a href="http://www.editionsilvertrust.com/onslow-piano-quintet-op70.htm">George Onslow</a>  (1846), <a href="http://www.editionsilvertrust.com/goetz-piano-quintet.htm">Hermann Goetz</a> (1874) et <a href="http://www.editionsilvertrust.com/labor-piano-quintet-op3.htm">Josef Labor</a> (1912), visait un nouvel équilibre des voix mais elle n'a pourtant pas fait fortune,  sans doute à cause de la difficulté de recruter un contrebassiste   en famille ou entre amateurs.  </p>
-  <p>La recette du &quot;véritable&quot; quintette à clavier est aussi précieuse que celle de la tarte au riz de Verviers (Seuls les gourmets peuvent comprendre, qui, c'est la mode, veulent   saisir l'Unesco pour un possible classement au Patrimoine mondial de l'Humanité !). On attribue à Robert Schumann l'initiative d'avoir définitivement (r)établi  le schéma instrumental initial (avec second violon si vous suivez), proposant le modèle du Quintette <a href="http://www.youtube.com/watch?v=KZRmLWYg5O0&amp;feature=related">opus 44, 1842</a>. Cette formule  s'est imposée à la plupart des compositeurs désireux d'écrire &quot;leur&quot; quintette, généralement au singulier car on ne défie pas le destin quand on ambitionne le chef-d'oeuvre ! Dans la suite, chaque oeuvre sera référencée par son numéro (éventuellement d'opus) et/ou sa tonalité, aucune ambiguïté ne devant être possible.</p>
-  <p>Ni Haydn, ni Mozart ni Beethoven n'ayant contribué au genre, c'est peut-être, à la réflexion, l'absence de modèle intimidant qui a libéré l'inspiration des successeurs, permettant l'épanouissement d'un répertoire particulièrement riche même dans le chef de musiciens pas toujours très connus. </p>
-  <p></p>
-  <p><i>Les incontournables.</i></p>
-  <p>La  liste des  sommets du genre figure dans toutes les bonnes  histoires de la musique.   Au 19<sup>ème</sup> siècle, outre le Schumann, elles mentionnent, en priorité, Johannes Brahms (<a href="https://www.youtube.com/watch?v=riUUYyMeLpQ">opus 34, 1864</a>,  en fait la transcription d'une sonate reniée pour deux pianos, opus 34b), Anton Dvorak (opus 1, 1872 et <a href="http://www.youtube.com/watch?v=lqHWBGRUx6Q&amp;feature=related">opus 81, 1887</a>), César Franck (<a href="https://www.youtube.com/watch?v=W1RGAStkCAE">fa mineur, 1879</a>,  souvent couplé au disque  avec celui de Schumann  pour cause de parenté évidente) et Gabriel Fauré (<a href="https://www.youtube.com/watch?v=5-j6LLkpQYY">opus 89, 1905</a> et <a href="https://www.youtube.com/watch?v=F3DDu6Dngks"> opus 115, 1921</a>). Un siècle plus tard, les deux monuments ont été signés  Dimitri Schostakovitch (<a href="https://www.youtube.com/watch?v=5YXwE6VTT6g">opus57, 1940</a>) et Alfred Schnittke (Bouleversant <a href="https://www.youtube.com/watch?v=zfsQX6BF5J0">Quintette, 1972</a>,  à la mémoire de sa défunte mère).  </p>
-  <p>Ces chroniques  partant prioritairement à la recherche des  trésors cachés, des fouilles supplémentaires (et un tri !) ont été nécessaires. Pour guider votre choix, j'ai parfois collé une étoile comme au Michelin, simples coups de coeur personnels.</p>
-  <p></p>
-  <p><i>Quintettes français.</i></p>
-  <p>Les deux chefs-d'oeuvre de Fauré le démontrent, la formule du quintette à clavier a toujours convenu  à la sensibilité française, pudique ou enjouée. Quelles plus belles illustrations précoces que ces oeuvres signées  Théodore Gouvy (<a href="https://www.youtube.com/watch?v=aK4tEGXihGA">opus 24*, 1850</a>), Camille Saint-Saens (<a href="https://www.youtube.com/watch?v=MRu1aSvzQPg">opus 14, 1855</a>) ou Alexis de Castillon (<a href="https://www.youtube.com/watch?v=WdLOHBsyx0U">opus 1*, 1864</a>) ?</p>
-<p>Une génération plus tard l'intérêt ne faiblit pas  à l'écoute de Charles-Marie Widor
-  (<a href="http://www.naxos.com/catalogue/item.asp?item_code=8.555416">opus 7, 1890</a>), Théodore Dubois (<a href="https://www.youtube.com/watch?v=nW3bDhkuwR4">fa majeur*, 1905</a>) - admirable ! -, Florent Schmitt (<a href="https://www.youtube.com/watch?v=RRuKGQk2oss">opus 51, 1908</a>), Jean Huré
-  (<a href="http://www.editionsilvertrust.com/hure-piano-quintet.htm">ré majeur, 1908</a>), Paul Le Flem
-  (<a href="https://www.youtube.com/watch?v=vSxGTFnGPoc">mi mineur*, 1909</a>),  Charles Koechlin
-  (<a href="https://www.youtube.com/watch?v=QxuxeAPT_r8">opus 80, 1908 revu en 1921</a>), Gabriel Pierné (<a href="https://www.youtube.com/watch?v=xCOuLbNfFEg">opus 41*, 1917</a>), Louis Vierne (<a href="https://www.youtube.com/watch?v=T9rCTrkIKnM">opus 42, 1917</a>), Reynaldo Hahn (<a href="http://www.youtube.com/watch?v=BXEkHh4WDDI">fa dièse mineur*, 1921)</a>, Jean Cras
-  (<a href="http://www.editionsilvertrust.com/cras-piano-quintet.htm">ut majeur, 1922</a>), Vincent d'Indy (<a href="https://www.youtube.com/watch?v=ft4yFPbOo_0">opus 81*, 1924</a>) et Lucien Durosoir
-  (<a href="https://www.jpc.de/jpcng/classic/detail/-/art/Lucien-Durosoir-1878-1955-Klavierquintett-1925/hnum/6138738">fa majeur, 1925</a>).  A ce stade, pourquoi ne pas ajouter  le <a href="http://www.editionsilvertrust.com/dupont-poeme.htm">Poème*, 1911</a> de Gabriel Dupont, un quintette qui n'avoue pas son nom. Beaucoup de noms peu connus, c'est toute la richesse de la musique française des années 1900.</p>
-<p></p>
-<p><i>Quintettes russes.</i></p>
-<p>Les deux oeuvres majeures de Schostakovitch et Schnittke ne doivent pas faire oublier les artisans du renouveau russe : sauf le précurseur Alexandre Alyabyev (<a href="https://www.youtube.com/watch?v=1F8bSMv4l1U">Quintette, 1830?</a>), on ne présente (presque) plus les  classiques, Alexandre Borodin (<a href="http://www.youtube.com/watch?v=sxL1zmBiaMw&amp;feature=related">ut mineur*, 1862</a>), Anton Rubinstein
-  (<a href="http://www.editionsilvertrust.com/rubinstein-piano-quintet.htm">opus 99, 1876</a>), Anton Arensky  (<a href="http://www.youtube.com/watch?v=PiPvFaC0dEw&amp;feature=related">opus 51*, 1900</a>), Nikolai Medtner (<a href="https://www.youtube.com/watch?v=yUU6yQEdJlk">ut majeur*, 1903 terminé en 1949</a>),  Sergei Taneyev
-  (<a href="http://www.editionsilvertrust.com/taneyev-sergei-piano-quintet-Op.30.htm">opus 99*, 1911</a>),  Mikhail Gnesin  (Requiem instrumental <a href="http://www.editionsilvertrust.com/gnesin-requiem.htm">opus 11, 1913</a>), Mieczysław Weinberg (<a href="https://www.youtube.com/watch?v=YjMt4mMyxIg">opus 18*, 1944</a>, attention chef-d'oeuvre !), Sofia Gubaidulina (<a href="https://www.youtube.com/watch?v=M_psT05Oors">Quintette, 1958</a>, une oeuvre de jeunesse), Boris Tchaikovsky (<a href="https://www.youtube.com/watch?v=v6BF-gDRnEI">Quintette*, 1962</a>) et plus récemment Nikolai Kapustin (<a href="https://www.youtube.com/watch?v=W4kwb2kWZow">opus 89*, 1998</a>, dans son style jazz habituel).</p>
-<p>J'ai naturalisé  d'office les transfuges Karl Davydov (<a href="https://www.youtube.com/watch?v=0p1AVEfllXk">opus 40*, 1884</a>) russo-letton,  Paul Juon (<a href="http://www.editionsilvertrust.com/juon-piano-quintet-1.htm">opus 33, 1906</a> et <a href="http://www.editionsilvertrust.com/juon-piano-quintet-1.htm">opus 44*, 1909</a>) helvéto-russe et  Georgy Catoire (<a href="https://www.youtube.com/watch?v=VSHO3zAXP1I">opus 28*, 1914</a>) franco-russe.</p>
-<p></p>
-<p><i>Quintettes austro-allemands.</i></p>
-<p>Les quintettes austro-allemands sont d'excellente facture quoique souvent coulés dans un moule unique hérité de Brahms.   Etrangement, le pionnier du genre fut un amateur distingué (ici même), le <a href="../chroniques/louisferdinand.html"><span style="color:#F60">Prince Louis Ferdinand de Prusse</a> (<a href="https://www.youtube.com/watch?v=RVum3euSLV4">opus 1, 1803</a></span>). Un bon demi-siècle plus tard (!), la liste s'est enfin allongée grâce aux efforts de Louis Spohr
-  (opus 130, 1845), Joachim Raff (<a href="https://www.youtube.com/watch?v=UDA_vSWIaoU">opus 107*, 1862</a>), Carl Reinecke (<a href="http://www.editionsilvertrust.com/reinecke-piano-quintet.htm">opus 83, 1866</a>), Franz Lachner (<a href="http://www.editionsilvertrust.com/lachner-franz-pno-qnt2.htm">n°2 opus 145*, 1869</a>), Ferdinand Thierot (<a href="http://www.editionsilvertrust.com/thieriot-piano-quintet.htm">opus 20*, 1869</a>), Ferdinand Hiller (<a href="https://www.youtube.com/watch?v=kez0adzfk28">opus 156, 1873</a>), Friedrich Kiel (<a href="http://www.editionsilvertrust.com/kiel-piano-quintet-1.htm">opus 75, 1874 </a> et <a href="http://www.editionsilvertrust.com/kiel-piano-quintet-2.htm">opus 76, 1874</a>), Heinrich von Herzogenberg
-  (<a href="https://www.youtube.com/watch?v=R5Mmna_RSW0">opus 17, 1876</a>),    Friedrich Gernsheim
-  (<a href="http://www.editionsilvertrust.com/gernsheim-piano-quintet-1.htm">opus 35, 1877</a> et <a href="http://www.editionsilvertrust.com/gernsheim-piano-quintet-2.htm">opus 63*, 1890</a>), Josef Rheinberger
-  (<a href="http://www.editionsilvertrust.com/rheinberger-piano-quintet.htm">opus 114*, 1878</a>), Karl Goldmark
-  
-  (<a href="http://www.editionsilvertrust.com/goldmark-piano-quintet-1.htm">opus 30, 1879</a> et <a href="http://www.editionsilvertrust.com/goldmark-piano-quintet-2.htm">opus 54*, 1914</a>), Eduard Franck
-  (<a href="http://www.editionsilvertrust.com/franck-e-piano-quintet.htm">opus 45*, 1882</a>),  August Klughardt
-  (<a href="https://www.youtube.com/watch?v=HlJiA24eVN8">opus 43*, 1884</a>),  Max Bruch (<a href="http://www.youtube.com/watch?v=JvhgtTMyRsk&amp;feature=related">sol mineur*, 1886</a>) - une belle oeuvre sortie de la plume d'un musicien souvent villipendé -, Carl Frühling (<a href="http://www.editionsilvertrust.com/fruhling-piano-quintet-Op.30.htm">opus 30, 1894</a>), Max Reger
-  (<a href="https://www.youtube.com/watch?v=5RW80fXd7Zw">n°1, 1898</a> et, <a href="https://www.youtube.com/watch?v=nHmrnrWdeCM">n°2, 1902</a>),  Ludwig Thuille (<a href="https://www.youtube.com/watch?v=Igmxakl_pmM">opus 20, 1901</a>), Hugo Kaun (<a href="http://www.editionsilvertrust.com/kaun-piano-quintet.htm">opus 39, 1902</a>), Wilhelm Berger (<a href="https://www.youtube.com/watch?v=B9vreLBRs1s">opus 95, 1904</a>), Anton Webern (<a href="https://www.youtube.com/watch?v=RRwWEGjWkfg">Quintette, 1907</a>) - une oeuvre de jeunesse sans rapport avec celles qui suivront -, Hans Pfitzner
-  Piano (<a href="https://www.chandos.net/products/catalogue/CX%207395">opus 23*, 1908</a>), Hermann Zilcher (<a href="http://www.editionsilvertrust.com/zilcher-pno-quintet.htm">opus 42*, 1918</a>), Erich Wolfgang Korngold (<a href="https://www.youtube.com/watch?v=oRtig6zcj9I">opus 15*, 1921</a>),     Franz Schmidt  (<a href="https://www.youtube.com/watch?v=OfFxDVRWcmE">sol majeur*, 1932</a>) et Ernst Toch
-   (<a href="https://www.youtube.com/watch?v=NUoHPEo6vXw">opus 64, 1938</a>). Après 1940, la veine s'est tarie, on devine pourquoi, en Allemagne Brahms est mort deux fois.</p>
-<p></p>
-<p><i>Quintettes d'Outre-Manche.</i></p>
-<p>Les anglais soucieux de rattraper un retard séculaire ont mis les bouchées doubles dès la fin du 19<sup>ème</sup> siècle :     Charles Villiers Stanford
-        (<a href="https://www.youtube.com/watch?v=8aFdn1Rwv-o">opus 26, 1886</a>), 
-    George Whitefield Chadwick
-(<a href="https://www.youtube.com/watch?v=p61o3Vo6Sp8">mi bémol majeur*, 1887</a>), Ralph Vaughan Williams (<a href="http://www.youtube.com/watch?v=KZRmLWYg5O0&amp;feature=related">ut mineur*, 1903</a>),  Hamilton Harty
-(fa majeur, 1904), Joseph Holbrooke (<a href="http://www.editionsilvertrust.com/holbrooke-symphonic-piano-quintet.htm">opus 44*, 1904</a>) - une oeuvre annoncée symphonique par son auteur, de fait -,  Henry Hadley (<a href="https://www.youtube.com/watch?v=zbyJL9bDsY0">opus 50, 1904</a>), Franck Bridge (<a href="http://www.youtube.com/watch?v=Jxlg8nlKnzc">ré mineur*, 1905</a>) - magnifique ! -, James Friskin (<a href="http://www.editionsilvertrust.com/friskin-piano-quintet.htm">ut mineur</a>, 1907), Arnold Bax (<a href="https://www.youtube.com/watch?v=HYgr2tL7mhw">sol mineur*, 1908</a>), Adela Madison  (<a href="http://www.editionsilvertrust.com/maddison-piano-quintet.htm">Quintette, 1916</a>), Edward Elgar (<a href="http://www.youtube.com/watch?v=hOpiAxga3Ts&amp;feature=related">opus 84*, 1918</a>), Cyrill Scott (<a href="https://www.youtube.com/watch?v=4aDhAgQ5KNw">n°1*, 1924</a>) et ... presqu'un siècle plus tard, Thomas Adès (<a href="http://www.youtube.com/watch?v=TLOdqOhnf4Q">Quintette*, 2000</a>). </p>
-<p>Les cousins d'Amérique ont été aussi heureux à une époque globalement plus récente : Samuel Coleridge-Taylor
-  Piano (<a href="https://www.youtube.com/watch?v=35QvxgZgUrM">opus 45, 1893</a>), Arthur Foote  (<a href="https://www.youtube.com/watch?v=SfqGy0rD4Cs">opus 38*, 1897</a>), Amy Beach (<a href="https://www.youtube.com/watch?v=JkHP8Zd2oIU">opus 67, 1907</a>), Leo Ornstein (<a href="http://www.youtube.com/watch?v=oOQ7JvdzWig&amp;feature=related">Quintette*, 1927</a>) - attention chef-d'oeuvre ! - ,  Vittorio Giannini (<a href="https://www.youtube.com/watch?v=f5Gj44tYBe0">Quintette*, 1932</a>), Roy Harris (<a href="https://www.youtube.com/watch?v=u9YGpu1gW8I">Quintette, 1936</a>), Charles Wakefield Cadman (<a href="http://www.naxos.com/catalogue/item.asp?item_code=8.559067">sol mineur*, 1937</a>),   Walter Piston
-  (<a href="https://www.youtube.com/watch?v=5u53cyi8tLw">Quintette*, 1949</a>), George Rochberg
-  
-  (Quintette, 1975), John Harbison (<a href="https://www.youtube.com/watch?v=HTQlTacBIEk">Quintette, 1981</a>), Charles Wuorinen
-  (<a href="https://www.youtube.com/watch?v=dH4CZROLwgo">n°1*, 1994</a> &amp; <a href="https://www.youtube.com/watch?v=OcNs2ccoDgc">n°2, 2008</a>), Elliott Carter (<a href="https://www.youtube.com/watch?v=PvhUqpOcxZE">Quintette, 1997</a>) et Lowell Liebermann (<a href="https://www.youtube.com/watch?v=JXHOXKYnGt0">opus 114*, 2010</a>). </p>
-<p></p>
-<p><i>Quintettes d'ici et d'ailleurs.</i></p>
-<p>On a écrit tellement de (beaux) quintettes sous toutes les latitudes qu'il me faut faire un choix parmi des oeuvres souvent peu connues. Je m'en tiens autant que possible à celles qui sont disponibles à l'écoute et qui y résistent !</p>
-<li>En Pologne, Jozef Nowakowski   (<a href="https://www.youtube.com/watch?v=m-23WUG2AUU">opus 17, 1833</a>), Juliusz Zarębski (<a href="https://www.youtube.com/watch?v=bQ4Xdbe9Jv8">opus 34*, 1885</a>),  Philipp Scharwenka (<a href="http://www.youtube.com/watch?v=jVhKU1SirY4&amp;feature=related">opus 118*, 1910</a>) - une très agréable surprise - , Grażyna Bacewicz  (<a href="https://www.youtube.com/watch?v=i0HocnhLuq4">n°1*, 1952</a> et <a href="https://www.youtube.com/watch?v=fCHQNMgYIAk">n°2, 1965</a>) et  Krzysztof Meyer
-  (opus 76, 1991) que je ne peux illustrer et c'est d'autant plus frustrant que ses Quatuors à cordes sont excellents.</li>
-<li>Les pays nordiques proposent quelques perles rares (comme souvent tous genres confondus !)  : en Suède, Franz Berwald
-(<a href="https://www.youtube.com/watch?v=WmVQMPZWj0c">n°1, 1853</a> &amp; <a href="https://www.youtube.com/watch?v=28mTE0dBNZ0">n°2, 1857</a>),   Elfrida Andrée
-(<a href="https://www.youtube.com/watch?v=-WE1p4k3qkg">mi mineur*, 1865</a>) et Christian Sinding
-  (<a href="https://www.youtube.com/watch?v=UM9TIR0OOMs">opus 5, 1884</a>); en Norvège Edvard Grieg (<a href="https://www.youtube.com/watch?v=9jFvB6pDiK8">si bémol majeur</a>, une oeuvre achevée par Michael Finnissy); en Finlande, Jean Sibelius (<a href="https://www.youtube.com/watch?v=huCXlJmlrcc">sol mineur*, 1890</a>) et Joonas Kokkonen
-  Piano (Quintette, 1953); au Danemark, Asger Hamerik (<a href="https://www.youtube.com/watch?v=mbF6SsiCj6w">opus 6, 1862</a>), Peter Heise   (<a href="https://www.youtube.com/watch?v=ZScl5RElhL8">fa majeur*, 1869</a>) - excellent -,  et Otto Malling  (<a href="http://www.editionsilvertrust.com/malling-piano-quintet.htm">opus 40, 1893</a>).</li>
-<li>On peut en dire autant des pays d'Europe centrale : en Hongrie, Bela Bartok (<a href="https://www.youtube.com/watch?v=QpT0CvuDCQI">ut majeur*, 1904</a>, une oeuvre atypique de prime jeunesse), Ernő Dohnányi (<a href="http://www.youtube.com/watch?v=lJMoamDt7HE&amp;feature=related">opus 1*, 1895</a> et  <a href="http://www.editionsilvertrust.com/dohnanyi-piano-quintet2.htm">opus 26, 1914</a>) et Miklós Rózsa
-         (opus 2, 1928); en Tchéquie, Josef Suk
-  (opus 8, 1893),  Zdenek Fibich (<a href="http://www.editionsilvertrust.com/fibich-piano-quintet.htm">opus 42*, 1893</a>), Vítězslav Novák
-  (<a href="https://www.youtube.com/watch?v=bHZoQ8-VEzo">opus 12*, 1897</a>), Josef Bohuslav Foerster (<a href="https://www.youtube.com/watch?v=BfBQNd7LK48">opus 38*, 1928</a>) et Bohuslav Martinů (<a href="https://www.youtube.com/watch?v=6DNUYZkRqLE">n°1, 1933</a> et <a href="http://www.youtube.com/watch?v=14xaOvwtwYY&amp;feature=related">n°2*, 1944</a> ); en Roumanie, George Enescu (<a href="http://www.youtube.com/watch?v=HXlDs_As9fE&amp;feature=related">opus 29*, 1940</a>) et en Croatie,  Dora Pejačević (<a href="https://www.youtube.com/watch?v=4lOitUcxebk">opus 40*, 1918</a>) - une belle découverte ! -.</li>
-<li>Les Pays-Bas ont brillé grâce à Julius Röntgen (<a href="https://www.youtube.com/watch?v=w9egj5tO5e4">la mineur*, 1927</a>,  il y en a deux autres), Peter van Anrooy (<a href="https://www.youtube.com/watch?v=qoLJIRNwy2s">Quintette*, 1898</a>) et Dirk Schäfer (<a href="https://www.youtube.com/watch?v=w9egj5tO5e4">opus 5*, 1901</a>), ici tout vaut le détour !</li>
-<li>En Suisse, voici un autre trio incontournable, Hans Huber (<a href="https://www.youtube.com/watch?v=kVvNn1DI2UA">opus 111*, 1893</a> et <a href="https://www.youtube.com/watch?v=t9PSRETSFDI">opus 125, 1907</a>),  Ernest Bloch (1880-1959) (<a href="https://www.youtube.com/watch?v=GXVuXOM1fxg">n°1, 1923</a> et <a href="https://www.youtube.com/watch?v=EnDUL7Oxu-g">n°2*, 1957</a>) et Frank Martin (<a href="https://www.youtube.com/watch?v=35gWw2sIAy4">Quintette*, 1919</a>).</li>
-<li>L'Italie ne fut pas en reste avec quelques oeuvres inspirées signées,    Giovanni Sgambati
-        (<a href="http://www.editionsilvertrust.com/sgambati-piano-quintet-1.htm">opus 4, 1866</a> et <a href="https://www.youtube.com/watch?v=M47RZiMytZo">opus 5*, 1875</a>), Giuseppe Martucci
-  (<a href="https://www.youtube.com/watch?v=xRgYxpDmrn4">opus 45*, 1878</a>), Alessandro Longo  (<a href="http://www.editionsilvertrust.com/longo-piano-quintet.htm">opus 3, 1897</a>), Ermanno Wolf-Ferrari (<a href="https://www.youtube.com/watch?v=SvFBSsT7Huw">opus 6*, 1901</a>),  Ottorino Respighi (<a href="https://www.youtube.com/watch?v=OOqdwl9sigY">fa majeur*, 1902</a>), Franco Alfano (<a href="https://www.youtube.com/watch?v=qlPQ_jYwbrw">Quintette, 1945</a>) et Francesco d'Avalos (<a href="https://www.youtube.com/watch?v=AXLUjk0EKh0">Quintette, 1963</a>).</li>
-<li>L'Espagne  se situe normalement en retrait avec seulement Enrique Granados  (<a href="https://www.youtube.com/watch?v=aSCRDOu6VTM">opus 49*, 1894</a>) et Joaquín Turina
-  (<a href="https://www.youtube.com/watch?v=OFgIsodbA00">opus 1, 1907</a>).</li>
-<li>Enfin je voudrais attirer l'attention sur un beau Quintette moderne, oeuvre d'un  compositeur israélien (c'est inhabituel), Gideon Lewensohn (1954- ). Chaque mouvement dédié à un artiste contemporain  (<a href="https://www.youtube.com/watch?v=K5ARqsCvg4U">1 : György Kurtág</a>, <a href="https://www.youtube.com/watch?v=5Hj4motjrPs">2 : Micah Lewensohn</a>, <a href="https://www.youtube.com/watch?v=GXb19zVcOx0">3 : The Hilliards</a>, <a href="https://www.youtube.com/watch?v=lKIxJJ-FcPw">4 : George Rochberg</a>, <a href="https://www.youtube.com/watch?v=UdhXXNUrUGU">5 : A Message From Dimitry</a>). Cet enregistrement  est paru chez <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Gideon-Lewensohn-geb-1954-Streichquartett-Odradek-Quartet/hnum/6270188">ECM</a>, certes il est exigeant pour l'auditeur mais il vaut le détour.</li>
-<p></p>
-  
-  <p><i>Brocante.</i></p>
-  <p>Au rang des curiosités, et tous genres à 5 confondus, on trouve quelques specimens étonnants ou simplement divertissants :</p>
-  <li>Qui imaginerait que Wilhelm Furtwängler
-    ait composé un Quintette à clavier (<a href="https://www.youtube.com/watch?v=DpNU_WL3Zwc">ut majeur, 1935</a>), d'une durée de 80 minutes ?</li>
-  <li>Le Gomalan Brass Quintet s'est lancé dans de bien sonnantes (et bienvenues) adaptations de thèmes d'<a href="https://www.youtube.com/watch?v=Dg9sEe8u0Lk">Ennio Morricone</a> tandis que  Sean Osborn a conçu un hommage similaire envers les gars de Liverpool (<a href="https://www.youtube.com/watch?v=e0lFvEN5nps">The Beatles, 2004</a>, pour clarinette &amp; quatuor). </li>
-  <li>Les Tangos d'Astor Piazzola (<a href="https://www.youtube.com/watch?v=r2erfY5Dwu0">Oblivion</a>) ont été transcrits de mille façons, en particulier pour clarinette et quatuor.</li>
-  <li>Même des jeunes musiciens continuent de s'intéresser au genre du quintette, tels  Greg Simon (<a href="http://www.youtube.com/watch?v=RbYhHcq_KNQ&amp;feature=related">n°1, 2009</a>), né en 1985, ou Liam Diethrich (<a href="https://www.youtube.com/watch?v=rIJVA7kUhhw">n°1, 2015</a>), né en 2002 (!) et vainqueur à 13 ans du concours de composition pour jeunes artistes du Conservatoire du Midwest, artiste à suivre !</li>
-<p></p>
-<p></p>
-  
-  
-               </div>
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/quintette/quintette.jpg" alt="TODO"/>
+                              <figcaption>TODO</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+                   
+                  <p>En musique instrumentale, le quintette à clavier apparaît comme la discipline chambriste la plus traditionnellement soignée, après le sacro-saint quatuor à cordes. Cette forme d'inspiration relativement récente (200 ans quand même !) désigne habituellement le piano accompagnant quatre instruments pouvant être à vents (au moins partiellement), c'est la forme divertissante, ou (intégralement) à cordes, c'est la forme savante, celle qui nous occupera principalement.</p>
+
+                  <div id="evolutionFormule">
+                    <h4>Evolution de la formule du concert à 5</h4>
+
+                    <p>La période baroque a multiplié les combinaisons instrumentales, mêlant allègrement cordes, bois, vents et clavier (Sonata a 5 d'<a href="https://www.youtube.com/watch?v=ayhbK8JeNKU ">Albinoni</a>, <a href="https://www.youtube.com/watch?v=M1Us-8qkYE4 ">Telemann</a>, <a href="https://www.youtube.com/watch?v=XSNClEvxsYY ">Haendel </a> et tant d'autres ... ). Notez qu'un sixième instrument peut être présent qui ne joue qu'un rôle de ponctuation, c'est le continuo. L'ère (pré-)classique n'a guère innové dans ses Sérénades et autres Divertissements. Même le grand Joseph Haydn (1732-1809), qui avait pourtant contribué à formaliser le genre du quatuor à cordes, n'a écrit que des quintettes pour formations subalternes, dans un esprit de pur divertissement (<a href="https://www.youtube.com/watch?v=UPP10hoGLUk ">Divertimento</a> pour baryton - instrument à cordes non vocales ! - , alto, violoncelle et 2 cors). Notez que cet autre <a href="https://www.youtube.com/watch?v=V07kHNrn29E ">Divertimento</a> célèbre (en si bémol majeur), reprenant le choral de Saint Antoine (en 3:40) immortalisé par Brahms dans ses célèbres <a href="https://www.youtube.com/watch?v=BAuqxEMRapg ">Variations</a> pour orchestre, n'est qu'attribué au maître viennois. </p>
+                    <p>Ni Mozart (<a href="https://www.youtube.com/watch?v=F40X8bRxKI4 ">Quintette  KV 452</a>) ni Beethoven (<a href="https://www.youtube.com/watch?v=L7iPBTndQyg ">opus 16</a>) ne se sont passionnés pour le genre, ne léguant que des oeuvres secondaires. Au bilan, on préférera les contributions sérieuses d'<a href="https://www.youtube.com/watch?v=tLjF8yrBlJA ">Anton Reicha</a> (1770-1836), un proche de Beethoven, voire celles plus guillerettes de <a href="https://www.youtube.com/watch?v=MFQ6FecTqYE ">Franz Danzi</a> (1763-1826). Les oeuvres de Reicha ont fait l'objet d'une belle intégrale, parue en 10 CD, chez <a href="https://www.jpc.de/jpcng/cpo/detail/-/art/Anton-Reicha-1770-1836-S%E4mtliche-Bl%E4serquintette-Vol-1-10/hnum/6522966 ">CPO</a>. </p>
+                    <p>Un (ou deux) siècle(s) plus tard, on trouve encore des compositeurs amoureux du mélange des timbres instrumentaux : <a href="https://www.youtube.com/watch?v=8bSG27NHFF8 ">Anton Rubinstein (1855)</a>, <a href="https://www.youtube.com/watch?v=Ve0bjarsvns ">Paul Taffanel (1876)</a>, <a href="https://www.youtube.com/watch?v=4wbKyA4PqVQ ">Rimsky-Korsakow (1876)</a> - une oeuvre à la gaieté communicative -, <a href="https://www.youtube.com/watch?v=xruEriSipTA ">Zdenek Fibich (1893)</a>, <a href="https://www.youtube.com/watch?v=4B2CbG4bo-s ">Gustav Holst (1903)</a>, <a href="https://www.youtube.com/watch?v=7qHwk8iJSv8 ">Carl Nielsen (1922)</a>, <a href="https://www.youtube.com/watch?v=H0t56uVd4ps ">Hans Huber (1918)</a>, et, plus près de nous, le jeune <a href="https://www.youtube.com/watch?v=zM7dsOYMWgI">Elliott Carter (1948)</a> et le moins jeune <a href="https://www.youtube.com/watch?v=H6y3HBZIH3U ">Jean Françaix (1987)</a>.</p>
+
+                    <p>Boccherini (1743-1805) et Mozart (1756-1791) ont été parmi les premiers à croire en une formule plus sobre sur le papier mais, au bilan, plus ambitieuse : l'adjonction d'un instrument au quatuor à cordes classique. Au début, cela s'est fait dans plusieurs directions :</p>
+
+                    <ul class="miniListCorps">
+                      <li>La plupart du temps, par adjonction d'un 5<sup>ème</sup> instrument à cordes, généralement un second alto (Beethoven (opus 29), Brahms (opus 88 & 111), Bridge (mi mineur), Bruckner (<a href="https://www.youtube.com/watch?v=8cTbsCpTSls ">fa majeur</a>, si vous ne connaissez pas, précipitez-vous !), Dvořák (opus 1 &amp; opus 97), Mendelssohn (opus 18 &amp; opus 87) mais la référence demeure précisément Mozart dans ses fameux Quintettes de maturité (KV 515, 516, 593 &amp; <a href="https://www.youtube.com/watch?v=9L9IQL4unl8 ">614</a>)). Il existe une variante rare avec second violoncelle (Boccherini (cfr infra) et Shubert (inégalable et célébrissime ut majeur)) et même une troisième carrément exotique, pour contrebasse (Dvořák (opus 77)).</li>
+                      <li>Mozart a opté pour une clarinette dans le grand Quintette (<a href="https://www.youtube.com/watch?v=_mKUYMQsFwM ">KV 581</a>) et cette formule a fait école à l'époque romantique (<a href="https://www.youtube.com/watch?v=iN8O_LIpSlw ">Carl Maria von Weber</a>, <a href="https://www.youtube.com/watch?v=2KHvgLKAiIY ">Max Reger</a>, <a href="https://www.youtube.com/watch?v=pmQ99RWlJrY&amp;spfreload=10 ">Johannes Brahms</a>, même l'inattendu <a href="https://www.youtube.com/watch?v=Y4uBUVgQqp8 ">Giaccomo Meyerbeer</a>, mais c'est pour amuser la galerie), voire au 20<sup>ème</sup> siècle (<a href="https://www.youtube.com/watch?v=6Cxkj1CvtkQ ">Paul Hindemith</a>, dans une oeuvre à découvrir d'urgence, ou <a href="https://www.youtube.com/watch?v=bOrOJNSmyuE ">Jean Françaix</a>, qu'on a connu mieux inspiré). Il existe encore d'autres variantes, notamment pour hautbois, mais cela nous écarte du sujet.</li>
+                      <li>
+                      <div class="conteneurImageSeule">
+                        <div>
+                          <figure>
+                            <img src="../images/quintette/boccherini.jpg" alt="Monsieur Quintettes"/>
+                            <figcaption>Monsieur Quintettes</figcaption>
+                          </figure>
+                        </div>
+                      </div>Luigi Boccherini demeure le spécialiste auto-proclamé des quintettes en tous genres : il en a écrit près de 200 (!), pour cordes seules (<a href="https://www.youtube.com/watch?v=_aF9yco57VE ">opus 27</a> mais la liste est dix fois plus longue), avec flûte, avec <a href="https://www.youtube.com/watch?v=6YXleGIULMA ">guitare</a> et, on y arrive, avec piano (12 Quintettes à clavier, <a href="https://www.youtube.com/watch?v=PmKfNqOYc8Y">opus 56 (1797) &amp; 57 (1799)</a>). Ne délaissez pas ce musicien, que l'on réduit un peu vite à son opus 11 n°5 dont le <a href="https://www.youtube.com/watch?v=I8HUUnhsAKg ">Menuet</a> (en 12:55) a fait N fois le tour du monde et son opus 30 n°6, autre tube inoxydable mieux connu sous l'appellation <a href="https://www.youtube.com/watch?v=I8HUUnhsAKg ">&quot;La Musica notturna delle strade di Madrid&quot;</a> (Si vous ne connaissez pas, commencez en 7:10). Car toute sa musique, mélange de styles classique et galant, sait accrocher les oreilles attentives par quelques tournures inattendues qui sonnent toujours juste. Voici un fondu-enchaîné de trois extraits aussi significatifs que plaisants <sub><sub><sub> 
+                      <audio controls preload="none"> 
+                        <source src="../son.mp3/quintette/boccherini.mp3" type="audio/mpeg"/> 
+                        <source src="../son.mp3/quintette/boccherini.ogg" type="audio/ogg"/> 
+                        Votre navigateur n'est pas compatible 
+                      </audio></sub></sub></sub>.</li>
+                    </ul>
+                  </div>
+
+                  <div id="quintetteClavier">
+                    <h4>Le quintette à clavier</h4>
+
+                    <p>La forme pour cordes et piano qui va désormais nous occuper a adopté l'effectif du quatuor à cordes classique (deux violons, un alto et un violoncelle). Pourtant, dans son Quintette <a href="https://www.youtube.com/watch?v=g3k81__bwrM ">&quot;La Truite&quot; (1819)</a> (ainsi nommé parce qu'il reprend la mélodie d'un lied antérieur, Die Forelle), Franz Schubert a réitéré une expérience déjà tentée par <a href="http://www.youtube.com/watch?v=duguKeOazK4&amp;feature=related">Jan Ladislav Dussek</a> (1801) (et l'inévitable Boccherini) et consistant à remplacer le second violon par une contrebasse. Cette formule, également adoptée par <a href="https://www.youtube.com/watch?v=fGL3zCqrg6c">Ferdinand Ries</a> (1815), <a href="https://www.youtube.com/watch?v=Fi_ks4mN3X4">Johann Nepomuk Hummel</a> (1822), <a href="http://www.editionsilvertrust.com/limmer-piano-quintet.htm">Franz Limmer</a> (1834), <a href="https://www.youtube.com/watch?v=jypbFP89Hng">Louise Farrenc</a> (1839), <a href="http://www.editionsilvertrust.com/onslow-piano-quintet-op70.htm">George Onslow</a> (1846), <a href="http://www.editionsilvertrust.com/goetz-piano-quintet.htm">Hermann Goetz</a> (1874) et <a href="http://www.editionsilvertrust.com/labor-piano-quintet-op3.htm">Josef Labor</a> (1912), visait un nouvel équilibre des voix mais elle n'a pourtant pas fait fortune, sans doute à cause de la difficulté de recruter un contrebassiste en famille ou entre amateurs. </p>
+                    <p>La recette du &quot;véritable&quot; quintette à clavier est aussi précieuse que celle de la tarte au riz de Verviers (Seuls les gourmets peuvent comprendre, qui, c'est la mode, veulent saisir l'Unesco pour un possible classement au Patrimoine mondial de l'Humanité !). On attribue à Robert Schumann l'initiative d'avoir définitivement (r)établi le schéma instrumental initial (avec second violon si vous suivez), proposant le modèle du Quintette <a href="http://www.youtube.com/watch?v=KZRmLWYg5O0&amp;feature=related">opus 44, 1842</a>. Cette formule s'est imposée à la plupart des compositeurs désireux d'écrire &quot;leur&quot; quintette, généralement au singulier car on ne défie pas le destin quand on ambitionne le chef-d'oeuvre ! Dans la suite, chaque oeuvre sera référencée par son numéro (éventuellement d'opus) et/ou sa tonalité, aucune ambiguïté ne devant être possible.</p>
+                    <p>Ni Haydn, ni Mozart ni Beethoven n'ayant contribué au genre, c'est peut-être, à la réflexion, l'absence de modèle intimidant qui a libéré l'inspiration des successeurs, permettant l'épanouissement d'un répertoire particulièrement riche même dans le chef de musiciens pas toujours très connus. </p>
+                  </div>
+
+                  <div id="incontournables">
+                    <h4>Les incontournables</h4>
+
+                    <p>La liste des sommets du genre figure dans toutes les bonnes histoires de la musique. Au 19<sup>ème</sup> siècle, outre le Schumann, elles mentionnent, en priorité, Johannes Brahms (<a href="https://www.youtube.com/watch?v=riUUYyMeLpQ">opus 34, 1864</a>, en fait la transcription d'une sonate reniée pour deux pianos, opus 34b), Anton Dvorak (opus 1, 1872 et <a href="http://www.youtube.com/watch?v=lqHWBGRUx6Q&amp;feature=related">opus 81, 1887</a>), César Franck (<a href="https://www.youtube.com/watch?v=W1RGAStkCAE">fa mineur, 1879</a>, souvent couplé au disque avec celui de Schumann pour cause de parenté évidente) et Gabriel Fauré (<a href="https://www.youtube.com/watch?v=5-j6LLkpQYY">opus 89, 1905</a> et <a href="https://www.youtube.com/watch?v=F3DDu6Dngks"> opus 115, 1921</a>). Un siècle plus tard, les deux monuments ont été signés Dimitri Schostakovitch (<a href="https://www.youtube.com/watch?v=5YXwE6VTT6g">opus57, 1940</a>) et Alfred Schnittke (Bouleversant <a href="https://www.youtube.com/watch?v=zfsQX6BF5J0">Quintette, 1972</a>, à la mémoire de sa défunte mère). </p>
+                    <p>Ces chroniques partant prioritairement à la recherche des trésors cachés, des fouilles supplémentaires (et un tri !) ont été nécessaires. Pour guider votre choix, j'ai parfois collé une étoile comme au Michelin, simples coups de coeur personnels.</p>
+                  </div>
+
+                  <div id="quintettesFrançais">
+                    <h4>Quintettes français</h4>
+
+                    <p>Les deux chefs-d'oeuvre de Fauré le démontrent, la formule du quintette à clavier a toujours convenu à la sensibilité française, pudique ou enjouée. Quelles plus belles illustrations précoces que ces oeuvres signées Théodore Gouvy (<a href="https://www.youtube.com/watch?v=aK4tEGXihGA">opus 24*, 1850</a>), Camille Saint-Saens (<a href="https://www.youtube.com/watch?v=MRu1aSvzQPg">opus 14, 1855</a>) ou Alexis de Castillon (<a href="https://www.youtube.com/watch?v=WdLOHBsyx0U">opus 1*, 1864</a>) ?</p>
+                    <p>Une génération plus tard l'intérêt ne faiblit pas à l'écoute de Charles-Marie Widor (<a href="http://www.naxos.com/catalogue/item.asp?item_code=8.555416">opus 7, 1890</a>), Théodore Dubois (<a href="https://www.youtube.com/watch?v=nW3bDhkuwR4">fa majeur*, 1905</a>) - admirable ! -, Florent Schmitt (<a href="https://www.youtube.com/watch?v=RRuKGQk2oss">opus 51, 1908</a>), Jean Huré (<a href="http://www.editionsilvertrust.com/hure-piano-quintet.htm">ré majeur, 1908</a>), Paul Le Flem (<a href="https://www.youtube.com/watch?v=vSxGTFnGPoc">mi mineur*, 1909</a>), Charles Koechlin (<a href="https://www.youtube.com/watch?v=QxuxeAPT_r8">opus 80, 1908 revu en 1921</a>), Gabriel Pierné (<a href="https://www.youtube.com/watch?v=xCOuLbNfFEg">opus 41*, 1917</a>), Louis Vierne (<a href="https://www.youtube.com/watch?v=T9rCTrkIKnM">opus 42, 1917</a>), Reynaldo Hahn (<a href="http://www.youtube.com/watch?v=BXEkHh4WDDI">fa dièse mineur*, 1921)</a>, Jean Cras (<a href="http://www.editionsilvertrust.com/cras-piano-quintet.htm">ut majeur, 1922</a>), Vincent d'Indy (<a href="https://www.youtube.com/watch?v=ft4yFPbOo_0">opus 81*, 1924</a>) et Lucien Durosoir (<a href="https://www.jpc.de/jpcng/classic/detail/-/art/Lucien-Durosoir-1878-1955-Klavierquintett-1925/hnum/6138738">fa majeur, 1925</a>). A ce stade, pourquoi ne pas ajouter le <a href="http://www.editionsilvertrust.com/dupont-poeme.htm">Poème*, 1911</a> de Gabriel Dupont, un quintette qui n'avoue pas son nom. Beaucoup de noms peu connus, c'est toute la richesse de la musique française des années 1900.</p>
+                  </div>
+
+                  <div id="quintettesRusses">
+                    <h4>Quintettes russes</h4>
+
+                    <p>Les deux oeuvres majeures de Schostakovitch et Schnittke ne doivent pas faire oublier les artisans du renouveau russe : sauf le précurseur Alexandre Alyabyev (<a href="https://www.youtube.com/watch?v=1F8bSMv4l1U">Quintette, 1830?</a>), on ne présente (presque) plus les classiques, Alexandre Borodin (<a href="http://www.youtube.com/watch?v=sxL1zmBiaMw&amp;feature=related">ut mineur*, 1862</a>), Anton Rubinstein (<a href="http://www.editionsilvertrust.com/rubinstein-piano-quintet.htm">opus 99, 1876</a>), Anton Arensky (<a href="http://www.youtube.com/watch?v=PiPvFaC0dEw&amp;feature=related">opus 51*, 1900</a>), Nikolai Medtner (<a href="https://www.youtube.com/watch?v=yUU6yQEdJlk">ut majeur*, 1903 terminé en 1949</a>), Sergei Taneyev (<a href="http://www.editionsilvertrust.com/taneyev-sergei-piano-quintet-Op.30.htm">opus 99*, 1911</a>), Mikhail Gnesin (Requiem instrumental <a href="http://www.editionsilvertrust.com/gnesin-requiem.htm">opus 11, 1913</a>), Mieczysław Weinberg (<a href="https://www.youtube.com/watch?v=YjMt4mMyxIg">opus 18*, 1944</a>, attention chef-d'oeuvre !), Sofia Gubaidulina (<a href="https://www.youtube.com/watch?v=M_psT05Oors">Quintette, 1958</a>, une oeuvre de jeunesse), Boris Tchaikovsky (<a href="https://www.youtube.com/watch?v=v6BF-gDRnEI">Quintette*, 1962</a>) et plus récemment Nikolai Kapustin (<a href="https://www.youtube.com/watch?v=W4kwb2kWZow">opus 89*, 1998</a>, dans son style jazz habituel).</p>
+                    <p>J'ai naturalisé d'office les transfuges Karl Davydov (<a href="https://www.youtube.com/watch?v=0p1AVEfllXk">opus 40*, 1884</a>) russo-letton, Paul Juon (<a href="http://www.editionsilvertrust.com/juon-piano-quintet-1.htm">opus 33, 1906</a> et <a href="http://www.editionsilvertrust.com/juon-piano-quintet-1.htm">opus 44*, 1909</a>) helvéto-russe et Georgy Catoire (<a href="https://www.youtube.com/watch?v=VSHO3zAXP1I">opus 28*, 1914</a>) franco-russe.</p>
+                  </div>
+
+                  <div id="quintettesAustroAllemands">
+                    <h4>Quintettes austro-allemands</h4>
+
+                    <p>Les quintettes austro-allemands sont d'excellente facture quoique souvent coulés dans un moule unique hérité de Brahms. Etrangement, le pionnier du genre fut un amateur distingué (ici même), le <span class="coloAutrePourLien"><a href="../chroniques/louisferdinand.html">Prince Louis Ferdinand de Prusse</a> (<a href="https://www.youtube.com/watch?v=RVum3euSLV4">opus 1, 1803</a></span>). Un bon demi-siècle plus tard (!), la liste s'est enfin allongée grâce aux efforts de Louis Spohr (opus 130, 1845), Joachim Raff (<a href="https://www.youtube.com/watch?v=UDA_vSWIaoU">opus 107*, 1862</a>), Carl Reinecke (<a href="http://www.editionsilvertrust.com/reinecke-piano-quintet.htm">opus 83, 1866</a>), Franz Lachner (<a href="http://www.editionsilvertrust.com/lachner-franz-pno-qnt2.htm">n°2 opus 145*, 1869</a>), Ferdinand Thierot (<a href="http://www.editionsilvertrust.com/thieriot-piano-quintet.htm">opus 20*, 1869</a>), Ferdinand Hiller (<a href="https://www.youtube.com/watch?v=kez0adzfk28">opus 156, 1873</a>), Friedrich Kiel (<a href="http://www.editionsilvertrust.com/kiel-piano-quintet-1.htm">opus 75, 1874 </a> et <a href="http://www.editionsilvertrust.com/kiel-piano-quintet-2.htm">opus 76, 1874</a>), Heinrich von Herzogenberg (<a href="https://www.youtube.com/watch?v=R5Mmna_RSW0">opus 17, 1876</a>), Friedrich Gernsheim (<a href="http://www.editionsilvertrust.com/gernsheim-piano-quintet-1.htm">opus 35, 1877</a> et <a href="http://www.editionsilvertrust.com/gernsheim-piano-quintet-2.htm">opus 63*, 1890</a>), Josef Rheinberger (<a href="http://www.editionsilvertrust.com/rheinberger-piano-quintet.htm">opus 114*, 1878</a>), Karl Goldmark (<a href="http://www.editionsilvertrust.com/goldmark-piano-quintet-1.htm">opus 30, 1879</a> et <a href="http://www.editionsilvertrust.com/goldmark-piano-quintet-2.htm">opus 54*, 1914</a>), Eduard Franck (<a href="http://www.editionsilvertrust.com/franck-e-piano-quintet.htm">opus 45*, 1882</a>), August Klughardt (<a href="https://www.youtube.com/watch?v=HlJiA24eVN8">opus 43*, 1884</a>), Max Bruch (<a href="http://www.youtube.com/watch?v=JvhgtTMyRsk&amp;feature=related">sol mineur*, 1886</a>) - une belle oeuvre sortie de la plume d'un musicien souvent villipendé -, Carl Frühling (<a href="http://www.editionsilvertrust.com/fruhling-piano-quintet-Op.30.htm">opus 30, 1894</a>), Max Reger (<a href="https://www.youtube.com/watch?v=5RW80fXd7Zw">n°1, 1898</a> et, <a href="https://www.youtube.com/watch?v=nHmrnrWdeCM">n°2, 1902</a>), Ludwig Thuille (<a href="https://www.youtube.com/watch?v=Igmxakl_pmM">opus 20, 1901</a>), Hugo Kaun (<a href="http://www.editionsilvertrust.com/kaun-piano-quintet.htm">opus 39, 1902</a>), Wilhelm Berger (<a href="https://www.youtube.com/watch?v=B9vreLBRs1s">opus 95, 1904</a>), Anton Webern (<a href="https://www.youtube.com/watch?v=RRwWEGjWkfg">Quintette, 1907</a>) - une oeuvre de jeunesse sans rapport avec celles qui suivront -, Hans Pfitzner Piano (<a href="https://www.chandos.net/products/catalogue/CX%207395">opus 23*, 1908</a>), Hermann Zilcher (<a href="http://www.editionsilvertrust.com/zilcher-pno-quintet.htm">opus 42*, 1918</a>), Erich Wolfgang Korngold (<a href="https://www.youtube.com/watch?v=oRtig6zcj9I">opus 15*, 1921</a>), Franz Schmidt (<a href="https://www.youtube.com/watch?v=OfFxDVRWcmE">sol majeur*, 1932</a>) et Ernst Toch (<a href="https://www.youtube.com/watch?v=NUoHPEo6vXw">opus 64, 1938</a>). Après 1940, la veine s'est tarie, on devine pourquoi, en Allemagne Brahms est mort deux fois.</p>
+                  </div>
+
+                  <div id="quintettesOutreManche">
+                    <h4>Quintettes d'Outre-Manche</h4>
+
+                    <p>Les anglais soucieux de rattraper un retard séculaire ont mis les bouchées doubles dès la fin du 19<sup>ème</sup> siècle : Charles Villiers Stanford (<a href="https://www.youtube.com/watch?v=8aFdn1Rwv-o">opus 26, 1886</a>), George Whitefield Chadwick (<a href="https://www.youtube.com/watch?v=p61o3Vo6Sp8">mi bémol majeur*, 1887</a>), Ralph Vaughan Williams (<a href="http://www.youtube.com/watch?v=KZRmLWYg5O0&amp;feature=related">ut mineur*, 1903</a>), Hamilton Harty (fa majeur, 1904), Joseph Holbrooke (<a href="http://www.editionsilvertrust.com/holbrooke-symphonic-piano-quintet.htm">opus 44*, 1904</a>) - une oeuvre annoncée symphonique par son auteur, de fait -, Henry Hadley (<a href="https://www.youtube.com/watch?v=zbyJL9bDsY0">opus 50, 1904</a>), Franck Bridge (<a href="http://www.youtube.com/watch?v=Jxlg8nlKnzc">ré mineur*, 1905</a>) - magnifique ! -, James Friskin (<a href="http://www.editionsilvertrust.com/friskin-piano-quintet.htm">ut mineur</a>, 1907), Arnold Bax (<a href="https://www.youtube.com/watch?v=HYgr2tL7mhw">sol mineur*, 1908</a>), Adela Madison (<a href="http://www.editionsilvertrust.com/maddison-piano-quintet.htm">Quintette, 1916</a>), Edward Elgar (<a href="http://www.youtube.com/watch?v=hOpiAxga3Ts&amp;feature=related">opus 84*, 1918</a>), Cyrill Scott (<a href="https://www.youtube.com/watch?v=4aDhAgQ5KNw">n°1*, 1924</a>) et ... presqu'un siècle plus tard, Thomas Adès (<a href="http://www.youtube.com/watch?v=TLOdqOhnf4Q">Quintette*, 2000</a>). </p>
+                    <p>Les cousins d'Amérique ont été aussi heureux à une époque globalement plus récente : Samuel Coleridge-Taylor Piano (<a href="https://www.youtube.com/watch?v=35QvxgZgUrM">opus 45, 1893</a>), Arthur Foote (<a href="https://www.youtube.com/watch?v=SfqGy0rD4Cs">opus 38*, 1897</a>), Amy Beach (<a href="https://www.youtube.com/watch?v=JkHP8Zd2oIU">opus 67, 1907</a>), Leo Ornstein (<a href="http://www.youtube.com/watch?v=oOQ7JvdzWig&amp;feature=related">Quintette*, 1927</a>) - attention chef-d'oeuvre ! - , Vittorio Giannini (<a href="https://www.youtube.com/watch?v=f5Gj44tYBe0">Quintette*, 1932</a>), Roy Harris (<a href="https://www.youtube.com/watch?v=u9YGpu1gW8I">Quintette, 1936</a>), Charles Wakefield Cadman (<a href="http://www.naxos.com/catalogue/item.asp?item_code=8.559067">sol mineur*, 1937</a>), Walter Piston (<a href="https://www.youtube.com/watch?v=5u53cyi8tLw">Quintette*, 1949</a>), George Rochberg (Quintette, 1975), John Harbison (<a href="https://www.youtube.com/watch?v=HTQlTacBIEk">Quintette, 1981</a>), Charles Wuorinen (<a href="https://www.youtube.com/watch?v=dH4CZROLwgo">n°1*, 1994</a> &amp; <a href="https://www.youtube.com/watch?v=OcNs2ccoDgc">n°2, 2008</a>), Elliott Carter (<a href="https://www.youtube.com/watch?v=PvhUqpOcxZE">Quintette, 1997</a>) et Lowell Liebermann (<a href="https://www.youtube.com/watch?v=JXHOXKYnGt0">opus 114*, 2010</a>). </p>
+                  </div>
+
+                  <div id="quintettesIciAilleurs">
+                    <h4>Quintettes d'ici et d'ailleurs</h4>
+
+                    <p>On a écrit tellement de (beaux) quintettes sous toutes les latitudes qu'il me faut faire un choix parmi des oeuvres souvent peu connues. Je m'en tiens autant que possible à celles qui sont disponibles à l'écoute et qui y résistent !</p>
+
+                    <ul class="miniListCorps">
+                      <li>En Pologne, Jozef Nowakowski (<a href="https://www.youtube.com/watch?v=m-23WUG2AUU">opus 17, 1833</a>), Juliusz Zarębski (<a href="https://www.youtube.com/watch?v=bQ4Xdbe9Jv8">opus 34*, 1885</a>), Philipp Scharwenka (<a href="http://www.youtube.com/watch?v=jVhKU1SirY4&amp;feature=related">opus 118*, 1910</a>) - une très agréable surprise - , Grażyna Bacewicz (<a href="https://www.youtube.com/watch?v=i0HocnhLuq4">n°1*, 1952</a> et <a href="https://www.youtube.com/watch?v=fCHQNMgYIAk">n°2, 1965</a>) et Krzysztof Meyer (opus 76, 1991) que je ne peux illustrer et c'est d'autant plus frustrant que ses Quatuors à cordes sont excellents.</li>
+                      <li>Les pays nordiques proposent quelques perles rares (comme souvent tous genres confondus !) : en Suède, Franz Berwald (<a href="https://www.youtube.com/watch?v=WmVQMPZWj0c">n°1, 1853</a> &amp; <a href="https://www.youtube.com/watch?v=28mTE0dBNZ0">n°2, 1857</a>), Elfrida Andrée (<a href="https://www.youtube.com/watch?v=-WE1p4k3qkg">mi mineur*, 1865</a>) et Christian Sinding (<a href="https://www.youtube.com/watch?v=UM9TIR0OOMs">opus 5, 1884</a>); en Norvège Edvard Grieg (<a href="https://www.youtube.com/watch?v=9jFvB6pDiK8">si bémol majeur</a>, une oeuvre achevée par Michael Finnissy); en Finlande, Jean Sibelius (<a href="https://www.youtube.com/watch?v=huCXlJmlrcc">sol mineur*, 1890</a>) et Joonas Kokkonen Piano (Quintette, 1953); au Danemark, Asger Hamerik (<a href="https://www.youtube.com/watch?v=mbF6SsiCj6w">opus 6, 1862</a>), Peter Heise (<a href="https://www.youtube.com/watch?v=ZScl5RElhL8">fa majeur*, 1869</a>) - excellent -, et Otto Malling (<a href="http://www.editionsilvertrust.com/malling-piano-quintet.htm">opus 40, 1893</a>).</li>
+                      <li>On peut en dire autant des pays d'Europe centrale : en Hongrie, Bela Bartok (<a href="https://www.youtube.com/watch?v=QpT0CvuDCQI">ut majeur*, 1904</a>, une oeuvre atypique de prime jeunesse), Ernő Dohnányi (<a href="http://www.youtube.com/watch?v=lJMoamDt7HE&amp;feature=related">opus 1*, 1895</a> et <a href="http://www.editionsilvertrust.com/dohnanyi-piano-quintet2.htm">opus 26, 1914</a>) et Miklós Rózsa (opus 2, 1928); en Tchéquie, Josef Suk (opus 8, 1893), Zdenek Fibich (<a href="http://www.editionsilvertrust.com/fibich-piano-quintet.htm">opus 42*, 1893</a>), Vítězslav Novák (<a href="https://www.youtube.com/watch?v=bHZoQ8-VEzo">opus 12*, 1897</a>), Josef Bohuslav Foerster (<a href="https://www.youtube.com/watch?v=BfBQNd7LK48">opus 38*, 1928</a>) et Bohuslav Martinů (<a href="https://www.youtube.com/watch?v=6DNUYZkRqLE">n°1, 1933</a> et <a href="http://www.youtube.com/watch?v=14xaOvwtwYY&amp;feature=related">n°2*, 1944</a> ); en Roumanie, George Enescu (<a href="http://www.youtube.com/watch?v=HXlDs_As9fE&amp;feature=related">opus 29*, 1940</a>) et en Croatie, Dora Pejačević (<a href="https://www.youtube.com/watch?v=4lOitUcxebk">opus 40*, 1918</a>) - une belle découverte ! -.</li>
+                      <li>Les Pays-Bas ont brillé grâce à Julius Röntgen (<a href="https://www.youtube.com/watch?v=w9egj5tO5e4">la mineur*, 1927</a>, il y en a deux autres), Peter van Anrooy (<a href="https://www.youtube.com/watch?v=qoLJIRNwy2s">Quintette*, 1898</a>) et Dirk Schäfer (<a href="https://www.youtube.com/watch?v=w9egj5tO5e4">opus 5*, 1901</a>), ici tout vaut le détour !</li>
+                      <li>En Suisse, voici un autre trio incontournable, Hans Huber (<a href="https://www.youtube.com/watch?v=kVvNn1DI2UA">opus 111*, 1893</a> et <a href="https://www.youtube.com/watch?v=t9PSRETSFDI">opus 125, 1907</a>), Ernest Bloch (1880-1959) (<a href="https://www.youtube.com/watch?v=GXVuXOM1fxg">n°1, 1923</a> et <a href="https://www.youtube.com/watch?v=EnDUL7Oxu-g">n°2*, 1957</a>) et Frank Martin (<a href="https://www.youtube.com/watch?v=35gWw2sIAy4">Quintette*, 1919</a>).</li>
+                      <li>L'Italie ne fut pas en reste avec quelques oeuvres inspirées signées, Giovanni Sgambati (<a href="http://www.editionsilvertrust.com/sgambati-piano-quintet-1.htm">opus 4, 1866</a> et <a href="https://www.youtube.com/watch?v=M47RZiMytZo">opus 5*, 1875</a>), Giuseppe Martucci (<a href="https://www.youtube.com/watch?v=xRgYxpDmrn4">opus 45*, 1878</a>), Alessandro Longo  (<a href="http://www.editionsilvertrust.com/longo-piano-quintet.htm">opus 3, 1897</a>), Ermanno Wolf-Ferrari (<a href="https://www.youtube.com/watch?v=SvFBSsT7Huw">opus 6*, 1901</a>), Ottorino Respighi (<a href="https://www.youtube.com/watch?v=OOqdwl9sigY">fa majeur*, 1902</a>), Franco Alfano (<a href="https://www.youtube.com/watch?v=qlPQ_jYwbrw">Quintette, 1945</a>) et Francesco d'Avalos (<a href="https://www.youtube.com/watch?v=AXLUjk0EKh0">Quintette, 1963</a>).</li>
+                      <li>L'Espagne se situe normalement en retrait avec seulement Enrique Granados (<a href="https://www.youtube.com/watch?v=aSCRDOu6VTM">opus 49*, 1894</a>) et Joaquín Turina (<a href="https://www.youtube.com/watch?v=OFgIsodbA00">opus 1, 1907</a>).</li>
+                      <li>Enfin je voudrais attirer l'attention sur un beau Quintette moderne, oeuvre d'un compositeur israélien (c'est inhabituel), Gideon Lewensohn (1954- ). Chaque mouvement dédié à un artiste contemporain (<a href="https://www.youtube.com/watch?v=K5ARqsCvg4U">1 : György Kurtág</a>, <a href="https://www.youtube.com/watch?v=5Hj4motjrPs">2 : Micah Lewensohn</a>, <a href="https://www.youtube.com/watch?v=GXb19zVcOx0">3 : The Hilliards</a>, <a href="https://www.youtube.com/watch?v=lKIxJJ-FcPw">4 : George Rochberg</a>, <a href="https://www.youtube.com/watch?v=UdhXXNUrUGU">5 : A Message From Dimitry</a>). Cet enregistrement est paru chez <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Gideon-Lewensohn-geb-1954-Streichquartett-Odradek-Quartet/hnum/6270188">ECM</a>, certes il est exigeant pour l'auditeur mais il vaut le détour.</li>
+                    </ul>
+                  </div>
+
+                  <div id="brocante">
+                    <h4>Brocante</h4>
+
+                    <p>Au rang des curiosités, et tous genres à 5 confondus, on trouve quelques specimens étonnants ou simplement divertissants :</p>
+
+                    <ul class="miniListCorps">
+                      <li>Qui imaginerait que Wilhelm Furtwängler ait composé un Quintette à clavier (<a href="https://www.youtube.com/watch?v=DpNU_WL3Zwc">ut majeur, 1935</a>), d'une durée de 80 minutes ?</li>
+                      <li>Le Gomalan Brass Quintet s'est lancé dans de bien sonnantes (et bienvenues) adaptations de thèmes d'<a href="https://www.youtube.com/watch?v=Dg9sEe8u0Lk">Ennio Morricone</a> tandis que Sean Osborn a conçu un hommage similaire envers les gars de Liverpool (<a href="https://www.youtube.com/watch?v=e0lFvEN5nps">The Beatles, 2004</a>, pour clarinette &amp; quatuor). </li>
+                      <li>Les Tangos d'Astor Piazzola (<a href="https://www.youtube.com/watch?v=r2erfY5Dwu0">Oblivion</a>) ont été transcrits de mille façons, en particulier pour clarinette et quatuor.</li>
+                      <li>Même des jeunes musiciens continuent de s'intéresser au genre du quintette, tels Greg Simon (<a href="http://www.youtube.com/watch?v=RbYhHcq_KNQ&amp;feature=related">n°1, 2009</a>), né en 1985, ou Liam Diethrich (<a href="https://www.youtube.com/watch?v=rIJVA7kUhhw">n°1, 2015</a>), né en 2002 (!) et vainqueur à 13 ans du concours de composition pour jeunes artistes du Conservatoire du Midwest, artiste à suivre !</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -207,10 +244,19 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+
+    <!-- TODO -->
+    <!-- ATTENTION ! SI PLUS OU EGAL A 4 TITRES H4 dans un fichier, ALORS on RAJOUTE:
+        - un menu nav (class="menuLateralAncres")
+        - un sommaire (class="sommaire") 
+        => IL VA DE SOI que TOUS les titres H4 doivent correspondre au titre du menu nav mais aussi du menu sommaire 
+      AUSSI: un H4 DOIT OBLIGATOIREMENT etre entouré d'un DIV avec un id (pas d'espace, ni tiret, ni accent; commence par une minuscule et utilisation de majuscule lors de mots differents (ex: <div id="quintettesIciAilleurs"><h4>Quintettes d'ici et d'ailleurs</h4> <p>blala</p> </div>)) correspondant au titre h4 
+        => cette div DOIT CONTENIR le titre H4 et le contenu en rapport avec ce titre
+      NE PAS OUBLIER EGALEMENT DE RAJOUTER l'appel au fichier javascript au dessus du body qui gère les ancres (si plus ou egal à 4 titres H4): <script src="../js/onclick.js"></script> -->
 
 </body>
 </html>

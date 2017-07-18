@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Faits divers | Heurs et malheurs du Grand Prix de Rome de Musique</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -32,11 +33,41 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreConcoursReglementJury" href="#concoursReglementJury" class="linavMenu active">
+                    <span>Le Concours, son règlement, son jury</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreHeureuxLaureats" href="#heureuxLaureats" class="linavMenu">
+                    <span>Les heureux lauréats</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreCandidatsMalheureux" href="#candidatsMalheureux" class="linavMenu">
+                    <span>Les candidats malheureux</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreExhumations" href="#exhumations" class="linavMenu">
+                    <span>Exhumations</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreCousinBelge" href="#cousinBelge" class="linavMenu">
+                    <span>Le cousin belge</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Faits divers</h2>
+                <h3>Heurs et malheurs du Grand Prix de Rome de Musique</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,201 +76,140 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../faitsDivers.html">Faits divers</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Heurs et malheurs du Grand Prix de Rome de Musique</li>
                     </ul>
-                </nav>  
-  <h2>Heurs et malheurs du Grand Prix de Rome de Musique.</h2>
+                </nav>
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#concoursReglementJury">Le Concours, son règlement, son jury</a></li>
+                        <li><a href="#heureuxLaureats">Les heureux lauréats</a></li>
+                        <li><a href="#candidatsMalheureux">Les candidats malheureux</a></li>
+                        <li><a href="#exhumations">Exhumations</a></li>
+                        <li><a href="#cousinBelge">Le cousin belge</a></li>
+                    </ul>
+                </div> 
   
-  
-  <div><img src="../images/prixderome/villamedici.jpg" alt="" /><div class="legende">Académie de France à Rome (Villa Medicis)</div></div>
-    
+                <div class="blocImgFirstAndText">
+                  <div class="conteneurImageSeule">
+                      <div>
+                          <figure>
+                              <img src="../images/prixderome/villamedici.jpg" alt="Académie de France à Rome (Villa Medicis)"/>
+                              <figcaption>Académie de France à Rome (Villa Medicis)</figcaption>
+                          </figure>
+                      </div>
+                  </div>
    
-  <p>Le Grand Prix de Rome de Musique (1803-1968) a toute une histoire que trois épais volumes ne suffiraient pas à détailler, aussi nous en tiendrons-nous à l'essentiel, remis au goût du jour et en musique, autant qu'il se peut. Cette épreuve ayant très tôt soulevé des controverses, j'ai versé au dossier les opinions de Messieurs Berlioz et Debussy : pleines d'esprit, elles jettent le regard critique d'une époque sur une épreuve qu'ils ont pourtant remportée à moins d'un siècle d'intervalle. Pour faire bonne mesure, j'ai tempéré ces avis plutôt négatifs par des considérations plus récentes, tendant à réhabiliter la mémoire de ce concours, aujourd'hui disparu.</p>
-  
-  <p>L'Académie de France à Rome fut créée en 1666, sous le règne de Louis XIV, afin de permettre aux meilleurs jeunes talents du Royaume de parfaire leur formation au contact des maîtres transalpins, de l'Antiquité à la Renaissance. Consacrée initialement aux seuls arts plastiques - peinture, sculpture et architecture - , une section musique s'ouvrit en 1803, coïncidant avec l'aménagement de la Villa Medicis. Tous les jeunes diplômés du Conservatoire pouvaient concourir à l'épreuve de Rome mais ils devaient franchir deux obstacles préalables avant d'être admis en finale : une fugue sur un sujet imposé et une oeuvre vocale respectant certaines contraintes. Six candidats étaient généralement admis à entrer en loge pendant un mois environ, invités à écrire, dans l'isolement, une cantate pour soli choeur et orchestre, sur un texte imposé. Cet exercice, qu'on n'imaginerait plus aujourd'hui, était censé tester l'habileté des candidats à mettre en musique quelques scènes de genre propres à l'opéra romantique français, un art majeur dans la France du 19<sup>ème</sup>siècle. Les partitions faisaient l'objet d'un premier tour de table parmi les jurés avant d'être entendue avec une réduction de l'orchestre au piano. Le lauréat remportait une bourse coquette pour les 5 années à venir (ces conditions ainsi que les détails du règlement du concours ont varié au cours des décennies) et le droit - ou plutôt le devoir - de séjourner tous frais payés, pendant 2 ou 3 ans, à la Villa Medicis, avec pour seule contrainte de publier une oeuvre importante chaque année (Ses envois de Rome). Les archives nationales sont pleines de partitions que personne n'a jamais pris le soin de lire. On raconte même que les envois de Rome étaient tellement peu surveillés  que plusieurs pensionnaires de la villa Medicis en ont profité pour ne rien envoyer du tout.</p>
-  
-<p>Une question  vient  naturellement à l'esprit : pourquoi tant d'oeuvres ont-elles été oubliées jusque dans un passé récent alors que toutes avaient été primées par un jury averti (Spontini, Lesueur, Auber, Boieldieu, Halévy, Adam, Berlioz,  ...) ? Au fil du temps, les critiques commencèrent à fuser de toutes parts, sapant lentement le prestige de l'épreuve : comment allait-on expliquer à la postérité que Camille Saint-Saens avait  échoué par deux fois - devancé par Leonce Cohen puis par Victor Sieg - et que Maurice Ravel n'avait pas fait mieux, par quatre fois, devancé sucessivement par André Caplet, Aymé Kunc, Raoul Laparra, enfin par Victor Gallois  ! A part, Caplet, ces lauréats n'ont jamais confirmé les espoirs fondés sur leur talent, à notre connaissance du moins. Que dire alors des Louis Deffès, Jules Duprato, Henri Maréchal, Gaston Serpette, Paul Puget, Léon Ehrhart, André Wormser ou Paul Hillemacher (la <a href="http://fr.wikipedia.org/wiki/Prix_de_Rome">liste</a> est dix fois plus longue que cela) tous pourtant dûment couronnés ?</p>
-
-
-<p><i>Le Concours, son règlement, son jury.</i></p>
-
-<p>Hector Berlioz, jamais avare de bons mots voire de commentaires assassins, ne s'est pas gêné pour se moquer bien avant tout le monde du règlement d'une institution qui l'avait pourtant couronné, au 4<sup>ème</sup> essai il est vrai ! Jamais avare de contradictions, il a ultérieurement fait partie du jury qui a évincé ... Camille Saint-Saens,  lui refusant ouvertement sa voix, au motif très berliozien que "Monsieur Saint-Saens sait tout mais il manque d'inexpérience".</p>
-
-<p>Voici comment Berlioz a brocardé le règlement du concours, au chapitre XXII de ses <a href="http://www.hberlioz.com/Writings/HBMindex.htm">Mémoires</a> que, soit-dit en passant, je vous recommande tant elles abondent en saillies plaisantes. Dites-moi si on écrit encore avec autant de verve aujourd'hui :</p>
-
-<i>
-<p>... En 1828, je me présentai pour la troisième fois au concours de l’Institut. J’y fus encore admis et j’obtins le second prix. Cette distinction consiste en couronnes publiquement décernées au lauréat et en une médaille d’or d’assez peu de valeur; elle donne en outre à l’élève couronné un droit d’entrée gratuite à tous les théâtres lyriques et ... des chances nombreuses pour obtenir le premier prix au concours suivant.
-
-   Le premier prix a des priviléges beaucoup plus importants. Il assure à l’artiste qui l’obtient une pension annuelle de trois mille francs pendant cinq ans, à la condition pour lui d’aller passer les deux premières années à l’académie de France à Rome, et d’employer la troisième à des voyages en Allemagne. Il touche le reste de sa pension à Paris, où il fait ensuite ce qu’il peut pour se produire et ne pas mourir de faim.</p>
-    
-  <p> Au reste je vais donner ici un résumé de ce que j’écrivis, il y a quinze ou seize ans, dans divers journaux, sur l’organisation singulière de ce concours.
-
-     Faire connaître chaque année quels sont ceux des jeunes compositeurs français qui offrent le plus de garanties de talent et les encourager en les mettant, au moyen d’une pension, dans le cas de pouvoir s’occuper exclusivement pendant cinq ans de leurs études, tel est le double but de l’institution du prix de Rome et telle a été l’intention du gouvernement qui l’a fondée. Toutefois, voici les moyens qu’on employait encore il y a quelques années pour remplir l’une et parvenir à l’autre.
-
-    Les choses ont un peu changé depuis lors, mais bien peu.
-
-    Les faits que je vais citer paraîtront sans doute fort extraordinaires et improbables à la plupart des lecteurs, mais ayant obtenu successivement le second et le premier grand prix au concours de l’Institut, je ne dirai rien que je n’aie vu moi-même et dont je ne sois parfaitement sûr. Cette circonstance d’ailleurs me permet d’exprimer toute ma pensée, sans crainte de voir attribuer à l’aigreur d’une vanité blessée ce qui n’est que l’expression de mon amour de l’art et de ma conviction intime.
-
-   La liberté dont j’ai déjà usé à cet égard a fait dire à Cherubini, le plus académique des académiciens passés, présents et futurs, et le plus violemment froissé en conséquence par mes observations, qu’en attaquant l’Académie je battais ma nourrice. Si je n’avais pas obtenu le prix, il n’aurait pu me taxer de cette ingratitude, mais j’aurais passé dans son esprit et dans celui de beaucoup d’autres pour un vaincu qui venge sa défaite. D’où il faut conclure que d’aucune façon je ne pouvais aborder ce sacré sujet. Je l’aborde cependant et je le traiterai sans ménagement, comme un sujet profane.</p>
-   
-  <p> 
-
-    Tous les Français ou naturalisés Français, âgés de moins de trente ans, pouvaient et peuvent encore, aux termes du règlement, être admis au concours.
-
-    Quand l’époque en avait été fixée, les candidats venaient s’inscrire au secrétariat de l’Institut. Ils subissaient un examen préparatoire, nommé concours préliminaire, qui avait pour but de désigner parmi les aspirants les cinq ou six élèves les plus avancés.
-
-    Le sujet du grand concours devait être une scène lyrique sérieuse pour une ou deux voix et orchestre et les candidats, afin de prouver qu’ils possédaient le sentiment de la mélodie et de l’expression dramatique, l’art de l’instrumentation et les autres connaissances indispensables pour écrire passablement un tel ouvrage, étaient tenus de composer une fugue vocale. On leur accordait une journée pour ce travail. Chaque fugue devait être signée.
-
-   Le lendemain, les membres de la section de musique de l’Institut se rassemblaient, lisaient les fugues et faisaient un choix trop souvent entaché de partialité car un certain nombre de manuscrits signés appartenaient toujours à des élèves de MM. les Académiciens.</p>
-   
-   <p>Les votes recueillis et les concurrents désignés, ceux-ci devaient se représenter bientôt pour recevoir les paroles de la scène qu’ils allaient avoir à mettre en musique, et entrer en loge. M. le secrétaire perpétuel de l’Académie des Beaux-Arts leur dictait collectivement le classique poème, qui commençait presque toujours ainsi (au choix) : 
-
-        "Déjà l’aurore aux doigts de rose" ou
-    
-        "Déjà le jour naissant ranime la nature" ou
-     
-        "Déjà d’un doux éclat l’horizon se colore" ou
-     
-        "Déjà du blond Phœbus le char brillant s’avance" ou
-     
-        "Déjà de pourpre et d’or les monts lointains se parent", etc.
-  
-    Les candidats, munis du lumineux poème, étaient alors enfermés isolément avec un piano, dans une chambre appelée loge, jusqu’à ce qu’ils eussent terminé leur partition. ...  Le délai fixé pour la composition était de vingt-deux jours; ceux des compositeurs qui avaient fini avant ce temps étaient libres de sortir après avoir déposé leur manuscrit, toujours numéroté et signé.
-
-    Toutes les partitions étant livrées, le lyrique aréopage s’assemblait de nouveau et s’adjoignait à cette occasion deux membres pris dans les autres sections de l’Institut : un sculpteur et un peintre, par exemple, ou un graveur et un architecte, ou un sculpteur et un graveur, ou un architecte et un peintre, ou même deux graveurs, ou deux peintres, ou deux architectes, ou deux sculpteurs. L’important était qu’ils ne fussent pas musiciens. Ils avaient voix délibérative et se trouvaient là pour juger d’un art qui leur est étranger.
-
-    On entendait successivement toutes les scènes écrites pour l’orchestre, comme je l’ai dit plus haut, et on les entendait réduites par un seul accompagnateur sur le piano (Et il en est encore ainsi à cette heure) !  
-... Le piano, pour les instrumentistes est une vraie guillotine destinée à abattre toutes les nobles têtes et dont la plèbe seule n’a rien à redouter.
-
-    Quoi qu’il en soit, les scènes ainsi exécutées, on va au scrutin (je parle au présent, puisque rien n’est changé à cet égard). Le prix est donné et vous croyez que c’est fini ? Erreur, huit jours après, toutes les sections de l’Académie des Beaux-Arts se réunissent pour le jugement définitif. Les peintres, statuaires, architectes, graveurs en médaille et graveurs en taille-douce, forment cette fois un imposant jury de trente à trente-cinq membres dont les six musiciens cependant ne sont pas exclus. ... Quand les exécuteurs, chanteur et pianiste, ont fait entendre une seconde fois, de la même façon que la première, chaque partition, l’urne fatale circule, on compte les bulletins et le jugement que la section de musique avait porté huit jours auparavant se trouve, en dernière analyse, confirmé, modifié ou cassé par la majorité.
-
-    Ainsi le prix de musique est donné par des gens qui ne sont pas musiciens et qui n’ont pas même été mis dans le cas d’entendre, telles qu’elles ont été conçues, les partitions entre lesquelles un absurde règlement les oblige de faire un choix.</p>
-   
-   <p>Il faut ajouter, pour être juste, que si les peintres, graveurs, etc., jugent les musiciens, ceux-ci leur rendent la pareille au concours de peinture, de gravure, etc., où les prix sont donnés, également à la pluralité des voix, par toutes les sections réunies de l’Académie des Beaux-Arts. Je sens pourtant en mon âme et conscience que, si j’avais l’honneur d’appartenir à ce docte corps, il me serait bien difficile de motiver mon vote en donnant le prix à un graveur ou à un architecte et que je ne pourrais guère faire preuve d’impartialité qu’en tirant le plus méritant à la courte paille.
-
-    Au jour solennel de la distribution des prix, la cantate préférée par les sculpteurs, peintres et graveurs est ensuite exécutée complètement. C’est un peu tard, il eût mieux valu, sans doute, convoquer l’orchestre avant de se prononcer et les dépenses occasionnées par cette exécution tardive sont assez inutiles, puisqu’il n’y a plus à revenir sur la décision prise. Mais l’Académie est curieuse, elle veut connaître l’ouvrage qu’elle a couronné ... c’est un désir bien naturel !</p></i>
-
-<p>Berlioz se présenta une première fois en 1827. Il fut admis en finale mais sa Mort d'Orphée ne fut pas primée. Nullement découragé, il se représenta l'année suivante proposant sa fougueuese <a href="http://www.youtube.com/watch?v=5o_O_KmpFcE">Herminie</a> qui obtint un second prix, qui aurait dû lui servir de passeport pour la récompense suprême, l'année suivante.  Convaincu de l'emporter au troisième essai, Berlioz crut bon d'écouter sa nature indomptable, adaptant à sa sauce le poème imposé sur  <a href="https://www.youtube.com/watch?v=NceiRAPzH9w">La Mort de Cléopâtre</a> au lieu de (re)produire l'académisme qu'on attendait de lui. Le résultat ne se fit pas attendre et le Premier Prix ne fut tout simplement pas attribué cette année-là, un scandale que la postérité a scellé en assurant à l'oeuvre une longévité, tant au disque qu'au concert, qu'aucune autre cantate de Rome ne connaîtra plus jamais. En 1830, Berlioz, échaudé, revint à de meilleurs sentiments et l'emporta, au 4<sup>ème</sup> essai, avec La Mort de Sardanapale, dont on n'a conservé que deux scènes pas totalement convaincantes. Ces 4 oeuvres ont été réunies sur un CD, publié chez Harmonia Mundi France (réédité chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hector-Berlioz-1803-1869-Kantaten/hnum/8670771">Naxos</a>), sous la direction de Jean-Claude Casadesus. N'hésitez pas à vous le procurer, chez Berlioz, même les oeuvres de jeunesse valent l'écoute. Vous aurez noté qu'on mourait souvent lors des épreuves finales du Prix de Rome.</p>
-
-
-
-<p><i>Les heureux lauréats.</i></p>
-<p>Le palmarès complet du Grand Prix de Rome, consultable à cette <a href="http://www.musimem.com/prix-de-rome.html">adresse</a>, révèle que la plupart des lauréats sont aussi inconnus que le soldat du même nom. On notera cependant quelques exceptions notables : </p>
-
-<li>Les musiciens français qui d'instinct se destinaient à la scène possédaient sans doute quelque avantage naturel pour tirer leur épingle du jeu : Ferdinand Hérold fut couronné en 1812 (Mademoiselle de la Vallière), Jacques Fromental Halévy en 1819 (Herminie), Ambroise Thomas en 1832 (Hermann et Kitty), Charles Gounod en 1839 (Fernand 1<sup>er</sup>), Georges Bizet en 1857 (<a href="http://www.youtube.com/watch?v=VQpR_UvzJqQ">Clovis et Clothilde</a>, dont un enregistrement est paru chez Naxos), Jules Massenet en 1863 (David Rizzio), Gustave Charpentier en 1887 (Didon) et Henri Rabaud en 1894 (Daphné).</li>
-
-
-<li>Claude Debussy représente avec Berlioz, la fièreté du palmarès du prix de Rome. Il dut quand même s'y reprendre à trois fois : en 1882, il ne franchit pas le cap des éliminatoires. En 1883, il fut admis en finale mais sa cantate, Le Gladiateur, n'obtint qu'un Second Prix. Elle a pourtant fière allure comme en témoignent ces deux courts extraits enchaînés 
-  <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/prixderome/gladiateur.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/prixderome/gladiateur.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> (Enregistrement Glossa). Enfin la victoire lui sourit, en 1884, avec <a href="http://www.youtube.com/watch?v=pz6ZpfP9KXA&feature=related">L’Enfant Prodigue</a> dont voici encore la belle introduction <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/prixderome/enfant.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/prixderome/enfant.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-  , dans son instrumentation originale (enregistrement Glossa). La version que l'on entend généralement est issue d'une révision tardive effectuée par le compositeur, assisté d'André Caplet (celui-là même qui a orchestré d'autres pièces pour Debussy, dont la Boîte à Joujoux).</li>
-
-<p>En 1903, Debussy prit la tête d'un mouvement protestataire contre la vétuseté du concours. Il faut préciser que 1903, c'est la 3<sup>ème</sup> finale malheureuse de Maurice Ravel. Voici ce qu'il écrivit :</p>
-
-  
-  <i>
-<p>Il y a diverses façons de parler du prix de Rome.
-
-On peut d'abord trouver cette institution stupide … opinion qui se traduit généralement par cette apostrophe :
-
-"Enfin! Monsieur! Voulez-vous me dire pourquoi on envoie les musiciens à Rome? "
-
-A quoi l'on répond que cette institution est passée à l'état de superstition dans certains milieux. Avoir eu ou ne pas avoir eu le Prix de Rome résolvait la question de savoir si l'on avait oui ou non du talent. Pour ne pas être infaillible, c'était du moins un moyen commode de préparer à l'opinion publique une comptabilité facile à tenir.</p>
-
-<p>Malheureusement, on perd pied tout de suite en constatant que Saint-Saëns, chef officiel de la jeune école française, n'a pas eu le Prix de Rome, pas plus que Vincent d'Indy, chef élu par un autre groupe plus jeune. Sans discuter la valeur personnelle de ces deux hommes, ils sont également "représentatifs". De les voir exclus de ce "palmarès" peut faire croire à quelque chose de vicieux dans la façon de distribuer l'honneur d'en faire partie, par la raison logique qu'ils semblaient désignés, plus que tous autres, à cet honneur.
-
-A vrai dire, je suis en mauvaise posture pour critiquer cette institution. J'ai l'air de faire fi d'un plat dont j'ai mangé comme beaucoup d'autres puisque j'ai eu le Prix de Rome et me suis assis à la table de la Villa Médicis, si du moins on peut ainsi appeler un régime qui tient du restaurant où pour 1 fr. 25 on nous détruit l'estomac pour le restant de nos jours.</p>
-
-<p>... Au surplus, le flegme académique, avec lequel ces Messieurs de l'Institut désignent celui d'entre tous ces jeunes gens qui sera un artiste, est touchant d'ingénuité confiante. Qu'en savent-ils? Ou prirent-ils tant d'assurance à diriger une destinée aussi aléatoire?
-
-La musique est une mathématique mystérieuse dont les éléments participent de l'Infini.</p>
-
-<p>... On juge ce concours sur une œuvre appelée "Cantate", forme hybride qui participe maladroitement de l'opéra, dans ce que celui-ci a de plus banal, ou de la "symphonie avec personnages chantants", trouvaille vraiment "institutaire" dont je ne conseillerai à personne de se déclarer l'auteur ! Il me semble aussi impossible de juger que de savoir si ces jeunes gens savent leur métier de musicien sur un tel travail ... . D'ailleurs, on sait comment les choses se passent? Quelques mois avant le concours, on entraîne les concurrents sur "la piste Cantate" (tel un cheval pour le Grand Prix), on cherche dans les cantates primées antérieurement la formule gagnante et le tour est joué, à la grande joie des parents et de l'assistance et l'on a, par-dessus le marché, l'accolade de M. Th. Dubois. Sans parti pris ni paradoxe, c'est à peu près tout ce à quoi sert le Prix de Rome.</p>
-
-<p>... Lorsqu'on se plaint du peu de symphonies que la France peut opposer aux autres pays, il faut peut-être en accuser le Prix de Rome. Si j'avais le goût de la statistique, je démontrerais facilement que toute la musique symphonique, ou à peu près, ne porte aucune estampille officielle. Quand elle la porte, ça ne donne pas toujours ce que l'on attendait, j'en citerais un illustre exemple : M. Massenet ! Ne le vit-on pas tout dernièrement faire comme ses débuts dans la musique symphonique lorsqu'il fit exécuter au Conservatoire un Concerto pour piano et orchestre? Avec un peu d'irrévérence on le renvoya à Manon ! Ce Concerto n'était probablement pas plus mauvais qu'un autre, seulement l'éducation et les tendances de M. Massenet l'éloignèrent de la musique pure, il ne pouvait plus y réussir avec la sureté triomphale dont il est coutumier au théâtre.
-
-Quant à la musique de chambre, Mozart, Beethoven, Schumann, etc., en ont beaucoup écrit. C'est heureux, car le répertoire moderne peut se compter sans respirer. Il fléchit sous le poids lourd du Passé, non pas qu'il ne contienne aucune œuvre parfaite, mais on ne l'encourage pas assez. Je ne parle pas de la sonate en général, ni de la sonate pour piano en particulier ; ces considérations sont inactuelles. Aussi, n'avons nous guère pour représenter notre époque qu'une seule sonate pour piano : celle de Paul Dukas. Par la grandeur de sa conception elle prend place immédiatement après les sonates de Beethoven. Ce fut un événement considérable qui pouvait encourager les amateurs de hautes spéculations.
-
-Toutefois il faut avouer que ce genre de musique réclame une alchimie particulière à laquelle il faut offrir sa chère petite tranquillité en holocauste... C'est dur à soutenir et absolument improductif. Adieu! les bons droits d'auteur, la si flatteuse poignée de main directoriale. On n'est plus qu'une espèce de savant particulier et vos confrères vous regardent avec cette condescendance que le succès rend méprisante ... .</p>
-
-</i>
-  
-  
-  
-  
-  
-
-<li>Le succès a également souri à d'autres musiciens connus, pas spécialement attirés par l'exercice de la voix : Max d'Ollone en 1897 (Frédégonde), Florent Schmitt en 1900 (Sémiramis), André Caplet en 1901 (<a href="http://www.classicalarchives.com/work/300194.html">Myrrha</a>, une belle oeuvre qui n'a  pas usurpé son prix), Lili Boulanger en 1913 (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Lili-Boulanger-1893-1918-Faust-et-Helene/hnum/1427771">Faust et Hélène</a>) - première femme à remporter le premier Grand Prix, qui plus est 78 ans après son papa, Ernest Boulanger, bien oublié à présent - et Marcel Dupré en 1914 (Psyché).  Plus près de nous, Henri Dutilleux l'emporta en 1938 (L’Anneau du Roi - une oeuvre que vous ne risquez pas d'entendre de sitôt car le compositeur l'a reniée, la considérant trop éloignée de son style de la maturité - , Jean-Michel Damase en 1947 (Et la Belle se réveilla), Charles Chaynes en 1951 (Et l’Homme vit se rouvrir les Portes), Jacques Castérède en 1953 (La boîte de Pandore) et Alain Louvier en 1968 (Folie et Mort d’Ophélie).</li>
-
-
-<p><i>Les candidats malheureux.</i></p>
-
-
-
-<li>Camille Saint-Saens et Maurice Ravel furent les deux plus illustres candidats proprement recalés. Saint-Saens, très porté sur l'académisme était pourtant le lauréat idéal, cependant il échoua. Il est vrai qu'un génie précoce avait peu de chance de réussir à son premier essai (Saint-Saens n'avait que 16 ans lorsqu'il se présenta pour la première fois !). Sa cantate, Le Retour de Virginie 
-  <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/prixderome/virginie.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/prixderome/virginie.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, composée dans le goût de de Mendelssohn, ne manquait pourtant pas de valeur malgré quelques maladresses confessées par leur auteur. Quant à l'oeuvre primée, due à la plume de Léonce Cohen, plus personne n'en a entendu la moindre note depuis sa création. Saint-Saens s'est représenté 12 ans (!) plus tard mais Ivanhoé <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/prixderome/ivanhoe.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/prixderome/ivanhoe.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, écrite dans le goût de Verdi, ne rencontra pas davantage les faveurs du jury en dépit d'une écriture nettement plus assurée. Personne n'a jamais vraiment compris quelle mouche avait piqué Saint-Saens de se représenter à 29 ans (soit un an avant la limite d'âge) : sa renommée n'avait plus rien à y gagner.</li>
-
-<li>Maurice Ravel était tout sauf le candidat idéal : sa soif de nouveauté le handicapait naturellement au décrochage d'un prix qu'il ne semblait convoiter que pour l'aisance matérielle qu'il lui procurerait. Il se présenta trois années de suite, toujours primé mais jamais vainqueur. Ses cantates, <a href="http://www.deezer.com/album/1288801">Myrrha</a> (1901), <a href="https://www.youtube.com/watch?v=j2vOxoofFOY">Alcyone</a> (1902) et Alyssa (1903) ont été réunies sur un CD paru chez EMI, sous la direction de Michel Plasson. Ravel se représenta une dernière fois en 1905 et cette fois, il n'atteint même pas la finale !  Cela provoqua un tollé, le musicologue et écrivain, Romain Rolland, y allant d'une protestation officielle en hauts lieux. C'était évidemment peine perdue, le Prix de Rome étant depuis toujours - et singulièrement depuis la défaite contre la Prusse en 1870 - le gardien d'une esthétique frileusement nationale que l'état voulait maintenir dominante.</li>
-
-<li>D'autres musiciens de renom ont échoué au Prix de Rome ou ont décroché un second prix : Charles-Valentin Morhange (dit Alkan), Alfred Bruneau, Gabriel Pierné, Ernest Chausson - pas même un accessit, comment cela fut-il  possible ? -, enfin Vincent d'Indy et Paul Dukas, un comble quand on connaît le parcours académique de chacun.</li>
-
-
-<p>Aujourd'hui, on a tendance à relire le palmarès du Prix de Rome avec davantage d'indulgence. Il se trouve des esprits bien intentionnés prêts à considérer qu'un Deuxième Premier Grand Prix (sic) voire un Premier Second Grand prix (resic) constituaient déjà des reconnaissances de valeur. Il n'empêche que les candidats condamnés à des essais répétés ne savaient trop à quel saint se vouer pour séduire le jury, innover prudemment ou mieux encore, ne pas innover du tout.  Quant à ceux qui pensent que si le prix de Rome n'a pas toujours rempli sa mission, au moins n'a-t-il jamais nui, ils se trompent : le rival heureux de Camille Saint-Saens lors du concours de 1864, Victor Sieg, fut tellement embarrassé à l'idée d'avoir damé le pion à un ami qu'il admirait particulièrement, qu'il cessa quasiment d'écrire, ne se consacrant plus qu'à l'enseignement !</p>
-
-
-
-<p><i>Exhumations.</i></p>
-
- <div><img src="../images/prixderome/bruzane.jpg" alt="" /><div class="legende">Palazzetto Bru Zane</div></div>
-   
-<p>Ne passez pas distraitement à côté de cette façade si semblable aux autres lors de votre prochaîne excursion à Venise. Le Palazzetto Bru Zane - des noms des bâtisseurs vénitiens (la famille Zane) et de la propriétaire actuelle, Dr. Nicole Bru - abrite, depuis 2008, le Centre de musique romantique française, soucieux de (re)mettre en valeur un patrimoine méconnu d'œuvres composées entre 1780 et 1920. Ce centre de recherche, d'édition et de diffusion, est financé sur fonds privés (3,5 millions d'euros de budget annuel) par la <a href="http://www.bru-zane.com/">Fondation Bru</a>. Elle a déjà à son actif quelques belles réalisations, concrétisées par autant d'<a href="http://www.bru-zane.com/fr-cd.html">enregistrements</a> de qualité. Cependant, il lui fallait un projet d'envergure, capable d'entretenir son activité sur le long terme. Les archives du prix de Rome ont retenu son attention et les deux volumes déjà parus - <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claude-Debussy-1862-1918-Lieder-Music-For-The-Prix-de-Rome/hnum/6536590">Vol. 1 (Claude Debussy)</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Camille-Saint-Saens-1835-1921-Geistliche-Werke-Music-for-the-Prix-de-Rome/hnum/4979065">Vol. 2 (Camille Saint-Saens)</a>  - donnent le ton d'une aventure qui s'annonce passionnante, à condition qu'elle se poursuive.</p> 
-
-<p>Ces volumes, édités par Glossa, contiennent chacun 2 CD proposant la ou les cantates écrites par le candidat lorsqu'il fut admis en finale, les oeuvres chorales écrites pendant les éliminatoires et quelques envois de Rome. Ils sont accompagnés d'un opuscule richement documenté sur base d'un ouvrage paru aux Editions Symétrie (<a href="http://www.symetrie.com/fr/edition/alexandre.dratwicki/concours-prix-de-rome-musique">Le Concours du Prix de Rome de Musique</a>, Julia Lu et Alexandre Dratwicki). Hervé Niquet, qui s'impose auprès des mélomanes comme un des musiciens les plus utiles à son art, a accepté d'assurer la direction musicale.</p>
-
-
-
-<p>Le Prix de Rome n'a pas survécu à la révolution égalitaire de Mai 68. Perçu comme l'incarnation de la désuétude artistique, il ne s'est plus trouvé grand monde pour adhérer davantage à une institution dont les limites avaient fini par dépasser les mérites : l'académisme avait vécu dans tous les compartiments de la société.   Cependant, la roue de l'histoire ne s'arrêtant jamais de tourner, des oeuvres qui paraissaient condamnées refont lentement surface (en particulier des extraits de plusieurs cantates programmées, en 2010, lors d'un concert au <a href="http://www.musee-orsay.fr/index.php?id=639&L=&tx_ttnews[tt_news]=26648&no_cache=1">Musée d'Orsay</a>) grâce aux travaux de quelques érudits, pressés d'établir que cet oubli pourrait n'être que la conséquence de notre manque de curiosité et nullement d'une erreur systématique de jugement des jurys successifs. A ce jour, la Villa Medicis est encore propriété française mais, depuis 1971, elle n'accueille plus ses hôtes que sur proposition d'une commission d'état, en-dehors de tout esprit de compétition. </p>
-
-
-
-
-
-<p><i>Le cousin belge.</i></p>
-
-<p>Il a également existé de 1841 à 1973 un Prix de Rome belge, fonctionnant sur le modèle de son aîné français. Son palmarès, sans doute moins prestigieux, réserve  de belles découvertes, pour peu qu'on se donne la peine de l'explorer. Voici les noms de quelques lauréats, connus à tout le moins dans leur pays d'origine : François-Auguste Gevaert en 1847 (Le Roi Lear), Edgar Tinel en 1877 (De Klokke Roeland), Sylvain Dupuis en 1879 (Camoens), Paul Gilson en 1889 (Sinaï), Joseph Jongen en 1897 (Comala <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/prixderome/comala.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/prixderome/comala.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-), Adolphe Biarent en 1901 (oedipe à Colonne), Léon Jongen en 1913 (les Fiancés de Noël), Alex De Taeye en 1927 (Le Rossignol) et René Defossez en 1935 (Le vieux Soudard). On n'oubliera pas pour autant Jean Absil en 1922 (La Guerre) et surtout le jeune prodige Guillaume Lekeu, en 1891 (Andromède), même si l'un et l'autre ne récoltèrent qu'un second prix. Andromède dont voici le superbe et wagnérien prélude 
-<sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/prixderome/andromede.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/prixderome/andromede.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub> 
-est le genre d'oeuvre qui nous rend inconsolables de la disparition de son auteur, à 24 ans seulement. Les enregistrements proposés sont extraits du "<a href="http://www.opl.be/bottom-menu/orchestre/discographie/coffret-50-ans.html">Cube 50-50-50</a>", publié par les éditions Cyprès, à l'occasion du 50<sup>ème</sup> anniversaire de l'OPL.</p>
-
-  
-  
-              </div>
+                  <p>Le Grand Prix de Rome de Musique (1803-1968) a toute une histoire que trois épais volumes ne suffiraient pas à détailler, aussi nous en tiendrons-nous à l'essentiel, remis au goût du jour et en musique, autant qu'il se peut. Cette épreuve ayant très tôt soulevé des controverses, j'ai versé au dossier les opinions de Messieurs Berlioz et Debussy : pleines d'esprit, elles jettent le regard critique d'une époque sur une épreuve qu'ils ont pourtant remportée à moins d'un siècle d'intervalle. Pour faire bonne mesure, j'ai tempéré ces avis plutôt négatifs par des considérations plus récentes, tendant à réhabiliter la mémoire de ce concours, aujourd'hui disparu.</p>
+                  <p>L'Académie de France à Rome fut créée en 1666, sous le règne de Louis XIV, afin de permettre aux meilleurs jeunes talents du Royaume de parfaire leur formation au contact des maîtres transalpins, de l'Antiquité à la Renaissance. Consacrée initialement aux seuls arts plastiques - peinture, sculpture et architecture - , une section musique s'ouvrit en 1803, coïncidant avec l'aménagement de la Villa Medicis. Tous les jeunes diplômés du Conservatoire pouvaient concourir à l'épreuve de Rome mais ils devaient franchir deux obstacles préalables avant d'être admis en finale : une fugue sur un sujet imposé et une oeuvre vocale respectant certaines contraintes. Six candidats étaient généralement admis à entrer en loge pendant un mois environ, invités à écrire, dans l'isolement, une cantate pour soli choeur et orchestre, sur un texte imposé. Cet exercice, qu'on n'imaginerait plus aujourd'hui, était censé tester l'habileté des candidats à mettre en musique quelques scènes de genre propres à l'opéra romantique français, un art majeur dans la France du 19<sup>ème</sup>siècle. Les partitions faisaient l'objet d'un premier tour de table parmi les jurés avant d'être entendue avec une réduction de l'orchestre au piano. Le lauréat remportait une bourse coquette pour les 5 années à venir (ces conditions ainsi que les détails du règlement du concours ont varié au cours des décennies) et le droit - ou plutôt le devoir - de séjourner tous frais payés, pendant 2 ou 3 ans, à la Villa Medicis, avec pour seule contrainte de publier une oeuvre importante chaque année (Ses envois de Rome). Les archives nationales sont pleines de partitions que personne n'a jamais pris le soin de lire. On raconte même que les envois de Rome étaient tellement peu surveillés  que plusieurs pensionnaires de la villa Medicis en ont profité pour ne rien envoyer du tout.</p>
+                  <p>Une question  vient  naturellement à l'esprit : pourquoi tant d'oeuvres ont-elles été oubliées jusque dans un passé récent alors que toutes avaient été primées par un jury averti (Spontini, Lesueur, Auber, Boieldieu, Halévy, Adam, Berlioz,  ...) ? Au fil du temps, les critiques commencèrent à fuser de toutes parts, sapant lentement le prestige de l'épreuve : comment allait-on expliquer à la postérité que Camille Saint-Saens avait  échoué par deux fois - devancé par Leonce Cohen puis par Victor Sieg - et que Maurice Ravel n'avait pas fait mieux, par quatre fois, devancé sucessivement par André Caplet, Aymé Kunc, Raoul Laparra, enfin par Victor Gallois  ! A part, Caplet, ces lauréats n'ont jamais confirmé les espoirs fondés sur leur talent, à notre connaissance du moins. Que dire alors des Louis Deffès, Jules Duprato, Henri Maréchal, Gaston Serpette, Paul Puget, Léon Ehrhart, André Wormser ou Paul Hillemacher (la <a href="http://fr.wikipedia.org/wiki/Prix_de_Rome">liste</a> est dix fois plus longue que cela) tous pourtant dûment couronnés ?</p>
+
+                  <div id="concoursReglementJury">
+                    <h4>Le Concours, son règlement, son jury</h4>
+
+                    <p>Hector Berlioz, jamais avare de bons mots voire de commentaires assassins, ne s'est pas gêné pour se moquer bien avant tout le monde du règlement d'une institution qui l'avait pourtant couronné, au 4<sup>ème</sup> essai il est vrai ! Jamais avare de contradictions, il a ultérieurement fait partie du jury qui a évincé ... Camille Saint-Saens,  lui refusant ouvertement sa voix, au motif très berliozien que "Monsieur Saint-Saens sait tout mais il manque d'inexpérience".</p>
+                    <p>Voici comment Berlioz a brocardé le règlement du concours, au chapitre XXII de ses <a href="http://www.hberlioz.com/Writings/HBMindex.htm">Mémoires</a> que, soit-dit en passant, je vous recommande tant elles abondent en saillies plaisantes. Dites-moi si on écrit encore avec autant de verve aujourd'hui :</p>
+
+                    <p><i>... En 1828, je me présentai pour la troisième fois au concours de l’Institut. J’y fus encore admis et j’obtins le second prix. Cette distinction consiste en couronnes publiquement décernées au lauréat et en une médaille d’or d’assez peu de valeur; elle donne en outre à l’élève couronné un droit d’entrée gratuite à tous les théâtres lyriques et ... des chances nombreuses pour obtenir le premier prix au concours suivant. Le premier prix a des priviléges beaucoup plus importants. Il assure à l’artiste qui l’obtient une pension annuelle de trois mille francs pendant cinq ans, à la condition pour lui d’aller passer les deux premières années à l’académie de France à Rome, et d’employer la troisième à des voyages en Allemagne. Il touche le reste de sa pension à Paris, où il fait ensuite ce qu’il peut pour se produire et ne pas mourir de faim.</i></p>
+                    <p><i>Au reste je vais donner ici un résumé de ce que j’écrivis, il y a quinze ou seize ans, dans divers journaux, sur l’organisation singulière de ce concours. Faire connaître chaque année quels sont ceux des jeunes compositeurs français qui offrent le plus de garanties de talent et les encourager en les mettant, au moyen d’une pension, dans le cas de pouvoir s’occuper exclusivement pendant cinq ans de leurs études, tel est le double but de l’institution du prix de Rome et telle a été l’intention du gouvernement qui l’a fondée. Toutefois, voici les moyens qu’on employait encore il y a quelques années pour remplir l’une et parvenir à l’autre. Les choses ont un peu changé depuis lors, mais bien peu. Les faits que je vais citer paraîtront sans doute fort extraordinaires et improbables à la plupart des lecteurs, mais ayant obtenu successivement le second et le premier grand prix au concours de l’Institut, je ne dirai rien que je n’aie vu moi-même et dont je ne sois parfaitement sûr. Cette circonstance d’ailleurs me permet d’exprimer toute ma pensée, sans crainte de voir attribuer à l’aigreur d’une vanité blessée ce qui n’est que l’expression de mon amour de l’art et de ma conviction intime. La liberté dont j’ai déjà usé à cet égard a fait dire à Cherubini, le plus académique des académiciens passés, présents et futurs, et le plus violemment froissé en conséquence par mes observations, qu’en attaquant l’Académie je battais ma nourrice. Si je n’avais pas obtenu le prix, il n’aurait pu me taxer de cette ingratitude, mais j’aurais passé dans son esprit et dans celui de beaucoup d’autres pour un vaincu qui venge sa défaite. D’où il faut conclure que d’aucune façon je ne pouvais aborder ce sacré sujet. Je l’aborde cependant et je le traiterai sans ménagement, comme un sujet profane.</i></p>
+                    <p><i>Tous les Français ou naturalisés Français, âgés de moins de trente ans, pouvaient et peuvent encore, aux termes du règlement, être admis au concours. Quand l’époque en avait été fixée, les candidats venaient s’inscrire au secrétariat de l’Institut. Ils subissaient un examen préparatoire, nommé concours préliminaire, qui avait pour but de désigner parmi les aspirants les cinq ou six élèves les plus avancés. Le sujet du grand concours devait être une scène lyrique sérieuse pour une ou deux voix et orchestre et les candidats, afin de prouver qu’ils possédaient le sentiment de la mélodie et de l’expression dramatique, l’art de l’instrumentation et les autres connaissances indispensables pour écrire passablement un tel ouvrage, étaient tenus de composer une fugue vocale. On leur accordait une journée pour ce travail. Chaque fugue devait être signée. Le lendemain, les membres de la section de musique de l’Institut se rassemblaient, lisaient les fugues et faisaient un choix trop souvent entaché de partialité car un certain nombre de manuscrits signés appartenaient toujours à des élèves de MM. les Académiciens.</i></p>
+                   <p><i>Les votes recueillis et les concurrents désignés, ceux-ci devaient se représenter bientôt pour recevoir les paroles de la scène qu’ils allaient avoir à mettre en musique, et entrer en loge. M. le secrétaire perpétuel de l’Académie des Beaux-Arts leur dictait collectivement le classique poème, qui commençait presque toujours ainsi (au choix) : "Déjà l’aurore aux doigts de rose" ou "Déjà le jour naissant ranime la nature" ou "Déjà d’un doux éclat l’horizon se colore" ou "Déjà du blond Phœbus le char brillant s’avance" ou "Déjà de pourpre et d’or les monts lointains se parent", etc. Les candidats, munis du lumineux poème, étaient alors enfermés isolément avec un piano, dans une chambre appelée loge, jusqu’à ce qu’ils eussent terminé leur partition. ...  Le délai fixé pour la composition était de vingt-deux jours; ceux des compositeurs qui avaient fini avant ce temps étaient libres de sortir après avoir déposé leur manuscrit, toujours numéroté et signé. Toutes les partitions étant livrées, le lyrique aréopage s’assemblait de nouveau et s’adjoignait à cette occasion deux membres pris dans les autres sections de l’Institut : un sculpteur et un peintre, par exemple, ou un graveur et un architecte, ou un sculpteur et un graveur, ou un architecte et un peintre, ou même deux graveurs, ou deux peintres, ou deux architectes, ou deux sculpteurs. L’important était qu’ils ne fussent pas musiciens. Ils avaient voix délibérative et se trouvaient là pour juger d’un art qui leur est étranger. On entendait successivement toutes les scènes écrites pour l’orchestre, comme je l’ai dit plus haut, et on les entendait réduites par un seul accompagnateur sur le piano (Et il en est encore ainsi à cette heure) !  ... Le piano, pour les instrumentistes est une vraie guillotine destinée à abattre toutes les nobles têtes et dont la plèbe seule n’a rien à redouter. Quoi qu’il en soit, les scènes ainsi exécutées, on va au scrutin (je parle au présent, puisque rien n’est changé à cet égard). Le prix est donné et vous croyez que c’est fini ? Erreur, huit jours après, toutes les sections de l’Académie des Beaux-Arts se réunissent pour le jugement définitif. Les peintres, statuaires, architectes, graveurs en médaille et graveurs en taille-douce, forment cette fois un imposant jury de trente à trente-cinq membres dont les six musiciens cependant ne sont pas exclus. ... Quand les exécuteurs, chanteur et pianiste, ont fait entendre une seconde fois, de la même façon que la première, chaque partition, l’urne fatale circule, on compte les bulletins et le jugement que la section de musique avait porté huit jours auparavant se trouve, en dernière analyse, confirmé, modifié ou cassé par la majorité. Ainsi le prix de musique est donné par des gens qui ne sont pas musiciens et qui n’ont pas même été mis dans le cas d’entendre, telles qu’elles ont été conçues, les partitions entre lesquelles un absurde règlement les oblige de faire un choix.</i></p>
+                    <p><i>Il faut ajouter, pour être juste, que si les peintres, graveurs, etc., jugent les musiciens, ceux-ci leur rendent la pareille au concours de peinture, de gravure, etc., où les prix sont donnés, également à la pluralité des voix, par toutes les sections réunies de l’Académie des Beaux-Arts. Je sens pourtant en mon âme et conscience que, si j’avais l’honneur d’appartenir à ce docte corps, il me serait bien difficile de motiver mon vote en donnant le prix à un graveur ou à un architecte et que je ne pourrais guère faire preuve d’impartialité qu’en tirant le plus méritant à la courte paille. Au jour solennel de la distribution des prix, la cantate préférée par les sculpteurs, peintres et graveurs est ensuite exécutée complètement. C’est un peu tard, il eût mieux valu, sans doute, convoquer l’orchestre avant de se prononcer et les dépenses occasionnées par cette exécution tardive sont assez inutiles, puisqu’il n’y a plus à revenir sur la décision prise. Mais l’Académie est curieuse, elle veut connaître l’ouvrage qu’elle a couronné ... c’est un désir bien naturel !</i></p>
+
+                    <p>Berlioz se présenta une première fois en 1827. Il fut admis en finale mais sa Mort d'Orphée ne fut pas primée. Nullement découragé, il se représenta l'année suivante proposant sa fougueuese <a href="http://www.youtube.com/watch?v=5o_O_KmpFcE">Herminie</a> qui obtint un second prix, qui aurait dû lui servir de passeport pour la récompense suprême, l'année suivante.  Convaincu de l'emporter au troisième essai, Berlioz crut bon d'écouter sa nature indomptable, adaptant à sa sauce le poème imposé sur  <a href="https://www.youtube.com/watch?v=NceiRAPzH9w">La Mort de Cléopâtre</a> au lieu de (re)produire l'académisme qu'on attendait de lui. Le résultat ne se fit pas attendre et le Premier Prix ne fut tout simplement pas attribué cette année-là, un scandale que la postérité a scellé en assurant à l'oeuvre une longévité, tant au disque qu'au concert, qu'aucune autre cantate de Rome ne connaîtra plus jamais. En 1830, Berlioz, échaudé, revint à de meilleurs sentiments et l'emporta, au 4<sup>ème</sup> essai, avec La Mort de Sardanapale, dont on n'a conservé que deux scènes pas totalement convaincantes. Ces 4 oeuvres ont été réunies sur un CD, publié chez Harmonia Mundi France (réédité chez <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Hector-Berlioz-1803-1869-Kantaten/hnum/8670771">Naxos</a>), sous la direction de Jean-Claude Casadesus. N'hésitez pas à vous le procurer, chez Berlioz, même les oeuvres de jeunesse valent l'écoute. Vous aurez noté qu'on mourait souvent lors des épreuves finales du Prix de Rome.</p>
+                  </div>
+
+                  <div id="heureuxLaureats">
+                    <h4>Les heureux lauréats</h4>
+
+                    <p>Le palmarès complet du Grand Prix de Rome, consultable à cette <a href="http://www.musimem.com/prix-de-rome.html">adresse</a>, révèle que la plupart des lauréats sont aussi inconnus que le soldat du même nom. On notera cependant quelques exceptions notables : </p>
+
+                    <ul class="miniListCorps">
+                      <li>Les musiciens français qui d'instinct se destinaient à la scène possédaient sans doute quelque avantage naturel pour tirer leur épingle du jeu : Ferdinand Hérold fut couronné en 1812 (Mademoiselle de la Vallière), Jacques Fromental Halévy en 1819 (Herminie), Ambroise Thomas en 1832 (Hermann et Kitty), Charles Gounod en 1839 (Fernand 1<sup>er</sup>), Georges Bizet en 1857 (<a href="http://www.youtube.com/watch?v=VQpR_UvzJqQ">Clovis et Clothilde</a>, dont un enregistrement est paru chez Naxos), Jules Massenet en 1863 (David Rizzio), Gustave Charpentier en 1887 (Didon) et Henri Rabaud en 1894 (Daphné).</li>
+                      <li>Claude Debussy représente avec Berlioz, la fièreté du palmarès du prix de Rome. Il dut quand même s'y reprendre à trois fois : en 1882, il ne franchit pas le cap des éliminatoires. En 1883, il fut admis en finale mais sa cantate, Le Gladiateur, n'obtint qu'un Second Prix. Elle a pourtant fière allure comme en témoignent ces deux courts extraits enchaînés <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/prixderome/gladiateur.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/prixderome/gladiateur.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub> (Enregistrement Glossa). Enfin la victoire lui sourit, en 1884, avec <a href="http://www.youtube.com/watch?v=pz6ZpfP9KXA&feature=related">L’Enfant Prodigue</a> dont voici encore la belle introduction <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/prixderome/enfant.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/prixderome/enfant.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, dans son instrumentation originale (enregistrement Glossa). La version que l'on entend généralement est issue d'une révision tardive effectuée par le compositeur, assisté d'André Caplet (celui-là même qui a orchestré d'autres pièces pour Debussy, dont la Boîte à Joujoux).<br/><br/>
+                      En 1903, Debussy prit la tête d'un mouvement protestataire contre la vétuseté du concours. Il faut préciser que 1903, c'est la 3<sup>ème</sup> finale malheureuse de Maurice Ravel. Voici ce qu'il écrivit :<br/>
+                      <i>Il y a diverses façons de parler du prix de Rome. On peut d'abord trouver cette institution stupide … opinion qui se traduit généralement par cette apostrophe : "Enfin! Monsieur! Voulez-vous me dire pourquoi on envoie les musiciens à Rome? "A quoi l'on répond que cette institution est passée à l'état de superstition dans certains milieux. Avoir eu ou ne pas avoir eu le Prix de Rome résolvait la question de savoir si l'on avait oui ou non du talent. Pour ne pas être infaillible, c'était du moins un moyen commode de préparer à l'opinion publique une comptabilité facile à tenir.<br/>
+                      Malheureusement, on perd pied tout de suite en constatant que Saint-Saëns, chef officiel de la jeune école française, n'a pas eu le Prix de Rome, pas plus que Vincent d'Indy, chef élu par un autre groupe plus jeune. Sans discuter la valeur personnelle de ces deux hommes, ils sont également "représentatifs". De les voir exclus de ce "palmarès" peut faire croire à quelque chose de vicieux dans la façon de distribuer l'honneur d'en faire partie, par la raison logique qu'ils semblaient désignés, plus que tous autres, à cet honneur. A vrai dire, je suis en mauvaise posture pour critiquer cette institution. J'ai l'air de faire fi d'un plat dont j'ai mangé comme beaucoup d'autres puisque j'ai eu le Prix de Rome et me suis assis à la table de la Villa Médicis, si du moins on peut ainsi appeler un régime qui tient du restaurant où pour 1 fr. 25 on nous détruit l'estomac pour le restant de nos jours.<br/>
+                      ... Au surplus, le flegme académique, avec lequel ces Messieurs de l'Institut désignent celui d'entre tous ces jeunes gens qui sera un artiste, est touchant d'ingénuité confiante. Qu'en savent-ils? Ou prirent-ils tant d'assurance à diriger une destinée aussi aléatoire? La musique est une mathématique mystérieuse dont les éléments participent de l'Infini.<br/>
+                      ... On juge ce concours sur une œuvre appelée "Cantate", forme hybride qui participe maladroitement de l'opéra, dans ce que celui-ci a de plus banal, ou de la "symphonie avec personnages chantants", trouvaille vraiment "institutaire" dont je ne conseillerai à personne de se déclarer l'auteur ! Il me semble aussi impossible de juger que de savoir si ces jeunes gens savent leur métier de musicien sur un tel travail ... . D'ailleurs, on sait comment les choses se passent? Quelques mois avant le concours, on entraîne les concurrents sur "la piste Cantate" (tel un cheval pour le Grand Prix), on cherche dans les cantates primées antérieurement la formule gagnante et le tour est joué, à la grande joie des parents et de l'assistance et l'on a, par-dessus le marché, l'accolade de M. Th. Dubois. Sans parti pris ni paradoxe, c'est à peu près tout ce à quoi sert le Prix de Rome.<br/>
+                      ... Lorsqu'on se plaint du peu de symphonies que la France peut opposer aux autres pays, il faut peut-être en accuser le Prix de Rome. Si j'avais le goût de la statistique, je démontrerais facilement que toute la musique symphonique, ou à peu près, ne porte aucune estampille officielle. Quand elle la porte, ça ne donne pas toujours ce que l'on attendait, j'en citerais un illustre exemple : M. Massenet ! Ne le vit-on pas tout dernièrement faire comme ses débuts dans la musique symphonique lorsqu'il fit exécuter au Conservatoire un Concerto pour piano et orchestre? Avec un peu d'irrévérence on le renvoya à Manon ! Ce Concerto n'était probablement pas plus mauvais qu'un autre, seulement l'éducation et les tendances de M. Massenet l'éloignèrent de la musique pure, il ne pouvait plus y réussir avec la sureté triomphale dont il est coutumier au théâtre. Quant à la musique de chambre, Mozart, Beethoven, Schumann, etc., en ont beaucoup écrit. C'est heureux, car le répertoire moderne peut se compter sans respirer. Il fléchit sous le poids lourd du Passé, non pas qu'il ne contienne aucune œuvre parfaite, mais on ne l'encourage pas assez. Je ne parle pas de la sonate en général, ni de la sonate pour piano en particulier ; ces considérations sont inactuelles. Aussi, n'avons nous guère pour représenter notre époque qu'une seule sonate pour piano : celle de Paul Dukas. Par la grandeur de sa conception elle prend place immédiatement après les sonates de Beethoven. Ce fut un événement considérable qui pouvait encourager les amateurs de hautes spéculations. Toutefois il faut avouer que ce genre de musique réclame une alchimie particulière à laquelle il faut offrir sa chère petite tranquillité en holocauste... C'est dur à soutenir et absolument improductif. Adieu! les bons droits d'auteur, la si flatteuse poignée de main directoriale. On n'est plus qu'une espèce de savant particulier et vos confrères vous regardent avec cette condescendance que le succès rend méprisante ... .</i></li>
+                      <li>Le succès a également souri à d'autres musiciens connus, pas spécialement attirés par l'exercice de la voix : Max d'Ollone en 1897 (Frédégonde), Florent Schmitt en 1900 (Sémiramis), André Caplet en 1901 (<a href="http://www.classicalarchives.com/work/300194.html">Myrrha</a>, une belle oeuvre qui n'a  pas usurpé son prix), Lili Boulanger en 1913 (<a href="http://www.jpc.de/jpcng/classic/detail/-/art/Lili-Boulanger-1893-1918-Faust-et-Helene/hnum/1427771">Faust et Hélène</a>) - première femme à remporter le premier Grand Prix, qui plus est 78 ans après son papa, Ernest Boulanger, bien oublié à présent - et Marcel Dupré en 1914 (Psyché).  Plus près de nous, Henri Dutilleux l'emporta en 1938 (L’Anneau du Roi - une oeuvre que vous ne risquez pas d'entendre de sitôt car le compositeur l'a reniée, la considérant trop éloignée de son style de la maturité - , Jean-Michel Damase en 1947 (Et la Belle se réveilla), Charles Chaynes en 1951 (Et l’Homme vit se rouvrir les Portes), Jacques Castérède en 1953 (La boîte de Pandore) et Alain Louvier en 1968 (Folie et Mort d’Ophélie).</li>
+                    </ul>
+                  </div>
+
+                  <div id="candidatsMalheureux">
+                    <h4>Les candidats malheureux</h4>
+
+                    <ul class="miniListCorps">
+                      <li>Camille Saint-Saens et Maurice Ravel furent les deux plus illustres candidats proprement recalés. Saint-Saens, très porté sur l'académisme était pourtant le lauréat idéal, cependant il échoua. Il est vrai qu'un génie précoce avait peu de chance de réussir à son premier essai (Saint-Saens n'avait que 16 ans lorsqu'il se présenta pour la première fois !). Sa cantate, Le Retour de Virginie <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/prixderome/virginie.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/prixderome/virginie.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, composée dans le goût de de Mendelssohn, ne manquait pourtant pas de valeur malgré quelques maladresses confessées par leur auteur. Quant à l'oeuvre primée, due à la plume de Léonce Cohen, plus personne n'en a entendu la moindre note depuis sa création. Saint-Saens s'est représenté 12 ans (!) plus tard mais Ivanhoé <sub><sub><sub> 
+                      <audio controls preload="none">
+                        <source src="../son.mp3/prixderome/ivanhoe.mp3" type="audio/mpeg"/>
+                        <source src="../son.mp3/prixderome/ivanhoe.ogg" type="audio/ogg"/>
+                        Votre navigateur n'est pas compatible
+                      </audio></sub></sub></sub>, écrite dans le goût de Verdi, ne rencontra pas davantage les faveurs du jury en dépit d'une écriture nettement plus assurée. Personne n'a jamais vraiment compris quelle mouche avait piqué Saint-Saens de se représenter à 29 ans (soit un an avant la limite d'âge) : sa renommée n'avait plus rien à y gagner.</li>
+                      <li>Maurice Ravel était tout sauf le candidat idéal : sa soif de nouveauté le handicapait naturellement au décrochage d'un prix qu'il ne semblait convoiter que pour l'aisance matérielle qu'il lui procurerait. Il se présenta trois années de suite, toujours primé mais jamais vainqueur. Ses cantates, <a href="http://www.deezer.com/album/1288801">Myrrha</a> (1901), <a href="https://www.youtube.com/watch?v=j2vOxoofFOY">Alcyone</a> (1902) et Alyssa (1903) ont été réunies sur un CD paru chez EMI, sous la direction de Michel Plasson. Ravel se représenta une dernière fois en 1905 et cette fois, il n'atteint même pas la finale !  Cela provoqua un tollé, le musicologue et écrivain, Romain Rolland, y allant d'une protestation officielle en hauts lieux. C'était évidemment peine perdue, le Prix de Rome étant depuis toujours - et singulièrement depuis la défaite contre la Prusse en 1870 - le gardien d'une esthétique frileusement nationale que l'état voulait maintenir dominante.</li>
+                      <li>D'autres musiciens de renom ont échoué au Prix de Rome ou ont décroché un second prix : Charles-Valentin Morhange (dit Alkan), Alfred Bruneau, Gabriel Pierné, Ernest Chausson - pas même un accessit, comment cela fut-il  possible ? -, enfin Vincent d'Indy et Paul Dukas, un comble quand on connaît le parcours académique de chacun.</li>
+                    </ul>
+
+                    <p>Aujourd'hui, on a tendance à relire le palmarès du Prix de Rome avec davantage d'indulgence. Il se trouve des esprits bien intentionnés prêts à considérer qu'un Deuxième Premier Grand Prix (sic) voire un Premier Second Grand prix (resic) constituaient déjà des reconnaissances de valeur. Il n'empêche que les candidats condamnés à des essais répétés ne savaient trop à quel saint se vouer pour séduire le jury, innover prudemment ou mieux encore, ne pas innover du tout.  Quant à ceux qui pensent que si le prix de Rome n'a pas toujours rempli sa mission, au moins n'a-t-il jamais nui, ils se trompent : le rival heureux de Camille Saint-Saens lors du concours de 1864, Victor Sieg, fut tellement embarrassé à l'idée d'avoir damé le pion à un ami qu'il admirait particulièrement, qu'il cessa quasiment d'écrire, ne se consacrant plus qu'à l'enseignement !</p>
+                  </div>
+
+                  <div id="exhumations">
+                    <h4>Exhumations</h4>
+
+                    <div class="conteneurImageSeule">
+                      <div>
+                        <figure>
+                          <img src="../images/prixderome/bruzane.jpg" alt="Palazzetto Bru Zane"/>
+                          <figcaption>Palazzetto Bru Zane</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+
+                    <p>Ne passez pas distraitement à côté de cette façade si semblable aux autres lors de votre prochaîne excursion à Venise. Le Palazzetto Bru Zane - des noms des bâtisseurs vénitiens (la famille Zane) et de la propriétaire actuelle, Dr. Nicole Bru - abrite, depuis 2008, le Centre de musique romantique française, soucieux de (re)mettre en valeur un patrimoine méconnu d'œuvres composées entre 1780 et 1920. Ce centre de recherche, d'édition et de diffusion, est financé sur fonds privés (3,5 millions d'euros de budget annuel) par la <a href="http://www.bru-zane.com/">Fondation Bru</a>. Elle a déjà à son actif quelques belles réalisations, concrétisées par autant d'<a href="http://www.bru-zane.com/fr-cd.html">enregistrements</a> de qualité. Cependant, il lui fallait un projet d'envergure, capable d'entretenir son activité sur le long terme. Les archives du prix de Rome ont retenu son attention et les deux volumes déjà parus - <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Claude-Debussy-1862-1918-Lieder-Music-For-The-Prix-de-Rome/hnum/6536590">Vol. 1 (Claude Debussy)</a> et <a href="http://www.jpc.de/jpcng/classic/detail/-/art/Camille-Saint-Saens-1835-1921-Geistliche-Werke-Music-for-the-Prix-de-Rome/hnum/4979065">Vol. 2 (Camille Saint-Saens)</a>  - donnent le ton d'une aventure qui s'annonce passionnante, à condition qu'elle se poursuive.</p> 
+                    <p>Ces volumes, édités par Glossa, contiennent chacun 2 CD proposant la ou les cantates écrites par le candidat lorsqu'il fut admis en finale, les oeuvres chorales écrites pendant les éliminatoires et quelques envois de Rome. Ils sont accompagnés d'un opuscule richement documenté sur base d'un ouvrage paru aux Editions Symétrie (<a href="http://www.symetrie.com/fr/edition/alexandre.dratwicki/concours-prix-de-rome-musique">Le Concours du Prix de Rome de Musique</a>, Julia Lu et Alexandre Dratwicki). Hervé Niquet, qui s'impose auprès des mélomanes comme un des musiciens les plus utiles à son art, a accepté d'assurer la direction musicale.</p>
+                    <p>Le Prix de Rome n'a pas survécu à la révolution égalitaire de Mai 68. Perçu comme l'incarnation de la désuétude artistique, il ne s'est plus trouvé grand monde pour adhérer davantage à une institution dont les limites avaient fini par dépasser les mérites : l'académisme avait vécu dans tous les compartiments de la société.   Cependant, la roue de l'histoire ne s'arrêtant jamais de tourner, des oeuvres qui paraissaient condamnées refont lentement surface (en particulier des extraits de plusieurs cantates programmées, en 2010, lors d'un concert au <a href="http://www.musee-orsay.fr/index.php?id=639&L=&tx_ttnews[tt_news]=26648&no_cache=1">Musée d'Orsay</a>) grâce aux travaux de quelques érudits, pressés d'établir que cet oubli pourrait n'être que la conséquence de notre manque de curiosité et nullement d'une erreur systématique de jugement des jurys successifs. A ce jour, la Villa Medicis est encore propriété française mais, depuis 1971, elle n'accueille plus ses hôtes que sur proposition d'une commission d'état, en-dehors de tout esprit de compétition. </p>
+                  </div>
+
+                  <div id="cousinBelge">
+                    <h4>Le cousin belge</h4>
+
+                    <p>Il a également existé de 1841 à 1973 un Prix de Rome belge, fonctionnant sur le modèle de son aîné français. Son palmarès, sans doute moins prestigieux, réserve  de belles découvertes, pour peu qu'on se donne la peine de l'explorer. Voici les noms de quelques lauréats, connus à tout le moins dans leur pays d'origine : François-Auguste Gevaert en 1847 (Le Roi Lear), Edgar Tinel en 1877 (De Klokke Roeland), Sylvain Dupuis en 1879 (Camoens), Paul Gilson en 1889 (Sinaï), Joseph Jongen en 1897 (Comala <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/prixderome/comala.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/prixderome/comala.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub>), Adolphe Biarent en 1901 (oedipe à Colonne), Léon Jongen en 1913 (les Fiancés de Noël), Alex De Taeye en 1927 (Le Rossignol) et René Defossez en 1935 (Le vieux Soudard). On n'oubliera pas pour autant Jean Absil en 1922 (La Guerre) et surtout le jeune prodige Guillaume Lekeu, en 1891 (Andromède), même si l'un et l'autre ne récoltèrent qu'un second prix. Andromède dont voici le superbe et wagnérien prélude <sub><sub><sub> 
+                    <audio controls preload="none">
+                      <source src="../son.mp3/prixderome/andromede.mp3" type="audio/mpeg"/>
+                      <source src="../son.mp3/prixderome/andromede.ogg" type="audio/ogg"/>
+                      Votre navigateur n'est pas compatible
+                    </audio></sub></sub></sub> est le genre d'oeuvre qui nous rend inconsolables de la disparition de son auteur, à 24 ans seulement. Les enregistrements proposés sont extraits du "<a href="http://www.opl.be/bottom-menu/orchestre/discographie/coffret-50-ans.html">Cube 50-50-50</a>", publié par les éditions Cyprès, à l'occasion du 50<sup>ème</sup> anniversaire de l'OPL.</p>
+                  </div>
+                </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -249,10 +219,13 @@ est le genre d'oeuvre qui nous rend inconsolables de la disparition de son auteu
 
         </div>
     
-    
     </div>
 
-    <script src="../js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+
+    <!-- TODO -->
+    <!-- ATTENTION ! LE LIEN dans exhumations: <a href="http://www.musee-orsay.fr/index.php?id=639&L=&tx_ttnews[tt_news]=26648&no_cache=1">Musée d'Orsay</a> N A PAS ETE VALIDE PAR LE W3C => Error: Bad value http://www.musee-orsay.fr/index.php?id=639&L=&tx_ttnews[tt_news]=26648&no_cache=1 for attribute href on element a: Illegal character in query: [ is not allowed -->
 
 </body>
 </html>

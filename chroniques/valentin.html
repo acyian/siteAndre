@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Billets d'humeur | Dites-le avec des notes</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -36,7 +37,7 @@
 
             <div id="contenuPrincipal">
                 <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h3>Dites-le avec des notes</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,91 +46,83 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../billetdhumeur.html">Billets d'humeur</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Dites-le avec des notes</li>
                     </ul>
                 </nav>  
-  <h2>Dites-le avec des notes.</h2>
-  <p>Je demande ma bienvenue :</p><p>
-  Il y a long temps que ne vous vi,</p><p>
-  Dites, sui je plus vostre ami</p><p>
-  Avés bien vostre foy tenue ?</p><p>
-  La meilleur desoubs la nue</p><p>
-  Estes se l'avés fait ensi.</p><p>
-  Je demande ma bienvenue :</p><p>
-  Il y a long temps que ne vous vi.</p><p>
-  Je vous ai moult long temps perdue</p><p>
-  Dont j'ay esté en grant soussi</p><p>
-  Mais de
-    tous mes maulx sui gari </p><p>
-  Puis qu'en bon point je vous ay veue.</p><p>
-  Je demande …                                    Jean Haucourt (1390-1410) 
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/valentin/haucourt.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/valentin/haucourt.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-  </p><p>
-   <p>
-  J'atendray tant qu'il
-    vous playra</p><p>
-  A vous declarer ma
-    pensée,</p><p>
-  Ma tres chiere dame honourée;</p><p>
-  Je ne say s'il m'en desplayra.</p><p>
-  Mais toutes fois, pour complaire a</p><p>
-  Vostre personne desirée,</p><p>
-  J'atendray tant qu'il
-    vous playra</p><p>
-  A vous declarer ma
-    pensée.</p><p>
-  Car j'ay espour,
-    quant avendra</p><p>
-  Qu'a ce vous serés acordée,</p><p>
-  Que ma doulour sera cesée;</p><p>
-  Je le vous ay dit long temps a.</p><p>
-  J'atendray tant qu'il
-    vous playra</p><p>
-  A vous déclarer ma pensée,</p><p>
-  Ma tres chiere dame honourée;</p><p>
-  Je ne say s'il m'en desplayra.                            Guillaume
-    Dufay (1400-1474) 
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/valentin/dufay.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/valentin/dufay.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-    </p><p>
-     <p>
-  Le souvenir de vous me tue</p><p>
-  Mon seul bien, quant je vous voy</p><p>
-  Car je vous jure sur ma foy,</p><p>
-  Sans vous ma liesse est perdue.</p><p>
-  Quant vous estes hors de ma vue,</p><p>
-  Je me plains et dis a par moy :</p><p>
-  Le souvenir de vous me tue …</p><p>
-  Seule demeure despourveue</p><p>
-  D'ame nul confort ne recoy</p><p>
-  Et si seuffre sans
-    faire effroy</p><p>
-  Jusqu'à vostre revenue.</p><p>
-  Le souvenir de vous me tue …             Robert Morton (1430-1479) 
-    <sub><sub><sub> <audio controls preload="none">
-<source src="../son.mp3/valentin/Morton.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/valentin/Morton.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>
-  </p>
-  
-  
-  
-  <p>
-  Trois interprétations de l'ensemble Gothic Voices, d'où émerge l'émouvante voix de Margaret Philpot. 
-  (Publications du label <a href="http://www.hyperion-records.co.uk/">Hyperion</a> CDA66194, 66286, 66144). </p>
-  
-  
-              </div>
+
+                <div>
+                  <i>Je demande ma bienvenue :<br/>
+                  Il y a long temps que ne vous vi,<br/>
+                  Dites, sui je plus vostre ami<br/>
+                  Avés bien vostre foy tenue ?<br/>
+                  La meilleur desoubs la nue<br/>
+                  Estes se l'avés fait ensi.<br/>
+                  Je demande ma bienvenue :<br/>
+                  Il y a long temps que ne vous vi.<br/>
+                  Je vous ai moult long temps perdue<br/>
+                  Dont j'ay esté en grant soussi<br/>
+                  Mais de tous mes maulx sui gari <br/>
+                  Puis qu'en bon point je vous ay veue.<br/>
+                  Je demande … </i><br/><br/>
+                  Jean Haucourt (1390-1410)<sub><sub><sub><br/>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/valentin/haucourt.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/valentin/haucourt.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                </div><br/>
+
+                <div>
+                  <i>J'atendray tant qu'il vous playra<br/>
+                  A vous declarer ma pensée,<br/>
+                  Ma tres chiere dame honourée;<br/>
+                  Je ne say s'il m'en desplayra.<br/>
+                  Mais toutes fois, pour complaire a<br/>
+                  Vostre personne desirée,<br/>
+                  J'atendray tant qu'il vous playra<br/>
+                  A vous declarer mapensée.<br/>
+                  Car j'ay espour, quant avendra<br/>
+                  Qu'a ce vous serés acordée,<br/>
+                  Que ma doulour sera cesée;<br/>
+                  Je le vous ay dit long temps a.<br/>
+                  J'atendray tant qu'il vous playra<br/>
+                  A vous déclarer ma pensée,<br/>
+                  Ma tres chiere dame honourée;<br/>
+                  Je ne say s'il m'en desplayra.</i><br/><br/>
+                  Guillaume Dufay (1400-1474)<sub><sub><sub><br/>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/valentin/dufay.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/valentin/dufay.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                </div><br/>
+
+                <div>
+                  <i>Le souvenir de vous me tue<br/>
+                  Mon seul bien, quant je vous voy<br/>
+                  Car je vous jure sur ma foy,<br/>
+                  Sans vous ma liesse est perdue.<br/>
+                  Quant vous estes hors de ma vue,<br/>
+                  Je me plains et dis a par moy :<br/>
+                  Le souvenir de vous me tue …<br/>
+                  Seule demeure despourveue<br/>
+                  D'ame nul confort ne recoy<br/>
+                  Et si seuffre sans faire effroy<br/>
+                  Jusqu'à vostre revenue.<br/>
+                  Le souvenir de vous me tue …</i><br/><br/>
+                  Robert Morton (1430-1479)<sub><sub><sub><br/>
+                  <audio controls preload="none">
+                    <source src="../son.mp3/valentin/Morton.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/valentin/Morton.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>
+                </div><br/>
+
+                <p>Trois interprétations de l'ensemble Gothic Voices, d'où émerge l'émouvante voix de Margaret Philpot. 
+                (Publications du label <a href="http://www.hyperion-records.co.uk/">Hyperion</a> CDA66194, 66286, 66144). </p>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -139,10 +132,7 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

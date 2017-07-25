@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Compositeurs oubliés | Un Tchaïkovsky peut en cacher d'autres</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
@@ -18,6 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
+             $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -35,8 +36,8 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Compositeurs oubliés</h2>
+                <h3>Un Tchaïkovsky peut en cacher d'autres</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -45,82 +46,99 @@
                           <a href="../chroniques.html">Chroniques</a>
                         </li>
                         <li class="breadcrumbItem">
-                          <a href="../portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <a href="../tiresdeloubli.html">Compositeurs oubliés</a>
                         </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">John Adams</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Un Tchaïkovsky peut en cacher d'autres</li>
                     </ul>
                 </nav>  
-  <h2>Un Tchaïkovsky peut en cacher d'autres.</h2>
   
-  <p>L'arbre qui cache la  forêt est évidemment Piotr Ilitch Tchaïkovsky (1840-1893), l'un des compositeurs préférés du grand public. Celui-ci raffole des symphonies, concertos et autres ballets, sans oublier la musique de chambre, en particulier  trois quatuors et un sextuor à cordes et l'immense <a href="https://www.youtube.com/watch?v=YOlqDzM0U3g">Trio</a> à clavier (ici dans la légendaire version de Argerich, Kremer et Maisky). L'amateur d'opéras peu connus  devrait également partir sur les traces des  11 oeuvres du genre  dont seuls <a href="https://www.youtube.com/watch?v=UtsZpm3k914">La Dame de Pique</a> et <a href="https://www.youtube.com/watch?v=n1Crz87zAfI">Eugène Onéguine</a> sont couramment représentés en Occident. Voici des liens bienvenus vers les raretés : <a href="https://www.youtube.com/watch?v=kmpp6RGVsro">La Pucelle d'Orléans</a>, Le Voïévodee, <a href="https://www.youtube.com/watch?v=HTo0kmbGfxE">Ondine</a> (Un des rares extraits de la partition non détruits par le compositeur insatisfait), <a href="https://www.youtube.com/watch?v=Z8H4jwr7TCQ">L'Opritchnik</a>, Vakoula le Forgeron, <a href="https://www.youtube.com/watch?v=ksn3lgAH3Ak">Mazeppa</a>, <a href="https://www.youtube.com/watch?v=ekojLEvs7iU">Tcherevitchki</a>, <a href="https://www.youtube.com/watch?v=rd8lMT5ThfQ">L'Enchanteresse</a> et <a href="https://www.youtube.com/watch?v=A0OBhzoJUrc">Iolanta</a>.</p>
+                <p>L'arbre qui cache la  forêt est évidemment Piotr Ilitch Tchaïkovsky (1840-1893), l'un des compositeurs préférés du grand public. Celui-ci raffole des symphonies, concertos et autres ballets, sans oublier la musique de chambre, en particulier  trois quatuors et un sextuor à cordes et l'immense <a href="https://www.youtube.com/watch?v=YOlqDzM0U3g">Trio</a> à clavier (ici dans la légendaire version de Argerich, Kremer et Maisky). L'amateur d'opéras peu connus  devrait également partir sur les traces des  11 oeuvres du genre  dont seuls <a href="https://www.youtube.com/watch?v=UtsZpm3k914">La Dame de Pique</a> et <a href="https://www.youtube.com/watch?v=n1Crz87zAfI">Eugène Onéguine</a> sont couramment représentés en Occident. Voici des liens bienvenus vers les raretés : <a href="https://www.youtube.com/watch?v=kmpp6RGVsro">La Pucelle d'Orléans</a>, Le Voïévodee, <a href="https://www.youtube.com/watch?v=HTo0kmbGfxE">Ondine</a> (Un des rares extraits de la partition non détruits par le compositeur insatisfait), <a href="https://www.youtube.com/watch?v=Z8H4jwr7TCQ">L'Opritchnik</a>, Vakoula le Forgeron, <a href="https://www.youtube.com/watch?v=ksn3lgAH3Ak">Mazeppa</a>, <a href="https://www.youtube.com/watch?v=ekojLEvs7iU">Tcherevitchki</a>, <a href="https://www.youtube.com/watch?v=rd8lMT5ThfQ">L'Enchanteresse</a> et <a href="https://www.youtube.com/watch?v=A0OBhzoJUrc">Iolanta</a>.</p>
 
-  <p>Le patronyme Tchaïkovsky étant très présent dans l'annuaire russe,  vous y trouverez, en triant bien,  deux  autres compositeurs de valeurs. Ils sont issus de l'école moscovite et parents mais pas avec Piotr Ilitch.</p>
-  
-  
-  <p>
-  <div><img src="../images/tchaikovsky/boris.jpg" alt="" /><div class="legende">Boris Tchaïkovsky</div></div> 
-  <li>L'oncle Boris  (1925-1996) a bouclé ses études en 1949, au Conservatoire de Moscou,  le piano avec Lev Oborine et la composition avec Nikolaï Miaskovski, Vissarion Chebaline et Dimitri Schostakovitch. Il a travaillé pendant quelque temps à la radio, avant de se consacrer  à la composition, une discipline qu'il a enseignée à la fin de sa vie. </li>
-  <p>Il a commencé par écrire dans le style appris au conservatoire (insignifiante <a href="https://www.youtube.com/watch?v=L3YNaxTW5l4">Sinfonietta</a>  de jeunesse, 1953) puis s'est essayé au modernisme polystylistique, dans les années 1970, avant de revenir à ce qu'il faisait le mieux,  une musique ancrée dans la tradition russe mais perméable aux influences occidentales.  Les deux premières symphonies (n°1 <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/tchaikovsky/sy1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/tchaikovsky/sy1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio></sub></sub></sub>, n°2 <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/tchaikovsky/sy2.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/tchaikovsky/sy2.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub>) illustrent le chemin parcouru en 20 ans, entre 1947 et 1967. L'Etat soviétique a décerné son Prix de Musique à la <a href="https://www.youtube.com/watch?v=EAiwlW_7XQ0">Deuxième</a>, en 1969 (Désolé pour la vidéo mais on est en Russie, heureusement la musique est très bonne). Les <a href="https://www.youtube.com/watch?v=GTdzAWq6DR0">Variations</a> pour orchestre sont quasiment contemporaines (1973).</p>
-  <p></p>
-  <p>La Symphonie suivante  (<a href="https://www.youtube.com/watch?v=7dyVNi9LKfA">n°3 "Sebastopol"</a>) illustre la dernière manière du compositeur  davantage. Elle convainc par un retour à des harmonies   expressives s'épanchant   dans  un cadre  globalement tonal. Ecoutez son début onirique annonçant le climat sonore que développera, quelques années plus tard, le collègue ukrainien <a href="../chroniques/silvestrov.html"><span style="color:#F60">Valentin Silvestrov</a></span> (1937- ). Une <a href="https://www.youtube.com/watch?v=jlffMlQVYrs">Quatrième symphonie</a>  (1993) existe, la plus personnelle sinon la plus intéressante, qui fait appel à une harpe soliste. Le compositeur a également écrit 4 concertos, pour <a href="https://www.youtube.com/watch?v=lms2Jl7yBxo">clarinette</a>, <a href="https://www.youtube.com/watch?v=k65DMmFkgKw">violoncelle</a> (lyrique à souhait), <a href="https://www.youtube.com/watch?v=NYJdPgOIevU">violon</a> (flirtant avec les techniques minimalistes) et <a href="https://www.youtube.com/watch?v=aTxcdQSKJp0">piano</a> (percussif et pétaradant à la russe dans ses mouvements rapides).</p>
+                <p>Le patronyme Tchaïkovsky étant très présent dans l'annuaire russe,  vous y trouverez, en triant bien,  deux  autres compositeurs de valeurs. Ils sont issus de l'école moscovite et parents mais pas avec Piotr Ilitch.</p>
 
-<div><img src="../images/tchaikovsky/quartets.jpg" alt="" /></div>
-  <p>Sa musique de chambre compte six quatuors à cordes, tous enregistrés chez Nothern Flowers (n°1 <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/tchaikovsky/quartet1.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/tchaikovsky/quartet1.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-  </sub></sub></sub>, <a href="https://www.youtube.com/watch?v=-AJgJDZ4JsE">n°6</a>) plus un éventail d'oeuvres pour formations diverses dont j'épingle celles que je peux proposer à l'écoute : <a href="https://www.youtube.com/watch?v=utpTw5dFjz8">Quintette</a> et <a href="https://www.youtube.com/watch?v=iw3wAJPqRh0">Trio</a> à clavier, <a href="https://www.youtube.com/watch?v=rrz_HtzfVzU">Sonate</a> pour violoncelle &amp; piano, <a href="https://www.youtube.com/watch?v=5y4oVDvTjSw">Suite</a> pour violoncelle seul et <a href="https://www.youtube.com/watch?v=2nBKiuSLnrI">Sonate n°1</a> pour piano. </p>
-  <p>L'<a href="https://www.chandos.net/products/catalogue/TR%200749">oeuvre pour piano</a> a été (partiellement ?) enregistrée par Olga Solovieva et deux volumes sont parus chez Albany, un label que vous retrouverez sans doute plus facilement dans le catalogue Chandos.</p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
-  <div><img src="../images/tchaikovsky/zodiaque.jpg" alt="" /></div>
-  <p>Un autre enregistrement paru chez Nothern Flowers propose quelques  oeuvres intéressantes écrites pour  ensembles  plus étoffés dont une symphonie de chambre <sub><sub><sub> 
-    <audio controls preload="none">
-  <source src="../son.mp3/tchaikovsky/unison.mp3" type="audio/mpeg"/>
-  <source src="../son.mp3/tchaikovsky/unison.ogg" type="audio/ogg"/>
-      Votre navigateur n'est pas compatible
-  </audio>
-  </sub></sub></sub> et une <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557727">Suite du Zodiaque</a>, pour soprano &amp; ensemble instrumental.  </p>
-  <p>A côté de ces oeuvres sérieuses,  le compositeur a aussi écrit des oeuvres plus légères, dites de circonstances (alimentaires ?) telles <a href="https://www.youtube.com/watch?v=hIrOon2EhWA">Le Vent de Sibérie</a>, <a href="https://www.youtube.com/watch?v=tIUr_jfcilY">Les Murmures de la Forêt</a> et la <a href="https://www.youtube.com/watch?v=jum2Z8hlotY">Suite du Porcher</a>. Un  <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Boris-Tschaikowsky-1925-1996-Andersen-Fairy-Tales/hnum/1118275">CD Naxos</a> propose quelques partitions charmantes, en particulier celle inspirée par les Contes d'Andersen. Il a également écrit des  <a href="https://www.youtube.com/watch?v=FmZ2FLWYW-I">musiques de film</a> (alimentaires !) dont <a href="https://www.youtube.com/watch?v=D3qOaUVeVGI&list=PLuNNUtCk3Srj1coQpk8RD632ayGy_XDt6">Le Mariage de Balzaminov</a>, sans doute populaire en Union soviétique mais pas au-delà.</p>
-  <p>Boris Tchaïkovsky a appartenu à la  génération  postérieure à  Schostakovitch, ce qui ne lui a pas facilité l'accès à la célébrité. Il est  longtemps passé inaperçu en Occident mais les choses ont changé depuis qu'on s'est rendu compte que de  grands interpètes russes (Rostropovich, Kondrashin, Barshai, Fedoseyev, ...) avaient joué ses oeuvres, signes qu'ils les appréciaient. Le label russe Melodiya a gravé quelques enregistrements mais ils demeurent d'accès difficiles. Par bonheur, le vide est actuellement comblé par Nothern Flowers, basé à Saint-Pétersbourg (!) mais distribué par Naxos.</p>
-  <p></p>
-  <p></p>
-  <div><img src="../images/tchaikovsky/alexandre.jpg" alt="" /><div class="legende">Alexandre Tchaïkovsky</div></div>
-  <li>Le neveu Alexandre  (1946- ) est encore moins connu, au point qu'il demeure malaisé de trouver des enregistrements le concernant. Comme son oncle, il a étudié au Conservatoire de Moscou, seuls les professeurs ayant changé : le piano avec Heinrich Neuhaus et Lev Naumov et la composition avec <a href="../chroniques/khrennikov.html"><span style="color:#F60">Tikhon Khrennikov</a></span>. Ayant reçu toutes les médailles dont les russes peuvent rêver, il a été invité à diriger la section de composition du Conservatoire moscovite, une charge toujours effective à ce jour. Quelques interprètes renommés se sont également mis  au service de son oeuvre, en particulier l'altiste Yuri Bashmet (pour lequel il a écrit 3 concertos), le pianiste Boris Berezovsky et le chef letton Mariss Jansons. Ces interprètes ont été réunis, en mars 2016, pour un  Concert d'hommage au compositeur, dans la salle ... Tchaïkovsky  de Moscou.  Le programme prévoyait une Elégie  dédiée à Tikon Khrennikov, le Concerto pour deux pianos, le 2<sup>ème</sup>  Concerto pour alto (&quot;Etude dans des couleurs simples&quot;) et la Symphonie n°4. Une <a href="https://www.youtube.com/watch?v=Iw7OB32hrjs">vidéo</a> existe mais elle présente malheureusement des coupures intempestives aggravées par un défaut majeur de  synchronisation entre les bandes image et son (On reste en Russie !). C'est d'autant plus regrettable que la musique ne méritait pas un tel sabotage. Une chose est sûre, la Symphonie n°4 dont voici le début <sub><sub><sub> 
-  <audio controls preload="none">
-<source src="../son.mp3/tchaikovsky/sy4alexander.mp3" type="audio/mpeg"/>
-<source src="../son.mp3/tchaikovsky/sy4alexander.ogg" type="audio/ogg"/>
-Votre navigateur n'est pas compatible
-</audio>
-</sub></sub></sub> termine le programme, amusez-vous à le situer dans la vidéo (Réponse en 1:34:20). <br />
-  </li>
-  <p>Bien qu'il ait toujours respecté la hiérarchie des genres  - après tout on reste en Russie ! - il a absorbé et digéré  les recettes du postmodernisme occidental comme en témoigne sa belle <a href="https://www.youtube.com/watch?v=IaWCFXfCCfA">Symphonie n°3</a>, où l'on trouve de tout, des arpèges dignes de <a href="../chroniques/Glass.html"><span style="color:#F60">Philip Glass</a></span> (vers 8:15) jusqu'à un large finale, en forme de valse déchaînée, à la manière de celle de Ravel.</p>
-  <p>D'autres oeuvres partent dans d'autres directions  (<a href="https://www.youtube.com/watch?v=opvlzDDjpbk">Symphonie n°2 "Aquarius"</a>), <a href="https://www.youtube.com/watch?v=EBcU57-rL6A">Khojaly</a> pour tar (sorte de luth moyen-oriental), piano, violoncelle &amp; orchestre, <a href="https://www.youtube.com/watch?v=IssR7mJBVMA">Etudes dans des couleurs simples</a>, pour alto, piano &amp; orchestre et <a href="https://www.youtube.com/watch?v=tYs3PhJZDG4">Concerto</a> pour contrebasse.</p>
-  <p>Pour espérer découvrir  d'autres oeuvres de ce musicien attachant, il vous faudra probablement consulter des sites russes et utiliser la graphie adaptée (Александр Чайковский !). Vous découvrirez, par exemple,  ce <a href="https://www.youtube.com/watch?v=RRrwa_xM1ow&amp;list=PL86xnRTiSiNGBMxTNiagGJjnYsqUibCJE">Requiem russe</a>, mais il est  à parier que, comme moi,  vous peinerez à trouver les  Concertos pour violons,  pour piano et  pour alto sans parler de la 5<sup>ème</sup> Symphonie,  du Concerto pour orchestre, des 3 ballets (La troupe du Kirov a monté <a href="https://www.youtube.com/watch?v=DchokCOJdPg">L'Examinateur</a>, à mille lieues de ce que l'on croit connaître de la Russie) et autant d'oratorios  (L'Affaire du Tsar, créé en 1913). Je ne parle même pas des 9 opéras, qui ne font pas partie des priorités vu le retard accumulé.  </p>
-  <p></p>
-  
-    <div><img src="../images/tchaikovsky/andre.jpg" alt="" /><div class="legende">André Tchaïkovsky</div></div>
-  
-<p>Ne cherchez pas le nom d'André Tchaïkovsky (1935-1982) dans l'annuaire (polonais) car il s'agit d'un nom d'emprunt, le musicien  étant né Robert Andrzej Krauthammer, à Varsovie. Il est davantage connu comme pianiste (ici dans <a href="https://www.youtube.com/watch?v=RrkxGgXuFzs">Chopin</a>) que comme compositeur, pourtant ses deux Quatuors à cordes (<a href="https://www.youtube.com/watch?v=1ptBUHt-jmU">n°1</a> et <a href="https://www.youtube.com/watch?v=inNXExD5WYE">n°2</a>) sont dignes d'intérêt. Il a travaillé pendant de nombreuses années à la composition de son magnum opus,<a href="https://www.youtube.com/watch?v=mNl-Jez0ry4"> Le Marchand de Venise</a>, un opéra qu'il n'a jamais entendu et qui n'a été créé qu'en 2013.</p>
+                <ul class="miniListCorps">
+                  <li>
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/tchaikovsky/boris.jpg" alt="Boris Tchaïkovsky"/>
+                        <figcaption>Boris Tchaïkovsky</figcaption>
+                      </figure>
+                    </div>
+                  </div>L'oncle Boris  (1925-1996) a bouclé ses études en 1949, au Conservatoire de Moscou,  le piano avec Lev Oborine et la composition avec Nikolaï Miaskovski, Vissarion Chebaline et Dimitri Schostakovitch. Il a travaillé pendant quelque temps à la radio, avant de se consacrer  à la composition, une discipline qu'il a enseignée à la fin de sa vie.<br/><br/>
+                  Il a commencé par écrire dans le style appris au conservatoire (insignifiante <a href="https://www.youtube.com/watch?v=L3YNaxTW5l4">Sinfonietta</a>  de jeunesse, 1953) puis s'est essayé au modernisme polystylistique, dans les années 1970, avant de revenir à ce qu'il faisait le mieux,  une musique ancrée dans la tradition russe mais perméable aux influences occidentales.  Les deux premières symphonies (n°1 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/tchaikovsky/sy1.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/tchaikovsky/sy1.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>, n°2 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/tchaikovsky/sy2.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/tchaikovsky/sy2.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>) illustrent le chemin parcouru en 20 ans, entre 1947 et 1967. L'Etat soviétique a décerné son Prix de Musique à la <a href="https://www.youtube.com/watch?v=EAiwlW_7XQ0">Deuxième</a>, en 1969 (Désolé pour la vidéo mais on est en Russie, heureusement la musique est très bonne). Les <a href="https://www.youtube.com/watch?v=GTdzAWq6DR0">Variations</a> pour orchestre sont quasiment contemporaines (1973).<br/><br/>
+                  La Symphonie suivante (<a href="https://www.youtube.com/watch?v=7dyVNi9LKfA">n°3 "Sebastopol"</a>) illustre la dernière manière du compositeur  davantage. Elle convainc par un retour à des harmonies  expressives s'épanchant   dans  un cadre  globalement tonal. Ecoutez son début onirique annonçant le climat sonore que développera, quelques années plus tard, le collègue ukrainien <span class="coloAutrePourLien"><a href="../chroniques/silvestrov.html">Valentin Silvestrov</a></span> (1937- ). Une <a href="https://www.youtube.com/watch?v=jlffMlQVYrs">Quatrième symphonie</a>  (1993) existe, la plus personnelle sinon la plus intéressante, qui fait appel à une harpe soliste. Le compositeur a également écrit 4 concertos, pour <a href="https://www.youtube.com/watch?v=lms2Jl7yBxo">clarinette</a>, <a href="https://www.youtube.com/watch?v=k65DMmFkgKw">violoncelle</a> (lyrique à souhait), <a href="https://www.youtube.com/watch?v=NYJdPgOIevU">violon</a> (flirtant avec les techniques minimalistes) et <a href="https://www.youtube.com/watch?v=aTxcdQSKJp0">piano</a> (percussif et pétaradant à la russe dans ses mouvements rapides).
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/tchaikovsky/quartets.jpg" alt="TODO"/>
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  Sa musique de chambre compte six quatuors à cordes, tous enregistrés chez Nothern Flowers (n°1 <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/tchaikovsky/quartet1.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/tchaikovsky/quartet1.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub>, <a href="https://www.youtube.com/watch?v=-AJgJDZ4JsE">n°6</a>) plus un éventail d'oeuvres pour formations diverses dont j'épingle celles que je peux proposer à l'écoute : <a href="https://www.youtube.com/watch?v=utpTw5dFjz8">Quintette</a> et <a href="https://www.youtube.com/watch?v=iw3wAJPqRh0">Trio</a> à clavier, <a href="https://www.youtube.com/watch?v=rrz_HtzfVzU">Sonate</a> pour violoncelle &amp; piano, <a href="https://www.youtube.com/watch?v=5y4oVDvTjSw">Suite</a> pour violoncelle seul et <a href="https://www.youtube.com/watch?v=2nBKiuSLnrI">Sonate n°1</a> pour piano.<br/><br/>
+                  L'<a href="https://www.chandos.net/products/catalogue/TR%200749">oeuvre pour piano</a> a été (partiellement ?) enregistrée par Olga Solovieva et deux volumes sont parus chez Albany, un label que vous retrouverez sans doute plus facilement dans le catalogue Chandos.
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/tchaikovsky/zodiaque.jpg" alt="TODO"/>
+                        <figcaption>TODO</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  Un autre enregistrement paru chez Nothern Flowers propose quelques  oeuvres intéressantes écrites pour  ensembles  plus étoffés dont une symphonie de chambre <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/tchaikovsky/unison.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/tchaikovsky/unison.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub> et une <a href="http://www.naxos.com/catalogue/item.asp?item_code=8.557727">Suite du Zodiaque</a>, pour soprano &amp; ensemble instrumental.<br/><br/>
+                  A côté de ces oeuvres sérieuses, le compositeur a aussi écrit des oeuvres plus légères, dites de circonstances (alimentaires ?) telles <a href="https://www.youtube.com/watch?v=hIrOon2EhWA">Le Vent de Sibérie</a>, <a href="https://www.youtube.com/watch?v=tIUr_jfcilY">Les Murmures de la Forêt</a> et la <a href="https://www.youtube.com/watch?v=jum2Z8hlotY">Suite du Porcher</a>. Un  <a href="https://www.jpc.de/jpcng/classic/detail/-/art/Boris-Tschaikowsky-1925-1996-Andersen-Fairy-Tales/hnum/1118275">CD Naxos</a> propose quelques partitions charmantes, en particulier celle inspirée par les Contes d'Andersen. Il a également écrit des  <a href="https://www.youtube.com/watch?v=FmZ2FLWYW-I">musiques de film</a> (alimentaires !) dont <a href="https://www.youtube.com/watch?v=D3qOaUVeVGI&list=PLuNNUtCk3Srj1coQpk8RD632ayGy_XDt6">Le Mariage de Balzaminov</a>, sans doute populaire en Union soviétique mais pas au-delà.<br/><br/>
+                  Boris Tchaïkovsky a appartenu à la  génération  postérieure à  Schostakovitch, ce qui ne lui a pas facilité l'accès à la célébrité. Il est  longtemps passé inaperçu en Occident mais les choses ont changé depuis qu'on s'est rendu compte que de  grands interpètes russes (Rostropovich, Kondrashin, Barshai, Fedoseyev, ...) avaient joué ses oeuvres, signes qu'ils les appréciaient. Le label russe Melodiya a gravé quelques enregistrements mais ils demeurent d'accès difficiles. Par bonheur, le vide est actuellement comblé par Nothern Flowers, basé à Saint-Pétersbourg (!) mais distribué par Naxos.</li>
+                  <li>
+                  <div class="conteneurImageSeule">
+                    <div>
+                      <figure>
+                        <img src="../images/tchaikovsky/alexandre.jpg" alt="Alexandre Tchaïkovsky"/>
+                        <figcaption>Alexandre Tchaïkovsky</figcaption>
+                      </figure>
+                    </div>
+                  </div>Le neveu Alexandre  (1946- ) est encore moins connu, au point qu'il demeure malaisé de trouver des enregistrements le concernant. Comme son oncle, il a étudié au Conservatoire de Moscou, seuls les professeurs ayant changé : le piano avec Heinrich Neuhaus et Lev Naumov et la composition avec <span class="coloAutrePourLien"><a href="../chroniques/khrennikov.html">Tikhon Khrennikov</a></span>. Ayant reçu toutes les médailles dont les russes peuvent rêver, il a été invité à diriger la section de composition du Conservatoire moscovite, une charge toujours effective à ce jour. Quelques interprètes renommés se sont également mis  au service de son oeuvre, en particulier l'altiste Yuri Bashmet (pour lequel il a écrit 3 concertos), le pianiste Boris Berezovsky et le chef letton Mariss Jansons. Ces interprètes ont été réunis, en mars 2016, pour un  Concert d'hommage au compositeur, dans la salle ... Tchaïkovsky  de Moscou.  Le programme prévoyait une Elégie  dédiée à Tikon Khrennikov, le Concerto pour deux pianos, le 2<sup>ème</sup>  Concerto pour alto (&quot;Etude dans des couleurs simples&quot;) et la Symphonie n°4. Une <a href="https://www.youtube.com/watch?v=Iw7OB32hrjs">vidéo</a> existe mais elle présente malheureusement des coupures intempestives aggravées par un défaut majeur de  synchronisation entre les bandes image et son (On reste en Russie !). C'est d'autant plus regrettable que la musique ne méritait pas un tel sabotage. Une chose est sûre, la Symphonie n°4 dont voici le début <sub><sub><sub> 
+                  <audio controls preload="none">
+                    <source src="../son.mp3/tchaikovsky/sy4alexander.mp3" type="audio/mpeg"/>
+                    <source src="../son.mp3/tchaikovsky/sy4alexander.ogg" type="audio/ogg"/>
+                    Votre navigateur n'est pas compatible
+                  </audio></sub></sub></sub> termine le programme, amusez-vous à le situer dans la vidéo (Réponse en 1:34:20).<br/><br/>
+                  Bien qu'il ait toujours respecté la hiérarchie des genres  - après tout on reste en Russie ! - il a absorbé et digéré  les recettes du postmodernisme occidental comme en témoigne sa belle <a href="https://www.youtube.com/watch?v=IaWCFXfCCfA">Symphonie n°3</a>, où l'on trouve de tout, des arpèges dignes de <span class="coloAutrePourLien"><a href="../chroniques/Glass.html">Philip Glass</a></span> (vers 8:15) jusqu'à un large finale, en forme de valse déchaînée, à la manière de celle de Ravel.<br/><br/>
+                  D'autres oeuvres partent dans d'autres directions  (<a href="https://www.youtube.com/watch?v=opvlzDDjpbk">Symphonie n°2 "Aquarius"</a>), <a href="https://www.youtube.com/watch?v=EBcU57-rL6A">Khojaly</a> pour tar (sorte de luth moyen-oriental), piano, violoncelle &amp; orchestre, <a href="https://www.youtube.com/watch?v=IssR7mJBVMA">Etudes dans des couleurs simples</a>, pour alto, piano &amp; orchestre et <a href="https://www.youtube.com/watch?v=tYs3PhJZDG4">Concerto</a> pour contrebasse.<br/><br/>
+                  Pour espérer découvrir  d'autres oeuvres de ce musicien attachant, il vous faudra probablement consulter des sites russes et utiliser la graphie adaptée (Александр Чайковский !). Vous découvrirez, par exemple,  ce <a href="https://www.youtube.com/watch?v=RRrwa_xM1ow&amp;list=PL86xnRTiSiNGBMxTNiagGJjnYsqUibCJE">Requiem russe</a>, mais il est  à parier que, comme moi,  vous peinerez à trouver les  Concertos pour violons,  pour piano et  pour alto sans parler de la 5<sup>ème</sup> Symphonie,  du Concerto pour orchestre, des 3 ballets (La troupe du Kirov a monté <a href="https://www.youtube.com/watch?v=DchokCOJdPg">L'Examinateur</a>, à mille lieues de ce que l'on croit connaître de la Russie) et autant d'oratorios  (L'Affaire du Tsar, créé en 1913). Je ne parle même pas des 9 opéras, qui ne font pas partie des priorités vu le retard accumulé.</li>
+                </ul>
 
+                <div class="conteneurImageSeule">
+                  <div>
+                    <figure>
+                      <img src="../images/tchaikovsky/andre.jpg" alt="André Tchaïkovsky"/>
+                      <figcaption>André Tchaïkovsky</figcaption>
+                    </figure>
+                  </div>
+                </div>
 
-    
-              </div>
+                <p>Ne cherchez pas le nom d'André Tchaïkovsky (1935-1982) dans l'annuaire (polonais) car il s'agit d'un nom d'emprunt, le musicien  étant né Robert Andrzej Krauthammer, à Varsovie. Il est davantage connu comme pianiste (ici dans <a href="https://www.youtube.com/watch?v=RrkxGgXuFzs">Chopin</a>) que comme compositeur, pourtant ses deux Quatuors à cordes (<a href="https://www.youtube.com/watch?v=1ptBUHt-jmU">n°1</a> et <a href="https://www.youtube.com/watch?v=inNXExD5WYE">n°2</a>) sont dignes d'intérêt. Il a travaillé pendant de nombreuses années à la composition de son magnum opus,<a href="https://www.youtube.com/watch?v=mNl-Jez0ry4"> Le Marchand de Venise</a>, un opéra qu'il n'a jamais entendu et qui n'a été créé qu'en 2013.</p>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -130,10 +148,7 @@ Votre navigateur n'est pas compatible
 
         </div>
     
-    
     </div>
-
-    <script src="../js/chroniques.js"></script>
 
 </body>
 </html>

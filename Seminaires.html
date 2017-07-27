@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Séminaires | TODO</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
@@ -18,7 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
-             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             $("#seminaires").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -33,79 +33,147 @@
         <!-- Inclusion header -->
         <div id="header"></div>
 
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreTetralogique" href="#tetralogique" class="linavMenu active">
+                    <span>La "Tétralogique" ou Les fondements du Constructivisme</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreComplementTetralogique" href="#complementTetralogique" class="linavMenu">
+                    <span>Complément à la Tétralogique, essai de Dynamique récursive</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTheorieClassiqueInfo" href="#theorieClassiqueInfo" class="linavMenu">
+                    <span>La Théorie Classique de l'Information</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreTheorieQuantiqueInfo" href="#theorieQuantiqueInfo" class="linavMenu">
+                    <span>La Théorie Quantique de l'Information</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreMachinerieChaoDeterministe" href="#machinerieChaoDeterministe" class="linavMenu">
+                    <span>La machinerie analytique du Chaos déterministe</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Séminaires</h2>
+                <h3>TODO</h3>
 
                 <nav class="filAriane">
                     <ul>
-                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
-                        <li class="breadcrumbItem  breadcrumIitem--current">
-                          <a href="chroniques.html">Chroniques</a>
-                        </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Séminaires</li>
                     </ul>
                 </nav>
-<h1>Séminaires de Physique mathématique.</h1>
 
-<h2>La "Tétralogique" ou Les fondements du Constructivisme : </h2>
+                <div class="sommaire">
+                  <div class="sommaireTitle">
+                      <h6>Sommaire</h6>
+                      <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                  </div>
 
-  <li><a href="Tetralogique/Prologue.pdf">Prologue</a></li>
-  <li><a href="Tetralogique/Hilbert.pdf">Le Sixième Problème de Hilbert</a></li>
-  <li><a href="Tetralogique/Turing.pdf">L'Universalité au sens de Turing</a></li>
-  <li><a href="Tetralogique/Godel.pdf">L'Universalité au sens de Gödel</a> </li>
+                  <ul class="linksSummary">
+                      <li><a href="#tetralogique">La "Tétralogique" ou Les fondements du Constructivisme</a></li>
+                      <li><a href="#complementTetralogique">Complément à la Tétralogique, essai de Dynamique récursive</a></li>
+                      <li><a href="#theorieClassiqueInfo">La Théorie Classique de l'Information</a></li>
+                      <li><a href="#theorieQuantiqueInfo">La Théorie Quantique de l'Information</a></li>
+                      <li><a href="#machinerieChaoDeterministe">La machinerie analytique du Chaos déterministe</a></li>
+                  </ul>
+                </div>
 
-<p><a href="Tetralogique/Tetralogique.rar">L'Intégrale.</a></p>
+                <div id="tetralogique">
+                  <h4>La "Tétralogique" ou Les fondements du Constructivisme</h4>
 
+                  <ul class="listCenterWithDots">
+                    <li><a href="Tetralogique/Prologue.pdf">Prologue</a></li>
+                    <li><a href="Tetralogique/Hilbert.pdf">Le Sixième Problème de Hilbert</a></li>
+                    <li><a href="Tetralogique/Turing.pdf">L'Universalité au sens de Turing</a></li>
+                    <li><a href="Tetralogique/Godel.pdf">L'Universalité au sens de Gödel</a></li>
+                  </ul>
 
-<h2>Complément à la Tétralogique, essai de Dynamique récursive : </h2>
+                  <span class="spanRemplaceP"><a href="Tetralogique/Tetralogique.rar">L'Intégrale</a></span>
+                </div>
 
-  <li><a href="Tetralogique/Dynamique_recursive.pdf">Dynamique récursive : Niveaux syntaxiques et sémantiques</a></li>    
+                <div id="complementTetralogique">
+                  <h4>Complément à la Tétralogique, essai de Dynamique récursive</h4>
 
+                  <ul class="listCenterWithDots">
+                    <li><a href="Tetralogique/Dynamique_recursive.pdf">Dynamique récursive : Niveaux syntaxiques et sémantiques</a></li>
+                  </ul>
+                </div>
 
+                <div id="theorieClassiqueInfo">
+                  <h4>La Théorie Classique de l'Information</h4>
 
+                  <ul class="listCenterWithDots">
+                    <li><a href="Info_Classique/Kolmogorov.pdf">Le Point de Vue de Kolmogorov</a></li>
+                    <li><a href="Info_Classique/Shannon.pdf">Le Point de Vue de Shannon</a></li>
+                    <li><a href="Info_Classique/Thermo_calcul.pdf">La Thermodynamique du Calcul </a></li>
+                  </ul>
 
-<h2>La Théorie Classique de l'Information : </h2>
+                  <span class="spanRemplaceP">
+                    <a href="Info_Classique/Info_Class_Complet.rar">L'Intégrale</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Namur (30/11/2010) : 
+                    <a href="Info_Classique/DiaporamaTheorieInfo.rar">Diaporama</a> &amp; 
+                    <a href="http://lacademie.tv/conferences/la-theorie-classique-de-l-information-en-rapport-avec-les-sciences-exactes">Enregistrement sonore</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Diaporamas ULG-Montefiore : 
+                    <a href="Info_Classique/IEEE2017Part1.ppt">21/02/2017 </a> &amp; 
+                    <a href="Info_Classique/IEEE2017Part2.ppt">22/02/2017 </a>
+                  </span>
+                </div>
 
-  <li><a href="Info_Classique/Kolmogorov.pdf">Le Point de Vue de Kolmogorov</a></li>
-  <li><a href="Info_Classique/Shannon.pdf">Le Point de Vue de Shannon</a></li>
-  <li><a href="Info_Classique/Thermo_calcul.pdf">La Thermodynamique du Calcul </a></li>
+                <div id="theorieQuantiqueInfo">
+                  <h4>La Théorie Quantique de l'Information</h4>
 
-<p><a href="Info_Classique/Info_Class_Complet.rar">L'Intégrale.</a></p>
-<p>Namur (30/11/2010) : <a href="Info_Classique/DiaporamaTheorieInfo.rar">Diaporama</a> & <a href="http://lacademie.tv/conferences/la-theorie-classique-de-l-information-en-rapport-avec-les-sciences-exactes">Enregistrement sonore</a></p>
-<p>Diaporamas ULG-Montefiore : <a href="Info_Classique/IEEE2017Part1.ppt">21/02/2017 </a> & <a href="Info_Classique/IEEE2017Part2.ppt">22/02/2017 </a></p>
+                  <ul class="listCenterWithDots">
+                    <li><a href="Info_Quantique/Phys_Quant.pdf">Les Lois qui régissent le Monde Quantique</a></li>
+                    <li><a href="Info_Quantique/AnnexesMQ.pdf">Annexes au précédent </a></li>
+                    <li><a href="Info_Quantique/Info_Quant.pdf">La Théorie Quantique de l'Information</a></li>
+                    <li><a href="Info_Quantique/Ordi_Quant.pdf">L'Ordinateur Quantique</a></li>
+                    <li><a href="Info_Quantique/Algo_Quant.pdf">Algorithmes Quantiques</a></li>
+                    <li><a href="Info_Quantique/epr.pdf">Le Paradoxe EPR </a></li>
+                  </ul>
 
+                  <span class="spanRemplaceP">
+                    <a href="Info_Quantique/Th_qu_Info_complet.rar">L'Intégrale</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">
+                    <a href="Info_Quantique/Equationsdonde.nb">Equations d'ondes : Notebook Mathematica</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">
+                    <a href="Info_Quantique/QuantumInformation.nb">Information quantique : Notebook Mathematica </a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Namur (16/11/2011) : 
+                    <a href="http://lacademie.tv/conferences/l-ordinateur-quantique-theorie-et-applications">Enregistrement sonore</a>
+                  </span><br/><br/>
+                  <span class="spanRemplaceP">Diaporamas ULG-Montefiore : 
+                    <a href="Info_Quantique/Ordiquant1.ppsx">11/02/2014 </a> &amp; 
+                    <a href="Info_Quantique/Ordiquant2.ppsx">12/02/2014 </a>
+                  </span>
+                </div>
 
+                <div id="machinerieChaoDeterministe">
+                  <h4>La machinerie analytique du Chaos déterministe</h4>
 
+                  <ul class="listCenterWithDots">
+                    <li><a href="Chaos/PathologiesEDO.pdf">Pathologies des équations différentielles ordinaires</a></li>
+                    <li><a href="Chaos/Lie.pdf">Introduction à l'étude des Symétries des Equations Différentielles Ordinaires</a></li>
+                  </ul>
 
-
-<h2>La Théorie Quantique de l'Information : </h2>
-
-  <li><a href="Info_Quantique/Phys_Quant.pdf">Les Lois qui régissent le Monde Quantique</a></li>
-  <li><a href="Info_Quantique/AnnexesMQ.pdf">Annexes au précédent </a></li>
-  <li><a href="Info_Quantique/Info_Quant.pdf">La Théorie Quantique de l'Information</a></li>
-  <li><a href="Info_Quantique/Ordi_Quant.pdf">L'Ordinateur Quantique</a></li>
-  <li><a href="Info_Quantique/Algo_Quant.pdf">Algorithmes Quantiques</a></li>
-  <li><a href="Info_Quantique/epr.pdf">Le Paradoxe EPR </a></li>
-
-  
-  <p><a href="Info_Quantique/Th_qu_Info_complet.rar">L'Intégrale.</a></p>
-  
-  <p><a href="Info_Quantique/Equationsdonde.nb">Equations d'ondes : Notebook Mathematica</a></p>
-  <p><a href="Info_Quantique/QuantumInformation.nb">Information quantique : Notebook Mathematica </a></p>
-
-<p>Namur (16/11/2011) : <a href="http://lacademie.tv/conferences/l-ordinateur-quantique-theorie-et-applications">Enregistrement sonore</a></p>
-<p>Diaporamas ULG-Montefiore : <a href="Info_Quantique/Ordiquant1.ppsx">11/02/2014 </a> & <a href="Info_Quantique/Ordiquant2.ppsx">12/02/2014 </a></p>
-
-
-<h2>La machinerie analytique du Chaos déterministe : </h2>
-
-  <li><a href="Chaos/PathologiesEDO.pdf">Pathologies des équations différentielles ordinaires</a></li>
-  <li><a href="Chaos/Lie.pdf">Introduction à l'étude des Symétries des Equations Différentielles Ordinaires</a></li> 
-  <p><a href="Chaos/NotebookLie.nb">(Notebook Mathematica) </a></p>
-
+                  <span class="spanRemplaceP"><a href="Chaos/NotebookLie.nb">(Notebook Mathematica) </a></span>
+                </div>
             </div>
 
 
@@ -116,10 +184,13 @@
 
         </div>
     
-    
     </div>
 
-    <script src="js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="js/onclick.js"></script>
+
+    <!-- TODO -->
+    <!-- ATTENTION => Le TITLE DOIT CORRESPONDRE AU h2 et h3 du contenuPrincipal -->
 
 </body>
 </html>

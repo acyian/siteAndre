@@ -52,12 +52,13 @@
 // ============= FILTRE =============
 // RUBRIQUE CHRONIQUES
 // Change le design en fonction du thème choisi
-	$("#filtreOptions").change(function(){ 
+	$("#filtreOptionsMusique").change(function(){ 
 
 		filtreThemes = $('#sortByFiltre').val(); 
 
 		switch (filtreThemes) {
-			case 'tousThemes':
+			/*Chroniques*/
+			case 'tousThemesChroniques':
 				$(".THbilletHumeur").css('display', 'block');
 				$(".THtourMonde").css('display', 'block');
 				$(".THcomposContemporains").css('display', 'block');
@@ -135,6 +136,44 @@
 				$(".THcomposOublies").css('display', 'none');
 				$(".THinterpretesActuels").css('display', 'none');
 				$(".THgenresMusicaux").css('display', 'none');
+				break;
+			default:
+				window.alert("La categorie " + filtreThemes + " a un souci. Régler problème!");
+		}
+
+		return false; 
+	});
+
+// RUBRIQUE CHRONIQUES EPARSES
+// Change le design en fonction du thème choisi
+	$("#filtreOptionsPhysique").change(function(){ 
+
+		filtreThemes = $('#sortByFiltre').val(); 
+
+		switch (filtreThemes) {
+			/*Chroniques Eparses*/
+			case 'tousThemesChroniquesEparses':
+				$(".THphys").css('display', 'block');
+				$(".THmath").css('display', 'block');
+				$(".THinfo").css('display', 'block');
+				break;
+			case 'phys':
+				$(".THphys").css('display', 'block');
+				
+				$(".THmath").css('display', 'none');
+				$(".THinfo").css('display', 'none');
+				break;
+			case 'math':
+				$(".THmath").css('display', 'block');
+				
+				$(".THphys").css('display', 'none');
+				$(".THinfo").css('display', 'none');
+				break;
+			case 'info':
+				$(".THinfo").css('display', 'block');
+
+				$(".THphys").css('display', 'none');
+				$(".THmath").css('display', 'none');
 				break;
 			default:
 				window.alert("La categorie " + filtreThemes + " a un souci. Régler problème!");

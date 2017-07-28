@@ -152,7 +152,6 @@
 			float: left;
 		}
 
-
 	
 	/*======= FIL D ARIANE =======*/
 		.accessibility-hidden {
@@ -968,6 +967,25 @@
 			float: none;
 		}
 
+	/*======= WOLFRAMANIA =======*/
+		/*Design pour images générées*/
+		#comportementAutomatesCellulaires img,
+		#fonctionnementMachineTuring img,
+		#liste1936MachinesTuring img{
+			margin: 0 auto;
+    		float: none;
+		}
+
+		.downloadplayerfordemonstrationn{
+			margin-top: 0 !important;
+	    	position: relative !important;
+	        background: none !important;
+	        margin-left: 0 !important;
+		}
+
+		#getmathematicaplayer{
+		    margin: 0 auto;
+		}
 
 
 

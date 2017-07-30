@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chroniques Eparses | TODO</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#chroniquesEparses").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Chroniques Eparses</h2>
+                <h3>TODO</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Chroniques Eparses</li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <div id="filtreOptionsPhysique" class="choixOptions">
+                        <label for="sortByFiltre"><span>Filtrer par</span></label>
+                        <select id="sortByFiltre" rel="nofollow">
+                            <option value="tousThemesChroniquesEparses">tous les thèmes</option>
+                            <option value="phys">phys</option>
+                            <option value="math">math</option>
+                            <option value="info">info</option>  
+                        </select>
+                    </div>
+                </div>
+  
+                <div>
+                    <ol id="listChroniques" class="gdeListCorps listNumber">
+                        <li class="THinfo"><a href="info.html#chronique7">Compression sémantique des suites binaires courtes par MTS</li>
+                        <li class="THphys"><a href="phys.html#chronique1">Chandelle à bascule</li>
+                        <li class="THmath"><a href="math.html#chronique2">L'étonnante équation différentielle de Lee Rubel</li>
+                        <li class="THmath"><a href="math.html#chronique1">Le Problème de Steiner</li>
+                        <li class="THphys"><a href="phys.html#chronique2">Capture d'une balle</li>
+                        <li class="THphys"><a href="phys.html#chronique3">Equilibre stable</li>
+                        <li class="THinfo"><a href="info.html#chronique1">Le problème des 12, 39, 120, ..., boules</li>
+                        <li class="THphys"><a href="phys.html#chronique4">Moteur simplissime</li>
+                        <li class="THphys"><a href="phys.html#chronique5">Synchronisation spontanée</li>
+                        <li class="THphys"><a href="phys.html#chronique6">Bachelier, où est la faille ?</li>
+                        <li class="THinfo"><a href="info.html#chronique3">Une variante aisée du tour de Cheney</li>
+                        <li class="THmath"><a href="math.html#chronique3">Trois candidats à la roulette russe</li>
+                        <li class="THphys"><a href="phys.html#chronique7">Billard rectangulaire, classique et quantique</li>
+                        <li class="THinfo"><a href="info.html#chronique5">Fonctions de Walsh et compression avec perte</li>
+                        <li class="THinfo"><a href="info.html#chronique6">Statistique de la production des machines de Turing binaires simples (MTS)</li>
+                        <li class="THphys"><a href="phys.html#chronique8">Heurs et malheurs du boson de Higgs</li>
+                        <li class="THphys"><a href="phys.html#chronique9">Dynamique intégrable ou chaotique d'un billard convexe</li>
+                        <li class="THphys"><a href="phys.html#chronique10">Variations sur le thème du gaz de Szilard</li>
+                        <li class="THphys"><a href="phys.html#chronique11">Compressions astronomiques : Hipparque contre Newton</li>
+                        <li class="THphys"><a href="phys.html#chronique12">Chorégraphies classiques</li>
+                        <li class="THmath"><a href="math.html#chronique4">Chute libre sur un centre fixe et oscillateur harmonique : le changement de variables de Sundman</li>
+                        <li class="THmath"><a href="math.html#chronique5">Poincaré ou Fibonacci ?</li>
+                        <li class="THphys"><a href="phys.html#chronique13">Chute libre relativiste</li>
+                        <li class="THphys"><a href="phys.html#chronique14">Attraction universelle</li>
+                        <li class="THphys"><a href="phys.html#chronique15">Galilée versus Lorentz</li>
+                        <li class="THinfo"><a href="info.html#chronique4">Devinez l'entier !</li>
+                        <li class="THphys"><a href="phys.html#chronique16">Le faux paradoxe des vrais jumeaux</li>
+                        <li class="THinfo"><a href="info.html#chronique2">Quelques exemples de programmes en langage Fractran</li>    
+                    </ol>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+    <script src="js/chroniques.js"></script>
+
+</body>
+</html>

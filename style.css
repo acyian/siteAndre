@@ -72,6 +72,11 @@
 			text-decoration: underline;
 		}
 
+		.spanRemplaceP{
+			/*pour pouvoir aligner le a sur la page sans prob avec first P (rouge)*/
+			font-size: 18px;
+		}
+
 		select{
 			outline: none;
 			padding: 2px;
@@ -106,10 +111,18 @@
 		    margin-top: 20px;
 		}
 
+		.imgBlanchesSurFondTransparent{
+			/*background-color: grey;*/
+		}
+
 		audio{
 			height:16px; 
 			width:18%;
-		}        
+		}   
+
+		iframe{
+			border: none;
+		}     
 
 		.souligner{
 			text-decoration: underline;
@@ -135,6 +148,9 @@
 			color: #00cd70; /*ancien vert*/
 		}
 
+		.floatLeft{
+			float: left;
+		}
 
 	
 	/*======= FIL D ARIANE =======*/
@@ -354,6 +370,26 @@
 
 		.enlevePuces2ndeListe ul li{
 			list-style: none;
+		}
+
+		.supprimeCettePuce{
+			list-style: none;
+		}
+
+		/*Liste à puces centrer verticalement avec puces*/
+		ul.listCenterWithDots{
+			text-align: center;
+			list-style:none;
+			padding-left: 0px;
+		}
+
+		ul.listCenterWithDots li{
+			font-size: 18px;
+		}
+
+		ul.listCenterWithDots li:before {
+		   content: "•";
+		   padding-right: 10px;
 		}
 
 
@@ -931,6 +967,25 @@
 			float: none;
 		}
 
+	/*======= WOLFRAMANIA =======*/
+		/*Design pour images générées*/
+		#comportementAutomatesCellulaires img,
+		#fonctionnementMachineTuring img,
+		#liste1936MachinesTuring img{
+			margin: 0 auto;
+    		float: none;
+		}
+
+		.downloadplayerfordemonstrationn{
+			margin-top: 0 !important;
+	    	position: relative !important;
+	        background: none !important;
+	        margin-left: 0 !important;
+		}
+
+		#getmathematicaplayer{
+		    margin: 0 auto;
+		}
 
 
 

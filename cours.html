@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
+  <title>Cours | Accélération de la Convergence en Analyse Numérique</title>
   <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
@@ -18,7 +18,7 @@
            dataType: "html",
            success: function(data) {
              $("#header").html(data);
-             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             $("#cours").addClass("active"); /*a changer en fonction de la page*/
           }
         });
       });
@@ -36,39 +36,34 @@
         <div id="corps">
 
             <div id="contenuPrincipal">
-                <h2>Billets d'humeur</h2>
-                <h3>Textes d'opinions humoristiques souvent satiriques</h3>
+                <h2>Cours</h2>
+                <h3>Accélération de la Convergence en Analyse Numérique</h3>
 
                 <nav class="filAriane">
                     <ul>
-                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
-                        <li class="breadcrumbItem  breadcrumIitem--current">
-                          <a href="chroniques.html">Chroniques</a>
-                        </li>
-                        <li class="breadcrumbItem breadcrumIitem--current">Billets d'Humeur</li>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Cours</li>
                     </ul>
-                </nav>  <h1>Cours</h1>
+                </nav>
   
-  <h2>Accélération de la Convergence en Analyse Numérique.</h2>
-<p>(Notes du Cours enseigné aux Etudiants de Terminale en Science Physique à l'Université de Liège)</p>
+                <div>
+                  <span class="spanRemplaceP">(Notes du Cours enseigné aux Etudiants de Terminale en Science Physique à l'Université de Liège)</span>
+
+                  <ul class="listCenterWithDots">
+                    <li><a href="Acc_Conv/Titre.pdf">Titre</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part1.pdf">Théorie des Récurrences</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part2.pdf">Leçons sur les Fractions Continues</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part3.pdf">Leçons sur les Approximants de Padé</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part4.pdf">Les algorithmes d'Accélération de la Convergence des Suites</a></li>
+                    <li><a href="Acc_Conv/Acc_Conv_Part5.pdf">Applications diverses </a></li>
+                  </ul>
+
+                  <span class="spanRemplaceP"><a href="Acc_Conv/Acc_Conv_complet.rar">Cours complet</a></span>
+                </div>
+            </div>
 
 
-  <li><a href="Acc_Conv/Titre.pdf">Titre</a></li>
-  <li><a href="Acc_Conv/Acc_Conv_Part1.pdf">Théorie des Récurrences</a></li>
-  <li><a href="Acc_Conv/Acc_Conv_Part2.pdf">Leçons sur les Fractions Continues</a></li>
-  <li><a href="Acc_Conv/Acc_Conv_Part3.pdf">Leçons sur les Approximants de Padé</a></li>
-  <li><a href="Acc_Conv/Acc_Conv_Part4.pdf">Les algorithmes d'Accélération de la Convergence des Suites</a></li>
-  <li><a href="Acc_Conv/Acc_Conv_Part5.pdf">Applications diverses </a></li>
-
-<p><a href="Acc_Conv/Acc_Conv_complet.rar">Cours complet. </a></p>
-  
- 
-  
-  
-              </div>
-
-
-            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+            <!-- <a id="ancreRetourHautPage" href="#site">&uarr;</a> -->
 
             <!-- Inclusion footer -->
             <div id="footer"></div>
@@ -77,8 +72,6 @@
     
     
     </div>
-
-    <script src="js/chroniques.js"></script>
 
 </body>
 </html>

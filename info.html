@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Info | TODO</title>
-  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <title>Info | Problèmes informatiques</title>
+  <meta name="description" content="Quelques problèmes informatiques curieux ou amusants" />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
@@ -77,7 +77,7 @@
 
             <div id="contenuPrincipal">
                 <h2>Info</h2>
-                <h3>TODO</h3>
+                <h3>Quelques problèmes informatiques curieux ou amusants</h3>
 
                 <nav class="filAriane">
                     <ul>
@@ -112,13 +112,13 @@
                   <h4>Le problème des 12, 39, 120, ..., boules</h4> 
   
                   <p>Ce problème récréatif illustre la notion de bilan informationnel : on donne N boules, d'apparences identiques sauf que l'une d'entre elles est peut-être plus lourde ou plus légère que les autres. Combien de pesées sont nécessaires pour identifier l'intruse éventuelle ? On ne dispose que d'une balance à fléau, non graduée. Classiquement, on ne considère que le cas, N=12 qui se règle en k=3 pesées.</p>
-                  <p>La théorie de l'information apporte une solution élégante au problème général.  L'information manquante se calcule sur base du logarithme (en base 2) du nombre des solutions possibles, supposées équiprobables, soit, lg(2N+1) bits (Dans le cas, N=12, cela représente lg25 = 4.64386 bits).</p>
+                  <p>La théorie de l'information apporte une solution élégante au problème général.  L'information manquante se calcule sur base du logarithme (en base 2) du nombre des solutions possibles, supposées équiprobables, soit, ℓg(2N+1) bits (Dans le cas, N=12, cela représente ℓg25 = 4.64386 bits).</p>
                   <p>L'apport informationnel d'une pesée dépend du nombre de boules que l'on dépose dans chaque plateau. Si on dépose x boules de chaque côté, les probabilités que le fléau penche à gauche, reste en équilibre ou penche à droite valent respectivement:</p>
 
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/boules/boules1.png" alt="TODO"/>
+                        <img src="annexes/boules/boules1.png" alt="Problème des 12 etc boules"/>
                       </figure>
                     </div>
                   </div>
@@ -128,7 +128,7 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/boules/boules2.png" alt="TODO"/>
+                        <img src="annexes/boules/boules2.png" alt="Problème des 12 etc boules"/>
                       </figure>
                     </div>
                   </div>
@@ -138,51 +138,51 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/boules/boules3.jpg" alt="TODO"/>
+                        <img src="annexes/boules/boules3.jpg" alt="Problème des 12 etc boules"/>
                       </figure>
                     </div>
                   </div>
 
-                  <p>Cette pesée favorable apporte lg3 = 1.585 bits par pesée indépendante.</p>
+                  <p>Cette pesée favorable apporte ℓg3 = 1.585 bits par pesée indépendante.</p>
                   <p>Vu que 3 x 1.585 = 4.75489 > 4.64386 (bits), rien ne semble s'opposer à ce qu'il existe une solution en k=3 pesées dans le cas N=12 (dont l'existence ne peut être établie qu'en la détaillant !).</p>
                   <p>La solution proposée par John Conway, l'un des mathématiciens les plus inventifs de sa génération, est particulièrement élégante. On détaille l'exemple classique k=3, N=12 mais la généralisation est immédiate, disponible en <a href="annexes/boules/boules.html">annexe</a> (<a href="annexes/boules/boules.nb">Notebook Mathematica</a>).</p>
                   <p>Quel que soit k, Conway travaille sur un alphabet de 3 lettres, G, D et E, observant qu'il permet de former 3<sup>k</sup> = 27 mots distincts de k=3 lettres. De cette liste, il enlève les mots constants, GGG, DDD et EEE,  ne retenant que ceux où le premier changement de lettre respecte l'un des schémas GD DE ou EG. Au bilan il reste 12 mots distincts qu'il associe à chacune des 12 boules :</p>
 
-                  <p>GGD GDG GDD GDE DDE DEG DED DEE EGG EGD EGE EEG</p>
+                  <p>GGD&nbsp;GDG&nbsp;GDD&nbsp;GDE&nbsp;DDE&nbsp;DEG&nbsp;DED&nbsp;DEE&nbsp;EGG&nbsp;EGD&nbsp;EGE&nbsp;EEG</p>
 
                   <p>Les trois pesées mettent en balance les boules suivantes :</p>
 
                   <table>
                     <tr>
                       <th>1:</th>
-                      <td><span class="coloType1Chiffres">GGD GDG GDD G</span>DE</td>
-                      <td><span class="coloType1Chiffres">DDE DEG DED D</span>EE</td>
+                      <td><span class="coloType1Chiffres">G</span>GD&nbsp;<span class="coloType1Chiffres">G</span>DG&nbsp;<span class="coloType1Chiffres">G</span>DD&nbsp;<span class="coloType1Chiffres">G</span>DE</td>
+                      <td><span class="coloType1Chiffres">D</span>DE&nbsp;<span class="coloType1Chiffres">D</span>EG&nbsp;<span class="coloType1Chiffres">D</span>ED&nbsp;<span class="coloType1Chiffres">D</span>EE</td>
                     </tr>
                     <tr>
                       <th>2:</th>
-                      <td>G<span class="coloType1Chiffres">GD EGG EGD EG</span>E</td>
-                      <td>G<span class="coloType1Chiffres">DG GDD GDE DD</span>C</td>
+                      <td>G<span class="coloType1Chiffres">G</span>D&nbsp;E<span class="coloType1Chiffres">G</span>G&nbsp;E<span class="coloType1Chiffres">G</span>D&nbsp;E<span class="coloType1Chiffres">G</span>E</td>
+                      <td>G<span class="coloType1Chiffres">D</span>G&nbsp;G<span class="coloType1Chiffres">D</span>D&nbsp;G<span class="coloType1Chiffres">D</span>E&nbsp;D<span class="coloType1Chiffres">D</span>C</td>
                     </tr>
                     <tr>
                       <th>3:</th>
-                      <td>GD<span class="coloType1Chiffres">G DEG EGG EEG</span></td>
-                      <td>GG<span class="coloType1Chiffres">D GDD DED EGD</span></td>
+                      <td>GD<span class="coloType1Chiffres">G</span>&nbsp;DE<span class="coloType1Chiffres">G</span>&nbsp;EG<span class="coloType1Chiffres">G</span>&nbsp;EE<span class="coloType1Chiffres">G</span></td>
+                      <td>GG<span class="coloType1Chiffres">D</span>&nbsp;GD<span class="coloType1Chiffres">D</span>&nbsp;DE<span class="coloType1Chiffres">D</span>&nbsp;EG<span class="coloType1Chiffres">D</span></td>
                     </tr>
                   </table>
 
                   <p>où la i<sup>ième</sup> pesée place les boules codées par G en i<sup>ième</sup> position à gauche et celles codées par D en i<sup>ième</sup> position à droite. Chaque pesée fournit un résultat que l'on note, G, si le fléau penche à gauche, D, s'il penche à droite et, E, s'il reste en équilibre. Les trois lettres, prises dans cet ordre, forment un mot qui identifie la boule anormale (Il est alors facile de voir si elle est plus lourde ou plus légère). Si le mot trouvé est EEE, toutes les boules sont identiques. GGG et DDD n'apparaissent jamais.</p>
 
-                  <p>La méthode de Conway se généralise immédiatement à un nombre plus grand de pesées (et de boules !). La pesée la plus porteuse d'information place x = N/3 boules dans chaque plateau (à condition que N soit divisible par 3 !), amenant lg3 = 1.585 bits. On serait alors tenté de raisonner ainsi : k pesées indépendantes apportent  k lg3 (bits) et il faut combler lg(2N+1) bits d'information manquante d'où k pesées devraient venir à bout du problème à N=(3<sup>k</sup>-1)/2 boules. C'est un peu vite dit car ce N-là n'est pas multiple de 3 d'où l'information apportée par chaque mesure est inférieure au maximum escompté, 1.585 bits. En fait, (3<sup>k</sup>-2)/2 n'est pas davantage multiple de 3, par contre N = (3<sup>k</sup>-3)/2 l'est. C'est la solution optimale cherchée et la construction de Conway continue de s'appliquer.</p>
+                  <p>La méthode de Conway se généralise immédiatement à un nombre plus grand de pesées (et de boules !). La pesée la plus porteuse d'information place x = N/3 boules dans chaque plateau (à condition que N soit divisible par 3 !), amenant ℓg3 = 1.585 bits. On serait alors tenté de raisonner ainsi : k pesées indépendantes apportent  k ℓg3 (bits) or il faut combler ℓg(2N+1) bits d'information manquante d'où k pesées devraient venir à bout du problème à N=(3<sup>k</sup>-1)/2 boules. C'est un peu vite dit car ce N-là n'est pas multiple de 3 d'où l'information apportée par chaque mesure est inférieure au maximum escompté, 1.585 bits. En fait, (3<sup>k</sup>-2)/2 n'est pas davantage multiple de 3, par contre N = (3<sup>k</sup>-3)/2 l'est. C'est la solution optimale cherchée et la construction de Conway continue de s'appliquer.</p>
 
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/boules/boules4.png" alt="TODO"/>
+                        <img src="annexes/boules/boules4.png" alt="Problème des 12 etc boules"/>
                       </figure>
                     </div>
                   </div>
 
-                  <p>En résumé, k pesées résolvent le problème des (3<sup>k</sup>-3)/2 boules et inversement. En particulier, k (= 2,3,4,5, …) pesées suffisent tout juste pour régler le problème comportant 3, 12, 39, 120, …, boules. </p>
+                  <p>En résumé, k pesées résolvent le problème des (3<sup>k</sup>-3)/2 boules et inversement. En particulier,  2,3,4,5, …, pesées suffisent tout juste pour régler le problème comportant 3, 12, 39, 120, …, boules. </p>
                 </div>
 
                 <div id="chronique2">
@@ -197,33 +197,33 @@
                   </ul>
 
                   <div id="6programmesSimples">
-                    <h5>6 programmes simples</h5>
+                    <h5>Six programmes simples</h5>
 
                     <ol class="miniListCorps listNumber">
                       <li><span class="souligner">Addition de deux entiers</span><br/><br/>
                       Ce programme, sans doute le plus simple de tous, ne comporte qu'une seule instruction, F = {3/2}. Les entiers à additionner, x et y, sont encodés sous la forme, n = 2<sup>x</sup>3<sup>y</sup>. Les multiplications successives déroulent le programme comme suit, jusqu'à l'arrêt où le résultat s'affiche en exposant de 3 :<br/><br/>
-                      2<sup>x</sup>3<sup>y</sup> → 2<sup>x-1</sup>3<sup>y+1</sup> → 2<sup>x-2</sup>3<sup>y+2</sup> → ... → 3<sup>x+y</sup><br/><br/>
-                      On remarque que le même programme permet de transférer le contenu d'un registre vers un autre registre : 2<sup>x</sup> → ... → 3<sup>x</sup>. Quant au programme, F = {3<sup>a</sup>/2}, il calcule la fonction, y+ax selon le schéma : 2<sup>x</sup>3<sup>y</sup> → 3<sup>y+ax</sup>. 
+                      2<sup>x</sup>3<sup>y</sup> &rarr; 2<sup>x-1</sup>3<sup>y+1</sup> &rarr; 2<sup>x-2</sup>3<sup>y+2</sup> &rarr; ... &rarr; 3<sup>x+y</sup><br/><br/>
+                      On remarque que le même programme permet de transférer le contenu d'un registre vers un autre registre : 2<sup>x</sup> &rarr; ... -> 3<sup>x</sup>. Quant au programme, F = {3<sup>a</sup>/2}, il calcule la fonction, y+ax selon le schéma : 2<sup>x</sup>3<sup>y</sup> &rarr; 3<sup>y+ax</sup>. 
                       </li>
                       <li><span class="souligner">Multiplication de deux entiers</span><br/><br/>
                       Ce programme légèrement plus long, requiert 6 instructions, F = {455/33, 11/13, 1/11, 3/7, 11/2, 1/3}. Les entiers à multiplier, x et y, sont encodés sous la forme, n = 2<sup>x</sup>3<sup>y</sup> et le résultat s'affiche, au moment de l'arrêt, sous la forme d'une puissance de 5 :<br/><br/>
-                      2<sup>x</sup>3<sup>y</sup> → ... → 5<sup>xy</sup>
+                      2<sup>x</sup>3<sup>y</sup> &rarr; ... &rarr; 5<sup>xy</sup>
                       </li>
                       <li><span class="souligner">Division entière</span><br/><br/>
                       Ce programme utilise 8 instructions, F = {91/66, 11/13, 1/33, 85/11, 57/119, 17/19, 11/17, 1/3}. Les entiers à diviser, x et y, sont encodés sous la forme, n = 2<sup>x</sup>3<sup>y</sup>11. Au terme du calcul,  le quotient (entier) s'affiche en exposant de 5 et le reste (entier) s'affiche en exposant de 7 :<br/><br/>
-                      2<sup>x</sup>3<sup>y</sup>11 → ... → 5<sup>Integer[x/y]</sup> 7<sup>Mod[x,y]</sup>
+                      2<sup>x</sup>3<sup>y</sup>11 &rarr; ... &rarr; 5<sup>Integer[x/y]</sup> 7<sup>Mod[x,y]</sup>
                       </li>
                       <li><span class="souligner">PGCD</span><br/><br/>
                       Ce programme utilise 11 instructions, F = {22/19, 21/23, 51/55, 11/17, 26/35, 7/13, 1/11, 1/7, 5/6, 23/3, 19/2}. Les entiers donnés, x et y, sont encodés sous la forme, n = 2<sup>x</sup>3<sup>y</sup>. Au terme du calcul, le PGCD s'affiche en exposant de 5 :<br/><br/>
-                      2<sup>x</sup>3<sup>y</sup> → ... → 5<sup>PGCD[x,y]</sup>
+                      2<sup>x</sup>3<sup>y</sup> &rarr; ... &rarr; 5<sup>PGCD[x,y]</sup>
                       </li>
                       <li><span class="souligner">Déterminer le plus petit parmi deux entiers est possible sur base de 3 instructions, F = {5/6, 1/2, 1/3} :</span><br/><br/>
-                      2<sup>x</sup>3<sup>y</sup> → ... → 5<sup>Min[x,y]</sup><br/><br/>
+                      2<sup>x</sup>3<sup>y</sup> &rarr; ... &rarr; 5<sup>Min[x,y]</sup><br/><br/>
                       Un programme similaire, F = {5/6, 5/2, 5/3} calcule le plus grand parmi deux entiers :<br/><br/>
-                      2<sup>x</sup>3<sup>y</sup> → ... → 5<sup>Max[x,y]</sup>
+                      2<sup>x</sup>3<sup>y</sup> &rarr; ... &rarr; 5<sup>Max[x,y]</sup>
                       </li>
                       <li><span class="souligner">L'échange du contenu de deux registres est possible sur base de 7 instructions, F = {55/14, 7/11, 13/7, 34/39, 13/17, 1/13, 3/5} :</span><br/><br/>
-                      2<sup>x</sup>3<sup>y</sup>7 → ... → 2<sup>y</sup>3<sup>x</sup>
+                      2<sup>x</sup>3<sup>y</sup>7 &rarr; ... &rarr; 2<sup>y</sup>3<sup>x</sup>
                       </li>
                     </ol>
                   </div>
@@ -233,10 +233,10 @@
 
                     <ol class="miniListCorps listNumber">
                       <li>Le programme, F = {13/11, 133/85, 17/19, 23/17, 1015/69, 23/29, 31/23, 111/217, 31/37, 13/31, 17/26, 33/2, 1/13, 1/5}, calcule n'importe quel élément de la suite de Fibonacci, {0, 1, 1, 2, 3, 5, 8, ...}, selon le schéma :<br/><br/>
-                      2<sup>x</sup> → ... → 3<sup>fib[x]</sup>
+                      2<sup>x</sup> &rarr; ... &rarr; 3<sup>fib[x]</sup>
                       </li>
                       <li>Le programme, F = {115/38, 19/23, 17/19, 4147/51, 17/29, 31/17, 259/155, 41/31, 129/481, 37/43, 17/37, 47/533, 41/47, 53/41, 177/583, 53/59, 61/53, 67/427, 1/61, 355/469, 67/71, 17/67, 57/2}, calcule la factorielle, x!, d'un entier donné :<br/><br/>
-                      2<sup>x</sup> → ... → 3<sup>x!</sup>
+                      2<sup>x</sup> &rarr; ... &rarr; 3<sup>x!</sup>
                       </li>
                     </ol>
                   </div>
@@ -247,7 +247,7 @@
                     <p>Les programmes qui précèdent sont équivalents à autant de machines de Turing dédicacées au calcul d'une fonction particulière. Il est possible de concevoir un programme unique, capable de calculer toute fonction calculable (jouant, en Fractran, le rôle d'une machine de Turing universelle). Ce programme s'écrit :</p> 
 
                     <p>F = {583/559, 629/551, 437/527, 82/517, 615/329, 371/129, 1/115, 53/86, 43/53, 23/47, 341/46, 41/43, 47/41, 29/37, 37/31, 37/31, 299/29, 47/23, 161/15, 527/19, 159/7, 1/17, 1/13, 1/3}</p>
-                    <p>L'ensemble des fonctions calculables par programmes étant dénombrable, il peut être indicé par un paramètre entier, k. On a que si f<sub>k</sub>(n) = m, alors le programme fournit : k 2<sup>2^n</sup> → ... → 2<sup>2^m</sup>.</p>
+                    <p>L'ensemble des fonctions calculables par programmes étant dénombrable, il peut être indicé par un paramètre entier, k. On a que si f<sub>k</sub>(n) = m, alors le programme fournit : k 2<sup>2^n</sup> &rarr; ... &rarr; 2<sup>2^m</sup>.</p>
                     <p> L'article fondateur de Conway présente le début du catalogue des fonctions, f<sub>k</sub>(n). Sans grande surprise, les premières fonctions sont largement triviales : f<sub>1</sub>(n) = n est l'identité, f<sub>256</sub>(n) n'est définie que pour n=3 (f<sub>256</sub>(3)=4) et f<sub>2268945</sub>(n) = n+1. </p>
                   </div>
 
@@ -287,36 +287,36 @@
 
                     <table>
                       <tr>
-                        <td>( a b c d )0</td>
-                        <td>( a b d c )1</td>
-                        <td>( a c b d )2</td>
-                        <td>( a c d b )3</td>
-                        <td>( a d b c )4</td>
-                        <td>( a d c b )5</td>
+                        <td>( a b c d )&nbsp;0</td>
+                        <td>( a b d c )&nbsp;1</td>
+                        <td>( a c b d )&nbsp;2</td>
+                        <td>( a c d b )&nbsp;3</td>
+                        <td>( a d b c )&nbsp;4</td>
+                        <td>( a d c b )&nbsp;5</td>
                       </tr>
                       <tr>
-                        <td>( b a c d )6</td>
-                        <td>( b a d c )7</td>
-                        <td>( b c a d )8</td>
-                        <td>( b c d a )9</td>
-                        <td>( b d a c )10</td>
-                        <td>( b d c a )11</td>
+                        <td>( b a c d )&nbsp;6</td>
+                        <td>( b a d c )&nbsp;7</td>
+                        <td>( b c a d )&nbsp;8</td>
+                        <td>( b c d a )&nbsp;9</td>
+                        <td>( b d a c )&nbsp;10</td>
+                        <td>( b d c a )&nbsp;11</td>
                       </tr>
                       <tr>
-                        <td>( c a b d )12</td>
-                        <td>( c a d b )13</td>
-                        <td>( c b a d )14</td>
-                        <td>( c b d a )15</td>
-                        <td>( c d a b )16</td>
-                        <td>( c d b a )17</td>
+                        <td>( c a b d )&nbsp;12</td>
+                        <td>( c a d b )&nbsp;13</td>
+                        <td>( c b a d )&nbsp;14</td>
+                        <td>( c b d a )&nbsp;15</td>
+                        <td>( c d a b )&nbsp;16</td>
+                        <td>( c d b a )&nbsp;17</td>
                       </tr>
                       <tr>
-                        <td>( d a b c )18</td>
-                        <td>( d a c b )19</td>
-                        <td>( d b a c )20</td>
-                        <td>( d b c a )21</td>
-                        <td>( d c a b )22</td>
-                        <td>( d c b a )23</td>
+                        <td>( d a b c )&nbsp;18</td>
+                        <td>( d a c b )&nbsp;19</td>
+                        <td>( d b a c )&nbsp;20</td>
+                        <td>( d b c a )&nbsp;21</td>
+                        <td>( d c a b )&nbsp;22</td>
+                        <td>( d c b a )&nbsp;23</td>
                       </tr>
                     </table>
 
@@ -337,7 +337,7 @@
                   <div id="encodage">
                     <h5>L'encodage</h5>
 
-                    <p>La carte mystère porte le numéro, x = 52. Toutefois 52 n'est pas nécessairement l'entier qu'il convient de faire passer à Maurice, c'est en fait, x - y, où y = 3 désigne le nombre de cartes montrées à Maurice et de rang inférieur à x. C'est donc le nombre, 52-3 = 49, qu'Alice doit encoder en numération factoradique. En appliquant l'algorithme ci-dessus, elle trouve 49 = [2 0 0 1], ce qui correspond à la permutation (51 3 27 101 80). C'est dans cet ordre qu'Alice tend les cartes à Maurice.</p>
+                    <p>La carte mystère porte le numéro, x = 52. Toutefois 52 n'est pas nécessairement l'entier qu'il convient de faire passer à Maurice, c'est en fait, x - y, où y = 3 désigne le nombre de cartes montrées à Maurice et de rang inférieur à x. C'est donc le nombre, 52-3 = 49, qu'Alice doit encoder en numération factoradique. En appliquant l'algorithme ci-dessus, elle trouve 49 = [2, 0, 0, 1], ce qui correspond à la permutation (51 3 27 101 80). C'est dans cet ordre qu'Alice tend les cartes à Maurice.</p>
                   </div>
 
                   <div id="decodage">
@@ -348,8 +348,8 @@
                     <div class="conteneurImages">
                       <div>
                         <figure>
-                          <img src="annexes/magie/magie2.jpg" alt="TODO">
-                          <figcaption>TODO</figcaption>
+                          <img src="annexes/magie/magie2.jpg" alt="Le tour de Cheney">
+                          <figcaption>Le tour de Cheney</figcaption>
                         </figure>
                       </div>
                     </div>
@@ -362,7 +362,7 @@
                   <p>Ce jeu un brin académique, entre deux partenaires nommés A et B, offre l'occasion de réfléchir à quelques concepts liés aux théories des probabilités et de l'information. Il se pose informellement de la manière suivante :</p> 
                   <p>A sélectionne "au hasard" un entier positif, n, à charge pour B de le deviner le plus rapidement possible. Pour progresser dans sa recherche, B ne peut poser à A que des questions binaires de son choix, auxquelles B répond honnêtement, par oui ou par non.</p> 
 
-                  <p>Présenté en ces termes, le problème est mal posé car son énoncé est imprécis sur un point essentiel : il ne dit pas ce que signifie, pour A, la sélection d'un entier au hasard. On pourrait penser à la méthode suivante : A enferme des boules numérotées dans une urne, agite celle-ci consciencieusement et puise une boule donc un entier au hasard. Cette manière de faire n'est recevable que si le nombre des boules est fini, autrement dit si l'intervalle des entiers disponibles pour le tirage aléatoire est lui aussi fini, disons [1, N]. Encore faut-il préciser si l'urne contient exactement N boules numérotées chacune de 1 à N sans répétion ou si, au contraire, certains numéros sont présents plusieurs fois voire d'autres éventuellement absents (Dans la suite, on a remplacé l'urne et les boules par une cible circulaire et un jeu de fléchettes). On formalise ces exigences de la manière suivante : il faut que A informe B de :</p>
+                  <p>Présenté en ces termes, le problème est mal posé car son énoncé est imprécis sur un point essentiel : il ne dit pas ce que signifie, pour A, la sélection d'un entier au hasard. On pourrait penser à la méthode suivante : A enferme des boules numérotées dans une urne, agite celle-ci consciencieusement et puise une boule donc un entier au hasard. Cette manière de faire n'est recevable que si le nombre des boules est fini, autrement dit si l'intervalle des entiers disponibles pour le tirage aléatoire est lui aussi fini, disons [1, N]. Encore faut-il préciser si l'urne contient exactement N boules numérotées chacune de 1 à N sans répétion ou si, au contraire, certains numéros sont présents plusieurs fois voire d'autres éventuellement absents (Dans la suite, on a remplacé l'urne et les boules par une cible circulaire et un jeu de fléchettes). On formalise ces exigences de la manière suivante : il faut que A renseigne B sur</p>
 
                   <ul class="miniListCorps">
                     <li>l'intervalle dans lequel il travaille, [1, N] s'il est fini, et [1, Infini], dans le cas contraire et de</li>
@@ -375,15 +375,15 @@
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier.png" alt="TODO"/>
+                            <img src="annexes/entier/entier.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier12.jpg" alt="TODO"/>
-                            <figcaption>TODO</figcaption>
+                            <img src="annexes/entier/entier12.jpg" alt="Distribution sur les entiers"/>
+                            
                           </figure>
                         </div>
                       </div><br/>
@@ -395,22 +395,22 @@
                         <li>4<sup>ème</sup> question : n>26 ? Réponse : NON = 0 (Il reste les entiers 25 et 26)</li>
                         <li>5<sup>ème</sup> question : n=25 ? Réponse : OUI = 1 (n = 25, notez que 25 se note 11001 en binaire)</li>
                       </ul><br/>
-                      L'exemple N=32 fonctionne particulièrement bien parce que 32 est une puissance de 2 donc l'information manquante est entière dans ce cas (elle vaut 5 bits). Lorsque N n'est pas une puissance de 2, la dichotomie binaire demeure la stratégie optimale avec la nuance suivante. Supposons  N=17, l'information manquante  vaut, à présent, ℓg(N)=4.087469 bits. La stratégie binaire précédente devine certainement l'entier, n, en 5 questions (Après tout, qui peut le plus peut le moins) mais elle fait  mieux, en moyenne, soit en 71/17 = 4.17647 questions binaires, ce qui nous rapproche de la limite de Shannon. Il suffit, pour le voir, d'examiner tous les cas de figures et de se rendre compte que 4 questions suffisent dans 14 cas sur 17 tandis qu'il en faut 5 dans 3 cas sur 17 seulement.
+                      L'exemple N=32 fonctionne particulièrement bien parce que 32 est une puissance de 2 donc l'information manquante est entière dans ce cas (elle vaut 5 bits). Lorsque N n'est pas une puissance de 2, la dichotomie binaire demeure la stratégie optimale avec la nuance suivante. Supposons  N=17, l'information manquante  vaut, à présent, ℓg(N)=4.08746 bits. La stratégie binaire précédente devine certainement l'entier, n, en 5 questions (Après tout, qui peut le plus peut le moins) mais elle fait  mieux, en moyenne, soit en 71/17 = 4.17647 questions binaires, ce qui nous rapproche de la limite de Shannon. Il suffit, pour le voir, d'examiner tous les cas de figures et de se rendre compte que 4 questions suffisent dans 14 cas sur 17 tandis qu'il en faut 5 dans 3 cas sur 17 seulement.
                     </li>
                     <li>
                       Le cas infini est nettement plus délicat. Commençons par remarquer qu'il n'est plus possible, dans ce cas, de considérer que tous les entiers sont équiprobables : la fonction de distribution, g(n), ne serait pas normalisable à l'unité. Une procédure effective permettant à A de sélectionner au hasard  un entier arbitrairement grand n'est envisageable que selon un hasard non uniforme qui pénalise les grands entiers. Plus formellement, la fonction de distribution doit être suffisamment décroissante, lorsque n s'éloigne à l'infini, afin de garantir la normalisation de g(n). Une décroissance selon la loi, g(n)=1/n, ne suffit pas car la série harmonique diverge, par contre, une décroissance selon la loi, g(n)=1/n<sup>2</sup>, convient certainement. Etudions ce cas :<br/>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier1.png" alt="TODO"/>
+                            <img src="annexes/entier/entier1.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier10.jpg" alt="TODO"/>
-                            <figcaption>TODO</figcaption>
+                            <img src="annexes/entier/entier10.jpg" alt="Distribution sur les entiers"/>
+                         
                           </figure>
                         </div>
                       </div><br/>
@@ -418,48 +418,49 @@
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier2.png" alt="TODO"/>
+                            <img src="annexes/entier/entier2.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
-                      Il ne faudrait pas en conclure que 3 questions binaires devraient suffire à B pour découvrir, à tous coups, l'entier inconnu, d'ailleurs cela n'aurait aucun sens : tous les entiers étant possibles sans restriction de taille, il ne faut pas espérer deviner tous les cas en un nombre fini de questions. Ce que la formule de Shannon laisse espérer, dans le cas infini, est différent, à savoir qu'il existe une stratégie qui, en moyenne, devine l'entier caché en approximativement 2.4 questions binaires. Autrement dit, il se fera certainement que 10 ou 20 questions s'avèrent nécessaires mais ces cas coûteux seront rares.  Cette stratégie optimale moyenne existe effectivement et elle est à nouveau basée sur la dichotomie équitable que voici dans le détail.<br/><br/>
+                      Il ne faudrait pas en conclure que 3 questions binaires devraient suffire à B pour découvrir l'entier inconnu, à tous coups, d'ailleurs cela n'aurait aucun sens : tous les entiers étant possibles sans restriction de taille, il ne faut pas espérer deviner tous les cas en un nombre fini de questions. Ce que la formule de Shannon laisse espérer, dans le cas infini, est différent, à savoir qu'il existe une stratégie qui, en moyenne, devine l'entier caché en approximativement 2.4 questions binaires. Autrement dit, il se fera certainement que 10 ou 20 questions s'avèrent nécessaires mais ces cas coûteux seront rares.  Cette stratégie optimale moyenne existe effectivement et elle est à nouveau basée sur la dichotomie équitable que voici dans le détail.<br/>
+                      <br/>
                       Dans la série infinie suivante, la partition la plus équitable se note :<br/>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier3.png" alt="TODO"/>
+                            <img src="annexes/entier/entier3.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
-                      <span class="souligner">d'où la 1<sup>ère</sup> question posée par B :</span><br/>
+                      d'où la 1<sup>ère</sup> question posée par B :<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n>1 ? Une réponse négative ne laisse la place qu'à une seule valeur pour n, soit n=1. Dans ce cas favorable, une seule question a suffit.<br/><br/>
                       Si la réponse à la première question est positive, il convient de poursuivre en partitionnant équitablement  le reste de la série infinie. On trouve :<br/>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier4.png" alt="TODO"/>
+                            <img src="annexes/entier/entier4.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
-                      <span class="souligner">d'où la 2<sup>ème</sup> question posée par B :</span><br/>
+                      d'où la 2<sup>ème</sup> question posée par B :<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n>3 ?  Une réponse négative ne laisse la place qu'aux deux valeurs, n=2 et n=3, d'où une question supplémentaire suffit pour trancher. Au bilan, dans ce cas favorable, 3 questions ont suffit sinon il convient de poursuivre la recherche avec la partition suivante :<br/>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier5.png" alt="TODO"/>
+                            <img src="annexes/entier/entier5.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
-                      <span class="souligner">d'où la 3<sup>ème</sup> question posée par B :</span><br/>
+                      d'où la 3<sup>ème</sup> question posée par B :<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n>7 ?  Une réponse négative  laisse la place aux quatre valeurs, n=4, n=5, n=6 et n=7, d'où deux questions supplémentaires suffisent pour trancher.  Au bilan, dans ce cas favorable, 5 questions ont suffit sinon il convient de poursuivre la recherche avec la partition suivante.<br/><br/>
                       Poursuivant la manoeuvre avec les restes successifs, <br/>
-                      <span class="souligner">on trouve que la k<sup>ième</sup> question revêt la forme simple :</span><br/>
+                      on trouve que la k<sup>ième</sup> question revêt la forme simple :<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n>2<sup>k</sup>-1 ?  Une réponse négative ne laisse la place qu'à 2<sup>k-1</sup> valeurs pour n, allant de n=2<sup>k-1</sup> à n=2<sup>k</sup>-1, inclus, d'où k-1 questions supplémentaires suffisent pour trancher; au bilan, cela fait 2k-1 questions dans ce cas favorable.<br/><br/>
                       <i>Note : cette affirmation repose sur la double inégalité remarquable, donnée sans démonstration :</i><br/>
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier6.png" alt="TODO"/>
+                            <img src="annexes/entier/entier6.png" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
@@ -467,7 +468,7 @@
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/entier7.jpg" alt="TODO"/>
+                            <img src="annexes/entier/entier7.jpg" alt="Distribution sur les entiers"/>
                           </figure>
                         </div>
                       </div>
@@ -482,7 +483,7 @@
                           <div class="conteneurImages">
                             <div>
                               <figure>
-                                <img src="annexes/entier/diverge.png" alt="TODO"/>
+                                <img src="annexes/entier/diverge.png" alt="Convergence lente"/>
                               </figure>
                             </div>
                           </div>
@@ -490,7 +491,7 @@
                           <div class="conteneurImages">
                             <div>
                               <figure>
-                                <img src="annexes/entier/converge.png" alt="TODO"/>
+                                <img src="annexes/entier/converge.png" alt="Convergence lente"/>
                               </figure>
                             </div>
                           </div>
@@ -500,7 +501,7 @@
                           <div class="conteneurImages">
                             <div>
                               <figure>
-                                <img src="annexes/entier/frontiere.png" alt="TODO"/>
+                                <img src="annexes/entier/frontiere.png" alt="Convergence lente"/>
                               </figure>
                             </div>
                           </div>
@@ -520,8 +521,8 @@
                       <div class="conteneurImages">
                         <div>
                           <figure>
-                            <img src="annexes/entier/ldek.jpg" alt="TODO"/>
-                            <figcaption>TODO</figcaption>
+                            <img src="annexes/entier/ldek.jpg" alt="Convergence lente"/>
+                            
                           </figure>
                         </div>
                       </div>
@@ -538,7 +539,7 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/entier/entier8.png" alt="TODO"/>
+                        <img src="annexes/entier/entier8.png" alt="Egalité de Kraft"/>
                       </figure>
                     </div>
                   </div>
@@ -562,8 +563,8 @@
                   <div class="conteneurImageSeule">
                     <div>
                       <figure>
-                        <img src="annexes/entier/entier11.jpg" alt="TODO"/>
-                        <figcaption>TODO</figcaption>
+                        <img src="annexes/entier/entier11.jpg" alt="Convergence lente"/>
+                     
                       </figure>
                     </div>
                   </div>
@@ -583,7 +584,7 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/walsh/walsh1.png" alt="TODO"/>
+                        <img src="annexes/walsh/walsh1.png" alt="Fonctions de Walsh"/>
                       </figure>
                     </div>
                   </div>
@@ -593,8 +594,8 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/walsh/walsh2.jpg" alt="TODO"/>
-                        <figcaption>TODO</figcaption>
+                        <img src="annexes/walsh/walsh2.jpg" alt="Fonctions de Walsh"/>
+                       
                       </figure>
                     </div>
                   </div>
@@ -645,7 +646,7 @@
                     <div class="conteneurImageSeule">
                       <div>
                         <figure>
-                          <img src="annexes/walsh/walsh5.jpg" alt="TODO"/>
+                          <img src="annexes/walsh/walsh5.jpg" alt="Compression à l'aide de fonctions de Walsh"/>
                         </figure>
                       </div>
                     </div>
@@ -663,7 +664,7 @@
                     <div class="conteneurImages">
                       <div>
                         <figure>
-                          <img src="annexes/walsh/walsh8.jpg" alt="TODO"/>
+                          <img src="annexes/walsh/walsh8.jpg" alt="Compression à l'aide de fonctions de Walsh"/>
                         </figure>
                       </div>
                     </div>
@@ -672,7 +673,7 @@
                     <div class="conteneurImages">
                       <div>
                         <figure>
-                          <img src="annexes/walsh/walsh9.jpg" alt="TODO"/>
+                          <img src="annexes/walsh/walsh9.jpg" alt="Compression à l'aide de fonctions de Walsh"/>
                         </figure>
                       </div>
                     </div>
@@ -681,7 +682,7 @@
                     <div class="conteneurImages">
                       <div>
                         <figure>
-                          <img src="annexes/walsh/walsh10.jpg" alt="TODO"/>
+                          <img src="annexes/walsh/walsh10.jpg" alt="Compression à l'aide de fonctions de Walsh"/>
                         </figure>
                       </div>
                     </div>
@@ -690,7 +691,7 @@
                     <div class="conteneurImages">
                       <div>
                         <figure>
-                          <img src="annexes/walsh/walsh11.jpg" alt="TODO"/>
+                          <img src="annexes/walsh/walsh11.jpg" alt="Compression à l'aide de fonctions de Walsh"/>
                         </figure>
                       </div>
                     </div>
@@ -707,35 +708,37 @@
                   <p>Une MTS se décrit en fonction de son nombre d'états, s, et de son nombre de caractères, k. On ne limite pas le pouvoir calculatoire des MTS en les restreignant à k=2 caractères, 0 et 1. Dans cette présentation, les MTS sont binaires et elles se décrivent comme suit :</p>
 
                   <ul class="miniListCorps">
-                    <li><i>Une bande, semi-infinie, disons vers la gauche, partitionnée en cellules hébergeant un caractère binaire, 0 (cellule blanche) ou 1 (cellule noire).</i></li>
-                    <li><i>Une tête de lecture-écriture qui se déplace le long de cette bande, une cellule à la fois. Elle se trouve, à tout instant, dans un état, &sigma;, parmi les s états autorisés (&sigma; = 0, 1, ..., s-1), s pouvant prendre n'importe quelle valeur positive,  s = 2, 3, 4, ... . La tête est initialement positionnée à l'extrémité droite de la bande, en face de la cellule n=0, et elle se trouve dans l'état &sigma; = 0. </i><i> Dans les figures qui suivent, l'état, </i><i>&sigma;</i>, est représenté par l'aiguille d'une horloge qui pointe vers 12&sigma;/s heures.</li>
-                    <li>Une table d'instructions qui dicte le comportement de la tête à chaque pas discret d'évolution.  Ces instructions sont du type, {état actuel, caractère lu} → {nouvel état, caractère écrit, déplacement de la tête)<i>. La machine évolue en respectant cette table  : à chaque pas d'évolution, la tête lit le caractère situé en face d'elle et en fonction de l'état interne, elle  le remplace par l'un des caractères possibles (éventuellement celui qui a été lu), elle change éventuellement d'état interne et elle se déplace (obligatoirement)  d'une cellule vers la gauche (&delta;=0) ou vers la droite (&delta;=1). La machine ne  s'arrête que lorsque la tête est invitée à dépasser l'extrémité fixe de la bande. Lorsque l'arrêt se produit, la réponse est lue de gauche à droite (la convention inverse serait tout aussi valable), entre  la position la plus extrême-gauche atteinte par la tête et l'extrémité fixe.</i></li>
+                    <li>Une bande, semi-infinie, disons vers la gauche, partitionnée en cellules hébergeant un caractère binaire, 0 (cellule blanche) ou 1 (cellule noire).</li>
+                    <li>Une tête de lecture-écriture qui se déplace le long de cette bande, une cellule à la fois. Elle se trouve, à tout instant, dans un état, &sigma;, parmi les s états autorisés (&sigma; = 0, 1, ..., s-1), s pouvant prendre n'importe quelle valeur positive,  s = 2, 3, 4, ... . La tête est initialement positionnée à l'extrémité droite de la bande, en face de la cellule n=0, et elle se trouve dans l'état &sigma; = 0.  Dans les figures qui suivent, l'état, &sigma;, est représenté par l'aiguille d'une horloge qui pointe vers 12&sigma;/s heures.</li>
+                    <li>Une table d'instructions qui dicte le comportement de la tête à chaque pas discret d'évolution.  Ces instructions sont du type, {état actuel, caractère lu} &rarr; {nouvel état, caractère écrit, déplacement de la tête). La machine évolue en respectant cette table  : à chaque pas d'évolution, la tête lit le caractère situé en face d'elle et en fonction de l'état interne, elle  le remplace par l'un des caractères possibles (éventuellement celui qui a été lu), elle change éventuellement d'état interne et elle se déplace (obligatoirement)  d'une cellule vers la gauche (&delta;=0) ou vers la droite (&delta;=1). La machine ne  s'arrête que lorsque la tête est invitée à dépasser l'extrémité fixe de la bande. Lorsque l'arrêt se produit, la réponse est lue de gauche à droite (la convention inverse serait tout aussi valable), entre  la position la plus extrême-gauche atteinte par la tête et l'extrémité fixe.</li>
                   </ul>
 
                   <p><i>L'absence d'instruction explicite d'arrêt garantit la concision maximale du formalisme.  Certains auteurs incorporent une voire plusieurs instructions d'arrêt à la table d'instructions mais cela est inutile et même carrément redondant (On ne voit, en particulier, pas l'intérêt d'introduire une deuxième instruction d'arrêt lorsque la première  a déjà été activée).</i></p>
 
-                  <p>Une table  comprend 2s instructions. Wolfram les range  dans l'ordre immuable suivant (l'instruction en orange est celle qui est activée en premier lieu) :</p>
-
+                  <p>Une table  comprend 2s instructions. Wolfram les range  dans l'ordre immuable suivant (l'instruction en couleur est celle qui est activée en premier lieu) :</p>
+                  
+                  
+                  
                   <table>
                     <tr>
-                      <th>(0,1) -> (&sigma;<sub>1</sub>,&kappa;<sub>1</sub>,&delta;<sub>1</sub>)</th>
-                      <th><span class="coloType1Chiffres">(0,0) -> (&sigma;<sub>2</sub>,&kappa;<sub>2</sub>,&delta;<sub>2</sub>)</span></th>
+                      <th>(0,1) &rarr; (&sigma;<sub>1</sub>,&kappa;<sub>1</sub>,&delta;<sub>1</sub>)</th>
+                      <th><span class="coloType1Chiffres">(0,0) &rarr; (&sigma;<sub>2</sub>,&kappa;<sub>2</sub>,&delta;<sub>2</sub>)</span></th>
                     </tr>
                     <tr>
-                      <th scope="col">(1,1) -> (&sigma;<sub>3</sub>,&kappa;<sub>3</sub>,&delta;<sub>3</sub>)</th>
-                      <th scope="col">(1,0) -> (&sigma;<sub>4</sub>,&kappa;<sub>4</sub>,&delta;<sub>4</sub>)</th>
+                      <th scope="col">(1,1) &rarr; (&sigma;<sub>3</sub>,&kappa;<sub>3</sub>,&delta;<sub>3</sub>)</th>
+                      <th scope="col">(1,0) &rarr; (&sigma;<sub>4</sub>,&kappa;<sub>4</sub>,&delta;<sub>4</sub>)</th>
                     </tr>
                     <tr>
-                      <th scope="col">(2,1) -> (&sigma;<sub>5</sub>,&kappa;<sub>5</sub>,&delta;<sub>5</sub>)</th>
-                      <th scope="col">(2,0) -> (&sigma;<sub>6</sub>,&kappa;<sub>6</sub>,&delta;<sub>6</sub>)</th>
+                      <th scope="col">(2,1) &rarr; (&sigma;<sub>5</sub>,&kappa;<sub>5</sub>,&delta;<sub>5</sub>)</th>
+                      <th scope="col">(2,0) &rarr; (&sigma;<sub>6</sub>,&kappa;<sub>6</sub>,&delta;<sub>6</sub>)</th>
                     </tr>
                     <tr>
                       <th scope="col">...</th>
                       <th scope="col">...</th>
                     </tr>
                     <tr>
-                      <th scope="col">(s-1,1) -> (&sigma;<sub>2s-1</sub>,&kappa;<sub>2s-1</sub>,&delta;<sub>2s-1</sub>)</th>
-                      <th scope="col">(s-1,0) -> (&sigma;<sub>2s</sub>,&kappa;<sub>2s</sub>,d<sub>2s</sub>)</th>
+                      <th scope="col">(s-1,1) &rarr; (&sigma;<sub>2s-1</sub>,&kappa;<sub>2s-1</sub>,&delta;<sub>2s-1</sub>)</th>
+                      <th scope="col">(s-1,0) &rarr; (&sigma;<sub>2s</sub>,&kappa;<sub>2s</sub>,d<sub>2s</sub>)</th>
                     </tr>
                   </table>
 
@@ -743,16 +746,16 @@
 
                   <table>
                     <tr>
-                      <th scope="col">(0, 0, 0) -> 0</th>
-                      <th scope="col">(0, 0, 1) -> 1</th>
-                      <th scope="col">(0, 1, 0) -> 2</th>
-                      <th scope="col">(0, 1, 1) ->3</th>
+                      <th scope="col">(0, 0, 0) &rarr; 0</th>
+                      <th scope="col">(0, 0, 1) &rarr; 1</th>
+                      <th scope="col">(0, 1, 0) &rarr; 2</th>
+                      <th scope="col">(0, 1, 1) &rarr; 3</th>
                     </tr>
                     <tr>
-                      <th scope="col">(1, 0, 0) ->4</th>
-                      <th scope="col">(1, 0, 1) -> 5</th>
-                      <th scope="col">(1, 1, 0) -> 6</th>
-                      <th scope="col">(1, 1, 1) -> 7</th>
+                      <th scope="col">(1, 0, 0) &rarr; 4</th>
+                      <th scope="col">(1, 0, 1) &rarr; 5</th>
+                      <th scope="col">(1, 1, 0) &rarr; 6</th>
+                      <th scope="col">(1, 1, 1) &rarr; 7</th>
                     </tr>
                     <tr>
                       <th scope="col">...</th>
@@ -761,29 +764,29 @@
                       <th scope="col">...</th>
                     </tr>
                     <tr>
-                      <th scope="col">(s-1, 0, 0) -> 4s-4</th>
-                      <th scope="col">(s-1, 0, 1) -> 4s-3</th>
-                      <th scope="col">(s-1, 1, 0) -> 4s-2</th>
-                      <th scope="col">(s-1, 1, 1) -> 4s-1</th>
+                      <th scope="col">(s-1, 0, 0) &rarr; 4s-4</th>
+                      <th scope="col">(s-1, 0, 1) &rarr; 4s-3</th>
+                      <th scope="col">(s-1, 1, 0) &rarr; 4s-2</th>
+                      <th scope="col">(s-1, 1, 1) &rarr; 4s-1</th>
                     </tr>
                   </table>
 
-                  <p>La suite des triplets de la table, (&sigma;<sub>1</sub>,&kappa;<sub>1</sub>,&delta;<sub>1</sub>)(&sigma;<sub>2</sub>,&kappa;<sub>2</sub>,&delta;<sub>2</sub>) ... (&sigma;<sub>2s</sub>,&kappa;<sub>2s</sub>,&delta;<sub>2s</sub>), définit donc un entier en base 4s qui numérote la machine de Turing sans ambiguïté.  Par exemple, la machine binaire à 3 états, d'instructions, (0,1)->(1,0,1), (0,0)->(2,0,0), (1,1)->(0,1,0), (1,0)->(2,0,1), (2,1)->(0,0,0), (2,0)->(1,1,1), porte, en base 4s=12,  le numéro 582907, qui résulte du calcul suivant : 5 12<sup>5</sup>+8 12<sup>4</sup>+2 12<sup>3</sup>+9 12<sup>2</sup>+0 12+7 = 1414807, en base 10.</p> 
+                  <p>La suite des triplets de la table, (&sigma;<sub>1</sub>,&kappa;<sub>1</sub>,&delta;<sub>1</sub>)(&sigma;<sub>2</sub>,&kappa;<sub>2</sub>,&delta;<sub>2</sub>) ... (&sigma;<sub>2s</sub>,&kappa;<sub>2s</sub>,&delta;<sub>2s</sub>), définit donc un entier en base 4s qui numérote la machine de Turing sans ambiguïté.  Par exemple, la machine binaire à 3 états, d'instructions, (0,1) &rarr; (1,0,1), (0,0) &rarr; (2,0,0), (1,1) &rarr; (0,1,0), (1,0) &rarr; (2,0,1), (2,1) &rarr; (0,0,0), (2,0) &rarr; (1,1,1), porte, en base 4s=12,  le numéro 582907, qui résulte du calcul suivant : 5 12<sup>5</sup>+8 12<sup>4</sup>+2 12<sup>3</sup>+9 12<sup>2</sup>+0 12+7 = 1414807, en base 10.</p> 
 
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/turing/mt1.jpg" alt="TODO"/>
+                        <img src="annexes/turing/mt1.jpg" alt="Machines de Turing simples"/>
                       </figure>
                     </div>
                     <div>
                       <figure>
-                        <img src="annexes/turing/mt2.jpg" alt="TODO"/>
+                        <img src="annexes/turing/mt2.jpg" alt="Machines de Turing simples"/>
                       </figure>
                     </div>
                     <div>
                       <figure>
-                        <img src="annexes/turing/mt3.jpg" alt="TODO"/>
+                        <img src="annexes/turing/mt3.jpg" alt="Machines de Turing simples"/>
                       </figure>
                     </div>
                   </div>
@@ -803,13 +806,13 @@
                     <div class="conteneurImageSeule">
                       <div>
                         <figure>
-                          <img src="annexes/turing/mt6.jpg" alt="Fréquences, s=2"/>
+                          <img src="annexes/turing/mt6.jpg" alt="Fréquences des productions des machines de Turing à 2 états"/>
                           <figcaption>Fréquences, s=2</figcaption>
                         </figure>
                       </div>
                     </div>
 
-                    <p>Le résultat des calculs présente une dissymétrie gauche-droite que l'on répare en lisant la réponse deux fois, de gauche à droite puis de droite à gauche. Il présente une autre dissymétrie vis-à-vis de la substitution 0&lt;->1, que l'on répare en faisant tourner les 4096 machines sur une bande initialement noire.  En fait, il n'est pas nécessaire de faire les calculs détaillés, il suffit de symétriser les résultats obtenus dans un premier temps. Au bilan, lorsque s=2, on trouve la répartition ci-contre des fréquences.</p>
+                    <p>Le résultat des calculs présente une dissymétrie gauche-droite que l'on répare en lisant la réponse deux fois, de gauche à droite puis de droite à gauche. Il présente une autre dissymétrie vis-à-vis de la substitution 0&harr;1, que l'on répare en faisant tourner les 4096 machines sur une bande initialement noire.  En fait, il n'est pas nécessaire de faire les calculs détaillés, il suffit de symétriser les résultats obtenus dans un premier temps. Au bilan, lorsque s=2, on trouve la répartition ci-contre des fréquences.</p>
                     <p>Pour la petite histoire, les 11 machines les plus actives (encore appelées "Castors affairés") s'arrêtent après 7 pas d'exécution.  Ces machines sont également les plus productives, imprimant 3 caractères. Lorsqu'une machine ne s'est pas arrêtée après 7 pas, on a donc l'assurance qu'elle ne s'arrêtera jamais.</p>
 
                     <div class="conteneurImages">
@@ -828,17 +831,17 @@
                     <div class="conteneurImages">
                       <div>
                         <figure>
-                          <img src="annexes/turing/statthreestates1.jpg" alt="TODO"/>
+                          <img src="annexes/turing/statthreestates1.jpg" alt="Machines de Turing à 3 états"/>
                         </figure>
                       </div>
                       <div>
                         <figure>
-                          <img src="annexes/turing/statthreestates.jpg" alt="TODO"/>
+                          <img src="annexes/turing/statthreestates.jpg" alt="Machines de Turing à 3 états"/>
                         </figure>
                       </div>
                       <div>
                         <figure>
-                          <img src="annexes/turing/statthreestates2.jpg" alt="TODO"/>
+                          <img src="annexes/turing/statthreestates2.jpg" alt="Machines de Turing à 3 états"/>
                         </figure>
                       </div>
                     </div>
@@ -864,34 +867,35 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/suites/suites1.png" alt="TODO"/>
+                        <img src="annexes/suites/suites1.png" alt="Machine de Turing universelle"/>
                       </figure>
                     </div>
                   </div>
 
                   <p>Pour exploiter cette définition, il faudrait au moins  se mettre d'accord sur une MTU, par exemple celle que  Minsky a conçue dans les années 1960. Cependant les choses ne sont pas si simples car la MTU doit être (libre de tout) préfixe, autrement dit, les programmes qui l'alimentent doivent être auto-délimités (= uniquement décodables). Cela implique que toutes les suites binaires ne constituent pas un programme valable pour une MTU préfixe. Or s'il n'est pas difficile de proposer un codage préfixe complet des suites binaires, il est beaucoup plus délicat de démontrer que la MTU (par exemple celle de Minsky) demeure universelle pour ce choix restreint de suites-programmes.</p>
                   <p>Il est beaucoup plus simple de revenir vers les machines de Turing simples (MTS par opposition à MTU), alimentées initialement par une bande &quot;vierge&quot; : elles sont  également collectivement universelles, à condition de n'en oublier aucune.  Le modèle de ces MTS a été rappelé à la rubrique 6 ci-dessus, toutefois nous souhaitons y apporter quelques retouches. Les conventions adoptées par Wolfram sont  malheureuses au niveau de l'ordre utilisé pour les énumérer, qui voit les états monter quand les caractères descendent. Il est plus judicieux que les états descendent comme les caractères : on a alors la certitude que les premières MTS à (s+1) états, reproduisent les comportements des machines à s états. Autrement dit, si on décide de se pencher sur l'étude des MTS à moins de 5 états, il n'est pas nécessaire de se préocupper des machines à 2 ou 3 états, celles-ci sont automatiquement reprises au début de l'étude des machines à 4 états. Voici l'ordre  modifié dans la table d'instructions des MTS :</p>
+                                  
 
                   <table>
                     <tr>
-                      <th>(s-1,1) -&gt; (&sigma;<sub>1</sub>,&kappa;<sub>1</sub>,&delta;<sub>1</sub>)</th>
-                      <th>(s-1,0) -&gt; (&sigma;<sub>2</sub>,&kappa;<sub>2</sub>,&delta;<sub>2</sub>)</th>
+                      <th>(s-1,1) &rarr; (&sigma;<sub>1</sub>,&kappa;<sub>1</sub>,&delta;<sub>1</sub>)</th>
+                      <th>(s-1,0) &rarr; (&sigma;<sub>2</sub>,&kappa;<sub>2</sub>,&delta;<sub>2</sub>)</th>
                     </tr>
                     <tr>
-                      <th>(s-2,1) -&gt; (&sigma;<sub>3</sub>,&kappa;<sub>3</sub>,&delta;<sub>3</sub>)</th>
-                      <th>(s-2,0) -&gt; (&sigma;<sub>4</sub>,&kappa;<sub>4</sub>,&delta;<sub>4</sub>)</th>
+                      <th>(s-2,1) &rarr; (&sigma;<sub>3</sub>,&kappa;<sub>3</sub>,&delta;<sub>3</sub>)</th>
+                      <th>(s-2,0) &rarr; (&sigma;<sub>4</sub>,&kappa;<sub>4</sub>,&delta;<sub>4</sub>)</th>
                     </tr>
                     <tr>
                       <th>...</th>
                       <th>...</th>
                     </tr>
                     <tr>
-                      <th>(1,1) -&gt; (&sigma;<sub>2s-3</sub>,&kappa;<sub>2s-3</sub>,&delta;<sub>2s-3</sub>)</th>
-                      <th>(1,0) -&gt; (&sigma;<sub>2s-2</sub>,&kappa;<sub>2s-2</sub>,&delta;<sub>2s-2</sub>)</th>
+                      <th>(1,1) &rarr; (&sigma;<sub>2s-3</sub>,&kappa;<sub>2s-3</sub>,&delta;<sub>2s-3</sub>)</th>
+                      <th>(1,0) &rarr; (&sigma;<sub>2s-2</sub>,&kappa;<sub>2s-2</sub>,&delta;<sub>2s-2</sub>)</th>
                     </tr>
                     <tr>
-                      <th>(0,1) -&gt; (&sigma;<sub>2s-1</sub>,&kappa;<sub>2s-1</sub>,&delta;<sub>2s-1</sub>)</th>
-                      <th><span class="coloType1Chiffres">(0,0) -&gt; (&sigma;<sub>2s</sub>,&kappa;<sub>2s</sub>,&delta;<sub>2s</sub>)</span></th>
+                      <th>(0,1) &rarr; (&sigma;<sub>2s-1</sub>,&kappa;<sub>2s-1</sub>,&delta;<sub>2s-1</sub>)</th>
+                      <th><span class="coloType1Chiffres">(0,0) &rarr; (&sigma;<sub>2s</sub>,&kappa;<sub>2s</sub>,&delta;<sub>2s</sub>)</span></th>
                     </tr>
                   </table>
 
@@ -916,7 +920,7 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/suites/mt4debut.jpg" alt="TODO"/>
+                        <img src="annexes/suites/mt4debut.jpg" alt="Machines de Turing"/>
                       </figure>
                     </div>
                   </div>
@@ -931,7 +935,7 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="annexes/suites/mt4fin.jpg" alt="TODO"/>
+                        <img src="annexes/suites/mt4fin.jpg" alt="Machines de Turing"/>
                       </figure>
                     </div>
                   </div>

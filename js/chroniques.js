@@ -62,7 +62,7 @@
 				$(".THbilletHumeur").css('display', 'block');
 				$(".THtourMonde").css('display', 'block');
 				$(".THcomposContemporains").css('display', 'block');
-				$(".THcomposOublies").css('display', 'block');
+				$(".THcomposNegliges").css('display', 'block');
 				$(".THinterpretesActuels").css('display', 'block');
 				$(".THgenresMusicaux").css('display', 'block');
 				$(".THfaitsDivers").css('display', 'block');
@@ -72,7 +72,7 @@
 				
 				$(".THtourMonde").css('display', 'none');
 				$(".THcomposContemporains").css('display', 'none');
-				$(".THcomposOublies").css('display', 'none');
+				$(".THcomposNegliges").css('display', 'none');
 				$(".THinterpretesActuels").css('display', 'none');
 				$(".THgenresMusicaux").css('display', 'none');
 				$(".THfaitsDivers").css('display', 'none');
@@ -82,7 +82,7 @@
 				
 				$(".THbilletHumeur").css('display', 'none');
 				$(".THcomposContemporains").css('display', 'none');
-				$(".THcomposOublies").css('display', 'none');
+				$(".THcomposNegliges").css('display', 'none');
 				$(".THinterpretesActuels").css('display', 'none');
 				$(".THgenresMusicaux").css('display', 'none');
 				$(".THfaitsDivers").css('display', 'none');
@@ -92,13 +92,13 @@
 
 				$(".THbilletHumeur").css('display', 'none');
 				$(".THtourMonde").css('display', 'none');
-				$(".THcomposOublies").css('display', 'none');
+				$(".THcomposNegliges").css('display', 'none');
 				$(".THinterpretesActuels").css('display', 'none');
 				$(".THgenresMusicaux").css('display', 'none');
 				$(".THfaitsDivers").css('display', 'none');
 				break;
-			case 'composOublies':
-				$(".THcomposOublies").css('display', 'block');
+			case 'composNegliges':
+				$(".THcomposNegliges").css('display', 'block');
 
 				$(".THbilletHumeur").css('display', 'none');
 				$(".THtourMonde").css('display', 'none');
@@ -113,7 +113,7 @@
 				$(".THbilletHumeur").css('display', 'none');
 				$(".THtourMonde").css('display', 'none');
 				$(".THcomposContemporains").css('display', 'none');
-				$(".THcomposOublies").css('display', 'none');
+				$(".THcomposNegliges").css('display', 'none');
 				$(".THgenresMusicaux").css('display', 'none');
 				$(".THfaitsDivers").css('display', 'none');
 				break;
@@ -123,7 +123,7 @@
 				$(".THbilletHumeur").css('display', 'none');
 				$(".THtourMonde").css('display', 'none');
 				$(".THcomposContemporains").css('display', 'none');
-				$(".THcomposOublies").css('display', 'none');
+				$(".THcomposNegliges").css('display', 'none');
 				$(".THinterpretesActuels").css('display', 'none');
 				$(".THfaitsDivers").css('display', 'none');
 				break;
@@ -133,7 +133,7 @@
 				$(".THbilletHumeur").css('display', 'none');
 				$(".THtourMonde").css('display', 'none');
 				$(".THcomposContemporains").css('display', 'none');
-				$(".THcomposOublies").css('display', 'none');
+				$(".THcomposNegliges").css('display', 'none');
 				$(".THinterpretesActuels").css('display', 'none');
 				$(".THgenresMusicaux").css('display', 'none');
 				break;

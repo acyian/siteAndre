@@ -128,12 +128,9 @@
 	    	}
 		};		
 
-		window.onresize = function(event) {
-		    // cacheNavMenu();   
-		};
-
 		window.onload = function(event) {  
 	    	change_design_ancre_Onload();
+	    	design_corps_responsive();	    	
 	    	// cacheNavMenu();
 		};
 	});
@@ -194,6 +191,4 @@
 	    	$(".sommaireLink").html("[ afficher ]");
 	    }
 	});
-
-
 

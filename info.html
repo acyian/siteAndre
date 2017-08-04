@@ -7,10 +7,11 @@
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
-  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-1.10.2.js"></script>  
+  <script src="js/menus.js"></script>
   <script src="js/design.js"></script>
   <script> 
-    // Inclusion Header et Footer + class "active" (pour lien menu)
+    // Inclusion Header et class "active" (pour lien menu) + MiniMenus (pr responsive) + Footer
     $(function(){
       $(function(){
         $.ajax({
@@ -22,6 +23,7 @@
           }
         });
       });
+      $("#miniMenus").load("template/miniMenus.html", set_onclick_events); 
       $("#footer").load("template/footer.html", update_design); 
     });
   </script> 
@@ -32,6 +34,8 @@
     <div id="site">
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
 
         <nav class="menuLateralAncres">
             <ul>
@@ -112,7 +116,7 @@
                   <h4>Le problème des 12, 39, 120, ..., boules</h4> 
   
                   <p>Ce problème récréatif illustre la notion de bilan informationnel : on donne N boules, d'apparences identiques sauf que l'une d'entre elles est peut-être plus lourde ou plus légère que les autres. Combien de pesées sont nécessaires pour identifier l'intruse éventuelle ? On ne dispose que d'une balance à fléau, non graduée. Classiquement, on ne considère que le cas, N=12 qui se règle en k=3 pesées.</p>
-                  <p>La théorie de l'information apporte une solution élégante au problème général.  L'information manquante se calcule sur base du logarithme (en base 2) du nombre des solutions possibles, supposées équiprobables, soit, ℓg(2N+1) bits (Dans le cas, N=12, cela représente ℓg25 = 4.64386 bits).</p>
+                  <p>La théorie de l'information apporte une solution élégante au problème général. L'information manquante se calcule sur base du logarithme (en base 2) du nombre des solutions possibles, supposées équiprobables, soit, &#8467;g(2N+1) bits (Dans le cas, N=12, cela représente &#8467;g25 = 4.64386 bits).</p>
                   <p>L'apport informationnel d'une pesée dépend du nombre de boules que l'on dépose dans chaque plateau. Si on dépose x boules de chaque côté, les probabilités que le fléau penche à gauche, reste en équilibre ou penche à droite valent respectivement:</p>
 
                   <div class="conteneurImages">
@@ -143,7 +147,7 @@
                     </div>
                   </div>
 
-                  <p>Cette pesée favorable apporte ℓg3 = 1.585 bits par pesée indépendante.</p>
+                  <p>Cette pesée favorable apporte &#8467;g3 = 1.585 bits par pesée indépendante.</p>
                   <p>Vu que 3 x 1.585 = 4.75489 > 4.64386 (bits), rien ne semble s'opposer à ce qu'il existe une solution en k=3 pesées dans le cas N=12 (dont l'existence ne peut être établie qu'en la détaillant !).</p>
                   <p>La solution proposée par John Conway, l'un des mathématiciens les plus inventifs de sa génération, est particulièrement élégante. On détaille l'exemple classique k=3, N=12 mais la généralisation est immédiate, disponible en <a href="annexes/boules/boules.html">annexe</a> (<a href="annexes/boules/boules.nb">Notebook Mathematica</a>).</p>
                   <p>Quel que soit k, Conway travaille sur un alphabet de 3 lettres, G, D et E, observant qu'il permet de former 3<sup>k</sup> = 27 mots distincts de k=3 lettres. De cette liste, il enlève les mots constants, GGG, DDD et EEE,  ne retenant que ceux où le premier changement de lettre respecte l'un des schémas GD DE ou EG. Au bilan il reste 12 mots distincts qu'il associe à chacune des 12 boules :</p>
@@ -172,7 +176,7 @@
 
                   <p>où la i<sup>ième</sup> pesée place les boules codées par G en i<sup>ième</sup> position à gauche et celles codées par D en i<sup>ième</sup> position à droite. Chaque pesée fournit un résultat que l'on note, G, si le fléau penche à gauche, D, s'il penche à droite et, E, s'il reste en équilibre. Les trois lettres, prises dans cet ordre, forment un mot qui identifie la boule anormale (Il est alors facile de voir si elle est plus lourde ou plus légère). Si le mot trouvé est EEE, toutes les boules sont identiques. GGG et DDD n'apparaissent jamais.</p>
 
-                  <p>La méthode de Conway se généralise immédiatement à un nombre plus grand de pesées (et de boules !). La pesée la plus porteuse d'information place x = N/3 boules dans chaque plateau (à condition que N soit divisible par 3 !), amenant ℓg3 = 1.585 bits. On serait alors tenté de raisonner ainsi : k pesées indépendantes apportent  k ℓg3 (bits) or il faut combler ℓg(2N+1) bits d'information manquante d'où k pesées devraient venir à bout du problème à N=(3<sup>k</sup>-1)/2 boules. C'est un peu vite dit car ce N-là n'est pas multiple de 3 d'où l'information apportée par chaque mesure est inférieure au maximum escompté, 1.585 bits. En fait, (3<sup>k</sup>-2)/2 n'est pas davantage multiple de 3, par contre N = (3<sup>k</sup>-3)/2 l'est. C'est la solution optimale cherchée et la construction de Conway continue de s'appliquer.</p>
+                  <p>La méthode de Conway se généralise immédiatement à un nombre plus grand de pesées (et de boules !). La pesée la plus porteuse d'information place x = N/3 boules dans chaque plateau (à condition que N soit divisible par 3 !), amenant &#8467;g3 = 1.585 bits. On serait alors tenté de raisonner ainsi : k pesées indépendantes apportent  k &#8467;g3 (bits) or il faut combler &#8467;g(2N+1) bits d'information manquante d'où k pesées devraient venir à bout du problème à N=(3<sup>k</sup>-1)/2 boules. C'est un peu vite dit car ce N-là n'est pas multiple de 3 d'où l'information apportée par chaque mesure est inférieure au maximum escompté, 1.585 bits. En fait, (3<sup>k</sup>-2)/2 n'est pas davantage multiple de 3, par contre N = (3<sup>k</sup>-3)/2 l'est. C'est la solution optimale cherchée et la construction de Conway continue de s'appliquer.</p>
 
                   <div class="conteneurImages">
                     <div>
@@ -252,7 +256,7 @@
                   </div>
 
                   <div id="algoCompteGouttes">
-                    <h5>Algorithmes compte-gouttes.</h5>
+                    <h5>Algorithmes compte-gouttes</h5>
 
                     <p>L'universalité calculatoire de Fractran garantit qu'il est capable d'énumérer des listes, finies ou infinies, de nombres reliés par une propriété commune :</p>
 
@@ -387,7 +391,7 @@
                           </figure>
                         </div>
                       </div><br/>
-                      L'information manquante vaut ℓg(N) bits (formule de Shannon), ce qui autorise à penser qu'une stratégie existe, pour B, lui permettant de deviner l'entier inconnu en Ceil[ℓg(N)] questions binaires. Cette stratégie porte le nom de dichotomie binaire; on la rappelle dans le cas, N=32=2<sup>5</sup>, où 5 questions  devraient suffire. A chaque étape, on réduit l'intervalle possible [a, b] de moitié, en posant la question, n > (a+b-1)/2 ? Voyons cela sur l'exemple, n = 25 :<br/>
+                      L'information manquante vaut &#8467;g(N) bits (formule de Shannon), ce qui autorise à penser qu'une stratégie existe, pour B, lui permettant de deviner l'entier inconnu en Ceil[&#8467;g(N)] questions binaires. Cette stratégie porte le nom de dichotomie binaire; on la rappelle dans le cas, N=32=2<sup>5</sup>, où 5 questions  devraient suffire. A chaque étape, on réduit l'intervalle possible [a, b] de moitié, en posant la question, n > (a+b-1)/2 ? Voyons cela sur l'exemple, n = 25 :<br/>
                       <ul class="miniListCorps">
                         <li>1<sup>ère</sup> question : n>16 ? Réponse : OUI = 1 (Il reste les entiers allant de 17 à 32)</li>
                         <li>2<sup>ème</sup> question : n>24 ? Réponse : OUI = 1 (Il reste les entiers allant de 25 à 32)</li>
@@ -395,7 +399,7 @@
                         <li>4<sup>ème</sup> question : n>26 ? Réponse : NON = 0 (Il reste les entiers 25 et 26)</li>
                         <li>5<sup>ème</sup> question : n=25 ? Réponse : OUI = 1 (n = 25, notez que 25 se note 11001 en binaire)</li>
                       </ul><br/>
-                      L'exemple N=32 fonctionne particulièrement bien parce que 32 est une puissance de 2 donc l'information manquante est entière dans ce cas (elle vaut 5 bits). Lorsque N n'est pas une puissance de 2, la dichotomie binaire demeure la stratégie optimale avec la nuance suivante. Supposons  N=17, l'information manquante  vaut, à présent, ℓg(N)=4.08746 bits. La stratégie binaire précédente devine certainement l'entier, n, en 5 questions (Après tout, qui peut le plus peut le moins) mais elle fait  mieux, en moyenne, soit en 71/17 = 4.17647 questions binaires, ce qui nous rapproche de la limite de Shannon. Il suffit, pour le voir, d'examiner tous les cas de figures et de se rendre compte que 4 questions suffisent dans 14 cas sur 17 tandis qu'il en faut 5 dans 3 cas sur 17 seulement.
+                      L'exemple N=32 fonctionne particulièrement bien parce que 32 est une puissance de 2 donc l'information manquante est entière dans ce cas (elle vaut 5 bits). Lorsque N n'est pas une puissance de 2, la dichotomie binaire demeure la stratégie optimale avec la nuance suivante. Supposons  N=17, l'information manquante  vaut, à présent, &#8467;g(N)=4.08746 bits. La stratégie binaire précédente devine certainement l'entier, n, en 5 questions (Après tout, qui peut le plus peut le moins) mais elle fait  mieux, en moyenne, soit en 71/17 = 4.17647 questions binaires, ce qui nous rapproche de la limite de Shannon. Il suffit, pour le voir, d'examiner tous les cas de figures et de se rendre compte que 4 questions suffisent dans 14 cas sur 17 tandis qu'il en faut 5 dans 3 cas sur 17 seulement.
                     </li>
                     <li>
                       Le cas infini est nettement plus délicat. Commençons par remarquer qu'il n'est plus possible, dans ce cas, de considérer que tous les entiers sont équiprobables : la fonction de distribution, g(n), ne serait pas normalisable à l'unité. Une procédure effective permettant à A de sélectionner au hasard  un entier arbitrairement grand n'est envisageable que selon un hasard non uniforme qui pénalise les grands entiers. Plus formellement, la fonction de distribution doit être suffisamment décroissante, lorsque n s'éloigne à l'infini, afin de garantir la normalisation de g(n). Une décroissance selon la loi, g(n)=1/n, ne suffit pas car la série harmonique diverge, par contre, une décroissance selon la loi, g(n)=1/n<sup>2</sup>, convient certainement. Etudions ce cas :<br/>
@@ -515,8 +519,8 @@
                       s<sub>16</sub> ≡ 0010000000, s<sub>17</sub> ≡ 0010000001,..., s<sub>31</sub> ≡ 0010011111,<br/><br/>
                       s<sub>32</sub> ≡ 00100100000, ..., s<sub>63</sub> ≡ 00100111111,<br/><br/>
                       ... }<br/><br/>
-                      La suite, S, est affichée de telle façon que sa structure numérique devienne apparente : elle contient 1 code de longueur 2, 2 codes de longueur 3, 4 codes de longueur 5 et plus généralement 2<sup>k</sup> codes de longueur ℓ(k), où la suite ℓ(k), croît comme (k = 0, 1, 2, 3, ...) :<br/><br/>
-                      ℓ(k) = {2,3,5,6,10,11,12,13,15,16,17,18,19,20,21,22,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,44,…}.<br/><br/>
+                      La suite, S, est affichée de telle façon que sa structure numérique devienne apparente : elle contient 1 code de longueur 2, 2 codes de longueur 3, 4 codes de longueur 5 et plus généralement 2<sup>k</sup> codes de longueur &#8467;(k), où la suite &#8467;(k), croît comme (k = 0, 1, 2, 3, ...) :<br/><br/>
+                      &#8467;(k) = { 2, 3, 5, 6, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 44, …}.<br/><br/>
                       La suite, S, possède trois propriétés remarquables et essentielles pour le but poursuivi :<br/>
                       <div class="conteneurImages">
                         <div>
@@ -527,7 +531,7 @@
                         </div>
                       </div>
                       <ul class="miniListCorps">
-                        <li>Les longueurs de codes, ℓ(k), croissent asymptotiquement comme : ℓ(k) = k + ℓg(k) + ℓg(ℓg(k)) + ℓg(ℓg(ℓg(k))) + ... . C'est la conséquence naturelle du fait que chaque étiquette allonge le code de n d'une valeur égale au logarithme de l'étiquette précédente, la première étiquette l'allongeant du logarithme de n.</li>
+                        <li>Les longueurs de codes, &#8467;(k), croissent asymptotiquement comme : &#8467;(k) = k + &#8467;g(k) + &#8467;g(&#8467;g(k)) + &#8467;g(&#8467;g(&#8467;g(k))) + ... . C'est la conséquence naturelle du fait que chaque étiquette allonge le code de n d'une valeur égale au logarithme de l'étiquette précédente, la première étiquette l'allongeant du logarithme de n.</li>
                         <li>La suite S est préfixe, ce qui signifie qu'aucun code d'entier n'est préfixe d'un autre code. C'est cette propriété qui justifie l'arrêt des tirages aléatoires dès qu'un terme de la suite est rencontré; il ne servirait, en effet, à rien de poursuivre.</li>
                         <li>La suite S est complète, ce qui signifie que tout tirage aléatoire est assuré de se terminer sur un code faisant partie de la suite.</li>
                       </ul>
@@ -569,7 +573,7 @@
                     </div>
                   </div>
 
-                  <p>Vu que 2<sup>-ℓ(code[n])</sup> vaut précisément la probabilité de tirer au sort le code de n, on voit que l'égalité de Kraft remplit la condition de normalisation pour la densité de probabilité, g(n)=2<sup>-ℓ(code[n])</sup>.</p>
+                  <p>Vu que 2<sup>-&#8467;(code[n])</sup> vaut précisément la probabilité de tirer au sort le code de n, on voit que l'égalité de Kraft remplit la condition de normalisation pour la densité de probabilité, g(n)=2<sup>-&#8467;(code[n])</sup>.</p>
                   <p>En adoptant cette distribution, A est assuré de compliquer au maximum la tâche de B précisément parce que c'est la distribution la plus lentement décroissante parmi toutes celles qui sont envisageables. Le fait que la conditon de normalisation se situe à l'extrême limite de la convergence a une conséquence dramatique pour B : le nombre moyen de questions binaires tend vers l'infini. Autrement dit, B ne peut accepter aucun pari proposé par A sans être assuré de se ruiner, à terme.</p>
                   <p>Une dernière remarque : lorsque B n'est pas informé de la loi, g(n), adoptée par A, il est contraint de faire comme si c'était la distribution universelle. Procéder autrement équivaudrait à introduire un élément d'information parasite de nature à privilégier abusivement les petits entiers. La seule attitude prudente, qui ne présuppose rien d'inconnu, consiste à adopter la loi g(n) la moins porteuse d'information, celle qui décroît asymptotiquement le plus lentement possible sans compromettre la normalisation. Cette loi c'est la distribution universelle ou toute autre distribution asymptotiquement équivalente.</p>
                 </div>
@@ -968,6 +972,8 @@
          AUSSI, j'ai mis des figcaptions pour le plupart des jpg (libre à toi de les laisser et mettre la légende qui correspond ou l'enlever si cela ne te semable pas nécessaire,
          N'OUBLIES PAS LES ALT sont toujours TOUS OBLIGATOIRE !!! -->
     <!-- AUSSI: POUR LES SYMBOLES MATHEMATIQUES, IL FAUT OBLIGATOIREMENT UTILISER ( question lisibilité et clareté du code et acceptation par le W3C MAIS AUSSI pour la lecture de ces symboles dans TOUS LES NAVIGATEURS!!!(à ce jour juillet 2017) la syntaxe mnemonic du site: http://www.dionysia.org/html/entities/symbols.html DONC TOUTES LES FONT FACE="SYMBOL" ont été mis en quarantaine :) -->
+    <!-- AUSSI: le: ℓ (nommée en français: "MINUSCULE L DE RONDE" et en anglais: "script small l") est remplacé par ce code: &#8467; 
+    AIDE: ce site: http://hapax.qc.ca/conversion.fr.html permet de convertir du entre les numéros de caractères Unicode, les caractères eux-mêmes, les codages UTF-8 et UTF-16 et les appels de caractère numériques (hex et décimaux) Il te suffit ensuite d'aller sur ce site: http://graphemica.com et de taper dans la barre de recherche ce que tu as trouvé et MAGIE!-->
 
 </body>
 </html>

@@ -1073,6 +1073,7 @@
 		#liste1936MachinesTuring img{
 			margin: 0 auto;
     		float: none;
+    		max-width: 100%;
 		}
 
 		.downloadplayerfordemonstrationn{

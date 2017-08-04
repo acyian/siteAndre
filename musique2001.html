@@ -8,7 +8,8 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/design.js"></script>
+    <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
     <script>
         // Inclusion Header et Footer 
         $(function(){
@@ -23,7 +24,8 @@
                 });
             });
 
-            $("#footer").load("template/footer.html", update_design); 
+            $("#miniMenus").load("template/miniMenus.html", set_onclick_events);
+      $("#footer").load("template/footer.html", update_design); 
         });
     </script>
 </head>

@@ -30,9 +30,14 @@ function update_design(){
     //update_design_menu();
 }
 
-window.onresize = function() {
+
+function changements_generaux_onresize() {
     update_design();
     open_or_close_menu_gauche_onresize();
     open_or_close_menu_droite_onresize();
     design_corps_responsive();
+}
+
+window.onresize = function() {
+    changements_generaux_onresize();
 };

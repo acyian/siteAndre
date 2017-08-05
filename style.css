@@ -1066,6 +1066,10 @@
 			float: none;
 		}
 
+		area{
+			    background: black;
+		}
+
 	/*======= WOLFRAMANIA =======*/
 		/*Design pour images générées*/
 		#comportementAutomatesCellulaires img,

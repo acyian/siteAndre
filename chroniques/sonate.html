@@ -386,13 +386,13 @@
                         <div class="conteneurImages">
                           <div>
                             <figure>
-                              <img src="../images/sonate/pianistes.jpg" usemap="#Map" alt="Quelques grands pianistes">
+                              <img id="mapImgSonate" src="../images/sonate/pianistes.jpg" width="690" usemap="#mapSonate" alt="Quelques grands pianistes">
                               <figcaption>Quelques grands pianistes</figcaption>
                             </figure>
                           </div>
                         </div>
 
-                        <map name="Map" id="Map">
+                        <map name="mapSonate" id="mapSonate">
                           <area shape="rect" coords="1,1,115,88" href="#" title="Arthur Schnabel" alt="Arthur Schnabel" />
                           <area shape="rect" coords="115,1,229,88" href="#" title="Wilhelm Backhaus" alt="Wilhelm Backhaus" />
                           <area shape="rect" coords="230,1,345,88" href="#" title="Wilhelm Kempff" alt="Wilhelm Kempff" />
@@ -443,6 +443,8 @@
     <!-- Effet smooth ancres -->
     <script src="../js/onclick.js"></script>
 
+    <!--Construction Map Image-->
+    <script src="../js/mapImageSonate.js"></script>
 
     <!-- TODO -->
     <!-- A TOI DE VOIR POUR CE FICHIER SI TU VEUX RAJOUTER DES ANCRES (menu laterales et ajout aussi dans sommaire) 
@@ -450,7 +452,5 @@
                       2) La sonate anglaise
                       3) La sonate américaine ... 
         AUSSI: ATTENTION pour les balises <area> (comme pour les balises <img>) l'attribut alt est requis!!! -->
-
-
 </body>
 </html>

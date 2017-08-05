@@ -6,10 +6,10 @@
     <meta name="description" content="Reconnaissez-vous les grands compositeurs qui se cachent dans cet orchestre fictif ?" />
     <link rel="shortcut icon" href="logo.ico" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/menus.js"></script>
-  <script src="js/design.js"></script>
+    <script src="js/design.js"></script>
     <script>
         // Inclusion Header et Footer 
         $(function(){
@@ -24,8 +24,8 @@
                 });
             });
 
-            $("#miniMenus").load("template/miniMenus.html", set_onclick_events);
-      $("#footer").load("template/footer.html", update_design); 
+        $("#miniMenus").load("template/miniMenus.html", set_onclick_events);
+        $("#footer").load("template/footer.html", update_design); 
         });
     </script>
 </head>
@@ -35,7 +35,7 @@
     <!-- Inclusion header -->
     <div id="header"></div>
 
-        <div id="miniMenus"></div>
+    <div id="miniMenus"></div>
 
     <div id="corps">
 
@@ -43,14 +43,14 @@
             <h2>Who's who ?</h2>
             <h3>Les (re)connaissez-vous ?</h3>
             
-            <div>
+            <div class="conteneurImages">
                 <div>
                     <figure>          
-                        <img src="images/orchestre700.jpg" width="700" height="508" usemap="#Map" alt="orchestre" />
+                        <img id="mapImgWhosWho" src="images/orchestre700.jpg" width="700" usemap="#mapWhosWho" alt="orchestre" />
                     </figure>
                 </div>
             </div>
-            <map name="Map" id="Map">
+            <map name="mapWhosWho" id="mapWhosWho">
                 <area shape="rect" coords="72,18,119,71" href="#" title="Wagner" alt="Wagner" />
                 <area shape="rect" coords="65,84,107,133" href="#" title="Sibelius" alt="Sibelius" />
                 <area shape="rect" coords="133,332,182,390" href="#" title="Beethoven" alt="Beethoven" />
@@ -125,5 +125,8 @@
   </div>
 
 </body>
+
+    <!--Construction Map Image-->
+    <script src="js/mapImageQuizz.js"></script>
 
 </html>

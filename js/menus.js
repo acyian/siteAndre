@@ -216,9 +216,12 @@ function set_onclick_events() {
         open_or_close_menu_droite_onclick();
     });
 
-    $('#corps').click(function(){        
-        close_menu_droite_onclick();
-        close_menu_gauche_onclick();
+    $('#corps').click(function(){   
+        var widthSameValueThanCSS = window.innerWidth;
+        if (widthSameValueThanCSS <= 1024) {
+            close_menu_droite_onclick();
+            close_menu_gauche_onclick();
+        }  
     });
 }
 

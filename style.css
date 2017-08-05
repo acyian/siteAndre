@@ -313,7 +313,7 @@
 		    line-height: 1.5;
 		    color: #333;
 		    padding-left: 140px;
-		    /*display: grid;*/
+		    display: grid;
 		}
 
 		.petitPaddingLeftUl{
@@ -913,6 +913,8 @@
 
 		.conteneurImageSeule div figure img{
 			margin: 0px;
+			/* max width => 30px : doit être equivalent au margin-right du conteneurImageSeule div*/
+			max-width: calc(100% + 30px); 
 		}
 
 

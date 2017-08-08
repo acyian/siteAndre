@@ -1,6 +1,6 @@
 <!-- FOOTER -->
 <div id="contact">
-    <img src="/siteAndre/images/ahautot.jpg" alt="portrait andre hautot" />
+    <img src="<?php echo $_POST['ROOT']; ?>images/ahautot.jpg" alt="portrait andre hautot" />
 	<div>
 		<h3>ANDRE HAUTOT</h3>
 		<h4>Dr. en Physique<br/>Université de Liège<br/>Belgique</h4>
@@ -11,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-		<li><a href="/siteAndre/chroniques/cinema.html">Le siècle des (frères) Lumière</a></li>
-		<li><a href="/siteAndre/chroniques/complexite.html">Information, complexité et musique</a></li>
-		<li><a href="/siteAndre/chroniques/quintette.html">Le quintette à clavier jusqu'à nos jours</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/cinema.html">Le siècle des (frères) Lumière</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/complexite.html">Information, complexité et musique</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/quintette.html">Le quintette à clavier jusqu'à nos jours</a></li>
 	</ul>
 </div>
 

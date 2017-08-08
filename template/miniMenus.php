@@ -2,13 +2,13 @@
 <div id="miniMenuGauche" class="menuMinimizer">
     <a href="javascript:;" class="open">
       <figure>
-        <img src="/siteAndre/images/open.png" alt="ouverture">
+        <img src="<?php echo $_POST['ROOT']; ?>images/open.png" alt="ouverture">
       </figure>
       <p>Menu</p><p>Physique</p>
     </a>
     <a href="javascript:;" class="close">
       <figure>
-        <img src="/siteAndre/images/close.png" alt="fermeture">
+        <img src="<?php echo $_POST['ROOT']; ?>images/close.png" alt="fermeture">
       </figure>
     </a>
 
@@ -17,13 +17,13 @@
 <div id="miniMenuDroite" class="menuMinimizer">
     <a href="javascript:;" class="open">
       <figure>
-        <img src="/siteAndre/images/open.png" alt="ouverture">
+        <img src="<?php echo $_POST['ROOT']; ?>images/open.png" alt="ouverture">
       </figure>
       <p>Menu</p><p>Musique</p>
     </a>
     <a href="javascript:;" class="close">
       <figure>
-        <img src="/siteAndre/images/close.png" alt="fermeture">
+        <img src="<?php echo $_POST['ROOT']; ?>images/close.png" alt="fermeture">
       </figure>
     </a>
 

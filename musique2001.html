@@ -15,8 +15,9 @@
         $(function(){
             $(function(){
                 $.ajax({
-                   url: "template/header.html",
-                   dataType: "html",
+                   url: "template/header.php",
+				   type: "POST",
+				   data: ({ROOT: './'}),
                    success: function(data) {
                      $("#header").html(data);
                      $("#musique2001").addClass("active"); /*a changer en fonction de la page*/
@@ -24,8 +25,8 @@
                 });
             });
 
-            $("#miniMenus").load("template/miniMenus.html", mini_menus_after_loading);
-      $("#footer").load("template/footer.html", update_design); 
+            $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
         });
     </script>
 </head>

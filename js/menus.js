@@ -226,8 +226,6 @@ function set_onclick_events() {
 }
 
 
-
-
 //========== REGLAGES PADDING ET WIDTH POUR LE CORPS DU SITE ==========
 function design_corps_responsive() {
     // width ecran a utiliser pour les calculs de taille des elements
@@ -253,4 +251,9 @@ function design_corps_responsive() {
 
     $("#corps").css("padding-left" , padding + "px");
     $("#corps").css("padding-right" , padding + "px");
+}
+
+function mini_menus_after_loading() {
+    set_onclick_events();
+    design_corps_responsive();
 }

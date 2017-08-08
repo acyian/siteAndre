@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Crossover</title>
-  <meta name="description" content="Coups de coeur personnels pour des musiques pratiquant avec bonheur le mélange des genres : des artistes issus du monde "classique", du jazz ou plus proches de la variété" />
+  <meta name="description" content="Coups de coeur personnels pour des musiques pratiquant avec bonheur le mélange des genres : des artistes issus du monde 'classique', du jazz ou plus proches de la variété" />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
@@ -24,7 +24,7 @@
             }
           });
       });
-      $("#miniMenus").load("template/miniMenus.html", set_onclick_events);
+      $("#miniMenus").load("template/miniMenus.html", mini_menus_after_loading);
       $("#footer").load("template/footer.html", update_design); 
     });
   </script> 
@@ -530,7 +530,13 @@
 
   </div>
 
-  <script src="js/onload.js"></script>
+  <!-- TODO -->
+  <!-- ATTENTION: je remarque que tu as mis notamment dans ce fichier pour la meta description des doubles guillemets dans les doubles guillemets de la meta description:
+        cela EST INTERDIT!!!! 1/ c'est cracra 2/ ca produit plein d'erreurs alors que le fichier etait parfaitement clin, je t'ai donc corrigé:
+          <meta name="description" content="Coups de coeur personnels pour des musiques pratiquant avec bonheur le mélange des genres : des artistes issus du monde "classique", du jazz ou plus proches de la variété" />
+          en:  <meta name="description" content="Coups de coeur personnels pour des musiques pratiquant avec bonheur le mélange des genres : des artistes issus du monde 'classique', du jazz ou plus proches de la variété" /> 
+          => TU DOIS AINSI UTILISER QUE DES SIMPLES GUILLEMETS QUAND C'EST DEJA DANS DES DOUBLES GUILLEMETS 
+          DONC TON PROCHAIN DEVOIR EST VERIFIER SI TU N'AS PAS EGALEMENT FAIT CETTE ERREUR DANS TOUS LES AUTRES FICHIERS (meta description)-->
 
 </body>
 

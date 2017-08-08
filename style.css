@@ -772,18 +772,30 @@
 		}
 
 		#miniMenuGauche p:first-of-type{
+			-moz-transform: rotate(-90deg) translate( -185%, -55%);
+  			-webkit-transform: rotate(-90deg) translate( -185%, -55%);
+  			-o-transform: rotate(-90deg) translate( -185%, -55%);
 			transform: rotate(-90deg) translate( -185%, -55%);
 		}
 
 		#miniMenuGauche p:nth-of-type(2){
+			-moz-transform: rotate(-90deg) translate( -50%, -272%);
+  			-webkit-transform: rotate(-90deg) translate( -50%, -272%);
+  			-o-transform: rotate(-90deg) translate( -50%, -272%);
 			transform: rotate(-90deg) translate( -50%, -272%);
 		}
 
 		#miniMenuDroite p:first-of-type{
+			-moz-transform: rotate(-90deg) translate( -185%, -55%);
+  			-webkit-transform: rotate(-90deg) translate( -185%, -55%);
+  			-o-transform: rotate(-90deg) translate( -185%, -55%);
 			transform: rotate(-90deg) translate( -185%, -55%);
 		}
 
 		#miniMenuDroite p:nth-of-type(2){
+			-moz-transform: rotate(-90deg) translate( -50%, -270%);
+  			-webkit-transform: rotate(-90deg) translate( -50%, -270%);
+  			-o-transform: rotate(-90deg) translate( -50%, -270%);
 			transform: rotate(-90deg) translate( -50%, -270%);
 		}
 

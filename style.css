@@ -279,8 +279,13 @@
 	/*======= TABLEAU =======*/
 		table{
 		    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
-			width: 100%;
 			text-align: center;
+			/* pour responsive (specifique aux tableaux) */
+			table-layout: fixed;
+		    /*width: 100%;
+		    word-break: break-all;*/
+		    display: block;
+		    overflow: auto;
 		}
 
 		td,th{
@@ -1298,12 +1303,35 @@
 		}
 
 		@media only screen and (max-width: 720px){
+			#contenuPrincipal h2 {
+			    background-image: none; 
+			}
+
+			#contenuPrincipal h3 {
+			    background-image: none; 
+			}
+
 			.miniListCorps {
 			    padding-left: 20px;
 			}
 
 			ol.listNumber {
 			    padding-left: 0px;
+			}
+
+			#contenuPrincipal .conteneurImageSeule:nth-child(1) {
+				float: none;
+    			display: block;
+			}
+
+			#contenuPrincipal .conteneurImageSeule:nth-child(1) > div{
+				margin: 0 auto;
+				padding-top: 15px;
+				padding-bottom: 5px;
+			}
+
+			#contenuPrincipal .conteneurImageSeule:nth-child(1) > div figure img{
+				float: none;
 			}
 
 			#footer{

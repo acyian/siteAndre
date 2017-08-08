@@ -1050,29 +1050,34 @@
 	    	font-size: 0.7em;
 	    }
 
+	
+	/*======= CROSSOVER =======*/
+		#crossover .conteneurImageSeule{
+			margin-top: 20px;
+		}
+
 
 	/*======= WHO S WHO =======*/
-		.imgSansTextIllustre figure{
+		#whoswho .imgSansTextIllustre figure{
 			margin-left: 0px;
 		    margin-right: 0px;
 		}
 
-		.imgSansTextIllustre img{
+		#whoswho .imgSansTextIllustre img{
 			float: none;
 		    margin-right: 0;
 		}
 
-		.imgSansTextIllustre p{
+		#whoswho .imgSansTextIllustre p{
 			text-align: center;
+			margin: 0;
 		}
 
-		#contenuPrincipal.imgSansTextIllustre p:first-of-type:first-letter{
+		#whoswho #contenuPrincipal.imgSansTextIllustre p:first-of-type:first-letter{
 			float: none;
+			margin: 0;
 		}
 
-		area{
-			    background: black;
-		}
 
 	/*======= WOLFRAMANIA =======*/
 		/*Design pour images générées*/
@@ -1336,6 +1341,21 @@
 		}
 
 		@media only screen and (max-width: 480px){
+			#crossover #contenuPrincipal .conteneurImageSeule{
+				float: none;
+    			display: block;
+			}
+
+			#crossover #contenuPrincipal div{
+				margin: 0 auto;
+				padding-top: 15px;
+				padding-bottom: 5px;
+			}
+
+			#crossover .conteneurImageSeule div figure img{
+				float: none;
+			}
+
 			#footer{
 		    	display: block;
 		    }

@@ -27,9 +27,7 @@ function update_design_footer(){
 
 function update_design(){
     update_design_footer();
-    //update_design_menu();
 }
-
 
 function changements_generaux_onresize() {
     update_design();

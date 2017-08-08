@@ -22,7 +22,7 @@
 			letter-spacing: 0.05em;
 		}
 
-		#site{
+		.site{
 			width: 100%;
 		}
 
@@ -767,19 +767,19 @@
 		}
 
 		#miniMenuGauche p:first-of-type{
-			transform: rotate(-90deg) translate( -180%, -55%);
+			transform: rotate(-90deg) translate( -185%, -55%);
 		}
 
 		#miniMenuGauche p:nth-of-type(2){
-			transform: rotate(-90deg) translate( -50%, -275%);
+			transform: rotate(-90deg) translate( -50%, -272%);
 		}
 
 		#miniMenuDroite p:first-of-type{
-			transform: rotate(-90deg) translate( -180%, -55%);
+			transform: rotate(-90deg) translate( -185%, -55%);
 		}
 
 		#miniMenuDroite p:nth-of-type(2){
-			transform: rotate(-90deg) translate( -50%, -275%);
+			transform: rotate(-90deg) translate( -50%, -270%);
 		}
 
 		.menuMinimizer p:first-letter {
@@ -877,10 +877,12 @@
 		    margin-left: 20px;
 		    margin-right: 20px;
 		    margin-bottom: 5px;
+			/* max width => 40px : doit être equivalent au margin-right + margin-left du conteneurImages div figure img*/
+		    max-width: calc(100% - 40px);
 		}
 
 		.conteneurImages #reneMagritte{
-			margin-top: 95px;
+			/*margin-top: 95px;*/
 		}
 
 		.conteneur4Img div{
@@ -1153,7 +1155,7 @@
 		}
 
 		#sitesDeReferences{
-			width: 182px;
+			width: 195px;
 		}
 
 		#articlesRecents, #sitesDeReferences{
@@ -1233,9 +1235,9 @@
 			}
 
 			.conteneurImages div figure img{
-				width: 100%;
+				/*width: 100%;
 				margin-left: 0;
-				margin-right: 0;
+				margin-right: 0;*/
 			}
 
 			#contact,

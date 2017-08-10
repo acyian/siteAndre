@@ -34,6 +34,7 @@ function changements_generaux_onresize() {
     open_or_close_menu_gauche_onresize();
     open_or_close_menu_droite_onresize();
     design_corps_responsive();
+    design_menus_responsive();
 }
 
 window.onresize = function() {

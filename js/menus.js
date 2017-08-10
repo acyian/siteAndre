@@ -253,7 +253,31 @@ function design_corps_responsive() {
     $("#corps").css("padding-right" , padding + "px");
 }
 
+
+//========== REGLAGES POUR AJOUT DE SCROLL BAR POUR MENUS (RESPONSIVE) ==========
+function design_menus_responsive() {
+    // height ecran a utiliser pour les calculs de taille des elements
+    var heightScreen = $(window).height();
+
+    // SI hauteur ecran plus petites que 680px
+    // hauteur ecran qui est utilisé par le CSS notamment par les media queries = window.innerHeight
+    var heightSameValueThanCSS = window.innerHeight;
+
+    if (heightSameValueThanCSS <= 680) {
+        $("h1").css("margin-bottom" , "20px");
+        $(".menu").css("overflow-y" , "scroll"); 
+        $(".menu").css("display" , "flex"); 
+    }
+
+    else {
+        $("h1").css("margin-bottom" , "60px");
+        $(".menu").css("overflow-y" , "initial"); 
+        $(".menu").css("display" , "table");
+    }
+}
+
 function mini_menus_after_loading() {
     set_onclick_events();
     design_corps_responsive();
+    design_menus_responsive();
 }

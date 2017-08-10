@@ -397,7 +397,7 @@
 			list-style: none;
 		}
 
-		/*Liste à puces centrer verticalement avec puces*/
+		/*Liste à puces centrée verticalement avec puces*/
 		ul.listCenterWithDots{
 			text-align: center;
 			list-style:none;
@@ -411,6 +411,17 @@
 		ul.listCenterWithDots li:before {
 		   content: "•";
 		   padding-right: 10px;
+		}
+		
+		/*Spécificités pour liste références (responsive)*/
+		ul.listReferences{
+			margin-top: 25px;
+			display: block;
+		}
+
+		ul.listReferences a{
+			display: block;
+			word-break: break-all;/*pour eviter d'avoir le lien rogné en responsive*/
 		}
 
 

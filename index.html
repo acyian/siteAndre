@@ -21,7 +21,8 @@
            data: ({ROOT: './'}),
            success: function(data) {
              $("#header").html(data);
-             $(".accueil").addClass("active");
+             $(".accueil").addClass("active"); /*a changer en fonction de la page*/
+             design_menus_responsive();
           }
         });
       });

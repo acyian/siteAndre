@@ -645,6 +645,7 @@
 
 		.tablecell {
 		    display: table-cell;
+		    margin: 0 auto;
 		    text-align: center;
 		    vertical-align: middle;
 		}
@@ -1408,6 +1409,11 @@
 		}
 
 		@media only screen and (max-width: 480px){
+			blockquote{
+				margin-right: 0px;
+    			margin-left: 0px;
+			}
+
 			#crossover #contenuPrincipal .conteneurImageSeule{
 				float: none;
     			display: block;

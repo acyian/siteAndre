@@ -21,7 +21,8 @@
 				   data: ({ROOT: './'}),
                    success: function(data) {
                      $("#header").html(data);
-                     $("#quizz").addClass("active");
+                     $("#quizz").addClass("active"); /*a changer en fonction de la page*/
+					 design_menus_responsive();
                   }
                 });
             });

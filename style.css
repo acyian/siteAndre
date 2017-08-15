@@ -286,6 +286,8 @@
 		    word-break: break-all;*/
 		    display: block;
 		    overflow: auto;
+		    /*pour les mobiles*/
+		    -webkit-overflow-scrolling: touch;
 		}
 
 		td,th{
@@ -487,11 +489,15 @@
 	/*======= TITLES =======*/
 		/*Navigation*/
 		h1{
+			font-size: 2em;
+			width: 162px;
+    		margin: 0 auto;
 			margin-bottom: 60px;
 		    color: #fff;
 		    font-weight: initial;
 		    font-family: 'Raleway', sans-serif;
 		    padding-bottom: 30px;
+		    padding-top: 30px;
 		    background-image: url(images/borderTitleMenu.png);
 		    background-size: 20%;
 		    background-repeat: no-repeat;
@@ -596,7 +602,6 @@
 
 
 
-
 /*===============================================================*/
 /*------------------------- NAVIGATION --------------------------*/
 /*===============================================================*/
@@ -639,7 +644,7 @@
 
 		#sousNavPhysique a, #sousNavMusique a{
 			color: #8d8d8d;
-			text-transform: initial;
+			text-transform: none;
 			font-size: 16px;
 		}
 
@@ -648,6 +653,7 @@
 		    margin: 0 auto;
 		    text-align: center;
 		    vertical-align: middle;
+		    width: 100%;
 		}
 
 		.centered{
@@ -673,14 +679,14 @@
 	
 	/*======= MENU GAUCHE =======*/
 		#menuGauche{
-		    left: 0;
+		    left: 0px;
 		    border-right: 4px solid #cd1600;
 		}
 
 
 	/*======= MENU DROITE =======*/
 		#menuDroite{
-		    right: 0;
+		    right: 0px;
 		    border-left: 4px solid #cd1600;
 		}
 
@@ -799,41 +805,29 @@
 		    font-family: 'Raleway', sans-serif;
 		}
 
-		#miniMenuGauche p:first-of-type{
-			-moz-transform: rotate(-90deg) translate( -185%, -55%);
-  			-webkit-transform: rotate(-90deg) translate( -185%, -55%);
-  			-o-transform: rotate(-90deg) translate( -185%, -55%);
-			transform: rotate(-90deg) translate( -185%, -55%);
+		#miniMenuGauche p{
+			-moz-transform: rotate(-90deg) translate( -55%, -185%);
+  			-webkit-transform: rotate(-90deg) translate( -55%, -185%);
+  			-o-transform: rotate(-90deg) translate( -55%, -185%);
+			transform: rotate(-90deg) translate( -55%, -185%);
 		}
 
-		#miniMenuGauche p:nth-of-type(2){
-			-moz-transform: rotate(-90deg) translate( -50%, -272%);
-  			-webkit-transform: rotate(-90deg) translate( -50%, -272%);
-  			-o-transform: rotate(-90deg) translate( -50%, -272%);
-			transform: rotate(-90deg) translate( -50%, -272%);
+		#miniMenuGauche span:nth-of-type(2){
+			margin-left: 15px;
 		}
 
-		#miniMenuDroite p:first-of-type{
-			-moz-transform: rotate(-90deg) translate( -185%, -55%);
-  			-webkit-transform: rotate(-90deg) translate( -185%, -55%);
-  			-o-transform: rotate(-90deg) translate( -185%, -55%);
-			transform: rotate(-90deg) translate( -185%, -55%);
+		#miniMenuDroite p{
+			-moz-transform: rotate(-90deg) translate( -55%, -182%);
+  			-webkit-transform: rotate(-90deg) translate( -55%, -182%);
+  			-o-transform: rotate(-90deg) translate( -55%, -182%);
+			transform: rotate(-90deg) translate( -55%, -182%);
 		}
 
-		#miniMenuDroite p:nth-of-type(2){
-			-moz-transform: rotate(-90deg) translate( -50%, -270%);
-  			-webkit-transform: rotate(-90deg) translate( -50%, -270%);
-  			-o-transform: rotate(-90deg) translate( -50%, -270%);
-			transform: rotate(-90deg) translate( -50%, -270%);
+		#miniMenuDroite span:nth-of-type(2){
+			margin-left: 15px;
 		}
 
-		.menuMinimizer p:first-letter {
-		    color: #cd1600;
-		    font-size: 160%;
-		    font-weight: bold;
-		}
-
-		.menuMinimizer span:first-letter {
+		.menuMinimizer span {
 		    color: #cd1600;
 		    font-size: 160%;
 		    font-weight: bold;
@@ -1097,7 +1091,7 @@
 
 	
 	/*======= CROSSOVER =======*/
-		#crossover .conteneurImageSeule{
+		#contenuCrossover .conteneurImageSeule{
 			margin-top: 20px;
 		}
 
@@ -1111,6 +1105,7 @@
 		#whoswho .imgSansTextIllustre img{
 			float: none;
 		    margin-right: 0;
+		    margin-left: 0;
 		}
 
 		#whoswho .imgSansTextIllustre p{
@@ -1274,6 +1269,9 @@
 		@media only screen and (max-width: 1200px){
 			h1{
 				font-size: 1.8em;
+				width: 142px;
+	    		margin: 0 auto;
+				
 			}
 
 			h1:first-letter{
@@ -1315,7 +1313,7 @@
 			}
 
 			#menuGauche{
-				width: 155px;
+				width: 160px;
 				left: -159px;
 			}
 			
@@ -1388,7 +1386,7 @@
 
 			#contact{
 				margin-right: auto !important;
-			    width: 180px;
+			    width: 190px;
 			    clear: both;
 		    }
 
@@ -1399,7 +1397,7 @@
 		    }
 
 		    #sitesDeReferences{
-			    width: 182px;
+			    width: 190px;
 			    clear: both;
 		    }
 
@@ -1414,18 +1412,18 @@
     			margin-left: 0px;
 			}
 
-			#crossover #contenuPrincipal .conteneurImageSeule{
+			#contenuCrossover #contenuPrincipal .conteneurImageSeule{
 				float: none;
     			display: block;
 			}
 
-			#crossover #contenuPrincipal div{
+			#contenuCrossover #contenuPrincipal div{
 				margin: 0 auto;
 				padding-top: 15px;
 				padding-bottom: 5px;
 			}
 
-			#crossover .conteneurImageSeule div figure img{
+			#contenuCrossover .conteneurImageSeule div figure img{
 				float: none;
 			}
 

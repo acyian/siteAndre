@@ -4,7 +4,7 @@
       <figure>
         <img src="<?php echo $_POST['ROOT']; ?>images/open.png" alt="ouverture">
       </figure>
-      <p>Menu</p><p>Physique</p>
+      <p><span>M</span>enu <span>P</span>hysique</p>
     </a>
     <a href="javascript:;" class="close">
       <figure>
@@ -19,7 +19,7 @@
       <figure>
         <img src="<?php echo $_POST['ROOT']; ?>images/open.png" alt="ouverture">
       </figure>
-      <p>Menu</p><p>Musique</p>
+      <p><span>M</span>enu <span>M</span>usique</p>
     </a>
     <a href="javascript:;" class="close">
       <figure>

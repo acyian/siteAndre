@@ -273,6 +273,8 @@ function design_menus_responsive() {
         $("h1").css("margin-bottom" , "60px");
         $(".menu").css("overflow-y" , "initial"); 
         $(".menu").css("display" , "table");
+        
+        $("#menuPrincipalMusique").width($(window).width()*0.15);
     }
 }
 

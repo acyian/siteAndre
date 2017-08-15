@@ -686,7 +686,7 @@
 
 	
 	/*======= MENU LATERAL (contenu principal) =======*/
-		.menuLateralAncres {
+		#menuLateralAncres {
 		    position: fixed;
 		    right: 15.5%;
 		    top: 34%;
@@ -694,18 +694,18 @@
 		    z-index: 2;
 		}
 
-		.menuLateralAncres ul {
+		#menuLateralAncres ul {
 		    padding-left: 0;
 		}
 
-		.menuLateralAncres ul li {
+		#menuLateralAncres ul li {
 		    list-style: none;
 		    height: 15px;
 		    padding: 2px 5px 2px;
 		    width: 15px;
 		}
 
-		.menuLateralAncres ul li a {
+		#menuLateralAncres ul li a {
 		    background-position: 0 0;
 		    background: url(images/ancre.png) no-repeat;
 		    height: 15px;
@@ -714,20 +714,20 @@
 		    position: relative;
 		}
 
-		.menuLateralAncres ul li a:hover, 
-		.menuLateralAncres ul li a:focus, 
-		.menuLateralAncres ul li a:active, 
-		.menuLateralAncres ul li a.active {
+		#menuLateralAncres ul li a:hover, 
+		#menuLateralAncres ul li a:focus, 
+		#menuLateralAncres ul li a:active, 
+		#menuLateralAncres ul li a.active {
 		    background-position: 0 -19px;
 		}
 
-		.menuLateralAncres ul li a:hover span{ 
+		#menuLateralAncres ul li a:hover span{ 
 		    width:auto; 
 		    padding:5px 10px;
 		    overflow:visible; 
 		}
 
-		.menuLateralAncres span {
+		#menuLateralAncres span {
 		    width: 0;
 		    top: -3px;
 		    right: 15px;
@@ -1335,7 +1335,7 @@
 			    overflow-x: hidden;
 			}
 
-			.menuLateralAncres,
+			#menuLateralAncres,
 			#ancreRetourHautPage{
 				/*right: 0%;*/
 				display: none;

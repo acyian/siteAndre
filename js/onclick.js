@@ -1,5 +1,5 @@
 // ================ EFFET SCROLL POUR ANCRES =================
-	$(function() {
+	/*$(function() {
 	    $('a[href*=#]:not([href=#])').click(function() {
 	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
@@ -13,7 +13,7 @@
 	            }
 	        }
 	    });
-	});
+	});*/
 
 
 
@@ -61,7 +61,7 @@
 			change_design_ancre_auChangementAncre($(this));
 		});
 
-		function cacheNavMenu(){
+		/*function cacheNavMenu(){
 	    	if (window.innerWidth >= 768) {
 
 				(function($){
@@ -126,7 +126,7 @@
 
 			$().UItoTop({ easingType: 'easeOutQuart' });
 	    	}
-		};		
+		};	*/	
 
 		window.onload = function(event) {  
 	    	change_design_ancre_Onload();

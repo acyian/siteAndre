@@ -12,7 +12,7 @@ $(window).scroll(function(){
         var refElement = $(currLink.attr("href"));
         
         var title = refElement.children().first();
-        var marginTopTitle = parseInt( title.css("marginTop") );
+        var marginTopTitle = parseInt( title.css("paddingTop") );
         
         if (refElement.position().top - marginTopTitle <= scrollPos 
             && refElement.position().top + refElement.height() + marginTopTitle > scrollPos) 

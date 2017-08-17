@@ -263,18 +263,38 @@ function design_menus_responsive() {
     // hauteur ecran qui est utilisé par le CSS notamment par les media queries = window.innerHeight
     var heightSameValueThanCSS = window.innerHeight;
 
-    if (heightSameValueThanCSS <= 680) {
+    
+
+    if ((heightSameValueThanCSS > 680) & ($(window).width() > 1024)) {
+        $("h1").css("margin-bottom" , "60px");
+        $(".menu").css("overflow-y" , "initial"); 
+        $(".menu").css("display" , "table"); 
+
+        $("#menuPrincipalMusique").width($(window).width()*0.15);
+    }
+
+    if ((heightSameValueThanCSS > 680) & ($(window).width() < 1024)) {
+        $("h1").css("margin-bottom" , "60px");
+        $(".menu").css("overflow-y" , "initial"); 
+        $(".menu").css("display" , "table"); 
+
+        $("#menuPrincipalMusique").css("width" , "155px");
+    }
+
+    if ((heightSameValueThanCSS < 680) & ($(window).width() > 1024)) {
         $("h1").css("margin-bottom" , "20px");
         $(".menu").css("overflow-y" , "scroll"); 
         $(".menu").css("display" , "flex"); 
-    }
-
-    else {
-        $("h1").css("margin-bottom" , "60px");
-        $(".menu").css("overflow-y" , "initial"); 
-        $(".menu").css("display" , "table");
         
         $("#menuPrincipalMusique").width($(window).width()*0.15);
+    }
+
+    if ((heightSameValueThanCSS < 680) & ($(window).width() < 1024)) {
+        $("h1").css("margin-bottom" , "20px");
+        $(".menu").css("overflow-y" , "scroll"); 
+        $(".menu").css("display" , "flex"); 
+        
+        $("#menuPrincipalMusique").css("width" , "155px");
     }
 }
 

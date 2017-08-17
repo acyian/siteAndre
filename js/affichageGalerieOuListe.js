@@ -18,14 +18,14 @@ function changeClassProduits(id){
         $('#listChroniquesComposContemporains').addClass('vueGalerie');
         $('#listChroniquesComposContemporains').removeClass('vueListe');
 
-        if ($(window).width() < (480-17)) {
+        if (window.innerWidth <= 480) {
             for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
                 $("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%");
                 $("#listChroniquesTourMonde li").eq(i).first().first().css("height", $("#corps").width()*1*0.9);
             }
         }
 
-        else if ($(window).width() >= (720-17)) {
+        else if (window.innerWidth > 720) {
             for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
                 if (((i+1) % 3) == 0) {
                     ($("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%"));
@@ -37,7 +37,7 @@ function changeClassProduits(id){
             }
         }
 
-        else if ($(window).width() < (720-17)) {
+        else if (window.innerWidth <= 720) {
             for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
                 if (((i+1) % 2) == 0) {
                     ($("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%"));
@@ -57,33 +57,22 @@ function changeClassProduits(id){
         $('#listChroniquesTourMonde').removeClass('vueGalerie');
         $('#listChroniquesComposContemporains').addClass('vueListe');
         $('#listChroniquesComposContemporains').removeClass('vueGalerie'); 
-
-        // if ($(window).width() > 720) { 
-        //     for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {         
-        //         $("#listChroniquesTourMonde li").eq(i).first().first().css("height", "27px");
-        //     }
-        // }
-        // else {
-        //     for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
-        //         $("#listChroniquesTourMonde li").eq(i).first().first().css("height", "27px");
-        //     }
-        // }
         
-        if ($(window).width() < (480-17)) {
+        if (window.innerWidth <= 480) {
             for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
                 $("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%");
                 $("#listChroniquesTourMonde li").eq(i).first().first().css("height", "inherit");
             }
         }
 
-        else if ($(window).width() >= (720-17)) {
+        else if (window.innerWidth > 720) {
             for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
                 $("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%");
                 $("#listChroniquesTourMonde li").eq(i).first().first().css("height", "inherit");
             }
         }
 
-        else if ($(window).width() < (720-17)) {
+        else if (window.innerWidth <= 720) {
             for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
                 $("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%");
                 $("#listChroniquesTourMonde li").eq(i).first().first().css("height", "inherit");

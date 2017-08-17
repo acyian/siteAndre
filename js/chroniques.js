@@ -187,14 +187,14 @@
 // Change la hauteur des li
 function design_tour_du_monde_height_margin_li() {
 	if ($('#listChroniquesTourMonde').hasClass('vueGalerie')){
-		if ($(window).width() < (480-17)) {
+		if (window.innerWidth <= 480) {
 			for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
 				$("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%");
 				$("#listChroniquesTourMonde li").eq(i).first().first().css("height", $("#corps").width()*1*0.9);
 			}
 		}
 
-		else if ($(window).width() >= (720-17)) {
+		else if (window.innerWidth > 720) {
 			for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
 				if (((i+1) % 3) == 0) {
 					($("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%"));
@@ -206,7 +206,7 @@ function design_tour_du_monde_height_margin_li() {
 			}
 		}
 
-		else if ($(window).width() < (720-17)) {
+		else if (window.innerWidth <= 720) {
 			for (var i = 0; i < $("#listChroniquesTourMonde li").length; i = i+1) {
 				if (((i+1) % 2) == 0) {
 					($("#listChroniquesTourMonde li").eq(i).css("margin-right", "0%"));
@@ -319,3 +319,8 @@ function design_tour_du_monde_height_margin_li() {
 
 		return false; 
 	});
+
+window.onresize = function() {
+    changements_generaux_onresize();
+    design_tour_du_monde_height_margin_li();
+};

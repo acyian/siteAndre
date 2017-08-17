@@ -34,7 +34,6 @@ function changements_generaux_onresize() {
     open_or_close_menu_droite_onresize();
     design_corps_responsive();
     design_menus_responsive();
-    design_tour_du_monde_height_margin_li();
 }
 
 window.onresize = function() {

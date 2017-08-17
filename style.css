@@ -285,8 +285,9 @@
 		    /*width: 100%;
 		    word-break: break-all;*/
 		    display: block;
-		    overflow: auto;
+		    /*overflow: auto;*/
 		    /*pour les mobiles*/
+		    overflow-x: scroll;
 		    -webkit-overflow-scrolling: touch;
 		}
 

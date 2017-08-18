@@ -121,11 +121,11 @@ function showTitle(area, x, y) {
         $('#afficheConteneurTitleMapImgPourMobile').css("top", y);
         var newLeft = x - $("#corps").offset().left - ($('#afficheConteneurTitleMapImgPourMobile p').width()/2);
         $('#afficheConteneurTitleMapImgPourMobile').css("left", newLeft);
-        $("#afficheConteneurTitleMapImgPourMobile").fadeIn(); 
+        $("#afficheConteneurTitleMapImgPourMobile").css("display", "block");
 
         setTimeout(function() { 
-            $("#afficheConteneurTitleMapImgPourMobile").fadeOut(); 
-        }, 2000);
+            $("#afficheConteneurTitleMapImgPourMobile").css("display", "none"); 
+        }, 5000);
     }
 }
 

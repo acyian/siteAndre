@@ -89,6 +89,12 @@
 			font-size: 14px;
 			font-weight: bold;
 		}
+		
+		.textecentre{
+			margin : 0 auto;
+			font-size: 14px;
+			font-weight: bold;
+		}
 
 		#contenuPrincipal figure figcaption h5{
 			font-weight: bold;
@@ -1090,4 +1096,5 @@
 	/*======= GRANDS ECRANS =======*/
 		@media only screen and (max-width: 1280px){
 			
-		}
+	
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Faits divers | La notation musicale</title>
+  <meta name="description" content="Le langage musicale apparaît comme hautement crypté, est-ce une nécessité ou une fatalité ?" />
+  <link rel="shortcut icon" href="../logo.ico" />
+  <link href="../style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/design.js"></script>
+  <script> 
+    // Inclusion Header et Footer
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "../template/header.html",
+           dataType: "html",
+           success: function(data) {
+             $("#header").html(data);
+             $("#faitsDivers").addClass("active"); /*a changer en fonction de la page*/
+          }
+        });
+      });
+      $("#footer").load("../template/footer.html", update_design); 
+    });
+  </script> 
+</head>
+
+<body>
+
+    <div id="site">
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <nav class="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreJustesse" href="#justesse" class="linavMenu active">
+                    <span>Entre justesse ...</span>
+                    </a>
+    </li>
+                
+                <li>
+                    <a id="ancregammes" href="#gammes" class="linavMenu">
+                    <span>Construction de la gamme pythagoricienne</span>
+                    </a>
+    </li>
+                
+                <li>
+                    <a id="ancretemperament" href="#temperament" class="linavMenu">
+                    <span>Une question de tempérament</span>
+                    </a>
+    </li>
+                
+                <li>
+                    <a id="ancrerameau" href="#rameau" class="linavMenu">
+                    <span>L'orthographe selon Rameau</span>
+                    </a>
+    </li>
+                
+                <li>
+                    <a id="ancreschonberg" href="#schonberg" class="linavMenu">
+                    <span>L'orthographe selon Schönberg</span>
+                    </a>
+      			</li>
+            </ul>
+        </nav>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Faits divers</h2>
+                <h3>La notation musicale</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Musique</li>
+                        <li class="breadcrumbItem">
+                          <a href="../chroniques.html">Chroniques</a>
+                        </li>
+                        <li class="breadcrumbItem">
+                          <a href="../faitsDivers.html">Faits divers</a>
+                        </li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Gammes et Tempéraments, ...</li>
+                    </ul>
+                </nav>  
+
+                <div class="sommaire">
+                    <div class="sommaireTitle">
+                        <h6>Sommaire</h6>
+                        <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                    </div>
+
+                    <ul class="linksSummary">
+                        <li><a href="#justesse">Entre justesse ...</a></li>
+                        <li><a href="#transposabilite">... et transposabilité</a></li>
+                        <li><a href="#gammes">Construction de la gamme pythagoricienne</a></li>
+                        <li><a href="#temperament">Une question de tempérament</a></li>
+                        <li><a href="#rameau">L'orthographe selon Rameau</a></li>
+                        <li><a href="#schonberg">L'orthographe selon Schönberg</a></li>
+                    </ul>
+                </div>
+  
+                
+         <div class="conteneurImageSeule">
+                		<div>
+                          <figure>
+                              <img src="../images/notation/mnmalogo.png" alt="Logo MNMA"/>
+                              <figcaption>MNMA (Logo)</figcaption>
+                          </figure>
+                      </div>
+  </div>        
+                
+                
+                
+   <p>The Music Notation Modernization Association (MNMA) existe, aux USA, depuis 1985. Elle a fait place, en 2008, au <a href="http://musicnotation.org/">Music Notation Project</a>. Comme son nom l'indique, cette institution aspire à une refonte de la notation musicale, conformément au Credo suivant, traduit pour la circonstance :</p>
+   
+    <blockquote><p>
+Le but est de rencontrer les difficultés de la notation musicale traditionnelle qui rend la lecture d'uhe partition inutilement difficile, posant des difficultés injustifiées aux musiciens et décourageant un nombre anormalement élevé d'apprentis-musiciens.
+             	 </p></blockquote>
+   
+    <blockquote>
+                        <p>The goal is to address the shortcomings of traditional music notation that “make reading music substantially more difficult than necessary, pose unwarranted hardships for musicians, and prevent many young people from becoming fluent music readers.</p>
+             	 </blockquote>             
+                
+                <p>Bien que cette association soit majoritairement composée de musiciens, on aurait beau jeu de dévaluer ses recommandations au motif qu'aucun d'ente eux n'est un &quot;grand&quot; musicien. Il est vrai que les grands musiciens sont des personnalités complètement à part, peu concernées par l'effort pédagogique de transmettre leur art aux plus démunis. Par ailleurs les grands professeurs de chant n'ont jamais brillé sur scène et personne ne conteste l'utilité de leurs conseils. Les musiciens hyperdoués ont ingurgité la théorie musicale sans trop de douleur et il ne faut pas attendre d'eux qu'ils volent au secours de tous ceux qui n'ont pas leurs facilités : ils estiment au contraire plus ou moins (in)consciemment que les autres n'ont qu'à faire le même effort que celui qu'il ont fait et ils ne s'embarrassent aucunement du fait que ce système pourrait être inadapté au plus grand nombre, c'est le syndrome de la Tour d'ivoire que l'on connaît dans toutes les disciplines y compris scientifiques.</p>
+                
+                <p>Toute discipline a besoin d'un langage pour prospérer mais le point intrigant est que ce langage puisse revêtir toutes sortes de formes plus ou moins ésotériques sans nécessité réelle, c'est le syndrome de la Tour d'ivoire.</p>
+                
+              <p>Il existe un (vieux) contentieux jamais réglé entre musiciens et physiciens, tournant autour de la nécessité de maintenir une différence entre les notes anharmoniques du moins en musique moderne. Une chronique précédente Gammes et Tempéraments a relaté la longue histoire de la construction des gammes pythagoricienne et naturelle et la présence inévitable d'altérations distinctes désignant des notes voisines en fréquences. Le choix d'un tempérament s'est avéré nécessaire. L'incompréhension mutuelle à laquelle le contentieux fait référence est née lors de l'adoption du tempérament égal qui avait pour conséquence la plus immédiate la fusion des ces notes anharmoniques sans qu'elles disparaissent pour autant de la notation. Nous verrons sous peu les arguments invoqués par les musiciens.  </p>
+              
+               <div class="conteneurImages">
+							<div> <figure>
+                              <img src="../images/notation/transpoenmi.png" alt="Mi majeur" />
+                              <figcaption>Mi majeur</figcaption>
+							</figure></div>
+        	   </div>
+                
+                
+               <p>On peut imaginer au moins trois sortes de justifications,  syntaxique,  pratique et sémantique  :</p>
+               
+       	  <ul class="miniListCorps">
+                    <li>Le système en vigueur possède deux propriétés intéressantes pour la lisibilité de la portée telle qu'elle est actuellement conçue : quelle que soit la tonalité retenue, deux notes de même nom (forcément porteurs d'altérations différentes) n'y apparaissent jamais simultanément et de plus les dièses ne sont jamais mélangés aux bémols. Dans la figure ci-contre, correspondant à la tonalité de mi majeur, un seul choix s'impose si on respecte ces règles : mi, fa#, sol#, la, si, do# et ré#, soit 4 dièses à la clé. Les musiciens, on les comprend, n'ont pas souhaité bousculer ces propriétés même après l'adoption du tempérament égal. Ces deux propriétés sont des conséquences de la non-linéarité de l'échelle résultant de la sélection de 7 notes la portée. On ne peut s'empêcher de penser que c'est se donner beaucoup de mal de s'y cramponner.</li>
+                    <li>Un autre argument concerne l'ordonnance du clavier tel qu'il s'est généralisé et qui copie l'irrégularité de l'échelle heptatonique dans la succession de ses touches blanches. On pourrait craindre que l'adoption de l'échelle chromatique régulière n'introduise une complication qui neutraliserait la simplification obtenue par ailleurs. Il ne semble pas que ce soit le cas car les degrés de l'échelle diatonique usuelle se transcrive en 0, 2, 4, 5, 7, 9, 11=Y, soit les entiers pairs pour les trois premières notes et impairs pour les quatre qui suivent. Ce n'est pas une gymnastique intellectuelle redoutable. Toutes les tentatives de refonte de la notation reposent sur l'adoption d'une portée chromatique d'où il résulte qu'idéalement la conception du clavier devrait suivre. Un tel projet n'a probablement aucune chance d'aboutir car il susciterait la grogne des musiciens en activité. Il se pourrait par contre que la Chine soit un laboratoire d'expérimentation dans ce domaine. Aucn autre pays dans le monde ne possède autant de pianos et malgré la discipline légendaire des enfants chinois on ne peut exclure une volonté des autorités de simplifier l'accès à la pratique musicale. C'est déjà le cas actuellement avec le recours à des méthodes simplifiées. Par ailleurs, les objections relatives aux problèmes d'édition ne sont plus vraiment d'actualité depuis que les progrès de l'édition numérique. Même la parution dans les deux méthodes est envisageable.</li>
+                    <li>Les obstacles syntaxique et pratique sont donc surmontables et les musiciens en sont parfaitement conscients qui ont gardé pour la fin l'argument sémantique. Ce deuxième alinéa ne concerne véritablement que les instruments à sons mobiles (voix, violon, etc) : la qualité d'une interprétation requiert de soigner l'intonation dans un juste équilibre entre tension et détente.</li>
+		  </ul>
+          
+           <div class="conteneurImages">
+							<div> <figure>
+                              <img src="../images/notation/porteechromatique.png" alt="Portée chromatique" />
+                              <figcaption>Portée chromatique</figcaption>
+							</figure></div>
+       	      </div>
+
+<p>La plupart des notations présumées simplifiées ont recours à une portée chromatique dans le but de supprimer les altérations et les clefs. Le slogan est  clair et net : une position (ligne ou interligne) = une note = un son. Les esprits chagrins commenceront par objecter que cinq lignes n'ont pas suffi à remplir une octave, ce qui représente une perte de place et le fait est que l'on a passé beaucoup de temps à minimiser les effets de cette particularité. La portée chromatique ci-dessus a donc fait l'objet de toutes sortes de variantes entre lesquelles il va falloir choisir.</p>
+
+
+
+
+<div class="conteneurImageSeule">
+                		<div>
+                          <figure>
+                              <img src="../images/notation/clavier.png" alt="Touches de piano"/>
+                              <figcaption>Touches de piano</figcaption>
+                          </figure>
+                      </div>
+  				</div> 
+                
+           <p><i>Note sur les claviers. Si vous avez (bien) observé plusieurs claviers (disons) de pianos, vous avez peut-être été intrigués par ce fait qu'ils ne sont pas tous identiques en ce qui concerne la largeur des touches, particulièrement les queues des touches blanches. La conception d'un &quot;bon&quot; clavier pose, en effet, un problème non trivial d'analyse linéaire, étudié en particulier par Kevin Jones, sur son site <a href="http://www.mathpages.com/home/kmath043.htm">MathPages</a>. Vu que je lui emprunte les résultats, je conserve ses notations anglo-saxonnes, où les largeurs de touches sont désignées par le symbole littéral de la note correspondante (do=C, ré=D, ..., la=A, si=B). La figure ci-dessus devrait vous aider à distinguer les différences entre les palettes et les queues des touches blanches. L'origine du problème provient de ce qu'il n'est pas possible d'assurer simultanément l'égalité des largeurs des palettes et des queues des touches blanches (A=B=C=D=E=F=G et a=b=c=d=e=f=g) et celles des touches noires (c#=d#=f#=g#=a#). C'est la conséquence du  système d'équations, 3C = 3c + 2c# &amp; 4C = 4c + 3c# dont l'unique solution imposerait c# = 0 ce qui naurait aucun sens. Pour des raisons esthétiques (mais aussi pour ne pas compliquer la fabrication des touches), les facteurs de claviers souhaitent conserver l'égalité des palettes blanches et des touches noires (A=B=C=D=E=F=G et c#=d#=f#=g#=a#)) tant pis pour les queues blanches qui seront d'inégales largeurs (Ceci n'est vrai que pour le piano; dans le cas de l'orgue, on a souvent privilégié l'égalité des queues blanches et des touches noires, au détrimens des palettes blanches, devenues inégales. Cela dit, vu l'ancienneté des instruments, il n'y a pas deux claviers d'orgue qui se ressemblent). Le problème posé est à présent de minimiser l'écart maximum entre les largeurs de ces queues. Je vous fais grâce des calculs et vous donne la réponse : c = d = e = C - 2c#/3 &amp; f = g = a = b = C - 3c#/4. L'écart entre les queues longues et courtes vaut c#/12, soit le douzième de la largeur d'une touche noire, ce qui est acceptable. Sur un piano standard, la largeur d'une octave est de l'ordre de 164.5 mm, ce qui donne une largeur de C = 164.5/7 = 23.5 mmm pour une palette blanche (on néglige les interstices). Si on confère une largeur standard de c# = 13.7 mmm aux touches noires, on trouve les valeurs suivantes, effectivement rencontrées chez un grand nombre de pianos modernes : c = d = e = 14.37 mmm &amp; f = g = a = b = 13.23 mm (Je n'ai pas fait en sorte que la figure ci-dessus  respecte  ces proportions). Ces valeurs sont compatibles avec une activation des touches blanches au niveau de la queue, un jeu qui permet une grande délicatesse dans le toucher, tel que pratiqué par le grand <a href="https://www.youtube.com/watch?v=8ELwCdgGQLQ">Vladimir Horowitz</a>. A noter qu'on pourrait encore diminuer les inégalités entre les largeurs des queues mais que ce serait au prix d'un écart entre les palettes F, G, A et B, plus larges que C, D et E de 2% environ.</i></p>     
+                  
+                  <p>La musique savante est l'art subtil d'un musicien, le compositeur, qui, ayant en tête un ensemble de son(orité)s, désire les faire partager au plus grand nombre, peu importe les distances ou les siècles qui les séparent. En peinture, tout serait simple, le tableau serait là, prêt à l'emploi pour peu qu'il ait résisté aux épreuves du temps mais en musique des intermédiaires sont requis : une partition devant noter au plus précis les intentions du compositeur et (au moins) un interprète chargé de traduire en sons le texte écrit, sans le trahir. C'est vite dit et le fait est qu'une oeuvre échappe rapidement au pouvoir de son auteur, en particulier dès que plusieurs interprètes s'en emparent, traduisant chacun à leur manière qui n'est jamais la même. Cette multiplicité est une richesse mais c'est aussi un problème car une syntaxe solfégique effarante, flanquée d'une grammaire qui ne l'est pas moins justifient leur complexité par un devoir de mémoire qui n'est jamais respecté.</p> 
+                  <p>Que l'apprenti-musicien doive ingurgiter une somme considérable de théorie n'a rien de particulièrement choquant; la musique est un art complexe et son langage ne saurait être simple. Cela justifie-t-il tous les excès telle est la question qui va nous occuper ? Car les excès sont nombreux rien qu'en matière de notation syntaxique.</p>
+                  <p>Un premier point de vue consiste à penser ou à répéter que si la notation musicale est ce qu'elle est c'est qu'il n'y a(vait) pas moyen de faire autrement et que le repect de la subtilité des idées du compositeur est à ce prix. Il y a certainement une part de vérité la-dedans et pourtant rien qu'au niveau syntaxique les demandes de réformes simplificatrices n'ont pas manqué, jamais rencontrées.</p>
+  
+  <p>En l'espace de 250 ans on a dénombré plusieurs centaines de propositions de réformes de la notation musicale. Leur nombre est clairement l'indice qu'il existait un besoin de simplification. Toutes justifiaient leur entreprise par quelques préliminaires faciles tant il est vrai que la notation musicale n'est pas avare de ces anomalies qu'on trouve dans toutes les disciplines au passé chahuté (L'orthographe mais aussi les conventions d'écriture en mathématiques la dérivée ou en physique (sens du courant électrique) pour ne garder que des sciences réputées exactes). C'est généralement quand on passe à l'exposé de la nouvelle notation que les choses se gâtent compliquant ailleurs ce qu'elles simplifient ici. Même en écartant les méthodes  farfelues ou plus simplement mal conçues, la plupart se sont avérées inintéressantes ou inexploitables essentiellement parce qu'elles manquaient l'objectif qu'elles avaient fini par perdre de vue. Au fond, les tenants de l'orthodoxie musicale n'ont éprouvé aucune peine à les écarter tandis que leur nombre  nuisait à l'entreprise car on imagine bien la lassitude d'une commission qui aurait dû examiner tous ces mémoires. L'effet pervers de cette situation c'est que lorsqu'une tentative se présentait sous de bien meilleurs auspices elle passait à la trappe comme toutes les autres. C'est la mésaventure qui est arrivée à l'essai publié par un musicien américain d'origine ???.</p>
+  
+  <div class="conteneurImageSeule">
+                		<div>
+                          <figure>
+                              <img src="../images/notation/notationrousseau.png" alt="Notation chiffrée de Rousseau"/>
+                              <figcaption>Notation chiffrée de Rousseau</figcaption>
+                          </figure>
+                      </div>
+  </div> 
+  
+  <p>La première tentative construite l'a été par le philosophe des Lumières, Jean-Jacques Rousseau, qui a fait parvenir un mémoire à l'Académie des Sciences (sic). Il était dans l'air du Temps des Lumières de réformer d'uniformiser et de rationaliser tous les domaines de l'activité humaine (à commencer par le système métrique qui en avait grand besoin). Le 22 août 1742, Rousseau lut son « Projet concernant de nouveaux signes
+pour la musique » devant l'Académie des Sciences. Les  commissaires,
+Mairan, Hellot et Fouchy, lui firent trois objections. Premièrement, la
+transposition rend la notation chiffrée de Rousseau impraticable pour les
+instruments musicaux. Deuxièmement, le système de Rousseau n’a pas assez
+d’utilité pour remplacer la musique ordinaire. Troisièmement, la notation
+chiffrée n'est pas nouvelle, puisqu’elle avait déjà été inventée par le Père Jean-Jacques 
+Souhaitty (1632-1697) en 16778）. Rousseau essaya de réfuter ces objections dans une lettre9）. Quant à la
+première objection, il expliqua que le problème de la transposition était un des
+résultats du système établi de la solmisation fi xe, tandis que son système de la
+solmisation mobile, que Rousseau appelle « solfège par transposition »10）, ne présentait aucun inconvénient sur ce point11）. Concernant la deuxième objection,
+il déclara que ce qui importait était la valeur intrinsèque de son système, mais
+pas la valeur extrinsèque qu’il fût neuf ou démodé, et il exprima sa déception à
+l’encontre de l’Académie qui ne s’intéressait qu’à celle-ci12）. Quant à la
+troisième objection contre laquelle Rousseau aurait dû, nous semble-t-il,
+s’expliquer pour éclairer l’originalité de son système, il ne pouvait pas
+convaincre les commissaires pour avoir évité de s’expliquer sur ce point. Il ne
+fi t que se fâcher en disant que c’était le traiter comme un misérable plagiaire13）.
+ Le 5 septembre, les commissaires lurent le Rapport sur le projet de
+Rousseau14）. D'Alembert et Rameau y assistèrent. Ce dernier était là pour mieux
+expliquer le Rapport des commissaires en tant que musicien à la place des
+académiciens15）.
+La seule objection solide qu’il y eut à faire à mon système y fut faite
+par Rameau. A peine le lui eus-je expliqué qu’il en vit le côté faible.
+<i>Vos signes, me dit-il, sont très bons, en ce qu’ils déterminent
+simplement et clairement les valeurs, en ce qu’ils représentent
+nettement les intervalles et montrent toujours le simple dans le
+redoublé, toutes chose que ne fait pas la note ordinaire : mais ils sont
+mauvais en ce qu’ils exigent une opération de l’esprit qui ne peut toujours suivre la rapidité de l’exécution. La position de nos notes,
+continua-t-il, se peint à l’œil sans le concours de cette opération. Si
+deux notes, l’une très haute, l’autre très basse, sont jointes par une
+tirade de notes intermédiaires, je vois du premier coup d’œil le
+progrès de l’une à l’autre par degrés conjoints; mais pour m’assurer
+chez vous de cette tirade, il faut nécessairement que j’épelle tous vos
+chiffres l’un après l’autre; le coup d’œil ne peut suppléer à rien.</i>
+L’objection me parut sans réplique, et j’en convins à l’instant.16）
+  
+  Ni mathématicien ni vraiment musicien (du moins professionnel, ce qui n'a pas empêché qu'on lui ait confié, et non à Rameau,  les articles sur la musique dans l'Encyclopédie), il a envoyé à l'Académie un projet de notation de ce type. Plutôt mal conçu, il a été recalé pour de mauvaises raisons et il est tombé aux oubliettes ... sauf que, &quot;relooké&quot;, il refait périodiquement surface (en particulier en Chine !), apprécié pour les facilités qu'il offre dans le cadre de l'initiation des enfants. Si vous voulez approfondir la question, reportez-vous au document intitulé <a href="../annexes/rousseau.pdf">Le Devenir du Système de Notation musicale de Jean-Jacques Rousseau</a>, issu des recherches du musicologue canadien, Claude Dauphin. J'ai rappelé par ailleurs (dans  <a href="../musique2001.html">Musique 2001</a>) le principe d'une variante théoriquement supérieure, reposant sur l'arithmétique en base 12, mais  les musiciens ne sont pas près de l'adopter, officiellement parce qu'aucune méthode chiffrée ne peut, à leur avis, rendre justice aux subtilités du langage musical et officieusement parce qu'ils sont conservateurs dans l'âme. Je n'en veux pour meilleure preuve que même lorsqu'ils entrent à l'école dodécaphonique, domaine où l'arithmétique en base 12 prend tout sons sens, ils continuent d'écrire sur une portée avec des dièses et des bémols, qui ne remplissent pourtant plus aucune fonction tonale. </i><i>Pour la petite histoire, sachez qu'il existe depuis 1944 (euh 1160 !) une pittoresque <a href="http://www.dozenal.org/">Dozenal (formerly Duodecimal) Society of America</a>  qui prône, sans grand succès, la généralisation  du système arithmétique en base 12 dans tous les secteurs d'activité de la société.  Elle a reçu, en 1948, un opuscule rédigé par  Velizar Godjevatz (1898-1986), un musicien américain formé à Oxford et Berlin, et mettant en évidence les avantages &quot;évidents&quot; d'une notation musicale chiffrée en base 12, ambitionnant de supprimer purement et simplement les altérations et les clefs (Je vous ai bricolé un <a href="../annexes/godjevatz.pdf">facsimile</a> du <a href="https://babel.hathitrust.org/cgi/pt?id=uc1.31822012461760;view=1up;seq=1">texte complet</a>, normalement introuvable sauf par les soins de la bibliothèque digitale  <a href="https://www.hathitrust.org/">HathiTrust</a> mais si vous manquez de temps, sachez que je vous ferai prochaînement l'article). Au plan syntaxique, la démonstration semble convaincante, tel fut en tous cas l'avis du  célèbre critique musical, George Bernard Shaw, sollicité par la Société en tant que rapporteur.</p>
+  <p>On comprend ce qu'a voulu faire Rousseau mais en adoptant l'arithmétique traditionnelle, en base 10, il passait à côté du problème. Une arithmétique en base douze s'imposait sauf que Rouuseau était un farouche opposant au tempérament égal</p>
+  
+  
+                  
+<p>En ce qui concerne la transcription de la partition celles-ci se faisait par les soins d'un copiste qui ne se gênait pas pour modifier un passage qui lui paraissait étrange. Le compositeur lui-même réalise fréquemment lors des premières répétitions que ses intentions n'étaient pas claires ou compatibles avec une exécution propre</p>                  
+                  
+<p>musicales  Son seul outil de transmission est la partition, un texte en langage éminemment codé qui est largement incompréhensible pour son public. Il a par conséquent besoin d'interpèrtes 
+L'idéal de la création musicale est que l'auditeur entende le son que le compositeur 
+L’émergence de la notation a représenté un progrès considérable dans la transmission du répertoire musical jusque-là assuré par voie orale seulement. Aussi sophistiquée soit-elle elle ne peut cependant pas espérer codifier toutes les intentions du compositeur, soit l’ensemble des sons qu’il a en tête. La musique est un langage tellement subtil qu’il est illusoire d’espérer capturer ses nuances infinies dans une écriture certes complexe mais qui se tient en définitive dans un vocabulaire et une grammaire finis.
+La notation est nécessaire pour fixer la partition autant que faire se peut. Par contre elle n’est d’aucune utilité pour la majeure partie des mélomanes incapables de la déchiffrer. Ceux-ci ont besoin d’un interprète en mesure de traduire en sons la suite des symboles notés. L’interprète se présente donc comme un interprète obligé dont on espère qu’il lira et dira correctement les intentions du compositeur. Cela n’est pas toujours le cas et on connaît un grand nombre d’exemples où la traduction pêche par manque d’idiome. 
+La notation musicale telle qu’elle est pratiquée actuellement est compliquée pour ne pas dire tarabiscotée. Sa complexité est héritée des époques Renaissance et Baroque où la construction d’une gamme utilisable dans toutes les tonalités, par les instruments à sons fixes (clavecin, orgue, …) ne trouvait de solution acceptable qu’au travers de l’adoption d’un tempérament praticable. Cela avait une incidence directe sur la gestion des altérations simples, doubles et très rarement triples. Le nombre des notes s’en trouvait démultiplié, une bénédiction quant aux raffinements envisageables mais un cauchemar probable pour l’apprenti musicien. 
+On peut admettre cette complexité comme une fatalité incontournable sauf que l’histoire musicale a infléchi son cours dans le sens d’une simplification radicale de la théorie du tempérament par l’adoption du tempérament égal. Du même coup la gestion des altérations pouvait espérer s’en trouver grandement simplifiée. Ce ne fut pas le cas et en fait le tempérament égal n’a strictement rien changé au motif que les instruments à sons fixes ne dictent pas l’orthographe musicale et que même en tempérament égal un do# ne vaut pas un réb.
+Cette remarque vaut une explication. </p>
+                  
+                 
+ <div class="conteneurImageSeule">
+                		<div>
+                          <figure>
+                              <img src="../images/notation/shaw.png" alt="Rapport de G-B Shaw"/>
+                              <figcaption>Rapport de G-B Shaw</figcaption>
+                          </figure>
+                      </div>
+  </div>   
+  
+  <p>Un indice sérieux que la question de la notation ne devrait pas être enterrée est qu'il existe un projet <a href="http://musicnotation.org/">The Music Notation Project</a></p>          
+<p>Parmi tous les essais tentés, il en est un sur lequel je souhaite insister tant il me semble rencontrer les objectifs visés par des moyens simples et directs. Il tient en un mémoire de quelques pages soumis à l'improbable <a href="http://www.dozenal.org/">Dozenal (formerly Duodecimal) Society of America</a> aux fins de publication dans leur revue mensuellerevue de seulement qu'il conviendrait d'éklargir pour couvrir tou sles cas de figures. L'auteur l'a soumis à une revue non spécialisée ce qui était sans doute la meilleure façon de ne jamais aboutir ce qui fut en effet le cas. Cependant le rédacteur de cette revue eut la présence d'esprit de consulter le célèbre écrivain, George Bernard Shaw, critique musical (re)connu  </p>
+
+<p>Pour la petite histoire, sachez qu'il existe depuis 1944 (euh 1160 !) une pittoresque <a href="http://www.dozenal.org/">Dozenal (formerly Duodecimal) Society of America</a>  qui prône, sans grand succès, la généralisation  du système arithmétique en base 12 dans tous les secteurs d'activité de la société.  Elle a reçu, en 1948, un opuscule rédigé par  Velizar Godjevatz (1898-1986), un musicien américain formé à Oxford et Berlin, et mettant en évidence les avantages &quot;évidents&quot; d'une notation musicale chiffrée en base 12, ambitionnant de supprimer purement et simplement les altérations et les clefs (Je vous ai bricolé un <a href="../annexes/godjevatz.pdf">facsimile</a> du <a href="https://babel.hathitrust.org/cgi/pt?id=uc1.31822012461760;view=1up;seq=1">texte complet</a>, normalement introuvable sauf par les soins de la bibliothèque digitale  <a href="https://www.hathitrust.org/">HathiTrust</a> mais si vous manquez de temps, sachez que je vous ferai prochaînement l'article). Au plan syntaxique, la démonstration semble convaincante, tel fut en tous cas l'avis du  célèbre critique musical, George Bernard Shaw, sollicité par la Société en tant que rapporteur.</p>
+                  
+              <p>Déjà en 1722, les premiers articles de Jean-Jacques Rousseau, parus dans l'Encyclopédie de d'Alembert et Diderot, déploraient les  contresens qui commençaient à se répandre dans la théorie musicale. 300 ans plus tard, force est de constater qu'aucun travail sérieux de rationalisation n'a été entrepris, comparable à celui que se sont imposées toutes les théories scientifiques, au tournant des années 1900.  Rien qu'une simplification de la gestion des clefs et des altérations ne serait pas un luxe mais il semble aussi difficile de réformer l'orthographe musicale d'usage que son équivalent français.  Les musiciens (comme les académiciens) ont leurs raisons que nous tenterons de comprendre car, de toutes façons, ils  auront toujours le dernier mot.</p>
+              
+              <div class="conteneurImages">
+                     		 <div> <figure>
+                              <img src="../images/notation/notationgodjevatz.png" alt="4 <sup>ème</sup> octave, selon Godjevatz" />
+                              <figcaption>4 <sup>ème</sup> octave, selon Godjevatz</figcaption>
+                              </figure></div>
+	</div>
+          
+         <div class="conteneurImageSeule">
+                		<div>
+                          <figure>
+                              <img src="../images/notation/deuxoctaves.png" alt="Octaves 4 et 5, selon Godjevatz"/>
+                              <figcaption>Octaves 4 et 5, selon Godjevatz</figcaption>
+                          </figure>
+                      </div>
+  </div>     
+          
+          <p>L'essentiel de la notation en hauteurs a été rassemblé dans le figure ci-dessus. L'octave n°4 y est entièrement dessinée accompagnée par le do supérieur. Vous noterez que les octaves adjacentes, n°3 et 5, s'adaptent parfaitement en bas et en haut de cette portée On note le recours à l'arithmétique en base 12 recourant aux chiffres 0, 1, 2, ..., 9, X et Y. Toute note est représentée par un entier à deux chiffres où le chiffre des unités désigne la note et le chiffre des douzaines désigne l'octave. Dans l'énumération classique en fréquences ascendantes, les trois notes basses sont paires et les quatre notes hautes sont impaires. Pour assurer la lisibilité le long de l'octave 6 lignes parallèles sont dessinées, séparées par une ligne non explicitement représentée mais indiquée chaque fois qu'une note l'emprunte. Les degrés, ordinairement numérotés en chiffres romains, sont facilement identifiables : les trois premiers occupent  les lignes inférieures et les quatre derniers occupent les interlignes supérieurs.         
+                 
+          Deux notes situées à une octave de distance sont appelées homosonances par Godjevatz qui répugnaient à y voir une quelconque allusion à l'entier 8, de fait. Sans que je sache ce qu'il en est le système de Godjevats s'apparente à celui proposé par Constance Virtue (1933).<div id="justesse">
+    <h4>Entre justesse et transposition</h4>
+<h5 class="espaceTextConsequent">1) Justesse</h5>
+
+ </div>
+
+
+                   
+
+         </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    
+    </div>
+
+    <!-- Effet smooth ancres -->
+    <script src="../js/onclick.js"></script>
+
+
+</body>
+</html>

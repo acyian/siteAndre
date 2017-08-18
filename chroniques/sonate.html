@@ -24,6 +24,7 @@
              $("#header").html(data);
              $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
              design_menus_responsive();
+             calculFacteurMultiplicatifEtReconstruitLaMap(); /*TODO => a mettre quand on utilise une balise <map> dans le document*/
           }
         });
       });
@@ -395,35 +396,37 @@
                             </figure>
                           </div>
                         </div>
+						
+						            <div id="afficheConteneurTitleMapImgPourMobile"><p></p></div>
 
                         <map name="mapSonate" id="mapSonate">
-                          <area shape="rect" coords="1,1,115,88" href="#" title="Arthur Schnabel" alt="Arthur Schnabel" />
-                          <area shape="rect" coords="115,1,229,88" href="#" title="Wilhelm Backhaus" alt="Wilhelm Backhaus" />
-                          <area shape="rect" coords="230,1,345,88" href="#" title="Wilhelm Kempff" alt="Wilhelm Kempff" />
-                          <area shape="rect" coords="459,1,574,89" href="#" title="Arthur Rubinstein" alt="Arthur Rubinstein" />
-                          <area shape="rect" coords="346,1,458,89" href="#" title="Vladimir Horowitz" alt="Vladimir Horowitz" />
-                          <area shape="rect" coords="575,1,689,89" href="#" title="Clara Haskil" alt="Clara Haskil" />
+                          <area shape="rect" coords="1,1,115,88" href="#" onclick=" return false;" title="Arthur Schnabel" alt="Arthur Schnabel" />
+                          <area shape="rect" coords="115,1,229,88" href="#" onclick=" return false;" title="Wilhelm Backhaus" alt="Wilhelm Backhaus" />
+                          <area shape="rect" coords="230,1,345,88" href="#" onclick=" return false;" title="Wilhelm Kempff" alt="Wilhelm Kempff" />
+                          <area shape="rect" coords="459,1,574,89" href="#" onclick=" return false;" title="Arthur Rubinstein" alt="Arthur Rubinstein" />
+                          <area shape="rect" coords="346,1,458,89" href="#" onclick=" return false;" title="Vladimir Horowitz" alt="Vladimir Horowitz" />
+                          <area shape="rect" coords="575,1,689,89" href="#" onclick=" return false;" title="Clara Haskil" alt="Clara Haskil" />
 
-                          <area shape="rect" coords="1,89,115,177" href="#" title="Alfred Brendel" alt="Alfred Brendel" />
-                          <area shape="rect" coords="115,89,229,177" href="#" title="Maurizio Pollini" alt="Maurizio Pollini" />
-                          <area shape="rect" coords="230,89,345,177" href="#" title="Sviatoslav Richter" alt="Sviatoslav Richter" />
-                          <area shape="rect" coords="346,89,458,177" href="#" title="Clifford Curzon" alt="Clifford Curzon" />
-                          <area shape="rect" coords="459,89,574,177" href="#" title="Claudio Arrau" alt="Claudio Arrau" />
-                          <area shape="rect" coords="575,89,689,177" href="#" title="Lazar Berman" alt="Lazar Berman" />
+                          <area shape="rect" coords="1,89,115,177" href="#" onclick=" return false;" title="Alfred Brendel" alt="Alfred Brendel" />
+                          <area shape="rect" coords="115,89,229,177" href="#" onclick=" return false;" title="Maurizio Pollini" alt="Maurizio Pollini" />
+                          <area shape="rect" coords="230,89,345,177" href="#" onclick=" return false;" title="Sviatoslav Richter" alt="Sviatoslav Richter" />
+                          <area shape="rect" coords="346,89,458,177" href="#" onclick=" return false;" title="Clifford Curzon" alt="Clifford Curzon" />
+                          <area shape="rect" coords="459,89,574,177" href="#" onclick=" return false;" title="Claudio Arrau" alt="Claudio Arrau" />
+                          <area shape="rect" coords="575,89,689,177" href="#" onclick=" return false;" title="Lazar Berman" alt="Lazar Berman" />
 
-                          <area shape="rect" coords="1,177,115,266" href="#" title="Grigory Sokolov" alt="Grigory Sokolov" />
-                          <area shape="rect" coords="115,177,229,266" href="#" title="Daniel Barenboim" alt="Daniel Barenboim" />
-                          <area shape="rect" coords="230,177,345,266" href="#" title="Murray Perahia" alt="Murray Perahia" />
-                          <area shape="rect" coords="346,177,458,266" href="#" title="Martha Argerich" alt="Martha Argerich" />
-                          <area shape="rect" coords="459,177,574,266" href="#" title="Krystian Zimerman" alt="Krystian Zimerman" />
-                          <area shape="rect" coords="575,177,689,266" href="#" title="Stephen Hough" alt="Stephen Hough" />
+                          <area shape="rect" coords="1,177,115,266" href="#" onclick=" return false;" title="Grigory Sokolov" alt="Grigory Sokolov" />
+                          <area shape="rect" coords="115,177,229,266" href="#" onclick=" return false;" title="Daniel Barenboim" alt="Daniel Barenboim" />
+                          <area shape="rect" coords="230,177,345,266" href="#" onclick=" return false;" title="Murray Perahia" alt="Murray Perahia" />
+                          <area shape="rect" coords="346,177,458,266" href="#" onclick=" return false;" title="Martha Argerich" alt="Martha Argerich" />
+                          <area shape="rect" coords="459,177,574,266" href="#" onclick=" return false;" title="Krystian Zimerman" alt="Krystian Zimerman" />
+                          <area shape="rect" coords="575,177,689,266" href="#" onclick=" return false;" title="Stephen Hough" alt="Stephen Hough" />
 
-                          <area shape="rect" coords="1,267,115,356" href="#" title="Marc-André Hamelin" alt="Marc-André Hamelin" />
-                          <area shape="rect" coords="115,267,229,356" href="#" title="Fazil Say" alt="Fazil Say" />
-                          <area shape="rect" coords="230,267,345,356" href="#" title="Lang Lang" alt="Lang Lang" />
-                          <area shape="rect" coords="346,267,458,356" href="#" title="Leif Ove Andsnes" alt="Leif Ove Andsnes" />
-                          <area shape="rect" coords="459,266,574,356" href="#" title="Jean-Efflam Bavouzet" alt="Jean-Efflam Bavouzet" />
-                          <area shape="rect" coords="575,266,689,356" href="#" title="Daniil Trifonov" alt="Daniil Trifonov" />
+                          <area shape="rect" coords="1,267,115,356" href="#" onclick=" return false;" title="Marc-André Hamelin" alt="Marc-André Hamelin" />
+                          <area shape="rect" coords="115,267,229,356" href="#" onclick=" return false;" title="Fazil Say" alt="Fazil Say" />
+                          <area shape="rect" coords="230,267,345,356" href="#" onclick=" return false;" title="Lang Lang" alt="Lang Lang" />
+                          <area shape="rect" coords="346,267,458,356" href="#" onclick=" return false;" title="Leif Ove Andsnes" alt="Leif Ove Andsnes" />
+                          <area shape="rect" coords="459,266,574,356" href="#" onclick=" return false;" title="Jean-Efflam Bavouzet" alt="Jean-Efflam Bavouzet" />
+                          <area shape="rect" coords="575,266,689,356" href="#" onclick=" return false;" title="Daniil Trifonov" alt="Daniil Trifonov" />
 
                         </map>
                       </div>

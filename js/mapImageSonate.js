@@ -69,10 +69,36 @@ function calculFacteurMultiplicatifEtReconstruitLaMap(){
     }
 }
 
-$(document).ready(function(){
-    calculFacteurMultiplicatifEtReconstruitLaMap();
-});  
+// Detection des appareils mobiles
+function detectmob() { 
+    // Detecte si appareil mobile rend le scroll à la main possible
+    return 'ontouchstart' in window; 
+}
 
+// Pour rendre visible les titles de la map sur appareils mobiles (simule le hover (effet clic))
+function showTitle(area, x, y) {
+    if(detectmob() == true) {
+        
+        $('#afficheConteneurTitleMapImgPourMobile p').html(area.title);
+        $('#afficheConteneurTitleMapImgPourMobile').css("top", y);
+        var newLeft = x - $("#corps").offset().left - ($('#afficheConteneurTitleMapImgPourMobile p').width()/2);
+        $('#afficheConteneurTitleMapImgPourMobile').css("left", newLeft);
+        $("#afficheConteneurTitleMapImgPourMobile").fadeIn(); 
+
+        setTimeout(function() { 
+            $("#afficheConteneurTitleMapImgPourMobile").fadeOut(); 
+        }, 2000);
+    }
+}
+
+
+$(document).ready(function(){
+    // Pour rendre visible les titles de la map sur appareils mobiles (simule le hover (effet clic))
+    var forTitleMapWhosWho = document.getElementById("mapSonate");
+    forTitleMapWhosWho.addEventListener("click", function(e) {
+        showTitle(e.target, e.pageX, e.pageY);
+    });
+});  
 
 // onresize specific, on applique les chgm generaux + ceux liés à la map whoswho
 window.onresize = function() {

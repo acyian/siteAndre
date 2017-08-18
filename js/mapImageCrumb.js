@@ -61,10 +61,10 @@ function calculFacteurMultiplicatifEtReconstruitLaMap(){
     }
 }
 
+
 $(document).ready(function(){
     calculFacteurMultiplicatifEtReconstruitLaMap();
 });  
-
 
 // onresize specific, on applique les chgm generaux + ceux liés à la map whoswho
 window.onresize = function() {

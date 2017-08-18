@@ -23,7 +23,7 @@
                    success: function(data) {
                      $("#header").html(data);
                      $("#quizz").addClass("active"); /*a changer en fonction de la page*/
-					 design_menus_responsive();
+					 update_design_when_header_loaded();
                      calculFacteurMultiplicatifEtReconstruitLaMap(); /*TODO => a mettre quand on utilise une balise <map> dans le document*/
                   }
                 });

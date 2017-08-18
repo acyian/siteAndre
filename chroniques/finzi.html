@@ -23,7 +23,7 @@
            success: function(data) {
               $("#header").html(data);
               $("#tiresdeloubli").addClass("active"); /*a changer en fonction de la page*/
-             design_menus_responsive();
+             update_design_when_header_loaded();
           }
         });
       });

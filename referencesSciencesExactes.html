@@ -7,30 +7,38 @@
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
   <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer + class "active" (pour lien menu)
     $(function(){
       $(function(){
         $.ajax({
-           url: "template/header.html",
-           dataType: "html",
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
            success: function(data) {
              $("#header").html(data);
+             update_design_when_header_loaded();
           }
         });
       });
-      $("#footer").load("template/footer.html", update_design); 
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
 
         <div id="corps">
 
@@ -47,29 +55,29 @@
 
                 <p>Sites de références en sciences exactes :</p>
 
-                <ul class="miniListCorps">
+                <ul class="miniListCorps listReferences">
                   <li>
-                    <a href="http://www.wolframscience.com/">http://www.wolframscience.com/</a><br/>
+                    <a href="http://www.wolframscience.com/">http://www.wolframscience.com/</a>
                     Le site de Stephen Wolfram, de NKS (A New Kind of Science) &amp; de Mathematica.
                   </li>
                   <li>
-                    <a href="http://mathworld.wolfram.com/">http://mathworld.wolfram.com/</a><br/>
+                    <a href="http://mathworld.wolfram.com/">http://mathworld.wolfram.com/</a>
                     Une encyclopédie mathématique en ligne.
                   </li>
                   <li>
-                    <a href="http://www.mathpages.com/">http://www.mathpages.com/</a><br/>
+                    <a href="http://www.mathpages.com/">http://www.mathpages.com/</a>
                     Un site étonnant tenu par Kevin Brown concernant des problèmes de mathématiques et de physique, tous vus par l'autre bout de la lorgnette.
                   </li>
                   <li>
-                    <a href="http://www.cs.auckland.ac.nz/~chaitin/">http://www.cs.auckland.ac.nz/~chaitin/</a><br/>
+                    <a href="http://www.cs.auckland.ac.nz/~chaitin/">http://www.cs.auckland.ac.nz/~chaitin/</a>
                     Le site personnel de Greg Chaitin, un mathématicien pas comme les autres.
                   </li>
                   <li>
-                    <a href="http://motionmountain.dse.nl/">http://motionmountain.dse.nl/</a><br/>
+                    <a href="http://motionmountain.dse.nl/">http://motionmountain.dse.nl/</a>
                     A free physics textbook par Christoph Schiller.
                   </li>
                   <li>
-                    <a href="http://www2.lifl.fr/~delahaye/">http://www2.lifl.fr/~delahaye/ </a><br/>
+                    <a href="http://www2.lifl.fr/~delahaye/">http://www2.lifl.fr/~delahaye/ </a>
                     Le site personnel de Jean Paul Delahaye, bien connu des lecteurs de "Pour la Science".
                   </li>
                 </ul>

@@ -7,36 +7,44 @@
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
   <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
       $(function(){
         $.ajax({
-           url: "../template/header.html",
-           dataType: "html",
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
            success: function(data) {
              $("#header").html(data);
              $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
           }
         });
       });
-      $("#footer").load("../template/footer.html", update_design); 
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
 
-        <nav class="menuLateralAncres">
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
             <ul>
                 <li>
-                    <a id="ancreEvolutionFormule" href="#evolutionFormule" class="linavMenu active">
+                    <a id="ancreEvolutionFormule" href="#evolutionFormule" class="linavMenu">
                     <span>Evolution de la formule du concert à 5</span>
                     </a>
                 </li>
@@ -248,15 +256,17 @@
 
     <!-- Effet smooth ancres -->
     <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
 
     <!-- TODO -->
     <!-- ATTENTION ! SI PLUS OU EGAL A 4 TITRES H4 dans un fichier, ALORS on RAJOUTE:
-        - un menu nav (class="menuLateralAncres")
+        - un menu nav (id="menuLateralAncres")
         - un sommaire (class="sommaire") 
         => IL VA DE SOI que TOUS les titres H4 doivent correspondre au titre du menu nav mais aussi du menu sommaire 
       AUSSI: un H4 DOIT OBLIGATOIREMENT etre entouré d'un DIV avec un id (pas d'espace, ni tiret, ni accent; commence par une minuscule et utilisation de majuscule lors de mots differents (ex: <div id="quintettesIciAilleurs"><h4>Quintettes d'ici et d'ailleurs</h4> <p>blala</p> </div>)) correspondant au titre h4 
         => cette div DOIT CONTENIR le titre H4 et le contenu en rapport avec ce titre
-      NE PAS OUBLIER EGALEMENT DE RAJOUTER l'appel au fichier javascript au dessus du body qui gère les ancres (si plus ou egal à 4 titres H4): <script src="../js/onclick.js"></script> -->
+      NE PAS OUBLIER EGALEMENT DE RAJOUTER l'appel au fichier javascript au dessus du body qui gère les ancres (si plus ou egal à 4 titres H4): <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script> -->
 
 </body>
 </html>

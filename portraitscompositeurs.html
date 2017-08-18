@@ -3,36 +3,44 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Compositeurs actuels</title>
+  <title>Compositeurs contemporains</title>
   <meta name="description" content="Portraits de quelques grands compositeurs actuels" />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
   <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer + class "active" (pour lien menu)
     $(function(){
       $(function(){
         $.ajax({
-           url: "template/header.html",
-           dataType: "html",
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
            success: function(data) {
              $("#header").html(data);
              $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
           }
         });
       });
-      $("#footer").load("template/footer.html", update_design); 
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
 
         <div id="corps">
 
@@ -64,7 +72,7 @@
                         <select id="sortByFiltreOrdreAlphaNameAndFirstName" rel="nofollow">
                             <option value="defaut">défaut</option>
                             <option value="noms">noms</option>
-                            <option value="prenoms">prénoms</option>
+                            <!-- <option value="prenoms">prénoms</option> -->
                         </select>
                     </div>
 
@@ -72,12 +80,12 @@
                       <label><span>Afficher en</span></label>
                         <figure>
                           <a href="#" id="iconeGalerie" onClick="changeClassProduits(this.id); return false;">
-                            <img src="images/affichageEnGalerie.png" title="galerie d'image" alt="Galerie d'image">
+                            <img src="images/affichageEnGalerie.png" title="galerie d'images" alt="galerie d'images">
                           </a>
                         </figure>
                         <figure>
                           <a href="#" id="iconeListe" onClick="changeClassProduits(this.id); return false;">
-                            <img src="images/affichageEnListe.png" title="Liste" alt="Liste">
+                            <img src="images/affichageEnListe.png" title="liste" alt="liste">
                           </a>
                         </figure>
                     </div>
@@ -94,7 +102,7 @@
                         </li>
                         <li class="THcomposContemporains">
                           <a href="chroniques/Glass.html">
-                            <img src="images/Glass/Glass.jpg" alt="Philip Glass">
+                            <img src="images/glass/glass.jpg" alt="Philip Glass">
                             <span class="firstNameCompoContemporain">Philip</span> <span class="nameCompoContemporain">Glass</span>
                           </a>
                           <small> (15/04/2008, rév. 05/07/2014) </small>
@@ -305,6 +313,10 @@
 
     <script src="js/chroniques.js"></script>
     <script src="js/affichageGalerieOuListe.js"></script>
+
+    <!-- TODO -->
+    <!-- ATTENTION !!!! LORSQU'ON SE RETROUVE SUR UNE PAGE AVEC UNE POSSIBILITE D'AFFICHAGE EN VUE GALERIE, 
+    tel que, par exemple, dans la page: "compositeurs contemporains"( ici même) et "tour du monde" => TOUTES LES IMAGES DOIVENT FAIRE LA MEME TAILLE ( pr portraitscompositeurs.html (ou compositeurs contemporains c'est pareil), j'ai recrée toutes les images avec un width= 215px et un height à 250px) (pour un super joli affichage en responsive! :) -->
 
 </body>
 

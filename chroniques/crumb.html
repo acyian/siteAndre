@@ -7,31 +7,40 @@
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
   <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
       $(function(){
         $.ajax({
-           url: "../template/header.html",
-           dataType: "html",
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
            success: function(data) {
              $("#header").html(data);
              $("#portraitscompositeurs").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+             calculFacteurMultiplicatifEtReconstruitLaMap(); /*TODO => a mettre quand on utilise une balise <map> dans le document*/
           }
         });
       });
-      $("#footer").load("../template/footer.html", update_design); 
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
 
         <div id="corps">
 
@@ -68,28 +77,30 @@
                   <div class="conteneurImages">
                     <div>
                       <figure>
-                        <img src="../images/crumb/catalogue.jpg" usemap="#Map" alt="Catalogue Musical Crumb" />
+                        <img id="mapImgCrumb" src="../images/crumb/catalogue.jpg" width="692" usemap="#mapCrumb" alt="Catalogue Musical Crumb" />
                         <figcaption>Cliquez sur l'album pour écouter des extraits (Le n°14 est absent, c'est un DVD)</figcaption>
                       </figure>
                     </div>
+
+                    <div id="afficheConteneurTitleMapImgPourMobile"><p></p></div>
   
-                    <map name="Map" id="Map">
-                      <area shape="rect" coords="1,1,173,173" href="http://www.prestoclassical.co.uk/r/Bridge/BCD9028" target="_blank" title="Volume 1" alt="Volume 1" />
-                      <area shape="rect" coords="174,1,346,173" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9069" target="_blank" title="Volume 2" alt="Volume 2" />
-                      <area shape="rect" coords="347,1,519,173" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9095" target="_blank" title="Volume 3" alt="Volume 3" />
-                      <area shape="rect" coords="520,1,692,173" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9105" target="_blank" title="Volume 4" alt="Volume 4" />
-                      <area shape="rect" coords="1,174,173,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9113" target="_blank" title="Volume 5" alt="Volume 5" />
-                      <area shape="rect" coords="174,174,346,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9127" target="_blank" title="Volume 6" alt="Volume 6" />
-                      <area shape="rect" coords="347,174,519,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9139" target="_blank" title="Volume 7" alt="Volume 7" />
-                      <area shape="rect" coords="519,174,692,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9155" target="_blank" title="Volume 8" alt="Volume 8" />
-                      <area shape="rect" coords="1,347,173,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9170" target="_blank" title="Volume 9" alt="Volume 9" />
-                      <area shape="rect" coords="174,347,346,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9218A%252FB" target="_blank" title="Volume 10" alt="Volume 10" />
-                      <area shape="rect" coords="347,347,519,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9253" target="_blank" title="Volume 11" alt="Volume 11" />
-                      <area shape="rect" coords="519,347,692,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9261" target="_blank" title="Volume 12" alt="Volume 12" />
-                      <area shape="rect" coords="1,520,173,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9275A%252FB" target="_blank" title="Volume 13" alt="Volume 13" />
-                      <area shape="rect" coords="174,520,346,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9335" target="_blank" title="Volume 15" alt="Volume 15" />
-                      <area shape="rect" coords="347,520,519,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9413" target="_blank" title="Volume 16" alt="Volume 16" />
-                      <area shape="rect" coords="519,520,692,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9445" target="_blank" title="Volume 17" alt="Volume 17" />
+                    <map name="mapCrumb" id="mapCrumb">
+                      <area shape="rect" coords="1,1,173,173" href="http://www.prestoclassical.co.uk/r/Bridge/BCD9028" onclick=" return false;" target="_blank" title="Volume 1" alt="Volume 1" />
+                      <area shape="rect" coords="174,1,346,173" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9069" onclick=" return false;" target="_blank" title="Volume 2" alt="Volume 2" />
+                      <area shape="rect" coords="347,1,519,173" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9095" onclick=" return false;" target="_blank" title="Volume 3" alt="Volume 3" />
+                      <area shape="rect" coords="520,1,692,173" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9105" onclick=" return false;" target="_blank" title="Volume 4" alt="Volume 4" />
+                      <area shape="rect" coords="1,174,173,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9113" onclick=" return false;" target="_blank" title="Volume 5" alt="Volume 5" />
+                      <area shape="rect" coords="174,174,346,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9127" onclick=" return false;" target="_blank" title="Volume 6" alt="Volume 6" />
+                      <area shape="rect" coords="347,174,519,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9139" onclick=" return false;" target="_blank" title="Volume 7" alt="Volume 7" />
+                      <area shape="rect" coords="519,174,692,347" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9155" onclick=" return false;" target="_blank" title="Volume 8" alt="Volume 8" />
+                      <area shape="rect" coords="1,347,173,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9170" onclick=" return false;" target="_blank" title="Volume 9" alt="Volume 9" />
+                      <area shape="rect" coords="174,347,346,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9218A%252FB" onclick=" return false;" target="_blank" title="Volume 10" alt="Volume 10" />
+                      <area shape="rect" coords="347,347,519,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9253" onclick=" return false;" target="_blank" title="Volume 11" alt="Volume 11" />
+                      <area shape="rect" coords="519,347,692,520" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9261" onclick=" return false;" target="_blank" title="Volume 12" alt="Volume 12" />
+                      <area shape="rect" coords="1,520,173,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9275A%252FB" onclick=" return false;" target="_blank" title="Volume 13" alt="Volume 13" />
+                      <area shape="rect" coords="174,520,346,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9335" onclick=" return false;" target="_blank" title="Volume 15" alt="Volume 15" />
+                      <area shape="rect" coords="347,520,519,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9413" onclick=" return false;" target="_blank" title="Volume 16" alt="Volume 16" />
+                      <area shape="rect" coords="519,520,692,692" href="http://www.prestoclassical.co.uk/r/Bridge/BRIDGE9445" onclick=" return false;" target="_blank" title="Volume 17" alt="Volume 17" />
                     </map>
                   </div>
                 
@@ -198,4 +209,7 @@
     </div>
 
 </body>
+
+    <!--Construction Map Image-->
+    <script src="../js/mapImageCrumb.js"></script>
 </html>

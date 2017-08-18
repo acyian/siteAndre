@@ -7,30 +7,38 @@
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
   <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer + class "active" (pour lien menu)
     $(function(){
       $(function(){
         $.ajax({
-           url: "template/header.html",
-           dataType: "html",
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
            success: function(data) {
              $("#header").html(data);
+             update_design_when_header_loaded();
           }
         });
       });
-      $("#footer").load("template/footer.html", update_design); 
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
 
         <div id="corps">
 
@@ -47,13 +55,13 @@
 
                 <p>Sites musicaux :</p>
 
-                <ul class="miniListCorps">
+                <ul class="miniListCorps listReferences">
                   <li>
-                    <a href="http://jmomusique.skynetblogs.be/">http://jmomusique.skynetblogs.be/</a><br/> 
+                    <a href="http://jmomusique.skynetblogs.be/">http://jmomusique.skynetblogs.be/</a>
                     Le blog de Jean-Marc Onkelinx, musicologue liégeois.
                   </li>
                   <li>
-                    <a href="http://frederic-rossille.net/keyw_fr.html">http://frederic-rossille.net/keyw_fr.html</a><br/>
+                    <a href="http://frederic-rossille.net/keyw_fr.html">http://frederic-rossille.net/keyw_fr.html</a>
                     Le site de Frédéric Rossille, chercheur et musicien français.
                   </li>
                 </ul>

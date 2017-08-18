@@ -2,102 +2,147 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Billets d'humeur</title>
-  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences ou vous cherchez des musiques rares ou contemporaines, vous êtes à la bonne adresse!" />
+  <title>Présentation | Manifeste constructiviste</title>
+  <meta name="description" content="Vous cherchez à comprendre le point de vue constructiviste en sciences, vous êtes à la bonne adresse!" />
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
   <script src="js/design.js"></script>
   <script> 
     // Inclusion Header et Footer + class "active" (pour lien menu)
     $(function(){
       $(function(){
         $.ajax({
-           url: "template/header.html",
-           dataType: "html",
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
            success: function(data) {
              $("#header").html(data);
-             $("#billetdhumeur").addClass("active"); /*a changer en fonction de la page*/
+             $("#contenuphysique").addClass("active"); /*a changer en fonction de la page*/
+             design_menus_responsive();
           }
         });
       });
-      $("#footer").load("template/footer.html", update_design); 
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
+            <ul>
+                <li>
+                    <a id="ancreSeminairesInfo" href="#seminairesInfo" class="linavMenu active">
+                    <span>Séminaires relatifs à la théorie de l'information</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreIntroChao" href="#introChao" class="linavMenu">
+                    <span>Introduction à la théorie analytique du chaos déterministe</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreAccelerationConvergenceNumerique" href="#accelerationConvergenceNumerique" class="linavMenu">
+                    <span>Cours sur l'Accélération de la convergence numérique</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ancreChroniquesEparsesPhys" href="#chroniquesEparsesPhys" class="linavMenu">
+                    <span>Chroniques éparses</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <div id="corps">
 
             <div id="contenuPrincipal">
-        <h2>Section Math-Phys-Info</h2>
-      <h3>Manifeste constructiviste</h3>
+              <h2>Présentation de la section physique</h2>
+              <h3>Manifeste constructiviste</h3>
 
-                <nav class="filAriane">
-          <ul>
-            <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
-            <li class="breadcrumbItem  breadcrumIitem--current">Présentation</li> <!-- a changer en fonction de la page -->
-          </ul>
-        </nav>
-        
-        
-  
-  <p>Le constructivisme prend sa source, en mathématiques, dans le cadre d'un vaste débat, initialement largement philosophique, tournant autour des notions de continuité et d'infinitude.  Cantor, Brouwer, Poincaré et Hilbert furent quelques protagonistes célèbres.  Le débat a rebondi vers 1930, suite aux travaux de Gödel puis de Turing, et l'avènement de l'informatique théorique a fait le reste : il n'est désormais plus possible d'ignorer les limites naturelles de la calculabilité. </p>
-  
-<p>La physique tarde cependant à emboîter le pas.   Pourtant une théorie ambitionnant de décrire le Monde sensible doit permettre le calcul de toute grandeur représentative des systèmes étudiés au moyen d'un algorithme qui se termine.</p>
-<p>La Physique classique est analogique, basée sur le dogme du "Tout est continu" et le discret n'y est présent que par pur opportunisme calculatoire.  Si la Physique était digitale, elle serait basée sur le principe du "Tout est discret" et le continu n'y serait présent que pour les mêmes raisons !</p>
-<p>La situation n'est pas fondamentalement différente en Physique quantique : elle était effectivement constructive à ses origines (Mécanique des Matrices de Heisenberg) et c'est par simple opportunisme calculatoire que la méthode de Schrödinger a fait fortune en réintroduisant le continu.  Essayez de calculer le spectre de l'atome d'hydrogène dans la théorie d'Heisenberg : c'est possible, cela a été fait mais c'est un parcours du combattant.  Pourtant, Feynman, dans ses célèbres "Lectures on Physics" considérait que la présentation de Schrödinger était dépassée et ne devrait plus être enseignée telle quelle. </p>
-<p>Si l'on adopte le point de vue constructiviste, la Physique théorique doit être digitale et c'est la Théorie de l'Information qui offre le cadre idéal pour son développement.  Vous trouverez sur ce site quelques séminaires d'initiation aux méthodes constructivistes. </p>
+              <nav class="filAriane">
+                <ul>
+                  <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique</li>
+                  <li class="breadcrumbItem  breadcrumIitem--current">Présentation</li> <!-- a changer en fonction de la page -->
+                </ul>
+              </nav>
 
+              <div class="sommaire">
+                <div class="sommaireTitle">
+                    <h6>Sommaire</h6>
+                    <a role="button" tabindex="0" class="sommaireLink">[ afficher ]</a>
+                </div>
 
-<h2>Séminaires relatifs à la théorie de l'information.</h2>
-<p>Ces Séminaires se répartissent comme suit (PDF disponibles) :</p>
+                <ul class="linksSummary">
+                    <li><a href="#seminairesInfo">Séminaires relatifs à la théorie de l'information</a></li>
+                    <li><a href="#introChao">Introduction à la théorie analytique du chaos déterministe</a></li>
+                    <li><a href="#accelerationConvergenceNumerique">Cours sur l'Accélération de la convergence numérique</a></li>
+                    <li><a href="#chroniquesEparsesPhys">Chroniques éparses</a></li>
+                </ul>
+              </div> 
+           
+              <p>Le constructivisme prend sa source, en mathématiques, dans le cadre d'un vaste débat, initialement largement philosophique, tournant autour des notions de continuité et d'infinitude.  Cantor, Brouwer, Poincaré et Hilbert furent quelques protagonistes célèbres.  Le débat a rebondi vers 1930, suite aux travaux de Gödel puis de Turing, et l'avènement de l'informatique théorique a fait le reste : il n'est désormais plus possible d'ignorer les limites naturelles de la calculabilité. </p>
+              <p>La physique tarde cependant à emboîter le pas.   Pourtant une théorie ambitionnant de décrire le Monde sensible doit permettre le calcul de toute grandeur représentative des systèmes étudiés au moyen d'un algorithme qui se termine.</p>
+              <p>La Physique classique est analogique, basée sur le dogme du "Tout est continu" et le discret n'y est présent que par pur opportunisme calculatoire.  Si la Physique était digitale, elle serait basée sur le principe du "Tout est discret" et le continu n'y serait présent que pour les mêmes raisons !</p>
+              <p>La situation n'est pas fondamentalement différente en Physique quantique : elle était effectivement constructive à ses origines (Mécanique des Matrices de Heisenberg) et c'est par simple opportunisme calculatoire que la méthode de Schrödinger a fait fortune en réintroduisant le continu.  Essayez de calculer le spectre de l'atome d'hydrogène dans la théorie d'Heisenberg : c'est possible, cela a été fait mais c'est un parcours du combattant.  Pourtant, Feynman, dans ses célèbres "Lectures on Physics" considérait que la présentation de Schrödinger était dépassée et ne devrait plus être enseignée telle quelle. </p>
+              <p>Si l'on adopte le point de vue constructiviste, la Physique théorique doit être digitale et c'est la Théorie de l'Information qui offre le cadre idéal pour son développement.  Vous trouverez sur ce site quelques séminaires d'initiation aux méthodes constructivistes. </p>
 
-    <p>I. La Tétralogique : une présentation accessible, en un Prologue et Trois Parties, des Fondements comparés des Mathématiques Formalistes et Constructivistes, suivie d'un Essai de Dynamique Récursive.</p>
-    <p>II. Les Bases de la Théorie Classique de l'Information, aux sens de Kolmogorov puis de Shannon, suivies d'un Essai de Thermodynamique Buissonnière.</p>
-    <p>III. Les Bases de la Théorie Quantique de l'Information : Théorie et Applications.</p>
-    
-<h2>Introduction à la théorie analytique du chaos déterministe.</h2>
+              <div id="seminairesInfo">
+                <h4>Séminaires relatifs à la théorie de l'information</h4>
 
+                <p>Ces Séminaires se répartissent comme suit (PDF disponibles) :</p><br/>
 
-<p>La théorie du chaos déterministe est un autre sujet à la mode.  Son étude numérique a connu des développements considérables parfaitement relatés dans quelques ouvrages devenus des classiques du genre. Il serait parfaitement ridicule que nous cherchions à leur faire concurrence.</p>
-
-<p>Son étude analytique est, par contre, à la traîne. Depuis les premiers travaux de Tabor (et collaborateurs divers, Weiss, Goriely, etc), aucun progrès notable n'a été enregistré depuis 20 ans, à l'exception sans doute des travaux de l'école de Bountis. Le peu qui soit connu n'est même pas diffusé largement. C'est plutôt cette lacune que nous cherchons à combler modestement.</p>
-
-<p>Il est impossible de le faire sans insister sur certains aspects de la théorie des fonctions de variables complexes, largement sous traitées dans les cursus universitaires (je ne parle pas du calcul des résidus ou des transformations conformes mais plutôt des notions de singularités dans le plan complexe, de prolongements analytiques, de temps complexe, etc).</p>
-
-<p>Deux séminaires sont projetés et seul le premier est actuellement disponible, qui expose les pathologies des équations différentielles ordinaires :</p>
-
- 
-<p>
-I. La machinerie analytique du chaos déterministe : Pathologies des équations différentielles ordinaires. (PDF disponible)</p>
-<p>
-II. La machinerie analytique du chaos déterministe : Le chaos, royaume des conditions nécessaires ou suffisantes. (Indisponible)</p>
-
-
-<p>En complément, un troisième séminaire est disponible, qui traite du sujet scandaleusement négligé dans l'enseignement universitaire de la théorie de Sophus Lie. Seule la partie réservée aux équations différentielles ordinaires est écrite :</p>
-
-<p>III. Etude des symétries des équations différentielles ordinaires. (PDF disponible) 
-<div>(Complément : Notebook Mathematica)</div></p>
-
-<p>IV. Etude des symétries des équations aux différences finies (récurrences). (Indisponible) </p>
-
-
-<h2>Cours sur l'Accélération de la convergence numérique.</h2>
-<p>Ce cours, enseigné en son temps par l'auteur aux étudiants en sciences physiques de l'Université de Liège, est entièrement basé sur l'étude des équations aux différences finies (récurrences).  A ce titre, il respecte évidemment le point de vue constructiviste, ce que ne fait pas la théorie des équations différentielles où les variables varient continûment. (PDF disponible)</p>
-
-
-<h2>Chroniques éparses.</h2>
-<p>Un ensemble  d'articles courts traitant de sujets épars, situés à l'intersection des mathématiques, de la physique et de l'informatique théorique. Des Notebook Mathematica sont éventuellement joints.</p>
-
-
+                <ul class="miniListCorps">
+                  <li>I. La Tétralogique : une présentation accessible, en un Prologue et Trois Parties, des Fondements comparés des Mathématiques Formalistes et Constructivistes, suivie d'un Essai de Dynamique Récursive.</li>
+                  <li>II. Les Bases de la Théorie Classique de l'Information, aux sens de Kolmogorov puis de Shannon, suivies d'un Essai de Thermodynamique Buissonnière.</li>
+                  <li>III. Les Bases de la Théorie Quantique de l'Information : Théorie et Applications.</li>
+                </ul>
               </div>
+
+              <div id="introChao">
+                <h4>Introduction à la théorie analytique du chaos déterministe</h4>
+
+                <p>La théorie du chaos déterministe est un autre sujet à la mode.  Son étude numérique a connu des développements considérables parfaitement relatés dans quelques ouvrages devenus des classiques du genre. Il serait parfaitement ridicule que nous cherchions à leur faire concurrence.</p>
+                <p>Son étude analytique est, par contre, à la traîne. Depuis les premiers travaux de Tabor (et collaborateurs divers, Weiss, Goriely, etc), aucun progrès notable n'a été enregistré depuis 20 ans, à l'exception sans doute des travaux de l'école de Bountis. Le peu qui soit connu n'est même pas diffusé largement. C'est plutôt cette lacune que nous cherchons à combler modestement.</p>
+                <p>Il est impossible de le faire sans insister sur certains aspects de la théorie des fonctions de variables complexes, largement sous traitées dans les cursus universitaires (je ne parle pas du calcul des résidus ou des transformations conformes mais plutôt des notions de singularités dans le plan complexe, de prolongements analytiques, de temps complexe, etc).</p>
+                <p>Deux séminaires sont projetés et seul le premier est actuellement disponible, qui expose les pathologies des équations différentielles ordinaires :</p>
+
+                <ul class="miniListCorps">
+                  <li>I. La machinerie analytique du chaos déterministe : Pathologies des équations différentielles ordinaires. (PDF disponible)</li>
+                  <li>II. La machinerie analytique du chaos déterministe : Le chaos, royaume des conditions nécessaires ou suffisantes. (Indisponible)</li>
+                </ul>
+
+                <p>En complément, un troisième séminaire est disponible, qui traite du sujet scandaleusement négligé dans l'enseignement universitaire de la théorie de Sophus Lie. Seule la partie réservée aux équations différentielles ordinaires est écrite :</p>
+
+                <ul class="miniListCorps">
+                  <li>III. Etude des symétries des équations différentielles ordinaires.(PDF disponible)(Complément : Notebook Mathematica)</li>
+                  <li>IV. Etude des symétries des équations aux différences finies (récurrences). (Indisponible) </li>
+                </ul>
+              </div>
+
+              <div id="accelerationConvergenceNumerique">
+                <h4>Cours sur l'Accélération de la convergence numérique</h4>
+
+                <p>Ce cours, enseigné en son temps par l'auteur aux étudiants en sciences physiques de l'Université de Liège, est entièrement basé sur l'étude des équations aux différences finies (récurrences).  A ce titre, il respecte évidemment le point de vue constructiviste, ce que ne fait pas la théorie des équations différentielles où les variables varient continûment. (PDF disponible)</p>
+              </div>
+
+              <div id="chroniquesEparsesPhys">
+                <h4>Chroniques éparses</h4>
+
+                <p>Un ensemble  d'articles courts traitant de sujets épars, situés à l'intersection des mathématiques, de la physique et de l'informatique théorique. Des Notebook Mathematica sont éventuellement joints, en versions active (.nb), si vous disposez personnellement du logiciel Mathematica ou éventuellement de son reader et au format passif (.html) sinon.</p>
+              </div>
+            </div>
 
 
             <a id="ancreRetourHautPage" href="#site">&uarr;</a>
@@ -107,10 +152,10 @@ II. La machinerie analytique du chaos déterministe : Le chaos, royaume des cond
 
         </div>
     
-    
     </div>
 
-    <script src="js/chroniques.js"></script>
+    <!-- Effet smooth ancres -->
+    <script src="js/onclick.js">\r\n    </script><script src="js/anchors.js"></script>
 
 </body>
 </html>

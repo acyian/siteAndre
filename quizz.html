@@ -6,32 +6,41 @@
     <meta name="description" content="Reconnaissez-vous les grands compositeurs qui se cachent dans cet orchestre fictif ?" />
     <link rel="shortcut icon" href="logo.ico" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/menus.js"></script>
     <script src="js/design.js"></script>
+    <script src="js/gestionAudioVideo.js"></script>
     <script>
         // Inclusion Header et Footer 
         $(function(){
             $(function(){
                 $.ajax({
-                   url: "template/header.html",
-                   dataType: "html",
+                   url: "template/header.php",
+				   type: "POST",
+				   data: ({ROOT: './'}),
                    success: function(data) {
                      $("#header").html(data);
-                     $("#quizz").addClass("active");
+                     $("#quizz").addClass("active"); /*a changer en fonction de la page*/
+					 update_design_when_header_loaded();
+                     calculFacteurMultiplicatifEtReconstruitLaMap(); /*TODO => a mettre quand on utilise une balise <map> dans le document*/
                   }
                 });
             });
 
-            $("#footer").load("template/footer.html", update_design); 
+        $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+        $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
         });
     </script>
 </head>
 
-<body>
-  <div id="site">
+<body id="site">
+  <div id="whoswho">
     <!-- Inclusion header -->
     <div id="header"></div>
+
+    <div id="miniMenus"></div>
 
     <div id="corps">
 
@@ -39,75 +48,78 @@
             <h2>Who's who ?</h2>
             <h3>Les (re)connaissez-vous ?</h3>
             
-            <div>
+            <div class="conteneurImages">
                 <div>
                     <figure>          
-                        <img src="images/orchestre700.jpg" width="700" height="508" usemap="#Map" alt="orchestre" />
+                        <img id="mapImgWhosWho" src="images/orchestre700.jpg" width="700" usemap="#mapWhosWho" alt="orchestre" />
                     </figure>
                 </div>
             </div>
-            <map name="Map" id="Map">
-                <area shape="rect" coords="72,18,119,71" href="#" title="Wagner" alt="Wagner" />
-                <area shape="rect" coords="65,84,107,133" href="#" title="Sibelius" alt="Sibelius" />
-                <area shape="rect" coords="133,332,182,390" href="#" title="Beethoven" alt="Beethoven" />
-                <area shape="rect" coords="296,7,334,66" href="#" title="Poulenc" alt="Poulenc" />
-                <area shape="rect" coords="310,80,356,130" href="#" title="Debussy" alt="Debussy" />
-                <area shape="rect" coords="182,321,220,368" href="#" title="Liszt" alt="Liszt" />
-                <area shape="rect" coords="415,333,447,386" href="#" title="Prokofiev" alt="Prokofiev" />
-                <area shape="rect" coords="538,362,583,409" href="#" title="Fauré" alt="Fauré" />
-                <area shape="rect" coords="541,271,578,317" href="#" title="Schostakovitch" alt="Schostakovitch" />
-                <area shape="rect" coords="437,245,472,297" href="#" title="Mahler" alt="Mahler" />
-                <area shape="rect" coords="430,191,468,234" href="#" title="Milhaud" alt="Milhaud" />
-                <area shape="rect" coords="376,81,415,131" href="#" title="Ravel" alt="Ravel" />
-                <area shape="rect" coords="296,130,343,175" href="#" title="J-S Bach" alt="J-S Bach" />
-                <area shape="rect" coords="304,179,346,230" href="#" title="Moussorgsky" alt="Moussorgsky" />
-                <area shape="rect" coords="251,128,295,179" href="#" title="Vivaldi" alt="Vivaldi" />
-                <area shape="rect" coords="193,83,225,129" href="#" title="Bartok" alt="Bartok" />
-                <area shape="rect" coords="564,37,610,89" href="#" title="Stravinsky" alt="Stravinsky" />
-                <area shape="rect" coords="483,255,526,303" href="#" title="Offenbach" alt="Offenbach" />
-                <area shape="rect" coords="481,87,518,136" href="#" title="de Falla" alt="de Falla" />
-                <area shape="rect" coords="589,89,630,131" href="#" title="Bruckner" alt="Bruckner" />
-                <area shape="rect" coords="233,185,280,234" href="#" title="Franck" alt="Franck" />
-                <area shape="rect" coords="28,223,66,268" href="#" title="Grieg" alt="Grieg" />
-                <area shape="rect" coords="15,160,58,207" href="#" title="Mozart" alt="Mozart" />
-                <area shape="rect" coords="69,142,116,195" href="#" title="Lully" alt="Lully" />
-                <area shape="rect" coords="122,140,164,191" href="#" title="Rameau" alt="Rameau" />
-                <area shape="rect" coords="193,134,235,183" href="#" title="Gluck" alt="Gluck" />
-                <area shape="rect" coords="130,28,185,79" href="#" title="Saint-Saens" alt="Saint-Saens" />
-                <area shape="rect" coords="194,7,238,58" href="#" title="Satie" alt="Satie" />
-                <area shape="rect" coords="354,8,404,62" href="#" title="Villa-Lobos" alt="Villa-Lobos" />
-                <area shape="rect" coords="449,12,503,64" href="#" title="Varese" alt="Varese" />
-                <area shape="rect" coords="129,85,177,134" href="#" title="Gershwin" alt="Gershwin" />
-                <area shape="rect" coords="244,79,289,125" href="#" title="Albeniz" alt="Albeniz" />
-                <area shape="rect" coords="65,204,102,255" href="#" title="Weber" alt="Weber" />
-                <area shape="rect" coords="117,195,158,243" href="#" title="J. Strauss" alt="J. Strauss" />
-                <area shape="rect" coords="179,190,223,239" href="#" title="Puccini" alt="Puccini" />
-                <area shape="rect" coords="84,271,132,320" href="#" title="Schubert" alt="Schubert" />
-                <area shape="rect" coords="134,260,175,308" href="#" title="Schumann" alt="Schumann" />
-                <area shape="rect" coords="181,254,223,312" href="#" title="Brahms" alt="Brahms" />
-                <area shape="rect" coords="240,246,287,297" href="#" title="Rossini" alt="Rossini" />
-                <area shape="rect" coords="304,243,333,280" href="#" title="Mendelssohn" alt="Mendelssohn" />
-                <area shape="rect" coords="362,240,392,278" href="#" title="Dvorak" alt="Dvorak" />
-                <area shape="rect" coords="315,280,385,324" href="#" title="Berlioz" alt="Berlioz" />
-                <area shape="rect" coords="244,315,279,368" href="#" title="Chopin" alt="Chopin" />
-                <area shape="rect" coords="282,333,315,371" href="#" title="Bizet" alt="Bizet" />
-                <area shape="rect" coords="352,332,392,379" href="#" title="Janacek" alt="Janacek" />
-                <area shape="rect" coords="477,350,509,397" href="#" title="Webern" alt="Webern" />
-                <area shape="rect" coords="594,279,632,331" href="#" title="Verdi" alt="Verdi" />
-                <area shape="rect" coords="401,248,435,291" href="#" title="R. Strauss" alt="R. Strauss" />
-                <area shape="rect" coords="633,200,678,253" href="#" title="Tschaïkovsky" alt="Tschaïkovsky" />
-                <area shape="rect" coords="593,184,624,229" href="#" title="Berg" alt="Berg" />
-                <area shape="rect" coords="552,211,590,258" href="#" title="Hindemith" alt="Hindemith" />
-                <area shape="rect" coords="484,199,528,243" href="#" title="Honegger" alt="Honegger" />
-                <area shape="rect" coords="558,149,592,195" href="#" title="A. Scarlatti" alt="A. Scarlatti" />
-                <area shape="rect" coords="506,142,551,191" href="#" title="F. Couperin" alt="F. Couperin" />
-                <area shape="rect" coords="435,136,474,184" href="#" title="J. Haydn" alt="J. Haydn" />
-                <area shape="rect" coords="371,132,410,175" href="#" title="Haendel" alt="Haendel" />
-                <area shape="rect" coords="360,179,406,232" href="#" title="Rimsky-Korsakov" alt="Rimsky-Korsakov" />
-                <area shape="rect" coords="431,83,466,135" href="#" title="Schoenberg" alt="Schoenberg" />
-                <area shape="rect" coords="539,88,577,138" href="#" title="Britten" alt="Britten" />
-                <area shape="rect" coords="606,131,642,180" href="#" title="Purcell" alt="Purcell" />
-                <area shape="rect" coords="644,132,678,181" href="#" title="Borodine" alt="Borodine" />
+
+            <div id="afficheConteneurTitleMapImgPourMobile"><p></p></div>
+
+            <map name="mapWhosWho" id="mapWhosWho">
+                <area shape="rect" coords="72,18,119,71" href="#" onclick=" return false;" title="Wagner" alt="Wagner" />
+                <area shape="rect" coords="65,84,107,133" href="#" onclick=" return false;" title="Sibelius" alt="Sibelius" />
+                <area shape="rect" coords="133,332,182,390" href="#" onclick=" return false;" title="Beethoven" alt="Beethoven" />
+                <area shape="rect" coords="296,7,334,66" href="#" onclick=" return false;" title="Poulenc" alt="Poulenc" />
+                <area shape="rect" coords="310,80,356,130" href="#" onclick=" return false;" title="Debussy" alt="Debussy" />
+                <area shape="rect" coords="182,321,220,368" href="#" onclick=" return false;" title="Liszt" alt="Liszt" />
+                <area shape="rect" coords="415,333,447,386" href="#" onclick=" return false;" title="Prokofiev" alt="Prokofiev" />
+                <area shape="rect" coords="538,362,583,409" href="#" onclick=" return false;" title="Fauré" alt="Fauré" />
+                <area shape="rect" coords="541,271,578,317" href="#" onclick=" return false;" title="Schostakovitch" alt="Schostakovitch" />
+                <area shape="rect" coords="437,245,472,297" href="#" onclick=" return false;" title="Mahler" alt="Mahler" />
+                <area shape="rect" coords="430,191,468,234" href="#" onclick=" return false;" title="Milhaud" alt="Milhaud" />
+                <area shape="rect" coords="376,81,415,131" href="#" onclick=" return false;" title="Ravel" alt="Ravel" />
+                <area shape="rect" coords="296,130,343,175" href="#" onclick=" return false;" title="J-S Bach" alt="J-S Bach" />
+                <area shape="rect" coords="304,179,346,230" href="#" onclick=" return false;" title="Moussorgsky" alt="Moussorgsky" />
+                <area shape="rect" coords="251,128,295,179" href="#" onclick=" return false;" title="Vivaldi" alt="Vivaldi" />
+                <area shape="rect" coords="193,83,225,129" href="#" onclick=" return false;" title="Bartok" alt="Bartok" />
+                <area shape="rect" coords="564,37,610,89" href="#" onclick=" return false;" title="Stravinsky" alt="Stravinsky" />
+                <area shape="rect" coords="483,255,526,303" href="#" onclick=" return false;" title="Offenbach" alt="Offenbach" />
+                <area shape="rect" coords="481,87,518,136" href="#" onclick=" return false;" title="de Falla" alt="de Falla" />
+                <area shape="rect" coords="589,89,630,131" href="#" onclick=" return false;" title="Bruckner" alt="Bruckner" />
+                <area shape="rect" coords="233,185,280,234" href="#" onclick=" return false;" title="Franck" alt="Franck" />
+                <area shape="rect" coords="28,223,66,268" href="#" onclick=" return false;" title="Grieg" alt="Grieg" />
+                <area shape="rect" coords="15,160,58,207" href="#" onclick=" return false;" title="Mozart" alt="Mozart" />
+                <area shape="rect" coords="69,142,116,195" href="#" onclick=" return false;" title="Lully" alt="Lully" />
+                <area shape="rect" coords="122,140,164,191" href="#" onclick=" return false;" title="Rameau" alt="Rameau" />
+                <area shape="rect" coords="193,134,235,183" href="#" onclick=" return false;" title="Gluck" alt="Gluck" />
+                <area shape="rect" coords="130,28,185,79" href="#" onclick=" return false;" title="Saint-Saens" alt="Saint-Saens" />
+                <area shape="rect" coords="194,7,238,58" href="#" onclick=" return false;" title="Satie" alt="Satie" />
+                <area shape="rect" coords="354,8,404,62" href="#" onclick=" return false;" title="Villa-Lobos" alt="Villa-Lobos" />
+                <area shape="rect" coords="449,12,503,64" href="#" onclick=" return false;" title="Varese" alt="Varese" />
+                <area shape="rect" coords="129,85,177,134" href="#" onclick=" return false;" title="Gershwin" alt="Gershwin" />
+                <area shape="rect" coords="244,79,289,125" href="#" onclick=" return false;" title="Albeniz" alt="Albeniz" />
+                <area shape="rect" coords="65,204,102,255" href="#" onclick=" return false;" title="Weber" alt="Weber" />
+                <area shape="rect" coords="117,195,158,243" href="#" onclick=" return false;" title="J. Strauss" alt="J. Strauss" />
+                <area shape="rect" coords="179,190,223,239" href="#" onclick=" return false;" title="Puccini" alt="Puccini" />
+                <area shape="rect" coords="84,271,132,320" href="#" onclick=" return false;" title="Schubert" alt="Schubert" />
+                <area shape="rect" coords="134,260,175,308" href="#" onclick=" return false;" title="Schumann" alt="Schumann" />
+                <area shape="rect" coords="181,254,223,312" href="#" onclick=" return false;" title="Brahms" alt="Brahms" />
+                <area shape="rect" coords="240,246,287,297" href="#" onclick=" return false;" title="Rossini" alt="Rossini" />
+                <area shape="rect" coords="304,243,333,280" href="#" onclick=" return false;" title="Mendelssohn" alt="Mendelssohn" />
+                <area shape="rect" coords="362,240,392,278" href="#" onclick=" return false;" title="Dvorak" alt="Dvorak" />
+                <area shape="rect" coords="315,280,385,324" href="#" onclick=" return false;" title="Berlioz" alt="Berlioz" />
+                <area shape="rect" coords="244,315,279,368" href="#" onclick=" return false;" title="Chopin" alt="Chopin" />
+                <area shape="rect" coords="282,333,315,371" href="#" onclick=" return false;" title="Bizet" alt="Bizet" />
+                <area shape="rect" coords="352,332,392,379" href="#" onclick=" return false;" title="Janacek" alt="Janacek" />
+                <area shape="rect" coords="477,350,509,397" href="#" onclick=" return false;" title="Webern" alt="Webern" />
+                <area shape="rect" coords="594,279,632,331" href="#" onclick=" return false;" title="Verdi" alt="Verdi" />
+                <area shape="rect" coords="401,248,435,291" href="#" onclick=" return false;" title="R. Strauss" alt="R. Strauss" />
+                <area shape="rect" coords="633,200,678,253" href="#" onclick=" return false;" title="Tschaïkovsky" alt="Tschaïkovsky" />
+                <area shape="rect" coords="593,184,624,229" href="#" onclick=" return false;" title="Berg" alt="Berg" />
+                <area shape="rect" coords="552,211,590,258" href="#" onclick=" return false;" title="Hindemith" alt="Hindemith" />
+                <area shape="rect" coords="484,199,528,243" href="#" onclick=" return false;" title="Honegger" alt="Honegger" />
+                <area shape="rect" coords="558,149,592,195" href="#" onclick=" return false;" title="A. Scarlatti" alt="A. Scarlatti" />
+                <area shape="rect" coords="506,142,551,191" href="#" onclick=" return false;" title="F. Couperin" alt="F. Couperin" />
+                <area shape="rect" coords="435,136,474,184" href="#" onclick=" return false;" title="J. Haydn" alt="J. Haydn" />
+                <area shape="rect" coords="371,132,410,175" href="#" onclick=" return false;" title="Haendel" alt="Haendel" />
+                <area shape="rect" coords="360,179,406,232" href="#" onclick=" return false;" title="Rimsky-Korsakov" alt="Rimsky-Korsakov" />
+                <area shape="rect" coords="431,83,466,135" href="#" onclick=" return false;" title="Schoenberg" alt="Schoenberg" />
+                <area shape="rect" coords="539,88,577,138" href="#" onclick=" return false;" title="Britten" alt="Britten" />
+                <area shape="rect" coords="606,131,642,180" href="#" onclick=" return false;" title="Purcell" alt="Purcell" />
+                <area shape="rect" coords="644,132,678,181" href="#" onclick=" return false;" title="Borodine" alt="Borodine" />
             </map>
             <p>Pour connaître la réponse, promenez la souris !</p>
         </div>
@@ -121,5 +133,13 @@
   </div>
 
 </body>
+
+    <!--Construction Map Image-->
+    <script src="js/mapImageQuizz.js"></script>
+
+    <!-- TODO -->
+    <!-- Pour eviter que la page remonte tout en haut lors du clic sur un lien, il faut rajouter: onclick=" return false;" =>
+    par exemple pour les balises <map> contenant des "areas" qui eux ont obligatoirement des href="", il faut rajouter un onclick=" return false;"
+    -->
 
 </html>

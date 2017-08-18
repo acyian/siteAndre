@@ -7,36 +7,44 @@
     <link rel="shortcut icon" href="logo.ico" />
     <link href="style.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/design.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
     <script>
         // Inclusion Header et Footer 
         $(function(){
             $(function(){
                 $.ajax({
-                   url: "template/header.html",
-                   dataType: "html",
+                   url: "template/header.php",
+				   type: "POST",
+				   data: ({ROOT: './'}),
                    success: function(data) {
                      $("#header").html(data);
                      $("#musique2001").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
                   }
                 });
             });
 
-            $("#footer").load("template/footer.html", update_design); 
+            $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
         });
     </script>
 </head>
 
-<body>
-    <div id="site">
+<body id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
+
+        <div id="miniMenus"></div>
         
-        <nav class="menuLateralAncres">
+        <nav id="menuLateralAncres">
             <ul>
                 <li>
-                    <a id="ancreMultipliciteCourants20emeS" href="#multipliciteCourants20emeS" class="linavMenu active">
+                    <a id="ancreMultipliciteCourants20emeS" href="#multipliciteCourants20emeS" class="linavMenu">
                     <span>La multiplicité des courants artistiques au 20<sup>ème</sup> siècle</span>
                     </a>
                 </li>
@@ -217,7 +225,7 @@
 
                         <div>
                             <figure>
-                                <img id="reneMagritte" src="im2001/duchamp.jpg" alt="Rene Magritte" />
+                                <img src="im2001/duchamp.jpg" alt="Rene Magritte" />
                                 <figcaption>
                                     <h5>Marcel Duchamp</h5>
                                     <h6>Fontaine (1917)</h6>
@@ -696,6 +704,9 @@
 
     <!-- Effet smooth ancres -->
     <script src="js/onclick.js"></script>
+    <script src="js/anchors.js"></script>
+
+
 
 </body>
 

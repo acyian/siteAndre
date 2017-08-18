@@ -7,36 +7,44 @@
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
   <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
       $(function(){
         $.ajax({
-           url: "../template/header.html",
-           dataType: "html",
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
            success: function(data) {
              $("#header").html(data);
              $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
           }
         });
       });
-      $("#footer").load("../template/footer.html", update_design); 
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
 
-        <nav class="menuLateralAncres">
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
             <ul>
                 <li>
-                    <a id="ancreInstrument" href="#instrument" class="linavMenu active">
+                    <a id="ancreInstrument" href="#instrument" class="linavMenu">
                     <span>L'instrument</span>
                     </a>
                 </li>
@@ -349,6 +357,7 @@
 
     <!-- Effet smooth ancres -->
     <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
 
 </body>
 </html>

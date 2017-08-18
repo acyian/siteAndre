@@ -1,7 +1,6 @@
-
-<!-- FUTUR FOOTER -->
+<!-- FOOTER -->
 <div id="contact">
-    <img src="/siteAndre/images/ahautot.jpg" alt="portrait andre hautot" />
+    <img src="<?php echo $_POST['ROOT']; ?>images/ahautot.jpg" alt="portrait andre hautot" />
 	<div>
 		<h3>ANDRE HAUTOT</h3>
 		<h4>Dr. en Physique<br/>Université de Liège<br/>Belgique</h4>
@@ -12,9 +11,9 @@
 <div id="articlesRecents">
 	<h5>ARTICLES RECENTS</h5>
 	<ul>
-		<li><a href="/siteAndre/chroniques/arithmetique.html">Gammes et Tempéraments (15/08/2017)</a></li>
-        <li><a href="/siteAndre/chroniques/cinema.html">Le siècle des (frères) Lumière (18/03/2017)</a></li>
-		<li><a href="/siteAndre/chroniques/complexite.html">Information, complexité et musique (06/02/2017)</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/arithmetique.html">Gammes et Tempéraments (15/08/2017)</a></li>
+        <li><a href="<?php echo $_POST['ROOT']; ?>chroniques/cinema.html">Le siècle des (frères) Lumière (18/03/2017)</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>chroniques/complexite.html">Information, complexité et musique (06/02/2017)</a></li>
 		
 	</ul>
 </div>
@@ -34,7 +33,7 @@
 		<span>Tous droits réservés </span> |
 		<span>Site réalisé par Rey Emilie </span> :
 		<a href="http://www.acyian.com/">www.acyian.com</a> |
-		<a href="sitemap.html">Sitemap</a>
+		<a href="<?php echo $_POST['ROOT']; ?>sitemap.html">Plan du site</a>
 	</p>
 </div>
 

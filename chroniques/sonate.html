@@ -7,36 +7,45 @@
   <link rel="shortcut icon" href="../logo.ico" />
   <link href="../style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="../js/jquery-1.10.2.js"></script>
+  <script src="../js/menus.js"></script>
   <script src="../js/design.js"></script>
+  <script src="../js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
       $(function(){
         $.ajax({
-           url: "../template/header.html",
-           dataType: "html",
+           url: "../template/header.php",
+           type: "POST",
+           data: ({ROOT: '../'}),
            success: function(data) {
              $("#header").html(data);
              $("#grandscycles").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
+             calculFacteurMultiplicatifEtReconstruitLaMap(); /*TODO => a mettre quand on utilise une balise <map> dans le document*/
           }
         });
       });
-      $("#footer").load("../template/footer.html", update_design); 
+      $("#miniMenus").load("../template/miniMenus.php", { ROOT: '../' }, mini_menus_after_loading);
+      $("#footer").load("../template/footer.php", { ROOT: '../' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-    <div id="site">
+    <div>
         <!-- Inclusion header -->
         <div id="header"></div>
 
-        <nav class="menuLateralAncres">
+        <div id="miniMenus"></div>
+
+        <nav id="menuLateralAncres">
             <ul>
                 <li>
-                    <a id="ancreHaydnMozartAutres" href="#haydnMozartAutres" class="linavMenu active">
+                    <a id="ancreHaydnMozartAutres" href="#haydnMozartAutres" class="linavMenu">
                     <span>Haydn, Mozart et les autres</span>
                     </a>
                 </li>
@@ -382,40 +391,42 @@
                         <div class="conteneurImages">
                           <div>
                             <figure>
-                              <img src="../images/sonate/pianistes.jpg" usemap="#Map" alt="Quelques grands pianistes">
+                              <img id="mapImgSonate" src="../images/sonate/pianistes.jpg" width="690" usemap="#mapSonate" alt="Quelques grands pianistes">
                               <figcaption>Quelques grands pianistes</figcaption>
                             </figure>
                           </div>
                         </div>
+						
+						            <div id="afficheConteneurTitleMapImgPourMobile"><p></p></div>
 
-                        <map name="Map" id="Map">
-                          <area shape="rect" coords="1,1,115,88" href="#" title="Arthur Schnabel" alt="Arthur Schnabel" />
-                          <area shape="rect" coords="115,1,229,88" href="#" title="Wilhelm Backhaus" alt="Wilhelm Backhaus" />
-                          <area shape="rect" coords="230,1,345,88" href="#" title="Wilhelm Kempff" alt="Wilhelm Kempff" />
-                          <area shape="rect" coords="459,1,574,89" href="#" title="Arthur Rubinstein" alt="Arthur Rubinstein" />
-                          <area shape="rect" coords="346,1,458,89" href="#" title="Vladimir Horowitz" alt="Vladimir Horowitz" />
-                          <area shape="rect" coords="575,1,689,89" href="#" title="Clara Haskil" alt="Clara Haskil" />
+                        <map name="mapSonate" id="mapSonate">
+                          <area shape="rect" coords="1,1,115,88" href="#" onclick=" return false;" title="Arthur Schnabel" alt="Arthur Schnabel" />
+                          <area shape="rect" coords="115,1,229,88" href="#" onclick=" return false;" title="Wilhelm Backhaus" alt="Wilhelm Backhaus" />
+                          <area shape="rect" coords="230,1,345,88" href="#" onclick=" return false;" title="Wilhelm Kempff" alt="Wilhelm Kempff" />
+                          <area shape="rect" coords="459,1,574,89" href="#" onclick=" return false;" title="Arthur Rubinstein" alt="Arthur Rubinstein" />
+                          <area shape="rect" coords="346,1,458,89" href="#" onclick=" return false;" title="Vladimir Horowitz" alt="Vladimir Horowitz" />
+                          <area shape="rect" coords="575,1,689,89" href="#" onclick=" return false;" title="Clara Haskil" alt="Clara Haskil" />
 
-                          <area shape="rect" coords="1,89,115,177" href="#" title="Alfred Brendel" alt="Alfred Brendel" />
-                          <area shape="rect" coords="115,89,229,177" href="#" title="Maurizio Pollini" alt="Maurizio Pollini" />
-                          <area shape="rect" coords="230,89,345,177" href="#" title="Sviatoslav Richter" alt="Sviatoslav Richter" />
-                          <area shape="rect" coords="346,89,458,177" href="#" title="Clifford Curzon" alt="Clifford Curzon" />
-                          <area shape="rect" coords="459,89,574,177" href="#" title="Claudio Arrau" alt="Claudio Arrau" />
-                          <area shape="rect" coords="575,89,689,177" href="#" title="Lazar Berman" alt="Lazar Berman" />
+                          <area shape="rect" coords="1,89,115,177" href="#" onclick=" return false;" title="Alfred Brendel" alt="Alfred Brendel" />
+                          <area shape="rect" coords="115,89,229,177" href="#" onclick=" return false;" title="Maurizio Pollini" alt="Maurizio Pollini" />
+                          <area shape="rect" coords="230,89,345,177" href="#" onclick=" return false;" title="Sviatoslav Richter" alt="Sviatoslav Richter" />
+                          <area shape="rect" coords="346,89,458,177" href="#" onclick=" return false;" title="Clifford Curzon" alt="Clifford Curzon" />
+                          <area shape="rect" coords="459,89,574,177" href="#" onclick=" return false;" title="Claudio Arrau" alt="Claudio Arrau" />
+                          <area shape="rect" coords="575,89,689,177" href="#" onclick=" return false;" title="Lazar Berman" alt="Lazar Berman" />
 
-                          <area shape="rect" coords="1,177,115,266" href="#" title="Grigory Sokolov" alt="Grigory Sokolov" />
-                          <area shape="rect" coords="115,177,229,266" href="#" title="Daniel Barenboim" alt="Daniel Barenboim" />
-                          <area shape="rect" coords="230,177,345,266" href="#" title="Murray Perahia" alt="Murray Perahia" />
-                          <area shape="rect" coords="346,177,458,266" href="#" title="Martha Argerich" alt="Martha Argerich" />
-                          <area shape="rect" coords="459,177,574,266" href="#" title="Krystian Zimerman" alt="Krystian Zimerman" />
-                          <area shape="rect" coords="575,177,689,266" href="#" title="Stephen Hough" alt="Stephen Hough" />
+                          <area shape="rect" coords="1,177,115,266" href="#" onclick=" return false;" title="Grigory Sokolov" alt="Grigory Sokolov" />
+                          <area shape="rect" coords="115,177,229,266" href="#" onclick=" return false;" title="Daniel Barenboim" alt="Daniel Barenboim" />
+                          <area shape="rect" coords="230,177,345,266" href="#" onclick=" return false;" title="Murray Perahia" alt="Murray Perahia" />
+                          <area shape="rect" coords="346,177,458,266" href="#" onclick=" return false;" title="Martha Argerich" alt="Martha Argerich" />
+                          <area shape="rect" coords="459,177,574,266" href="#" onclick=" return false;" title="Krystian Zimerman" alt="Krystian Zimerman" />
+                          <area shape="rect" coords="575,177,689,266" href="#" onclick=" return false;" title="Stephen Hough" alt="Stephen Hough" />
 
-                          <area shape="rect" coords="1,267,115,356" href="#" title="Marc-André Hamelin" alt="Marc-André Hamelin" />
-                          <area shape="rect" coords="115,267,229,356" href="#" title="Fazil Say" alt="Fazil Say" />
-                          <area shape="rect" coords="230,267,345,356" href="#" title="Lang Lang" alt="Lang Lang" />
-                          <area shape="rect" coords="346,267,458,356" href="#" title="Leif Ove Andsnes" alt="Leif Ove Andsnes" />
-                          <area shape="rect" coords="459,266,574,356" href="#" title="Jean-Efflam Bavouzet" alt="Jean-Efflam Bavouzet" />
-                          <area shape="rect" coords="575,266,689,356" href="#" title="Daniil Trifonov" alt="Daniil Trifonov" />
+                          <area shape="rect" coords="1,267,115,356" href="#" onclick=" return false;" title="Marc-André Hamelin" alt="Marc-André Hamelin" />
+                          <area shape="rect" coords="115,267,229,356" href="#" onclick=" return false;" title="Fazil Say" alt="Fazil Say" />
+                          <area shape="rect" coords="230,267,345,356" href="#" onclick=" return false;" title="Lang Lang" alt="Lang Lang" />
+                          <area shape="rect" coords="346,267,458,356" href="#" onclick=" return false;" title="Leif Ove Andsnes" alt="Leif Ove Andsnes" />
+                          <area shape="rect" coords="459,266,574,356" href="#" onclick=" return false;" title="Jean-Efflam Bavouzet" alt="Jean-Efflam Bavouzet" />
+                          <area shape="rect" coords="575,266,689,356" href="#" onclick=" return false;" title="Daniil Trifonov" alt="Daniil Trifonov" />
 
                         </map>
                       </div>
@@ -438,7 +449,10 @@
 
     <!-- Effet smooth ancres -->
     <script src="../js/onclick.js"></script>
+    <script src="../js/anchors.js"></script>
 
+    <!--Construction Map Image-->
+    <script src="../js/mapImageSonate.js"></script>
 
     <!-- TODO -->
     <!-- A TOI DE VOIR POUR CE FICHIER SI TU VEUX RAJOUTER DES ANCRES (menu laterales et ajout aussi dans sommaire) 
@@ -446,7 +460,5 @@
                       2) La sonate anglaise
                       3) La sonate américaine ... 
         AUSSI: ATTENTION pour les balises <area> (comme pour les balises <img>) l'attribut alt est requis!!! -->
-
-
 </body>
 </html>

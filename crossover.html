@@ -8,32 +8,40 @@
   <link rel="shortcut icon" href="logo.ico" />
   <link href="style.css" rel="stylesheet" type="text/css" /> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
   <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
   <script> 
     // Inclusion Header et Footer
     $(function(){
       $(function(){
           $.ajax({
-             url: "template/header.html",
-             dataType: "html",
+             url: "template/header.php",
+             type: "POST",
+             data: ({ROOT: './'}),
              success: function(data) {
                $("#header").html(data);
                $("#crossover").addClass("active"); /*a changer en fonction de la page*/
+             update_design_when_header_loaded();
             }
           });
       });
-      $("#footer").load("template/footer.html", update_design); 
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design);  
     });
   </script> 
 </head>
 
-<body>
+<body id="site">
 
-  <div id="site">
+  <div id="contenuCrossover">
 
     <!-- Inclusion header -->
     <div id="header"></div>
+
+    <div id="miniMenus"></div>
   
     <div id="corps">
 
@@ -525,6 +533,14 @@
     </div>
 
   </div>
+
+  <!-- TODO -->
+  <!-- ATTENTION: je remarque que tu as mis notamment dans ce fichier pour la meta description des doubles guillemets dans les doubles guillemets de la meta description:
+        cela EST INTERDIT!!!! 1/ c'est cracra 2/ ca produit plein d'erreurs alors que le fichier etait parfaitement clin, je t'ai donc corrigé:
+          <meta name="description" content="Coups de coeur personnels pour des musiques pratiquant avec bonheur le mélange des genres : des artistes issus du monde "classique", du jazz ou plus proches de la variété" />
+          en:  <meta name="description" content="Coups de coeur personnels pour des musiques pratiquant avec bonheur le mélange des genres : des artistes issus du monde 'classique', du jazz ou plus proches de la variété" /> 
+          => TU DOIS AINSI UTILISER QUE DES SIMPLES GUILLEMETS QUAND C'EST DEJA DANS DES DOUBLES GUILLEMETS 
+          DONC TON PROCHAIN DEVOIR EST VERIFIER SI TU N'AS PAS EGALEMENT FAIT CETTE ERREUR DANS TOUS LES AUTRES FICHIERS (meta description)-->
 
 </body>
 

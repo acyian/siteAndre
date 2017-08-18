@@ -32,7 +32,7 @@
 		<span>Tous droits réservés </span> |
 		<span>Site réalisé par Rey Emilie </span> :
 		<a href="http://www.acyian.com/">www.acyian.com</a> |
-		<a href="sitemap.html">Sitemap</a>
+		<a href="<?php echo $_POST['ROOT']; ?>sitemap.html">Plan du site</a>
 	</p>
 </div>
 

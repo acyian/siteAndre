@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Physique &amp; Musique | Plan du site</title>
+  <meta name="description" content="Quelques problèmes de physique, curieux ou amusants" />
+  <link rel="shortcut icon" href="logo.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans%7COswald%7COxygen%7CRaleway" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/design.js"></script>
+  <script src="js/gestionAudioVideo.js"></script>
+  <script> 
+    // Inclusion Header et Footer + class "active" (pour lien menu)
+    $(function(){
+      $(function(){
+        $.ajax({
+           url: "template/header.php",
+           type: "POST",
+           data: ({ROOT: './'}),
+           success: function(data) {
+             $("#header").html(data);
+             design_menus_responsive();
+          }
+        });
+      });
+      $("#miniMenus").load("template/miniMenus.php", { ROOT: './' }, mini_menus_after_loading);
+      $("#footer").load("template/footer.php", { ROOT: './' }, update_design); 
+    });
+  </script> 
+</head>
+
+<body id="site">
+
+    <div>
+        <!-- Inclusion header -->
+        <div id="header"></div>
+
+        <div id="miniMenus"></div>
+
+        <div id="corps">
+
+            <div id="contenuPrincipal">
+                <h2>Physique &amp; Musique</h2>
+                <h3>Plan du site</h3>
+
+                <nav class="filAriane">
+                    <ul>
+                        <li class="breadcrumbItem"><span>Vous êtes ici : </span> Physique &amp; Musique</li>
+                        <li class="breadcrumbItem breadcrumIitem--current">Plan du site</li>
+                    </ul>
+                </nav>  
+
+                <div class="listePlanDuSite">
+                  <h4>Physique</h4>
+
+                  <ul class="miniListCorps listeAvecSousListe">
+                    <li class="misEnMajuscule misEnGras"><a href="index.html">Accueil</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="contenuphysique.html">Présentation</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="Seminaires.html">Seminaires</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="cours.html">Cours</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="chroniquesEparses.html">Chroniques éparses</a></li>
+                    <li class="supprimeListStyle">
+                      <ul class="miniListCorps">
+                        <li><a href="phys.html">Phys</a></li>
+                        <li><a href="math.html">Math</a></li>
+                        <li><a href="info.html">Info</a></li>
+                      </ul>
+                    </li>
+                    <li class="misEnMajuscule misEnGras"><a href="feynmania.html">Feynmania</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="wolframania.html">Wolframania</a></li>
+                  </ul>
+                </div>
+
+                <div class="listePlanDuSite">
+                  <h4>Musique</h4>
+
+                  <ul class="miniListCorps listeAvecSousListe">
+                    <li class="misEnMajuscule misEnGras"><a href="index.html">Accueil</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="contenumusique.html">Présentation</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="musique2001.html">Musique en 2001</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="crossover.html">Crossover</a></li>
+                    <li class="misEnMajuscule misEnGras"><a href="chroniques.html">Chroniques</a></li>
+                    <li class="supprimeListStyle">
+                      <ul class="miniListCorps">
+                        <li>
+                          <a href="billetdhumeur.html">Billets d'humeur</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/anutali.html">Orchestre symphonique &amp; Cuisine 3 étoiles</a></li>
+                            <li><a href="chroniques/football.html">Football et Musique</a></li>
+                            <li><a href="chroniques/mortier.html">Un belge à New York ?</a></li>
+                            <li><a href="chroniques/valentin.html">Dites-le avec des notes</a></li>
+                            <li><a href="chroniques/toux.html">Remède contre la toux</a></li>
+                            <li><a href="chroniques/medici.html">Video Medici</a></li>
+                            <li><a href="chroniques/hadopi.html">Hadopi</a></li>
+                            <li><a href="chroniques/elisabeth.html">Queen Elisabeth : Que sont-ils devenus ?</a></li>
+                            <li><a href="chroniques/brillant.html">Brillant mais à quel prix ?</a></li>
+                            <li><a href="chroniques/honoriscausa.html">Honoris Causa</a></li>
+                            <li><a href="chroniques/naxos.html">Euterpe à Naxos</a></li>
+                            <li><a href="chroniques/opl.html">Nouvelles de l'OPL</a></li>
+                            <li><a href="chroniques/creb.html">CREB, entre professionnalisme et consensualité</a></li>
+                            <li><a href="chroniques/violoncelle.html">Place au violoncelle !</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="tourdumondedemusiqueactuelle.html">Tour du monde</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/estonie.html">Estonie</a></li>
+                            <li><a href="chroniques/finlande.html">Finlande</a></li>
+                            <li><a href="chroniques/danemark.html">Danemark</a></li>
+                            <li><a href="chroniques/suede.html">Suède</a></li>
+                            <li><a href="chroniques/norvege.html">Norvège</a></li>
+                            <li><a href="chroniques/pologne.html">Pologne</a></li>
+                            <li><a href="chroniques/lituanie.html">Lituanie</a></li>
+                            <li><a href="chroniques/russie.html">URSS</a></li>
+                            <li><a href="chroniques/lettonie.html">Lettonie</a></li>
+                            <li><a href="chroniques/hongrie.html">Hongrie</a></li>
+                            <li><a href="chroniques/roumanie.html">Roumanie</a></li>
+                            <li><a href="chroniques/tchequie.html">Tchéquie</a></li>
+                            <li><a href="chroniques/slovaquie.html">Slovaquie</a></li>
+                            <li><a href="chroniques/france.html">France</a></li>
+                            <li><a href="chroniques/paysbas.html">Pays-Bas</a></li>
+                            <li><a href="chroniques/belgique.html">Belgique</a></li>
+                            <li><a href="chroniques/suisse.html">Suisse</a></li>
+                            <li><a href="chroniques/allemagne.html">Allemagne</a></li>
+                            <li><a href="chroniques/italie.html">Italie</a></li>
+                            <li><a href="chroniques/autriche.html">Autriche</a></li>
+                            <li><a href="chroniques/portugal.html">Portugal</a></li>
+                            <li><a href="chroniques/grece.html">Grèce</a></li>
+                            <li><a href="chroniques/angleterre.html">Grande-Bretagne</a></li>
+                            <li><a href="chroniques/japon.html">Japon</a></li>
+                            <li><a href="chroniques/espagne.html">Espagne</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="portraitscompositeurs.html">Compositeurs contemporains</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/reich.html">Steve Reich</a></li>
+                            <li><a href="chroniques/Glass.html">Philip Glass</a></li>
+                            <li><a href="chroniques/part.html">Arvö Pärt</a></li>
+                            <li><a href="chroniques/schnittke.html">Alfred Schnittke</a></li>
+                            <li><a href="chroniques/rautavaara.html">Einojuhani Rautavaara</a></li>
+                            <li><a href="chroniques/adams.html">John Adams</a></li>
+                            <li><a href="chroniques/silvestrov.html">Valentin Silvestrov</a></li>
+                            <li><a href="chroniques/tavener.html">John Tavener</a></li>
+                            <li><a href="chroniques/rochberg.html">George Rochberg</a></li>
+                            <li><a href="chroniques/tuur.html">Erkki Sven Tüür</a></li>
+                            <li><a href="chroniques/macmillan.html">James MacMillan</a></li>
+                            <li><a href="chroniques/shchedrin.html">Rodion Shchedrin</a></li>
+                            <li><a href="chroniques/schat.html">Peter Schat</a></li>
+                            <li><a href="chroniques/penderecki.html">Krzysztof Penderecki</a></li>
+                            <li><a href="chroniques/ligeti.html">György Ligeti</a></li>
+                            <li><a href="chroniques/rabinovitch.html">Alexandre Rabinovitch</a></li>
+                            <li><a href="chroniques/bryars.html">Gavin Bryars</a></li>
+                            <li><a href="chroniques/keuris.html">Tristan Keuris</a></li>
+                            <li><a href="chroniques/greif.html">Olivier Greif</a></li>
+                            <li><a href="chroniques/andriessen.html">Louis Andriessen</a></li>
+                            <li><a href="chroniques/norgard.html">Per Nørgård</a></li>
+                            <li><a href="chroniques/kagel.html">Mauricio Kagel</a></li>
+                            <li><a href="chroniques/henze.html">Hans Werner Henze</a></li>
+                            <li><a href="chroniques/verbey.html">Theo Verbey</a></li>
+                            <li><a href="chroniques/martland.html">Steve Martland</a></li>
+                            <li><a href="chroniques/schafer.html">Murray Schafer</a></li>
+                            <li><a href="chroniques/ruders.html">Poul Ruders</a></li>
+                            <li><a href="chroniques/crumb.html">George Crumb</a></li>
+                            <li><a href="chroniques/ades.html">Thomas Adès</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="tiresdeloubli.html">Compositeurs négligés</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/femmesdenotes.html">Deux femmes de Notes : Louise Farrenc et Louise Bertin</a></li>
+                            <li><a href="chroniques/hauer.html">Refusez la copie, exigez l'original ! (Josef Matthias Hauer)</a></li>
+                            <li><a href="chroniques/clara.html">Le génie de Clara</a></li>
+                            <li><a href="chroniques/korngold.html">Un génie précoce nommé Wolfgang</a></li>
+                            <li><a href="chroniques/schmidt.html">Schmidt &amp; Schmitt</a></li>
+                            <li><a href="chroniques/montgeroult.html">Hélène de Montgeroult (1764-1836)</a></li>
+                            <li><a href="chroniques/hoffmann.html">Un artiste total : Ernst Theodor Amadeus Hoffmann</a></li>
+                            <li><a href="chroniques/gurlitt.html">Manfred Gurlitt</a></li>
+                            <li><a href="chroniques/eduardfranck.html">Eduard Franck</a></li>
+                            <li><a href="chroniques/foulds.html">John Foulds</a></li>
+                            <li><a href="chroniques/draeseke.html">Felix Draeseke</a></li>
+                            <li><a href="chroniques/raff.html">Joseph Joachim Raff</a></li>
+                            <li><a href="chroniques/cras.html">Jean Cras</a></li>
+                            <li><a href="chroniques/pierne.html">Un musicien à redécouvrir : Gabriel Pierné</a></li>
+                            <li><a href="chroniques/landowski.html">Etes-vous Boulez ou ... Landowski ?</a></li>
+                            <li><a href="chroniques/castillon.html">Alexis de Castillon</a></li>
+                            <li><a href="chroniques/craft.html">Schönberg n'est pas mort !</a></li>
+                            <li><a href="chroniques/arthurs.html">Arthur Lourié et Arthur Berger</a></li>
+                            <li><a href="chroniques/bonis.html">Mel, mélo, mélodies : Mélanie Bonis</a></li>
+                            <li><a href="chroniques/weinberg.html">Le cas Mieczyslaw Weinberg</a></li>
+                            <li><a href="chroniques/clementi.html">Un chaînon manquant : Muzio Clementi</a></li>
+                            <li><a href="chroniques/reinecke.html">Carl Reinecke</a></li>
+                            <li><a href="chroniques/chausson.html">Ernest Chausson sous le sapin</a></li>
+                            <li><a href="chroniques/germains.html">Destins croisés : Hans Pfitzner &amp; Franz Schreker</a></li>
+                            <li><a href="chroniques/valen.html">Fartein Valen ou l'art du contrepoint dissonant</a></li>
+                            <li><a href="chroniques/popov.html">Gavriil Popov, artiste du peuple ?</a></li>
+                            <li><a href="chroniques/khrennikov.html">Tikhon Khrennikov, le censeur encensé</a></li>
+                            <li><a href="chroniques/hartmann.html">Le dédale de l'oeuvre de Karl Amadeus Hartmann</a></li>
+                            <li><a href="chroniques/zimmermann.html">Bernd Aloïs Zimmermann n'a pas écrit que Die Soldaten</a></li>
+                            <li><a href="chroniques/gerhard.html">Robert Gerhard</a></li>
+                            <li><a href="chroniques/scelsi.html">L'univers sonore de Giacinto Scelsi (1905-1988)</a></li>
+                            <li><a href="chroniques/antheil.html">George Antheil, bad boy des années 20</a></li>
+                            <li><a href="chroniques/strozzi.html">Trois musiciennes baroques : Caccini, Strozzi &amp; Jacquet</a></li>
+                            <li><a href="chroniques/krenek.html">Redécouvrons Ernst Krenek</a></li>
+                            <li><a href="chroniques/hahn.html">Reynaldo Hahn</a></li>
+                            <li><a href="chroniques/widor.html">L'autre visage de Charles-Marie Widor</a></li>
+                            <li><a href="chroniques/roentgen.html">Julius Roentgen</a></li>
+                            <li><a href="chroniques/urspruch.html">Anton Urspruch</a></li>
+                            <li><a href="chroniques/finzi.html">Un maître de l'élégie : Gérald Finzi</a></li>
+                            <li><a href="chroniques/alwyn.html">Two british outsiders : William Alwyn &amp; Malcolm Arnold</a></li>
+                            <li><a href="chroniques/gouvy.html">Théodore Gouvy</a></li>
+                            <li><a href="chroniques/adaiewsky.html">Coup de coeur pour une musique d'Ella Adaïewsky</a></li>
+                            <li><a href="chroniques/braunfels.html">Walter Braunfels</a></li>
+                            <li><a href="chroniques/tchaikovsky.html">Un Tchaïkovsky peut en cacher d'autres</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="interpretesActuels.html">Interprètes actuels</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/inmemoriam.html">In memoriam Richard Hickox &amp; Vernon Handley</a></li>
+                            <li><a href="chroniques/arpeggiata.html">Arpeggiata</a></li>
+                            <li><a href="chroniques/hamelin.html">Un pianiste indispensable : Marc-André Hamelin</a></li>
+                            <li><a href="chroniques/postmoderne.html">Ralph van Raat, un pianiste postmoderne</a></li>
+                            <li><a href="chroniques/ducros.html">Nouvelle  vague en musique française : Jérôme Ducros</a></li>
+                            <li><a href="chroniques/armida.html">Place aux jeunes : le Quatuor Armida</a></li>
+                            <li><a href="chroniques/poemeharmonique.html">Le Poème Harmonique</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="grandscycles.html">Genres musicaux</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/caprice.html">Fais-moi un caprice</a></li>
+                            <li><a href="chroniques/cantates.html">Les cantates de Bach</a></li>
+                            <li><a href="chroniques/messes.html">Où sont passées les messes d'antan ?</a></li>
+                            <li><a href="chroniques/concertosviolon.html">Le Concerto pour violon jusqu'à nos jours</a></li>
+                            <li><a href="chroniques/concertospiano.html">Le Concerto pour piano jusqu'à nos jours</a></li>
+                            <li><a href="chroniques/concertocello.html">Le Concerto pour violoncelle jusqu'à nos jours</a></li>
+                            <li><a href="chroniques/cantigas.html">Les Cantigas de Santa Maria</a></li>
+                            <li><a href="chroniques/chaconne.html">L'art de la chaconne</a></li>
+                            <li><a href="chroniques/madrigal.html">Le madrigal</a></li>
+                            <li><a href="chroniques/scarlatti.html">Les 555 sonates de Scarlatti</a></li>
+                            <li><a href="chroniques/passion.html">La Passion</a></li>
+                            <li><a href="chroniques/tombeau.html">Déplorations &amp; Tombeaux</a></li>
+                            <li><a href="chroniques/clavecin.html">L'école française de clavecin</a></li>
+                            <li><a href="chroniques/sonate.html">La sonate pour piano jusqu'à nos jours</a></li>
+                            <li><a href="chroniques/quintette.html">Le Quintette (à clavier) jusqu'à nos jours</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="faitsDivers.html">Faits divers</a>
+                          <ul class="miniListCorps">
+                            <li><a href="chroniques/destincaprice.html">Le Destin d'un caprice</a></li>
+                            <li><a href="chroniques/goldberg.html">Goldberg, Diabelli et les autres</a></li>
+                            <li><a href="chroniques/chefs.html">Des chefs qui composent</a></li>
+                            <li><a href="chroniques/winterreise.html">Itinéraires d'un voyage d'hiver</a></li>
+                            <li><a href="chroniques/musicorrhee.html">Quelques exemples de musicorrhée au 20<sup>ème</sup> siècle</a></li>
+                            <li><a href="chroniques/orchestrations.html">Quelques modèles d'orchestrations</a></li>
+                            <li><a href="chroniques/ries.html">L'empreinte d'un Maître</a></li>
+                            <li><a href="chroniques/pdqbach.html">Un fils caché de Jean-Sébastien Bach ? </a></li>
+                            <li><a href="chroniques/pedigrees.html">Pedigrees</a></li>
+                            <li><a href="chroniques/longevite.html">Longévité musicale</a></li>
+                            <li><a href="chroniques/minimalisme.html">Les pionniers du minimalisme aux USA</a></li>
+                            <li><a href="chroniques/haydn.html">Hommage à papa Haydn</a></li>
+                            <li><a href="chroniques/greenberg.html">Prodige musical : Jay Greenberg</a></li>
+                            <li><a href="chroniques/fauches.html">Jeunes et déjà fauchés</a></li>
+                            <li><a href="chroniques/wagner.html">Wagner, côté jardin</a></li>
+                            <li><a href="chroniques/famillebach.html">Airs de famille : les autres Bach</a></li>
+                            <li><a href="chroniques/lvbmeconnu.html">Beethoven, notes éparses</a></li>
+                            <li><a href="chroniques/gretry.html">Un Liégeois à Paris : André-Ernest-Modeste Grétry</a></li>
+                            <li><a href="chroniques/prixderome.html">Heurs et malheurs du Grand Prix de Rome de Musique</a></li>
+                            <li><a href="chroniques/grawemeyer.html">Grawemeyer Award for Music Composition</a></li>
+                            <li><a href="chroniques/einstein.html">Einstein on the Beach : le premier "audiopéra"</a></li>
+                            <li><a href="chroniques/bandedesquatre.html">L'autre bande des Quatre</a></li>
+                            <li><a href="chroniques/wittgenstein.html">Pour la main gauche</a></li>
+                            <li><a href="chroniques/eastgermany.html">A l'Est rien de nouveau ?</a></li>
+                            <li><a href="chroniques/dames20.html">Musique moderne au féminin</a></li>
+                            <li><a href="chroniques/groupes.html">The American Five, de Charles Ives à Henry Cowell</a></li>
+                            <li><a href="chroniques/koussevitzky.html">L'argent du thé russe : la Fondation Koussevitzky</a></li>
+                            <li><a href="chroniques/garcia.html">La famille Garcia</a></li>
+                            <li><a href="chroniques/louisferdinand.html">Louis Ferdinand, un prince musicien</a></li>
+                            <li><a href="chroniques/gabriel.html">Gabriel, petit-fils de Serge</a></li>
+                            <li><a href="chroniques/proms.html">Sir Henry Wood &amp; The Prom's Concerts</a></li>
+                            <li><a href="chroniques/pianoameublement.html">Le piano d'ameublement, d'Erik Satie à John Cage</a></li>
+                            <li><a href="chroniques/rameau.html">C'est Rameau qu'on assassine !</a></li>
+                            <li><a href="chroniques/terezin.html">Composer sous le 3<sup>ème</sup> Reich</a></li>
+                            <li><a href="chroniques/boosey.html">L'édition musicale, de Petrucci à Boosey &amp; Hawkes. </a></li>
+                            <li><a href="chroniques/operacomique.html">Dans l'ombre de l'Opéra-Comique</a></li>
+                            <li><a href="chroniques/boulez.html">Un hommage à Pierre Boulez</a></li>
+                            <li><a href="chroniques/pantheon.html">Le Panthéon des musiciens</a></li>
+                            <li><a href="chroniques/complexite.html">Information, Complexité et Musique</a></li>
+                            <li><a href="chroniques/cinema.html">Le siècle des (frères) Lumière</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="misEnMajuscule misEnGras"><a href="quizz.html">Who's who ?</a></li>
+                  </ul>
+                </div>
+            </div>
+
+
+            <a id="ancreRetourHautPage" href="#site">&uarr;</a>
+
+            <!-- Inclusion footer -->
+            <div id="footer"></div>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

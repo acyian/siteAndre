@@ -21,9 +21,9 @@
 <div id="sitesDeReferences">
 	<h5>SITES DE REFERENCES</h5>
 	<ul>
-		<li><a href="referencesSciencesExactes.html">Sciences exactes</a></li>
-		<li><a href="referencesMusicales.html">Musique</a></li>
-		<li><a href="referencesCommerciales.html">Commerciaux</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>referencesSciencesExactes.html">Sciences exactes</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>referencesMusicales.html">Musique</a></li>
+		<li><a href="<?php echo $_POST['ROOT']; ?>referencesCommerciales.html">Commerciaux</a></li>
 	</ul>
 </div>
 

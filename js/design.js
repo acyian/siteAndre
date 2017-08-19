@@ -91,9 +91,6 @@ function update_design_images(){
     });
 }
 
-function update_design(){
-    update_design_footer();
-}
 
 function update_design_when_header_loaded(){
     design_menus_responsive();
@@ -101,11 +98,11 @@ function update_design_when_header_loaded(){
 }
 
 function changements_generaux_onresize() {
-    update_design();
     open_or_close_menu_gauche_onresize();
     open_or_close_menu_droite_onresize();
     design_corps_responsive();
     update_design_when_header_loaded();
+    update_design_footer();
 }
 
 window.onresize = function() {

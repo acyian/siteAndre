@@ -79,7 +79,7 @@ function update_design_images(){
             $(this).find('img').css("margin-left", "0px");
             $(this).find('img').css("margin-right", "0px");
             $(this).find('img').css("max-width", widthCorps + "px");
-            $(this).children().first().css("display", "block");
+            $(this).children().first().css("display", "inline-block");
         }
         else {
             $(this).find('img').css("margin-left", "20px");
